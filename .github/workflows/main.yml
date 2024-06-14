@@ -1,0 +1,99 @@
+# Deploy GitHub Pages
+name: Build and deploy eQuantum site
+
+# 💎 Runs on workflow_run.conclusion
+on:
+  push:
+  workflow_run:
+    types: [completed]
+    workflows: ["pages-build-deployment"]
+  
+# 🪂 Allow concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+# Set GITHUB_TOKEN scopes
+permissions: write-all
+
+# Global environtment variables
+env:
+  RUN: ${{ github.run_id }}
+  USER: ${{ github.actor }}
+  REPO: ${{ github.repository }}
+  OWNER: ${{ github.repository_owner }}
+  ACTOR: ${{ github.triggering_actor }}
+  
+jobs:
+  determine-runner:
+    runs-on: ubuntu-latest
+    outputs:
+      runner: ${{ steps.set-runner.outputs.use-runner }}
+    steps:
+      - name: Determine which runner to use
+        id: set-runner
+        uses: eq19/maps@v2
+        with:
+          primary-runner: "self-hosted,linux"
+          fallback-runner: "ubuntu-latest"
+          github-token: ${{ secrets.ACCESS_TOKEN }}
+
+  github-pages:
+    needs: determine-runner
+  
+    strategy:
+      max-parallel: 1
+      fail-fast: false
+      matrix:
+        #node_version: [8, 10, 12]
+        os: [windows-latest, ubuntu-latest] #self-hosted
+
+    runs-on: ${{ matrix.os }}
+    #runs-on: ${{ fromJson(needs.determine-runner.outputs.runner) }}
+    #runs-on: ${{github.ref_name != 'main' && 'ubuntu-latest' || (
+             #github.ref_protected && matrix.os || 'windows-latest') }}
+
+    if: ${{github.event_name == 'push' ||
+        github.event.workflow_run.conclusion == 'success'}}
+
+    steps:
+      - name: 📂 Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.ACCESS_TOKEN }}
+ 
+      - name: 📂 Setup Dotnet
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '3.1.x'
+
+      - name: 💎 Set Credential
+        id: 'auth'
+        uses: 'google-github-actions/auth@v2'
+        with:
+          credentials_json: ${{ secrets.GCP_CREDENTIALS }}
+
+      - name: 💎 Authentication
+        uses: 'google-github-actions/setup-gcloud@v2'
+
+      - name: 🚀 Self-Hosted Runner
+        if: runner.os == 'Linux'
+        uses: eq19/lexer@v3
+        with:
+          pre_build_commands: 'gcloud info'
+          token: ${{ secrets.ACCESS_TOKEN }}
+      
+      - name: 🚀 Build on Self-Hosted
+        if: ${{runner.os != 'Linux' && runner.os != 'Windows'}}
+        uses: eq19/maps@v1
+        with:
+          path-to-root: /github/workspace/_site
+          include-pdf: false
+
+      - name: 🚀 Build Feed on Linux
+        if: runner.os == 'Linux'
+        uses: eq19/feed@v3
+        with:
+          pre_build_commands: 'make build'
+          token: ${{ secrets.ACCESS_TOKEN }}
