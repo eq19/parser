@@ -124,11 +124,11 @@ runs:
           --shielded-vtpm \
           --shielded-integrity-monitoring \
           --reservation-affinity=any \
-          --service-account=project-owner@feedmapping.iam.gserviceaccount.com \
           --machine-type=e2-micro \
           --enable-display-device \
           --no-shielded-secure-boot \
           --image-family cos-stable \
           --image-project cos-cloud \
           --metadata-from-file user-data=cloud-config \
-          --create-disk=auto-delete=yes,device-name=persistent-disk-1,boot=no,image-family=tf-ent-latest-gpu,mode=rw,size=50,type=pd-standard,image-project=deeplearning-platform-release 
+          --service-account=project-owner@feedmapping.iam.gserviceaccount.com \
+          --create-disk auto-delete=yes,device-name=persistent-disk-1,boot=no,image-family=tf-ent-latest-gpu,mode=rw,size=50,type=pd-standard,image-project=deeplearning-platform-release 
