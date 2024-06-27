@@ -96,4 +96,4 @@ runs:
       run: |
         gcloud info
         [IO.File]::WriteAllText("cloud-config", "${env:userdata}")
-        echo cloud-config
+        gc cloud-config
