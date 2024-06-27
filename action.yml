@@ -92,3 +92,5 @@ runs:
               [user]
               default=jdoe
             packages: [hello]
+      run: |
+        $cloudinit = "${env:USERPROFILE}\.cloud-init\"
