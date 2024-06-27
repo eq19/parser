@@ -95,4 +95,4 @@ runs:
             packages: [hello]
       run: |
         gcloud info
-        $cloudinit = "${env:USERPROFILE}\.cloud-init\"
+        echo "${env:userdata}"
