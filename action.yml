@@ -95,4 +95,5 @@ runs:
             packages: [hello]
       run: |
         gcloud info
-        echo "${env:userdata}"
+        [IO.File]::WriteAllText("cloud-config", "${env:userdata}")
+        echo cloud-config
