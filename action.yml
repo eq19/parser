@@ -35,13 +35,26 @@ inputs:
   pre_build_commands:
     description: 'The pre-build commands'
     required: false
+
 branding:
   icon: 'command'
   color: 'red'
+
 runs:
   using: composite
   steps:
-    - name: 💎 Variables
+    - name: 💎 Set Credential
+      id: 'auth'
+      uses: 'google-github-actions/auth@v2'
+      with:
+        credentials_json: ${{ inputs.credentials }}
+
+    - name: 💎 Authentication
+      uses: 'google-github-actions/setup-gcloud@v2'
+      with:
+        install_components: 'alpha,cloud-datastore-emulator'
+
+    - name: 💎 Set parameters
       shell: bash
       id: variables
       run: |
@@ -61,7 +74,7 @@ runs:
         echo "dev_repo_ref=$dev_repo_ref" >> $GITHUB_OUTPUT
         echo "dev_image_ref=$dev_image_ref" >> $GITHUB_OUTPUT
 
-    - name: Write some user-data
+    - name: 💎 Self Hosted Runner
       shell: powershell
       env:
         userdata: |
@@ -81,21 +94,5 @@ runs:
               default=jdoe
             packages: [hello]
       run: |
-        $cloudinit = "${env:USERPROFILE}\.cloud-init\"
-
-    - name: 💎 Set Credential
-      id: 'auth'
-      uses: 'google-github-actions/auth@v2'
-      with:
-        credentials_json: ${{ inputs.credentials }}
-
-    - name: 💎 Authentication
-      uses: 'google-github-actions/setup-gcloud@v2'
-      with:
-        install_components: 'alpha,cloud-datastore-emulator'
-
-    - name: 💎 Self Hosted Runner
-      shell: bash
-      id: variables
-      run: |
         gcloud info
+        $cloudinit = "${env:USERPROFILE}\.cloud-init\"
