@@ -73,22 +73,22 @@ runs:
         echo "dev_repo_ref=$dev_repo_ref" >> $GITHUB_OUTPUT
         echo "dev_image_ref=$dev_image_ref" >> $GITHUB_OUTPUT
 
-      - name: Write some user-data
-        shell: powershell
-        env:
-            userdata: |
-              #cloud-config
-              locale: pt_BR
-              users:
-              - name: jdoe
-                gecos: John Doe
-                groups: [adm,dialout,cdrom,floppy,sudo,audio,dip,video,plugdev,netdev]
-                sudo: ALL=(ALL) NOPASSWD:ALL
-                shell: /bin/bash
-              write_files:
-              - path: /etc/wsl.conf
-                append: true
-                content: |
-                  [user]
-                  default=jdoe
-                packages: [hello]
+    - name: Write some user-data
+      shell: powershell
+      env:
+        userdata: |
+          #cloud-config
+          locale: pt_BR
+          users:
+          - name: jdoe
+            gecos: John Doe
+            groups: [adm,dialout,cdrom,floppy,sudo,audio,dip,video,plugdev,netdev]
+            sudo: ALL=(ALL) NOPASSWD:ALL
+            shell: /bin/bash
+          write_files:
+          - path: /etc/wsl.conf
+            append: true
+            content: |
+              [user]
+              default=jdoe
+            packages: [hello]
