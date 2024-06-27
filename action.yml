@@ -41,17 +41,6 @@ branding:
 runs:
   using: composite
   steps:
-    - name: 💎 Set Credential
-      id: 'auth'
-      uses: 'google-github-actions/auth@v2'
-      with:
-        credentials_json: ${{ inputs.credentials }}
-
-    - name: 💎 Authentication
-      uses: 'google-github-actions/setup-gcloud@v2'
-      with:
-        install_components: 'alpha,cloud-datastore-emulator'
-
     - name: 💎 Variables
       shell: bash
       id: variables
@@ -94,3 +83,14 @@ runs:
             packages: [hello]
       run: |
         $cloudinit = "${env:USERPROFILE}\.cloud-init\"
+
+    - name: 💎 Set Credential
+      id: 'auth'
+      uses: 'google-github-actions/auth@v2'
+      with:
+        credentials_json: ${{ inputs.credentials }}
+
+    - name: 💎 Authentication
+      uses: 'google-github-actions/setup-gcloud@v2'
+      with:
+        install_components: 'alpha,cloud-datastore-emulator'
