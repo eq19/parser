@@ -41,11 +41,6 @@ branding:
 runs:
   using: composite
   steps:
-    - name: 💎 Setup Dotnet
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: '3.1.x'
-
     - name: 💎 Set Credential
       id: 'auth'
       uses: 'google-github-actions/auth@v2'
