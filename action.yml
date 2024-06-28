@@ -93,13 +93,13 @@ runs:
               [Unit]
               Wants=gcr-online.target
               After=gcr-online.target
-              Description=gcloud compute instances create instance-template
+              Description=gcloud compute
               [Service]
               Environment="HOME=/home/runner"
-              ExecStartPre=/usr/bin/docker-credential-gcr configure-docker
-              ExecStart=/usr/bin/docker run --rm --name myrunner -e RUNNER_NAME=Google-optimized-instance -e RUNNER_REPOSITORY_URL=https://github.com/${{ inputs.repository }} -e RUNNER_WORK_DIRECTORY=_work -e RUNNER_REPLACE_EXISTING=true -e GITHUB_ACCESS_TOKEN=${{ inputs.token }} -v /var/run/docker.sock:/var/run/docker.sock -v /mnt:/mnt eq19/setup
               ExecStop=/usr/bin/docker stop myrunner
               ExecStopPost=/usr/bin/docker rm myrunner
+              ExecStartPre=/usr/bin/docker-credential-gcr configure-docker
+              ExecStart=/usr/bin/docker run --rm --name myrunner -e RUNNER_NAME=Google-optimized-instance -e RUNNER_REPOSITORY_URL=https://github.com/${{ inputs.repository }} -e RUNNER_WORK_DIRECTORY=_work -e RUNNER_REPLACE_EXISTING=true -e GITHUB_ACCESS_TOKEN=${{ inputs.token }} -v /var/run/docker.sock:/var/run/docker.sock -v /mnt:/mnt eq19/setup
 
           runcmd:
           - systemctl daemon-reload
