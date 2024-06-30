@@ -42,6 +42,10 @@ branding:
   color: 'red'
 
 runs:
+  #using: 'node20'
+  #main: '.github/run/main.js'
+  #post: '.github/run/post.js'
+  #post-if: 'success()'
   using: composite
   steps:
     - name: 💎 Set Credential
