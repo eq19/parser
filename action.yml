@@ -107,7 +107,7 @@ runs:
               ExecStop=/usr/bin/docker stop myrunner
               ExecStopPost=/usr/bin/docker rm myrunner
               ExecStartPre=/usr/bin/docker-credential-gcr configure-docker
-              ExecStart=/usr/bin/docker run --rm --name myrunner --env-file cloud.env -v /var/run/docker.sock:/var/run/docker.sock -v /mnt:/mnt ${{ inputs.pre_build_container }}
+              ExecStart=/usr/bin/docker run --env-file ./cloud.env --rm --name myrunner -v /var/run/docker.sock:/var/run/docker.sock -v /mnt:/mnt ${{ inputs.pre_build_container }}
 
           runcmd:
           - systemctl daemon-reload
