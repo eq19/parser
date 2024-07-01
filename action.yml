@@ -100,7 +100,7 @@ runs:
               After=gcr-online.target
               Description=gcloud compute
               [Service]
-              Environment="HOME=/home/runner"
+              Environment="HOME=/home/vscode"
               ExecStop=/usr/bin/docker stop myrunner
               ExecStopPost=/usr/bin/docker rm myrunner
               ExecStartPre=/usr/bin/docker-credential-gcr configure-docker
