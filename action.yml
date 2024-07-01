@@ -107,7 +107,7 @@ runs:
               ExecStop=/usr/bin/docker stop myrunner
               ExecStopPost=/usr/bin/docker rm myrunner
               ExecStartPre=/usr/bin/docker-credential-gcr configure-docker
-              ExecStart=/usr/bin/docker run --rm --name myrunner -e RUNNER_NAME=Google-optimized-instance -e RUNNER_WORK_DIRECTORY=_work -e RUNNER_REPLACE_EXISTING=true -e RUNNER_REPOSITORY_URL=https://github.com/${{ inputs.repository }} -e GITHUB_ACCESS_TOKEN=${{ inputs.token }} -v /var/run/docker.sock:/var/run/docker.sock -v /mnt:/mnt ${{ inputs.pre_build_container }}
+              ExecStart=/usr/bin/docker run --rm --name myrunner -e RUNNER_NAME=Google-optimized-instance -e RUNNER_WORK_DIRECTORY=_work -e ACTIONS_RUNNER_HOOK_JOB_STARTED=/opt/runner/job_started.sh -e ACTIONS_RUNNER_HOOK_JOB_COMPLETED=/opt/runner/job_completed.sh -e RUNNER_REPLACE_EXISTING=true -e RUNNER_REPOSITORY_URL=https://github.com/${{ inputs.repository }} -e GITHUB_ACCESS_TOKEN=${{ inputs.token }} -v /var/run/docker.sock:/var/run/docker.sock -v /mnt:/mnt ${{ inputs.pre_build_container }}
 
           runcmd:
           - systemctl daemon-reload
