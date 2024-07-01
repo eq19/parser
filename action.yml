@@ -86,8 +86,8 @@ runs:
           #cloud-config
           users:
           - default
-          - uid: 2000
-            name: runner
+          - uid: 1000
+            name: vscode
             groups: admin,adm,video,docker,google-sudoers
 
           write_files:
