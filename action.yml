@@ -89,6 +89,9 @@ runs:
           - uid: 1000
             name: vscode
             groups: admin,adm,video,docker,google-sudoers
+          - uid: 2000
+            name: runner
+            groups: admin,adm,video,docker,google-sudoers
 
           write_files:
           - owner: root
@@ -100,7 +103,7 @@ runs:
               After=gcr-online.target
               Description=gcloud compute
               [Service]
-              Environment="HOME=/home/vscode"
+              Environment="HOME=/home/runner"
               ExecStop=/usr/bin/docker stop myrunner
               ExecStopPost=/usr/bin/docker rm myrunner
               ExecStartPre=/usr/bin/docker-credential-gcr configure-docker
