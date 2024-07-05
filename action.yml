@@ -126,7 +126,22 @@ runs:
     - name: 💎 Create Runner
       shell: powershell
       run: >
-        gcloud compute instances create instance-template --zone=us-central1-a --machine-type=e2-micro
+        gcloud compute instances create Google-COS
+        --project=feedmapping 
+        --zone=us-central1-a 
+        --machine-type=e2-micro
+        --enable-display-device 
+        --tags=https-server 
+        --no-shielded-secure-boot 
+        --shielded-vtpm 
+        --reservation-affinity=any
+        --maintenance-policy=MIGRATE 
+        --provisioning-model=STANDARD 
+        --shielded-integrity-monitoring 
+        --labels=goog-ec-src=vm_add-gcloud 
+        --scopes=https://www.googleapis.com/auth/cloud-platform 
         --service-account=project-owner@feedmapping.iam.gserviceaccount.com
-        --image-family cos-stable --image-project cos-cloud
-        --metadata-from-file=user-data=cloud-config
+        --network-interface=network-tier=PREMIUM,stack-type=IPV4_ONLY,subnet=default 
+        --metadata=metadata-from-file=user-data=cloud-config,google-logging-enabled=true,google-monitoring-enabled=true,enable-oslogin=true 
+        --create-disk=auto-delete=yes,boot=yes,device-name=instance-template-20,image=projects/cos-cloud/global/images/cos-101-17162-127-8,mode=rw,size=10,type=projects/feedmapping/zones/us-central1-a/diskTypes/pd-standard 
+        --create-disk=auto-delete=yes,boot=no,description=Deep\ Learning,device-name=persistent-disk-1,image=projects/ml-images/global/images/c1-deeplearning-tf-2-11-tpu-v20230331-debian-10,mode=rw,size=50,type=projects/feedmapping/zones/us-central1-a/diskTypes/pd-standard 
