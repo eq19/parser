@@ -129,8 +129,8 @@ runs:
         gcloud compute instances create google-cos
         --zone=us-central1-a --machine-type=e2-micro
         --enable-display-device --tags=https-server 
+        --metadata-from-file=user-data=cloud-config
         --image-family cos-stable --image-project cos-cloud
-        --metadata=metadata-from-file=user-data=cloud-config
         --service-account=project-owner@feedmapping.iam.gserviceaccount.com
     
     - name: 💎 Create Deep Learning Disk
@@ -142,4 +142,4 @@ runs:
         --boot=no --mode=rw --size=50 --type=pd-standard
         --image-project=deeplearning-platform-release
         --image-family=tf-ent-latest-gpu
-        
+        --service-account=project-owner@feedmapping.iam.gserviceaccount.com
