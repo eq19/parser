@@ -126,22 +126,8 @@ runs:
     - name: 💎 Create Runner
       shell: powershell
       run: >
-        gcloud compute instances create Google-COS
-        --project=feedmapping 
-        --zone=us-central1-a 
-        --machine-type=e2-micro
-        --enable-display-device 
-        --tags=https-server 
-        --no-shielded-secure-boot 
-        --shielded-vtpm 
-        --reservation-affinity=any
-        --maintenance-policy=MIGRATE 
-        --provisioning-model=STANDARD 
-        --shielded-integrity-monitoring 
-        --labels=goog-ec-src=vm_add-gcloud 
-        --scopes=https://www.googleapis.com/auth/cloud-platform 
-        --service-account=project-owner@feedmapping.iam.gserviceaccount.com
-        --metadata=metadata-from-file=user-data=cloud-config,google-logging-enabled=true,google-monitoring-enabled=true,enable-oslogin=true 
-        --image-family cos-stable --image-project cos-cloud
-        --create-disk=auto-delete=yes,device-name=persistent-disk-1,boot=no,image-family=tf-ent-latest-gpu,mode=rw,size=50,type=pd-standard,image-project=deeplearning-platform-release
-        
+        gcloud compute instances create instance-20240705-055410 --project=feedmapping --zone=us-central1-a --machine-type=e2-micro 
+        --network-interface=network-tier=PREMIUM,stack-type=IPV4_ONLY,subnet=default --maintenance-policy=MIGRATE --provisioning-model=STANDARD --service-account=604873906130-compute@developer.gserviceaccount.com 
+        --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append 
+        --create-disk=auto-delete=yes,boot=yes,device-name=instance-20240705-055410,image=projects/cos-cloud/global/images/cos-stable-113-18244-85-49,mode=rw,size=10,type=projects/feedmapping/zones/us-central1-a/diskTypes/pd-standard 
+        --create-disk=auto-delete=yes,device-name=disk-1,image=projects/ml-images/global/images/c0-deeplearning-common-cpu-v20230925-debian-10,mode=rw,name=disk-1,size=50,type=projects/feedmapping/zones/us-east1-b/diskTypes/pd-standard 
