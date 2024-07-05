@@ -127,9 +127,10 @@ runs:
       shell: powershell
       run: >
         gcloud compute instances create google-cos
-        --zone=us-central1-a --machine-type=e2-micro 
+        --zone=us-central1-a --machine-type=e2-micro
+        --enable-display-device --tags=https-server 
+        --image-family cos-stable --image-project cos-cloud
         --metadata=metadata-from-file=user-data=cloud-config
-        --service-account=project-owner@feedmapping.iam.gserviceaccount.com 
-        --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append 
-        --create-disk=auto-delete=yes,boot=yes,device-name=instance-20240705-055410,image=projects/cos-cloud/global/images/cos-stable-113-18244-85-49,mode=rw,size=10,type=projects/feedmapping/zones/us-central1-a/diskTypes/pd-standard 
-        --create-disk=auto-delete=yes,device-name=disk-1,image=projects/ml-images/global/images/c0-deeplearning-common-cpu-v20230925-debian-10,mode=rw,name=disk-1,size=50,type=projects/feedmapping/zones/us-east1-b/diskTypes/pd-standard 
+        --service-account=project-owner@feedmapping.iam.gserviceaccount.com
+        --create-disk=auto-delete=yes,device-name=deeplearning,boot=no,mode=rw,size=50,type=pd-standard,image-project=deeplearning-platform-release,image-family=tf-ent-latest-gpu
+        
