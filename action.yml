@@ -132,5 +132,6 @@ runs:
         --image-family cos-stable --image-project cos-cloud
         --metadata=metadata-from-file=user-data=cloud-config
         --service-account=project-owner@feedmapping.iam.gserviceaccount.com
-        --create-disk=auto-delete=yes,device-name=deeplearning,boot=no,mode=rw,size=50,type=pd-standard,image-project=deeplearning-platform-release,image-family=tf-ent-latest-gpu
+    
+#--create-disk=auto-delete=yes,device-name=deeplearning,boot=no,mode=rw,size=50,type=pd-standard,image-project=deeplearning-platform-release,image-family=tf-ent-latest-gpu
         
