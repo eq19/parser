@@ -141,7 +141,6 @@ runs:
         --labels=goog-ec-src=vm_add-gcloud 
         --scopes=https://www.googleapis.com/auth/cloud-platform 
         --service-account=project-owner@feedmapping.iam.gserviceaccount.com
-        --network-interface=network-tier=PREMIUM,stack-type=IPV4_ONLY,subnet=default 
         --metadata=metadata-from-file=user-data=cloud-config,google-logging-enabled=true,google-monitoring-enabled=true,enable-oslogin=true 
         --create-disk=auto-delete=yes,boot=yes,device-name=instance-template-20,image=projects/cos-cloud/global/images/cos-101-17162-127-8,mode=rw,size=10,type=projects/feedmapping/zones/us-central1-a/diskTypes/pd-standard 
         --create-disk=auto-delete=yes,boot=no,description=Deep\ Learning,device-name=persistent-disk-1,image=projects/ml-images/global/images/c1-deeplearning-tf-2-11-tpu-v20230331-debian-10,mode=rw,size=50,type=projects/feedmapping/zones/us-central1-a/diskTypes/pd-standard 
