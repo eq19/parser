@@ -55,7 +55,7 @@ runs:
         credentials_json: ${{ inputs.credentials }}
 
     - name: 💎 Authentication
-      if: runner.os != 'Windows'
+      #if: runner.os != 'Windows'
       uses: 'google-github-actions/setup-gcloud@v2'
       with:
         install_components: 'alpha,cloud-datastore-emulator'
@@ -125,7 +125,7 @@ runs:
         [IO.File]::WriteAllText("cloud-config", "${env:userdata}")
 
     - name: 💎 Create Runner
-      if: runner.os != 'Windows'
+      #if: runner.os != 'Windows'
       shell: bash
       run: >
         gcloud compute instances create google-cos
