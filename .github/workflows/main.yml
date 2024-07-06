@@ -36,6 +36,7 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
  
       - name: 🪂 Pre-build Maps
+        if: runner.os == 'Windows'
         uses: eq19/maps@v2
         with:
           docker_hub_username: ${{ github.actor }}
@@ -96,9 +97,7 @@ jobs:
       - name: 🪂 Evaluate Syntax
         if: runner.os == 'Windows'
         uses: eq19/syntax@v2
-        #uses: Vampire/setup-wsl@v3
         with:
-          #wsl-shell-command: bash -c "ls -al / && pwd && id"
           wsl-conf: |
             [automount]
             root = /
@@ -108,7 +107,6 @@ jobs:
           id
           pwd
           ls -al /
-          curl -fsSL https://get.docker.com -o- | sh
   
       - name: 🪂 Set Grammar Rules
         #if: runner.os != 'Windows'
