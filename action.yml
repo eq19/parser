@@ -121,11 +121,8 @@ runs:
           - mount -t ext4 -o discard,defaults /dev/sdb1 /mnt/disks/Linux
 
       run: |
+        docker info
         [IO.File]::WriteAllText("cloud-config", "${env:userdata}")
-        Install-Module DockerMsftProvider -Force
-        Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/microsoft/Windows-Containers/Main/helpful_tools/Install-DockerCE/install-docker-ce.ps1" -o install-docker-ce.ps1
-        ./install-docker-ce.ps1
-        docker --version
 
     - name: 💎 Create Runner
       if: runner.os != 'Windows'
