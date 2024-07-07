@@ -86,7 +86,7 @@ jobs:
           #repository: eq19/eq19.github.io
 
       - name: 🚀 Setup Parser
-        if: runner.os != 'Windows'
+        #if: runner.os != 'Windows'
         uses: eq19/parser@v1
 
       - name: 🪂 Evaluate Syntax
