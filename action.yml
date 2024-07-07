@@ -48,18 +48,6 @@ runs:
   #post-if: 'success()'
   using: composite
   steps:
-    - name: 💎 Set Credential
-      id: 'auth'
-      uses: 'google-github-actions/auth@v2'
-      with:
-        credentials_json: ${{ inputs.credentials }}
-
-    - name: 💎 Authentication
-      #if: runner.os != 'Windows'
-      uses: 'google-github-actions/setup-gcloud@v2'
-      with:
-        install_components: 'alpha,cloud-datastore-emulator'
-
     - name: 💎 Set parameters
       shell: bash
       id: variables
@@ -79,57 +67,3 @@ runs:
         echo "image_ref=$image_ref" >> $GITHUB_OUTPUT
         echo "dev_repo_ref=$dev_repo_ref" >> $GITHUB_OUTPUT
         echo "dev_image_ref=$dev_image_ref" >> $GITHUB_OUTPUT
-
-    - name: 💎 Self Hosted Runner
-      shell: powershell
-      env:
-        userdata: |
-          #cloud-config
-          users:
-          - default
-          - uid: 1000
-            name: vscode
-            groups: admin,adm,video,docker,google-sudoers
-          - uid: 2000
-            name: runner
-            groups: admin,adm,video,docker,google-sudoers
-
-          write_files:
-          - owner: root
-            permissions: 0644
-            path: /etc/systemd/system/runner.service
-            content: |
-              [Unit]
-              Wants=gcr-online.target
-              After=gcr-online.target
-              Description=gcloud compute
-              [Service]
-              Environment="HOME=/home/runner"
-              ExecStop=/usr/bin/docker stop myrunner
-              ExecStopPost=/usr/bin/docker rm myrunner
-              ExecStartPre=/usr/bin/docker-credential-gcr configure-docker
-              ExecStart=/usr/bin/docker run --rm --name myrunner -e RUNNER_REPLACE_EXISTING=true -e RUNNER_NAME=Google-optimized-instance -e RUNNER_WORK_DIRECTORY=_work -e ACTIONS_RUNNER_HOOK_JOB_STARTED=/opt/runner/job_started.sh -e ACTIONS_RUNNER_HOOK_JOB_COMPLETED=/opt/runner/job_completed.sh -e RUNNER_REPOSITORY_URL=https://github.com/${{ inputs.repository }} -e GITHUB_ACCESS_TOKEN=${{ inputs.token }} -v /var/run/docker.sock:/var/run/docker.sock -v /mnt:/mnt ${{ inputs.pre_build_container }}
-
-          runcmd:
-          - systemctl daemon-reload
-          - systemctl start runner.service
-          - systemctl status runner.service
-
-          bootcmd:
-          - fsck.ext4 -tvy /dev/sdb1
-          - mkdir -p /mnt/disks/Linux
-          - mount -t ext4 -o discard,defaults /dev/sdb1 /mnt/disks/Linux
-
-      run: |
-        docker info
-        [IO.File]::WriteAllText("cloud-config", "${env:userdata}")
-
-    - name: 💎 Create Runner
-      #if: runner.os != 'Windows'
-      shell: bash
-      run: >
-        gcloud compute instances create google-cos
-        --service-account=project-owner@feedmapping.iam.gserviceaccount.com
-        --zone=us-central1-a --machine-type=e2-micro --enable-display-device --tags=https-server 
-        --no-boot-disk-auto-delete --image-family cos-stable --image-project cos-cloud --metadata-from-file=user-data=cloud-config
-        --create-disk=boot=no,auto-delete=no,device-name=deeplearning,mode=rw,size=50,type=pd-standard,image-project=deeplearning-platform-release,image-family=tf-ent-latest-gpu
