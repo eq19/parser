@@ -67,3 +67,12 @@ runs:
         echo "image_ref=$image_ref" >> $GITHUB_OUTPUT
         echo "dev_repo_ref=$dev_repo_ref" >> $GITHUB_OUTPUT
         echo "dev_image_ref=$dev_image_ref" >> $GITHUB_OUTPUT
+
+    - name: Test_Run
+      uses: philips-software/run-windows-docker-container-action@<version>
+      with:
+        image: mcr.microsoft.com/windows/servercore:20H2
+        entrypoint: powershell.exe
+        run: >-
+          echo "Hello world";
+          ./run-test-script.ps1;
