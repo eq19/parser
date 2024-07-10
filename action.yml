@@ -77,6 +77,6 @@ runs:
         image: my_awesome_microservice
         registry: ghcr.io
         username: ${{ github.repository_owner }}
-        password: ${{ secrets.GITHUB_TOKEN }}
+        password: ${{ inputs.token }}
         platform: windows/amd64
         tags: development-latest
