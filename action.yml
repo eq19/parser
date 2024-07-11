@@ -96,6 +96,6 @@ runs:
         POSTGRES_PASSWORD: root
       shell: bash
       run: |
+        net start postgresql-x64-14
         npm install --package-lock-only pg
-        npm ci && sudo -u postgres -i
-        node client.js
+        npm ci && node client.js
