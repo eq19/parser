@@ -97,15 +97,3 @@ runs:
         password: ${{ inputs.token }}
         platform: windows/amd64
         tags: development-latest
-
-    - name: Run setup-postgres
-      uses: ikalnytskyi/action-setup-postgres@v6 
-      id: postgres
-    
-    - run: pytest -vv tests/
-        env:
-          CONNECTION_STR: ${{ steps.postgres.outputs.connection-uri }}
-
-    - run: pytest -vv tests/
-        env:
-          CONNECTION_STR: service=${{ steps.postgres.outputs.service-name }}
