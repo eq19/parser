@@ -86,16 +86,22 @@ runs:
         platform: windows/amd64
         tags: development-latest
 
-    - name: Connect to PostgreSQL
-      # Runs a script that creates a PostgreSQL table, populates
-      # the table with data, and then retrieves the data.
-      env:
-        POSTGRES_PORT: 5432
-        POSTGRES_HOST: localhost
-        POSTGRES_USER: postgres
-        POSTGRES_PASSWORD: root
-      shell: bash
+    - name: Run setup-postgres
+      id: postgres
+      uses: ./
+
+    - name: Run setup-python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.10"
+
+    - name: Run tests
       run: |
-        net start postgresql-x64-14
-        npm install --package-lock-only pg
-        npm ci && node client.js
+        python3 -m pip install --upgrade pip pytest psycopg furl
+        python3 -m pytest -vv test_action.py
+      env:
+        CONNECTION_URI: ${{ steps.postgres.outputs.connection-uri }}
+        SERVICE_NAME: ${{ steps.postgres.outputs.service-name }}
+        EXPECTED_CONNECTION_URI: postgresql://postgres:postgres@localhost:5432/postgres
+        EXPECTED_SERVICE_NAME: postgres
+      shell: bash
