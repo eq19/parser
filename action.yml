@@ -73,7 +73,7 @@ runs:
 
     - name: Build and Push my_awesome_microservice
       uses: mr-smithers-excellent/docker-build-push@v5
-      if: runner.os == 'Linux'
+      if: runner.os == 'Ubuntu'
       with:
         image: my_awesome_microservice
         registry: ghcr.io
