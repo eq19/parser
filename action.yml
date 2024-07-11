@@ -90,18 +90,10 @@ runs:
       uses: ikalnytskyi/action-setup-postgres@v6 
       id: postgres
     
-    - name: Run setup-python
-      uses: actions/setup-python@v5
-      with:
-        python-version: "3.10"
+    - run: pytest -vv tests/
+        env:
+          CONNECTION_STR: ${{ steps.postgres.outputs.connection-uri }}
 
-    - name: Run tests
-      shell: bash
-      env:
-        CONNECTION_URI: ${{ steps.postgres.outputs.connection-uri }}
-        SERVICE_NAME: ${{ steps.postgres.outputs.service-name }}
-        EXPECTED_CONNECTION_URI: postgresql://postgres:postgres@localhost:5432/postgres
-        EXPECTED_SERVICE_NAME: postgres
-      run: |
-        python3 -m pip install --upgrade pip pytest psycopg furl
-        python3 -m pytest -vv test_action.py
+    - run: pytest -vv tests/
+        env:
+          CONNECTION_STR: service=${{ steps.postgres.outputs.service-name }}
