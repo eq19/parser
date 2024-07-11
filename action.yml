@@ -55,6 +55,18 @@ runs:
       with:
         node-version: 20
 
+    - name: 🪂 Setup dotnet
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '3.1.x'
+
+    - name: Test Dotnet
+      if: runner.os == 'Ubuntu'
+      shell: bash
+      run: |
+        dotnet build
+        dotnet test    
+    
     - name: 💎 Set parameters
       shell: bash
       id: variables
