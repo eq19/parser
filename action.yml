@@ -58,7 +58,14 @@ runs:
     - name: 🪂 Setup dotnet
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '3.1.x'
+        dotnet-version: '7.0.100-preview.5.22307.18'
+
+    - name: Install dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal
 
     - name: Test Dotnet
       if: runner.os == 'Ubuntu'
