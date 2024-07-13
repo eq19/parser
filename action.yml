@@ -72,7 +72,7 @@ runs:
       id: variables
       run: |
         docker info
-        docker image list -all
+        docker image ls
         
         repo_name=${{ inputs.docker_hub_username }}/${{ inputs.image_name }}
         image_tag=${{ inputs.image_tag }}
