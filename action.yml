@@ -55,28 +55,6 @@ runs:
       with:
         node-version: 20
 
-    - name: 🪂 Setup dotnet
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 'latest'
-
-    - name: Install dependencies
-      shell: bash
-      run: dotnet restore
-    - name: Build
-      shell: bash
-      run: dotnet build --configuration Release --no-restore
-    - name: Test
-      shell: bash
-      run: dotnet test --no-restore --verbosity normal
-
-    - name: Test Dotnet
-      if: runner.os == 'Ubuntu'
-      shell: bash
-      run: |
-        dotnet build
-        dotnet test    
-    
     - name: 💎 Set parameters
       shell: bash
       id: variables
