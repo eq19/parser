@@ -1,4 +1,4 @@
-# https://github.com/microsoft/dotnet-framework-docker
+# github.com/microsoft/dotnet-framework-docker/samples/dotnetapp
 FROM mcr.microsoft.com/dotnet/framework/sdk:4.8 AS build
 WORKDIR /app
 
