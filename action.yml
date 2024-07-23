@@ -1,0 +1,87 @@
+name: 'Jekyll Deploy Action'
+description: >
+  A Github Action to deploy the Jekyll site conveniently for GitHub Pages
+inputs:
+  provider:
+    description: 'The deploy provider'
+    required: true
+  owner:
+    description: 'The deploy owner'
+    required: false
+  token:
+    description: 'The deploy token'
+    required: false
+  credentials:
+    description: 'The gcloud credentials'
+    required: true
+  repository:
+    description: 'The deploy repository'
+    required: false
+  branch:
+    description: 'The deploy branch'
+    required: false
+  actor:
+    description: 'The github username creating the commit'
+    required: false
+  cname:
+    description: 'The cname to use for the site'
+    required: false
+  bundler_ver:
+    description: 'The Bundler version'
+    required: false
+  jekyll_baseurl:
+    description: 'The Jekyll website baseurl'
+    required: false
+  pre_build_container:
+    description: 'The pre-build docker container'
+    default: 'eq19/prime'
+    required: false
+
+branding:
+  icon: 'command'
+  color: 'red'
+
+runs:
+  #using: 'node20'
+  #main: '.github/run/main.js'
+  #post: '.github/run/post.js'
+  #post-if: 'success()'
+  using: composite
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: 💎 Set parameters
+      shell: bash
+      id: variables
+      run: |
+        docker info
+        docker image ls
+        
+        repo_name=${{ inputs.docker_hub_username }}/${{ inputs.image_name }}
+        image_tag=${{ inputs.image_tag }}
+        dev_image_tag="$image_tag"
+        repo_ref="$repo_name:$image_tag"
+        image_ref="${{ inputs.image_name }}:$image_tag"
+        dev_repo_ref="$repo_name:$dev_image_tag"
+        dev_image_ref="${{ inputs.image_name }}:$dev_image_tag"
+
+        echo "repo_name=$repo_name" >> $GITHUB_OUTPUT
+        echo "image_tag=$image_tag" >> $GITHUB_OUTPUT
+        echo "dev_image_tag=$dev_image_tag" >> $GITHUB_OUTPUT
+        echo "repo_ref=$repo_ref" >> $GITHUB_OUTPUT
+        echo "image_ref=$image_ref" >> $GITHUB_OUTPUT
+        echo "dev_repo_ref=$dev_repo_ref" >> $GITHUB_OUTPUT
+        echo "dev_image_ref=$dev_image_ref" >> $GITHUB_OUTPUT
+
+    - name: Build and Push my_awesome_microservice
+      uses: mr-smithers-excellent/docker-build-push@v5
+      if: runner.os == 'Ubuntu'
+      with:
+        image: my_awesome_microservice
+        registry: ghcr.io
+        username: ${{ github.repository_owner }}
+        password: ${{ inputs.token }}
+        platform: windows/amd64
+        tags: development-latest
+
