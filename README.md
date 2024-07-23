@@ -7,7 +7,7 @@
   </a>
 </p>
 
-<h2 align="center">AngouriMath</h2>
+<h2 align="center"><a href=https://github.com/asc-community/AngouriMath>AngouriMath</a></h2>
 
 <p align="center">
   <i>New open-source cross-platform symbolic algebra library for </i><b>C# · F# · Jupyter · C++ (WIP)</b>
