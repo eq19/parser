@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Consts.fs" />
+    <Compile Include="AssemblyLoadBuilder.fs" />
+    <Compile Include="FSharpInteractive.fs" />
+    <Compile Include="PreRunCode.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.SystemTextJson" Version="0.17.4" />
+    <PackageReference Include="Microsoft.DotNet.Interactive.FSharp" Version="1.0.0-beta.21606.1" />
+    <PackageReference Include="FSharp.Core" Version="6.0.1" />
+    <!--
+    <PackageReference Include="AngouriMath.Interactive" Version="1.4.0-preview.3" />
+    -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Wrappers\AngouriMath.Interactive\AngouriMath.Interactive.fsproj" />
+  </ItemGroup>
+
+</Project>

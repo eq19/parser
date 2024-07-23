@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  
+  <Import Project="$(MSBuildThisFileDirectory)/../../Package.Build.props" />
+  
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Product>Wrapper of AngouriMath for Jupyter Interactive</Product>
+    <Description>Wrapper of AngouriMath for Jupyter Interactive. https://am.angouri.org/</Description>
+    <PackageTags>$(PackageTags), interactive, fsharp</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <NoWarn>
+      $(NoWarn);
+      NU5100 <!-- dll outside of lib/ folder --> ;
+      FS0086 <!-- operators overrided --> ;
+      NU5104 <!-- prerelease dependency--> 
+    </NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Plot.fs" />
+    <None Include="Repack.ps1" />
+    
+    <Compile Include="KernelExtension.fs" />
+    <Compile Include="AggressiveOperators.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <None Remove="bin\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AngouriMath.FSharp" Version="1.4.0-preview.3" />
+    <PackageReference Include="Microsoft.DotNet.Interactive" Version="1.0.0-beta.21606.1" />
+    <PackageReference Include="Microsoft.DotNet.Interactive.Formatting" Version="1.0.0-beta.21606.1" />
+    <PackageReference Include="Plotly.NET" Version="2.0.0-preview.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="$(OutputPath)/AngouriMath.Interactive.dll">
+      <Pack>True</Pack>
+      <PackagePath>interactive-extensions/dotnet</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>

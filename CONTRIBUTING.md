@@ -1,118 +1,86 @@
-## Contributing Issues
+# Contributing: how to
 
-#### Bug Reports
+<a href="https://discord.gg/YWJEX7a"><img alt="Discord" src="https://img.shields.io/discord/642350046213439489?color=darkgreen&label=Join+our+chat!&logo=discord&style=flat&labelColor=474"></a>
 
-Please provide a (**simple**) way to reproduce the problem.
-A bug that can not be reproduced is less likely to be solved.
+We warmly welcome any contributors and contributions to our project. You should not hesitate to open pull requests and ask us about any issue you encounter while writing your code. Remember: if you are here, you already want to help the project, so feel free to ask anything. Not to break this cozy atmosphere, there are a few recommendations to follow.
 
-#### Feature Requests
+## Developer guide
 
-Please also include the reasoning for the desired feature and not just its description.
-Sometimes it is obvious, but other times a few sample use cases or an explanation
-can come in handy.
+### Building and testing
 
-## Contributing Code
+If you are not on Windows, static analyzers and some samples might not be built. However, AngouriMath, AngouriMath.FSharp, AngouriMath.Interactive and AngouriMath.CPP are all buildable on Windows, Linux and MacOS, as well as the tests for them. There is no explicit build script, as everything is built in a normal way via both GUI and CLI. CLI:
+```
+cd Sources
+dotnet build
+```
+This will build your solution successfully, if you are on Windows. Otherwise, you might need to build projects separately:
+```
+cd Sources
+dotnet build -p AngouriMath
+cd Wrappers
+dotnet build -p AngouriMath.FSharp
+dotnet build -p AngouriMath.Interactive
+```
 
-There are two types of code contributions.
+Running tests is no more complicated:
+```
+cd Sources/Tests
+dotnet test UnitTests
+dotnet test FSharpWrapperUnitTests
+```
 
-#### Contributing Sample Grammars and Examples
+Use `Sources/Samples/Samples/Playground.csproj` as a sandbox project, where you can manually test anything you want.
 
-This is probably the **easiest** way to contribute as it does not require any knowledge of chevrotain's internals.
-And each contribution is self-contained and limited in scope.
+### Tips for working with git
 
-[Sample Grammars][sample_grammars] contributions are particularly encouraged.
+You should be familiar with `git` if you want to contribute to the project. As a good tip, however, we provide a sample set of commands for basic needs.
 
-See some [existing examples][examples] to get started.
+Adding upstream:
+```
+git remote add upstream https://github.com/asc-community/AngouriMath
+```
 
-Details:
+Adding a branch based on AngouriMath/master to your fork:
+```
+git checkout upstream/master
+git pull upstream master
+git switch -c my-branch
+git push --set-upstream origin my-branch
+```
 
-- An Example **must** include some tests with a **\_spec.js** suffix.
+## Contribution guidelines
 
-#### Contributing To Chevrotain's Runtime Source code.
+### Closing an issue
 
-This can be more complex as more in-depth knowledge of Chevrotain internals may be needed.
+One of the most valuable ways to contribute to the project is to close tickets from from [projects](https://github.com/asc-community/AngouriMath/projects) or [issues](https://github.com/asc-community/AngouriMath/issues). If you wish to work on a card, ping one of the maintaintainers, for example, @WhiteBlackGoose, and ask for assigning the issue to you.
 
-Details:
+Then, when you started working on it, we highly recommend opening a draft pull request as soon as possible. This will help everybody see your changes and potentially help you. Then, once PR is ready, open it and wait for a review.
 
-- ~100% test coverage is **required**.
-  - It is possible to disable coverage for specific code, but there must be a very good reason to do so.
+### Adding your feature or fixing a bug
 
-## Development Environment
+It is highly encouraged to open an issue first. Once opened, follow the approach described above.
 
-Chevrotain is developed as a mono-repo with a single (temporary state) productive package
-and multiple example packages.
+### Types of issues
 
-Chevrotain uses **npm** tasks for the development flows.
-and pnpm + lerna for the monorepo management.
+Issues marked with `Proposal` are those suggesting ideas. If the idea is a good one and is going to be implemented, it is marked as `Accepted`. If an idea cannot be implemented any time soon, it is marked as `Not now`.
 
-#### Initial Setup
+`Minor bug` and `Bug` are applied to an issue after it's clear, that the behaviour is not desired. `Minor bug` is for cases, when despite that the behaviour is undesired, the impact is low (for example, in case if a simplificator doesn't simplify well enough). `Bug` reflects serious issues.
 
-In the root of this Repo:
+`Opinions wanted` - anybody is welcomed to share their opinion on a subject.
 
-- `pnpm`
+`Area: *` - a number of labels for issues, which are only specific to one of the wrappers: AngouriMath.FSharp, AngouriMath.Interactive, AngouriMath.CPP.
 
-#### Some basic dev flows to get started
+### Contributing details
 
-Chevrotain is written using Typescript, so compilation to JavaScript is needed.
+You might have some questions about the way you should write your code, or how you could call a function, etc. It is recommended to check the [documentation](./Sources/AngouriMath/Docs/Contributing).
 
-- `pnpm compile`
+## Architecture of the project
 
-Alternatively during development one would want to recompile on file changes.
-
-- `pnpm compile:watch`
-
-The compilation result will appear in the **lib** folder in each sub-package.
-
-#### Code Formatting
-
-Chevrotain uses **prettier** to avoid caring about code formatting...
-To format your new code use:
-
-`pnpm format:fix`
-
-#### Running the central CI flow locally.
-
-This is just another npm task which performs the whole flow
-including linting / doc generation / d.ts API creation / ...
-
-- `pnpm ci`
-
-#### Committing Changes
-
-This project enforces consistent commit message format same as in the [Angular project](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#type).
-
-it is recommended to use `git cz` CLI tool to create these conventional commit messages.
-
-- requires [commitizen](https://github.com/commitizen/cz-cli#installing-the-command-line-tool) to be installed.
-
-#### Release Process
-
-The release process **requires push permissions to master**.
-
-- Update the [CHANGELOG](./packages/website/docs/changes/CHANGELOG.md).
-  - The header must be `## X.Y.Z (INSERT_DATE_HERE)` (**literally**).
-- Update the [BREAKING_CHANGES.md](./packages/website/docs/changes/BREAKING_CHANGES.md).
-  - Only for major versions...
-- Push the changes related updates to master.
-- execute `pnpm release:version` and follow the instructions.
-  - This will update version related files and push a new version **tag** to Github.
-  - Github Actions will execute a deployment to npmjs.com due to this new tag.
-  - Additionally, new website contents will be pushed to the gh-pages branch.
-- Check that the release was successful.
-
-  - On [Github Actions release build](https://github.com/Chevrotain/chevrotain/actions/workflows/release.yml)
-  - On [npmjs.com](https://www.npmjs.com/package/chevrotain)
-  - On [The website](https://chevrotain.io/docs/changes/CHANGELOG.html)
-  - On [The APIs webpage](https://chevrotain.io/documentation/)
-    - The URL being redirected to should include the latest version number.
-
-#### Legal
-
-All Contributors must sign the [CLA][cla].
-The process is completely automated using https://cla-assistant.io/
-simply follow the instructions in the pull request.
-
-[examples]: https://github.com/chevrotain/chevrotain/tree/master/examples
-[sample_grammars]: https://github.com/chevrotain/chevrotain/tree/master/examples/grammars
-[cla]: https://cla-assistant.io/chevrotain/chevrotain
-[package]: https://github.com/chevrotain/chevrotain/blob/master/packages/chevrotain/package.json
+There are a few projects the repository contains:
+```
+              +-> AngouriMath.Experimental
+              |
+AngouriMath --+-> AngouriMath.FSharp --> AngouriMath.Interactive --> AngouriMath.Terminal
+              |
+              +-> AngouriMath.CPP
+```
