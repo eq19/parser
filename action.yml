@@ -57,8 +57,7 @@ runs:
       run: |
         docker info
         docker image ls
-        #curl -L -s 'https://registry.hub.docker.com/v2/repositories/eq19/prime/tags?page_size=1024'|jq '."results"[]["name"]'
-        
+          
         repo_name=${{ inputs.docker_hub_username }}/${{ inputs.image_name }}
         image_tag=${{ inputs.image_tag }}
         dev_image_tag="$image_tag"
