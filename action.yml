@@ -63,8 +63,8 @@ runs:
       env:
         SERVICE_NAME: postgres
         EXPECTED_SERVICE_NAME: postgres
-        CONNECTION_URI: postgresql://postgres:postgres@localhost:5432/postgres
-        EXPECTED_CONNECTION_URI: postgresql://postgres:postgres@localhost:5432/postgres
+        CONNECTION_URI: postgresql://postgres:postgres@postgres:5432/postgres
+        EXPECTED_CONNECTION_URI: postgresql://postgres:postgres@postgres:5432/postgres
 
     - name: Authentication    
       uses: 'google-github-actions/auth@v2'
