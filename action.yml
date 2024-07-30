@@ -67,7 +67,7 @@ runs:
         printenv | sort
         python3 -m pytest -vv test.py
       env:
-        CONNECTION_URI: ${{ steps.postgres.outputs.connection-uri }}
         SERVICE_NAME: postgres
-        EXPECTED_CONNECTION_URI: postgresql://yoda:GrandMaster@localhost:34837/test
         EXPECTED_SERVICE_NAME: postgres
+        CONNECTION_URI: postgresql://postgres:postgres@postgres:5432/postgres
+        EXPECTED_CONNECTION_URI: postgresql://postgres:postgres@postgres:5432/postgres
