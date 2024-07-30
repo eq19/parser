@@ -62,12 +62,9 @@ runs:
       id: variables
       run: |
         docker info
+        printenv | sort
         docker image ls
         docker container ls -a
-        docker network create con
-        docker network connect con myrunner
-        docker network connect con postgres
-        printenv | sort
          
         repo_name=${{ inputs.docker_hub_username }}/${{ inputs.image_name }}
         image_tag=${{ inputs.image_tag }}
