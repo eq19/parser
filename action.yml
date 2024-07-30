@@ -60,6 +60,11 @@ runs:
         docker container ls -a
         printenv | sort
         python3 -m pytest -vv test.py
+      env:
+        SERVICE_NAME: postgres
+        EXPECTED_SERVICE_NAME: postgres
+        CONNECTION_URI: postgresql://postgres@host.docker.internal:5432
+        EXPECTED_CONNECTION_URI: postgresql://postgres@host.docker.internal:5432
 
     - name: Authentication    
       uses: 'google-github-actions/auth@v2'
