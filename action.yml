@@ -51,6 +51,13 @@ runs:
     - name: Checkout
       uses: actions/checkout@v4
 
+    - name: Authentication    
+      uses: 'google-github-actions/auth@v2'
+      shell: bash
+      id: 'auth'
+      with:
+        credentials_json: '${{ inputs.credentials }}'
+
     - name: 💎 Set parameters
       shell: bash
       id: variables
@@ -59,9 +66,10 @@ runs:
         docker image ls
         docker container ls -a
         docker network create con
-        #docker network connect con app1
-        #docker network connect con app2
-          
+        docker network connect con myrunner
+        docker network connect con postgres
+        printenv | sort
+         
         repo_name=${{ inputs.docker_hub_username }}/${{ inputs.image_name }}
         image_tag=${{ inputs.image_tag }}
         dev_image_tag="$image_tag"
