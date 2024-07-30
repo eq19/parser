@@ -57,6 +57,7 @@ runs:
       run: |
         docker info
         docker image ls
+        docker container ls -a
         docker network create con
         docker network connect con app1
         docker network connect con app2
