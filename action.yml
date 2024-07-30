@@ -65,19 +65,9 @@ runs:
         docker image ls
         docker container ls -a
         printenv | sort
-         
-        repo_name=${{ inputs.docker_hub_username }}/${{ inputs.image_name }}
-        image_tag=${{ inputs.image_tag }}
-        dev_image_tag="$image_tag"
-        repo_ref="$repo_name:$image_tag"
-        image_ref="${{ inputs.image_name }}:$image_tag"
-        dev_repo_ref="$repo_name:$dev_image_tag"
-        dev_image_ref="${{ inputs.image_name }}:$dev_image_tag"
-
-        echo "repo_name=$repo_name" >> $GITHUB_OUTPUT
-        echo "image_tag=$image_tag" >> $GITHUB_OUTPUT
-        echo "dev_image_tag=$dev_image_tag" >> $GITHUB_OUTPUT
-        echo "repo_ref=$repo_ref" >> $GITHUB_OUTPUT
-        echo "image_ref=$image_ref" >> $GITHUB_OUTPUT
-        echo "dev_repo_ref=$dev_repo_ref" >> $GITHUB_OUTPUT
-        echo "dev_image_ref=$dev_image_ref" >> $GITHUB_OUTPUT
+        python3 -m pytest -vv test.py
+      env:
+        CONNECTION_URI: ${{ steps.postgres.outputs.connection-uri }}
+        SERVICE_NAME: postgres
+        EXPECTED_CONNECTION_URI: postgresql://yoda:GrandMaster@localhost:34837/test
+        EXPECTED_SERVICE_NAME: postgres
