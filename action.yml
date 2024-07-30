@@ -62,9 +62,9 @@ runs:
       id: variables
       run: |
         docker info
-        printenv | sort
         docker image ls
         docker container ls -a
+        printenv | sort
          
         repo_name=${{ inputs.docker_hub_username }}/${{ inputs.image_name }}
         image_tag=${{ inputs.image_tag }}
@@ -81,15 +81,3 @@ runs:
         echo "image_ref=$image_ref" >> $GITHUB_OUTPUT
         echo "dev_repo_ref=$dev_repo_ref" >> $GITHUB_OUTPUT
         echo "dev_image_ref=$dev_image_ref" >> $GITHUB_OUTPUT
-
-    - name: Build and Push my_awesome_microservice
-      uses: mr-smithers-excellent/docker-build-push@v5
-      if: runner.os == 'Ubuntu'
-      with:
-        image: my_awesome_microservice
-        registry: ghcr.io
-        username: ${{ github.repository_owner }}
-        password: ${{ inputs.token }}
-        platform: windows/amd64
-        tags: development-latest
-
