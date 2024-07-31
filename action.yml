@@ -59,6 +59,7 @@ runs:
         docker image ls
         docker container ls -a
         printenv | sort
+        sudo -u postgres -i
         python3 -m pytest -vv test.py
       env:
         SERVICE_NAME: postgres
