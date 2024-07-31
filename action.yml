@@ -75,7 +75,7 @@ runs:
         # use the internal host here because we have specified a container for the job.
         # If we were running the job on the VM this would be localhost
         POSTGRES_HOST: host.docker.internal
-     shell: bash
+      shell: bash
       run: |
         docker info
         docker image ls
