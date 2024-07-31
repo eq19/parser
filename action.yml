@@ -96,7 +96,7 @@ runs:
       # Runs a script that creates a Redis client, populates
       # the client with data, and retrieves data
       run: |
-        npm install --package-lock-only redis           
+        npm install redis           
         docker info
         docker image ls
         docker container ls -a
