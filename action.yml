@@ -86,7 +86,7 @@ runs:
         # For more information, see https://docs.npmjs.com/cli/ci.html
         npm install --package-lock-only pg
         #sudo -u postgres -i
-        npm ci && node client.js
+        npm ci && node pg.js
         python3 -m pytest -vv test.py
       shell: bash
 
@@ -100,5 +100,7 @@ runs:
         REDIS_PORT: 6379
       # Runs a script that creates a Redis client, populates
       # the client with data, and retrieves data
-      run: node redis.js
+      run: |
+        npm install --package-lock-only redis           
+        node redis.js
       shell: bash
