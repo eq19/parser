@@ -69,14 +69,18 @@ runs:
     # For more information, see https://docs.npmjs.com/cli/ci.html
     - name: Install dependencies
       env:
+        POSTGRES_PORT: 5432
         POSTGRES_USER: postgres
         POSTGRES_PASSWORD: postgres
-        # use postgres for the host here because we have specified a container for the job.
+        # use the internal host here because we have specified a container for the job.
         # If we were running the job on the VM this would be localhost
-        POSTGRES_HOST: postgres
-        POSTGRES_PORT: 5432
-      shell: bash
+        POSTGRES_HOST: host.docker.internal
+     shell: bash
       run: |
+        docker info
+        docker image ls
+        docker container ls -a
+        printenv | sort
         npm install --package-lock-only pg
         #sudo -u postgres -i
         npm ci && node client.js
@@ -86,12 +90,8 @@ runs:
       id: variables
       shell: bash
       run: |
-        docker info
-        docker image ls
-        docker container ls -a
-        printenv | sort
         python3 -m pytest -vv test.py
       env:
         SERVICE_NAME: postgres
         EXPECTED_SERVICE_NAME: postgres
-        EXPECTED_CONNECTION_URI: postgresql+psycopg2://postgres:@host.docker.internal:5432/postgres?sslmode=disable
+        EXPECTED_CONNECTION_URI: postgresql+psycopg2://postgres:postgres@host.docker.internal:5432/postgres?sslmode=disable
