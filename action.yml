@@ -57,15 +57,39 @@ runs:
       with:
         credentials_json: '${{ inputs.credentials }}'
 
-    - name: 💎 Set parameters
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        
+    #- uses: docker://postgres
+      #with:
+        #args: psql -U postgres -c 'SHOW config_file'
+    
+    # Performs a clean installation of all dependencies in the `package.json` file
+    # For more information, see https://docs.npmjs.com/cli/ci.html
+    - name: Install dependencies
+      env:
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: postgres
+        # use postgres for the host here because we have specified a container for the job.
+        # If we were running the job on the VM this would be localhost
+        POSTGRES_HOST: postgres
+        POSTGRES_PORT: 5432
       shell: bash
+      run: |
+        npm install --package-lock-only pg
+        #sudo -u postgres -i
+        npm ci && node client.js
+        
+    - name: 💎 Set parameters
+      if: runner.os == 'Ubuntu'
       id: variables
+      shell: bash
       run: |
         docker info
         docker image ls
         docker container ls -a
         printenv | sort
-        #sudo -u postgres -i
         python3 -m pytest -vv test.py
       env:
         SERVICE_NAME: postgres
