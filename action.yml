@@ -65,9 +65,8 @@ runs:
       #with:
         #args: psql -U postgres -c 'SHOW config_file'
     
-    # Performs a clean installation of all dependencies in the `package.json` file
-    # For more information, see https://docs.npmjs.com/cli/ci.html
-    - name: Install dependencies
+    - name: 💎 Connect to postgres
+      if: runner.os == 'Ubuntu'
       env:
         POSTGRES_PORT: 5432
         POSTGRES_USER: postgres
@@ -75,23 +74,30 @@ runs:
         # use the internal host here because we have specified a container for the job.
         # If we were running the job on the VM this would be localhost
         POSTGRES_HOST: postgres
-      shell: bash
+        SERVICE_NAME: postgres
+        EXPECTED_SERVICE_NAME: postgres
+        EXPECTED_CONNECTION_URI: postgresql+psycopg2://postgres:postgres@host.docker.internal:5432/postgres?sslmode=disable
       run: |
         docker info
         docker image ls
         docker container ls -a
         printenv | sort
+        # Performs a clean installation of all dependencies in the `package.json` file
+        # For more information, see https://docs.npmjs.com/cli/ci.html
         npm install --package-lock-only pg
         #sudo -u postgres -i
         npm ci && node client.js
-        
-    - name: 💎 Set parameters
-      if: runner.os == 'Ubuntu'
-      id: variables
-      shell: bash
-      run: |
         python3 -m pytest -vv test.py
+      shell: bash
+
+    - name: 💎 Connect to Redis
+      # Environment variable used by the `client.js` script to create a new Redis client.
       env:
-        SERVICE_NAME: postgres
-        EXPECTED_SERVICE_NAME: postgres
-        EXPECTED_CONNECTION_URI: postgresql+psycopg2://postgres:postgres@host.docker.internal:5432/postgres?sslmode=disable
+        # The hostname used to communicate with the Redis service container
+        REDIS_HOST: redis
+        # The default Redis port
+        REDIS_PORT: 6379
+      # Runs a script that creates a Redis client, populates
+      # the client with data, and retrieves data
+      run: node redis.js
+      shell: bash
