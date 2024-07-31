@@ -64,7 +64,7 @@ runs:
       env:
         SERVICE_NAME: postgres
         EXPECTED_SERVICE_NAME: postgres
-        EXPECTED_CONNECTION_URI: postgresql+psycopg2://postgres:@host.docker.internal:5432/postgres
+        EXPECTED_CONNECTION_URI: postgresql+psycopg2://postgres:@host.docker.internal:5432/postgres?sslmode=disable
 
     - name: Authentication    
       uses: 'google-github-actions/auth@v2'
