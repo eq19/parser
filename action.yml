@@ -80,7 +80,7 @@ runs:
       run: |
         # Performs a clean installation of all dependencies in the `package.json` file
         # For more information, see https://docs.npmjs.com/cli/ci.html
-        npm install --package-lock-only pg
+        #npm install --package-lock-only pg
         #sudo -u postgres -i
         npm ci && node pg.js
         python3 -m pytest -vv test.py
@@ -96,7 +96,7 @@ runs:
       # Runs a script that creates a Redis client, populates
       # the client with data, and retrieves data
       run: |
-        npm install redis           
+        #npm install redis           
         docker info
         docker image ls
         docker container ls -a
