@@ -51,6 +51,12 @@ runs:
     - name: Checkout
       uses: actions/checkout@v4
 
+    - name: Authentication    
+      uses: 'google-github-actions/auth@v2'
+      id: 'auth'
+      with:
+        credentials_json: '${{ inputs.credentials }}'
+
     - name: 💎 Set parameters
       shell: bash
       id: variables
@@ -65,9 +71,3 @@ runs:
         SERVICE_NAME: postgres
         EXPECTED_SERVICE_NAME: postgres
         EXPECTED_CONNECTION_URI: postgresql+psycopg2://postgres:@host.docker.internal:5432/postgres?sslmode=disable
-
-    - name: Authentication    
-      uses: 'google-github-actions/auth@v2'
-      id: 'auth'
-      with:
-        credentials_json: '${{ inputs.credentials }}'
