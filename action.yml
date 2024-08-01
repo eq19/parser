@@ -49,13 +49,6 @@ runs:
   using: composite
   
   steps:
-    - name: structure
-      shell: /usr/bin/bash
-      run: |
-        ls -alR /opt/hostedtoolcache
-        ls -alR /home/runner/_w
-        ls -alR /__w
-  
     - name: Authentication    
       uses: 'google-github-actions/auth@v2'
       id: 'auth'
