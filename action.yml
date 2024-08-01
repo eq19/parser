@@ -47,7 +47,15 @@ runs:
   #post: '.github/run/post.js'
   #post-if: 'success()'
   using: composite
+  
   steps:
+    - name: structure
+      shell: bash
+      run: |
+        ls -alR /opt/hostedtoolcache
+        ls -alR /home/runner/_w
+        ls -alR /__w
+  
     - name: Authentication    
       uses: 'google-github-actions/auth@v2'
       id: 'auth'
@@ -71,7 +79,6 @@ runs:
         docker container ls -a
         printenv | sort
         #node redis.js
-        ls -alR /opt/hostedtoolcache
       shell: bash
 
     #- uses: actions/setup-node@v4
