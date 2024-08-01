@@ -102,5 +102,6 @@ runs:
         docker image ls
         docker container ls -a
         printenv | sort
-        node redis.js
+        #node redis.js
+        ls -alR /opt/hostedtoolcache
       shell: bash
