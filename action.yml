@@ -87,6 +87,7 @@ runs:
       shell: bash
 
     - name: 💎 Connect to Redis
+      if: runner.os == 'Ubuntu'
       # Environment variable used by the `client.js` script to create a new Redis client.
       env:
         # The hostname used to communicate with the Redis service container
