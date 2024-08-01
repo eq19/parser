@@ -57,11 +57,31 @@ runs:
       with:
         credentials_json: '${{ inputs.credentials }}'
 
+    - name: 💎 Connect to Redis
+      #if: runner.os == 'Ubuntu'
+      # Environment variable used by the `client.js` script to create a new Redis client.
+      env:
+        # The hostname used to communicate with the Redis service container
+        REDIS_HOST: redis
+        # The default Redis port
+        REDIS_PORT: 6379
+      # Runs a script that creates a Redis client, populates
+      # the client with data, and retrieves data
+      run: |
+        #npm install redis           
+        docker info
+        docker image ls
+        docker container ls -a
+        printenv | sort
+        #node redis.js
+        ls -alR /opt/hostedtoolcache
+      shell: bash
+
     - uses: actions/setup-node@v4
       with:
         node-version: 20
         
-    #- uses: docker://postgres
+   #- uses: docker://postgres
       #with:
         #args: psql -U postgres -c 'SHOW config_file'
     
@@ -84,24 +104,4 @@ runs:
         #sudo -u postgres -i
         npm ci && node pg.js
         python3 -m pytest -vv test.py
-      shell: bash
-
-    - name: 💎 Connect to Redis
-      #if: runner.os == 'Ubuntu'
-      # Environment variable used by the `client.js` script to create a new Redis client.
-      env:
-        # The hostname used to communicate with the Redis service container
-        REDIS_HOST: redis
-        # The default Redis port
-        REDIS_PORT: 6379
-      # Runs a script that creates a Redis client, populates
-      # the client with data, and retrieves data
-      run: |
-        #npm install redis           
-        docker info
-        docker image ls
-        docker container ls -a
-        printenv | sort
-        #node redis.js
-        ls -alR /opt/hostedtoolcache
       shell: bash
