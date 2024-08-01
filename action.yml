@@ -77,11 +77,11 @@ runs:
         ls -alR /opt/hostedtoolcache
       shell: bash
 
-    - uses: actions/setup-node@v4
-      with:
-        node-version: 20
+    #- uses: actions/setup-node@v4
+      #with:
+        #node-version: 20
         
-   #- uses: docker://postgres
+    #- uses: docker://postgres
       #with:
         #args: psql -U postgres -c 'SHOW config_file'
     
