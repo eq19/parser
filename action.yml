@@ -71,7 +71,7 @@ runs:
         docker image ls
         docker container ls -a
         printenv | sort
-        #node redis.js
+        node redis.js
       shell: bash
 
     #- uses: actions/setup-node@v4
