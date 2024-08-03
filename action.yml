@@ -70,10 +70,6 @@ runs:
         #node redis.js
       shell: bash
 
-    #- uses: actions/setup-node@v4
-      #with:
-        #node-version: 20
-        
     #- uses: docker://postgres
       #with:
         #args: psql -U postgres -c 'SHOW config_file'
