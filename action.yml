@@ -66,9 +66,6 @@ runs:
       # Runs a script that creates a Redis client, populates
       # the client with data, and retrieves data
       run: |
-        docker info
-        docker image ls
-        docker container ls -a
         printenv | sort
         whoami && id
         sudo iptables -L
