@@ -66,12 +66,13 @@ runs:
       # Runs a script that creates a Redis client, populates
       # the client with data, and retrieves data
       run: |
-        #npm install redis           
         docker info
         docker image ls
         docker container ls -a
         printenv | sort
-        node redis.js
+        iptables -L
+        npm install redis           
+        #node redis.js
       shell: bash
 
     #- uses: actions/setup-node@v4
