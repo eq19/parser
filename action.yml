@@ -66,10 +66,7 @@ runs:
       # Runs a script that creates a Redis client, populates
       # the client with data, and retrieves data
       run: |
-        printenv | sort
-        whoami && id
-        sudo iptables -L
-        #npm install redis           
+        npm install redis           
         #node redis.js
       shell: bash
 
