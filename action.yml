@@ -60,7 +60,7 @@ runs:
       # Environment variable used by the `client.js` script to create a new Redis client.
       env:
         # The hostname used to communicate with the Redis service container
-        REDIS_HOST: localhost
+        REDIS_HOST: redis
         # The default Redis port
         REDIS_PORT: 6379
       # Runs a script that creates a Redis client, populates
@@ -73,7 +73,7 @@ runs:
         whoami && id
         sudo iptables -L
         npm install redis           
-        #node redis.js
+        node redis.js
       shell: bash
 
     #- uses: actions/setup-node@v4
