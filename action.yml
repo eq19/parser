@@ -72,7 +72,7 @@ runs:
         printenv | sort
         whoami && id
         sudo iptables -L
-        npm install redis           
+        #npm install redis           
         node redis.js
       shell: bash
 
