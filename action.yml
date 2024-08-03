@@ -60,13 +60,13 @@ runs:
       # Environment variable used by the `client.js` script to create a new Redis client.
       env:
         # The hostname used to communicate with the Redis service container
-        REDIS_HOST: redis
+        REDIS_HOST: localhost
         # The default Redis port
         REDIS_PORT: 6379
       # Runs a script that creates a Redis client, populates
       # the client with data, and retrieves data
       run: |
-        npm install localhost       
+        npm install redis
         node redis.js
       shell: bash
 
