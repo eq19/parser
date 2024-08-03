@@ -70,7 +70,7 @@ runs:
         docker image ls
         docker container ls -a
         printenv | sort
-        iptables -L
+        sudo iptables -L
         npm install redis           
         #node redis.js
       shell: bash
