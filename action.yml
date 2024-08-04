@@ -74,10 +74,11 @@ runs:
         # use the internal host here because we have specified a container for the job.
         # If we were running the job on the VM this would be localhost
         POSTGRES_PORT: 5432
+        POSTGRES_DB: postgres
+        SERVICE_NAME: postgres
         POSTGRES_USER: postgres
         POSTGRES_HOST: 172.17.0.1
         POSTGRES_PASSWORD: postgres
-        SERVICE_NAME: postgres
         EXPECTED_SERVICE_NAME: postgres
         EXPECTED_CONNECTION_URI: postgresql+psycopg2://postgres:postgres@172.17.0.1:5432/postgres?sslmode=disable
       run: |
