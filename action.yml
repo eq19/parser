@@ -76,7 +76,7 @@ runs:
         # If we were running the job on the VM this would be localhost
         POSTGRES_PORT: 5432
         POSTGRES_HOST: 172.17.0.1
-     run: |
+      run: |
         npm install --package-lock-only pg
         npm ci && node pg.js
       shell: bash
