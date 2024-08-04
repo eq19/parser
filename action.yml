@@ -87,7 +87,7 @@ runs:
         # For more information, see https://docs.npmjs.com/cli/ci.html
         #npm install --package-lock-only pg
         #sudo -u postgres -i
-        psql -U postgres -c 'SHOW config_file'
+        #psql -U postgres -c 'SHOW config_file'
         npm ci && node pg.js
         #python3 -m pytest -vv test.py
       shell: bash
