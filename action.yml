@@ -56,22 +56,22 @@ runs:
         credentials_json: '${{ inputs.credentials }}'
 
     - name: 💎 Connect to Redis
-      if: runner.os == 'Ubuntu'
+      #if: runner.os == 'Ubuntu'
       # Environment variable used by the `client.js` script to create a new Redis client.
       env:
         # The hostname used to communicate with the Redis service container
-        REDIS_HOST: localhost
+        REDIS_HOST: host.docker.internal
         # The default Redis port
         REDIS_PORT: 6379
       # Runs a script that creates a Redis client, populates
       # the client with data, and retrieves data
       run: |
         npm install redis
-        #node redis.js
+        node redis.js
       shell: bash
     
     - name: 💎 Connect to postgres
-      #if: runner.os == 'Ubuntu'
+      if: runner.os == 'Ubuntu'
       env:
         POSTGRES_PORT: 5432
         POSTGRES_USER: postgres
@@ -86,8 +86,8 @@ runs:
         # Performs a clean installation of all dependencies in the `package.json` file
         # For more information, see https://docs.npmjs.com/cli/ci.html
         npm install --package-lock-only pg
+        npm ci && node pg.js
         #sudo -u postgres -i
         #psql -U postgres -c 'SHOW config_file'
-        npm ci && node pg.js
         #python3 -m pytest -vv test.py
       shell: bash
