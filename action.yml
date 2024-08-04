@@ -69,10 +69,6 @@ runs:
         npm install redis
         #node redis.js
       shell: bash
-
-    #- uses: docker://postgres
-      #with:
-        #args: psql -U postgres -c 'SHOW config_file'
     
     - name: 💎 Connect to postgres
       if: runner.os == 'Ubuntu'
@@ -91,6 +87,7 @@ runs:
         # For more information, see https://docs.npmjs.com/cli/ci.html
         #npm install --package-lock-only pg
         #sudo -u postgres -i
+        #psql -U postgres -c 'SHOW config_file'
         npm ci && node pg.js
         python3 -m pytest -vv test.py
       shell: bash
