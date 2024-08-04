@@ -65,7 +65,8 @@ runs:
       run: |
         # Runs a script that creates a Redis client, populates
         # the client with data, and retrieves data
-        npm install redis && node redis.js
+        npm install redis
+        node redis.js
       shell: bash
     
     - name: 💎 Connect to postgres
@@ -74,15 +75,8 @@ runs:
         # use the internal host here because we have specified a container for the job.
         # If we were running the job on the VM this would be localhost
         POSTGRES_PORT: 5432
-        POSTGRES_DB: postgres
-        SERVICE_NAME: postgres
-        POSTGRES_USER: postgres
         POSTGRES_HOST: 172.17.0.1
-        POSTGRES_PASSWORD: postgres
-        EXPECTED_SERVICE_NAME: postgres
-        EXPECTED_CONNECTION_URI: postgresql+psycopg2://postgres:postgres@172.17.0.1:5432/postgres?sslmode=disable
-      run: |
-        #psql -U postgres -c 'SHOW config_file'
-        npm install --package-lock-only pg && npm ci && node pg.js
-        #python3 -m pytest -vv test.py
+     run: |
+        npm install --package-lock-only pg
+        npm ci && node pg.js
       shell: bash
