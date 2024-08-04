@@ -56,7 +56,6 @@ runs:
         credentials_json: '${{ inputs.credentials }}'
 
     - name: 💎 Connect to Redis
-      #if: runner.os == 'Ubuntu'
       # Environment variable used by the `client.js` script to create a new Redis client.
       env:
         # The hostname used to communicate with the Redis service container
@@ -72,17 +71,17 @@ runs:
       shell: bash
     
     - name: 💎 Connect to postgres
-      if: runner.os == 'Ubuntu'
+      #if: runner.os == 'Ubuntu'
       env:
         POSTGRES_PORT: 5432
         POSTGRES_USER: postgres
-        POSTGRES_HOST: localhost
+        POSTGRES_HOST: 172.17.0.1
         POSTGRES_PASSWORD: postgres
         # use the internal host here because we have specified a container for the job.
         # If we were running the job on the VM this would be localhost
         SERVICE_NAME: postgres
         EXPECTED_SERVICE_NAME: postgres
-        EXPECTED_CONNECTION_URI: postgresql+psycopg2://postgres:postgres@host.docker.internal:5432/postgres?sslmode=disable
+        EXPECTED_CONNECTION_URI: postgresql+psycopg2://postgres:postgres@172.17.0.1:5432/postgres?sslmode=disable
       run: |
         # Performs a clean installation of all dependencies in the `package.json` file
         # For more information, see https://docs.npmjs.com/cli/ci.html
