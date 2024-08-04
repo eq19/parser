@@ -60,7 +60,7 @@ runs:
       # Environment variable used by the `client.js` script to create a new Redis client.
       env:
         # The hostname used to communicate with the Redis service container
-        REDIS_HOST: myhost
+        REDIS_HOST: 172.17.0.1
         # The default Redis port
         REDIS_PORT: 6379
       # Runs a script that creates a Redis client, populates
