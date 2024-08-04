@@ -65,8 +65,7 @@ runs:
       run: |
         # Runs a script that creates a Redis client, populates
         # the client with data, and retrieves data
-        npm install redis
-        node redis.js
+        npm install redis && node redis.js
       shell: bash
     
     - name: 💎 Connect to postgres
@@ -82,9 +81,7 @@ runs:
         EXPECTED_SERVICE_NAME: postgres
         EXPECTED_CONNECTION_URI: postgresql+psycopg2://postgres:postgres@172.17.0.1:5432/postgres?sslmode=disable
       run: |
-        npm install --package-lock-only pg
-        npm ci && node pg.js
-        #sudo -u postgres -i
         #psql -U postgres -c 'SHOW config_file'
-        #python3 -m pytest -vv test.py
+        npm install --package-lock-only pg && npm ci && node pg.js
+        python3 -m pytest -vv test.py
       shell: bash
