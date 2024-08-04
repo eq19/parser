@@ -79,7 +79,7 @@ runs:
         POSTGRES_PASSWORD: postgres
         # use the internal host here because we have specified a container for the job.
         # If we were running the job on the VM this would be localhost
-      SERVICE_NAME: postgres
+        SERVICE_NAME: postgres
         EXPECTED_SERVICE_NAME: postgres
         EXPECTED_CONNECTION_URI: postgresql+psycopg2://postgres:postgres@host.docker.internal:5432/postgres?sslmode=disable
       run: |
