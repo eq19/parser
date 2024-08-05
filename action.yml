@@ -49,12 +49,6 @@ runs:
   using: composite
   
   steps:
-    - name: Authentication    
-      uses: 'google-github-actions/auth@v2'
-      id: 'auth'
-      with:
-        credentials_json: '${{ inputs.credentials }}'
-
     - name: 💎 Connect to Redis
       # Environment variable used by the `client.js` script to create a new Redis client.
       env:
