@@ -50,21 +50,19 @@ runs:
   
   steps:
     - name: 💎 Connect to Redis
-      # Environment variable used by the `client.js` script to create a new Redis client.
+      # Runs a script that creates a Redis client, populates
+      # the client with data, and retrieves data
       env:
         # The hostname used to communicate with the Redis service container
         # Ref: https://stackoverflow.com/a/48547074/4058484
         REDIS_PORT: 6379
         REDIS_HOST: 172.17.0.1
       run: |
-        # Runs a script that creates a Redis client, populates
-        # the client with data, and retrieves data
         npm install redis
         node main.js
       shell: bash
     
     - name: 💎 Connect to postgres
-      #if: runner.os == 'Ubuntu'
       env:
         # use the internal host here because we have specified a container for the job.
         # If we were running the job on the VM this would be localhost
