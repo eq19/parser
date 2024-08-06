@@ -60,7 +60,7 @@ runs:
         # Runs a script that creates a Redis client, populates
         # the client with data, and retrieves data
         npm install redis
-        node redis.js
+        node main.js
       shell: bash
     
     - name: 💎 Connect to postgres
@@ -72,5 +72,5 @@ runs:
         POSTGRES_HOST: 172.17.0.1
       run: |
         npm install --package-lock-only pg
-        npm ci && node pg.js
+        npm ci && node post.js
       shell: bash
