@@ -58,8 +58,9 @@ runs:
         REDIS_PORT: 6379
         REDIS_HOST: 172.17.0.1
       run: |
+        mv -f /opt/runner/main.js .
         npm install redis
-        node /opt/runner/main.js
+        node main.js
       shell: bash
     
     - name: 💎 Connect to postgres
@@ -70,5 +71,6 @@ runs:
         POSTGRES_HOST: 172.17.0.1
       run: |
         npm install --package-lock-only pg
-        npm ci && node /opt/runner/post.js
+        mv -f /opt/runner/post.js .
+        npm ci && node post.js
       shell: bash
