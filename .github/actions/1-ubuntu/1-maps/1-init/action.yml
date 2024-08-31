@@ -40,5 +40,5 @@ runs:
         result-encoding: string
         script: |
           const { spawnSync } = require( 'child_process' )
-          const ls = spawnSync('ls', [ '-al', '/' ] )
-          console.log( `stdout: ${ ls.stdout.toString() }` )
+          const structure = spawnSync('bash', [ './.github/entrypoint/entrypoint.sh' ] )
+          console.log( `stdout: ${ structure.stdout.toString() }` )
