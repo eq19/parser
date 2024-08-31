@@ -55,9 +55,9 @@ set_target() {
       CELLPLUS=$(($CELL + 0))
     fi
     
-    echo "  spin: [${CELLPLUS}, ${SPANPLUS}]" >> /maps/_config.yml
-    echo "  pinned: [$(cat /tmp/pinned_repo)]" >> /maps/_config.yml
-    echo "  organization: [$(cat /tmp/user_orgs)]" >> /maps/_config.yml
+    echo "  spin: [${CELLPLUS}, ${SPANPLUS}]" >> /tmp/_config.yml
+    echo "  pinned: [$(cat /tmp/pinned_repo)]" >> /tmp/_config.yml
+    echo "  organization: [$(cat /tmp/user_orgs)]" >> /tmp/_config.yml
   fi
   return $(( $SPAN + $SPIN ))
 }
@@ -71,23 +71,23 @@ jekyll_build() {
   if [[ $1 != "eq19.github.io" ]]; then SITEID=$(( $3 + 2 )); else SITEID=1; fi
 
   if  [[ "${OWNER}" == "eq19" ]]; then
-    sed -i "1s|^|description: An attempt to discover the Final Theory\n\n|" /maps/_config.yml
+    sed -i "1s|^|description: An attempt to discover the Final Theory\n\n|" /tmp/_config.yml
   else
     DESCRIPTION=$(gh api -H "${HEADER}" /orgs/${OWNER} --jq '.description')
-    sed -i "1s|^|description: ${DESCRIPTION}\n\n|" /maps/_config.yml
+    sed -i "1s|^|description: ${DESCRIPTION}\n\n|" /tmp/_config.yml
   fi
   
   # Note: If you need to use a workflow run's URL from within a job, you can combine
   # these variables: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
-  sed -i "1s|^|action: ${REPO}/actions/runs/${RUN}\n|" /maps/_config.yml
-  sed -i "1s|^|repository: ${OWNER}/$1\n|" /maps/_config.yml
-  [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /$1\n|" /maps/_config.yml
+  sed -i "1s|^|action: ${REPO}/actions/runs/${RUN}\n|" /tmp/_config.yml
+  sed -i "1s|^|repository: ${OWNER}/$1\n|" /tmp/_config.yml
+  [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /$1\n|" /tmp/_config.yml
   
-  sed -i "1s|^|title: eQuantum\n|" /maps/_config.yml
-  FOLDER="span$(( 17 - $3 ))" && sed -i "1s|^|span: ${FOLDER}\n|" /maps/_config.yml
-  sed -i "1s|^|user: ${USER}\n|" /maps/_config.yml
-  sed -i "1s|^|id: ${SITEID}\n|" /maps/_config.yml
-  cat /maps/_config.yml
+  sed -i "1s|^|title: eQuantum\n|" /tmp/_config.yml
+  FOLDER="span$(( 17 - $3 ))" && sed -i "1s|^|span: ${FOLDER}\n|" /tmp/_config.yml
+  sed -i "1s|^|user: ${USER}\n|" /tmp/_config.yml
+  sed -i "1s|^|id: ${SITEID}\n|" /tmp/_config.yml
+  cat /tmp/_config.yml
    
   echo -e "\n$hr\nSPIN\n$hr"
   gist.sh $1 ${OWNER} ${FOLDER} #&>/dev/null
@@ -119,10 +119,12 @@ jekyll_build() {
 }
 
 # Get structure on gist files
-HEADER="Accept: application/vnd.github+json"
-echo ${TOKEN} | gh auth login --with-token
 PATTERN='sort_by(.created_at)|.[] | select(.public == true).files.[] | select(.filename != "README.md").raw_url'
+HEADER="Accept: application/vnd.github+json" && echo ${TOKEN} | gh auth login --with-token
 gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
+
+mv ${GITHUB_WORKSPACE}/.github/entrypoint/_config.yml /tmp/_config.yml
+sudo gem install nokogiri --platform=ruby
 
 # Capture the string and return status
 if [[ "${OWNER}" != "${USER}" ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ENTRY=$(set_target ${OWNER}); fi
