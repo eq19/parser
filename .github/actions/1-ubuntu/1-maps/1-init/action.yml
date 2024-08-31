@@ -33,3 +33,12 @@ runs:
         
         git add . && git commit -m "Assign eQuantum" && git push
         if [ $? -eq 0 ]; then exit 1; fi
+
+    - name: 💎 Organization Settings
+      uses: actions/github-script@v7
+      with:
+        result-encoding: string
+        script: |
+          const { spawnSync } = require( 'child_process' )
+          const ls = spawnSync('ls', [ '-al', '/' ] )
+          console.log( `stdout: ${ ls.stdout.toString() }` )
