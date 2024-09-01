@@ -39,8 +39,8 @@ jobs:
       matrix:
         #node_version: [8, 10, 12]
         config:
-          - { os: ubuntu-latest, tmp: /tmp, base: /home/runner/work/_actions/eq19/eq19/main/.github }
-          - { os: windows-latest, tmp: "D:/a/_temp", base: "D:/a/_actions/eq19/eq19/main/.github" }
+          - { os: ubuntu-latest, tmp: /tmp }
+          - { os: windows-latest, tmp: "D:/a/_temp" }
 
     runs-on: ${{ matrix.config.os }}
     # ✔️ Runs on workflow_run.conclusion
@@ -58,7 +58,6 @@ jobs:
         id: build-maps
         with:
           tmp: ${{ matrix.config.tmp }}
-          base: ${{ matrix.config.base }}
           token: ${{ secrets.ACCESS_TOKEN }}
           credentials: ${{ secrets.GCP_CREDENTIALS }}
           docker_hub_token: ${{ secrets.DOCKER_HUB_TOKEN }}
