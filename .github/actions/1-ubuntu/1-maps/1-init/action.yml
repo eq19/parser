@@ -38,8 +38,11 @@ runs:
         git config --global user.email "${{ inputs.actor }}@users.noreply.github.com"
         git config --global --add safe.directory "${{ github.workspace }}"
         
-        cd "${{ github.workspace }}" && rm -rf .github && cp -r "${{ inputs.base }}" .
-        chown -R "$(whoami)" .github && export PATH=${PATH}:${GITHUB_WORKSPACE}/.github/entrypoint
+        cd "${{ github.workspace }}" && rm -rf .github
+        BASE=/home/runner/work/_actions/eq19/eq19/main/.github
+        if [ "$RUNNER_OS" == "Windows" ]; then BASE="D:/a/_actions/eq19/eq19/main/.github"; fi
+        cp -r "$BASE" . && chown -R "$(whoami)" .github
+        export PATH=$PATH:${{ github.workspace }}/.github/entrypoint
 
         REMOTE_REPO="https://${{ inputs.actor }}:${{ inputs.token }}@github.com/${{ github.repository }}.git"
         git remote set-url origin ${REMOTE_REPO}
