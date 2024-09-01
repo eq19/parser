@@ -45,7 +45,7 @@ runs:
         export PATH=$PATH:${{ github.workspace }}/.github/entrypoint
 
         REMOTE_REPO="https://${{ inputs.actor }}:${{ inputs.token }}@github.com/${{ github.repository }}.git"
-        git remote set-url origin ${REMOTE_REPO}
+        git remote set-url origin $REMOTE_REPO
         
         git add . && git commit -m "Assign eQuantum" && git push
         if [ $? -eq 0 ]; then exit 1; else init.sh; fi
