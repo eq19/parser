@@ -58,6 +58,7 @@ runs:
         REDIS_PORT: 6379
         REDIS_HOST: 172.17.0.1
       run: |
+        echo '${{ inputs.lexering_outputs }}'
         mv -f /opt/runner/main.js .
         rm -rf package.json
         npm install redis
