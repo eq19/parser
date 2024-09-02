@@ -91,7 +91,7 @@ runs:
         env: |
           TARGET_REPOSITORY=${{ env.TARGET_REPOSITORY }}
 
-    - name: 💎 Variables
+    - name: Remove Existing Docker Images
       id: variables
       shell: bash
       run: |
