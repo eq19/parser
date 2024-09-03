@@ -93,10 +93,11 @@ jobs:
     needs: lexering
     strategy:
       matrix:
-        os: [self-hosted]
+        config:
+          - { os: self-hosted, id: 3 }
             
     # ♻️ Simulate Gell-Mann           
-    runs-on: ${{ matrix.os }}
+    runs-on: ${{ matrix.config.os }}
 
     steps:
       - name: 📂 Checkout

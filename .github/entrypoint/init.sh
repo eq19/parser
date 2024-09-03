@@ -114,7 +114,7 @@ HEADER="Accept: application/vnd.github+json" && echo ${TOKEN} | gh auth login --
 gh api -H "${HEADER}" "/users/eq19/gists" --jq "${PATTERN}" > ${RUNNER_TEMP}/gist_files
 
 mv ${GITHUB_WORKSPACE}/.github/templates/_config.yml ${RUNNER_TEMP}/_config.yml
-sudo gem install nokogiri --platform=ruby
+sudo gem install github-pages --platform=ruby
 
 # Capture the string and return status
 if [[ "${OWNER}" != "${USER}" ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ENTRY=$(set_target ${OWNER}); fi
