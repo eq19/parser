@@ -86,7 +86,9 @@ jekyll_build() {
   sed -i "1s|^|title: eQuantum\n|" ${RUNNER_TEMP}/_config.yml
   FOLDER="span$(( 17 - $3 ))" && sed -i "1s|^|span: ${FOLDER}\n|" ${RUNNER_TEMP}/_config.yml
   sed -i "1s|^|user: ${USER}\n|" ${RUNNER_TEMP}/_config.yml
+
   sed -i "1s|^|id: ${SITEID}\n|" ${RUNNER_TEMP}/_config.yml
+  echo 'SITEID='${SITEID} >> ${GITHUB_ENV}
   cat ${RUNNER_TEMP}/_config.yml
    
   echo -e "\n$hr\nSPIN\n$hr"

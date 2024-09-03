@@ -82,7 +82,7 @@ jobs:
           credentials: ${{ secrets.GCP_CREDENTIALS }}
           docker_hub_token: ${{ secrets.DOCKER_HUB_TOKEN }}
           docker_hub_password: ${{ secrets.DOCKER_HUB_PASSWORD }}
-          #build_id: ${{ steps.feed-mapping.outputs.output_2 }}
+          build_id: ${{ steps.feed-mapping.outputs.output_2 }}
           
     outputs:
       output_1: ${{ steps.build-parser.outputs.output_1 }}
