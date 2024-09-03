@@ -1,6 +1,12 @@
 name: 'Docker Deploy Action'
+
 description: >
   🪂  A Github Action to deploy pages conveniently
+
+branding:
+  icon: 'command'
+  color: 'red'
+
 inputs:
   hub_username:
     description: Username for Docker Hub
@@ -20,10 +26,10 @@ inputs:
     description: Path to the dockerfile from which to build the image
     required: true
 
-
-branding:
-  icon: 'command'
-  color: 'red'
+outputs:
+  site_id:
+    description: "A file path to a results file."
+    value: ${{ env.SITEID}}
 
 runs:
   using: composite
