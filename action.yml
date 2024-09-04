@@ -1,6 +1,12 @@
 name: 'Jekyll Deploy Action'
+
 description: >
   A Github Action to deploy the Jekyll site conveniently for GitHub Pages
+
+branding:
+  icon: 'command'
+  color: 'red'
+
 inputs:
   provider:
     description: 'The deploy provider'
@@ -31,16 +37,12 @@ inputs:
     required: false
   lexering_outputs:
     description: 'The Jekyll base outputs'
-    default: ${{ env.GELL_MANN }}
+    default: $GELL_MANN
     required: false
   pre_build_container:
     description: 'The pre-build docker container'
     default: 'eq19/prime'
     required: false
-
-branding:
-  icon: 'command'
-  color: 'red'
 
 runs:
   #using: 'node20'
