@@ -20,7 +20,6 @@ inputs:
     required: true
   image_name:
     description: "Name for the container to be created. Example: nginx"
-    default: 'maps'
     required: false
   action_path:
     description: Path to the dockerfile from which to build the image
@@ -46,19 +45,20 @@ runs:
         push: always
         runCmd: ls -alR /home/terraform
         skipContainerUserIdUpdate: true
-        imageTag: build-${{ env.SITEID }}
+        imageTag: spin-${{ env.SITEID }}
+        imageName: ${{ inputs.image_name }}
         configFile: ${{ inputs.action_path }}/.devcontainer.json
-        imageName: ${{ inputs.hub_username }}/${{ inputs.image_name }}
 
     - name: 💎 Variables
       id: variables
       shell: bash
       run: |
-        IFS=', '; array=($(curl -L -s 'https://registry.hub.docker.com/v2/repositories/${{ inputs.hub_username }}/${{ inputs.image_name }}/tags?page_size=1024' | jq -rc '."results"[]["name"]' | yq eval -P | sed "s/ /, /g"))
+        BASE_NAME=$(basename ${{ inputs.image_name }})
+        IFS=', '; array=($(curl -L -s 'https://registry.hub.docker.com/v2/repositories/${{ inputs.image_name }}/tags?page_size=1024' | jq -rc '."results"[]["name"]' | yq eval -P | sed "s/ /, /g"))
         for ((i=0; i < ${#array[@]}; i++)); do
           if [ "${array[$i]}" != "latest" ]; then
-            HUB_TOKEN=$(curl -s -H "Content-Type: application/json" -X POST -d "{\"username\": \"${{ inputs.hub_username }}\", \"password\": \"${{ inputs.hub_password }}\"}" https://hub.docker.com/v2/users/login/ | jq -r .token)
-            curl -i -X DELETE -H "Accept: application/json" -H "Authorization: JWT $HUB_TOKEN" https://hub.docker.com/v2/namespaces/${{ inputs.hub_username }}/repositories/${{ inputs.image_name }}/tags/${array[$i]}
-            echo "deleted: ${{ inputs.hub_username }}/${{ inputs.image_name }}:${array[$i]}"
+            HUB_TOKEN=$(curl -s -H "Content-Type: application/json" -X POST -d "{\"username\": \"${{ inputs.docker_hub_username }}\", \"password\": \"${{ inputs.docker_hub_password }}\"}" https://hub.docker.com/v2/users/login/ | jq -r .token)
+            curl -i -X DELETE -H "Accept: application/json" -H "Authorization: JWT $HUB_TOKEN" https://hub.docker.com/v2/namespaces/${{ inputs.docker_hub_username }}/repositories/$BASE_NAME/tags/${array[$i]}
+            echo "deleted: ${{ github.action_repository }}:${array[$i]}"
           fi
         done
