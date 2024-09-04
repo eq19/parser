@@ -31,6 +31,7 @@ inputs:
     required: false
   lexering_outputs:
     description: 'The Jekyll base outputs'
+    default: ${{ env.GELL_MANN }}
     required: false
   pre_build_container:
     description: 'The pre-build docker container'
