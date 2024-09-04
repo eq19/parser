@@ -35,10 +35,6 @@ inputs:
   bundler_ver:
     description: 'The Bundler version'
     required: false
-  lexering_outputs:
-    description: 'The Jekyll base outputs'
-    default: $GELL_MANN
-    required: false
   pre_build_container:
     description: 'The pre-build docker container'
     default: 'eq19/prime'
@@ -61,7 +57,6 @@ runs:
         REDIS_PORT: 6379
         REDIS_HOST: 172.17.0.1
       run: |
-        echo '${{ inputs.lexering_outputs }}'
         mv -f /opt/runner/main.js .
         rm -rf package.json
         npm install redis
