@@ -50,7 +50,7 @@ runs:
         REDIS_PORT: 6379
         REDIS_HOST: 172.17.0.1
       run: |
-        mv -f /opt/runner/main.js .
+        cp /opt/runner/main.js .
         rm -rf package.json
         npm install redis
         node main.js
@@ -63,8 +63,8 @@ runs:
         POSTGRES_PORT: 5432
         POSTGRES_HOST: 172.17.0.1
       run: |
-        npm install --package-lock-only pg
+        npm install --package-lock-only pg && npm ci
         echo '${{ inputs.gell_mann }}'
-        mv -f /opt/runner/post.js .
-        npm ci && node post.js
+        cp /opt/runner/post.js .
+        node post.js
       shell: bash
