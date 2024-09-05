@@ -73,4 +73,5 @@ runs:
         npm install --package-lock-only pg
         mv -f /opt/runner/post.js .
         npm ci && node post.js
+        printenv | sort
       shell: bash
