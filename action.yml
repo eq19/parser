@@ -29,16 +29,9 @@ inputs:
   actor:
     description: 'The github username creating the commit'
     required: false
-  cname:
-    description: 'The cname to use for the site'
-    required: false
-  bundler_ver:
-    description: 'The Bundler version'
-    required: false
-  pre_build_container:
-    description: 'The pre-build docker container'
-    default: 'eq19/prime'
-    required: false
+  gell_mann:
+    description: 'The pre-build configuration'
+    required: true
 
 runs:
   #using: 'node20'
