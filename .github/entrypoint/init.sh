@@ -89,7 +89,7 @@ jekyll_build() {
   sed -i "1s|^|user: ${USER}\n|" ${RUNNER_TEMP}/_config.yml
 
   sed -i "1s|^|id: ${SITEID}\n|" ${RUNNER_TEMP}/_config.yml
-  echo 'SITEID='${SITEID} >> ${GITHUB_ENV}
+  echo 'ID='${SITEID} >> ${GITHUB_ENV}
   cat ${RUNNER_TEMP}/_config.yml
    
   echo -e "\n$hr\nSPIN\n$hr"
