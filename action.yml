@@ -64,6 +64,7 @@ runs:
         POSTGRES_HOST: 172.17.0.1
       run: |
         npm install --package-lock-only pg
+        echo ${{ inputs.gell_mann }}
         mv -f /opt/runner/post.js .
         npm ci && node post.js
       shell: bash
