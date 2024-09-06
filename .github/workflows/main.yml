@@ -85,9 +85,9 @@ jobs:
           
     outputs:
       # ♻️ Simulate Gell-Mann Matrices    
-      id: ${{ toJSON(steps.build-parser.outputs) }}
-      spin: ${{ toJSON(steps.feed-mapping.outputs) }}
-      decays: ${{ toJSON(steps.set-lexering.outputs) }}
+      id: ${{ steps.build-parser.outputs.id }}
+      spin: ${{ steps.feed-mapping.outputs.spin }}
+      target: ${{ steps.set-lexering.outputs.decays }}
 
   setup-parser:
     needs: lexering
