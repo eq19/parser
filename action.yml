@@ -50,7 +50,7 @@ runs:
         REDIS_PORT: 6379
         REDIS_HOST: 172.17.0.1
       run: |
-        cp ./.github/entrypoint/main.js .
+        cp ${{ github.action_path}}/main.js .
         rm -rf package.json
         npm install redis
         node main.js
@@ -64,7 +64,7 @@ runs:
         POSTGRES_HOST: 172.17.0.1
       run: |
         npm install --package-lock-only pg && npm ci
-        cp ./.github/entrypoint/post.js .
+        cp ${{ github.action_path}}/post.js .
         echo '${{ inputs.gell_mann }}'
         node post.js
       shell: bash
