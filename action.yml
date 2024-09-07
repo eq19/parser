@@ -51,8 +51,6 @@ runs:
         REDIS_HOST: 172.17.0.1
       run: |
         cp ${{ github.action_path}}/main.js .
-        #rm -rf package.json
-        #npm install redis
         node main.js
       shell: bash
     
@@ -63,7 +61,6 @@ runs:
         POSTGRES_PORT: 5432
         POSTGRES_HOST: 172.17.0.1
       run: |
-        #npm install --package-lock-only pg && npm ci
         cp ${{ github.action_path}}/post.js .
         echo '${{ inputs.gell_mann }}'
         node post.js
