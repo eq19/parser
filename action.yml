@@ -50,8 +50,8 @@ runs:
         REDIS_PORT: 6379
         REDIS_HOST: 172.17.0.1
       run: |
-        cp ${{ github.action_path}}/main.js .
-        node main.js
+        node ${{ github.action_path}}/main.js .
+        #node main.js
       shell: bash
     
     - name: 💎 Connect to postgres
@@ -61,7 +61,7 @@ runs:
         POSTGRES_PORT: 5432
         POSTGRES_HOST: 172.17.0.1
       run: |
-        cp ${{ github.action_path}}/post.js .
+        node ${{ github.action_path}}/post.js .
         echo '${{ inputs.gell_mann }}'
-        node post.js
+        #node post.js
       shell: bash
