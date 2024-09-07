@@ -22,12 +22,12 @@ pgclient.query(text, values, (err, res) => {
     if (err) throw err
 });
 
-pgclient.query('SELECT * FROM student', (err, res) => {
+pgclient.query('SELECT * FROM car_sales WHERE customer_id=1000', (err, res) => {
     if (err) throw err
     console.log(err, res.rows) // Print the data in student table
 });
 
-pgclient.query('SELECT * FROM car_sales WHERE customer_id=1000', (err, res) => {
+pgclient.query('SELECT * FROM student', (err, res) => {
     if (err) throw err
     console.log(err, res.rows) // Print the data in student table
 });
