@@ -31,3 +31,5 @@ pgclient.query('SELECT * FROM student', (err, res) => {
     if (err) throw err
     console.log(err, res.rows) // Print the data in student table
 });
+
+pgclient.end();
