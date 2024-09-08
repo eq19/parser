@@ -48,7 +48,7 @@ runs:
         # The hostname used to communicate with the Redis service container
         # Ref: https://stackoverflow.com/a/48547074/4058484
         REDIS_PORT: 6379
-        REDIS_HOST: localhost
+        REDIS_HOST: 127.0.0.1
       run: |
         node ${{ github.action_path}}/main.js .
         #node main.js
