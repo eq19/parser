@@ -1,0 +1,55 @@
+name: 'Initial Deploy Action'
+
+description: >
+  🪂  Initial action to deploy
+
+branding:
+  icon: 'command'
+  color: 'red'
+
+inputs:
+  actor:
+    description: 'The deploy actor'
+    required: true
+  token:
+    description: 'The deploy token'
+    required: true
+  base:
+    description: 'The path to .github folder'
+    required: true
+  tmp:
+    description: 'The temporary path'
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: 💎 Update workflow conveniently
+      id: update
+      shell: bash
+      run: |
+        git config --global user.name "${{ inputs.actor }}"
+        git config --global user.email "${{ inputs.actor }}@users.noreply.github.com"
+
+        git config --global core.autocrlf false
+        git config --global --add safe.directory "${{ github.workspace }}"
+        
+        if [ "$RUNNER_OS" == "Windows" ]; then
+          BASE="D:/a/_actions/eq19/eq19/v1/.github"
+          $BASE/entrypoint/init.sh
+        else
+          BASE=/home/runner/work/_actions/eq19/eq19/v1/.github 
+          REMOTE_REPO="https://${{ inputs.actor }}:${{ inputs.token }}@github.com/${{ github.repository }}.git"
+
+          cd "${{ github.workspace }}" && rm -rf .github
+          cp -r "$BASE" . && chown -R "$(whoami)" .github
+
+          git remote set-url origin $REMOTE_REPO        
+          git add . && git commit -m "Assign eQuantum" && git push
+          if [ $? -eq 0 ]; then exit 1; else $BASE/entrypoint/init.sh; fi
+        fi
+
+    - name: View context attributes
+      uses: actions/github-script@v7
+      with:
+        script: console.log(context)
