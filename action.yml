@@ -44,7 +44,7 @@ runs:
     - name: 💎 Connect to Redis
       # Runs a script that creates a Redis client, populates
       # the client with data, and retrieves data
-      env:
+      #env:
         # The hostname used to communicate with the Redis service container
         # Ref: https://stackoverflow.com/a/48547074/4058484
         #REDIS_PORT: 6379
