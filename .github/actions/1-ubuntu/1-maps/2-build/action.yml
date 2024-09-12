@@ -39,11 +39,27 @@ runs:
         username: ${{ inputs.hub_username }}
         password: ${{ inputs.hub_token }} 
         
+    - uses: actions/setup-python@v5
+      with:
+        python-version: 3.12
+        allow-prereleases: true
+
+    - uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip
+
+    - name: Install dependencies
+      shell: bash
+      run: |
+        python -m pip install --upgrade pip setuptools six wheel
+        python -m pip install pytest-cov -r ${{ inputs.action_path }}/requirements.txt
+
     - name: 🚀 Initiate Lexer
       uses: devcontainers/ci@v0.3
       with:
         push: always
-        runCmd: ls -alR /
+        runCmd: ls -alR /data
         skipContainerUserIdUpdate: true
         imageName: ${{ inputs.image_name }}
         imageTag: target-${{ github.run_number }}
