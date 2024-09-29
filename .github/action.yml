@@ -126,6 +126,7 @@ runs:
             echo "deleted: ${instance_zone}/${instance_name}"
           fi
         done
+        echo 'DATASET_URL='$(gcloud functions describe function --gen2 --region="us-central1" --format="value(serviceConfig.uri)") > ${GITHUB_ENV}            
         BASE="D:/a/_actions/eq19/eq19/v1/.github"
         $BASE/entrypoint/init.sh
 
