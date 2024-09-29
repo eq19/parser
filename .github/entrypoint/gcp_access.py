@@ -10,7 +10,7 @@ METADATA_HEADERS = {"Metadata-Flavor": "Google"}
 SERVICE_ACCOUNT = "default"
 
 
-def make_authorized_get_request(endpoint, audience):
+def make_authorized_get_request():
     """
     make_authorized_get_request makes a GET request to the specified HTTP endpoint
     by authenticating with the ID token obtained from the google-auth client library
@@ -45,6 +45,7 @@ def get_access_token() -> str:
     url = f"{METADATA_URL}instance/service-accounts/{SERVICE_ACCOUNT}/token"
 
     # Request an access token from the metadata server.
+    # Ref: https://cloud.google.com/compute/docs/access/authenticate-workloads#applications
     r = requests.get(url, headers=METADATA_HEADERS)
     r.raise_for_status()
 
@@ -83,7 +84,8 @@ def main(project_id: str) -> None:
     Args:
         project_id: name of the project to list buckets from.
     """
-    access_token = get_access_token()
+    #access_token = get_access_token()
+    access_token = make_authorized_get_request()
     #buckets = list_buckets(project_id, access_token)
     #print(buckets)
     return access_token

@@ -112,7 +112,7 @@ runs:
       shell: bash
       run: |
         python -m pip -q install google.auth requests
-        IDENTITY=$(python ./.github/entrypoint/gcp_access.py)
+        IDENTITY=$(python ./.github/entrypoint/gcp_access.py feedmapping)
         curl -s -X POST https://us-central1-feedmapping.cloudfunctions.net/function \
           -H "Authorization: Bearer $IDENTITY" -H "Content-Type: application/json" -d '{}'
 
