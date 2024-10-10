@@ -136,9 +136,9 @@ jobs:
           gell_mann: ${{ toJSON(steps.eval-syntax.outputs) }}
  
   job-failure:
+    if: always()
     runs-on: macos-latest
     needs: [lexering,setup-parser]
-    if: ${{ always() && contains(needs.*.result, 'failure') }}
 
     steps:
       - name: 📂 Checkout
@@ -148,7 +148,8 @@ jobs:
           submodules: recursive
           token: ${{ secrets.ACCESS_TOKEN }}
 
-      - name: ⏪ Rewind
+      - name: ⏪ Rewind all jobs if failure
+        if: contains(needs.*.result, 'failure')
         shell: bash
         run: |
           cd ${GITHUB_WORKSPACE}
