@@ -49,21 +49,13 @@ runs:
         # Ref: https://stackoverflow.com/a/48547074/4058484
         REDIS_PORT: 6379
         REDIS_HOST: 172.17.0.1
+      shell: bash
       run: |
         if [ -d /mnt/disks/platform/usr/local/sbin ]; then
           node ${{ github.action_path}}/main.js .
         else
-          cd ${GITHUB_WORKSPACE}
-  
-          git config --global user.name "${GITHUB_ACTOR}"
-          git config --global --add safe.directory ${GITHUB_WORKSPACE}
-          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-
-          REMOTE_REPO="https://${GITHUB_ACTOR}:${GITHUB_ACCESS_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git commit --allow-empty -m "rerun actions due to missing platform" && git push
-          if [ $? -eq 0 ]; then exit 1; fi
+          exit 1
         fi
-      shell: bash
     
     - name: 💎 Connect to postgres
       env:
@@ -71,8 +63,8 @@ runs:
         # If we were running the job on the VM this would be localhost
         POSTGRES_PORT: 5432
         POSTGRES_HOST: 172.17.0.1
+      shell: bash
       run: |
         node ${{ github.action_path}}/post.js .
         echo '${{ inputs.gell_mann }}'
         #node post.js
-      shell: bash
