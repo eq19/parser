@@ -15,7 +15,13 @@ In essence, it describes how [light](https://en.wikipedia.org/wiki/Light) and [m
 
 ## Basic Transformation
 
+The first formulation of a [quantum theory](https://en.wikipedia.org/wiki/Quantum_mechanics) describing radiation and matter interaction is attributed to British scientist [Paul Dirac](https://en.wikipedia.org/wiki/Paul_Dirac).
+
 ```note
+Dirac described the quantization of the [electromagnetic field](https://en.wikipedia.org/wiki/Electromagnetic_field) as an ensemble of [harmonic oscillators](https://en.wikipedia.org/wiki/Harmonic_oscillator) with the introduction of the concept of [creation and annihilation operators](https://en.wikipedia.org/wiki/Creation_and_annihilation_operators) of particles. 
+
+Based on Bethe's intuition and fundamental papers on the subject by [Shin'ichirō Tomonaga](https://en.wikipedia.org/wiki/Shin%27ichir%C5%8D_Tomonaga),[[16]](https://en.wikipedia.org/wiki/Quantum_electrodynamics#cite_note-tomonaga-16) [Julian Schwinger](https://en.wikipedia.org/wiki/Julian_Schwinger),[[17]](https://en.wikipedia.org/wiki/Quantum_electrodynamics#cite_note-schwinger1-17)[[18]](https://en.wikipedia.org/wiki/Quantum_electrodynamics#cite_note-schwinger2-18) [Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman)[[1]](https://en.wikipedia.org/wiki/Quantum_electrodynamics#cite_note-feynman1-1)[[19]](https://en.wikipedia.org/wiki/Quantum_electrodynamics#cite_note-feynman2-19)[[20]](https://en.wikipedia.org/wiki/Quantum_electrodynamics#cite_note-feynman3-20) and [Freeman Dyson](https://en.wikipedia.org/wiki/Freeman_Dyson),[[21]](https://en.wikipedia.org/wiki/Quantum_electrodynamics#cite_note-dyson1-21)[[22]](https://en.wikipedia.org/wiki/Quantum_electrodynamics#cite_note-dyson2-22) it was finally possible to get fully [covariant](https://en.wikipedia.org/wiki/Lorentz_covariance) formulations that were finite at any order in a perturbation series of quantum electrodynamics.
+
 The key components of Feynman's presentation of QED are [three basic actions](https://en.wikipedia.org/wiki/Quantum_electrodynamics#cite_note-feynbook-2)
 
 - A [photon](https://en.wikipedia.org/wiki/Photon) goes from one place and time to another place and time.
@@ -25,7 +31,7 @@ The key components of Feynman's presentation of QED are [three basic actions](ht
 These actions are represented in the form of visual shorthand by the three basic elements of [diagrams](https://en.wikipedia.org/wiki/Feynman_diagram): a wavy line for the photon, a straight line for the electron and a junction of two straight lines and a wavy one for a vertex representing emission or absorption of a photon by an electron. _([Wikipedia](https://en.wikipedia.org/wiki/Quantum_electrodynamics))_
 ```
 
-![1_RMV1kvtEZ-o-_8WKQLnCSA](https://github.com/eq19/maps/assets/8466209/715b20a8-d5c2-4b72-8993-b696a8b25d23)
+[![1_RMV1kvtEZ-o-_8WKQLnCSA](https://github.com/eq19/maps/assets/8466209/715b20a8-d5c2-4b72-8993-b696a8b25d23)](https://platosrealm.wordpress.com/2019/02/26/unsolved-problems-in-physics-baryon-asymmetry/)
 
 QED is based on the above three building blocks and then using the probability amplitudes to calculate the probability of any such complex interaction.
 
@@ -41,10 +47,12 @@ The indistinguishability criterion in (a) is very important: it means that there
 
 [![First_Feynman_Diagram](https://github.com/eq19/maps/assets/8466209/c381a212-cf38-45db-a166-f8e8716886da)](https://github.com/eq19/maps/files/13930690/PhysRev.76.769.pdf)
 
+They are related to our everyday ideas of probability by the simple rule that the probability of an event is the square of the length of the corresponding amplitude arrow.
+
 ```note
 Feynman replaces complex numbers with spinning arrows, which start at emission and end at detection of a particle.
 
-![Feynmans_QED_probability_amplitudes](https://github.com/user-attachments/assets/df7b0132-ccc2-4372-8f4e-ca2211b7956c)
+[![Feynmans_QED_probability_amplitudes](https://github.com/user-attachments/assets/df7b0132-ccc2-4372-8f4e-ca2211b7956c)](https://en.wikipedia.org/wiki/Quantum_electrodynamics#probability-amplitudes)
 
 - The sum of all resulting arrows gives a final arrow whose length squared equals the probability of the event.
 - In this diagram, light emitted by the source S can reach the detector at P by bouncing off the mirror (in blue) at various points.
@@ -56,11 +64,155 @@ The graph below depicts the total time spent to traverse each of the paths above
 
 ![008869256_1-75ca18aad2faf65f52f4c7706d7d8bd3-768x994](https://github.com/eq19/maps/assets/8466209/7c7f069f-dcfb-439e-961e-68c63c76dc9d)
 
+Feynman avoids exposing the reader to the mathematics of complex numbers by using a simple but accurate representation of them as arrows on a piece of paper or screen.
+
 ```note
-It should be remembered that the expression hides a lot of complexity. We have summed over all possible timeorderings and summed over all polarization states of the virtual photon. If we are then presented with a new Feynman diagram we don’t want to go through the full calculation again. Fortunately this isn’t necessary – can just write down matrix element using a set of simple rules Basic Feynman Rules: e+ g m+ Propagator factor for each internal line (i. e. each internal virtual particle) Dirac Spinor for each external line e–
+Mathematically, QED is an [abelian](https://en.wikipedia.org/wiki/Abelian_group) [gauge theory](https://en.wikipedia.org/wiki/Gauge_theory) with the symmetry group [U(1)](https://en.wikipedia.org/wiki/U(1)), defined on [Minkowski space](https://en.wikipedia.org/wiki/Minkowski_space) (flat spacetime). The [gauge field](https://en.wikipedia.org/wiki/Gauge_field), which mediates the interaction between the charged [spin-1/2](https://en.wikipedia.org/wiki/Spin_(physics)) [fields](https://en.wikipedia.org/wiki/Field_(physics)), is the [electromagnetic field](https://en.wikipedia.org/wiki/Electromagnetic_field). The QED [Lagrangian](https://en.wikipedia.org/wiki/Lagrangian_(field_theory)) for a spin-1/2 field interacting with the electromagnetic field in natural units gives rise to the action[[27]](https://en.wikipedia.org/wiki/Quantum_electrodynamics#cite_note-Peskin-27): 78 
+
+QED Action
+S
+QED
+=
+∫
+d
+4
+x
+[
+−
+1
+4
+F
+μ
+ν
+F
+μ
+ν
++
+ψ
+¯
+(
+i
+γ
+μ
+D
+μ
+−
+m
+)
+ψ
+]
+{\displaystyle S_{\text{QED}}=\int d^{4}x\,\left[-{\frac {1}{4}}F^{\mu \nu }F_{\mu \nu }+{\bar {\psi }}\,(i\gamma ^{\mu }D_{\mu }-m)\,\psi \right]}
+
+where
+
+γ
+μ{\displaystyle \gamma ^{\mu }} are [Dirac matrices](https://en.wikipedia.org/wiki/Dirac_matrices).
+ψ{\displaystyle \psi } a [bispinor](https://en.wikipedia.org/wiki/Bispinor) [field](https://en.wikipedia.org/wiki/Field_(physics)) of [spin-1/2](https://en.wikipedia.org/wiki/Spin-1/2) particles (e.g. [electron](https://en.wikipedia.org/wiki/Electron)–[positron](https://en.wikipedia.org/wiki/Positron) field).
+ψ
+¯
+≡
+ψ
+†
+γ
+0
+{\displaystyle {\bar {\psi }}\equiv \psi ^{\dagger }\gamma ^{0}}, called "psi-bar", is sometimes referred to as the [Dirac adjoint](https://en.wikipedia.org/wiki/Dirac_adjoint).
+D
+μ
+≡
+∂
+μ
++
+i
+e
+A
+μ
++
+i
+e
+B
+μ{\displaystyle D_{\mu }\equiv \partial _{\mu }+ieA_{\mu }+ieB_{\mu }} is the [gauge covariant derivative](https://en.wikipedia.org/wiki/Gauge_covariant_derivative).
+e is the [coupling constant](https://en.wikipedia.org/wiki/Fine-structure_constant), equal to the [electric charge](https://en.wikipedia.org/wiki/Electric_charge) of the bispinor field.
+A
+μ{\displaystyle A_{\mu }} is the [covariant](https://en.wikipedia.org/wiki/Lorentz_covariance) [four-potential](https://en.wikipedia.org/wiki/Four-potential) of the electromagnetic field generated by the electron itself. It is also known as a gauge field or a 
+U
+(
+1
+)
+{\displaystyle {\text{U}}(1)} connection.
+B
+μ{\displaystyle B_{\mu }} is the external field imposed by external source.
+m is the mass of the electron or positron.
+F
+μ
+ν
+=
+∂
+μ
+A
+ν
+−
+∂
+ν
+A
+μ{\displaystyle F_{\mu \nu }=\partial _{\mu }A_{\nu }-\partial _{\nu }A_{\mu }} is the [electromagnetic field tensor](https://en.wikipedia.org/wiki/Electromagnetic_field_tensor). This is also known as the curvature of the gauge field.
+Expanding the covariant derivative reveals a second useful form of the Lagrangian (external field 
+B
+μ{\displaystyle B_{\mu }} set to zero for simplicity)
+
+L
+=
+−
+1
+4
+F
+μ
+ν
+F
+μ
+ν
++
+ψ
+¯
+(
+i
+γ
+μ
+∂
+μ
+−
+m
+)
+ψ
+−
+e
+j
+μ
+A
+μ{\displaystyle {\mathcal {L}}=-{\frac {1}{4}}F_{\mu \nu }F^{\mu \nu }+{\bar {\psi }}(i\gamma ^{\mu }\partial _{\mu }-m)\psi -ej^{\mu }A_{\mu }}
+where 
+j
+μ{\displaystyle j^{\mu }} is the conserved 
+U
+(
+1
+)
+{\displaystyle {\text{U}}(1)} current arising from Noether's theorem. It is written
+
+j
+μ
+=
+ψ
+¯
+γ
+μ
+ψ
+.
+{\displaystyle j^{\mu }={\bar {\psi }}\gamma ^{\mu }\psi .}
 ```
 
 [![image-18](https://github.com/eq19/maps/assets/8466209/f233cea8-77c7-4456-bc5c-65b0e98b3f73)](https://slidetodoc.com/particle-physics-michaelmas-term-2011-prof-mark-thomson-6/)
+
+Finally, one has to compute P(A to B) and E(C to D) corresponding to the probability amplitudes for the photon and the electron respectively.
 
 ## Mapping Scheme
 
