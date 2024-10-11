@@ -42,6 +42,7 @@ runs:
   
   steps:
     - name: 💎 Connect to Redis
+      if: runner.os != 'macOS'
       # Runs a script that creates a Redis client, populates
       # the client with data, and retrieves data
       env:
@@ -54,6 +55,7 @@ runs:
         node ${{ github.action_path}}/main.js
     
     - name: 💎 Connect to postgres
+      if: runner.os != 'macOS'
       env:
         # use the internal host here because we have specified a container for the job.
         # If we were running the job on the VM this would be localhost
