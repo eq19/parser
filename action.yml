@@ -51,11 +51,7 @@ runs:
         REDIS_HOST: 172.17.0.1
       shell: bash
       run: |
-        if [ -d /mnt/disks/platform/usr/local/sbin ]; then
-          node ${{ github.action_path}}/main.js .
-        else
-          exit 1
-        fi
+        node ${{ github.action_path}}/main.js
     
     - name: 💎 Connect to postgres
       env:
@@ -65,6 +61,5 @@ runs:
         POSTGRES_HOST: 172.17.0.1
       shell: bash
       run: |
-        node ${{ github.action_path}}/post.js .
+        node ${{ github.action_path}}/post.js
         echo '${{ inputs.gell_mann }}'
-        #node post.js
