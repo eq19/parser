@@ -22,7 +22,7 @@ name: COmpendium of RElations – Modulo 6
 # For more information on these settings, see https://www.tensorflow.org/quantum/design.
 #
 on:
-  push:
+  #push:
   workflow_run:
     types: [completed]
     workflows: ["pages-build-deployment"]
@@ -96,6 +96,10 @@ jobs:
 
   parsering:
     needs: lexering
+    # ✔️ Completeness relations
+    runs-on: ${{ matrix.config.os }}
+    if: ${{ (always() && contains(needs.*.result, 'success')) ||
+            (failure() && contains(needs.*.result, 'failure')) }}
     strategy:
       matrix:
         config:
@@ -104,11 +108,6 @@ jobs:
       max-parallel: ${{ contains(needs.*.result, 'success') && 1 || 2 }}
       fail-fast: ${{ contains(needs.*.result, 'success') && false || true }}
       
-    # ✔️ Completeness relations
-    runs-on: ${{ matrix.config.os }}
-    if: ${{ (always() && contains(needs.*.result, 'success')) ||
-            (failure() && contains(needs.*.result, 'failure')) }}
-
     steps:
       - name: 📂 Checkout
         uses: actions/checkout@v4
