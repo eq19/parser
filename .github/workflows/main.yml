@@ -102,6 +102,7 @@ jobs:
           - { os: self-hosted, id: 3 }
           - { os: macos-latest, id: 4 }
       max-parallel: ${{ contains(needs.*.result, 'success') && 1 || 2 }}
+      fail-fast: ${{ contains(needs.*.result, 'success') && false || true }}
       
     # ✔️ Completeness relations
     runs-on: ${{ matrix.config.os }}
