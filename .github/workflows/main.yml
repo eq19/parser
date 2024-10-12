@@ -97,6 +97,7 @@ jobs:
   parsering:
     needs: lexering
     strategy:
+      max-parallel: ${{ contains(needs.*.result, 'success') && 1 || 2 }}
       matrix:
         config:
           - { os: self-hosted, id: 3 }
