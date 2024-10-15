@@ -49,7 +49,7 @@ runs:
         TOKEN=$(/mnt/disks/platform/usr/bin/gcloud auth print-identity-token)
         curl -s -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \
           -X POST https://us-central1-feedmapping.cloudfunctions.net/function \
-          --data @${{ github.workspace }}/data.json | j '.'
+          --data @${{ github.workspace }}/data.json | jq '.'
   
     - name: 💎 Connect to Redis
       if: runner.os != 'macOS'
