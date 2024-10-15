@@ -46,7 +46,8 @@ runs:
       shell: bash
       run: |
         if [ ! -d /mnt/disks/platform/usr/local/sbin ]; then exit 1; fi
-        curl -s -H "Authorization: Bearer $(/mnt/disks/platform/usr/bin/gcloud auth print-identity-token)" -H "Content-Type: application/json" \
+        TOKEN=$(/mnt/disks/platform/usr/bin/gcloud auth print-identity-token)
+        curl -s -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \
           -X POST https://us-central1-feedmapping.cloudfunctions.net/function \
           --data @${{ github.workspace }}/data.json | j '.'
   
