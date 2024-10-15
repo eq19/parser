@@ -41,6 +41,12 @@ runs:
   using: composite
   
   steps:
+    - name: 💎 Reinvented
+      if: runner.os != 'macOS'
+      shell: bash
+      run: |
+        if [ ! -d /mnt/disks/platform/usr/local/sbin ]; then exit 1; fi
+
     - name: 💎 Connect to Redis
       if: runner.os != 'macOS'
       # Runs a script that creates a Redis client, populates
@@ -52,7 +58,6 @@ runs:
         REDIS_HOST: 172.17.0.1
       shell: bash
       run: |
-        if [ ! -d /mnt/disks/platform/usr/local/sbin ]; then exit 1; fi
         node ${{ github.action_path}}/main.js
     
     - name: 💎 Connect to postgres
