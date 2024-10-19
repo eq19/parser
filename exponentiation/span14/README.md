@@ -286,196 +286,174 @@ True Prime Pairs:
 ```
 
 ![IMG_20240118_121014](https://github.com/eq19/maps/assets/8466209/942b517a-954c-4f1e-b075-14a52e08d9be)
-# Prime Identity
-
-We are going to assign prime identity as a ***standard model*** that attempts to stimulate a quantum field model called ***[eQuantum](https://github.com/eq19)*** for _[the four (4) known fundamental forces](https://en.wikipedia.org/wiki/Fundamental_interaction)_.
-
-This presentation was inspired by [theoretical works](https://github.com/eq19/maps/files/13468466/OU1938-Y1.1.pdf) from _[Hideki Yukawa](https://en.wikipedia.org/wiki/Hideki_Yukawa)_ who in 1935 had predicted the existence of _[mesons as the carrier particles](https://en.wikipedia.org/wiki/Meson)_ of strong nuclear force.
-
-## Addition Zones
-
-Here we would like to explain the way of said prime identity on getting the [arithmetic expression](https://youtu.be/S9oPqBeSsZA) of an ***individual unit identity*** such as a taxicab number below.
-
-```note
-It is a taxicab number, and is variously known as Ramanujan's number and the Ramanujan-Hardy number, after an anecdote of the British mathematician _[GH Hardy](https://en.wikipedia.org/wiki/G._H._Hardy)_ when he visited Indian mathematician _[Srinivasa Ramanujan](https://en.wikipedia.org/wiki/Srinivasa_Ramanujan)_ in hospital _([Wikipedia](https://en.wikipedia.org/wiki/1729_(number)))_.
-```
-
-[![Ramanujan-Hardy number](https://user-images.githubusercontent.com/36441664/103107461-173c2b00-4671-11eb-962c-da7e9eab022e.png)](https://en.wikipedia.org/wiki/1729_(number))
-
-These three (3) number are [twin primes](https://en.wikipedia.org/wiki/Twin_prime). We called the pairs as _[True Prime Pairs](https://www.eq19.com/addition/file02.html#true-prime-pairs)_. Our scenario is mapping the distribution out of these pairs by taking the symmetrical behaviour of 36 as the smallest power (greater than 1) which is not a prime power.
-
-```tip
-The smallest square number expressible as the sum of **four (4) consecutive primes** in two ways (5 + 7 + 11 + 13 and 17 + 19) which are also **two (2) couples** of prime twins! _([Prime Curios!](https://en.wikipedia.org/wiki/1729_(number)](https://primes.utm.edu/curios/page.php?number_id=270)))_.
-```
-
-```scss
-$True Prime Pairs:
- (5,7), (11,13), (17,19)
- 
- layer|  i  |   f
- -----+-----+---------
-      |  1  | 5
-   1  +-----+
-      |  2  | 7
- -----+-----+---  } 36 » 6®
-      |  3  | 11
-   2  +-----+
-      |  4  | 13
- -----+-----+---------
-      |  5  | 17
-   3  +-----+     } 36 » 6®
-      |  6  | 19
- -----+-----+---------
-```
-
-Thus in short this is all about a method that we called as the ***[19 vs 18 Scenario](https://www.eq19.com/grammar/identition/#the-77-principles)*** of mapping [the quantum way](https://www.google.com/search?q=eQuantum) within a huge of [primes objects](https://github.com/eq19) (5 to 19) by [lexering](https://en.wikipedia.org/wiki/Lexer_generator) (11) the un[grammar](https://en.wikipedia.org/wiki/Grammar)ed feed (7) and [parsering](https://en.wikipedia.org/wiki/Comparison_of_parser_generators) (13) across [syntax](https://en.wikipedia.org/wiki/Syntax) (17). 
-
-***Φ(1,2,3) = Φ(6,12,18) = Φ(13,37,61)***
-
-```scss
-$True Prime Pairs:
-(5,7), (11,13), (17,19)
- 
-layer | node | sub |  i  |  f
-------+------+-----+----------
-      |      |     |  1  | 
-      |      |  1  +-----+          
-      |  1   |     |  2  | (5)
-      |      |-----+-----+
-      |      |     |  3  |
-  1   +------+  2  +-----+----
-      |      |     |  4  |
-      |      +-----+-----+
-      |  2   |     |  5  | (7)
-      |      |  3  +-----+
-      |      |     |  6  |
-------+------+-----+-----+------      } (36)
-      |      |     |  7  |
-      |      |  4  +-----+
-      |  3   |     |  8  | (11)
-      |      +-----+-----+
-      |      |     |  9  |
-  2   +------|  5  +-----+-----
-      |      |     |  10 |
-      |      |-----+-----+
-      |  4   |     |  11 | (13)
-      |      |  6  +-----+
-      |      |     |  12 |
-------+------+-----+-----+------------------
-      |      |     |  13 |
-      |      |  7  +-----+
-      |  5   |     |  14 | (17)
-      |      |-----+-----+
-      |      |     |  15 |
-  3   +------+  8  +-----+-----       } (36)
-      |      |     |  16 |
-      |      |-----+-----+
-      |  6   |     |  17 | (19)
-      |      |  9  +-----+
-      |      |     |  18 |
-------|------|-----+-----+------
-```
-
-The main background is that, as you may aware, the prime number theorem describes the [asymptotic distribution](https://youtu.be/j5s0h42GfvM) of prime numbers which is still a major problem in mathematic. 
-
-## Multiplication Zones
-
-Instead of a proved formula we came to a unique expression called ***zeta function***. This expression first appeared in a paper in 1737 entitled _Variae observationes circa series infinitas_. 
-
-```tip
-This expression states that the sum of the zeta function is equal to the product of the reciprocal of one minus the reciprocal of primes to the powers. But what has this got to do with the primes?  The answer is in the following product taken over the primes p (discovered by _[Leonhard Euler](https://en.wikipedia.org/wiki/Leonhard_Euler)_):
-```
-
-![zeta function](https://user-images.githubusercontent.com/8466209/219739322-ebdc1916-249a-49da-8ded-ce0fe1205550.png)
-
-This issue is actually come from ***[Riemann hypothesis](https://youtu.be/zlm1aajH6gY)***, a conjecture about the distribution of complex zeros of the Riemann zeta function that is considered to be ***the most important*** of _[unsolved problems](https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_mathematics)_ in pure mathematics.
-
-```note
-In addition to the trivial roots, there also exist ***complex roots*** for real t. We find that the he first ten (10) non-trivial roots of the Riemann zeta function is occured when the values of t below 50. A plot of the values of ζ(1/2 + it) for t ranging from –50 to +50 is shown below. The roots occur each time ***the locus passes through the origin***. _([mathpages](https://www.mathpages.com/home/kmath738/kmath738.htm))_.
-```
-
-[![trivial roots](https://user-images.githubusercontent.com/8466209/219828222-615a2037-dbcd-4412-95bf-740bb32094de.png)](https://www.mathpages.com/home/kmath738/kmath738.htm)
-
-Meanwhile obtaining the non complex numbers it is easier to look at a graph like the one below which shows Li(x) (blue), R(x) (black), π(x) (red) and x/ln x (green); and then proclaim "R(x) is the best estimate of π(x)." Indeed it is for that range, but as we mentioned above, Li(x)-π(x) changes sign infinitely often, and near where it does, Li(x) would be the best value.
-
-[![non complex numbers](https://user-images.githubusercontent.com/8466209/219214486-e6412fb0-d190-45ae-990f-524532661444.png)](https://primes.utm.edu/howmany.html#better)
-
-And we can see in the same way that the function Li(x)-(1/2)Li(x1/2) is 'on the average' a better approximation than Li(x) to π(x); but no importance can be attached to the latter terms in Riemann's formula even by repeated averaging.
-
-## Exponentiation Zones
-
-The problem is that the contributions from the non-trivial zeros at times swamps that of any but the main terms in these expansions.
-
-```warning
-A. E. Ingham says it this way: Considerable importance was attached formerly to a function suggested by Riemann as an approximation to π(x)... This function represents π(x) with astonishing accuracy for all values of x for which π(x) has been calculated, but we now see that its superiority over Li(x) ***is illusory***... and for special values of x (as large as we please) the one approximation will deviate as widely as the other from the true value _([primes.utm.edu](https://primes.utm.edu/howmany.html#better))_.
-```
-
-[![howmany primes](https://user-images.githubusercontent.com/36441664/87958552-dea18f80-cadb-11ea-9499-6c2ee580a5ca.png)](https://primes.utm.edu/howmany.html#pnt)
-
-Moreover in it was verified numerically, in a rigorous way using interval arithmetic, that _[The Riemann hypothesis is true up to 3 · 10^12](https://arxiv.org/pdf/2004.09765.pdf)_. That is, all zeroes β+iγ of the Riemann zeta-function with 0<γ≤3⋅1012 have β=1/2.
-
-```danger
-We have Λ ≤ 0.2. The next entry is conditional on taking H a little higher than 10*13, which of course, is not achieved by Theorem 1. This would enable one to prove Λ < 0.19. Given that our value of H falls between the entries in this table, it is possible that some extra decimals could be wrought out of the calculation. We have not pursued this _([arXiv:2004.09765](https://arxiv.org/abs/2004.09765))_.
-```
-
-[![functional equation](https://user-images.githubusercontent.com/8466209/219715694-751fe538-378d-4f58-ae82-ac9e6823ad65.png)](https://arxiv.org/pdf/2004.09765.pdf)
-
-This Euler formula represents the distribution of a group of numbers that are positioned at regular intervals on a straight line to each other. Riemann later extended the definition of zeta(s) to all complex numbers (***except the simple pole at s=1 with residue one***). Euler's product still holds if the real part of s is greater than one. Riemann derived the functional equation of zeta function.
-
-```danger
-The Riemann zeta function has the trivial zeros at -2, -4, -6, ... (the poles of gamma(s/2)).  Using the Euler product (with the functional equation) it is easy to show that all the other zeros are in the critical strip of non-real complex numbers with 0 < Re(s) < 1, and that they are symmetric about the critical line Re(s)=1/2. The unproved Riemann hypothesis is that all of the nontrivial zeros are actually on the critical line _([primes.utm.edu](https://primes.utm.edu/notes/rh.html))_.
-```
-
-![w-boson-kaon-w-and-z-bosons-weak-interaction-meson-standard-model-feynman-diagram-elementary-particle-pion-boson](https://github.com/eq19/maps/assets/8466209/fa4275d6-a5b8-4951-b012-9c86534ce23f)
-
-Unlike the strong and electromagnetic forces, the intermediary particles of the weak interaction, the W+, the W-, and the Z0 have rather large masses.
-
-```note
-A key aspect of the theory is the explanation of why three out of four of the intermediary particles of the electroweak force are massive. Illustration of two weak reactions.
-- The left panel shows beta decay while the middle panel shows how electron antineutrinos can be detected by conversion to a positron.
-- The right panel shows how W- emission works according to the quark model, ***resulting in the conversion of a down quark to an up quark and the resulting transformation of a neutron into a proton***.
-
-The real reason for the apparent weakness of the weak force is the large mass of the intermediary particles. As we have seen, large mass translates into short range for a virtual particle at low momentum transfers. _([libre texts.org](https://phys.libretexts.org/Bookshelves/University_Physics/Radically_Modern_Introductory_Physics_Text_II_(Raymond)/20%3A_The_Standard_Model/20.03%3A_The_Electroweak_Theory))_
-```
-
-[![Beta decay](https://github.com/eq19/maps/assets/8466209/e4a41d26-7ffd-43f2-9ff8-fc3abfe4247c)
-](https://opg.optica.org/oe/fulltext.cfm?uri=oe-27-20-28350&id=420769)
-
-This short range is what causes the weak force to appear weak for momentum transfers much less than the masses of the W and Z particles. 
-
-## Identition Zones
-
-_[Freeman Dyson](https://en.wikipedia.org/wiki/Freeman_Dyson#Quantum_physics_and_prime_numbers)_ discovered an intriguing connection between quantum physics and [Montgomery's pair correlation conjecture](https://en.wikipedia.org/wiki/Montgomery%27s_pair_correlation_conjecture) about the zeros of the [zeta function](https://gist.github.com/eq19/e9832026b5b78f694e4ad22c3eb6c3ef#zeta-function) which dealts with the distribution of primes.
-
-```note
-The Mathematical Elementary Cell 30 (***MEC30***) standard _[unites](https://www.eq19.com/multiplication/12.html#entrypoint-of-momentum-spin-3)_ the mathematical and physical results of 1972 by _the mathematician Hugh Montgomery and the physicist Freeman Dyson_ and thus reproduces energy distribution in systems as a path plan ***more accurately than a measurement***. _([Google Patent DE102011101032A9](https://patents.google.com/patent/DE102011101032A9/en#similarDocuments))_
-```
-
-![1-neutrino-oscillation-l](https://github.com/eq19/maps/assets/8466209/8216ea51-eebd-4b25-82c2-b4f11e9ecc3e)
-
-The path plan assume that a symmetric distribution of prime numbers with equal axial lengths from a ***middle zero axis = 15*** is able to determine the distribution of primes in a given number space. This assumption finally bring us to the equation of ***[Euler's identity](https://en.wikipedia.org/wiki/Euler%27s_identity)***. 
-
-```note
-Euler's identity is considered to be an exemplar of deep mathematical beauty as it shows a profound connection between the most fundamental numbers. Three (3) of the basic arithmetic operations occur exactly once each: ***addition***, ***multiplication***, and ***exponentiation*** _([Wikipedia](https://en.wikipedia.org/wiki/Euler%27s_identity))_.
-```
-
-![ckm-angles-n](https://github.com/eq19/maps/assets/8466209/d9cf0e77-97be-4372-a8b2-5428719bc3e1)
-
-The result should be a massive neutrinos that bring ***7 more parameters*** (3 [CKM](https://en.wikipedia.org/wiki/Cabibbo%E2%80%93Kobayashi%E2%80%93Maskawa_matrix) and 4 [PMNS](https://en.wikipedia.org/wiki/PMNS_matrix)) for a total of _[26 parameters](https://www.eq19.com/multiplication/15.html#parity-order)_ out of `11+26=37` symmetry.
+## The Pairwise Disjoint
 
 ```tip
 {{ site.github.latest_release.body }}
 ```
 
-[![CKM vs PMNS Matrix](https://github.com/eq19/maps/assets/8466209/44758746-c069-4fb6-a2e9-8574d2d63b29)](https://www.eq19.com/identition/span12/#the-11-dimensions)
+## Mobius Strip
 
-Nothing is going to be easly about the nature of prime numbers but they demonstrably congruent to something organized. Let's discuss starting with the _[addition zones](https://www.eq19.com/addition/)_.
+There are some mathematical shape of this residual objects. [Torus](https://gist.github.com/eq19/e9832026b5b78f694e4ad22c3eb6c3ef#the-crank-of-a-partition) is basically a donut shape, which has the property of of having variable Gaussian curvature. 
 
-**[eQuantum Project](https://github.com/eq19)**   
-Copyright © 2023-2024
+```note
+The blue parts of the torus above have positive curvature, the red parts negative and the top grey band has zero curvature.  If our 3 dimensional space was like the surface areas of a 4 dimensional torus, the parts would have different angle sums.
+```
 
-Reference:
-* [Riemann Zeta](https://commons.wikimedia.org/wiki/File:RiemannZeta_Zeros.svg)
-* [Mersenne Prime](https://en.wikipedia.org/wiki/Mersenne_prime)
-* [The Prime Hexagon](https://youtu.be/fQL4KRH3wUQ)
-* [The Primes Demystified](https://www.primesdemystified.com/First1000Primes.html)
+[![Torus](https://user-images.githubusercontent.com/8466209/228750971-14bb5e2a-5cc7-4b18-9d97-d77401deb55e.png)](https://gist.github.com/eq19/e9832026b5b78f694e4ad22c3eb6c3ef#the-crank-of-a-partition)
+
+Some parts of the surface has positive curvature, others zero, others negative.
+
+![ring_tor1_anim](https://github.com/eq19/maps/assets/8466209/4b77a4af-3b1c-434a-8999-50299af5e55d)
+
+If you start anywhere on its surface and follow the curvature round you will eventually return to the same place having travelled on every part of the surface.
+
+![Mobius](https://user-images.githubusercontent.com/8466209/228749895-07d0a768-8c0c-49b1-933f-beec4ce57e25.png)
+
+![Fiddler_crab_mobius_strip](https://github.com/eq19/maps/assets/8466209/4e817847-439e-431c-830c-86baa87da064)
+
+Mobius strip only has one side, there are two more bizarre shapes with strange properties. 
+
+## The Klein bottle 
+
+The Klein bottleis in someways a 3D version of the Mobius strip and even though it exists in 3 dimensions, to make a true one you need to “fold through” the 4th dimension.
+
+```note
+In [mathematics](https://en.wikipedia.org/wiki/Mathematics), the Klein bottle ([/ˈklaɪn/](https://en.wikipedia.org/wiki/Help:IPA/English)) is an example of a [non-orientable](https://en.wikipedia.org/wiki/Orientability) [surface](https://en.wikipedia.org/wiki/Surface_(topology)); that is, informally, a one-sided surface which, if traveled upon, could be followed back to the point of origin while flipping the traveler upside down.
+- More formally, the Klein bottle is a [two-dimensional](https://en.wikipedia.org/wiki/Two-dimensional) [manifold](https://en.wikipedia.org/wiki/Manifold) on which one cannot define a [normal vector](https://en.wikipedia.org/wiki/Normal_vector) at each point that varies [continuously](https://en.wikipedia.org/wiki/Continuous_function) over the whole manifold.
+- Other related non-orientable surfaces include the [Möbius strip](https://en.wikipedia.org/wiki/M%C3%B6bius_strip) and the [real projective plane](https://en.wikipedia.org/wiki/Real_projective_plane). 
+
+While a Möbius strip is a surface with a [boundary](https://en.wikipedia.org/wiki/Boundary_(topology)), a Klein bottle has no boundary. For comparison, a [sphere](https://en.wikipedia.org/wiki/Sphere) is an orientable surface with no boundary.
+```
+
+[![image](https://user-images.githubusercontent.com/8466209/280599328-a9fa1ac3-aed2-4568-a9ed-8ed8f720e2a5.png)](https://en.wikipedia.org/wiki/Klein_bottle)
+
+[![Klein bottle](https://user-images.githubusercontent.com/8466209/228749672-e1db5df4-8843-4c73-b3a1-b16d21188c52.png)](https://ibmathsresources.com/2014/08/05/non-euclidean-geometry-v-theshapeoftheuniverse/)
+
+A sign inversion visualized as a vector pointing along the [Möbius band](https://en.wikipedia.org/wiki/M%C3%B6bius_band) when the circle is continuously rotated through a full turn of 360°.
+
+![image](https://github.com/eq19/maps/assets/8466209/ff2606a4-aedd-4ec0-a698-d61dd98e9af1)
+
+## The Spinors
+
+A spinor associated to the conformal group of the circle, exhibiting a sign inversion on a full rotation of the circle through an angle of 2π.
+
+***(17+13) + (11+19) = (7+11) + (19+23) = 60***
+
+[![](https://user-images.githubusercontent.com/36441664/276617374-f69dd637-a11c-47b2-a3ac-f90a5c95c939.png)](https://en.wikipedia.org/wiki/Dirac_spinor#Four-spinor_for_particles)
+
+[![Sipnors](https://user-images.githubusercontent.com/8466209/283152686-01a7a295-d34c-4b95-923c-10f91c2983f9.png)](https://youtu.be/4NJBvkjpC3E)
+
+![3-Figure1-1](https://github.com/eq19/maps/assets/8466209/213c69eb-5cd6-4d2d-9acf-b28242b90486)
+
+```note
+Eigennvalue curves (right) showing a triple eigenvalue at zero for τ = 1 and double eigenvalues at 1 ± √2i for τ = √43. On the left the graph of 1/|Q(λ)| with the same eigenvalue curves plotted in the ground plane. Green stars indicate the eigenvalues of A, blue stars the roots of puv(λ) and triangles the zeroes of Q0
+(λ)
+```
+
+## Global Properties 
+
+***7 + 11 + 13 = 31***
+***1 + (26+6) + (27+6) = 66***
+
+[![9 vs 18](https://github.com/eq19/maps/assets/8466209/19f68eca-c0e1-48fc-9c9a-60d01cf26057)](https://www.hexspin.com/0-1-and-negative-numbers/)
+
+```txt
+ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 
+---+---+---+---+---+---+---+---+---+---+----+----+----+----+----+----+----+----
+ - | - | 20| 21| 22| 23| 24| 25|
+---+---+---+---+---+---+---+---+
+ - | - | - | - | 28| 29| ◄--- missing 26 & 27 ✔️
+---+---+---+---+---+---+
+ 30| 31| - | - | ◄--- missing 32 & 33 ✔️
+---+---+---+---+
+ 36|
+```
+
+```tip
+This behaviour finaly brings us to a suggestion that the dimension in string theory are linked with ***the prime distribution level*** as indicated by the _[self repetition](https://www.eq19.com/exponentiation/#self-repetition)_ on MEC30.
+```
+
+***7th spin - 4th spin = (168 - 102)s = 66s = 6 x 11s = 30s + 36s***
+
+![IMG_20231221_074421](https://github.com/eq19/maps/assets/8466209/1e7dc443-b7d8-44d9-8da0-5fe50dd7ee70)
+
+```txt
+$True Prime Pairs:
+(5,7), (11,13), (17,19)
+ 
+layer | node | sub |  i  |  f.                                       MEC 30 / 2
+------+------+-----+-----+------      ‹------------------------------ 0 {-1/2}
+      |      |     |  1  | --------------------------
+      |      |  1  +-----+                           |    
+      |  1   |     |  2  | (5)                       |
+      |      |-----+-----+                           |
+      |      |     |  3  |                           |
+  1   +------+  2  +-----+----                       |
+      |      |     |  4  |                           |
+      |      +-----+-----+                           |
+      |  2   |     |  5  | (7)                       |
+      |      |  3  +-----+                           |
+      |      |     |  6  |                          11s ‹-- ∆28 = (71-43) √
+------+------+-----+-----+------      } (36)         |
+      |      |     |  7  |                           |
+      |      |  4  +-----+                           |
+      |  3   |     |  8  | (11)                      |
+      |      +-----+-----+                           |
+      |      |     |  9  |‹-- ∆9 = (89-71) / 2 √     |
+  2   +------|  5* +-----+-----                      |
+      |      |     |  10 |                           |
+      |      |-----+-----+                           |
+      |  4   |     |  11 | (13) --------------------- 
+      |      |  6  +-----+            ‹------------------------------ 15 {0}
+      |      |     |  12 |---------------------------
+------+------+-----+-----+------------               |
+      |      |     |  13 |                           |
+      |      |  7  +-----+                           |
+      |  5   |     |  14 | (17)                      |
+      |      |-----+-----+                           |
+      |      |     |  15 |                           7 x 24 = 168 √
+  3*  +------+  8  +-----+-----       } (36)         |
+      |      |     |  16 |                           |
+      |      |-----+-----+                           |
+      |  6   |     |  17 | (19)                      |
+      |      |  9  +-----+                           |
+      |      |     |  18 | -------------------------- 
+------|------|-----+-----+-----  ‹----------------------------------- 30 {+1/2}
+```
+
+This model may explains the newly discovered prime number theorem in relatively simple layman's terms for anyone with a slight background in theoretical physics. 
+
+```note
+The property gives an in depth analysis of the not so random distribution of primes by showing how it has solved Goldbach's conjecture and the Ulam spiral.
+```
+
+![Schematic-of-the-internal-energy-ow-in-the-model-The-lines-of-ow-geodesics-circulate](https://github.com/eq19/maps/assets/8466209/e4025311-cda2-4fd1-a870-ed049a14d8af)
+
+The model suggests a possible origin for both charge and half-integer spin and also reconciles the apparently contradictory criteria discussed above.
+
+```note
+***Arbitrary sequence of three (3) consecutive nucleotides*** along a helical path whose metric distances satisfy the relationship dn,n+3dn,n+2dn,n+1.
+- Sketch showing a characteristic duplex DNA helical standing-wave pattern.
+- The vertical lines depict the cross-section projections of each bp along the helix axis, their length providing a measure of their twist magnitude.
+- Thick lines represent the sugar-phosphate profile. 
+
+Optimally overlapping bps are indicated by the presence of the ovals (m) measures the overlapping resonance correlation length. _([π − π orbital resonance in twisting duplex DNA](https://github.com/eq19/maps/files/13790206/prb_Hx2.pdf))_
+```
+
+[![a-Arbitrary-sequence-of-three-consecutive-nucleotides-along-a-helical-path-whose-metric](https://github.com/eq19/maps/assets/8466209/ba9499c8-c066-44e5-8b78-d73b198accfa)](https://github.com/eq19/maps/files/13790206/prb_Hx2.pdf)
+
+Under certain conditions, energy could not take on any indiscriminate value, the energy must be some multiple of a very small quantity (later to be known as a ***quantum***).
+
+```note
+Twisted strip model for one wavelength of a photon with circular polarisation in  at space. A similar photon in a closed path in curved space with periodic boundary conditions of length C. 
+
+- The B-field is in the plane of the strip and the E-field is perpendicular to it (a).
+- The E-field vector is radial and directed inwards, and the B-field is vertical (b). 
+
+The magnetic moment ~, angular momentum L~, and direction of propagation with velocity c are also indicated. _([Is the electron a photon with toroidal topology? - pdf](https://github.com/eq19/maps/files/13790325/LdBelectoroid.pdf))_
+```
+
+[![a-Twisted-strip-model-for-one-wavelength-of-a-photon-with-circular-polarisation-in-at](https://github.com/eq19/maps/assets/8466209/fe25c572-6c0b-4200-b249-f9341e72c47e)](https://github.com/eq19/maps/files/13790325/LdBelectoroid.pdf)
+
+A deeper understanding requires a unication of the aspects discussed above in terms of an underlying principle.
