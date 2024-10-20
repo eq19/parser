@@ -286,6 +286,7 @@ True Prime Pairs:
 ```
 
 ![IMG_20240118_121014](https://github.com/eq19/maps/assets/8466209/942b517a-954c-4f1e-b075-14a52e08d9be)
+
 ## The Pairwise Disjoint
 
 ```tip
