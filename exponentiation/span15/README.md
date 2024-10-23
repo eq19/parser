@@ -186,8 +186,8 @@ From the 50 we gonna split the 15 by _bilateral 9 sums_ resulting 2 times 15+9=2
 ```note
 Consider the evidence: scattering experiments strongly suggest a meson to be composed of a quark anti-quark pair and a baryon to be composed of three quarks. The famous 3R experiment also suggests that whatever force binds the quarks together has 3 types of charge (called the 3 colors).
 - Now, into the realm of theory: we are looking for an internal symmetry having a 3-dimensional representation which can give rise to a neutral combination of 3 particles (otherwise no color-neutral baryons).
--  The simplest such statement is that a linear combination of each type of charge (red + green + blue) must be neutral, and following William of Occam we believe that the simplest theory describing all the facts must be the correct one.
--  We now postulate that the particles carrying this force, called gluons, must occur in color anti-color units (i.e. nine of them).
+- The simplest such statement is that a linear combination of each type of charge (red + green + blue) must be neutral, and following William of Occam we believe that the simplest theory describing all the facts must be the correct one.
+- We now postulate that the particles carrying this force, called gluons, must occur in color anti-color units (i.e. nine of them).
 - BUT, red + blue + green is neutral, which means that the linear combination red anti-red + blue anti-blue + green anti-green must be non-interacting, since otherwise the colorless baryons would be able to emit these gluons and interact with each other via the strong force—contrary to the evidence.  So, there can only be ***EIGHT gluons***.
 
 This is just Occam's razor again: a hypothetical particle that can't interact with anything, and therefore can't be detected, doesn't exist. The simplest theory describing the above is the SU(3) one with the gluons as the basis states of the Lie algebra.  That is, gluons transform in the adjoint representation of SU(3), which is 8-dimensional. _([Physics FAQ](https://math.ucr.edu/home/baez/physics/ParticleAndNuclear/gluons.html))_
@@ -196,6 +196,12 @@ This is just Occam's razor again: a hypothetical particle that can't interact wi
 ![0_kGdCmWqcFG_s8fIq](https://github.com/eq19/maps/assets/8466209/dbb91090-dcb6-4ad9-bcb6-427054eab4dc)
 
 Please note that we are not talking about the number of 19 which is the 8th prime. Here we are talking about ***19th*** as sequence follow backward position of 19 as per the scheme below where the 19th prime which is 67 goes 15 from 66 to 51. 
+
+```note
+- In [quantum field theory](https://en.wikipedia.org/wiki/Quantum_field_theory), the theta vacuum is the semi-classical [vacuum state](https://en.wikipedia.org/wiki/Quantum_vacuum_state) of non-[abelian](https://en.wikipedia.org/wiki/Abelian_group) [Yang–Mills theories](https://en.wikipedia.org/wiki/Yang%E2%80%93Mills_theory) specified by the vacuum angle θ that arises when the state is written as a [superposition](https://en.wikipedia.org/wiki/Quantum_superposition) of an infinite set of [topologically](https://en.wikipedia.org/wiki/Topology) distinct vacuum states.
+- The dynamical effects of the vacuum are captured in the [Lagrangian formalism](https://en.wikipedia.org/wiki/Lagrangian_mechanics) through the presence of a θ-term which in [quantum chromodynamics](https://en.wikipedia.org/wiki/Quantum_chromodynamics) leads to the [fine tuning](https://en.wikipedia.org/wiki/Fine-tuning_(physics)) problem known as the [strong CP problem](https://en.wikipedia.org/wiki/Strong_CP_problem).
+- It was discovered in 1976 by [Curtis Callan](https://en.wikipedia.org/wiki/Curtis_Callan), [Roger Dashen](https://en.wikipedia.org/wiki/Roger_Dashen), and [David Gross](https://en.wikipedia.org/wiki/David_Gross),[[1]](https://en.wikipedia.org/wiki/Theta_vacuum#cite_note-1) and independently by [Roman Jackiw](https://en.wikipedia.org/wiki/Roman_Jackiw) and Claudio Rebbi  _([Wikipedia](https://en.wikipedia.org/wiki/Theta_vacuum))_.
+```
 
 ***π(1000) = π(Φ x 618) = 168 = 100 + 68 = (50x2) + (66+2) = 102 + 66***
 
@@ -265,14 +271,5 @@ $True Prime Pairs:
 139¨ |  1     2     3  |  4     5     6  |  7     8     9  |
                     Δ                 Δ                 Δ       
 ```
-
-![The-PMNS-Neutrino-Mixing-Matrix-The-non-diagonal-structure-and-the-smallness-of-the-U-e3](https://github.com/eq19/maps/assets/8466209/4f88d01a-f0e5-4646-8e28-2994a6a13c94)
-![images (8)](https://github.com/eq19/maps/assets/8466209/cf192c00-aa54-4ea2-8702-2ec51ca03155)
-![16-0054-07 hr-web](https://github.com/eq19/maps/assets/8466209/98112bc5-ca88-4c97-8ee7-87fc0d59211f)
-![images (12)](https://github.com/eq19/maps/assets/8466209/bfacddf4-73db-4943-90fd-3219441d1abb)
-
-![](https://github.com/eq19/maps/assets/8466209/f97a0e7e-af2c-402c-ae25-2570aab8f467)
-
-![](https://github.com/eq19/maps/assets/8466209/938e3517-d66e-4f37-8488-f18a8b522f14)
 
 So basically  there is a basic transformation between ***[addition](https://www.eq19.com/addition/)*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` while the 7 vs 12 will be treated as ***exponentiation***.
