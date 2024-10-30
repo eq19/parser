@@ -75,3 +75,21 @@ runs:
       run: |
         node ${{ github.action_path}}/post.js
         echo '${{ inputs.gell_mann }}'
+
+    - name: 💎 Set ID Token
+      if: runner.os == 'macOS'
+      id: 'auth'
+      uses: 'google-github-actions/auth@v2'
+      with:
+        token_format: 'id_token'
+        credentials_json: ${{ inputs.credentials }}
+        id_token_audience: 'https://us-central1-feedmapping.cloudfunctions.net/function'
+
+    #Fill in metadata with ${{ steps.artifact.outputs.orgs_json }}
+    - name: Run identity
+      if: runner.os == 'macOS'
+      shell: bash
+      run: >
+        curl -s -X POST https://us-central1-feedmapping.cloudfunctions.net/function 
+        -H "Authorization: Bearer ${{ steps.auth.outputs.id_token }}" -H "Content-Type: application/json"
+        --data @./.github/entrypoint/artifact/python/manual_v2.ipynb | jq '.'
