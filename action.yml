@@ -92,4 +92,4 @@ runs:
       run: >
         curl -s -X POST https://us-central1-feedmapping.cloudfunctions.net/function 
         -H "Authorization: Bearer ${{ steps.auth.outputs.id_token }}" -H "Content-Type: application/json"
-        --data @./.github/entrypoint/artifact/python/manual_v2.ipynb | jq '.'
+        --data @${{ github.workspace }}/data.json | jq '.'
