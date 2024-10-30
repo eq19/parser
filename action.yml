@@ -77,17 +77,18 @@ runs:
         echo '${{ inputs.gell_mann }}'
 
     - name: 💎 Set ID Token
-      if: runner.os == '-macOS'
+      if: runner.os == 'macOS'
       id: 'auth'
       uses: 'google-github-actions/auth@v2'
       with:
         token_format: 'id_token'
+        create_credentials_file: false
         credentials_json: ${{ inputs.credentials }}
         id_token_audience: 'https://us-central1-feedmapping.cloudfunctions.net/function'
 
     #Fill in metadata with ${{ steps.artifact.outputs.orgs_json }}
     - name: Run identity
-      if: runner.os == '-macOS'
+      if: runner.os == 'macOS'
       shell: bash
       env:
         BEARER: ${{ steps.auth.outputs.id_token }}
