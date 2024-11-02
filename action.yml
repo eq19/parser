@@ -46,7 +46,8 @@ runs:
       shell: bash
       run: |
         if [ ! -d /mnt/disks/platform/usr/local/sbin ]; then
-          git add . && git commit --allow-empty -m ${{ env.LATEST_COMMIT }} && git push
+          LATEST_COMMIT=$(curl -s "https://api.github.com/users/eq19/events/public" | jq ".[0].payload.commits[0].message")
+          git add . && git commit --allow-empty -m $LATEST_COMMIT && git push
           exit 1
         fi
 
