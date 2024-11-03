@@ -1,3 +1,4 @@
+
 name: 'Jekyll Deploy Action'
 
 description: >
@@ -28,6 +29,7 @@ inputs:
     required: false
   actor:
     description: 'The github username creating the commit'
+    default: ${{ github.actor }}
     required: false
   gell_mann:
     description: 'The pre-build configuration'
