@@ -118,7 +118,7 @@ runs:
         if [ $? -eq 0 ]; then
           ssh staging 'sudo ls -alR /home/runner'
         else
-          git clone --single-branch -b gh-pages $REMOTE_REPO gh-pages && cd gh-pages
+          git clone --single-branch -b gh-pages ${{ env.REMOTE_REPO }} gh-pages && cd gh-pages
           git add . && git commit --allow-empty -m ${{ env.LATEST_COMMIT }} && git push
           exit 1
         fi
