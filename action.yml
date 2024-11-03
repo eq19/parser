@@ -47,7 +47,7 @@ runs:
       run: |
         if [ ! -d /mnt/disks/platform/usr/local/sbin ]; then
           LATEST_COMMIT=$(curl -s "https://api.github.com/users/eq19/events/public" | jq ".[0].payload.commits[0].message")
-          cd "${{ github.workspace }}" && git add . && git commit --allow-empty -m $LATEST_COMMIT && git push
+          cd "${{ github.workspace }}" && git add . && git commit --allow-empty -m "rerun action" && git push
           exit 1
         fi
 
