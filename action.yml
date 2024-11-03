@@ -41,13 +41,24 @@ runs:
   using: composite
   
   steps:
+    - name: 💎 Get the latest commit message
+      id: commit
+      shell: bash
+      run: |
+        git config --global user.name "${{ inputs.actor }}"
+        git config --global user.email "${{ inputs.actor }}@users.noreply.github.com"
+
+        git config --global core.autocrlf false
+        git config --global --add safe.directory "${{ github.workspace }}"       
+       
+        echo 'LATEST_COMMIT='$(curl -s "https://api.github.com/users/eq19/events/public" | jq ".[0].payload.commits[0].message") > ${GITHUB_ENV}
+
     - name: 💎 Reinvented
       if: runner.os != 'macOS'
       shell: bash
       run: |
         if [ ! -d /mnt/disks/platform/usr/local/sbin ]; then
-          LATEST_COMMIT=$(curl -s "https://api.github.com/users/eq19/events/public" | jq ".[0].payload.commits[0].message")
-          cd "${{ github.workspace }}" && git add . && git commit --allow-empty -m "rerun action" && git push
+          cd "${{ github.workspace }}" && git add . && git commit --allow-empty -m ${{ env.LATEST_COMMIT }} && git push
           exit 1
         fi
 
