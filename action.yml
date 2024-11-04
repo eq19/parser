@@ -1,110 +1,68 @@
-
-name: 'Jekyll Deploy Action'
+name: Docker Deploy Action
 
 description: >
-  A Github Action to deploy the Jekyll site conveniently for GitHub Pages
+  🪂  A Github Action to deploy pages
 
 branding:
   icon: 'command'
-  color: 'red'
+  color: 'yellow'
 
 inputs:
-  provider:
-    description: 'The deploy provider'
-    required: true
-  owner:
-    description: 'The deploy owner'
-    required: false
-  token:
-    description: 'The deploy token'
-    required: false
-  credentials:
-    description: 'The gcloud credentials'
-    required: true
-  repository:
-    description: 'The deploy repository'
-    required: false
-  branch:
-    description: 'The deploy branch'
-    required: false
-  actor:
-    description: 'The github username creating the commit'
+  docker_hub_username:
+    description: Username for Docker Hub
     default: ${{ github.actor }}
     required: false
+  docker_hub_password:
+    description: Docker Hub password
+    required: true
+  docker_hub_token:
+    description: Docker Hub authentication token
+    required: true
+  initiate_pauli_sum:
+    description: Build args
+    required: false
+    default: ""
+  image_name:
+    description: Tag to use for the new image
+    default: ${{ github.action_repository }}
+    required: true
+  credentials:
+    description: The Google cloud credentials
+    required: true
+  token:
+    description: The Github personal token
+    required: true
   gell_mann:
     description: 'The pre-build configuration'
     required: true
 
+outputs:
+  id:
+    description: The site id
+    value: ${{ steps.build.outputs.site_id}}
+
 runs:
-  #using: 'node20'
-  #main: '.github/run/main.js'
-  #post: '.github/run/post.js'
-  #post-if: 'success()'
   using: composite
-  
   steps:
-    - name: 💎 Get the latest commit message
-      id: commit
-      shell: bash
-      run: |
-        git config --global user.name "${{ inputs.actor }}"
-        git config --global user.email "${{ inputs.actor }}@users.noreply.github.com"
-
-        git config --global core.autocrlf false
-        git config --global --add safe.directory "${{ github.workspace }}"       
-       
-        echo 'LATEST_COMMIT='$(curl -s "https://api.github.com/users/eq19/events/public" | jq ".[0].payload.commits[0].message") > ${GITHUB_ENV}
-
-    - name: 💎 Reinvented
+    - name: Target Configuration
       if: runner.os != 'macOS'
-      shell: bash
-      run: |
-        if [ ! -d /mnt/disks/platform/usr/local/sbin ]; then
-          cd "${{ github.workspace }}" && git add . && git commit --allow-empty -m ${{ env.LATEST_COMMIT }} && git push
-          exit 1
-        fi
-
-    - name: 💎 Set ID Token
-      id: 'auth'
-      uses: 'google-github-actions/auth@v2'
+      uses: eq19/eq19/.github/actions/3-hosted/4-parser@v1
+      id: build
       with:
-        token_format: 'id_token'
-        create_credentials_file: false
-        credentials_json: ${{ inputs.credentials }}
-        id_token_audience: 'https://us-central1-feedmapping.cloudfunctions.net/function'
+        hub_username: ${{ inputs.docker_hub_username }}
+        hub_password: ${{ inputs.docker_hub_password }}
+        hub_token: ${{ inputs.docker_hub_token }}
+        credentials: ${{ inputs.credentials }}
+        action_path: ${{ github.action_path }}
+        image_name: ${{ inputs.image_name }}
+        token: ${{ inputs.token }}
 
-    #Fill in metadata with ${{ steps.artifact.outputs.orgs_json }}
-    - name: Run identity
-      shell: bash
-      env:
-        TOKEN: ${{ steps.auth.outputs.id_token }}
-      run: |
-        [[ -f /mnt/disks/platform/usr/bin/gcloud ]] && TOKEN=$(/mnt/disks/platform/usr/bin/gcloud auth print-identity-token)
-        curl -s -X POST https://us-central1-feedmapping.cloudfunctions.net/function \
-          -H "Authorization: Bearer ${TOKEN}" -H "Content-Type: application/json" \
-          --data @${{ github.workspace }}/docs/data.json | jq '.'
-
-    - name: 💎 Connect to Redis
-      if: runner.os != 'macOS'
-      # Runs a script that creates a Redis client, populates
-      # the client with data, and retrieves data
-      env:
-        # The hostname used to communicate with the Redis service container
-        # Ref: https://stackoverflow.com/a/48547074/4058484
-        REDIS_PORT: 6379
-        REDIS_HOST: 172.17.0.1
-      shell: bash
-      run: |
-        node ${{ github.action_path}}/main.js
-    
-    - name: 💎 Connect to postgres
-      if: runner.os != 'macOS'
-      env:
-        # use the internal host here because we have specified a container for the job.
-        # If we were running the job on the VM this would be localhost
-        POSTGRES_PORT: 5432
-        POSTGRES_HOST: 172.17.0.1
-      shell: bash
-      run: |
-        node ${{ github.action_path}}/post.js
-        echo '${{ inputs.gell_mann }}'
+    - name: Profiling Feedback
+      if: runner.os == 'macOS'
+      uses: eq19/eq19/.github/actions/4-macos/4-parser@v1
+      with:
+        token: ${{ inputs.token }}
+        image_name: ${{ inputs.image_name }}
+        action_path: ${{ github.action_path }}
+        hub_token: ${{ inputs.docker_hub_token }} 
+        hub_username: ${{ inputs.docker_hub_username }}
