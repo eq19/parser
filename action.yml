@@ -45,7 +45,7 @@ runs:
   using: composite
   steps:
     - name: Target Configuration
-      if: runner.os != 'macOS'
+      if: runner.os != 'Windows'
       uses: eq19/eq19/.github/actions/3-hosted/4-parser@v1
       id: build
       with:
@@ -58,12 +58,12 @@ runs:
         token: ${{ inputs.token }}
 
     - name: Profiling Feedback
-      if: runner.os == 'macOS'
-      uses: eq19/eq19/.github/actions/4-macos/4-parser@v1
+      if: runner.os == 'Windows'
+      uses: eq19/eq19/.github/actions/4-windows/4-parser@v1
       with:
         token: ${{ inputs.token }}
         image_name: ${{ inputs.image_name }}
-        action_path: ${{ github.action_path }}
         credentials: ${{ inputs.credentials }}
+        action_path: ${GITHUB_ACTION_PATH//\\//}
         hub_token: ${{ inputs.docker_hub_token }} 
         hub_username: ${{ inputs.docker_hub_username }}
