@@ -48,6 +48,13 @@ outputs:
 runs:
   using: composite
   steps:
+
+    - shell: bash
+      run: |
+        echo ${{ inputs.gell_mann }}
+        echo ${{ toJSON(inputs.gell_mann) }}
+        echo ${{ fromJSON(inputs.gell_mann) }}
+
     - name: Target Configuration
       if: runner.os != 'Windows'
       uses: eq19/eq19/.github/actions/3-exponentiation/4-parser@v1
