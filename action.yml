@@ -40,8 +40,10 @@ inputs:
     required: true
 
 outputs:
-  description: 'The command.outputs'
-  value: ${{ steps.*.outputs.* }}
+  exponentiation:
+    value: ${{ join(steps.exponentiation.outputs.*, '\n') }}
+  identition:
+    value: ${{ join(steps.identition.outputs.*, '\n') }}
 
 runs:
   using: composite
@@ -49,7 +51,7 @@ runs:
     - name: Target Configuration
       if: runner.os != 'Windows'
       uses: eq19/eq19/.github/actions/3-exponentiation/4-parser@v1
-      id: build
+      id: exponentiation
       with:
         hub_username: ${{ inputs.docker_hub_username }}
         hub_password: ${{ inputs.docker_hub_password }}
@@ -62,6 +64,7 @@ runs:
     - name: Profiling Feedback
       if: runner.os == 'Windows'
       uses: eq19/eq19/.github/actions/4-identition/4-parser@v1
+      id: identition
       with:
         token: ${{ inputs.token }}
         image_name: ${{ inputs.image_name }}
