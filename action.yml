@@ -35,6 +35,9 @@ inputs:
   gell_mann:
     description: 'The pre-build configuration'
     required: true
+  id:
+    description: The id according to os
+    required: true
 
 outputs:
   id:
@@ -46,7 +49,7 @@ runs:
   steps:
     - name: Target Configuration
       if: runner.os != 'Windows'
-      uses: eq19/eq19/.github/actions/3-hosted/4-parser@v1
+      uses: eq19/eq19/.github/actions/3-exponentiation/4-parser@v1
       id: build
       with:
         hub_username: ${{ inputs.docker_hub_username }}
@@ -59,7 +62,7 @@ runs:
 
     - name: Profiling Feedback
       if: runner.os == 'Windows'
-      uses: eq19/eq19/.github/actions/4-windows/4-parser@v1
+      uses: eq19/eq19/.github/actions/4-identition/4-parser@v1
       with:
         token: ${{ inputs.token }}
         image_name: ${{ inputs.image_name }}
