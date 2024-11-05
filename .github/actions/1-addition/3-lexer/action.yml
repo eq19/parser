@@ -63,20 +63,25 @@ inputs:
     description: 'The deploy repository'
     default: ${{ github.repository }}
     required: false
+  id:
+    description: The id according to os
+    required: true
 
 outputs:
+  decays:
+    description: 'The target service'
+    value: ${{ env.PGSERVICEFILE }}
   command:
     description: 'The command.outputs'
     value: ${{ steps.command.outputs.stdout }}
-  decays:
-    description: 'The target repository'
-    value: ${{ env.PGSERVICEFILE }}
+  variables: 
+    description: 'The join outputs'
+    value: ${{ join(steps.variables.outputs.*, '\n') }}
 
 runs:
   using: composite
   steps:
     - name: 🪂 Adapt feed mapping
-      if: runner.os != 'Windows'
       shell: bash
       run: |
         git clone --single-branch -b gh-pages https://github.com/${{ env.TARGET_REPOSITORY }} ${{ inputs.action_path }}/_site &>/dev/null  
@@ -90,7 +95,6 @@ runs:
         cat ${{ inputs.action_path }}/_site/.env && cat ${{ inputs.action_path }}/Dockerfile
 
     - name: 🚀 Initiate Lexer
-      if: runner.os != 'Windows'
       uses: devcontainers/ci@v0.3
       id: set-output
       with:
@@ -104,11 +108,14 @@ runs:
           TARGET_REPOSITORY=${{ env.TARGET_REPOSITORY }}
 
     - name: 💎 Variables
-      if: runner.os != 'Windows'
       id: variables
       shell: bash
-      run: |
+      env:
+        id: ${{ inputs.id }}
+        TARGET_REPOSITORY: ${{ env.TARGET_REPOSITORY }}
+      run: |        
         BASE_NAME=$(basename ${{ inputs.image_name }})
+        echo 'output_${id}='${TARGET_REPOSITORY} >> ${GITHUB_OUTPUT}    
         IFS=', '; array=($(curl -L -s 'https://registry.hub.docker.com/v2/repositories/${{ inputs.image_name }}/tags?page_size=1024' | jq -rc '."results"[]["name"]' | yq eval -P | sed "s/ /, /g"))
         for ((i=0; i < ${#array[@]}; i++)); do
           if [ "${array[$i]}" != "latest" ]; then
