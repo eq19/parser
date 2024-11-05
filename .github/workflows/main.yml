@@ -40,12 +40,9 @@ jobs:
         config:
           - { os: ubuntu-latest, id: 1 }
           - { os: macos-latest, id: 2 }
-    runs-on: ${{ matrix.config.os }}
-    outputs:
-      description: 🏃‍♂️ Simulate Gell-Mann
-      value: ${{ join(steps.*.outputs.*, '\n') }}
-    
+
     # 🔧 Commutation relations
+    runs-on: ${{ matrix.config.os }}
     if: ${{ github.event_name == 'push' ||
         github.event.workflow_run.conclusion == 'success' }}
 
@@ -88,7 +85,11 @@ jobs:
           docker_hub_token: ${{ secrets.DOCKER_HUB_TOKEN }}
           docker_hub_password: ${{ secrets.DOCKER_HUB_PASSWORD }}
           initiate_pauli_sum: ${{ toJSON(steps.feed-mapping.outputs) }}
-         
+
+    outputs:
+      description: 🏃‍♂️ Simulate Gell-Mann
+      value: ${{ toJSON(steps.*.outputs) }}
+
   parsering:
     needs: lexering
     continue-on-error: true
@@ -141,5 +142,5 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
           credentials: ${{ secrets.GCP_CREDENTIALS }}
           gell_mann: ${{ toJSON(steps.eval-syntax.outputs) }}
-          failure_status: ${{ contains(steps.*.conclusion, 'failure') ||
-            (runner.os == 'macOS' && contains(needs.*.result, 'failure')) }}
+          failure_status: ${{ contains(steps.*.outcome, 'failure') ||
+            (matrix.config.id == 4 && contains(needs.*.result, 'failure')) }}
