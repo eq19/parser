@@ -51,8 +51,8 @@ runs:
     - shell: bash
       run: |
         echo ${{ inputs.gell_mann }}
+        echo ${{ inputs.gell_mann.spin }}
         echo ${{ toJSON(inputs.gell_mann) }}
-        echo ${{ fromJSON(inputs.gell_mann) }}
 
     - name: Target Configuration
       if: runner.os != 'Windows'
