@@ -64,9 +64,9 @@ inputs:
     required: false
 
 outputs:
-  site_id:
-    description: "A file path to a results file."
-    value: ${{ env.ID}}
+  all_outputs:
+    description: Collect all outputs
+    value: ${{ toJSON(steps.*.outputs) }}
 
 runs:
   #using: 'node20'
@@ -76,6 +76,15 @@ runs:
   using: composite
   
   steps:
+    - name: 💎 Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        cache-version: 1
+        ruby-version: '3.3'
+        #rubygems: latest
+        bundler-cache: true
+        working-directory: ${{ github.workspace }}
+        
     - name: 💎 Set ID Token
       id: 'auth'
       uses: 'google-github-actions/auth@v2'
@@ -92,7 +101,6 @@ runs:
       env:
         TOKEN: ${{ steps.auth.outputs.id_token }}
       run: |
-        #brew install ruby-full
         #gem install faraday-retry github-pages --platform=ruby
         curl -s -X POST https://us-central1-feedmapping.cloudfunctions.net/function \
           -H "Authorization: Bearer ${TOKEN}" -H "Content-Type: application/json" \

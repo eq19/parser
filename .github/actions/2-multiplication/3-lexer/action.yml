@@ -65,12 +65,12 @@ inputs:
     required: false
 
 outputs:
-  ip:
-    description: 'The command.outputs'
+  describe:
+    description: Collect describe outputs
     value: ${{ steps.describe.outputs.ip }}
-  decays:
-    description: 'The target repository'
-    value: ${{ steps.setup_runner.outputs.function }}
+  compute:
+    description: Collect compute outputs
+    value: ${{ toJSON(steps.compute.outputs) }}
 
 runs:
   using: composite
@@ -83,27 +83,24 @@ runs:
         ssh-keygen -t rsa -b 4096 -N '' -f $HOME/.ssh/id_rsa -C root && sed -i.backup "1s|^|runner: |" $HOME/.ssh/id_rsa.pub
         gcloud compute instances add-metadata grid-${{ env.IMAGE_TAG }} --zone=us-central1-a --metadata-from-file ssh-keys=$HOME/.ssh/id_rsa.pub > /dev/null
 
-    #Ref: https://stackoverflow.com/a/29455821/4058484
-    - name: 🪂 Setup Runner by API
-      id: setup_runner
-      shell: bash
-      run: |
         echo $(gcloud compute instances describe grid-${{ env.IMAGE_TAG }} --zone=us-central1-a --format json) > instance
-        echo 'ip='$(gcloud compute instances describe grid-${{ env.IMAGE_TAG }} --zone=us-central1-a --format='value(networkInterfaces.accessConfigs[0].natIP)') >> ${GITHUB_ENV}
-        echo 'function='$(curl -s -X POST https://us-central1-feedmapping.cloudfunctions.net/function -H "Authorization: Bearer $(gcloud auth print-identity-token)" -H "Content-Type: application/json --data @instance) >> ${GITHUB_OUTPUT}
+        echo 'ip='$(gcloud compute instances describe grid-${{ env.IMAGE_TAG }} --zone=us-central1-a --format='value(networkInterfaces.accessConfigs[0].natIP)') >> ${GITHUB_OUTPUT}
+        echo 'function='$(curl -s -X POST https://us-central1-feedmapping.cloudfunctions.net/function -H "Authorization: Bearer $(gcloud auth print-identity-token)" -H "Content-Type: application/json" --data @instance) >> ${GITHUB_OUTPUT}
 
     #Ref: https://blog.benoitblanchon.fr/github-action-run-ssh-commands/
     - name: Configure SSH
       if: runner.os == '-Linux'           
-      id: 'compute-ssh'
+      id: compute
       shell: bash
+      env:
+        IP: ${{ steps.describe.outputs.ip }}
       run: |
         #localedef -i en_US -f UTF-8 en_US.UTF-8
-        ssh-keyscan -t rsa ${{ env.ip }} >> $HOME/.ssh/known_hosts
+        ssh-keyscan -t rsa $IP >> $HOME/.ssh/known_hosts
         chmod 600 $HOME/.ssh/id_rsa
         cat << EOL >> $HOME/.ssh/config
         Host staging
-          HostName ${{ env.ip }}
+          HostName $IP
           User runner
           IdentityFile $HOME/.ssh/id_rsa
           StrictHostKeyChecking no

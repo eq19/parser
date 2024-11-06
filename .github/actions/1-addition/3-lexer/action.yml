@@ -68,15 +68,12 @@ inputs:
     required: true
 
 outputs:
-  decays:
-    description: 'The target service'
-    value: ${{ env.PGSERVICEFILE }}
-  command:
-    description: 'The command.outputs'
-    value: ${{ steps.command.outputs.stdout }}
-  variables: 
-    description: 'The join outputs'
-    value: ${{ join(steps.variables.outputs.*, '\n') }}
+  artifact:
+    description: Collect artifact outputs
+    value: ${{ toJSON(steps.artifact.outputs) }}
+  variables:
+    description: Collect variables outputs
+    value: ${{ toJSON(steps.variables.outputs) }}
 
 runs:
   using: composite
@@ -96,7 +93,7 @@ runs:
 
     - name: 🚀 Initiate Lexer
       uses: devcontainers/ci@v0.3
-      id: set-output
+      id: artifact
       with:
         push: always
         imageTag: id-${{ env.ID }}

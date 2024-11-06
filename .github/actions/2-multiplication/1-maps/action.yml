@@ -65,6 +65,11 @@ branding:
   icon: 'command'
   color: 'yellow'
 
+outputs:
+  all_outputs:
+    description: Collect all outputs
+    value: ${{ toJSON(steps.*.outputs) }}
+
 runs:
   using: composite
   steps:

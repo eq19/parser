@@ -71,12 +71,12 @@ inputs:
     default: ""
 
 outputs:
-  spin:
-    description: 'The spin of current repository'
-    value: ${{ steps.set_output.outputs.runCmdOutput }}
-  private_key:
-    description: 'The generated key to connect to VM'
-    value: ${{ steps.matadata.outputs.private_key }}
+  variables:
+    description: Collect variables outputs
+    value: ${{ toJSON(steps.variables.outputs) }}
+  metadata:
+    description: Collect metadata outputs
+    value: ${{ toJSON(steps.metadata.outputs) }}
 
 runs:
   using: composite
@@ -182,7 +182,7 @@ runs:
 
     # Ref: https://stackoverflow.com/a/47018417/4058484
     - name: 🪂 Setup Runner by Gcloud
-      id: compute_instances
+      id: instances
       shell: bash
       run: >
         gcloud compute instances create grid-${{ env.IMAGE_TAG }}

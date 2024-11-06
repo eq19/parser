@@ -62,21 +62,26 @@ inputs:
     description: 'The deploy repository'
     default: ${{ github.repository }}
     required: false
+  id:
+    description: The id according to os
+    required: true
 
 outputs:
-  site_id:
-    description: "A file path to a results file."
-    value: ${{ env.ID}}
+  artifact:
+    description: Collect artifact outputs
+    value: ${{ toJSON(steps.artifact.outputs) }}
+  variables:
+    description: Collect variables outputs
+    value: ${{ toJSON(steps.variables.outputs) }}
 
 runs:
   using: composite
   steps:
     - name: Initial action
       uses: eq19/eq19.github.io@v1
-      id: init
+      id: artifact
       with:
-        tmp: ${{ inputs.tmp }}
-        base: ${{ inputs.base }}
+        id: ${{ inputs.id }}
         token: ${{ inputs.token }}
         actor: ${{ github.actor }}
         credentials: ${{ inputs.credentials }}
