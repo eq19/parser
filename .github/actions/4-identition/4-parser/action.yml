@@ -76,6 +76,12 @@ runs:
   using: composite
   
   steps:
+    - name: Setup .NET SDK
+      if: ${{ runner.os == 'Windows' && inputs.failure_status == 'false' }}
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
     - name: 💎 Set ID Token
       id: 'auth'
       uses: 'google-github-actions/auth@v2'
