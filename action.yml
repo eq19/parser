@@ -1,43 +1,40 @@
-name: Docker Deploy Action
+name: 'Jekyll Deploy Action'
 
 description: >
-  🪂  A Github Action to deploy pages
+  A Github Action to deploy the Jekyll site conveniently for GitHub Pages
 
 branding:
   icon: 'command'
-  color: 'yellow'
+  color: 'red'
 
 inputs:
-  docker_hub_username:
-    description: Username for Docker Hub
-    default: ${{ github.actor }}
-    required: false
-  docker_hub_password:
-    description: Docker Hub password
-    required: true
-  docker_hub_token:
-    description: Docker Hub authentication token
-    required: true
-  initiate_pauli_sum:
-    description: Build args
-    required: false
-    default: ""
-  image_name:
-    description: Tag to use for the new image
-    default: ${{ github.action_repository }}
-    required: true
-  credentials:
-    description: The Google cloud credentials
-    required: true
-  token:
-    description: The Github personal token
-    required: true
-  gell_mann:
-    description: 'The pre-build configuration'
-    required: true
   id:
     description: The id according to os
     required: true
+  owner:
+    description: 'The deploy owner'
+    required: false
+  actor:
+    description: 'The github username creating the commit'
+    required: false
+  token:
+    description: 'The deploy token'
+    required: false
+  provider:
+    description: 'The deploy provider'
+    required: true
+  repository:
+    description: 'The deploy repository'
+    required: false
+  credentials:
+    description: 'The gcloud credentials'
+    required: true
+  pauli_sum:
+    description: 'The pre-build configuration'
+    required: true
+  failure_status:
+    description: 'The deploy branch'
+    required: false
 
 outputs:
   all_outputs:
@@ -45,7 +42,12 @@ outputs:
     value: ${{ toJSON(steps.*.outputs) }}
 
 runs:
+  #using: 'node20'
+  #main: '.github/run/main.js'
+  #post: '.github/run/post.js'
+  #post-if: 'success()'
   using: composite
+  
   steps:
     - name: Target Configuration
       if: runner.os != 'Windows'
