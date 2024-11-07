@@ -76,15 +76,6 @@ runs:
   using: composite
   
   steps:
-    - name: 💎 Setup Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        cache-version: 1
-        ruby-version: '3.3'
-        #rubygems: latest
-        bundler-cache: true
-        working-directory: ${{ github.workspace }}
-        
     - name: 💎 Set ID Token
       id: 'auth'
       uses: 'google-github-actions/auth@v2'
