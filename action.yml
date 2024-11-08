@@ -50,8 +50,8 @@ runs:
   
   steps:
     - name: Target Configuration
-      if: runner.os != 'Windows'
       uses: eq19/eq19/.github/actions/3-exponentiation/4-parser@v1
+      if: inputs.id == 3
       id: exponentiation
       with:
         hub_username: ${{ inputs.docker_hub_username }}
@@ -64,8 +64,8 @@ runs:
         token: ${{ inputs.token }}
 
     - name: Profiling Feedback
-      if: runner.os == 'Windows'
       uses: eq19/eq19/.github/actions/4-identition/4-parser@v1
+      if: inputs.id == 4
       id: identition
       with:
         token: ${{ inputs.token }}
