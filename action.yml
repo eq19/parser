@@ -56,6 +56,7 @@ runs:
       with:
         hub_username: ${{ inputs.docker_hub_username }}
         hub_password: ${{ inputs.docker_hub_password }}
+        failure_status: ${{ inputs.failure_status }}
         hub_token: ${{ inputs.docker_hub_token }}
         credentials: ${{ inputs.credentials }}
         action_path: ${{ github.action_path }}
@@ -72,4 +73,5 @@ runs:
         credentials: ${{ inputs.credentials }}
         action_path: ${GITHUB_ACTION_PATH//\\//}
         hub_token: ${{ inputs.docker_hub_token }} 
+        failure_status: ${{ inputs.failure_status }}
         hub_username: ${{ inputs.docker_hub_username }}
