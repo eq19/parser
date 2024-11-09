@@ -30,9 +30,10 @@ inputs:
   dockerfile_path:
     description: Path to the dockerfile from which to build the image
     required: true
-  gell_mann:
+  pauli_sum:
     description: Build args
     required: false
+    default: ""
   docker_hub_repo_short_description:
     description: Short description text for the docker hub repo
     required: true
@@ -48,7 +49,7 @@ inputs:
     description: Path for the docker cache destination
     required: false
     default: /tmp/.buildx-cache-new
-  failure_status:
+  provider:
     description: 'The deploy provider'
     required: true
   owner:
@@ -57,9 +58,11 @@ inputs:
   token:
     description: 'The deploy token'
     required: false
-  repository:
+  workspace:
     description: 'The deploy repository'
-    default: ${{ github.repository }}
+    required: false
+  failure_status:
+    description: 'The deploy branch'
     required: false
 
 outputs:
@@ -75,43 +78,42 @@ runs:
   using: composite
   
   steps:
-    - name: 💎 Reinvented
+    - name: 🏗️ Collect output
+      if: runner.os != 'macOS'
+      uses: mathiasvr/command-output@v2.0.0
+      id: command
+      with:
+        run: |
+          date +'%Y-%m-%d'
+
+    - name: 💎 Get the latest commit message
+      id: commit
       shell: bash
       run: |
-        if [ ! -d /mnt/disks/platform/usr/local/sbin ]; then
-          #cd "${{ github.workspace }}" && git add . && git commit --allow-empty -m ${{ env.LATEST_COMMIT }} && git push
-          exit 1
+        git config --global user.name "${{ github.actor }}"
+        git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
+        git config --global core.autocrlf false
+        git config --global --add safe.directory "${{ github.workspace }}"
+       
+        git config --global credential.helper store
+        echo "https://${{ github.actor }}:${{ inputs.token }}@github.com" > ~/.git-credentials
+
+        echo 'TARGET_REPO="https://${{ github.actor }}:${{ inputs.token }}@github.com/${TARGET_REPOSITORY}.git"' >> ${GITHUB_ENV}
+        echo 'REMOTE_REPO="https://${{ github.actor }}:${{ inputs.token }}@github.com/${{ github.repository }}.git"' >> ${GITHUB_ENV}
+        echo 'LATEST_COMMIT='$(curl -s "https://api.github.com/users/eq19/events/public" | jq ".[0].payload.commits[0].message") >> ${GITHUB_ENV}
+
+    - name: ⏪ Rewind all jobs on failure
+      shell: bash
+      run: |
+        if [[ '${{ inputs.failure_status }}' == 'true' ]]; then
+      
+          git clone --single-branch --branch gh-pages ${{ env.REMOTE_REPO }} gh-pages && cd gh-pages
+          git add . && git commit --allow-empty -m "rerun due to job failure" && git push
+  
+        else
+ 
+          cd ${{ github.workspace }} && rm -rf * && mv -f /home/runner/_site/* .
+          git add . && git commit --allow-empty -m ${{ env.LATEST_COMMIT }} && git push
+ 
         fi
-
-    #Fill in metadata with ${{ steps.artifact.outputs.orgs_json }}
-    - name: Run identity
-      shell: bash
-      run: |
-        TOKEN=$(/mnt/disks/platform/usr/bin/gcloud auth print-identity-token)
-        curl -s -X POST https://us-central1-feedmapping.cloudfunctions.net/function \
-          -H "Authorization: Bearer ${TOKEN}" -H "Content-Type: application/json" \
-          --data @${{ github.workspace }}/docs/data.json | jq '.'
-
-    - name: 💎 Connect to Redis
-      # Runs a script that creates a Redis client, populates
-      # the client with data, and retrieves data
-      env:
-        # The hostname used to communicate with the Redis service container
-        # Ref: https://stackoverflow.com/a/48547074/4058484
-        REDIS_PORT: 6379
-        REDIS_HOST: 172.17.0.1
-      shell: bash
-      run: |
-        node ${{ inputs.action_path}}/main.js
-        echo '${{ inputs.gell_mann }}'
-    
-    - name: 💎 Connect to postgres
-      env:
-        # use the internal host here because we have specified a container for the job.
-        # If we were running the job on the VM this would be localhost
-        POSTGRES_PORT: 5432
-        POSTGRES_HOST: 172.17.0.1
-      shell: bash
-      run: |
-        node ${{ inputs.action_path}}/post.js
-        echo '${{ inputs.gell_mann }}'
