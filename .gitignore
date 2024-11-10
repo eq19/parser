@@ -31,9 +31,10 @@ $RECYCLE.BIN/
 #.jekyll-cache
 #.jekyll-metadata
 
-
 # bundler
 *.gem
+vendor/
+.bundle/
 Gemfile.lock
 
 
@@ -51,6 +52,7 @@ package-lock.json
 
 
 # build
+.env
 .github/
 .devcontainer/
 .devcontainer.json
