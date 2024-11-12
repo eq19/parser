@@ -31,10 +31,11 @@ else
   echo 'LATEST_COMMIT="update by workspace"' >> ${GITHUB_ENV}
 fi
 
-if [[ "$RUNNER_OS" == "Linux" ]]; then
+if [[ "${JOB_ID}" == "1" ]]; then
    
   cd "${GITHUB_WORKSPACE}" && rm -rf .github
-  cp -r /home/runner/work/_actions/eq19/eq19/v1/.github . && chown -R "$(whoami)" .github
+  cp -r /home/runner/work/_actions/eq19/eq19/v1/.github .
+  chown -R "$(whoami)" .github
 
   git remote set-url origin ${REMOTE_REPO}        
   git add . && git commit -m "update workflows" && git push
