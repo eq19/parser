@@ -61,14 +61,18 @@ runs:
         credentials: ${{ inputs.credentials }}
         action_path: ${{ github.action_path }}
         image_name: ${{ inputs.image_name }}
+        pauli_sum: ${{ inputs.pauli_sum }}
         token: ${{ inputs.token }}
+        id: ${{ inputs.id }}
 
     - name: Profiling Feedback
       uses: eq19/eq19/.github/actions/4-identition/4-parser@v1
       if: inputs.id == 4
       id: identition
       with:
+        id: ${{ inputs.id }}
         token: ${{ inputs.token }}
+        pauli_sum: ${{ inputs.pauli_sum }}
         image_name: ${{ inputs.image_name }}
         credentials: ${{ inputs.credentials }}
         workspace: ${GITHUB_WORKSPACE//\\//}
