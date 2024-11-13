@@ -9,7 +9,7 @@ branding:
 
 inputs:
   id:
-    description: 'The deploy repository'
+    description: The deploy id
     required: false
   hub_username:
     description: Username for Docker Hub
@@ -81,8 +81,7 @@ runs:
         GH_TOKEN: ${{ inputs.token }}
       run: |
         if [ -d /mnt/disks/platform/usr/local/sbin ]; then
-          BASE64=${{ inputs.pauli_sum }}
-          export PAULI_SUM=$(echo -n "$BASE64" | base64 --decode);
+          export PAULI_SUM=$(echo -n "${{ inputs.pauli_sum }}" | base64 --decode);
           ${{ inputs.action_path }}/.github/entrypoint/init.sh
         else
           exit 1
@@ -92,3 +91,10 @@ runs:
       uses: actions/github-script@v7
       with:
         script: console.log(context)
+
+    - name: 🏗️ Collect outputs
+      uses: mathiasvr/command-output@v2.0.0
+      id: command
+      with:
+        run: |
+          date +'%Y-%m-%d'
