@@ -1,3 +1,12 @@
+---
+sort: 3
+spin: 3
+span: 
+suit: 3
+description: 
+---
+# Primes Platform
+
 We analyze the inference process of dynamic and observe that the dynamic tensor shapes and control flow hinder by prime numbers
 
 {% include list.liquid all=true %}

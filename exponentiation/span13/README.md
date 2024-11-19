@@ -1,3 +1,12 @@
+---
+sort: 26
+spin: 35
+span: 
+suit: 139
+description: 
+---
+# Grand Unified Theory (syntax)
+
 Grand Unified Theory (GUT) is successful in describing the four forces as distinct under normal circumstances, but connected in fundamental ways.
  
 {% include list.liquid all=true %}

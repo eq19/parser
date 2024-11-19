@@ -1,3 +1,12 @@
+---
+sort: 12
+spin: 21
+span: 
+suit: 71
+description: 
+---
+# Entrypoint of Momentum (spin 10)
+
 {% include list.liquid all=true %}
 
 ## Coupling Behaviour

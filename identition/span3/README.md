@@ -1,3 +1,12 @@
+---
+sort: 37
+spin: 60
+span: 
+suit: 
+description: 
+---
+# Vibrating Strings (span 3)
+
 {% include list.liquid all=true %}
 
 It turns out that quantum string theory always destroys the symmetries of classical string theory, **except in one special case: when the number of dimensions is 10**.

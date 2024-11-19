@@ -1,3 +1,12 @@
+---
+sort: 4
+spin: 5
+span: 
+suit: 7
+description: 
+---
+# Pairwise Scenario
+
 {% include list.liquid all=true %}
 
 ![image](https://github.com/eq19/maps/assets/8466209/a4e57e16-8334-4270-bce7-9739e30df21a)

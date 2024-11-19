@@ -1,3 +1,12 @@
+---
+sort: 16
+spin: 25
+span: 
+suit: 89
+description: 
+---
+# Elementary Retracements (spin 14)
+
 With the MEC 30 as a folding rule, we describe an application that is familiar and simple. And thus use the identical property of energy and number distribution.
 
 {% include list.liquid all=true %}

@@ -1,3 +1,12 @@
+---
+sort: 23
+spin: 32
+span: 
+suit: 127
+description: 
+---
+# Quantum Gravity (feed)
+
 Effective field theories have been a mainstay of theoretical physics since the 1930s but they haven't helped all that much with _[quantum gravity](https://youtube.com/shorts/8wvEcdiXMh8?si=l8RLKfqXcqPhF-eY)_.
 
 {% include list.liquid all=true %}

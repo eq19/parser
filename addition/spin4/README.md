@@ -1,3 +1,12 @@
+---
+sort: 5
+spin: 7
+span: 
+suit: 13
+description: 
+---
+# Power of Magnitude
+
 {% include list.liquid all=true %}
 
 ```note

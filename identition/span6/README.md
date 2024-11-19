@@ -1,3 +1,12 @@
+---
+sort: 34
+spin: 50
+span: 
+suit: 
+description: 
+---
+# Basic Transformation (span 6)
+
 {% include list.liquid all=true %}
 
 For some Enneagram theorists the lines connecting the points add further meaning to the information provided by the descriptions of the types. Sometimes called the "security" and "stress" points, or points of "integration" and "disintegration".

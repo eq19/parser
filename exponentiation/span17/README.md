@@ -1,3 +1,12 @@
+---
+sort: 22
+spin: 31
+span: 
+suit: 113
+description: 
+---
+# Electrodynamics (maps)
+
 The term of electrodynamics is referring to Quantum Electrodynamics ([QED](https://en.wikipedia.org/wiki/Quantum_electrodynamics)) which is the [relativistic](https://en.wikipedia.org/wiki/Theory_of_relativity) [quantum field theory](https://en.wikipedia.org/wiki/Quantum_field_theory) of [Electromagnetism](https://en.wikipedia.org/wiki/Electrodynamics).
 
 {% include list.liquid all=true %}

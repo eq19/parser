@@ -1,3 +1,12 @@
+---
+sort: 25
+spin: 34
+span: 
+suit: 137
+description: 
+---
+# Electroweak Theory (parser)
+
 Establishment theoretical framework as _[the standard theory](https://github.com/eq19/maps/files/13931443/The_Standard_Model_of_Electroweak_Interactions.pdf)_ of electroweak interactions: Higgs searches, quark mixing, neutrino oscillations.
 
 {% include list.liquid all=true %}

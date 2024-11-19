@@ -1,3 +1,12 @@
+---
+sort: 14
+spin: 23
+span: 
+suit: 79
+description: 
+---
+# Similar Order of Magnitude (spin 12)
+
 {% include list.liquid all=true %}
 
 ## Double Beta Decay

@@ -1,3 +1,12 @@
+---
+sort: 8
+spin: 17
+span: 
+suit: 53
+description: 
+---
+# Implementation in Physics
+
 By this chapter we are going to learn whether the spin discussed in prime hexagon has something to do with the [nature](https://en.wikipedia.org/wiki/Particle_physics) so we begin with [the spin in physic](https://github.com/eq19/maps/files/13804134/whatisspin.pdf)
 
 {% include list.liquid all=true %}

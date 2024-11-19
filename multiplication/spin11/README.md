@@ -1,3 +1,12 @@
+---
+sort: 13
+spin: 22
+span: 
+suit: 73
+description: 
+---
+# The Mapping of Spacetime (spin 11)
+
 {% include list.liquid all=true %}
 
 ## Decay Frames

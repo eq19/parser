@@ -1,4 +1,13 @@
 ---
+sort: 31
+spin: 42
+span: 
+suit: 
+description: 
+---
+# Quadratic Polynomials (span 9)
+
+---
 {% include list.liquid all=true %}
 
 ![default](https://user-images.githubusercontent.com/8466209/203874503-4276074d-3270-437f-a675-858486afd126.png)

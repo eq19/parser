@@ -1,3 +1,12 @@
+---
+sort: 7
+spin: 13
+span: 
+suit: 37
+description: 
+---
+# The Prime Recycling ζ(s)
+
 {% include list.liquid all=true %}
 
 ## The Position Pairs

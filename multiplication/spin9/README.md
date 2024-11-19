@@ -1,3 +1,12 @@
+---
+sort: 11
+spin: 20
+span: 
+suit: 67
+description: 
+---
+# The Angular Momentum (spin 9)
+
 Under certain conditions, energy could not take on any indiscriminate value, the energy must be some multiple of a very small quantity (later to be known as a ***quantum***).
 
 {% include list.liquid all=true %}

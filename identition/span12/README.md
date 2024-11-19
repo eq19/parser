@@ -1,3 +1,12 @@
+---
+sort: 28
+spin: 37
+span: 
+suit: 151
+description: 
+---
+# Theory of Everything (span 12)
+
 _[Theory of Everything (TOE)](https://en.wikipedia.org/wiki/Theory_of_everything)_ is ***a final theory that links together*** all aspects of the [universe](https://en.wikipedia.org/wiki/Universe). Finding a TOE is one of the major [unsolved problems in physics](https://en.wikipedia.org/wiki/Unsolved_problems_in_physics).
 
 {% include list.liquid all=true %}

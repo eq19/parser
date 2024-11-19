@@ -1,3 +1,12 @@
+---
+sort: 24
+spin: 33
+span: 
+suit: 131
+description: 
+---
+# Chromodynamics (lexer)
+
 Quantum Chromodynamics ([QCD](https://en.wikipedia.org/wiki/Quantum_chromodynamics)) is the theory of the strong interactions that glue together quarks inside protons and neutrons, the constituents of ordinary matter.
 
 {% include list.liquid all=true %}

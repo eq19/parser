@@ -1,3 +1,12 @@
+---
+sort: 10
+spin: 19
+span: 
+suit: 61
+description: 
+---
+# Symmetrical Breaking (spin 8)
+
 In particle physics, an _[elementary particle](https://en.wikipedia.org/wiki/Elementary_particle)_ or fundamental particle is a subatomic particle that is not composed of other particles. 
 
 {% include list.liquid all=true %}

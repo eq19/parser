@@ -1,3 +1,12 @@
+---
+sort: 30
+spin: 40
+span: 
+suit: 
+description: 
+---
+# Truncated Perturbation (span 10)
+
 {% include list.liquid all=true %}
 
 Runners are the machines that execute jobs in a GitHub Actions workflow. You can access [Variables](https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables) and [Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts#github-context) information in [specific OS](https://stackoverflow.com/a/57948488/4058484). For example, a runner can clone your repository locally, install testing software, and then run commands.

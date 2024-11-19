@@ -1,3 +1,12 @@
+---
+sort: 27
+spin: 36
+span: 
+suit: 149
+description: 
+---
+# Identition Zones (36-102)
+
 Identition is defined for a [complex operation](https://github.com/eq19/maps/files/14396617/Albaid_okstate_0664D_11668.pdf)
  by extending one of the definitions of the exponential function from real exponents to complex exponents.
 

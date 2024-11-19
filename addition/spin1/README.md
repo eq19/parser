@@ -1,3 +1,12 @@
+---
+sort: 2
+spin: 2
+span: 
+suit: 2
+description: 
+---
+# True Prime Pairs
+
 This is the partial of _[the mapping scheme](https://gist.github.com/eq19/c9bdc2bbe55f2d162535023c8d321831)_ of our [eQuantum Project](https://github.com/eq19). Our mapping is _[simulating](https://www.amcrou.ch/configuring-environments-when-building-sites-with-jekyll)_ a recombination of the **three (3) layers** of these [prime pairs](https://en.wikipedia.org/wiki/Twin_prime). 
 
 {% include list.liquid all=true %}

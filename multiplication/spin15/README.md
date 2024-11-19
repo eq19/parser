@@ -1,3 +1,12 @@
+---
+sort: 17
+spin: 26
+span: 
+suit: 97
+description: 
+---
+# Recycling of Momentum (spin 15)
+
 {% include list.liquid all=true %}
 
 ## The Extra Dimensions

@@ -1,3 +1,12 @@
+---
+sort: 36
+spin: 56
+span: 
+suit: 
+description: 
+---
+# Parallel Universes (span 4)
+
 {% include list.liquid all=true %}
 
 When we come to a mapping of a Project, is critical to look for the future of Parts Unlimited otherwise the project will massively over budget and very late. So to deal with this we shall consider to move everything to the cloud…

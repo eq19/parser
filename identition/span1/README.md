@@ -1,3 +1,12 @@
+---
+sort: 39
+spin: 68
+span: 
+suit: 
+description: 
+---
+# Wormhole Theory (span 1)
+
 This section serve to study the internal (color) rotations of the [gluon fields](https://en.m.wikipedia.org/wiki/Gluon_field) associated with the coloured quarks in [quantum chromodynamics](https://en.m.wikipedia.org/wiki/Quantum_chromodynamics) of [colours of the gluon](https://en.m.wikipedia.org/wiki/Gluon#Eight_gluon_colours). 
 
 {% include list.liquid all=true %}

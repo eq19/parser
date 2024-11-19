@@ -1,3 +1,12 @@
+---
+sort: 35
+spin: 54
+span: 
+suit: 
+description: 
+---
+# Hidden Dimensions (span 5)
+
 {% include list.liquid all=true %}
 
 A lexer is the part of an interpreter that turns a sequence of characters (plain text) into a sequence of tokens. The Parser which takes the tokens from the lexer and returns a syntax tree based on a grammar. The grammar is often expressed in a meta language.

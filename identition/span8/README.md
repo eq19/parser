@@ -1,3 +1,12 @@
+---
+sort: 32
+spin: 44
+span: 
+suit: 
+description: 
+---
+# Fundamental Forces (span 8)
+
 {% include list.liquid all=true %}
 
 In many ways, a _[black hole](https://en.wikipedia.org/wiki/Black_hole)_ acts like an ideal black body, as ***it reflects no light***. Here is an animated simulation of a Schwarzschild black hole with a galaxy passing behind. Around the time of alignment, extreme gravitational lensing of the galaxy is observed.

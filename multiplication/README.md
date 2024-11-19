@@ -1,3 +1,12 @@
+---
+sort: 9
+spin: 18
+span: 
+suit: 59
+description: 
+---
+# Multiplication Zones (18-30)
+
 Multiplication is the form of expression set equal to the inverse function of symmetrical exponentation which stand as multiplicative identity reflects a point across the origin.
 
 {% include list.liquid all=true %}
