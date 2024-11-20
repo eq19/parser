@@ -96,7 +96,7 @@ runs:
         TMP: ${{ inputs.tmp }}
         RUN: ${{ github.run_id }}
         USER: ${{ github.actor }}
-        TOKEN: ${{ inputs.token }}
+        GH_TOKEN: ${{ inputs.token }}
         REPO: ${{ github.repository }}
         ACTOR: ${{ github.triggering_actor }}
         OWNER: ${{ github.repository_owner }}
