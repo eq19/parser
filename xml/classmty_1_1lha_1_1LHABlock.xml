@@ -1,0 +1,471 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1lha_1_1LHABlock" kind="class" language="C++" prot="public">
+    <compoundname>mty::lha::LHABlock</compoundname>
+    <includes refid="lhaData_8h" local="no">lhaData.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1lha_1_1LHABlock_1ae963a33a96880402b2bd7793117c2266" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mty::lha::LHABlock::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>mty::lha::LHABlock::name</qualifiedname>
+        <briefdescription>
+<para>Name of the block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="270" column="17" bodyfile="src/marty/lha/lhaData.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1lha_1_1LHABlock_1a0ae185dcc4f082ac85c208133f7fb248" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref> &gt;</type>
+        <definition>std::vector&lt;LHAElement&gt; mty::lha::LHABlock::elements</definition>
+        <argsstring></argsstring>
+        <name>elements</name>
+        <qualifiedname>mty::lha::LHABlock::elements</qualifiedname>
+        <briefdescription>
+<para>Vector of <ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref> in the block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="274" column="17" bodyfile="src/marty/lha/lhaData.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1lha_1_1LHABlock_1a3cd72d16c6c273fa0f32988a47e0b5d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::lha::LHABlock::LHABlock</definition>
+        <argsstring>()=default</argsstring>
+        <name>LHABlock</name>
+        <qualifiedname>mty::lha::LHABlock::LHABlock</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="160" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lha_1_1LHABlock_1aa66b66e05594fe7b78e49e9c2931b4d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::lha::LHABlock::~LHABlock</definition>
+        <argsstring>()=default</argsstring>
+        <name>~LHABlock</name>
+        <qualifiedname>mty::lha::LHABlock::~LHABlock</qualifiedname>
+        <briefdescription>
+<para>Default destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="164" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lha_1_1LHABlock_1ad6a718b6c2a069823787eac64ac1e5cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::lha::LHABlock::LHABlock</definition>
+        <argsstring>(std::string const &amp;)</argsstring>
+        <name>LHABlock</name>
+        <qualifiedname>mty::lha::LHABlock::LHABlock</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <defname>t_name</defname>
+        </param>
+        <briefdescription>
+<para>Constructor with one (optional) parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the block. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="171" column="5" bodyfile="src/marty/lha/lhaData.cpp" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lha_1_1LHABlock_1a4803d7d5cfa690224bad8ce9da3c085b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string const &amp;</type>
+        <definition>std::string const  &amp; mty::lha::LHABlock::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <qualifiedname>mty::lha::LHABlock::getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The name of the block. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="176" column="23" bodyfile="src/marty/lha/lhaData.h" bodystart="176" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lha_1_1LHABlock_1a01b8433c0018a1cfa26e1126233ba651" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::lha::LHABlock::setName</definition>
+        <argsstring>(std::string const &amp;t_name)</argsstring>
+        <name>setName</name>
+        <qualifiedname>mty::lha::LHABlock::setName</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <briefdescription>
+<para>Sets the name of the block. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New name of the block. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="185" column="10" bodyfile="src/marty/lha/lhaData.h" bodystart="185" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lha_1_1LHABlock_1ad5f06c4386653397929d0886bb4b512f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::lha::LHABlock::isName</definition>
+        <argsstring>(std::string_view t_name) const</argsstring>
+        <name>isName</name>
+        <qualifiedname>mty::lha::LHABlock::isName</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>t_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="190" column="10" bodyfile="src/marty/lha/lhaData.cpp" bodystart="113" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lha_1_1LHABlock_1ab2b7401112f9125c8a9a62d3b1d25235" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref> &gt;</type>
+        <definition>std::optional&lt; LHAElement &gt; mty::lha::LHABlock::getElement</definition>
+        <argsstring>(size_t id) const</argsstring>
+        <name>getElement</name>
+        <qualifiedname>mty::lha::LHABlock::getElement</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Returns the first element (if found) with id <bold>id</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the element to search.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A std::optional containing the first element with id <bold>id</bold> if found. </para>
+</simplesect>
+<simplesect kind="return"><para>std::nullopt else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="201" column="19" bodyfile="src/marty/lha/lhaData.cpp" bodystart="124" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lha_1_1LHABlock_1a6ad5c68c5d67a91dc106e087d4d2021f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref> &gt;</type>
+        <definition>std::optional&lt; LHAElement &gt; mty::lha::LHABlock::getElement</definition>
+        <argsstring>(size_t id, size_t id_sup=-1) const</argsstring>
+        <name>getElement</name>
+        <qualifiedname>mty::lha::LHABlock::getElement</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>id_sup</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Returns the first element (if found) with id <bold>id</bold> and position <bold>pos</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the element to search. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Matrix coordinates of the elements.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A std::optional containing the first element corresponding to <bold>id</bold> and <bold>pos</bold> if found. </para>
+</simplesect>
+<simplesect kind="return"><para>std::nullopt else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="214" column="19" bodyfile="src/marty/lha/lhaData.cpp" bodystart="133" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lha_1_1LHABlock_1abeccaf30045ced438d81fa270ab50da4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref> &gt;</type>
+        <definition>std::vector&lt; LHAElement &gt; mty::lha::LHABlock::getMultipleElements</definition>
+        <argsstring>(size_t id) const</argsstring>
+        <name>getMultipleElements</name>
+        <qualifiedname>mty::lha::LHABlock::getMultipleElements</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Returns all the elements for a given id. If there is multiple ones, for example a matrix, they are stored linearly in the container. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the elements to return.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref> with id <bold>id</bold>.</para>
+</simplesect>
+<simplesect kind="note"><para>If the <ref refid="classmty_1_1lha_1_1LHABlock_1af182fccc08679f9096a01b14a63b7e69" kindref="member">sortElements()</ref> has been called, the elements in the vector are sorted by position (if more than one). In that case, for a matrix, elements are sorted by row and by column ((0, 0) (0, 1) (1, 0) (1, 1) etc). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="229" column="17" bodyfile="src/marty/lha/lhaData.cpp" bodystart="142" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lha_1_1LHABlock_1af182fccc08679f9096a01b14a63b7e69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::lha::LHABlock::sortElements</definition>
+        <argsstring>()</argsstring>
+        <name>sortElements</name>
+        <qualifiedname>mty::lha::LHABlock::sortElements</qualifiedname>
+        <briefdescription>
+<para>Sorts the elements in the block using <ref refid="structmty_1_1lha_1_1Comparator_1ad8ab47ddd27039da0fe551a6e560319e" kindref="member">Comparator::compare()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="234" column="10" bodyfile="src/marty/lha/lhaData.cpp" bodystart="151" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lha_1_1LHABlock_1ad983d6a68601935a9753e9f703bc6b4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::lha::LHABlock::addElement</definition>
+        <argsstring>(size_t id, size_t id_sup, FloatType value)</argsstring>
+        <name>addElement</name>
+        <qualifiedname>mty::lha::LHABlock::addElement</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>id_sup</declname>
+        </param>
+        <param>
+          <type><ref refid="lhaData_8h_1ae7d1f281bbc4f3a4db0f26feef9808bd" kindref="member">FloatType</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Adds an elements to the block. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the element. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id_sup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Supplementary id for the element. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the element. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="243" column="10" bodyfile="src/marty/lha/lhaData.cpp" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lha_1_1LHABlock_1a0a028eba735ad3570ab4cb8098e4c892" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::lha::LHABlock::addElement</definition>
+        <argsstring>(size_t id, FloatType value)</argsstring>
+        <name>addElement</name>
+        <qualifiedname>mty::lha::LHABlock::addElement</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="lhaData_8h_1ae7d1f281bbc4f3a4db0f26feef9808bd" kindref="member">FloatType</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Adds an elements to the block. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the element. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the element. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="250" column="10" bodyfile="src/marty/lha/lhaData.cpp" bodystart="160" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lha_1_1LHABlock_1a4fb283ef42100fe0b2068e67bf90a361" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::lha::LHABlock::addElement</definition>
+        <argsstring>(LHAElement const &amp;t_element)</argsstring>
+        <name>addElement</name>
+        <qualifiedname>mty::lha::LHABlock::addElement</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref> const &amp;</type>
+          <declname>t_element</declname>
+        </param>
+        <briefdescription>
+<para>Adds an elements to the block. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref> to add in the block. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="257" column="10" bodyfile="src/marty/lha/lhaData.cpp" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lha_1_1LHABlock_1ae9164410f086c8cf214ff2fc51930fe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::lha::LHABlock::addElement</definition>
+        <argsstring>(LHAElement &amp;&amp;t_element)</argsstring>
+        <name>addElement</name>
+        <qualifiedname>mty::lha::LHABlock::addElement</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref> &amp;&amp;</type>
+          <declname>t_element</declname>
+        </param>
+        <briefdescription>
+<para>Adds an elements to the block. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref> to add in the block. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="264" column="10" bodyfile="src/marty/lha/lhaData.cpp" bodystart="175" bodyend="178"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="classmty_1_1lha_1_1LHABlock" kindref="compound">LHABlock</ref>, containing a vector of <ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>When reading a LHA File, all elements of a given block are stored in a <ref refid="classmty_1_1lha_1_1LHABlock" kindref="compound">LHABlock</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/marty/lha/lhaData.h" line="152" column="1" bodyfile="src/marty/lha/lhaData.h" bodystart="152" bodyend="275"/>
+    <listofallmembers>
+      <member refid="classmty_1_1lha_1_1LHABlock_1ad983d6a68601935a9753e9f703bc6b4b" prot="public" virt="non-virtual"><scope>mty::lha::LHABlock</scope><name>addElement</name></member>
+      <member refid="classmty_1_1lha_1_1LHABlock_1a0a028eba735ad3570ab4cb8098e4c892" prot="public" virt="non-virtual"><scope>mty::lha::LHABlock</scope><name>addElement</name></member>
+      <member refid="classmty_1_1lha_1_1LHABlock_1a4fb283ef42100fe0b2068e67bf90a361" prot="public" virt="non-virtual"><scope>mty::lha::LHABlock</scope><name>addElement</name></member>
+      <member refid="classmty_1_1lha_1_1LHABlock_1ae9164410f086c8cf214ff2fc51930fe4" prot="public" virt="non-virtual"><scope>mty::lha::LHABlock</scope><name>addElement</name></member>
+      <member refid="classmty_1_1lha_1_1LHABlock_1a0ae185dcc4f082ac85c208133f7fb248" prot="private" virt="non-virtual"><scope>mty::lha::LHABlock</scope><name>elements</name></member>
+      <member refid="classmty_1_1lha_1_1LHABlock_1ab2b7401112f9125c8a9a62d3b1d25235" prot="public" virt="non-virtual"><scope>mty::lha::LHABlock</scope><name>getElement</name></member>
+      <member refid="classmty_1_1lha_1_1LHABlock_1a6ad5c68c5d67a91dc106e087d4d2021f" prot="public" virt="non-virtual"><scope>mty::lha::LHABlock</scope><name>getElement</name></member>
+      <member refid="classmty_1_1lha_1_1LHABlock_1abeccaf30045ced438d81fa270ab50da4" prot="public" virt="non-virtual"><scope>mty::lha::LHABlock</scope><name>getMultipleElements</name></member>
+      <member refid="classmty_1_1lha_1_1LHABlock_1a4803d7d5cfa690224bad8ce9da3c085b" prot="public" virt="non-virtual"><scope>mty::lha::LHABlock</scope><name>getName</name></member>
+      <member refid="classmty_1_1lha_1_1LHABlock_1ad5f06c4386653397929d0886bb4b512f" prot="public" virt="non-virtual"><scope>mty::lha::LHABlock</scope><name>isName</name></member>
+      <member refid="classmty_1_1lha_1_1LHABlock_1a3cd72d16c6c273fa0f32988a47e0b5d0" prot="public" virt="non-virtual"><scope>mty::lha::LHABlock</scope><name>LHABlock</name></member>
+      <member refid="classmty_1_1lha_1_1LHABlock_1ad6a718b6c2a069823787eac64ac1e5cf" prot="public" virt="non-virtual"><scope>mty::lha::LHABlock</scope><name>LHABlock</name></member>
+      <member refid="classmty_1_1lha_1_1LHABlock_1ae963a33a96880402b2bd7793117c2266" prot="private" virt="non-virtual"><scope>mty::lha::LHABlock</scope><name>name</name></member>
+      <member refid="classmty_1_1lha_1_1LHABlock_1a01b8433c0018a1cfa26e1126233ba651" prot="public" virt="non-virtual"><scope>mty::lha::LHABlock</scope><name>setName</name></member>
+      <member refid="classmty_1_1lha_1_1LHABlock_1af182fccc08679f9096a01b14a63b7e69" prot="public" virt="non-virtual"><scope>mty::lha::LHABlock</scope><name>sortElements</name></member>
+      <member refid="classmty_1_1lha_1_1LHABlock_1aa66b66e05594fe7b78e49e9c2931b4d9" prot="public" virt="non-virtual"><scope>mty::lha::LHABlock</scope><name>~LHABlock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

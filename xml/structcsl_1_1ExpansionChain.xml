@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structcsl_1_1ExpansionChain" kind="struct" language="C++" prot="public">
+    <compoundname>csl::ExpansionChain</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcsl_1_1ExpansionChain_1adec0f1a0f8e84fde79500fca03d5f88c" prot="public" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const  *</type>
+        <definition>csl::Expr const* csl::ExpansionChain::emitter</definition>
+        <argsstring></argsstring>
+        <name>emitter</name>
+        <qualifiedname>csl::ExpansionChain::emitter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/partialExpand.cpp" line="24" column="24" bodyfile="src/csl/partialExpand.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsl_1_1ExpansionChain_1a635103c296f3ffda99a7455fa14fffba" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; size_t &gt;</type>
+        <definition>std::vector&lt;size_t&gt; csl::ExpansionChain::posToExpand</definition>
+        <argsstring></argsstring>
+        <name>posToExpand</name>
+        <qualifiedname>csl::ExpansionChain::posToExpand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/partialExpand.cpp" line="25" column="17" bodyfile="src/csl/partialExpand.cpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>csl::ExpansionChain</label>
+        <link refid="structcsl_1_1ExpansionChain"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>emitter</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/csl/partialExpand.cpp" line="23" column="1" bodyfile="src/csl/partialExpand.cpp" bodystart="23" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structcsl_1_1ExpansionChain_1adec0f1a0f8e84fde79500fca03d5f88c" prot="public" virt="non-virtual"><scope>csl::ExpansionChain</scope><name>emitter</name></member>
+      <member refid="structcsl_1_1ExpansionChain_1a635103c296f3ffda99a7455fa14fffba" prot="public" virt="non-virtual"><scope>csl::ExpansionChain</scope><name>posToExpand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

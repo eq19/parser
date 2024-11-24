@@ -1,0 +1,1589 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="penguinpatch_8cpp" kind="file" language="C++">
+    <compoundname>penguinpatch.cpp</compoundname>
+    <includes refid="amplitude_8h" local="yes">amplitude.h</includes>
+    <includes refid="diracology_8h" local="yes">diracology.h</includes>
+    <includes refid="insertion_8h" local="yes">insertion.h</includes>
+    <includes refid="mrtError_8h" local="yes">mrtError.h</includes>
+    <includes refid="mrtInterface_8h" local="yes">mrtInterface.h</includes>
+    <includes refid="propagator_8h" local="yes">propagator.h</includes>
+    <includes refid="wilson_8h" local="yes">wilson.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>abreviation.h</label>
+        <link refid="abreviation_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>abstract.h</label>
+        <link refid="abstract_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>algo.h</label>
+        <link refid="algo_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>allocator.h</label>
+        <link refid="allocator_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>booleanOperators.h</label>
+        <link refid="booleanOperators_8h_source"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>buildingBlock.h</label>
+        <link refid="buildingBlock_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>cast.h</label>
+        <link refid="cast_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>commutation.h</label>
+        <link refid="commutation_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>comparison.h</label>
+        <link refid="comparison_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>conditional.h</label>
+        <link refid="conditional_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>counter.h</label>
+        <link refid="counter_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>../../csl/csl.h</label>
+        <link refid="csl_2csl_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>cslcomplex.h</label>
+        <link refid="cslcomplex_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>default_move_cpy.h</label>
+        <link refid="default__move__cpy_8h"/>
+      </node>
+      <node id="55">
+        <label>diagonalization.h</label>
+        <link refid="diagonalization_8h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>dichotomy.h</label>
+        <link refid="dichotomy_8h_source"/>
+      </node>
+      <node id="41">
+        <label>element.h</label>
+        <link refid="element_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>enum.h</label>
+        <link refid="enum_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>evaluation.h</label>
+        <link refid="evaluation_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>functional.h</label>
+        <link refid="functional_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>hardComparison.h</label>
+        <link refid="hardComparison_8h_source"/>
+      </node>
+      <node id="75">
+        <label>hardFactor.h</label>
+        <link refid="hardFactor_8h_source"/>
+      </node>
+      <node id="34">
+        <label>index.h</label>
+        <link refid="index_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>indicial.h</label>
+        <link refid="indicial_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>indicialExpander.h</label>
+        <link refid="indicialExpander_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>initSanitizer.h</label>
+        <link refid="initSanitizer_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>interface_indicial.h</label>
+        <link refid="interface__indicial_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>librarydependency.h</label>
+        <link refid="librarydependency_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>libraryevaluator.h</label>
+        <link refid="libraryevaluator_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>libraryfunction.h</label>
+        <link refid="libraryfunction_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>librarygenerator.h</label>
+        <link refid="librarygenerator_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>librarygroup.h</label>
+        <link refid="librarygroup_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>librarytensor.h</label>
+        <link refid="librarytensor_8h"/>
+      </node>
+      <node id="83">
+        <label>linear_map.h</label>
+        <link refid="linear__map_8h_source"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>literal.h</label>
+        <link refid="literal_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>lock.h</label>
+        <link refid="lock_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>mathFunctions.h</label>
+        <link refid="mathFunctions_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>memory_pool.h</label>
+        <link refid="memory__pool_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>multipermutation.h</label>
+        <link refid="multipermutation_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>numerical.h</label>
+        <link refid="numerical_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>objectSymmetry.h</label>
+        <link refid="objectSymmetry_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>operations.h</label>
+        <link refid="operations_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>operator.h</label>
+        <link refid="operator_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>options.h</label>
+        <link refid="options_8h"/>
+      </node>
+      <node id="37">
+        <label>parent.h</label>
+        <link refid="parent_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>partialExpand.h</label>
+        <link refid="partialExpand_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>patternMatch.h</label>
+        <link refid="patternMatch_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>progressBar.h</label>
+        <link refid="progressBar_8h"/>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>pseudoIntegral.h</label>
+        <link refid="pseudoIntegral_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>replace.h</label>
+        <link refid="replace_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>scalarFunc.h</label>
+        <link refid="scalarFunc_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>scopedProperty.h</label>
+        <link refid="scopedProperty_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>simplification.h</label>
+        <link refid="simplification_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>sort.h</label>
+        <link refid="sort_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>space.h</label>
+        <link refid="space_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>std_shared_ptr_inheritance.h</label>
+        <link refid="std__shared__ptr__inheritance_8h"/>
+      </node>
+      <node id="35">
+        <label>std_vector_implementation.h</label>
+        <link refid="csl_2std__vector__implementation_8h"/>
+      </node>
+      <node id="30">
+        <label>support.h</label>
+        <link refid="support_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>symmetricCounter.h</label>
+        <link refid="symmetricCounter_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>symmetry.h</label>
+        <link refid="symmetry_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>tensorField.h</label>
+        <link refid="tensorField_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>timeMonitor.h</label>
+        <link refid="timeMonitor_8h"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>typedef.h</label>
+        <link refid="typedef_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>variableParent.h</label>
+        <link refid="variableParent_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>vector.h</label>
+        <link refid="vector_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>adjacencyMatrix.h</label>
+        <link refid="core_2adjacencyMatrix_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>../../grafed/core/latexLink.h</label>
+        <link refid="core_2latexLink_8h"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>planargraph.h</label>
+        <link refid="core_2planargraph_8h"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>algebraState.h</label>
+        <link refid="algebraState_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>amplitude.h</label>
+        <link refid="amplitude_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>cache.h</label>
+        <link refid="cache_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>diracology.h</label>
+        <link refid="diracology_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>expander.h</label>
+        <link refid="expander_8h"/>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>fermionFlow.h</label>
+        <link refid="fermionFlow_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>fermionicField.h</label>
+        <link refid="fermionicField_8h"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>feynOptions.h</label>
+        <link refid="feynOptions_8h"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>feynmanDiagram.h</label>
+        <link refid="feynmanDiagram_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>feynmanRule.h</label>
+        <link refid="feynmanRule_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>flavor.h</label>
+        <link refid="flavor_8h"/>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>gauge.h</label>
+        <link refid="gauge_8h"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>gaugedGroup.h</label>
+        <link refid="gaugedGroup_8h"/>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>generator.h</label>
+        <link refid="generator_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>graph.h</label>
+        <link refid="graph_8h"/>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>group.h</label>
+        <link refid="group_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>insertion.h</label>
+        <link refid="insertion_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>interactionTerm.h</label>
+        <link refid="interactionTerm_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>iterable.h</label>
+        <link refid="iterable_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>kinematics.h</label>
+        <link refid="kinematics_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>lagrangian.h</label>
+        <link refid="lagrangian_8h"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>matrix.h</label>
+        <link refid="matrix_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>modelBuilder.h</label>
+        <link refid="modelBuilder_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>modelData.h</label>
+        <link refid="modelData_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>mrtError.h</label>
+        <link refid="mrtError_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>mrtInterface.h</label>
+        <link refid="mrtInterface_8h"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>mrtOptions.h</label>
+        <link refid="mrtOptions_8h"/>
+        <childnode refid="130" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>mrtUtils.h</label>
+        <link refid="mrtUtils_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>operatorBasis.h</label>
+        <link refid="operatorBasis_8h_source"/>
+      </node>
+      <node id="1">
+        <label>src/marty/core/penguinpatch.cpp</label>
+        <link refid="penguinpatch_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>propagator.h</label>
+        <link refid="propagator_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>quantumField.h</label>
+        <link refid="quantumField_8h"/>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>representation.h</label>
+        <link refid="representation_8h"/>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>scalarField.h</label>
+        <link refid="scalarField_8h"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>semiSimpleAlgebra.h</label>
+        <link refid="semiSimpleAlgebra_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>spectrum.h</label>
+        <link refid="spectrum_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>su_n_algebra.h</label>
+        <link refid="su__n__algebra_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>topology.h</label>
+        <link refid="topology_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>vectorField.h</label>
+        <link refid="vectorField_8h"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>wilson.h</label>
+        <link refid="wilson_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>../sgl/sgloptions.h</label>
+        <link refid="sgloptions_8h"/>
+      </node>
+      <node id="92">
+        <label>algorithm</label>
+      </node>
+      <node id="28">
+        <label>bitset</label>
+      </node>
+      <node id="7">
+        <label>cassert</label>
+      </node>
+      <node id="31">
+        <label>cmath</label>
+      </node>
+      <node id="25">
+        <label>csignal</label>
+      </node>
+      <node id="126">
+        <label>cstddef</label>
+      </node>
+      <node id="89">
+        <label>ctime</label>
+      </node>
+      <node id="82">
+        <label>exception</label>
+      </node>
+      <node id="100">
+        <label>fstream</label>
+      </node>
+      <node id="11">
+        <label>functional</label>
+      </node>
+      <node id="56">
+        <label>gsl/gsl_complex.h</label>
+      </node>
+      <node id="57">
+        <label>gsl/gsl_matrix.h</label>
+      </node>
+      <node id="113">
+        <label>gsl/gsl_vector.h</label>
+      </node>
+      <node id="14">
+        <label>initializer_list</label>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="101">
+        <label>limits</label>
+      </node>
+      <node id="62">
+        <label>list</label>
+      </node>
+      <node id="15">
+        <label>map</label>
+      </node>
+      <node id="12">
+        <label>memory</label>
+      </node>
+      <node id="18">
+        <label>mutex</label>
+      </node>
+      <node id="138">
+        <label>numeric</label>
+      </node>
+      <node id="13">
+        <label>optional</label>
+      </node>
+      <node id="16">
+        <label>set</label>
+      </node>
+      <node id="9">
+        <label>sstream</label>
+      </node>
+      <node id="86">
+        <label>stddef.h</label>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="26">
+        <label>string_view</label>
+      </node>
+      <node id="19">
+        <label>thread</label>
+      </node>
+      <node id="59">
+        <label>tuple</label>
+      </node>
+      <node id="69">
+        <label>type_traits</label>
+      </node>
+      <node id="70">
+        <label>typeinfo</label>
+      </node>
+      <node id="84">
+        <label>utility</label>
+      </node>
+      <node id="17">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structmty_1_1PenguinPatchData" prot="public">mty::PenguinPatchData</innerclass>
+    <innernamespace refid="namespacemty">mty</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="amplitude_8h" kindref="compound">amplitude.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="diracology_8h" kindref="compound">diracology.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="insertion_8h" kindref="compound">insertion.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mrtError_8h" kindref="compound">mrtError.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mrtInterface_8h" kindref="compound">mrtInterface.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="propagator_8h" kindref="compound">propagator.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wilson_8h" kindref="compound">wilson.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemty" kindref="compound">mty</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>insertionError()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>CallHEPError(mty::error::TypeError,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Insertions<sp/>are<sp/>not<sp/>compatible<sp/>with<sp/>the<sp/>penguin<sp/>patch,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;2<sp/>fermions<sp/>and<sp/>one<sp/>massless<sp/>vector<sp/>boson<sp/>are<sp/>required.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">checkInsertionsForPatch(std::vector&lt;mty::Insertion&gt;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;insertions,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raiseError)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(insertions.size()<sp/>!=<sp/>3)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(raiseError)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>insertionError();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nF<sp/>=<sp/>std::count_if(</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>insertions.begin(),<sp/>insertions.end(),<sp/>[&amp;](<ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;part)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>part.getField()-&gt;isFermionic();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nmB<sp/>=<sp/>std::count_if(</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>insertions.begin(),<sp/>insertions.end(),<sp/>[&amp;](<ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;part)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>part.getField()-&gt;isBosonic()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>part.getField()-&gt;getMass()<sp/>==<sp/>CSL_0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nF<sp/>!=<sp/>2<sp/>||<sp/>nmB<sp/>!=<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(raiseError)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>insertionError();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::pair&lt;csl::Expr,<sp/>csl::Expr&gt;<sp/>getFermions(<ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;op)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>std::pair&lt;csl::Expr,<sp/>csl::Expr&gt;<sp/>fermions;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>HEPAssert(op-&gt;getType()<sp/>==<sp/><ref refid="namespacecsl_1ace591865c69b6315c533a1a325777312a362a33c23b08e4a32a4ec53fbb82cccd" kindref="member">csl::Type::Prod</ref>,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mty::error::TypeError,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Expected<sp/>product<sp/>as<sp/>operator,<sp/>got<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>toString(op)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">)<sp/>for<sp/>(const<sp/>auto<sp/>&amp;arg<sp/>:<sp/>op)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>field<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal">QuantumField<sp/></highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(arg.get());</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>field)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(field-&gt;isFermionic())<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(field-&gt;isComplexConjugate())</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fermions.first<sp/>=<sp/>arg;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fermions.second<sp/>=<sp/>arg;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>HEPAssert(fermions.first<sp/>&amp;&amp;<sp/>fermions.second,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mty::error::TypeError,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Expected<sp/>one<sp/>conjugate<sp/>and<sp/>one<sp/>not<sp/>conjugate<sp/>fermions<sp/>in<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;operator.&quot;</highlight><highlight class="normal">)<sp/>return<sp/>fermions;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">static<sp/>std::pair&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">checkOperators(std::vector&lt;Wilson&gt;<sp/>const<sp/>&amp;<sp/><sp/><sp/><sp/><sp/>wilsons,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;<ref refid="namespacecsl" kindref="compound">csl</ref>::Tensor&gt;<sp/>const<sp/>&amp;momenta)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>npos<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>std::pair&lt;size_t,<sp/>size_t&gt;<sp/>posFermions{npos,<sp/>npos};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;wil<sp/>:<sp/>wilsons)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>[psic,<sp/>psi]<sp/>=<sp/>getFermions(wil.op.getOp());</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ic<sp/>=<sp/>-1,<sp/>i<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>0;<sp/>k<sp/>!=<sp/>momenta.size();<sp/>++k)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(momenta[k]<sp/>==<sp/>psi-&gt;getPoint())<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>k;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(momenta[k]<sp/>==<sp/>psic-&gt;getPoint())<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ic<sp/>=<sp/>k;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HEPAssert((ic<sp/>==<sp/>posFermions.first<sp/>||<sp/>posFermions.first<sp/>==<sp/>npos)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>(i<sp/>==<sp/>posFermions.second</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>posFermions.second<sp/>==<sp/>npos),</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mty::error::RuntimeError,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Inconsistent<sp/>fermion<sp/>alignement,<sp/>consider<sp/>fermion<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ordering.&quot;</highlight><highlight class="normal">)<sp/>posFermions</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{ic,<sp/>i};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>HEPAssert(posFermions.first<sp/>!=<sp/>npos<sp/>&amp;&amp;<sp/>posFermions.second<sp/>!=<sp/>npos,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mty::error::RuntimeError,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Inconsistent<sp/>fermion<sp/>alignement,<sp/>consider<sp/>fermion<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ordering.&quot;</highlight><highlight class="normal">)<sp/>return<sp/>posFermions;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="structmty_1_1PenguinPatchData" refkind="compound"><highlight class="normal">struct<sp/><ref refid="structmty_1_1PenguinPatchData" kindref="compound">PenguinPatchData</ref><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/><sp/><sp/>m1,<sp/>m2;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fermion<sp/>masses</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref><sp/>p1,<sp/>p2;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fermion<sp/>momenta</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/><sp/><sp/>s_12;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>s_12<sp/>=<sp/>(p1.p2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s1,<sp/>s2,<sp/>s3;<sp/></highlight><highlight class="comment">//<sp/>+1<sp/>for<sp/>incoming,<sp/>-1<sp/>for<sp/>outgoing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eta1,<sp/>eta2;<sp/></highlight><highlight class="comment">//<sp/>+1<sp/>for<sp/>particle,<sp/>-1<sp/>for<sp/>anti-particle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structmty_1_1PenguinPatchData" kindref="compound">PenguinPatchData</ref><sp/>getPenguinData(</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;mty::Insertion&gt;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;insertions,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>iConj,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>iReg)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boolsign<sp/>=<sp/>[](</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>b<sp/>?<sp/>1<sp/>:<sp/>-1;<sp/>};</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>PenguinPatchData<sp/>data;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;<sp/><sp/><sp/><sp/><sp/>psi<sp/><sp/><sp/>=<sp/>insertions[iReg];</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;<sp/><sp/><sp/><sp/><sp/>psic<sp/><sp/>=<sp/>insertions[iConj];</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;<sp/><sp/><sp/><sp/><sp/>boson<sp/>=<sp/>insertions[3<sp/>-<sp/>iReg<sp/>-<sp/>iConj];</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>data.m1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>psi.getField()-&gt;getMass();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>data.m2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>psic.getField()-&gt;getMass();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>data.s1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>boolsign(psi.isIncoming());</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>data.s2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>boolsign(psic.isIncoming());</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>data.s3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>boolsign(boson.isIncoming());</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>data.eta1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>boolsign(psi.isParticle());</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>data.eta2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>boolsign(psic.isParticle());</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>orderOperators(std::vector&lt;Wilson&gt;<sp/>&amp;wilsons,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;<sp/><sp/>p1,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;<sp/><sp/>p2)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Order<sp/>F1,<sp/>F1c,<sp/>F2,<sp/>F2c,<sp/>F3,<sp/>F3c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>contains<sp/>=<sp/>[&amp;](<ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;full,<sp/><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;p)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>csl::AnyOfLeafs(full,<sp/>[&amp;](<ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;sub)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>csl::IsIndicialTensor(sub)<sp/>&amp;&amp;<sp/>sub-&gt;getParent()<sp/>==<sp/>p;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Wilson&gt;<sp/>res(6,<sp/>{CSL_0,<sp/>CSL_0});</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;wil<sp/>:<sp/>wilsons)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;op<sp/><sp/><sp/><sp/>=<sp/>wil.op.getOp();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hasP1<sp/>=<sp/>contains(op,<sp/>p1);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hasP2<sp/>=<sp/>contains(op,<sp/>p2);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasGamma5<sp/>=<sp/>op-&gt;dependsExplicitlyOn(mty::dirac4.gamma_chir.get());</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hasP1)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res[hasGamma5]<sp/>=<sp/>wil;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hasP2)<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res[2<sp/>+<sp/>hasGamma5]<sp/>=<sp/>wil;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res[4<sp/>+<sp/>hasGamma5]<sp/>=<sp/>wil;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>wilsons<sp/>=<sp/>std::move(res);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal">ensureOperator(Wilson<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;model,<sp/>Wilson<sp/>&amp;target,<sp/><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;p)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/><sp/>op<sp/>=<sp/><ref refid="namespacecsl_1af1e310aad90377d99f591def8b30336c" kindref="member">csl::DeepCopy</ref>(model.op.getOp());</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref><sp/><ref refid="namespacemty_1_1mssm__input_1afe322514383dc8825d2e8fda25d3cda8" kindref="member">mu</ref>;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>*momentum<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;arg<sp/>:<sp/>op)<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(csl::IsIndicialTensor(arg)<sp/>&amp;&amp;<sp/>arg-&gt;getParent()<sp/>==<sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacemty_1_1mssm__input_1afe322514383dc8825d2e8fda25d3cda8" kindref="member">mu</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>arg-&gt;getIndexStructureView().back();</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>momentum<sp/>=<sp/>&amp;arg;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>HEPAssert(momentum,</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mty::error::RuntimeError,</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Momentum<sp/>not<sp/>found<sp/>in<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>toString(op)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">)<sp/>for<sp/>(auto<sp/>&amp;arg<sp/>:</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>op)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>field<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal">QuantumField<sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(arg.get());</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>field<sp/>&amp;&amp;<sp/>field-&gt;isFermionic()<sp/>&amp;&amp;<sp/>field-&gt;isComplexConjugate())<sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>&amp;<sp/><sp/><sp/><sp/><sp/>alpha<sp/>=<sp/>field-&gt;getIndexStructureView().back();</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>csl::Index<sp/>beta<sp/><sp/>=<sp/>alpha.rename();</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*momentum<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>dirac4.gamma({mu,<sp/>beta,<sp/>alpha});</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacemty_1_1mssm__input_1aef4e079cc71f10f180ad210229aec56c" kindref="member">alpha</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="namespacemty_1_1mssm__input_1aa9850c4cdb1bf56b2ea1bfae657b0edf" kindref="member">beta</ref>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>target.op.setOp(<ref refid="namespacecsl_1a9c5e3c2f5f4c6533ac74d150d29f931d" kindref="member">csl::Refreshed</ref>(op));</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ensureOperators(std::vector&lt;Wilson&gt;<sp/>&amp;wilsons,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;<sp/><sp/>p1,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;<sp/><sp/>p2)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(wilsons[0].op.getOp()<sp/>!=<sp/>CSL_0)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ensureOperator(wilsons[0],<sp/>wilsons[4],<sp/>p1);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(wilsons[2].op.getOp()<sp/>!=<sp/>CSL_0)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ensureOperator(wilsons[2],<sp/>wilsons[4],<sp/>p2);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(wilsons[1].op.getOp()<sp/>!=<sp/>CSL_0)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ensureOperator(wilsons[1],<sp/>wilsons[5],<sp/>p1);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(wilsons[3].op.getOp()<sp/>!=<sp/>CSL_0)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ensureOperator(wilsons[3],<sp/>wilsons[5],<sp/>p2);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>applyPenguinPatch_implementation(std::vector&lt;Wilson&gt;<sp/>&amp;<sp/><sp/><sp/>wilsons,</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PenguinPatchData<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;data)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>eval_m1<sp/>=<sp/>csl::Evaluated(data.m1,<sp/>csl::eval::all);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>eval_m2<sp/>=<sp/>csl::Evaluated(data.m2,<sp/>csl::eval::all);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>F1<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>wilsons[0].coef.getCoefficient();</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>F1c<sp/><sp/><sp/><sp/><sp/>=<sp/>wilsons[1].coef.getCoefficient();</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>F2<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>wilsons[2].coef.getCoefficient();</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>F2c<sp/><sp/><sp/><sp/><sp/>=<sp/>wilsons[3].coef.getCoefficient();</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>F<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(data.s1<sp/>*<sp/>F1<sp/>+<sp/>data.s2<sp/>*<sp/>F2)<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>Fc<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(data.s1<sp/>*<sp/>F1c<sp/>+<sp/>data.s2<sp/>*<sp/>F2c)<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>Lambda1<sp/>=<sp/>data.s1<sp/>*<sp/><ref refid="namespacecsl_1a39a4d5d0b5daeb571db05ae3bb2d36e4" kindref="member">csl::pow_s</ref>(data.m1,<sp/>2)<sp/>+<sp/>data.s2<sp/>*<sp/>data.s_12;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>Lambda2<sp/>=<sp/>data.s2<sp/>*<sp/><ref refid="namespacecsl_1a39a4d5d0b5daeb571db05ae3bb2d36e4" kindref="member">csl::pow_s</ref>(data.m2,<sp/>2)<sp/>+<sp/>data.s1<sp/>*<sp/>data.s_12;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>qSquared</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>data.s1<sp/>*<sp/>Lambda1<sp/>+<sp/>data.s2<sp/>*<sp/>Lambda2<sp/>+<sp/>Propagator::Peps;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>m1_tilde<sp/>=<sp/>data.eta1<sp/>*<sp/>data.s1<sp/>*<sp/>data.m1;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>m2_tilde<sp/>=<sp/>data.eta2<sp/>*<sp/>data.s2<sp/>*<sp/>data.m2;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>Wilson<sp/>&amp;<sp/><sp/>O3<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>wilsons[4];</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>Wilson<sp/>&amp;<sp/><sp/>O3c<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>wilsons[5];</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(eval_m1<sp/>==<sp/>CSL_0<sp/>&amp;&amp;<sp/>eval_m2<sp/>==<sp/>CSL_0)<sp/>{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>O3.coef.setCoefficient(CSL_0);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>O3c.coef.setCoefficient(CSL_0);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(eval_m1<sp/>==<sp/>eval_m2)<sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data.eta1<sp/>*<sp/>data.s1<sp/>==<sp/>data.eta2<sp/>*<sp/>data.s2)<sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>O3.coef.setCoefficient(-F<sp/>*<sp/>qSquared<sp/>/<sp/>(2<sp/>*<sp/>m1_tilde));</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>O3c.coef.setCoefficient(CSL_0);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>O3.coef.setCoefficient(CSL_0);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>O3c.coef.setCoefficient(Fc<sp/>*<sp/>qSquared<sp/>/<sp/>(2<sp/>*<sp/>m1_tilde));</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>O3.coef.setCoefficient(-F<sp/>*<sp/>qSquared<sp/>/<sp/>(m1_tilde<sp/>+<sp/>m2_tilde));</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>O3c.coef.setCoefficient(Fc<sp/>*<sp/>qSquared<sp/>/<sp/>(m1_tilde<sp/>-<sp/>m2_tilde));</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacemty_1a77cd1b79f392395c423eccd78b0295c7" kindref="member">requiresPenguinPatch</ref>(Amplitude<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;amplitude)</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(amplitude.empty()<sp/>||<sp/>amplitude.getDiagrams()[0].getNLoops()<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;insertions<sp/>=<sp/>amplitude.getKinematics().getInsertions();</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>checkInsertionsForPatch(insertions,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacemty_1aa1bf611d51dd213cbf5d1b4723bfc3a3" kindref="member">applyPenguinPatch</ref>(std::vector&lt;Wilson&gt;<sp/>&amp;wilsons,</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Kinematics<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;<sp/><sp/><sp/>kinematics)</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(wilsons.empty())</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;insertions<sp/>=<sp/>kinematics.getInsertions();</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>checkInsertionsForPatch(insertions,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>[iconj,<sp/>ireg]<sp/>=<sp/>checkOperators(wilsons,<sp/>kinematics.getMomenta());</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p1<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>kinematics.momentum(ireg);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p2<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>kinematics.momentum(iconj);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/><sp/><sp/><sp/>=<sp/>getPenguinData(insertions,<sp/>iconj,<sp/>ireg);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref><sp/><ref refid="namespacemty_1_1mssm__input_1afe322514383dc8825d2e8fda25d3cda8" kindref="member">mu</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="namespacecsl_1aef525ce7226ae5fa0fc9b9f2aa4ccc5d" kindref="member">csl::Minkowski</ref>.<ref refid="classcsl_1_1Space_1a3e22f45ad75d9f625ef0637cd777190f" kindref="member">generateIndex</ref>();</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>data.p1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>p1;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>data.p2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>p2;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>data.s_12<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>p1(mu)<sp/>*<sp/>p2(+mu);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>orderOperators(wilsons,<sp/>p1,<sp/>p2);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>ensureOperators(wilsons,<sp/>p1,<sp/>p2);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>applyPenguinPatch_implementation(wilsons,<sp/>data);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mty</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/marty/core/penguinpatch.cpp"/>
+  </compounddef>
+</doxygen>

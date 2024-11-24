@@ -1,0 +1,1056 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1GaugedGroup" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mty::GaugedGroup</compoundname>
+    <derivedcompoundref refid="classmty_1_1NonAbelianGauged" prot="public" virt="non-virtual">mty::NonAbelianGauged</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1U1Gauged" prot="public" virt="non-virtual">mty::U1Gauged</derivedcompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmty_1_1GaugedGroup_1ae7806d099437dde801d58bf6eac72a31" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmty_1_1Gauge" kindref="compound">Gauge</ref> *</type>
+        <definition>Gauge* mty::GaugedGroup::gauge</definition>
+        <argsstring></argsstring>
+        <name>gauge</name>
+        <qualifiedname>mty::GaugedGroup::gauge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="281" column="11" bodyfile="src/marty/core/gaugedGroup.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1GaugedGroup_1a8760f243767135f851e890b7db6fcc10" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmty_1_1SemiSimpleGroup" kindref="compound">SemiSimpleGroup</ref> *</type>
+        <definition>SemiSimpleGroup* mty::GaugedGroup::group</definition>
+        <argsstring></argsstring>
+        <name>group</name>
+        <qualifiedname>mty::GaugedGroup::group</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="283" column="21" bodyfile="src/marty/core/gaugedGroup.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1GaugedGroup_1af17e32c5217a58afcac99ae56744e62e" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::GaugedGroup::broken</definition>
+        <argsstring></argsstring>
+        <name>broken</name>
+        <qualifiedname>mty::GaugedGroup::broken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="285" column="10" bodyfile="src/marty/core/gaugedGroup.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1GaugedGroup_1add576df6b894c912a77335c5593030b5" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::GaugedGroup::coupling</definition>
+        <argsstring></argsstring>
+        <name>coupling</name>
+        <qualifiedname>mty::GaugedGroup::coupling</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="287" column="15" bodyfile="src/marty/core/gaugedGroup.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1GaugedGroup_1a29716a396957b7184efefc79aba9e011" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mty::GaugedGroup::nameGenerator</definition>
+        <argsstring></argsstring>
+        <name>nameGenerator</name>
+        <qualifiedname>mty::GaugedGroup::nameGenerator</qualifiedname>
+        <initializer>= &quot;T&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="289" column="17" bodyfile="src/marty/core/gaugedGroup.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1GaugedGroup_1a3f94d31b6b68afa5165f87d91e07d922" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mty::GaugedGroup::nameBoson</definition>
+        <argsstring></argsstring>
+        <name>nameBoson</name>
+        <qualifiedname>mty::GaugedGroup::nameBoson</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="291" column="17" bodyfile="src/marty/core/gaugedGroup.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1GaugedGroup_1aefc3ed289a79682858c4368ba2ac1064" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::GaugedGroup::ghostEnabled</definition>
+        <argsstring></argsstring>
+        <name>ghostEnabled</name>
+        <qualifiedname>mty::GaugedGroup::ghostEnabled</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="293" column="10" bodyfile="src/marty/core/gaugedGroup.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1GaugedGroup_1ae191eff08d1956d8477a75b4538a9a5e" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> *</type>
+        <definition>const csl::Space* mty::GaugedGroup::adjointSpace</definition>
+        <argsstring></argsstring>
+        <name>adjointSpace</name>
+        <qualifiedname>mty::GaugedGroup::adjointSpace</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="295" column="22" bodyfile="src/marty/core/gaugedGroup.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1GaugedGroup_1aa84e7d8c4513da127029530261779d5b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmty_1_1Generator" kindref="compound">mty::Generator</ref></type>
+        <definition>mty::Generator mty::GaugedGroup::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <qualifiedname>mty::GaugedGroup::f</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="297" column="20" bodyfile="src/marty/core/gaugedGroup.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1GaugedGroup_1a498df55cf8a5b667d9073ba94ba25d09" prot="protected" static="no" mutable="yes">
+        <type>std::map&lt; size_t, <ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &gt;</type>
+        <definition>std::map&lt;size_t, csl::Tensor&gt; mty::GaugedGroup::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <qualifiedname>mty::GaugedGroup::d</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="299" column="22" bodyfile="src/marty/core/gaugedGroup.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1GaugedGroup_1a8888ef5ed3f435980d1bceb0621c2cda" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmty_1_1IrrepMap" kindref="compound">IrrepMap</ref>&lt; <ref refid="classmty_1_1Generator" kindref="compound">mty::Generator</ref> &gt;</type>
+        <definition>IrrepMap&lt;mty::Generator&gt; mty::GaugedGroup::generator</definition>
+        <argsstring></argsstring>
+        <name>generator</name>
+        <qualifiedname>mty::GaugedGroup::generator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="301" column="14" bodyfile="src/marty/core/gaugedGroup.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1GaugedGroup_1a4a5b5936582844a6af41aad14f044ba9" prot="protected" static="no" mutable="no">
+        <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1GaugeBoson" kindref="compound">GaugeBoson</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;GaugeBoson&gt; mty::GaugedGroup::boson</definition>
+        <argsstring></argsstring>
+        <name>boson</name>
+        <qualifiedname>mty::GaugedGroup::boson</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="303" column="21" bodyfile="src/marty/core/gaugedGroup.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1GaugedGroup_1a5ba03feb9439e39df53fbbe10ca85561" prot="protected" static="no" mutable="no">
+        <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1GhostBoson" kindref="compound">GhostBoson</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;GhostBoson&gt; mty::GaugedGroup::ghost</definition>
+        <argsstring></argsstring>
+        <name>ghost</name>
+        <qualifiedname>mty::GaugedGroup::ghost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="305" column="21" bodyfile="src/marty/core/gaugedGroup.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1GaugedGroup_1adbf61cbd4e3f0cfb882921312b1a7373" prot="protected" static="no" mutable="yes">
+        <type>std::vector&lt; std::pair&lt; <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref>, const <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> * &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;AlgebraState, const csl::Space *&gt; &gt; mty::GaugedGroup::vectorSpaces</definition>
+        <argsstring></argsstring>
+        <name>vectorSpaces</name>
+        <qualifiedname>mty::GaugedGroup::vectorSpaces</qualifiedname>
+        <briefdescription>
+<para>Association of <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> (highest weights of irreps) and vector spaces. To each irrep (i.e. each highest weight) is associated a different and unique vector space (<ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref>). See getVectorSpace(). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="313" column="9" bodyfile="src/marty/core/gaugedGroup.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1af5459d46ac5ffce00b5ed15517b8f3f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::GaugedGroup::GaugedGroup</definition>
+        <argsstring>(SemiSimpleGroup *t_group, Gauge *gauge, std::string const &amp;bosonName, bool addGhost)</argsstring>
+        <name>GaugedGroup</name>
+        <qualifiedname>mty::GaugedGroup::GaugedGroup</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1SemiSimpleGroup" kindref="compound">SemiSimpleGroup</ref> *</type>
+          <declname>t_group</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Gauge" kindref="compound">Gauge</ref> *</type>
+          <declname>gauge</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>bosonName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>addGhost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="193" column="5" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="105" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1a08adf38e02ea8ab36797d3c32e8e6f42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::GaugedGroup::GaugedGroup</definition>
+        <argsstring>(SemiSimpleGroup *t_group, Gauge *gauge, std::string const &amp;bosonName, bool addGhost, const csl::Expr &amp;t_coupling)</argsstring>
+        <name>GaugedGroup</name>
+        <qualifiedname>mty::GaugedGroup::GaugedGroup</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1SemiSimpleGroup" kindref="compound">SemiSimpleGroup</ref> *</type>
+          <declname>t_group</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Gauge" kindref="compound">Gauge</ref> *</type>
+          <declname>gauge</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>bosonName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>addGhost</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>t_coupling</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="198" column="5" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="120" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1ab2043dcc46a88f5a06324327c75c281b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>mty::GaugedGroup::~GaugedGroup</definition>
+        <argsstring>()</argsstring>
+        <name>~GaugedGroup</name>
+        <qualifiedname>mty::GaugedGroup::~GaugedGroup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="204" column="13" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="130" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1a66693c775456181dd664abc85bc5cd89" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>mty::gauge::GroupType</type>
+        <definition>virtual mty::gauge::GroupType mty::GaugedGroup::getType</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getType</name>
+        <qualifiedname>mty::GaugedGroup::getType</qualifiedname>
+        <reimplementedby refid="classmty_1_1E6Gauged_1ad809a1773333bd99cd1027ddfda24c93">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1E7Gauged_1a78471a5572e57f39ef61960656bd3956">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1E8Gauged_1a4abc6c231816917554d854e86ae463cf">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1F4Gauged_1a9ca5a2813e64952d0d07319e25281a37">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1G2Gauged_1a1219f112185f64097371f59d69e71ca1">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1SOGauged_1a73c3e1b20bb1cad8cac9d366b95325d5">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1SpGauged_1ab6ef98e31bea4480af09d460fc0b12e1">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1SUGauged_1a6bef3f3ba7792e0d7df97e459c82b1f6">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1U1Gauged_1a6f165d90b7282eb6ed24545d50bc1093">getType</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="206" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1ab9925e49bdd026a2e76916e027d06006" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string mty::GaugedGroup::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <qualifiedname>mty::GaugedGroup::getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="208" column="17" bodyfile="src/marty/core/gaugedGroup.h" bodystart="208" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1a51ab8d7413a770c28b32b0929d69fb09" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1SemiSimpleGroup" kindref="compound">SemiSimpleGroup</ref> *</type>
+        <definition>SemiSimpleGroup * mty::GaugedGroup::getGroup</definition>
+        <argsstring>() const</argsstring>
+        <name>getGroup</name>
+        <qualifiedname>mty::GaugedGroup::getGroup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="213" column="21" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1a2e48d6691d0be44f250ab0ecd51bb410" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::GaugedGroup::isBroken</definition>
+        <argsstring>() const</argsstring>
+        <name>isBroken</name>
+        <qualifiedname>mty::GaugedGroup::isBroken</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="215" column="10" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1a0fa784487264ab14354a3fe3b7e032e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmty_1_1SemiSimpleAlgebra" kindref="compound">SemiSimpleAlgebra</ref> const *</type>
+        <definition>SemiSimpleAlgebra const  * mty::GaugedGroup::getAlgebra</definition>
+        <argsstring>() const</argsstring>
+        <name>getAlgebra</name>
+        <qualifiedname>mty::GaugedGroup::getAlgebra</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="217" column="29" bodyfile="src/marty/core/gaugedGroup.h" bodystart="217" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1ae719fb5d569bda00be0e0d8c2419a9fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1gauge_1_1Choice" kindref="compound">mty::gauge::Choice</ref></type>
+        <definition>mty::gauge::Choice mty::GaugedGroup::getGaugeChoice</definition>
+        <argsstring>() const</argsstring>
+        <name>getGaugeChoice</name>
+        <qualifiedname>mty::GaugedGroup::getGaugeChoice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="222" column="24" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1aeda763bf46083403d81a7628b8849f87" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::GaugedGroup::getEffectiveQuadraticCasimir</definition>
+        <argsstring>(mty::Irrep const &amp;irrep) const</argsstring>
+        <name>getEffectiveQuadraticCasimir</name>
+        <qualifiedname>mty::GaugedGroup::getEffectiveQuadraticCasimir</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Irrep" kindref="compound">mty::Irrep</ref> const &amp;</type>
+          <declname>irrep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="224" column="15" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="288" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1afdbec42024cfcea17d1ee288bf65bd3d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::GaugedGroup::getCA</definition>
+        <argsstring>() const</argsstring>
+        <name>getCA</name>
+        <qualifiedname>mty::GaugedGroup::getCA</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="226" column="15" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="300" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1a3f3184260185dba7448b04fcf34eaff7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::GaugedGroup::getCF</definition>
+        <argsstring>() const</argsstring>
+        <name>getCF</name>
+        <qualifiedname>mty::GaugedGroup::getCF</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="228" column="15" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="306" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1ae4c6cb055987432cf03d6ede15d1251c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Generator" kindref="compound">mty::Generator</ref></type>
+        <definition>mty::Generator mty::GaugedGroup::getF</definition>
+        <argsstring>() const</argsstring>
+        <name>getF</name>
+        <qualifiedname>mty::GaugedGroup::getF</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="230" column="20" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1a61142267e4d4183cb3f825653077f717" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref></type>
+        <definition>csl::Tensor mty::GaugedGroup::getD</definition>
+        <argsstring>(size_t p) const</argsstring>
+        <name>getD</name>
+        <qualifiedname>mty::GaugedGroup::getD</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="232" column="17" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="166" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1a46c05036be4528d613603f1e4cc72f62" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref></type>
+        <definition>csl::Tensor mty::GaugedGroup::getDTilde</definition>
+        <argsstring>() const</argsstring>
+        <name>getDTilde</name>
+        <qualifiedname>mty::GaugedGroup::getDTilde</qualifiedname>
+        <reimplementedby refid="classmty_1_1SOGauged_1a1eb0816cff1c4514a6b06e9b8ea128b2">getDTilde</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="234" column="25" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="186" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1a870dfb8429ba002e44b1dcd46b913907" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::GaugedGroup::setGaugeChoice</definition>
+        <argsstring>(gauge::Type t_choice)</argsstring>
+        <name>setGaugeChoice</name>
+        <qualifiedname>mty::GaugedGroup::setGaugeChoice</qualifiedname>
+        <param>
+          <type><ref refid="namespacemty_1_1gauge_1a8fd05434cb655735bb18cda43a626a9f" kindref="member">gauge::Type</ref></type>
+          <declname>t_choice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="236" column="10" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1ae9c5138165d925e34d23ec6fc97ac46c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string mty::GaugedGroup::getNameGenerator</definition>
+        <argsstring>() const</argsstring>
+        <name>getNameGenerator</name>
+        <qualifiedname>mty::GaugedGroup::getNameGenerator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="238" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1affc198344552636da36a1219f0d9b8e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::GaugedGroup::setNameGenerator</definition>
+        <argsstring>(const std::string &amp;newName)</argsstring>
+        <name>setNameGenerator</name>
+        <qualifiedname>mty::GaugedGroup::setNameGenerator</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="240" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1abca12d13e1262247552495b70c82e1c1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::GaugedGroup::getCouplingConstant</definition>
+        <argsstring>() const</argsstring>
+        <name>getCouplingConstant</name>
+        <qualifiedname>mty::GaugedGroup::getCouplingConstant</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="242" column="15" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="156" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1a9f3c9bee581cf6570a1ab53fae50c6c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::GaugedGroup::setBroken</definition>
+        <argsstring>(bool t_broken)</argsstring>
+        <name>setBroken</name>
+        <qualifiedname>mty::GaugedGroup::setBroken</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>t_broken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="244" column="10" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="224" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1a14b713d33f39762a2bb825c0ea265fe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::GaugedGroup::setCouplingConstant</definition>
+        <argsstring>(const csl::Expr &amp;expr)</argsstring>
+        <name>setCouplingConstant</name>
+        <qualifiedname>mty::GaugedGroup::setCouplingConstant</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="246" column="10" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="194" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1a4503ec941a10012c9cc73e9f5521f0e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref></type>
+        <definition>Particle mty::GaugedGroup::buildVectorBoson</definition>
+        <argsstring>()</argsstring>
+        <name>buildVectorBoson</name>
+        <qualifiedname>mty::GaugedGroup::buildVectorBoson</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="248" column="14" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="229" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1aed6ca4fa7d752a79f5dcf50682435f7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref></type>
+        <definition>Particle mty::GaugedGroup::buildGhost</definition>
+        <argsstring>()</argsstring>
+        <name>buildGhost</name>
+        <qualifiedname>mty::GaugedGroup::buildGhost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="250" column="14" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="255" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1a7d781d987f309d46a09b89575fbd4b78" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref></type>
+        <definition>AlgebraState mty::GaugedGroup::getHighestWeight</definition>
+        <argsstring>(const csl::Space *space) const</argsstring>
+        <name>getHighestWeight</name>
+        <qualifiedname>mty::GaugedGroup::getHighestWeight</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> *</type>
+          <declname>space</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="252" column="18" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="282" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1a38185f7309408907ef5f57e2cf8e12d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>virtual csl::Expr mty::GaugedGroup::covariantDerivative</definition>
+        <argsstring>(QuantumFieldParent &amp;field, const csl::Index &amp;mu, const std::vector&lt; csl::Index &gt; &amp;fieldIndices, csl::Tensor &amp;point)=0</argsstring>
+        <name>covariantDerivative</name>
+        <qualifiedname>mty::GaugedGroup::covariantDerivative</qualifiedname>
+        <reimplementedby refid="classmty_1_1NonAbelianGauged_1ae052c2ecc601e2e5df9a63a4b23f8ea2">covariantDerivative</reimplementedby>
+        <reimplementedby refid="classmty_1_1U1Gauged_1a5b97e5c576189bb367d25d5834211043">covariantDerivative</reimplementedby>
+        <param>
+          <type><ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt; &amp;</type>
+          <declname>fieldIndices</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="255" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1af52156b17b0359b8b9bb690b7ae46b5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::GaugedGroup::covariantDerivative</definition>
+        <argsstring>(const csl::Expr &amp;field, const csl::Index &amp;mu)</argsstring>
+        <name>covariantDerivative</name>
+        <qualifiedname>mty::GaugedGroup::covariantDerivative</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="261" column="15" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="312" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1a759e59de1b46e077ef751bc90cf0f82e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Generator" kindref="compound">mty::Generator</ref></type>
+        <definition>mty::Generator mty::GaugedGroup::getGenerator</definition>
+        <argsstring>(const Irrep &amp;field)</argsstring>
+        <name>getGenerator</name>
+        <qualifiedname>mty::GaugedGroup::getGenerator</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="264" column="20" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="204" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1ae016ec2f04e329942a3c11f09853835b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Generator" kindref="compound">mty::Generator</ref></type>
+        <definition>mty::Generator mty::GaugedGroup::getGenerator</definition>
+        <argsstring>(const QuantumFieldParent &amp;field)</argsstring>
+        <name>getGenerator</name>
+        <qualifiedname>mty::GaugedGroup::getGenerator</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="265" column="20" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="213" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1a08101a34b267c625563c74de977f431c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Generator" kindref="compound">mty::Generator</ref></type>
+        <definition>mty::Generator mty::GaugedGroup::getGenerator</definition>
+        <argsstring>(std::vector&lt; int &gt; const &amp;labels)</argsstring>
+        <name>getGenerator</name>
+        <qualifiedname>mty::GaugedGroup::getGenerator</qualifiedname>
+        <param>
+          <type>std::vector&lt; int &gt; const &amp;</type>
+          <declname>labels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="266" column="20" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="219" bodyend="222"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1ae0ab20538f17fd9a0bc4c4081c5993d3" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::GaugedGroup::isFieldInTrivialRep</definition>
+        <argsstring>(const QuantumFieldParent &amp;field) const</argsstring>
+        <name>isFieldInTrivialRep</name>
+        <qualifiedname>mty::GaugedGroup::isFieldInTrivialRep</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref> &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="269" column="10" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="333" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1a2ff0dd8c048524823a364480903aaae3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mty::GaugedGroup::setGeneratorProperties</definition>
+        <argsstring>(Irrep const &amp;rep, mty::Generator &amp;generator)</argsstring>
+        <name>setGeneratorProperties</name>
+        <qualifiedname>mty::GaugedGroup::setGeneratorProperties</qualifiedname>
+        <reimplementedby refid="classmty_1_1E6Gauged_1aa0e63f0190df844cd30c2b10503e7be3">setGeneratorProperties</reimplementedby>
+        <reimplementedby refid="classmty_1_1E7Gauged_1a41a371e7ddad7144f9895d0310308fb7">setGeneratorProperties</reimplementedby>
+        <reimplementedby refid="classmty_1_1F4Gauged_1ab3957b0f4ce5c8fd0814a8c3494d1d7b">setGeneratorProperties</reimplementedby>
+        <reimplementedby refid="classmty_1_1G2Gauged_1adfe33521396f9d1b335124f950a58e6e">setGeneratorProperties</reimplementedby>
+        <reimplementedby refid="classmty_1_1NonAbelianGauged_1a4c038927b574d936384dfdf28220f622">setGeneratorProperties</reimplementedby>
+        <reimplementedby refid="classmty_1_1SOGauged_1a14bcf60ed5ef3a9a46d78d962de0777c">setGeneratorProperties</reimplementedby>
+        <reimplementedby refid="classmty_1_1SpGauged_1ab7de956bdd36e4e01449b1dd8fc7dbc0">setGeneratorProperties</reimplementedby>
+        <reimplementedby refid="classmty_1_1SUGauged_1ac842e822c2f25ebc33da86f81f97082a">setGeneratorProperties</reimplementedby>
+        <param>
+          <type><ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> const &amp;</type>
+          <declname>rep</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Generator" kindref="compound">mty::Generator</ref> &amp;</type>
+          <declname>generator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="271" column="18" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="343" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1abdd94d240c9ea7f379c05035bc14d681" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::GaugedGroup::hasGeneratorForRep</definition>
+        <argsstring>(const Irrep &amp;irrep) const</argsstring>
+        <name>hasGeneratorForRep</name>
+        <qualifiedname>mty::GaugedGroup::hasGeneratorForRep</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &amp;</type>
+          <declname>irrep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="274" column="10" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="338" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1ac47c60bbd8d32af0ab7b8b39384ee00b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mty::GaugedGroup::generateRepGenerator</definition>
+        <argsstring>(const Irrep &amp;irrep)</argsstring>
+        <name>generateRepGenerator</name>
+        <qualifiedname>mty::GaugedGroup::generateRepGenerator</qualifiedname>
+        <reimplementedby refid="classmty_1_1E6Gauged_1a50f6bb48d2819658301511f2b32a8906">generateRepGenerator</reimplementedby>
+        <reimplementedby refid="classmty_1_1E7Gauged_1acd61397f839c9f36754f0584bd8a68bc">generateRepGenerator</reimplementedby>
+        <reimplementedby refid="classmty_1_1F4Gauged_1a4e0bcd35d68b9974d13e3b67adccfca2">generateRepGenerator</reimplementedby>
+        <reimplementedby refid="classmty_1_1G2Gauged_1a8dd4194d3ca51f324575b3c6e706f522">generateRepGenerator</reimplementedby>
+        <param>
+          <type>const <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &amp;</type>
+          <declname>irrep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="276" column="18" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="359" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GaugedGroup_1a1e0c8903f96dda6ba43847b6f3980afc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::GaugedGroup::initF</definition>
+        <argsstring>()</argsstring>
+        <name>initF</name>
+        <qualifiedname>mty::GaugedGroup::initF</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="278" column="10" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="375" bodyend="386"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>mty::E6Gauged</label>
+        <link refid="classmty_1_1E6Gauged"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mty::E7Gauged</label>
+        <link refid="classmty_1_1E7Gauged"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mty::E8Gauged</label>
+        <link refid="classmty_1_1E8Gauged"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mty::F4Gauged</label>
+        <link refid="classmty_1_1F4Gauged"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mty::G2Gauged</label>
+        <link refid="classmty_1_1G2Gauged"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::GaugedGroup</label>
+        <link refid="classmty_1_1GaugedGroup"/>
+      </node>
+      <node id="2">
+        <label>mty::NonAbelianGauged</label>
+        <link refid="classmty_1_1NonAbelianGauged"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mty::SOGauged</label>
+        <link refid="classmty_1_1SOGauged"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mty::SUGauged</label>
+        <link refid="classmty_1_1SUGauged"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mty::SpGauged</label>
+        <link refid="classmty_1_1SpGauged"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mty::U1Gauged</label>
+        <link refid="classmty_1_1U1Gauged"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>csl::Space</label>
+        <link refid="classcsl_1_1Space"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>symbolicDim</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>delta</edgelabel>
+          <edgelabel>epsilon</edgelabel>
+          <edgelabel>inverseMetric</edgelabel>
+          <edgelabel>metric</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mty::AbstractGroup</label>
+        <link refid="classmty_1_1AbstractGroup"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>gauged</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mty::Gauge</label>
+        <link refid="classmty_1_1Gauge"/>
+      </node>
+      <node id="1">
+        <label>mty::GaugedGroup</label>
+        <link refid="classmty_1_1GaugedGroup"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>gauge</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>group</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>coupling</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>adjointSpace</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>f</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>generator</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>boson</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>ghost</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mty::Generator</label>
+        <link refid="classmty_1_1Generator"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mty::IrrepMap&lt; mty::Generator &gt;</label>
+        <link refid="classmty_1_1IrrepMap"/>
+      </node>
+      <node id="3">
+        <label>mty::SemiSimpleGroup</label>
+        <link refid="classmty_1_1SemiSimpleGroup"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>std::shared_ptr&lt; GeneratorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="9">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="6">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="13">
+        <label>std::shared_ptr&lt; mty::GaugeBoson &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="14">
+        <label>std::shared_ptr&lt; mty::GhostBoson &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/gaugedGroup.h" line="190" column="1" bodyfile="src/marty/core/gaugedGroup.h" bodystart="190" bodyend="314"/>
+    <listofallmembers>
+      <member refid="classmty_1_1GaugedGroup_1ae191eff08d1956d8477a75b4538a9a5e" prot="protected" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>adjointSpace</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a4a5b5936582844a6af41aad14f044ba9" prot="protected" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>boson</name></member>
+      <member refid="classmty_1_1GaugedGroup_1af17e32c5217a58afcac99ae56744e62e" prot="protected" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>broken</name></member>
+      <member refid="classmty_1_1GaugedGroup_1aed6ca4fa7d752a79f5dcf50682435f7e" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>buildGhost</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a4503ec941a10012c9cc73e9f5521f0e3" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>buildVectorBoson</name></member>
+      <member refid="classmty_1_1GaugedGroup_1add576df6b894c912a77335c5593030b5" prot="protected" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>coupling</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a38185f7309408907ef5f57e2cf8e12d2" prot="public" virt="pure-virtual"><scope>mty::GaugedGroup</scope><name>covariantDerivative</name></member>
+      <member refid="classmty_1_1GaugedGroup_1af52156b17b0359b8b9bb690b7ae46b5b" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>covariantDerivative</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a498df55cf8a5b667d9073ba94ba25d09" prot="protected" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>d</name></member>
+      <member refid="classmty_1_1GaugedGroup_1aa84e7d8c4513da127029530261779d5b" prot="protected" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>f</name></member>
+      <member refid="classmty_1_1GaugedGroup_1ae7806d099437dde801d58bf6eac72a31" prot="protected" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>gauge</name></member>
+      <member refid="classmty_1_1GaugedGroup_1af5459d46ac5ffce00b5ed15517b8f3f2" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>GaugedGroup</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a08adf38e02ea8ab36797d3c32e8e6f42" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>GaugedGroup</name></member>
+      <member refid="classmty_1_1GaugedGroup_1ac47c60bbd8d32af0ab7b8b39384ee00b" prot="protected" virt="virtual"><scope>mty::GaugedGroup</scope><name>generateRepGenerator</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a8888ef5ed3f435980d1bceb0621c2cda" prot="protected" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>generator</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a0fa784487264ab14354a3fe3b7e032e0" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>getAlgebra</name></member>
+      <member refid="classmty_1_1GaugedGroup_1afdbec42024cfcea17d1ee288bf65bd3d" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>getCA</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a3f3184260185dba7448b04fcf34eaff7" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>getCF</name></member>
+      <member refid="classmty_1_1GaugedGroup_1abca12d13e1262247552495b70c82e1c1" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>getCouplingConstant</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a61142267e4d4183cb3f825653077f717" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>getD</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a46c05036be4528d613603f1e4cc72f62" prot="public" virt="virtual"><scope>mty::GaugedGroup</scope><name>getDTilde</name></member>
+      <member refid="classmty_1_1GaugedGroup_1aeda763bf46083403d81a7628b8849f87" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>getEffectiveQuadraticCasimir</name></member>
+      <member refid="classmty_1_1GaugedGroup_1ae4c6cb055987432cf03d6ede15d1251c" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>getF</name></member>
+      <member refid="classmty_1_1GaugedGroup_1ae719fb5d569bda00be0e0d8c2419a9fa" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>getGaugeChoice</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a759e59de1b46e077ef751bc90cf0f82e" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>getGenerator</name></member>
+      <member refid="classmty_1_1GaugedGroup_1ae016ec2f04e329942a3c11f09853835b" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>getGenerator</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a08101a34b267c625563c74de977f431c" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>getGenerator</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a51ab8d7413a770c28b32b0929d69fb09" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>getGroup</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a7d781d987f309d46a09b89575fbd4b78" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>getHighestWeight</name></member>
+      <member refid="classmty_1_1GaugedGroup_1ab9925e49bdd026a2e76916e027d06006" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>getName</name></member>
+      <member refid="classmty_1_1GaugedGroup_1ae9c5138165d925e34d23ec6fc97ac46c" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>getNameGenerator</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a66693c775456181dd664abc85bc5cd89" prot="public" virt="pure-virtual"><scope>mty::GaugedGroup</scope><name>getType</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a5ba03feb9439e39df53fbbe10ca85561" prot="protected" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>ghost</name></member>
+      <member refid="classmty_1_1GaugedGroup_1aefc3ed289a79682858c4368ba2ac1064" prot="protected" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>ghostEnabled</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a8760f243767135f851e890b7db6fcc10" prot="protected" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>group</name></member>
+      <member refid="classmty_1_1GaugedGroup_1abdd94d240c9ea7f379c05035bc14d681" prot="protected" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>hasGeneratorForRep</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a1e0c8903f96dda6ba43847b6f3980afc" prot="protected" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>initF</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a2e48d6691d0be44f250ab0ecd51bb410" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>isBroken</name></member>
+      <member refid="classmty_1_1GaugedGroup_1ae0ab20538f17fd9a0bc4c4081c5993d3" prot="protected" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>isFieldInTrivialRep</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a3f94d31b6b68afa5165f87d91e07d922" prot="protected" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>nameBoson</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a29716a396957b7184efefc79aba9e011" prot="protected" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>nameGenerator</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a9f3c9bee581cf6570a1ab53fae50c6c7" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>setBroken</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a14b713d33f39762a2bb825c0ea265fe4" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>setCouplingConstant</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a870dfb8429ba002e44b1dcd46b913907" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>setGaugeChoice</name></member>
+      <member refid="classmty_1_1GaugedGroup_1a2ff0dd8c048524823a364480903aaae3" prot="protected" virt="virtual"><scope>mty::GaugedGroup</scope><name>setGeneratorProperties</name></member>
+      <member refid="classmty_1_1GaugedGroup_1affc198344552636da36a1219f0d9b8e1" prot="public" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>setNameGenerator</name></member>
+      <member refid="classmty_1_1GaugedGroup_1adbf61cbd4e3f0cfb882921312b1a7373" prot="protected" virt="non-virtual"><scope>mty::GaugedGroup</scope><name>vectorSpaces</name></member>
+      <member refid="classmty_1_1GaugedGroup_1ab2043dcc46a88f5a06324327c75c281b" prot="public" virt="virtual"><scope>mty::GaugedGroup</scope><name>~GaugedGroup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

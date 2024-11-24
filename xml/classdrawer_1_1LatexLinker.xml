@@ -1,0 +1,2338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classdrawer_1_1LatexLinker" kind="class" language="C++" prot="public">
+    <compoundname>drawer::LatexLinker</compoundname>
+    <innerclass refid="structdrawer_1_1LatexLinker_1_1Color" prot="public">drawer::LatexLinker::Color</innerclass>
+    <innerclass refid="structdrawer_1_1LatexLinker_1_1Edge" prot="public">drawer::LatexLinker::Edge</innerclass>
+    <innerclass refid="structdrawer_1_1LatexLinker_1_1Node" prot="public">drawer::LatexLinker::Node</innerclass>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bcce" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>NodeType</name>
+        <qualifiedname>drawer::LatexLinker::NodeType</qualifiedname>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bccea6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bcceae1b3ec89ead7f83a9245ed5c9cacfdbf" prot="public">
+          <name>Operator</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bcceae76b449b9fc8536af7557ffa6321d269" prot="public">
+          <name>Cross</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bccea929e8f45d7948ecfdc10320133cce0a8" prot="public">
+          <name>PlainDisk</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bccea1cac2f714f39217a315673f824208b5c" prot="public">
+          <name>HatchedDisk</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bccea6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bcceae1b3ec89ead7f83a9245ed5c9cacfdbf" prot="public">
+          <name>Operator</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bcceae76b449b9fc8536af7557ffa6321d269" prot="public">
+          <name>Cross</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bccea929e8f45d7948ecfdc10320133cce0a8" prot="public">
+          <name>PlainDisk</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bccea1cac2f714f39217a315673f824208b5c" prot="public">
+          <name>HatchedDisk</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="102" column="5" bodyfile="src/grafed/core/latexLink.h" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="enum" id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bcce" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>NodeType</name>
+        <qualifiedname>drawer::LatexLinker::NodeType</qualifiedname>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bccea6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bcceae1b3ec89ead7f83a9245ed5c9cacfdbf" prot="public">
+          <name>Operator</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bcceae76b449b9fc8536af7557ffa6321d269" prot="public">
+          <name>Cross</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bccea929e8f45d7948ecfdc10320133cce0a8" prot="public">
+          <name>PlainDisk</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bccea1cac2f714f39217a315673f824208b5c" prot="public">
+          <name>HatchedDisk</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bccea6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bcceae1b3ec89ead7f83a9245ed5c9cacfdbf" prot="public">
+          <name>Operator</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bcceae76b449b9fc8536af7557ffa6321d269" prot="public">
+          <name>Cross</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bccea929e8f45d7948ecfdc10320133cce0a8" prot="public">
+          <name>PlainDisk</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bccea1cac2f714f39217a315673f824208b5c" prot="public">
+          <name>HatchedDisk</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="102" column="5" bodyfile="src/grafed/gui/latexLink.h" bodystart="102" bodyend="102"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdrawer_1_1LatexLinker_1a89d526f8b4d18965b07033c1f4af320a" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structdrawer_1_1LatexLinker_1_1Color" kindref="compound">Color</ref></type>
+        <definition>static constexpr Color drawer::LatexLinker::Black</definition>
+        <argsstring></argsstring>
+        <name>Black</name>
+        <qualifiedname>drawer::LatexLinker::Black</qualifiedname>
+        <initializer>{0, 0, 0, 255}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="96" column="35" bodyfile="src/grafed/core/latexLink.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdrawer_1_1LatexLinker_1a2be55fae11358969e3df488f97fff1db" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structdrawer_1_1LatexLinker_1_1Color" kindref="compound">Color</ref></type>
+        <definition>static constexpr Color drawer::LatexLinker::White</definition>
+        <argsstring></argsstring>
+        <name>White</name>
+        <qualifiedname>drawer::LatexLinker::White</qualifiedname>
+        <initializer>{255, 255, 255, 255}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="97" column="35" bodyfile="src/grafed/core/latexLink.h" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdrawer_1_1LatexLinker_1aa9deb79d201ba1abc22516082b626516" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structdrawer_1_1LatexLinker_1_1Color" kindref="compound">Color</ref></type>
+        <definition>static constexpr Color drawer::LatexLinker::Red</definition>
+        <argsstring></argsstring>
+        <name>Red</name>
+        <qualifiedname>drawer::LatexLinker::Red</qualifiedname>
+        <initializer>{255, 0, 0, 255}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="98" column="35" bodyfile="src/grafed/core/latexLink.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdrawer_1_1LatexLinker_1aed32ab63db879600546e2191438ac7c0" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structdrawer_1_1LatexLinker_1_1Color" kindref="compound">Color</ref></type>
+        <definition>static constexpr Color drawer::LatexLinker::Blue</definition>
+        <argsstring></argsstring>
+        <name>Blue</name>
+        <qualifiedname>drawer::LatexLinker::Blue</qualifiedname>
+        <initializer>{0, 0, 255, 255}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="99" column="35" bodyfile="src/grafed/core/latexLink.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdrawer_1_1LatexLinker_1a3911d2edac7722ca616e911de79446f6" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type><ref refid="structdrawer_1_1LatexLinker_1_1Color" kindref="compound">Color</ref></type>
+        <definition>static constexpr Color drawer::LatexLinker::Green</definition>
+        <argsstring></argsstring>
+        <name>Green</name>
+        <qualifiedname>drawer::LatexLinker::Green</qualifiedname>
+        <initializer>{0, 255, 0, 255}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="100" column="35" bodyfile="src/grafed/core/latexLink.h" bodystart="100" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdrawer_1_1LatexLinker_1a741de176f80b37d33ad9270bf8015c6e" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>static bool drawer::LatexLinker::autoLabel</definition>
+        <argsstring></argsstring>
+        <name>autoLabel</name>
+        <qualifiedname>drawer::LatexLinker::autoLabel</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="255" column="24" bodyfile="src/grafed/core/latexLink.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdrawer_1_1LatexLinker_1a5ba1f26afe08e706671a00042035a919" prot="public" static="yes" mutable="no">
+        <type>const std::string</type>
+        <definition>static const std::string drawer::LatexLinker::nameOrigin</definition>
+        <argsstring></argsstring>
+        <name>nameOrigin</name>
+        <qualifiedname>drawer::LatexLinker::nameOrigin</qualifiedname>
+        <initializer>= &quot;O&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="257" column="37" bodyfile="src/grafed/core/latexLink.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdrawer_1_1LatexLinker_1a706b7b7b8760deaed928a8ddfad92365" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string drawer::LatexLinker::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>drawer::LatexLinker::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="260" column="17" bodyfile="src/grafed/core/latexLink.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdrawer_1_1LatexLinker_1a23d66864772dc59114b0b567f07f1e96" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float drawer::LatexLinker::scaleFactor</definition>
+        <argsstring></argsstring>
+        <name>scaleFactor</name>
+        <qualifiedname>drawer::LatexLinker::scaleFactor</qualifiedname>
+        <initializer>= 1.3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="262" column="11" bodyfile="src/grafed/core/latexLink.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdrawer_1_1LatexLinker_1abcdd6b93fc17453f8475c7e87f423ab7" prot="private" static="no" mutable="no">
+        <type><ref refid="classdrawer_1_1Graph" kindref="compound">Graph</ref></type>
+        <definition>Graph drawer::LatexLinker::graph</definition>
+        <argsstring></argsstring>
+        <name>graph</name>
+        <qualifiedname>drawer::LatexLinker::graph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="264" column="11" bodyfile="src/grafed/core/latexLink.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdrawer_1_1LatexLinker_1aede1ab675bc538923cf9fc51c93c0b9d" prot="private" static="no" mutable="yes">
+        <type>std::vector&lt; <ref refid="structdrawer_1_1LatexLinker_1_1Edge" kindref="compound">Edge</ref> &gt;</type>
+        <definition>std::vector&lt; Edge &gt; drawer::LatexLinker::edges</definition>
+        <argsstring></argsstring>
+        <name>edges</name>
+        <qualifiedname>drawer::LatexLinker::edges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="266" column="25" bodyfile="src/grafed/core/latexLink.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdrawer_1_1LatexLinker_1a88bf28a069258fae1690b9d1ddde83f1" prot="private" static="no" mutable="yes">
+        <type>std::map&lt; std::pair&lt; size_t, size_t &gt;, int &gt;</type>
+        <definition>std::map&lt; std::pair&lt; size_t, size_t &gt;, int &gt; drawer::LatexLinker::multiplicity</definition>
+        <argsstring></argsstring>
+        <name>multiplicity</name>
+        <qualifiedname>drawer::LatexLinker::multiplicity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="268" column="22" bodyfile="src/grafed/core/latexLink.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdrawer_1_1LatexLinker_1aba61bb9e2b790b3ed7ea440083d4bb27" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structdrawer_1_1LatexLinker_1_1Node" kindref="compound">Node</ref> &gt;</type>
+        <definition>std::vector&lt; Node &gt; drawer::LatexLinker::nodes</definition>
+        <argsstring></argsstring>
+        <name>nodes</name>
+        <qualifiedname>drawer::LatexLinker::nodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="270" column="17" bodyfile="src/grafed/core/latexLink.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a17252aae08dd3bcd9ccec9645ace87e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>drawer::LatexLinker::LatexLinker</definition>
+        <argsstring>()=default</argsstring>
+        <name>LatexLinker</name>
+        <qualifiedname>drawer::LatexLinker::LatexLinker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="122" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a4740101a9ef77bfc468ebde7d637386d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>drawer::LatexLinker::LatexLinker</definition>
+        <argsstring>(Graph const &amp;graph)</argsstring>
+        <name>LatexLinker</name>
+        <qualifiedname>drawer::LatexLinker::LatexLinker</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1Graph" kindref="compound">Graph</ref> const &amp;</type>
+          <declname>graph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="124" column="5" bodyfile="src/grafed/core/latexLink.cpp" bodystart="61" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1aa496fb17d24ae568a95b56c100e9fc97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>drawer::LatexLinker::~LatexLinker</definition>
+        <argsstring>()</argsstring>
+        <name>~LatexLinker</name>
+        <qualifiedname>drawer::LatexLinker::~LatexLinker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="126" column="5" bodyfile="src/grafed/core/latexLink.cpp" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1ac5fe0dadfae7524e2d6f42a9be299de9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>drawer::LatexLinker::LatexLinker</definition>
+        <argsstring>(LatexLinker const &amp;)=default</argsstring>
+        <name>LatexLinker</name>
+        <qualifiedname>drawer::LatexLinker::LatexLinker</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="128" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a9e961fc4dd019402d63267a81bb9fdc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>drawer::LatexLinker::LatexLinker</definition>
+        <argsstring>(LatexLinker &amp;&amp;)=default</argsstring>
+        <name>LatexLinker</name>
+        <qualifiedname>drawer::LatexLinker::LatexLinker</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="129" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1ad298f5d099fd786e25b7e98909c27c8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> &amp;</type>
+        <definition>LatexLinker &amp; drawer::LatexLinker::operator=</definition>
+        <argsstring>(LatexLinker const &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>drawer::LatexLinker::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="130" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1ab8755f2a0d23266c18a899f2aef81c73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> &amp;</type>
+        <definition>LatexLinker &amp; drawer::LatexLinker::operator=</definition>
+        <argsstring>(LatexLinker &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>drawer::LatexLinker::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="131" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a2f07e37c4a1c52418044bd4021aeded4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdrawer_1_1Graph" kindref="compound">drawer::Graph</ref> const &amp;</type>
+        <definition>drawer::Graph const  &amp; drawer::LatexLinker::getGraph</definition>
+        <argsstring>() const</argsstring>
+        <name>getGraph</name>
+        <qualifiedname>drawer::LatexLinker::getGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="133" column="25" bodyfile="src/grafed/core/latexLink.cpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a35329e41aec4bc4abcfbe457377eb505" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdrawer_1_1Graph" kindref="compound">drawer::Graph</ref> &amp;</type>
+        <definition>drawer::Graph &amp; drawer::LatexLinker::getGraph</definition>
+        <argsstring>()</argsstring>
+        <name>getGraph</name>
+        <qualifiedname>drawer::LatexLinker::getGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="134" column="25" bodyfile="src/grafed/core/latexLink.cpp" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a20866ac70e6d45dc13679a9e16500b7f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string drawer::LatexLinker::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <qualifiedname>drawer::LatexLinker::getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="136" column="17" bodyfile="src/grafed/core/latexLink.h" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1ac3a218453737ddcb570a79d018a977a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::setName</definition>
+        <argsstring>(std::string const &amp;t_name)</argsstring>
+        <name>setName</name>
+        <qualifiedname>drawer::LatexLinker::setName</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="141" column="10" bodyfile="src/grafed/core/latexLink.h" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a6545453c642529f855c643a267a1db27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>drawer::LatexLinker::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="146" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="73" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a28bb79c251d0dd1e862c4d59bb2f44cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::setGraph</definition>
+        <argsstring>(drawer::Graph const &amp;t_graph)</argsstring>
+        <name>setGraph</name>
+        <qualifiedname>drawer::LatexLinker::setGraph</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1Graph" kindref="compound">drawer::Graph</ref> const &amp;</type>
+          <declname>t_graph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="148" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a31fbb24f5a0ab9b21cb7d4ebcb585766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::setParticlesType</definition>
+        <argsstring>(size_t i, size_t j, ParticleType type=ParticleType::Scalar, std::string const &amp;t_name=&quot;&quot;, bool sign=true, double curve=0, bool flipped=false, Color color=Black, int lineWidth=3)</argsstring>
+        <name>setParticlesType</name>
+        <qualifiedname>drawer::LatexLinker::setParticlesType</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>ParticleType</type>
+          <declname>type</declname>
+          <defval>ParticleType::Scalar</defval>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sign</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>curve</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>flipped</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type><ref refid="structdrawer_1_1LatexLinker_1_1Color" kindref="compound">Color</ref></type>
+          <declname>color</declname>
+          <defval>Black</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineWidth</declname>
+          <defval>3</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="150" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="96" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1ae85e326fb78cacb3ce18bcc30b5b5f56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::addOperator</definition>
+        <argsstring>(size_t pos)</argsstring>
+        <name>addOperator</name>
+        <qualifiedname>drawer::LatexLinker::addOperator</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="160" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1af2fcb0e4209a7a11eebc6dc624b984fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::replaceParticlesType</definition>
+        <argsstring>(size_t i, size_t j, ParticleType type=ParticleType::Scalar, bool sign=true)</argsstring>
+        <name>replaceParticlesType</name>
+        <qualifiedname>drawer::LatexLinker::replaceParticlesType</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>ParticleType</type>
+          <declname>type</declname>
+          <defval>ParticleType::Scalar</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sign</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="162" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="140" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a974b438bfdc5b223e5e58029bc9b5ae8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::removeEdge</definition>
+        <argsstring>(size_t i, size_t j)</argsstring>
+        <name>removeEdge</name>
+        <qualifiedname>drawer::LatexLinker::removeEdge</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="167" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="152" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a7cbdc31e2bf5b566d68e65390d2c369a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::setVertexName</definition>
+        <argsstring>(size_t pos, std::string const &amp;name)</argsstring>
+        <name>setVertexName</name>
+        <qualifiedname>drawer::LatexLinker::setVertexName</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="169" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1abfcf879d127cf434d43768706dd2c9bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::setEdgeName</definition>
+        <argsstring>(size_t i, size_t j, std::string const &amp;name)</argsstring>
+        <name>setEdgeName</name>
+        <qualifiedname>drawer::LatexLinker::setEdgeName</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="171" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="172" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a204fa59f94cfb8571689d6782128fccf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::setEdgeSign</definition>
+        <argsstring>(size_t i, size_t j, bool sign)</argsstring>
+        <name>setEdgeSign</name>
+        <qualifiedname>drawer::LatexLinker::setEdgeSign</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sign</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="173" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="181" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1af0a5709ac40550159e6f2e5dc8d72820" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::write</definition>
+        <argsstring>(std::ostream &amp;out)</argsstring>
+        <name>write</name>
+        <qualifiedname>drawer::LatexLinker::write</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="175" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="190" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a0894eacd1797609fe04f0d53e780fae8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::saveToNode</definition>
+        <argsstring>(JSON::Node *node) const</argsstring>
+        <name>saveToNode</name>
+        <qualifiedname>drawer::LatexLinker::saveToNode</qualifiedname>
+        <param>
+          <type><ref refid="classJSON_1_1Node" kindref="compound">JSON::Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="177" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="498" bodyend="585"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a6058fb91fd0922a339f833c13823e9f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::save</definition>
+        <argsstring>(std::string const &amp;fileName) const</argsstring>
+        <name>save</name>
+        <qualifiedname>drawer::LatexLinker::save</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="179" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="587" bodyend="592"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a22ea72dad8cb2583438325cb00739b55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::loadFromNode</definition>
+        <argsstring>(JSON::Node *node)</argsstring>
+        <name>loadFromNode</name>
+        <qualifiedname>drawer::LatexLinker::loadFromNode</qualifiedname>
+        <param>
+          <type><ref refid="classJSON_1_1Node" kindref="compound">JSON::Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="181" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="594" bodyend="667"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a91ec902d69db27fadf306e90f8f759e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::load</definition>
+        <argsstring>(std::string const &amp;fileName)</argsstring>
+        <name>load</name>
+        <qualifiedname>drawer::LatexLinker::load</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="183" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="669" bodyend="674"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1afaa324bc5e1d165cf8bde257a650260a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::exportPDF</definition>
+        <argsstring>(std::string const &amp;fileName, std::string const &amp;path=&quot;.&quot;)</argsstring>
+        <name>exportPDF</name>
+        <qualifiedname>drawer::LatexLinker::exportPDF</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>path</declname>
+          <defval>&quot;.&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="190" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="215" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1afdff3986e9903e32be0e0cb07b025aea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::exportPNG</definition>
+        <argsstring>(std::string const &amp;fileName, std::string const &amp;path=&quot;.&quot;)</argsstring>
+        <name>exportPNG</name>
+        <qualifiedname>drawer::LatexLinker::exportPNG</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>path</declname>
+          <defval>&quot;.&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="192" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="240" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1ad81c2deaf65857e632b80a0f411aa0e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::scale</definition>
+        <argsstring>(float factor)</argsstring>
+        <name>scale</name>
+        <qualifiedname>drawer::LatexLinker::scale</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="194" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="276" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1aaefb83f3088fa8f5c0a3f08a5d283a54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structdrawer_1_1LatexLinker_1_1Node" kindref="compound">Node</ref> &gt; &amp;</type>
+        <definition>std::vector&lt; Node &gt; &amp; drawer::LatexLinker::getNodes</definition>
+        <argsstring>()</argsstring>
+        <name>getNodes</name>
+        <qualifiedname>drawer::LatexLinker::getNodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="196" column="17" bodyfile="src/grafed/core/latexLink.h" bodystart="196" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a08fc767f438bef43adc3706e64792b85" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structdrawer_1_1LatexLinker_1_1Node" kindref="compound">Node</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; Node &gt; const  &amp; drawer::LatexLinker::getNodes</definition>
+        <argsstring>() const</argsstring>
+        <name>getNodes</name>
+        <qualifiedname>drawer::LatexLinker::getNodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="201" column="23" bodyfile="src/grafed/core/latexLink.h" bodystart="201" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1afa9dfeac127197efd73352f71c7d2b42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structdrawer_1_1LatexLinker_1_1Edge" kindref="compound">Edge</ref> &gt; &amp;</type>
+        <definition>std::vector&lt; Edge &gt; &amp; drawer::LatexLinker::getEdges</definition>
+        <argsstring>()</argsstring>
+        <name>getEdges</name>
+        <qualifiedname>drawer::LatexLinker::getEdges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="206" column="17" bodyfile="src/grafed/core/latexLink.h" bodystart="206" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a42207f42729d0acdd2dfd40186b3b9ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structdrawer_1_1LatexLinker_1_1Edge" kindref="compound">Edge</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; Edge &gt; const  &amp; drawer::LatexLinker::getEdges</definition>
+        <argsstring>() const</argsstring>
+        <name>getEdges</name>
+        <qualifiedname>drawer::LatexLinker::getEdges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="211" column="23" bodyfile="src/grafed/core/latexLink.h" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a338f524e91332407f6095f598f242393" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::removeNode</definition>
+        <argsstring>(size_t pos)</argsstring>
+        <name>removeNode</name>
+        <qualifiedname>drawer::LatexLinker::removeNode</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="216" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="254" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1aa33bd2bb044651af7c60e9921589e8fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::addNode</definition>
+        <argsstring>()</argsstring>
+        <name>addNode</name>
+        <qualifiedname>drawer::LatexLinker::addNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="218" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="271" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a190fef055f05e492c6f77f06db8f299c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string drawer::LatexLinker::getNameExternal</definition>
+        <argsstring>(size_t i) const</argsstring>
+        <name>getNameExternal</name>
+        <qualifiedname>drawer::LatexLinker::getNameExternal</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="220" column="17" bodyfile="src/grafed/core/latexLink.cpp" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a17252aae08dd3bcd9ccec9645ace87e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>drawer::LatexLinker::LatexLinker</definition>
+        <argsstring>()=default</argsstring>
+        <name>LatexLinker</name>
+        <qualifiedname>drawer::LatexLinker::LatexLinker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="122" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a4740101a9ef77bfc468ebde7d637386d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>drawer::LatexLinker::LatexLinker</definition>
+        <argsstring>(Graph const &amp;graph)</argsstring>
+        <name>LatexLinker</name>
+        <qualifiedname>drawer::LatexLinker::LatexLinker</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1Graph" kindref="compound">Graph</ref> const &amp;</type>
+          <declname>graph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="124" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1aa496fb17d24ae568a95b56c100e9fc97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>drawer::LatexLinker::~LatexLinker</definition>
+        <argsstring>()</argsstring>
+        <name>~LatexLinker</name>
+        <qualifiedname>drawer::LatexLinker::~LatexLinker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="126" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1ac5fe0dadfae7524e2d6f42a9be299de9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>drawer::LatexLinker::LatexLinker</definition>
+        <argsstring>(LatexLinker const &amp;)=default</argsstring>
+        <name>LatexLinker</name>
+        <qualifiedname>drawer::LatexLinker::LatexLinker</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="128" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a9e961fc4dd019402d63267a81bb9fdc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>drawer::LatexLinker::LatexLinker</definition>
+        <argsstring>(LatexLinker &amp;&amp;)=default</argsstring>
+        <name>LatexLinker</name>
+        <qualifiedname>drawer::LatexLinker::LatexLinker</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="129" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1ad298f5d099fd786e25b7e98909c27c8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> &amp;</type>
+        <definition>LatexLinker &amp; drawer::LatexLinker::operator=</definition>
+        <argsstring>(LatexLinker const &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>drawer::LatexLinker::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="130" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1ab8755f2a0d23266c18a899f2aef81c73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> &amp;</type>
+        <definition>LatexLinker &amp; drawer::LatexLinker::operator=</definition>
+        <argsstring>(LatexLinker &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>drawer::LatexLinker::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="131" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a2f07e37c4a1c52418044bd4021aeded4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdrawer_1_1Graph" kindref="compound">drawer::Graph</ref> const &amp;</type>
+        <definition>drawer::Graph const  &amp; drawer::LatexLinker::getGraph</definition>
+        <argsstring>() const</argsstring>
+        <name>getGraph</name>
+        <qualifiedname>drawer::LatexLinker::getGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="133" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a35329e41aec4bc4abcfbe457377eb505" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdrawer_1_1Graph" kindref="compound">drawer::Graph</ref> &amp;</type>
+        <definition>drawer::Graph &amp; drawer::LatexLinker::getGraph</definition>
+        <argsstring>()</argsstring>
+        <name>getGraph</name>
+        <qualifiedname>drawer::LatexLinker::getGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="134" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a20866ac70e6d45dc13679a9e16500b7f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string drawer::LatexLinker::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <qualifiedname>drawer::LatexLinker::getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="136" column="17" bodyfile="src/grafed/gui/latexLink.h" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1ac3a218453737ddcb570a79d018a977a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::setName</definition>
+        <argsstring>(std::string const &amp;t_name)</argsstring>
+        <name>setName</name>
+        <qualifiedname>drawer::LatexLinker::setName</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="141" column="10" bodyfile="src/grafed/gui/latexLink.h" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a6545453c642529f855c643a267a1db27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>drawer::LatexLinker::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="146" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a28bb79c251d0dd1e862c4d59bb2f44cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::setGraph</definition>
+        <argsstring>(drawer::Graph const &amp;t_graph)</argsstring>
+        <name>setGraph</name>
+        <qualifiedname>drawer::LatexLinker::setGraph</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1Graph" kindref="compound">drawer::Graph</ref> const &amp;</type>
+          <declname>t_graph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="148" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a31fbb24f5a0ab9b21cb7d4ebcb585766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::setParticlesType</definition>
+        <argsstring>(size_t i, size_t j, ParticleType type=ParticleType::Scalar, std::string const &amp;t_name=&quot;&quot;, bool sign=true, double curve=0, bool flipped=false, Color color=Black, int lineWidth=3)</argsstring>
+        <name>setParticlesType</name>
+        <qualifiedname>drawer::LatexLinker::setParticlesType</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>ParticleType</type>
+          <declname>type</declname>
+          <defval>ParticleType::Scalar</defval>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sign</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>curve</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>flipped</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type><ref refid="structdrawer_1_1LatexLinker_1_1Color" kindref="compound">Color</ref></type>
+          <declname>color</declname>
+          <defval>Black</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lineWidth</declname>
+          <defval>3</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="150" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1ae85e326fb78cacb3ce18bcc30b5b5f56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::addOperator</definition>
+        <argsstring>(size_t pos)</argsstring>
+        <name>addOperator</name>
+        <qualifiedname>drawer::LatexLinker::addOperator</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="160" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1af2fcb0e4209a7a11eebc6dc624b984fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::replaceParticlesType</definition>
+        <argsstring>(size_t i, size_t j, ParticleType type=ParticleType::Scalar, bool sign=true)</argsstring>
+        <name>replaceParticlesType</name>
+        <qualifiedname>drawer::LatexLinker::replaceParticlesType</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>ParticleType</type>
+          <declname>type</declname>
+          <defval>ParticleType::Scalar</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sign</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="162" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a974b438bfdc5b223e5e58029bc9b5ae8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::removeEdge</definition>
+        <argsstring>(size_t i, size_t j)</argsstring>
+        <name>removeEdge</name>
+        <qualifiedname>drawer::LatexLinker::removeEdge</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="167" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a7cbdc31e2bf5b566d68e65390d2c369a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::setVertexName</definition>
+        <argsstring>(size_t pos, std::string const &amp;name)</argsstring>
+        <name>setVertexName</name>
+        <qualifiedname>drawer::LatexLinker::setVertexName</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="169" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1abfcf879d127cf434d43768706dd2c9bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::setEdgeName</definition>
+        <argsstring>(size_t i, size_t j, std::string const &amp;name)</argsstring>
+        <name>setEdgeName</name>
+        <qualifiedname>drawer::LatexLinker::setEdgeName</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="171" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a204fa59f94cfb8571689d6782128fccf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::setEdgeSign</definition>
+        <argsstring>(size_t i, size_t j, bool sign)</argsstring>
+        <name>setEdgeSign</name>
+        <qualifiedname>drawer::LatexLinker::setEdgeSign</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sign</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="173" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1af0a5709ac40550159e6f2e5dc8d72820" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::write</definition>
+        <argsstring>(std::ostream &amp;out)</argsstring>
+        <name>write</name>
+        <qualifiedname>drawer::LatexLinker::write</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="175" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a0894eacd1797609fe04f0d53e780fae8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::saveToNode</definition>
+        <argsstring>(JSON::Node *node) const</argsstring>
+        <name>saveToNode</name>
+        <qualifiedname>drawer::LatexLinker::saveToNode</qualifiedname>
+        <param>
+          <type><ref refid="classJSON_1_1Node" kindref="compound">JSON::Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="177" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a6058fb91fd0922a339f833c13823e9f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::save</definition>
+        <argsstring>(std::string const &amp;fileName) const</argsstring>
+        <name>save</name>
+        <qualifiedname>drawer::LatexLinker::save</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="179" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a22ea72dad8cb2583438325cb00739b55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::loadFromNode</definition>
+        <argsstring>(JSON::Node *node)</argsstring>
+        <name>loadFromNode</name>
+        <qualifiedname>drawer::LatexLinker::loadFromNode</qualifiedname>
+        <param>
+          <type><ref refid="classJSON_1_1Node" kindref="compound">JSON::Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="181" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a91ec902d69db27fadf306e90f8f759e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::load</definition>
+        <argsstring>(std::string const &amp;fileName)</argsstring>
+        <name>load</name>
+        <qualifiedname>drawer::LatexLinker::load</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="183" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1afaa324bc5e1d165cf8bde257a650260a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::exportPDF</definition>
+        <argsstring>(std::string const &amp;fileName, std::string const &amp;path=&quot;.&quot;)</argsstring>
+        <name>exportPDF</name>
+        <qualifiedname>drawer::LatexLinker::exportPDF</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>path</declname>
+          <defval>&quot;.&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="190" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1afdff3986e9903e32be0e0cb07b025aea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::exportPNG</definition>
+        <argsstring>(std::string const &amp;fileName, std::string const &amp;path=&quot;.&quot;)</argsstring>
+        <name>exportPNG</name>
+        <qualifiedname>drawer::LatexLinker::exportPNG</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>path</declname>
+          <defval>&quot;.&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="192" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1ad81c2deaf65857e632b80a0f411aa0e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::scale</definition>
+        <argsstring>(float factor)</argsstring>
+        <name>scale</name>
+        <qualifiedname>drawer::LatexLinker::scale</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="194" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1aaefb83f3088fa8f5c0a3f08a5d283a54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structdrawer_1_1LatexLinker_1_1Node" kindref="compound">Node</ref> &gt; &amp;</type>
+        <definition>std::vector&lt; Node &gt; &amp; drawer::LatexLinker::getNodes</definition>
+        <argsstring>()</argsstring>
+        <name>getNodes</name>
+        <qualifiedname>drawer::LatexLinker::getNodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="196" column="17" bodyfile="src/grafed/gui/latexLink.h" bodystart="196" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a08fc767f438bef43adc3706e64792b85" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structdrawer_1_1LatexLinker_1_1Node" kindref="compound">Node</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; Node &gt; const  &amp; drawer::LatexLinker::getNodes</definition>
+        <argsstring>() const</argsstring>
+        <name>getNodes</name>
+        <qualifiedname>drawer::LatexLinker::getNodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="201" column="23" bodyfile="src/grafed/gui/latexLink.h" bodystart="201" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1afa9dfeac127197efd73352f71c7d2b42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structdrawer_1_1LatexLinker_1_1Edge" kindref="compound">Edge</ref> &gt; &amp;</type>
+        <definition>std::vector&lt; Edge &gt; &amp; drawer::LatexLinker::getEdges</definition>
+        <argsstring>()</argsstring>
+        <name>getEdges</name>
+        <qualifiedname>drawer::LatexLinker::getEdges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="206" column="17" bodyfile="src/grafed/gui/latexLink.h" bodystart="206" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a42207f42729d0acdd2dfd40186b3b9ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structdrawer_1_1LatexLinker_1_1Edge" kindref="compound">Edge</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; Edge &gt; const  &amp; drawer::LatexLinker::getEdges</definition>
+        <argsstring>() const</argsstring>
+        <name>getEdges</name>
+        <qualifiedname>drawer::LatexLinker::getEdges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="211" column="23" bodyfile="src/grafed/gui/latexLink.h" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a338f524e91332407f6095f598f242393" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::removeNode</definition>
+        <argsstring>(size_t pos)</argsstring>
+        <name>removeNode</name>
+        <qualifiedname>drawer::LatexLinker::removeNode</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="216" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1aa33bd2bb044651af7c60e9921589e8fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::addNode</definition>
+        <argsstring>()</argsstring>
+        <name>addNode</name>
+        <qualifiedname>drawer::LatexLinker::addNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="218" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a190fef055f05e492c6f77f06db8f299c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string drawer::LatexLinker::getNameExternal</definition>
+        <argsstring>(size_t i) const</argsstring>
+        <name>getNameExternal</name>
+        <qualifiedname>drawer::LatexLinker::getNameExternal</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="220" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1aeece692f4439ee0ec5b5f6c0fd120863" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::saveMultiple</definition>
+        <argsstring>(std::string const &amp;fileName, std::vector&lt; LatexLinker &gt; const &amp;links)</argsstring>
+        <name>saveMultiple</name>
+        <qualifiedname>drawer::LatexLinker::saveMultiple</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> &gt; const &amp;</type>
+          <declname>links</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="185" column="17" bodyfile="src/grafed/core/latexLink.cpp" bodystart="676" bodyend="688"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1aabc70db17a8452f962b55b1c2f3653ad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> &gt;</type>
+        <definition>std::vector&lt; LatexLinker &gt; drawer::LatexLinker::loadMultiple</definition>
+        <argsstring>(std::string const &amp;fileName)</argsstring>
+        <name>loadMultiple</name>
+        <qualifiedname>drawer::LatexLinker::loadMultiple</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="188" column="24" bodyfile="src/grafed/core/latexLink.cpp" bodystart="690" bodyend="704"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a4e8d631f6474294efd549b7df5557953" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void drawer::LatexLinker::saveMultiple</definition>
+        <argsstring>(std::string const &amp;fileName, std::vector&lt; LatexLinker &gt; const &amp;links)</argsstring>
+        <name>saveMultiple</name>
+        <qualifiedname>drawer::LatexLinker::saveMultiple</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> &gt; const &amp;</type>
+          <declname>links</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="185" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a980532e45e424f5187c6b2066d478417" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> &gt;</type>
+        <definition>static std::vector&lt; LatexLinker &gt; drawer::LatexLinker::loadMultiple</definition>
+        <argsstring>(std::string const &amp;fileName)</argsstring>
+        <name>loadMultiple</name>
+        <qualifiedname>drawer::LatexLinker::loadMultiple</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="188" column="24"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a950fecfd27c0121db880f950e59de83b" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string drawer::LatexLinker::getNameVertex</definition>
+        <argsstring>(size_t pos)</argsstring>
+        <name>getNameVertex</name>
+        <qualifiedname>drawer::LatexLinker::getNameVertex</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="223" column="24" bodyfile="src/grafed/core/latexLink.cpp" bodystart="281" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a87b662d51c0d5f55bd4939b29d178efc" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string drawer::LatexLinker::getNameVertex</definition>
+        <argsstring>(size_t pos)</argsstring>
+        <name>getNameVertex</name>
+        <qualifiedname>drawer::LatexLinker::getNameVertex</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="223" column="24"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a6da721d7ec60af72171728a698a64b2c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::getFlippedEdgeLabels</definition>
+        <argsstring>() const</argsstring>
+        <name>getFlippedEdgeLabels</name>
+        <qualifiedname>drawer::LatexLinker::getFlippedEdgeLabels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="225" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="291" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a96889029d81ea1826b96828c75f9e7fb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::getStringValue</definition>
+        <argsstring>(std::ostream &amp;out, double value)</argsstring>
+        <name>getStringValue</name>
+        <qualifiedname>drawer::LatexLinker::getStringValue</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="227" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="402" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1aeb7d07dd32cb7c074f094cb41b5dc1a4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::writeVertex</definition>
+        <argsstring>(std::ostream &amp;out, size_t i, Point const &amp;vertex, std::string const &amp;nameVertex, std::string const &amp;nameParticle=&quot;&quot;)</argsstring>
+        <name>writeVertex</name>
+        <qualifiedname>drawer::LatexLinker::writeVertex</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>vertex</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameVertex</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameParticle</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="229" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="407" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1ab8124734b4b19bf43977cdec497563fb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::writeEdge</definition>
+        <argsstring>(std::ostream &amp;out, ParticleType type, std::string const &amp;nameA, std::string const &amp;nameB, bool sign=true, std::string const &amp;nameEdge=&quot;&quot;, bool flipLabel=false)</argsstring>
+        <name>writeEdge</name>
+        <qualifiedname>drawer::LatexLinker::writeEdge</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>ParticleType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameA</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameB</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sign</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameEdge</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>flipLabel</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="235" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="434" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1afa6dfdbe57c3debcffbb007023688fd2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::writeLoopEdge</definition>
+        <argsstring>(std::ostream &amp;out, ParticleType type, std::string const &amp;nameA, std::string const &amp;nameB, int mode, bool sign=true, std::string const &amp;nameEdge=&quot;&quot;, bool flipLabel=false)</argsstring>
+        <name>writeLoopEdge</name>
+        <qualifiedname>drawer::LatexLinker::writeLoopEdge</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>ParticleType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameA</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameB</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sign</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameEdge</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>flipLabel</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="243" column="10" bodyfile="src/grafed/core/latexLink.cpp" bodystart="456" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a6da721d7ec60af72171728a698a64b2c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::getFlippedEdgeLabels</definition>
+        <argsstring>() const</argsstring>
+        <name>getFlippedEdgeLabels</name>
+        <qualifiedname>drawer::LatexLinker::getFlippedEdgeLabels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="225" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1a96889029d81ea1826b96828c75f9e7fb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::getStringValue</definition>
+        <argsstring>(std::ostream &amp;out, double value)</argsstring>
+        <name>getStringValue</name>
+        <qualifiedname>drawer::LatexLinker::getStringValue</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="227" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1aeb7d07dd32cb7c074f094cb41b5dc1a4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::writeVertex</definition>
+        <argsstring>(std::ostream &amp;out, size_t i, Point const &amp;vertex, std::string const &amp;nameVertex, std::string const &amp;nameParticle=&quot;&quot;)</argsstring>
+        <name>writeVertex</name>
+        <qualifiedname>drawer::LatexLinker::writeVertex</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>vertex</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameVertex</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameParticle</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="229" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1ab8124734b4b19bf43977cdec497563fb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::writeEdge</definition>
+        <argsstring>(std::ostream &amp;out, ParticleType type, std::string const &amp;nameA, std::string const &amp;nameB, bool sign=true, std::string const &amp;nameEdge=&quot;&quot;, bool flipLabel=false)</argsstring>
+        <name>writeEdge</name>
+        <qualifiedname>drawer::LatexLinker::writeEdge</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>ParticleType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameA</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameB</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sign</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameEdge</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>flipLabel</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="235" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classdrawer_1_1LatexLinker_1afa6dfdbe57c3debcffbb007023688fd2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawer::LatexLinker::writeLoopEdge</definition>
+        <argsstring>(std::ostream &amp;out, ParticleType type, std::string const &amp;nameA, std::string const &amp;nameB, int mode, bool sign=true, std::string const &amp;nameEdge=&quot;&quot;, bool flipLabel=false)</argsstring>
+        <name>writeLoopEdge</name>
+        <qualifiedname>drawer::LatexLinker::writeLoopEdge</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>ParticleType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameA</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameB</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sign</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameEdge</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>flipLabel</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="243" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdrawer_1_1LatexLinker_1a430181c4168315a047c59db6d8559af1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, LatexLinker &amp;linker)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>drawer::LatexLinker::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> &amp;</type>
+          <declname>linker</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="252" column="12" bodyfile="src/grafed/core/latexLink.cpp" bodystart="706" bodyend="710"/>
+      </memberdef>
+      <memberdef kind="friend" id="classdrawer_1_1LatexLinker_1a430181c4168315a047c59db6d8559af1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, LatexLinker &amp;linker)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>drawer::LatexLinker::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> &amp;</type>
+          <declname>linker</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="252" column="12" bodyfile="src/grafed/core/latexLink.cpp" bodystart="706" bodyend="710"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>drawer::LatexLinker</label>
+        <link refid="classdrawer_1_1LatexLinker"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Black</edgelabel>
+          <edgelabel>Blue</edgelabel>
+          <edgelabel>Green</edgelabel>
+          <edgelabel>Red</edgelabel>
+          <edgelabel>White</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>drawer::LatexLinker::Color</label>
+        <link refid="structdrawer_1_1LatexLinker_1_1Color"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/grafed/core/latexLink.h" line="51" column="1" bodyfile="src/grafed/gui/latexLink.h" bodystart="51" bodyend="271"/>
+    <listofallmembers>
+      <member refid="classdrawer_1_1LatexLinker_1aa33bd2bb044651af7c60e9921589e8fa" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>addNode</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1aa33bd2bb044651af7c60e9921589e8fa" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>addNode</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1ae85e326fb78cacb3ce18bcc30b5b5f56" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>addOperator</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1ae85e326fb78cacb3ce18bcc30b5b5f56" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>addOperator</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a741de176f80b37d33ad9270bf8015c6e" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>autoLabel</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a89d526f8b4d18965b07033c1f4af320a" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>Black</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1aed32ab63db879600546e2191438ac7c0" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>Blue</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a6545453c642529f855c643a267a1db27" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>clear</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a6545453c642529f855c643a267a1db27" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>clear</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1aede1ab675bc538923cf9fc51c93c0b9d" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>edges</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1afaa324bc5e1d165cf8bde257a650260a" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>exportPDF</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1afaa324bc5e1d165cf8bde257a650260a" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>exportPDF</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1afdff3986e9903e32be0e0cb07b025aea" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>exportPNG</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1afdff3986e9903e32be0e0cb07b025aea" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>exportPNG</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1afa9dfeac127197efd73352f71c7d2b42" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getEdges</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a42207f42729d0acdd2dfd40186b3b9ca" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getEdges</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1afa9dfeac127197efd73352f71c7d2b42" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getEdges</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a42207f42729d0acdd2dfd40186b3b9ca" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getEdges</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a6da721d7ec60af72171728a698a64b2c" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getFlippedEdgeLabels</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a6da721d7ec60af72171728a698a64b2c" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getFlippedEdgeLabels</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a2f07e37c4a1c52418044bd4021aeded4" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getGraph</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a35329e41aec4bc4abcfbe457377eb505" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getGraph</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a2f07e37c4a1c52418044bd4021aeded4" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getGraph</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a35329e41aec4bc4abcfbe457377eb505" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getGraph</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a20866ac70e6d45dc13679a9e16500b7f" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getName</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a20866ac70e6d45dc13679a9e16500b7f" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getName</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a190fef055f05e492c6f77f06db8f299c" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getNameExternal</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a190fef055f05e492c6f77f06db8f299c" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getNameExternal</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a950fecfd27c0121db880f950e59de83b" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getNameVertex</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a87b662d51c0d5f55bd4939b29d178efc" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getNameVertex</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1aaefb83f3088fa8f5c0a3f08a5d283a54" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getNodes</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a08fc767f438bef43adc3706e64792b85" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getNodes</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1aaefb83f3088fa8f5c0a3f08a5d283a54" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getNodes</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a08fc767f438bef43adc3706e64792b85" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getNodes</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a96889029d81ea1826b96828c75f9e7fb" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getStringValue</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a96889029d81ea1826b96828c75f9e7fb" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>getStringValue</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1abcdd6b93fc17453f8475c7e87f423ab7" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>graph</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a3911d2edac7722ca616e911de79446f6" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>Green</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a17252aae08dd3bcd9ccec9645ace87e8" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>LatexLinker</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a4740101a9ef77bfc468ebde7d637386d" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>LatexLinker</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1ac5fe0dadfae7524e2d6f42a9be299de9" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>LatexLinker</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a9e961fc4dd019402d63267a81bb9fdc6" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>LatexLinker</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a17252aae08dd3bcd9ccec9645ace87e8" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>LatexLinker</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a4740101a9ef77bfc468ebde7d637386d" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>LatexLinker</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1ac5fe0dadfae7524e2d6f42a9be299de9" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>LatexLinker</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a9e961fc4dd019402d63267a81bb9fdc6" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>LatexLinker</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a91ec902d69db27fadf306e90f8f759e8" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>load</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a91ec902d69db27fadf306e90f8f759e8" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>load</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a22ea72dad8cb2583438325cb00739b55" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>loadFromNode</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a22ea72dad8cb2583438325cb00739b55" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>loadFromNode</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1aabc70db17a8452f962b55b1c2f3653ad" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>loadMultiple</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a980532e45e424f5187c6b2066d478417" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>loadMultiple</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a88bf28a069258fae1690b9d1ddde83f1" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>multiplicity</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a706b7b7b8760deaed928a8ddfad92365" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>name</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a5ba1f26afe08e706671a00042035a919" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>nameOrigin</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1aba61bb9e2b790b3ed7ea440083d4bb27" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>nodes</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bcce" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>NodeType</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a9103927d1b3d5b3ebb98507e7af5bcce" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>NodeType</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a430181c4168315a047c59db6d8559af1" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a430181c4168315a047c59db6d8559af1" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1ad298f5d099fd786e25b7e98909c27c8f" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>operator=</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1ab8755f2a0d23266c18a899f2aef81c73" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>operator=</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1ad298f5d099fd786e25b7e98909c27c8f" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>operator=</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1ab8755f2a0d23266c18a899f2aef81c73" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>operator=</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1aa9deb79d201ba1abc22516082b626516" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>Red</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a974b438bfdc5b223e5e58029bc9b5ae8" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>removeEdge</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a974b438bfdc5b223e5e58029bc9b5ae8" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>removeEdge</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a338f524e91332407f6095f598f242393" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>removeNode</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a338f524e91332407f6095f598f242393" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>removeNode</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1af2fcb0e4209a7a11eebc6dc624b984fc" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>replaceParticlesType</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1af2fcb0e4209a7a11eebc6dc624b984fc" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>replaceParticlesType</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a6058fb91fd0922a339f833c13823e9f8" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>save</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a6058fb91fd0922a339f833c13823e9f8" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>save</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1aeece692f4439ee0ec5b5f6c0fd120863" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>saveMultiple</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a4e8d631f6474294efd549b7df5557953" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>saveMultiple</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a0894eacd1797609fe04f0d53e780fae8" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>saveToNode</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a0894eacd1797609fe04f0d53e780fae8" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>saveToNode</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1ad81c2deaf65857e632b80a0f411aa0e3" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>scale</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1ad81c2deaf65857e632b80a0f411aa0e3" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>scale</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a23d66864772dc59114b0b567f07f1e96" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>scaleFactor</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1abfcf879d127cf434d43768706dd2c9bc" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>setEdgeName</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1abfcf879d127cf434d43768706dd2c9bc" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>setEdgeName</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a204fa59f94cfb8571689d6782128fccf" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>setEdgeSign</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a204fa59f94cfb8571689d6782128fccf" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>setEdgeSign</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a28bb79c251d0dd1e862c4d59bb2f44cf" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>setGraph</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a28bb79c251d0dd1e862c4d59bb2f44cf" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>setGraph</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1ac3a218453737ddcb570a79d018a977a2" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>setName</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1ac3a218453737ddcb570a79d018a977a2" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>setName</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a31fbb24f5a0ab9b21cb7d4ebcb585766" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>setParticlesType</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a31fbb24f5a0ab9b21cb7d4ebcb585766" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>setParticlesType</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a7cbdc31e2bf5b566d68e65390d2c369a" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>setVertexName</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a7cbdc31e2bf5b566d68e65390d2c369a" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>setVertexName</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1a2be55fae11358969e3df488f97fff1db" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>White</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1af0a5709ac40550159e6f2e5dc8d72820" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>write</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1af0a5709ac40550159e6f2e5dc8d72820" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>write</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1ab8124734b4b19bf43977cdec497563fb" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>writeEdge</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1ab8124734b4b19bf43977cdec497563fb" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>writeEdge</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1afa6dfdbe57c3debcffbb007023688fd2" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>writeLoopEdge</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1afa6dfdbe57c3debcffbb007023688fd2" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>writeLoopEdge</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1aeb7d07dd32cb7c074f094cb41b5dc1a4" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>writeVertex</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1aeb7d07dd32cb7c074f094cb41b5dc1a4" prot="private" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>writeVertex</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1aa496fb17d24ae568a95b56c100e9fc97" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>~LatexLinker</name></member>
+      <member refid="classdrawer_1_1LatexLinker_1aa496fb17d24ae568a95b56c100e9fc97" prot="public" virt="non-virtual"><scope>drawer::LatexLinker</scope><name>~LatexLinker</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

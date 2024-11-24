@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1Expander" kind="class" language="C++" prot="public">
+    <compoundname>mty::Expander</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1Expander_1a56e172ac4301f85cc75c1ff7be7a63df" prot="private" static="no" mutable="no">
+        <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref> const  &amp;</type>
+        <definition>FeynOptions const&amp; mty::Expander::options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <qualifiedname>mty::Expander::options</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/expander.h" line="71" column="43" bodyfile="src/marty/core/expander.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Expander_1a55d66f39fd9314ed494a71ecd3084617" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">mty::Lagrangian::TermType</ref> &gt;</type>
+        <definition>std::vector&lt;mty::Lagrangian::TermType&gt; mty::Expander::effectiveLagrangian</definition>
+        <argsstring></argsstring>
+        <name>effectiveLagrangian</name>
+        <qualifiedname>mty::Expander::effectiveLagrangian</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/expander.h" line="72" column="17" bodyfile="src/marty/core/expander.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Expander_1ab477422831255ddc1ee8ba3f35f46f13" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> &gt;</type>
+        <definition>std::vector&lt;mty::QuantumField&gt; mty::Expander::insertions</definition>
+        <argsstring></argsstring>
+        <name>insertions</name>
+        <qualifiedname>mty::Expander::insertions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/expander.h" line="73" column="25" bodyfile="src/marty/core/expander.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1Expander_1a2cfc3047261fb09233982f56d7064f2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Expander::Expander</definition>
+        <argsstring>(FeynOptions const &amp;t_options, std::vector&lt; mty::Lagrangian::TermType &gt; const &amp;lagrangian, std::vector&lt; mty::QuantumField &gt; const &amp;t_insertions)</argsstring>
+        <name>Expander</name>
+        <qualifiedname>mty::Expander::Expander</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref> const &amp;</type>
+          <declname>t_options</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">mty::Lagrangian::TermType</ref> &gt; const &amp;</type>
+          <declname>lagrangian</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> &gt; const &amp;</type>
+          <declname>t_insertions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/expander.h" line="40" column="5" bodyfile="src/marty/core/expander.cpp" bodystart="24" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Expander_1ae237eb8486162cab153c4b0649f87f96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; size_t &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt; size_t &gt; &gt; mty::Expander::findNonZeroDiagrams</definition>
+        <argsstring>()</argsstring>
+        <name>findNonZeroDiagrams</name>
+        <qualifiedname>mty::Expander::findNonZeroDiagrams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/expander.h" line="44" column="17" bodyfile="src/marty/core/expander.cpp" bodystart="33" bodyend="136"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmty_1_1Expander_1abf530c7ecb203262a826ec5d44ebcd3c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; std::vector&lt; size_t &gt; &gt;</type>
+        <definition>static std::vector&lt; std::vector&lt; size_t &gt; &gt; mty::Expander::getDiagrams</definition>
+        <argsstring>(Args &amp;&amp;...args)</argsstring>
+        <name>getDiagrams</name>
+        <qualifiedname>mty::Expander::getDiagrams</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/expander.h" line="47" column="24" bodyfile="src/marty/core/expander.h" bodystart="47" bodyend="51"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmty_1_1Expander_1a486f054f2f7991732415d8231dfee284" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::Expander::contractionPossible</definition>
+        <argsstring>(std::vector&lt; size_t &gt; const &amp;fieldPos, std::vector&lt; bool &gt; const &amp;insertionsPaired, std::vector&lt; QuantumField &gt; const &amp;newFields, std::vector&lt; bool &gt; &amp;newPairing, int order, int maxOrder, size_t nLoops, size_t maxInteractionLegs)</argsstring>
+        <name>contractionPossible</name>
+        <qualifiedname>mty::Expander::contractionPossible</qualifiedname>
+        <param>
+          <type>std::vector&lt; size_t &gt; const &amp;</type>
+          <declname>fieldPos</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; bool &gt; const &amp;</type>
+          <declname>insertionsPaired</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> &gt; const &amp;</type>
+          <declname>newFields</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; bool &gt; &amp;</type>
+          <declname>newPairing</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxOrder</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nLoops</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>maxInteractionLegs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/expander.h" line="54" column="10" bodyfile="src/marty/core/expander.cpp" bodystart="138" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Expander_1aeec6527351f7f85b0d9f3aabdd0ff1ce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Expander::addVertexCarefully</definition>
+        <argsstring>(size_t iTerm, std::vector&lt; size_t &gt; const &amp;terms, std::vector&lt; std::vector&lt; size_t &gt; &gt; &amp;numbers, std::vector&lt; std::vector&lt; bool &gt; &gt; &amp;newPairings, std::vector&lt; bool &gt; const &amp;pairing, std::map&lt; std::vector&lt; size_t &gt;, bool &gt; &amp;vertexMap)</argsstring>
+        <name>addVertexCarefully</name>
+        <qualifiedname>mty::Expander::addVertexCarefully</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>iTerm</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; size_t &gt; const &amp;</type>
+          <declname>terms</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; size_t &gt; &gt; &amp;</type>
+          <declname>numbers</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; bool &gt; &gt; &amp;</type>
+          <declname>newPairings</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; bool &gt; const &amp;</type>
+          <declname>pairing</declname>
+        </param>
+        <param>
+          <type>std::map&lt; std::vector&lt; size_t &gt;, bool &gt; &amp;</type>
+          <declname>vertexMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/expander.h" line="63" column="10" bodyfile="src/marty/core/expander.cpp" bodystart="234" bodyend="264"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/core/expander.h" line="37" column="1" bodyfile="src/marty/core/expander.h" bodystart="37" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classmty_1_1Expander_1aeec6527351f7f85b0d9f3aabdd0ff1ce" prot="private" virt="non-virtual"><scope>mty::Expander</scope><name>addVertexCarefully</name></member>
+      <member refid="classmty_1_1Expander_1a486f054f2f7991732415d8231dfee284" prot="private" virt="non-virtual"><scope>mty::Expander</scope><name>contractionPossible</name></member>
+      <member refid="classmty_1_1Expander_1a55d66f39fd9314ed494a71ecd3084617" prot="private" virt="non-virtual"><scope>mty::Expander</scope><name>effectiveLagrangian</name></member>
+      <member refid="classmty_1_1Expander_1a2cfc3047261fb09233982f56d7064f2d" prot="public" virt="non-virtual"><scope>mty::Expander</scope><name>Expander</name></member>
+      <member refid="classmty_1_1Expander_1ae237eb8486162cab153c4b0649f87f96" prot="public" virt="non-virtual"><scope>mty::Expander</scope><name>findNonZeroDiagrams</name></member>
+      <member refid="classmty_1_1Expander_1abf530c7ecb203262a826ec5d44ebcd3c" prot="public" virt="non-virtual"><scope>mty::Expander</scope><name>getDiagrams</name></member>
+      <member refid="classmty_1_1Expander_1ab477422831255ddc1ee8ba3f35f46f13" prot="private" virt="non-virtual"><scope>mty::Expander</scope><name>insertions</name></member>
+      <member refid="classmty_1_1Expander_1a56e172ac4301f85cc75c1ff7be7a63df" prot="private" virt="non-virtual"><scope>mty::Expander</scope><name>options</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

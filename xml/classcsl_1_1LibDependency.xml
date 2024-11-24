@@ -1,0 +1,512 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcsl_1_1LibDependency" kind="class" language="C++" prot="public">
+    <compoundname>csl::LibDependency</compoundname>
+    <innerclass refid="structcsl_1_1LibDependency_1_1IncludeType" prot="public">csl::LibDependency::IncludeType</innerclass>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classcsl_1_1LibDependency_1af1d791e7d7674ad08713b9a781d44ce0" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structcsl_1_1LibDependency_1_1IncludeType" kindref="compound">IncludeType</ref> &gt;</type>
+        <definition>std::vector&lt;IncludeType&gt; csl::LibDependency::include</definition>
+        <argsstring></argsstring>
+        <name>include</name>
+        <qualifiedname>csl::LibDependency::include</qualifiedname>
+        <initializer>= defaultInclude()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="239" column="21" bodyfile="src/csl/librarydependency.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1LibDependency_1a17e5c9f1890c383f99b7e0118f755d7c" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; csl::LibDependency::library</definition>
+        <argsstring></argsstring>
+        <name>library</name>
+        <qualifiedname>csl::LibDependency::library</qualifiedname>
+        <initializer>= defaultLib()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="239" column="21" bodyfile="src/csl/librarydependency.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1LibDependency_1ad537586dfda7a50818c0123ae791e603" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>std::vector&lt;Expr&gt; csl::LibDependency::params</definition>
+        <argsstring></argsstring>
+        <name>params</name>
+        <qualifiedname>csl::LibDependency::params</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="243" column="25" bodyfile="src/csl/librarydependency.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1ac4414970363dfb563978b780bcdfc5d1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1LibDependency" kindref="compound">LibDependency</ref> const &amp;</type>
+        <definition>static LibDependency const  &amp; csl::LibDependency::cmath</definition>
+        <argsstring>()</argsstring>
+        <name>cmath</name>
+        <qualifiedname>csl::LibDependency::cmath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="37" column="36" bodyfile="src/csl/librarydependency.h" bodystart="37" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1a756807c9939ad250334524f50d30f29e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1LibDependency" kindref="compound">LibDependency</ref> const &amp;</type>
+        <definition>static LibDependency const  &amp; csl::LibDependency::complex</definition>
+        <argsstring>()</argsstring>
+        <name>complex</name>
+        <qualifiedname>csl::LibDependency::complex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="47" column="36" bodyfile="src/csl/librarydependency.h" bodystart="47" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1a162c44364a9f7685b7ae7634a48d13df" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1LibDependency" kindref="compound">LibDependency</ref> const &amp;</type>
+        <definition>static LibDependency const  &amp; csl::LibDependency::csl</definition>
+        <argsstring>()</argsstring>
+        <name>csl</name>
+        <qualifiedname>csl::LibDependency::csl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="57" column="36" bodyfile="src/csl/librarydependency.h" bodystart="57" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1af5ddc0ea49fd030a35e0f95c02b69557" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1LibDependency" kindref="compound">LibDependency</ref> const &amp;</type>
+        <definition>static LibDependency const  &amp; csl::LibDependency::marty</definition>
+        <argsstring>()</argsstring>
+        <name>marty</name>
+        <qualifiedname>csl::LibDependency::marty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="68" column="36" bodyfile="src/csl/librarydependency.h" bodystart="68" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1a3c4c632450b06f346c5154b190d12649" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structcsl_1_1LibDependency_1_1IncludeType" kindref="compound">IncludeType</ref> &gt;</type>
+        <definition>static std::vector&lt; IncludeType &gt; csl::LibDependency::defaultInclude</definition>
+        <argsstring>()</argsstring>
+        <name>defaultInclude</name>
+        <qualifiedname>csl::LibDependency::defaultInclude</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="104" column="28" bodyfile="src/csl/librarydependency.h" bodystart="104" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1ac30616bcb8ce699ef434221933b8cb99" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>static std::vector&lt; std::string &gt; csl::LibDependency::defaultLib</definition>
+        <argsstring>()</argsstring>
+        <name>defaultLib</name>
+        <qualifiedname>csl::LibDependency::defaultLib</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="108" column="28" bodyfile="src/csl/librarydependency.h" bodystart="108" bodyend="110"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1af6eee11c5e1d4f7874957e8e8fa0b481" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structcsl_1_1LibDependency_1_1IncludeType" kindref="compound">IncludeType</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; IncludeType &gt; const  &amp; csl::LibDependency::getInclude</definition>
+        <argsstring>() const</argsstring>
+        <name>getInclude</name>
+        <qualifiedname>csl::LibDependency::getInclude</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="114" column="27" bodyfile="src/csl/librarydependency.h" bodystart="114" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1a7ccdc3c26485d9e3e1f47d8b63c48529" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt; const &amp;</type>
+        <definition>std::vector&lt; std::string &gt; const  &amp; csl::LibDependency::getLibrary</definition>
+        <argsstring>() const</argsstring>
+        <name>getLibrary</name>
+        <qualifiedname>csl::LibDependency::getLibrary</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="117" column="27" bodyfile="src/csl/librarydependency.h" bodystart="117" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1a793197f3756fca293c940d2fe3993d07" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; Expr &gt; const  &amp; csl::LibDependency::getParams</definition>
+        <argsstring>() const</argsstring>
+        <name>getParams</name>
+        <qualifiedname>csl::LibDependency::getParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="120" column="27" bodyfile="src/csl/librarydependency.h" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1a3985c7edf8f4437592e35fa71ccc2d19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structcsl_1_1LibDependency_1_1IncludeType" kindref="compound">IncludeType</ref> &gt; &amp;</type>
+        <definition>std::vector&lt; IncludeType &gt; &amp; csl::LibDependency::getInclude</definition>
+        <argsstring>()</argsstring>
+        <name>getInclude</name>
+        <qualifiedname>csl::LibDependency::getInclude</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="124" column="21" bodyfile="src/csl/librarydependency.h" bodystart="124" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1a11d57b7982d4602e9f04223152be4ea7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt; &amp;</type>
+        <definition>std::vector&lt; std::string &gt; &amp; csl::LibDependency::getLibrary</definition>
+        <argsstring>()</argsstring>
+        <name>getLibrary</name>
+        <qualifiedname>csl::LibDependency::getLibrary</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="127" column="21" bodyfile="src/csl/librarydependency.h" bodystart="127" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1a36a2a3e0e23c0ca69432590af3a67dbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt; &amp;</type>
+        <definition>std::vector&lt; Expr &gt; &amp; csl::LibDependency::getParams</definition>
+        <argsstring>()</argsstring>
+        <name>getParams</name>
+        <qualifiedname>csl::LibDependency::getParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="130" column="21" bodyfile="src/csl/librarydependency.h" bodystart="130" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1ae78a3bd210d609769718a6c100685051" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::LibDependency::addInclude</definition>
+        <argsstring>(std::string const &amp;cppinclude, std::string const &amp;cinclude, bool global=false)</argsstring>
+        <name>addInclude</name>
+        <qualifiedname>csl::LibDependency::addInclude</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>cppinclude</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>cinclude</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>global</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="134" column="14" bodyfile="src/csl/librarydependency.h" bodystart="134" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1a9118c65c26323912aff725149259ce91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::LibDependency::addInclude</definition>
+        <argsstring>(IncludeType const &amp;t_include)</argsstring>
+        <name>addInclude</name>
+        <qualifiedname>csl::LibDependency::addInclude</qualifiedname>
+        <param>
+          <type><ref refid="structcsl_1_1LibDependency_1_1IncludeType" kindref="compound">IncludeType</ref> const &amp;</type>
+          <declname>t_include</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="141" column="14" bodyfile="src/csl/librarydependency.h" bodystart="141" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1a086b2115bab5910422700e744b617d2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::LibDependency::addLib</definition>
+        <argsstring>(std::string const &amp;t_lib)</argsstring>
+        <name>addLib</name>
+        <qualifiedname>csl::LibDependency::addLib</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_lib</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="148" column="14" bodyfile="src/csl/librarydependency.h" bodystart="148" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1a164e6f5d900e8b373e0b424190f1b259" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::LibDependency::addParam</definition>
+        <argsstring>(Expr const &amp;expr)</argsstring>
+        <name>addParam</name>
+        <qualifiedname>csl::LibDependency::addParam</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="155" column="14" bodyfile="src/csl/librarydependency.h" bodystart="155" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1a7db713794134b9950dc7a28c62c08cbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::LibDependency::removeInclude</definition>
+        <argsstring>(std::string const &amp;t_include)</argsstring>
+        <name>removeInclude</name>
+        <qualifiedname>csl::LibDependency::removeInclude</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_include</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="162" column="14" bodyfile="src/csl/librarydependency.h" bodystart="162" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1a4d6f54a1ed7e5276e0f1c5954ffadd76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::LibDependency::removeLib</definition>
+        <argsstring>(std::string const &amp;t_lib)</argsstring>
+        <name>removeLib</name>
+        <qualifiedname>csl::LibDependency::removeLib</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_lib</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="170" column="14" bodyfile="src/csl/librarydependency.h" bodystart="170" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1ac4849c7a220bab80371e1c2c0f8f8a22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::LibDependency::removeParam</definition>
+        <argsstring>(Expr const &amp;expr)</argsstring>
+        <name>removeParam</name>
+        <qualifiedname>csl::LibDependency::removeParam</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="178" column="14" bodyfile="src/csl/librarydependency.h" bodystart="178" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1a830e2315b725f7cdadfa64aefb22a522" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::LibDependency::printInclude</definition>
+        <argsstring>(std::ostream &amp;out, bool isCSource) const</argsstring>
+        <name>printInclude</name>
+        <qualifiedname>csl::LibDependency::printInclude</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isCSource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="186" column="14" bodyfile="src/csl/librarydependency.h" bodystart="186" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1a1203ef4c0293971564ee29ba27baa53d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::LibDependency::printLib</definition>
+        <argsstring>(std::ostream &amp;out, bool clang=false) const</argsstring>
+        <name>printLib</name>
+        <qualifiedname>csl::LibDependency::printLib</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clang</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="198" column="14" bodyfile="src/csl/librarydependency.h" bodystart="198" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1a2e29f9639f1976ad266cc7a98485c264" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::LibDependency::containsInclude</definition>
+        <argsstring>(std::string const &amp;includeType) const</argsstring>
+        <name>containsInclude</name>
+        <qualifiedname>csl::LibDependency::containsInclude</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>includeType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="205" column="14" bodyfile="src/csl/librarydependency.h" bodystart="205" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1ae7751c269c0c551af1cf4bbe8bb02656" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::LibDependency::containsLib</definition>
+        <argsstring>(std::string const &amp;libType) const</argsstring>
+        <name>containsLib</name>
+        <qualifiedname>csl::LibDependency::containsLib</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>libType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="213" column="14" bodyfile="src/csl/librarydependency.h" bodystart="213" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1a6b527e823ffc1a445a13dcd456804cd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1LibDependency" kindref="compound">LibDependency</ref> &amp;</type>
+        <definition>LibDependency &amp; csl::LibDependency::operator+=</definition>
+        <argsstring>(LibDependency const &amp;other)</argsstring>
+        <name>operator+=</name>
+        <qualifiedname>csl::LibDependency::operator+=</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1LibDependency" kindref="compound">LibDependency</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="221" column="23" bodyfile="src/csl/librarydependency.h" bodystart="221" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1LibDependency_1a17abfab7efc90a0fcd0096e683944a51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1LibDependency" kindref="compound">LibDependency</ref></type>
+        <definition>LibDependency csl::LibDependency::operator+</definition>
+        <argsstring>(LibDependency const &amp;other)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>csl::LibDependency::operator+</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1LibDependency" kindref="compound">LibDependency</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/librarydependency.h" line="232" column="23" bodyfile="src/csl/librarydependency.h" bodystart="232" bodyend="235"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/csl/librarydependency.h" line="33" column="5" bodyfile="src/csl/librarydependency.h" bodystart="33" bodyend="244"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1LibDependency_1ae78a3bd210d609769718a6c100685051" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>addInclude</name></member>
+      <member refid="classcsl_1_1LibDependency_1a9118c65c26323912aff725149259ce91" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>addInclude</name></member>
+      <member refid="classcsl_1_1LibDependency_1a086b2115bab5910422700e744b617d2b" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>addLib</name></member>
+      <member refid="classcsl_1_1LibDependency_1a164e6f5d900e8b373e0b424190f1b259" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>addParam</name></member>
+      <member refid="classcsl_1_1LibDependency_1ac4414970363dfb563978b780bcdfc5d1" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>cmath</name></member>
+      <member refid="classcsl_1_1LibDependency_1a756807c9939ad250334524f50d30f29e" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>complex</name></member>
+      <member refid="classcsl_1_1LibDependency_1a2e29f9639f1976ad266cc7a98485c264" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>containsInclude</name></member>
+      <member refid="classcsl_1_1LibDependency_1ae7751c269c0c551af1cf4bbe8bb02656" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>containsLib</name></member>
+      <member refid="classcsl_1_1LibDependency_1a162c44364a9f7685b7ae7634a48d13df" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>csl</name></member>
+      <member refid="classcsl_1_1LibDependency_1a3c4c632450b06f346c5154b190d12649" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>defaultInclude</name></member>
+      <member refid="classcsl_1_1LibDependency_1ac30616bcb8ce699ef434221933b8cb99" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>defaultLib</name></member>
+      <member refid="classcsl_1_1LibDependency_1af6eee11c5e1d4f7874957e8e8fa0b481" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>getInclude</name></member>
+      <member refid="classcsl_1_1LibDependency_1a3985c7edf8f4437592e35fa71ccc2d19" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>getInclude</name></member>
+      <member refid="classcsl_1_1LibDependency_1a7ccdc3c26485d9e3e1f47d8b63c48529" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>getLibrary</name></member>
+      <member refid="classcsl_1_1LibDependency_1a11d57b7982d4602e9f04223152be4ea7" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>getLibrary</name></member>
+      <member refid="classcsl_1_1LibDependency_1a793197f3756fca293c940d2fe3993d07" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>getParams</name></member>
+      <member refid="classcsl_1_1LibDependency_1a36a2a3e0e23c0ca69432590af3a67dbd" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>getParams</name></member>
+      <member refid="classcsl_1_1LibDependency_1af1d791e7d7674ad08713b9a781d44ce0" prot="protected" virt="non-virtual"><scope>csl::LibDependency</scope><name>include</name></member>
+      <member refid="classcsl_1_1LibDependency_1a17e5c9f1890c383f99b7e0118f755d7c" prot="protected" virt="non-virtual"><scope>csl::LibDependency</scope><name>library</name></member>
+      <member refid="classcsl_1_1LibDependency_1af5ddc0ea49fd030a35e0f95c02b69557" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>marty</name></member>
+      <member refid="classcsl_1_1LibDependency_1a17abfab7efc90a0fcd0096e683944a51" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>operator+</name></member>
+      <member refid="classcsl_1_1LibDependency_1a6b527e823ffc1a445a13dcd456804cd7" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>operator+=</name></member>
+      <member refid="classcsl_1_1LibDependency_1ad537586dfda7a50818c0123ae791e603" prot="protected" virt="non-virtual"><scope>csl::LibDependency</scope><name>params</name></member>
+      <member refid="classcsl_1_1LibDependency_1a830e2315b725f7cdadfa64aefb22a522" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>printInclude</name></member>
+      <member refid="classcsl_1_1LibDependency_1a1203ef4c0293971564ee29ba27baa53d" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>printLib</name></member>
+      <member refid="classcsl_1_1LibDependency_1a7db713794134b9950dc7a28c62c08cbb" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>removeInclude</name></member>
+      <member refid="classcsl_1_1LibDependency_1a4d6f54a1ed7e5276e0f1c5954ffadd76" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>removeLib</name></member>
+      <member refid="classcsl_1_1LibDependency_1ac4849c7a220bab80371e1c2c0f8f8a22" prot="public" virt="non-virtual"><scope>csl::LibDependency</scope><name>removeParam</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

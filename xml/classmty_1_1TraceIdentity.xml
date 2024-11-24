@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1TraceIdentity" kind="class" language="C++" prot="public">
+    <compoundname>mty::TraceIdentity</compoundname>
+    <innerclass refid="structmty_1_1TraceIdentity_1_1Tensor" prot="public">mty::TraceIdentity::Tensor</innerclass>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmty_1_1TraceIdentity_1a95b826ad88d66b45d4f305455c3adada" prot="public" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::TraceIdentity::factor</definition>
+        <argsstring></argsstring>
+        <name>factor</name>
+        <qualifiedname>mty::TraceIdentity::factor</qualifiedname>
+        <initializer>= CSL_1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/traceIdentities.h" line="77" column="15" bodyfile="src/marty/core/traceIdentities.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1TraceIdentity_1a653567e75da38561affa3b573732d25b" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t mty::TraceIdentity::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <qualifiedname>mty::TraceIdentity::n</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/traceIdentities.h" line="80" column="38" bodyfile="src/marty/core/traceIdentities.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1TraceIdentity_1a359047facb3f1bc8b7443f4f7bb7dd99" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; size_t &gt;</type>
+        <definition>std::vector&lt;size_t&gt; mty::TraceIdentity::tensorSize</definition>
+        <argsstring></argsstring>
+        <name>tensorSize</name>
+        <qualifiedname>mty::TraceIdentity::tensorSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/traceIdentities.h" line="81" column="30" bodyfile="src/marty/core/traceIdentities.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1TraceIdentity_1aed9aefb8d8063139064958955dc601f2" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="structmty_1_1TraceIdentity_1_1Tensor" kindref="compound">Tensor</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;Tensor&gt; &gt; mty::TraceIdentity::terms</definition>
+        <argsstring></argsstring>
+        <name>terms</name>
+        <qualifiedname>mty::TraceIdentity::terms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/traceIdentities.h" line="82" column="17" bodyfile="src/marty/core/traceIdentities.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1TraceIdentity_1a0c69ab856f327bf9e05958db2b1e4f57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::TraceIdentity::TraceIdentity</definition>
+        <argsstring>(std::vector&lt; size_t &gt; const &amp;t_tensorSize)</argsstring>
+        <name>TraceIdentity</name>
+        <qualifiedname>mty::TraceIdentity::TraceIdentity</qualifiedname>
+        <param>
+          <type>std::vector&lt; size_t &gt; const &amp;</type>
+          <declname>t_tensorSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/traceIdentities.h" line="54" column="5" bodyfile="src/marty/core/traceIdentities.cpp" bodystart="20" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1TraceIdentity_1a0ef29626cbc821ea13ce2093e61444d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1TraceIdentity" kindref="compound">TraceIdentity</ref> &amp;</type>
+        <definition>TraceIdentity &amp; mty::TraceIdentity::operator*=</definition>
+        <argsstring>(csl::Expr const &amp;t_factor)</argsstring>
+        <name>operator*=</name>
+        <qualifiedname>mty::TraceIdentity::operator*=</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>t_factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/traceIdentities.h" line="56" column="19" bodyfile="src/marty/core/traceIdentities.cpp" bodystart="112" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1TraceIdentity_1aa14806913ee8f2b7c6e01f5015770ede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1TraceIdentity" kindref="compound">TraceIdentity</ref> &amp;</type>
+        <definition>TraceIdentity &amp; mty::TraceIdentity::operator/=</definition>
+        <argsstring>(csl::Expr const &amp;t_factor)</argsstring>
+        <name>operator/=</name>
+        <qualifiedname>mty::TraceIdentity::operator/=</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>t_factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/traceIdentities.h" line="57" column="19" bodyfile="src/marty/core/traceIdentities.cpp" bodystart="117" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1TraceIdentity_1a12bd34b0985f146d94599037d03287ad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::TraceIdentity::isSame</definition>
+        <argsstring>(TraceIdentity const &amp;other) const</argsstring>
+        <name>isSame</name>
+        <qualifiedname>mty::TraceIdentity::isSame</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1TraceIdentity" kindref="compound">TraceIdentity</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/traceIdentities.h" line="59" column="10" bodyfile="src/marty/core/traceIdentities.cpp" bodystart="123" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1TraceIdentity_1ab00846fb22e524b3adbb20afc3111dc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1TraceIdentity" kindref="compound">TraceIdentity</ref> &amp;</type>
+        <definition>TraceIdentity &amp; mty::TraceIdentity::operator+=</definition>
+        <argsstring>(TraceIdentity const &amp;other)</argsstring>
+        <name>operator+=</name>
+        <qualifiedname>mty::TraceIdentity::operator+=</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1TraceIdentity" kindref="compound">TraceIdentity</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/traceIdentities.h" line="61" column="19" bodyfile="src/marty/core/traceIdentities.cpp" bodystart="132" bodyend="140"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmty_1_1TraceIdentity_1a10dfb84c52b0f3de3cc62fd04f0d0ccb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, TraceIdentity const &amp;identity)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::TraceIdentity::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1TraceIdentity" kindref="compound">TraceIdentity</ref> const &amp;</type>
+          <declname>identity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/traceIdentities.h" line="63" column="12" bodyfile="src/marty/core/traceIdentities.cpp" bodystart="142" bodyend="164"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmty_1_1TraceIdentity_1a0ae0652a14e0874f195fe61c36b4649f" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; <ref refid="structmty_1_1TraceIdentity_1_1Tensor" kindref="compound">Tensor</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt; TraceIdentity::Tensor &gt; &gt; mty::TraceIdentity::step</definition>
+        <argsstring>(std::vector&lt; Tensor &gt; const &amp;term) const</argsstring>
+        <name>step</name>
+        <qualifiedname>mty::TraceIdentity::step</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="structmty_1_1TraceIdentity_1_1Tensor" kindref="compound">Tensor</ref> &gt; const &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/traceIdentities.h" line="68" column="5" bodyfile="src/marty/core/traceIdentities.cpp" bodystart="54" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1TraceIdentity_1a89360f4f8079cfb88663f6a76e59a20a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t mty::TraceIdentity::totalIndices</definition>
+        <argsstring>(std::vector&lt; Tensor &gt; const &amp;term) const</argsstring>
+        <name>totalIndices</name>
+        <qualifiedname>mty::TraceIdentity::totalIndices</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="structmty_1_1TraceIdentity_1_1Tensor" kindref="compound">Tensor</ref> &gt; const &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/traceIdentities.h" line="70" column="12" bodyfile="src/marty/core/traceIdentities.cpp" bodystart="91" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1TraceIdentity_1af9a7038ca2ffdb9adc8769def0bd71ef" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::TraceIdentity::isFull</definition>
+        <argsstring>(Tensor const &amp;tensor) const</argsstring>
+        <name>isFull</name>
+        <qualifiedname>mty::TraceIdentity::isFull</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1TraceIdentity_1_1Tensor" kindref="compound">Tensor</ref> const &amp;</type>
+          <declname>tensor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/traceIdentities.h" line="72" column="10" bodyfile="src/marty/core/traceIdentities.cpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1TraceIdentity_1af0f43f2f880501745e8d725559be79d0" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::TraceIdentity::isFull</definition>
+        <argsstring>(std::vector&lt; Tensor &gt; const &amp;tensors) const</argsstring>
+        <name>isFull</name>
+        <qualifiedname>mty::TraceIdentity::isFull</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="structmty_1_1TraceIdentity_1_1Tensor" kindref="compound">Tensor</ref> &gt; const &amp;</type>
+          <declname>tensors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/traceIdentities.h" line="74" column="10" bodyfile="src/marty/core/traceIdentities.cpp" bodystart="104" bodyend="110"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::TraceIdentity</label>
+        <link refid="classmty_1_1TraceIdentity"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>factor</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/traceIdentities.h" line="31" column="1" bodyfile="src/marty/core/traceIdentities.h" bodystart="31" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classmty_1_1TraceIdentity_1a95b826ad88d66b45d4f305455c3adada" prot="public" virt="non-virtual"><scope>mty::TraceIdentity</scope><name>factor</name></member>
+      <member refid="classmty_1_1TraceIdentity_1af9a7038ca2ffdb9adc8769def0bd71ef" prot="private" virt="non-virtual"><scope>mty::TraceIdentity</scope><name>isFull</name></member>
+      <member refid="classmty_1_1TraceIdentity_1af0f43f2f880501745e8d725559be79d0" prot="private" virt="non-virtual"><scope>mty::TraceIdentity</scope><name>isFull</name></member>
+      <member refid="classmty_1_1TraceIdentity_1a12bd34b0985f146d94599037d03287ad" prot="public" virt="non-virtual"><scope>mty::TraceIdentity</scope><name>isSame</name></member>
+      <member refid="classmty_1_1TraceIdentity_1a653567e75da38561affa3b573732d25b" prot="private" virt="non-virtual"><scope>mty::TraceIdentity</scope><name>n</name></member>
+      <member refid="classmty_1_1TraceIdentity_1a0ef29626cbc821ea13ce2093e61444d7" prot="public" virt="non-virtual"><scope>mty::TraceIdentity</scope><name>operator*=</name></member>
+      <member refid="classmty_1_1TraceIdentity_1ab00846fb22e524b3adbb20afc3111dc6" prot="public" virt="non-virtual"><scope>mty::TraceIdentity</scope><name>operator+=</name></member>
+      <member refid="classmty_1_1TraceIdentity_1aa14806913ee8f2b7c6e01f5015770ede" prot="public" virt="non-virtual"><scope>mty::TraceIdentity</scope><name>operator/=</name></member>
+      <member refid="classmty_1_1TraceIdentity_1a10dfb84c52b0f3de3cc62fd04f0d0ccb" prot="public" virt="non-virtual"><scope>mty::TraceIdentity</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classmty_1_1TraceIdentity_1a0ae0652a14e0874f195fe61c36b4649f" prot="private" virt="non-virtual"><scope>mty::TraceIdentity</scope><name>step</name></member>
+      <member refid="classmty_1_1TraceIdentity_1a359047facb3f1bc8b7443f4f7bb7dd99" prot="private" virt="non-virtual"><scope>mty::TraceIdentity</scope><name>tensorSize</name></member>
+      <member refid="classmty_1_1TraceIdentity_1aed9aefb8d8063139064958955dc601f2" prot="private" virt="non-virtual"><scope>mty::TraceIdentity</scope><name>terms</name></member>
+      <member refid="classmty_1_1TraceIdentity_1a89360f4f8079cfb88663f6a76e59a20a" prot="private" virt="non-virtual"><scope>mty::TraceIdentity</scope><name>totalIndices</name></member>
+      <member refid="classmty_1_1TraceIdentity_1a0c69ab856f327bf9e05958db2b1e4f57" prot="public" virt="non-virtual"><scope>mty::TraceIdentity</scope><name>TraceIdentity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

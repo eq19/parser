@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structmty_1_1simpli_1_1FermionEOMData" kind="struct" language="C++" prot="public">
+    <compoundname>mty::simpli::FermionEOMData</compoundname>
+    <includes refid="amplitudeSimplification_8h" local="no">amplitudeSimplification.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmty_1_1simpli_1_1FermionEOMData_1a61aae4f339593cee96f3875386dd25d1" prot="public" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref></type>
+        <definition>csl::Tensor mty::simpli::FermionEOMData::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <qualifiedname>mty::simpli::FermionEOMData::p</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitudeSimplification.h" line="392" column="17" bodyfile="src/marty/core/amplitudeSimplification.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1simpli_1_1FermionEOMData_1a01b3de75ee7c340fe1462bc94ea61e7c" prot="public" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::simpli::FermionEOMData::m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <qualifiedname>mty::simpli::FermionEOMData::m</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitudeSimplification.h" line="393" column="17" bodyfile="src/marty/core/amplitudeSimplification.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1simpli_1_1FermionEOMData_1a6d2ff11aee4ae234fa61295008d3a5f5" prot="public" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref></type>
+        <definition>csl::Index mty::simpli::FermionEOMData::alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <qualifiedname>mty::simpli::FermionEOMData::alpha</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitudeSimplification.h" line="394" column="17" bodyfile="src/marty/core/amplitudeSimplification.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1simpli_1_1FermionEOMData_1aeda52f4db3c43cfd7b5768cde8f7e809" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::simpli::FermionEOMData::sign</definition>
+        <argsstring></argsstring>
+        <name>sign</name>
+        <qualifiedname>mty::simpli::FermionEOMData::sign</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitudeSimplification.h" line="395" column="17" bodyfile="src/marty/core/amplitudeSimplification.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Helper structure for the application of Dirac equation (equations of motions for spin 1/2) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>csl::Index</label>
+        <link refid="classcsl_1_1Index"/>
+      </node>
+      <node id="2">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::simpli::FermionEOMData</label>
+        <link refid="structmty_1_1simpli_1_1FermionEOMData"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>alpha</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="5">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/amplitudeSimplification.h" line="391" column="1" bodyfile="src/marty/core/amplitudeSimplification.h" bodystart="391" bodyend="396"/>
+    <listofallmembers>
+      <member refid="structmty_1_1simpli_1_1FermionEOMData_1a6d2ff11aee4ae234fa61295008d3a5f5" prot="public" virt="non-virtual"><scope>mty::simpli::FermionEOMData</scope><name>alpha</name></member>
+      <member refid="structmty_1_1simpli_1_1FermionEOMData_1a01b3de75ee7c340fe1462bc94ea61e7c" prot="public" virt="non-virtual"><scope>mty::simpli::FermionEOMData</scope><name>m</name></member>
+      <member refid="structmty_1_1simpli_1_1FermionEOMData_1a61aae4f339593cee96f3875386dd25d1" prot="public" virt="non-virtual"><scope>mty::simpli::FermionEOMData</scope><name>p</name></member>
+      <member refid="structmty_1_1simpli_1_1FermionEOMData_1aeda52f4db3c43cfd7b5768cde8f7e809" prot="public" virt="non-virtual"><scope>mty::simpli::FermionEOMData</scope><name>sign</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

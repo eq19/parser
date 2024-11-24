@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="md_src_2marty-plugins_2README" kind="page">
+    <compoundname>md_src_2marty-plugins_2README</compoundname>
+    <title>MARTY Plugins</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><computeroutput>MARTY</computeroutput> plugins are additional libraries that rely on <computeroutput>MARTY</computeroutput> but are shipped in separate libraries. The requirements are the following:</para>
+<para><itemizedlist>
+<listitem><para>A <computeroutput>MARTY</computeroutput> plugin should have its <bold>own directory</bold> in <computeroutput>marty-plugins/</computeroutput></para>
+</listitem><listitem><para>A <computeroutput>MARTY</computeroutput> plugin should generate its <bold>own libraries</bold>, static <bold>and</bold> shared</para>
+</listitem><listitem><para>A <computeroutput>MARTY</computeroutput> plugin can depend on <computeroutput>MARTY</computeroutput>, the contrary should never be true i.e. <computeroutput>MARTY</computeroutput> cannot depend on a plugin</para>
+</listitem><listitem><para>A <computeroutput>MARTY</computeroutput> plugin should be tested automatically </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="src/marty-plugins/README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,860 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1Amplitude" kind="class" language="C++" prot="public">
+    <compoundname>mty::Amplitude</compoundname>
+    <includes refid="amplitude_8h" local="no">amplitude.h</includes>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmty_1_1Amplitude_1adfcca30d08cc213cd213b733aae98126" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class AmplitudeInitializer</definition>
+        <argsstring></argsstring>
+        <name>AmplitudeInitializer</name>
+        <qualifiedname>mty::Amplitude::AmplitudeInitializer</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1AmplitudeInitializer" kindref="compound">AmplitudeInitializer</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="44" column="18" bodyfile="src/marty/core/amplitude.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1Amplitude_1a11b2c47e21dd7eb060381767012d09ef" prot="private" static="no" mutable="no">
+        <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref></type>
+        <definition>FeynOptions mty::Amplitude::options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <qualifiedname>mty::Amplitude::options</qualifiedname>
+        <briefdescription>
+<para>Set of options that have been used for the calculation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="328" column="17" bodyfile="src/marty/core/amplitude.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Amplitude_1a15c2145e726aac642843fb198e972244" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmty_1_1FeynmanDiagram" kindref="compound">mty::FeynmanDiagram</ref> &gt;</type>
+        <definition>std::vector&lt;mty::FeynmanDiagram&gt; mty::Amplitude::diagrams</definition>
+        <argsstring></argsstring>
+        <name>diagrams</name>
+        <qualifiedname>mty::Amplitude::diagrams</qualifiedname>
+        <briefdescription>
+<para>Range of <ref refid="classmty_1_1FeynmanDiagram" kindref="compound">mty::FeynmanDiagram</ref> of the process. Each diagram contains a mathematical expression and the corresponding graph (that can be displayed using GRAFED). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="335" column="17" bodyfile="src/marty/core/amplitude.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Amplitude_1a2bb4a08bc193bd9d16858c2a3c88daf1" prot="private" static="no" mutable="no">
+        <type><ref refid="classmty_1_1Kinematics" kindref="compound">mty::Kinematics</ref></type>
+        <definition>mty::Kinematics mty::Amplitude::kinematics</definition>
+        <argsstring></argsstring>
+        <name>kinematics</name>
+        <qualifiedname>mty::Amplitude::kinematics</qualifiedname>
+        <briefdescription>
+<para><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> of the process. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="340" column="21" bodyfile="src/marty/core/amplitude.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1Amplitude_1a253828183d5880a3cb19d4e7cf5a00b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Amplitude::Amplitude</definition>
+        <argsstring>(FeynOptions const &amp;t_options, Kinematics const &amp;t_kinematics)</argsstring>
+        <name>Amplitude</name>
+        <qualifiedname>mty::Amplitude::Amplitude</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref> const &amp;</type>
+          <declname>t_options</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> const &amp;</type>
+          <declname>t_kinematics</declname>
+        </param>
+        <briefdescription>
+<para>Initializes an amplitude with no diagram (to be added later using <ref refid="classmty_1_1Amplitude_1a9eff23c7d2e9c39daf1318c618fedb66" kindref="member">Amplitude::add()</ref>). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Options used to calculate the amplitude. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_diagrams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range of diagrams. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_kinematics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> of the process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="54" column="5" bodyfile="src/marty/core/amplitude.cpp" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1ac3830e71802b2aa25e2ab3467420a117" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Amplitude::Amplitude</definition>
+        <argsstring>(FeynOptions const &amp;t_options, std::vector&lt; mty::FeynmanDiagram &gt; const &amp;t_diagrams, mty::Kinematics const &amp;t_kinematics)</argsstring>
+        <name>Amplitude</name>
+        <qualifiedname>mty::Amplitude::Amplitude</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref> const &amp;</type>
+          <declname>t_options</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1FeynmanDiagram" kindref="compound">mty::FeynmanDiagram</ref> &gt; const &amp;</type>
+          <declname>t_diagrams</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Kinematics" kindref="compound">mty::Kinematics</ref> const &amp;</type>
+          <declname>t_kinematics</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the amplitude completely. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Options used to calculate the amplitude. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_diagrams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range of diagrams. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_kinematics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> of the process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="63" column="5" bodyfile="src/marty/core/amplitude.cpp" bodystart="26" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1a3e9a9cab4d59d7e8b26daed36e272fb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Amplitude::Amplitude</definition>
+        <argsstring>(FeynOptions const &amp;t_options, std::vector&lt; mty::FeynmanDiagram &gt; &amp;&amp;t_diagrams, mty::Kinematics const &amp;t_kinematics)</argsstring>
+        <name>Amplitude</name>
+        <qualifiedname>mty::Amplitude::Amplitude</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref> const &amp;</type>
+          <declname>t_options</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1FeynmanDiagram" kindref="compound">mty::FeynmanDiagram</ref> &gt; &amp;&amp;</type>
+          <declname>t_diagrams</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Kinematics" kindref="compound">mty::Kinematics</ref> const &amp;</type>
+          <declname>t_kinematics</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the amplitude completely. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Options used to calculate the amplitude. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_diagrams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set of diagrams, moved range that is invalidated after the call of this constructor (at call site). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_kinematics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> of the process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="75" column="5" bodyfile="src/marty/core/amplitude.cpp" bodystart="33" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1aaa84b86f9290c47145f828df0e3702de" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::Amplitude::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>mty::Amplitude::empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the amplitude is empty (equal to zero). </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="83" column="10" bodyfile="src/marty/core/amplitude.h" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1aafd046f059f69fe6ae3c99af24f5c31e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t mty::Amplitude::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>mty::Amplitude::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The size of the amplitude i.e. the number of diagrams / expressions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="92" column="12" bodyfile="src/marty/core/amplitude.h" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1aba664ae765b9ac60ef5c5d19cf706877" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+        <definition>csl::Expr &amp; mty::Amplitude::expression</definition>
+        <argsstring>(size_t pos)</argsstring>
+        <name>expression</name>
+        <qualifiedname>mty::Amplitude::expression</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Returns a reference to expression of the diagram at a given position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function returns a reference allowing the caller to modify directly in place the expression. For example swapping the sign of the second diagram: <programlisting><codeline><highlight class="normal">amplitude.expression(1)<sp/>*=<sp/>-1;</highlight></codeline>
+</programlisting> This function can then be used to apply any necessary modifications to the amplitude before going further, calculating <ref refid="structmty_1_1Wilson" kindref="compound">Wilson</ref> coefficients or squaring the amplitude for example.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the diagram.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The expression of the diagram number <bold>pos</bold> (starts at 0). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="115" column="15" bodyfile="src/marty/core/amplitude.cpp" bodystart="42" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1a8472b0710fafef54efa6d66bd20dc7a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+        <definition>csl::Expr const  &amp; mty::Amplitude::expression</definition>
+        <argsstring>(size_t pos) const</argsstring>
+        <name>expression</name>
+        <qualifiedname>mty::Amplitude::expression</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Returns the const expression of the diagram at a given pos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the diagram.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The expression of the diagram number <bold>pos</bold> (starts at 0). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="124" column="21" bodyfile="src/marty/core/amplitude.cpp" bodystart="53" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1a4cf5970c1b1f92cc9c533fb2de43f5a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1FeynmanDiagram_1a24c070c4ff41843fe84ba51439241120" kindref="member">FeynmanDiagram::diagram_t</ref> &amp;</type>
+        <definition>FeynmanDiagram::diagram_t &amp; mty::Amplitude::diagram</definition>
+        <argsstring>(size_t pos)</argsstring>
+        <name>diagram</name>
+        <qualifiedname>mty::Amplitude::diagram</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Returns a reference to the graph layout of the diagram at a given position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the diagram.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The graph layout of the diagram at <bold>pos</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="134" column="31" bodyfile="src/marty/core/amplitude.cpp" bodystart="64" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1a6e85aaa80817ec22d02f120d8be20894" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1FeynmanDiagram_1a24c070c4ff41843fe84ba51439241120" kindref="member">FeynmanDiagram::diagram_t</ref> const &amp;</type>
+        <definition>FeynmanDiagram::diagram_t const  &amp; mty::Amplitude::diagram</definition>
+        <argsstring>(size_t pos) const</argsstring>
+        <name>diagram</name>
+        <qualifiedname>mty::Amplitude::diagram</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Returns a const reference to the graph layout of the diagram at a given position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the diagram.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The graph layout of the diagram at <bold>pos</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="144" column="37" bodyfile="src/marty/core/amplitude.cpp" bodystart="75" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1a5c2778f8f77892fdbb72aebe4c676c1f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>std::vector&lt; csl::Expr &gt; mty::Amplitude::obtainExpressions</definition>
+        <argsstring>() const</argsstring>
+        <name>obtainExpressions</name>
+        <qualifiedname>mty::Amplitude::obtainExpressions</qualifiedname>
+        <briefdescription>
+<para>Creates and return a range containing the expressions of all diagrams. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A std::vector containing all diagrams&apos; expressions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="152" column="17" bodyfile="src/marty/core/amplitude.cpp" bodystart="86" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1a00118a9e5af9555aa78120c5b79c5773" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">mty::wick::Graph</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::shared_ptr&lt; mty::wick::Graph &gt; &gt; mty::Amplitude::obtainGraphs</definition>
+        <argsstring>() const</argsstring>
+        <name>obtainGraphs</name>
+        <qualifiedname>mty::Amplitude::obtainGraphs</qualifiedname>
+        <briefdescription>
+<para>Creates and return a range containing the graph layouts of all diagrams. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A std::vector containing all diagrams&apos; graph layouts. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="160" column="17" bodyfile="src/marty/core/amplitude.cpp" bodystart="95" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1a9eff23c7d2e9c39daf1318c618fedb66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Amplitude::add</definition>
+        <argsstring>(std::vector&lt; mty::FeynmanDiagram &gt; const &amp;t_diagrams)</argsstring>
+        <name>add</name>
+        <qualifiedname>mty::Amplitude::add</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1FeynmanDiagram" kindref="compound">mty::FeynmanDiagram</ref> &gt; const &amp;</type>
+          <declname>t_diagrams</declname>
+        </param>
+        <briefdescription>
+<para>Adds diagrams to the amplitude. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_diagrams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range of diagrams to be added. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="167" column="10" bodyfile="src/marty/core/amplitude.cpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1a6d01c452f91f8745634d3c303b3fffcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Amplitude::add</definition>
+        <argsstring>(std::vector&lt; mty::FeynmanDiagram &gt; &amp;&amp;t_diagrams)</argsstring>
+        <name>add</name>
+        <qualifiedname>mty::Amplitude::add</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1FeynmanDiagram" kindref="compound">mty::FeynmanDiagram</ref> &gt; &amp;&amp;</type>
+          <declname>t_diagrams</declname>
+        </param>
+        <briefdescription>
+<para>Adds diagrams to the amplitude. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_diagrams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Moved range of diagrams to be added. The parameter passed to the function is invalid after the call. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="175" column="10" bodyfile="src/marty/core/amplitude.cpp" bodystart="109" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1ae5c9a5d5e046a4a5316f24fdd79d10f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Amplitude" kindref="compound">Amplitude</ref></type>
+        <definition>Amplitude mty::Amplitude::filterOut</definition>
+        <argsstring>(std::function&lt; bool(mty::FeynmanDiagram const &amp;)&gt; filter) const</argsstring>
+        <name>filterOut</name>
+        <qualifiedname>mty::Amplitude::filterOut</qualifiedname>
+        <param>
+          <type>std::function&lt; bool(<ref refid="classmty_1_1FeynmanDiagram" kindref="compound">mty::FeynmanDiagram</ref> const &amp;)&gt;</type>
+          <declname>filter</declname>
+        </param>
+        <briefdescription>
+<para>Applies a diagram filter (<ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">mty::FeynOptions::DiagramFilter</ref> requirement) to the amplitude and returns the result. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function can be used with built-in filters (see file <ref refid="filters_8h" kindref="compound">filters.h</ref>) or custom filters. For example, selecting only the contribution where the combination c and b quark appears if one wants to test <formula id="49">$ V_{cb} $</formula>: <programlisting><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ampl_Vcb<sp/>=<sp/>amplitude.filter_out(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="namespacemty_1_1filter_1a9e20f5ffc607433b363a6566cb12b401" kindref="member">mty::filter::forceParticleCombination</ref>({</highlight><highlight class="stringliteral">&quot;b&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;c&quot;</highlight><highlight class="normal">})</highlight></codeline>
+<codeline><highlight class="normal">);</highlight></codeline>
+</programlisting> The other overload allows one to call this function with an arbitrary number of filters.</para>
+<para><simplesect kind="note"><para>This function is meant to separate contributions from a result that must be used entirely elsewhere. If one wants only one specific contribution at all, consider using filters, through the <ref refid="classmty_1_1FeynOptions" kindref="compound">mty::FeynOptions</ref> object passed as a parameter to the amplitude calculation, as this saves unnecessary calculations.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Filter that should return <bold>true</bold> if the diagram must be selected and copied in the new <ref refid="classmty_1_1Amplitude" kindref="compound">Amplitude</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A copy of the amplitude containing only the selected diagrams. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="206" column="5" bodyfile="src/marty/core/amplitude.cpp" bodystart="115" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1af83e06a823260da7eab30b345ebc1927" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class First</type>
+          </param>
+          <param>
+            <type>class...</type>
+            <declname>Next</declname>
+            <defname>Next</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <defval>std::enable_if_t&lt;(sizeof...(Next) &gt; 1)&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmty_1_1Amplitude" kindref="compound">Amplitude</ref></type>
+        <definition>Amplitude mty::Amplitude::filterOut</definition>
+        <argsstring>(First &amp;&amp;first, Next &amp;&amp;... next) const</argsstring>
+        <name>filterOut</name>
+        <qualifiedname>mty::Amplitude::filterOut</qualifiedname>
+        <param>
+          <type>First &amp;&amp;</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>Next &amp;&amp;...</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+<para>Applies an arbitrary number of filters on an amplitude. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>First</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First filter type. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...Next</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Next filter types. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>typename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Constraining that there is at least 2 filters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First filter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...next</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Next filters.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The filtered amplitude containing only the diagrams that pass all filters. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="223" column="15" bodyfile="src/marty/core/amplitude.h" bodystart="223" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1a8eb73441587bba6987d6e6083fd3cf3f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref> const &amp;</type>
+        <definition>FeynOptions const  &amp; mty::Amplitude::getOptions</definition>
+        <argsstring>() const</argsstring>
+        <name>getOptions</name>
+        <qualifiedname>mty::Amplitude::getOptions</qualifiedname>
+        <briefdescription>
+<para>Returns the options used to calculate the amplitude;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>options. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="234" column="23" bodyfile="src/marty/core/amplitude.h" bodystart="234" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1aed353870668ca1e9d8c63ebd4d3976af" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classmty_1_1FeynmanDiagram" kindref="compound">mty::FeynmanDiagram</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; mty::FeynmanDiagram &gt; const  &amp; mty::Amplitude::getDiagrams</definition>
+        <argsstring>() const</argsstring>
+        <name>getDiagrams</name>
+        <qualifiedname>mty::Amplitude::getDiagrams</qualifiedname>
+        <briefdescription>
+<para>Returns all the <ref refid="classmty_1_1FeynmanDiagram" kindref="compound">mty::FeynmanDiagram</ref> objects as a const reference to a range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>diagrams. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="245" column="23" bodyfile="src/marty/core/amplitude.h" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1a7e9a3cac033fa0d74280d8b8391d71b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classmty_1_1FeynmanDiagram" kindref="compound">mty::FeynmanDiagram</ref> &gt; &amp;</type>
+        <definition>std::vector&lt; mty::FeynmanDiagram &gt; &amp; mty::Amplitude::getDiagrams</definition>
+        <argsstring>()</argsstring>
+        <name>getDiagrams</name>
+        <qualifiedname>mty::Amplitude::getDiagrams</qualifiedname>
+        <briefdescription>
+<para>Returns all the <ref refid="classmty_1_1FeynmanDiagram" kindref="compound">mty::FeynmanDiagram</ref> objects as a reference to a range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>diagrams. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="256" column="17" bodyfile="src/marty/core/amplitude.h" bodystart="256" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1a12f7eeb9788e25eb2789b76b880f0bdb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmty_1_1Kinematics" kindref="compound">mty::Kinematics</ref> const &amp;</type>
+        <definition>mty::Kinematics const  &amp; mty::Amplitude::getKinematics</definition>
+        <argsstring>() const</argsstring>
+        <name>getKinematics</name>
+        <qualifiedname>mty::Amplitude::getKinematics</qualifiedname>
+        <briefdescription>
+<para>Returns the kinematics of the process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>kinematics. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="266" column="27" bodyfile="src/marty/core/amplitude.h" bodystart="266" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1a3c86e17cf9931e2f4c1c381a8234ad75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmty_1_1Kinematics" kindref="compound">mty::Kinematics</ref> &amp;</type>
+        <definition>mty::Kinematics &amp; mty::Amplitude::getKinematics</definition>
+        <argsstring>()</argsstring>
+        <name>getKinematics</name>
+        <qualifiedname>mty::Amplitude::getKinematics</qualifiedname>
+        <briefdescription>
+<para>Returns the kinematics of the process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>kinematics. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="276" column="21" bodyfile="src/marty/core/amplitude.h" bodystart="276" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1aabb53d2fa916eab246d1914f81302915" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Amplitude::getSum</definition>
+        <argsstring>() const</argsstring>
+        <name>getSum</name>
+        <qualifiedname>mty::Amplitude::getSum</qualifiedname>
+        <briefdescription>
+<para>Computes and returns the sum of all diagrams i.e. the total amplitude. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The sum of all the diagrams&apos; expressions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="287" column="15" bodyfile="src/marty/core/amplitude.cpp" bodystart="128" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1a7e474c167702da584d884be187ff8e6b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Amplitude" kindref="compound">Amplitude</ref></type>
+        <definition>Amplitude mty::Amplitude::copy</definition>
+        <argsstring>() const</argsstring>
+        <name>copy</name>
+        <qualifiedname>mty::Amplitude::copy</qualifiedname>
+        <briefdescription>
+<para>Returns a copy of the amplitude. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function creates a deep copy ensuring that no object, symbolic expressions included, is shared between the copy and the initial object. Building blocks are still shared as e.g. momenta and squared momenta.</para>
+<para><simplesect kind="return"><para>The copy of the amplitude. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="299" column="15" bodyfile="src/marty/core/amplitude.cpp" bodystart="136" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Amplitude_1a8db1e91fc5480f53befcf3a488f1eed1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Amplitude::setKinematics</definition>
+        <argsstring>(Kinematics const &amp;t_kinematics, bool replace=true)</argsstring>
+        <name>setKinematics</name>
+        <qualifiedname>mty::Amplitude::setKinematics</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> const &amp;</type>
+          <declname>t_kinematics</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>replace</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Replaces one kinematic context by another, replacing the relevant momenta in expressions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_kinematics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New kinematic context for the process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="307" column="10" bodyfile="src/marty/core/amplitude.cpp" bodystart="146" bodyend="155"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmty_1_1Amplitude_1aed4f0de0004771a3fa2a1e6530260624" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Iterator</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void mty::Amplitude::add</definition>
+        <argsstring>(Iterator first, Iterator last)</argsstring>
+        <name>add</name>
+        <qualifiedname>mty::Amplitude::add</qualifiedname>
+        <param>
+          <type>Iterator</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>Iterator</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+<para>Template utility to add multiple diagrams at once. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Iterator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Iterator type for the range that must be inserted. This type must point to <ref refid="classmty_1_1FeynmanDiagram" kindref="compound">mty::FeynmanDiagram</ref> objects. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Begin iterator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End iterator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/amplitude.h" line="319" column="10" bodyfile="src/marty/core/amplitude.h" bodystart="319" bodyend="322"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Interface class containing the result of an amplitude calculation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the return type of the mty::Model::computeAmplitude() member. It contains the <ref refid="classmty_1_1FeynmanDiagram" kindref="compound">mty::FeynmanDiagram</ref> objects corresponding to the amplitude, the options that have been used during the calculation and the <ref refid="classmty_1_1Kinematics" kindref="compound">mty::Kinematics</ref> objects corresponding to the external particles layout. </para>
+    </detaileddescription>
+    <location file="src/marty/core/amplitude.h" line="41" column="1" bodyfile="src/marty/core/amplitude.h" bodystart="41" bodyend="341"/>
+    <listofallmembers>
+      <member refid="classmty_1_1Amplitude_1a9eff23c7d2e9c39daf1318c618fedb66" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>add</name></member>
+      <member refid="classmty_1_1Amplitude_1a6d01c452f91f8745634d3c303b3fffcd" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>add</name></member>
+      <member refid="classmty_1_1Amplitude_1aed4f0de0004771a3fa2a1e6530260624" prot="private" virt="non-virtual"><scope>mty::Amplitude</scope><name>add</name></member>
+      <member refid="classmty_1_1Amplitude_1a253828183d5880a3cb19d4e7cf5a00b0" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>Amplitude</name></member>
+      <member refid="classmty_1_1Amplitude_1ac3830e71802b2aa25e2ab3467420a117" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>Amplitude</name></member>
+      <member refid="classmty_1_1Amplitude_1a3e9a9cab4d59d7e8b26daed36e272fb8" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>Amplitude</name></member>
+      <member refid="classmty_1_1Amplitude_1adfcca30d08cc213cd213b733aae98126" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>AmplitudeInitializer</name></member>
+      <member refid="classmty_1_1Amplitude_1a7e474c167702da584d884be187ff8e6b" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>copy</name></member>
+      <member refid="classmty_1_1Amplitude_1a4cf5970c1b1f92cc9c533fb2de43f5a1" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>diagram</name></member>
+      <member refid="classmty_1_1Amplitude_1a6e85aaa80817ec22d02f120d8be20894" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>diagram</name></member>
+      <member refid="classmty_1_1Amplitude_1a15c2145e726aac642843fb198e972244" prot="private" virt="non-virtual"><scope>mty::Amplitude</scope><name>diagrams</name></member>
+      <member refid="classmty_1_1Amplitude_1aaa84b86f9290c47145f828df0e3702de" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>empty</name></member>
+      <member refid="classmty_1_1Amplitude_1aba664ae765b9ac60ef5c5d19cf706877" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>expression</name></member>
+      <member refid="classmty_1_1Amplitude_1a8472b0710fafef54efa6d66bd20dc7a5" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>expression</name></member>
+      <member refid="classmty_1_1Amplitude_1ae5c9a5d5e046a4a5316f24fdd79d10f1" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>filterOut</name></member>
+      <member refid="classmty_1_1Amplitude_1af83e06a823260da7eab30b345ebc1927" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>filterOut</name></member>
+      <member refid="classmty_1_1Amplitude_1aed353870668ca1e9d8c63ebd4d3976af" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>getDiagrams</name></member>
+      <member refid="classmty_1_1Amplitude_1a7e9a3cac033fa0d74280d8b8391d71b4" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>getDiagrams</name></member>
+      <member refid="classmty_1_1Amplitude_1a12f7eeb9788e25eb2789b76b880f0bdb" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>getKinematics</name></member>
+      <member refid="classmty_1_1Amplitude_1a3c86e17cf9931e2f4c1c381a8234ad75" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>getKinematics</name></member>
+      <member refid="classmty_1_1Amplitude_1a8eb73441587bba6987d6e6083fd3cf3f" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>getOptions</name></member>
+      <member refid="classmty_1_1Amplitude_1aabb53d2fa916eab246d1914f81302915" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>getSum</name></member>
+      <member refid="classmty_1_1Amplitude_1a2bb4a08bc193bd9d16858c2a3c88daf1" prot="private" virt="non-virtual"><scope>mty::Amplitude</scope><name>kinematics</name></member>
+      <member refid="classmty_1_1Amplitude_1a5c2778f8f77892fdbb72aebe4c676c1f" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>obtainExpressions</name></member>
+      <member refid="classmty_1_1Amplitude_1a00118a9e5af9555aa78120c5b79c5773" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>obtainGraphs</name></member>
+      <member refid="classmty_1_1Amplitude_1a11b2c47e21dd7eb060381767012d09ef" prot="private" virt="non-virtual"><scope>mty::Amplitude</scope><name>options</name></member>
+      <member refid="classmty_1_1Amplitude_1a8db1e91fc5480f53befcf3a488f1eed1" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>setKinematics</name></member>
+      <member refid="classmty_1_1Amplitude_1aafd046f059f69fe6ae3c99af24f5c31e" prot="public" virt="non-virtual"><scope>mty::Amplitude</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1528 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcsl_1_1AbstractMultiFunc" kind="class" language="C++" prot="public">
+    <compoundname>csl::AbstractMultiFunc</compoundname>
+    <basecompoundref refid="classcsl_1_1Abstract" prot="public" virt="non-virtual">csl::Abstract</basecompoundref>
+    <derivedcompoundref refid="classcsl_1_1BooleanOperator" prot="public" virt="non-virtual">csl::BooleanOperator</derivedcompoundref>
+    <derivedcompoundref refid="classcsl_1_1Polynomial" prot="public" virt="non-virtual">csl::Polynomial</derivedcompoundref>
+    <derivedcompoundref refid="classcsl_1_1Prod" prot="public" virt="non-virtual">csl::Prod</derivedcompoundref>
+    <derivedcompoundref refid="classcsl_1_1Sum" prot="public" virt="non-virtual">csl::Sum</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1FeynmanIntegral" prot="public" virt="non-virtual">mty::FeynmanIntegral</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1Propagator" prot="public" virt="non-virtual">mty::Propagator</derivedcompoundref>
+    <includes refid="scalarFunc_8h" local="no">scalarFunc.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classcsl_1_1AbstractMultiFunc_1a8e44404eb3e6c23f7c7ddf10cdd3a152" prot="protected" static="no" mutable="no">
+        <type>csl::vector_expr</type>
+        <definition>csl::vector_expr csl::AbstractMultiFunc::argument</definition>
+        <argsstring></argsstring>
+        <name>argument</name>
+        <qualifiedname>csl::AbstractMultiFunc::argument</qualifiedname>
+        <briefdescription>
+<para>std::vector containing the arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="338" column="9" bodyfile="src/csl/scalarFunc.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1ad7c6d28772b2684c20a42bbfcb8cf257" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>csl::AbstractMultiFunc::AbstractMultiFunc</definition>
+        <argsstring>()</argsstring>
+        <name>AbstractMultiFunc</name>
+        <qualifiedname>csl::AbstractMultiFunc::AbstractMultiFunc</qualifiedname>
+        <briefdescription>
+<para>Default Constructor, initializes the std::vector argument empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="343" column="5" bodyfile="src/csl/scalarFunc.h" bodystart="520" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a7ccbae6ee27d3e2e26187ef3ea8f92b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>csl::AbstractMultiFunc::AbstractMultiFunc</definition>
+        <argsstring>(std::vector&lt; csl::Expr &gt; const &amp;t_argument)</argsstring>
+        <name>AbstractMultiFunc</name>
+        <qualifiedname>csl::AbstractMultiFunc::AbstractMultiFunc</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+          <declname>t_argument</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="345" column="5" bodyfile="src/csl/scalarFunc.h" bodystart="525" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a77d642a8a42845ad66da5faa78cb3c27" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespacecsl_1ace591865c69b6315c533a1a325777312" kindref="member">csl::Type</ref></type>
+        <definition>csl::Type csl::AbstractMultiFunc::getType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getType</name>
+        <qualifiedname>csl::AbstractMultiFunc::getType</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aa781456c3f801b37ce169c83514c51c1">getType</reimplements>
+        <reimplementedby refid="classcsl_1_1BooleanOperator_1add90f411fddb5ef6874ba38119c77dea">getType</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Polynomial_1aaba60af7af69c8f95c2a52c9f3669cdd">getType</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Prod_1af0bd5312033ca6006d54e117503cc52b">getType</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Sum_1afdde4c81bf81217accd1b02b8e2b4dbf">getType</reimplementedby>
+        <briefdescription>
+<para>Gives the <bold>type</bold> of <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In the program this function is very often called. It allows different functions to know what type of expr they are manipulating (cos, product, number, etc) in order to do special treatments or simplifications. <simplesect kind="return"><para>type (a non memorized integer corresponding to the type of abstract) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="347" column="15" bodyfile="src/csl/scalarFunc.h" bodystart="347" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a1b6044133a95c411324d20afe460c55b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespacecsl_1a70046459ec0082db8cb97005c13c9a54" kindref="member">csl::PrimaryType</ref></type>
+        <definition>virtual csl::PrimaryType csl::AbstractMultiFunc::getPrimaryType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getPrimaryType</name>
+        <qualifiedname>csl::AbstractMultiFunc::getPrimaryType</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a8ab79682cdff4c7d7b52c2e70ac23d85">getPrimaryType</reimplements>
+        <briefdescription>
+<para>Gives the <bold>primary type</bold> of an <ref refid="classcsl_1_1AbstractMultiFunc" kindref="compound">AbstractMultiFunc</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>10 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="355" column="30" bodyfile="src/csl/scalarFunc.h" bodystart="355" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a2bc449bd37728479b8c6b0a9eea3bccf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractMultiFunc::getCommutable</definition>
+        <argsstring>() const override</argsstring>
+        <name>getCommutable</name>
+        <qualifiedname>csl::AbstractMultiFunc::getCommutable</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a2263731ca94825f35281e69fb258cf87">getCommutable</reimplements>
+        <briefdescription>
+<para>Tells if the <ref refid="classcsl_1_1AbstractMultiFunc" kindref="compound">AbstractMultiFunc</ref> is commutable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The commutability of a multi-function depends on the one of its <bold>arguments</bold> and the properties of the multi-function itself. <simplesect kind="return"><para><bold>True</bold> if the <ref refid="classcsl_1_1AbstractFunc" kindref="compound">AbstractFunc</ref> is commutable. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="366" column="10" bodyfile="src/csl/scalarFunc.cpp" bodystart="641" bodyend="649"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1af5fc70d8f2b9e7df0dfff973a754432a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Parent" kindref="compound">csl::Parent</ref> &gt;</type>
+        <definition>std::vector&lt; Parent &gt; csl::AbstractMultiFunc::getSubSymbols</definition>
+        <argsstring>() const override</argsstring>
+        <name>getSubSymbols</name>
+        <qualifiedname>csl::AbstractMultiFunc::getSubSymbols</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a4e69280b624b0e0c932f1cfa7417b55f">getSubSymbols</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="368" column="17" bodyfile="src/csl/scalarFunc.cpp" bodystart="651" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1aee96fe96e6cf30e1022ee8f489884aa5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractMultiFunc::isIndexed</definition>
+        <argsstring>() const override</argsstring>
+        <name>isIndexed</name>
+        <qualifiedname>csl::AbstractMultiFunc::isIndexed</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a216b7bd3930fbf047e5bf8f69e9b964c">isIndexed</reimplements>
+        <reimplementedby refid="classcsl_1_1BooleanOperator_1a23ae1ecdbcef223a30e11aaa6c992732">isIndexed</reimplementedby>
+        <reimplementedby refid="classcsl_1_1IProd_1a046bd2f7ea7fb90fdf1dadad1a69af64">isIndexed</reimplementedby>
+        <reimplementedby refid="classcsl_1_1ISum_1a1b7f9344411c6dbf4e132798833c6a68">isIndexed</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Polynomial_1a83502630a7e4016e818c2f8332a68594">isIndexed</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Prod_1acb1ea1810e83874623d07f370efde5c2">isIndexed</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Sum_1ad9ce7a5183d105402cdafab290b93c91">isIndexed</reimplementedby>
+        <reimplementedby refid="classmty_1_1FeynmanIntegral_1a2356dc790afafc8a0f102490f47dc5b5">isIndexed</reimplementedby>
+        <reimplementedby refid="classmty_1_1Propagator_1a64bb51cbde78978918ab6f6d2e79d675">isIndexed</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the expression is indexed. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="370" column="18" bodyfile="src/csl/scalarFunc.cpp" bodystart="663" bodyend="670"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1af12bbdfb8a1b45d722d37f2444443457" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int csl::AbstractMultiFunc::getNArgs</definition>
+        <argsstring>(int axis=0) const override</argsstring>
+        <name>getNArgs</name>
+        <qualifiedname>csl::AbstractMultiFunc::getNArgs</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aa034448201c9e7998bbbb5e409636b30">getNArgs</reimplements>
+        <param>
+          <type>int</type>
+          <declname>axis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Returns the <bold>number of arguments</bold> of the <ref refid="classcsl_1_1AbstractMultiFunc" kindref="compound">AbstractMultiFunc</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>nArgs</bold> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="375" column="9" bodyfile="src/csl/scalarFunc.cpp" bodystart="636" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a5e910beb3bdf8459306fe0cda78c1c76" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const csl::vector_expr &amp;</type>
+        <definition>const csl::vector_expr &amp; csl::AbstractMultiFunc::getVectorArgument</definition>
+        <argsstring>() const override</argsstring>
+        <name>getVectorArgument</name>
+        <qualifiedname>csl::AbstractMultiFunc::getVectorArgument</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1ac83c44ae1e5315a38083bdb7acd8f3fa">getVectorArgument</reimplements>
+        <briefdescription>
+<para>Returns the std::vector <bold>argument</bold> directly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>argument</bold> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="380" column="28" bodyfile="src/csl/scalarFunc.cpp" bodystart="672" bodyend="675"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a75ae783c1bd8e55ccc005af538599def" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> const &amp;</type>
+        <definition>Expr const  &amp; csl::AbstractMultiFunc::getArgument</definition>
+        <argsstring>(int iArg=0) const override</argsstring>
+        <name>getArgument</name>
+        <qualifiedname>csl::AbstractMultiFunc::getArgument</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1ac33a42309d629d47bfdbede4e152414e">getArgument</reimplements>
+        <param>
+          <type>int</type>
+          <declname>iArg</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Returns one particular <bold>argument</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iArg(default=0)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Index" kindref="compound">Index</ref> of the argument to return in the std::vector <bold>argument</bold>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>argument</bold>[iArg] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="387" column="16" bodyfile="src/csl/scalarFunc.cpp" bodystart="677" bodyend="680"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1af168c84e071262cc48108cf991526651" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+        <definition>Expr &amp; csl::AbstractMultiFunc::getArgument</definition>
+        <argsstring>(int iArg=0) override</argsstring>
+        <name>getArgument</name>
+        <qualifiedname>csl::AbstractMultiFunc::getArgument</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a06f542034e95744148f4fce5a4893e63">getArgument</reimplements>
+        <param>
+          <type>int</type>
+          <declname>iArg</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="389" column="10" bodyfile="src/csl/scalarFunc.cpp" bodystart="682" bodyend="685"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1acb17ac601dd6fb6c98a6de6983d41009" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>optional&lt; Expr &gt; csl::AbstractMultiFunc::findSubExpression</definition>
+        <argsstring>(Expr_info subExpression, const Expr &amp;newExpression) const override</argsstring>
+        <name>findSubExpression</name>
+        <qualifiedname>csl::AbstractMultiFunc::findSubExpression</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a299b1fd6c2b9d80ad90a08c7acef28d2">findSubExpression</reimplements>
+        <reimplementedby refid="classcsl_1_1Prod_1a6658c74878dc31902a45b75994baef85">findSubExpression</reimplementedby>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>subExpression</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>newExpression</declname>
+        </param>
+        <briefdescription>
+<para>Searches a sub-expression and replaces it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>subExpression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression to search. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newExpression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression that replaces <bold>subExpression</bold> if it is found. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The expression with the replacement done. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="392" column="5" bodyfile="src/csl/scalarFunc.cpp" bodystart="698" bodyend="719"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a773f619ff0c678e3d1e8e34559a00d50" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t csl::AbstractMultiFunc::size</definition>
+        <argsstring>() const override</argsstring>
+        <name>size</name>
+        <qualifiedname>csl::AbstractMultiFunc::size</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a3794843945b8a39e2c1be073c9bacdf5">size</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="395" column="12" bodyfile="src/csl/scalarFunc.cpp" bodystart="721" bodyend="724"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1ada1ce81d61672e15a142fe8d3bee98bd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractMultiFunc::empty</definition>
+        <argsstring>() const override</argsstring>
+        <name>empty</name>
+        <qualifiedname>csl::AbstractMultiFunc::empty</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a0c3c3fe5010f24e8a8765ea06415c003">empty</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="397" column="10" bodyfile="src/csl/scalarFunc.cpp" bodystart="726" bodyend="729"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a6236c27a797993973fb45dc9f4906962" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>csl::vector_expr::iterator</type>
+        <definition>csl::vector_expr::iterator csl::AbstractMultiFunc::begin</definition>
+        <argsstring>() override</argsstring>
+        <name>begin</name>
+        <qualifiedname>csl::AbstractMultiFunc::begin</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aad54ed41b2ce9bad3364fe30ad1a0d71">begin</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A csl::vector_expr::iterator at the beginning of argument for multi-argument expressions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="402" column="32" bodyfile="src/csl/scalarFunc.cpp" bodystart="731" bodyend="734"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a178ccaec7d4546873084591d93398153" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>csl::vector_expr::iterator</type>
+        <definition>csl::vector_expr::iterator csl::AbstractMultiFunc::end</definition>
+        <argsstring>() override</argsstring>
+        <name>end</name>
+        <qualifiedname>csl::AbstractMultiFunc::end</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a61e4e80d998a888a1a74d9ea3e10c0f1">end</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A csl::vector_expr::iterator at the end of argument for multi-argument expressions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="407" column="32" bodyfile="src/csl/scalarFunc.cpp" bodystart="736" bodyend="739"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1aa405a3e5cd03bb390ce3e804fe8af806" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>csl::vector_expr::const_iterator</type>
+        <definition>csl::vector_expr::const_iterator csl::AbstractMultiFunc::begin</definition>
+        <argsstring>() const override</argsstring>
+        <name>begin</name>
+        <qualifiedname>csl::AbstractMultiFunc::begin</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1adff373df9477d4e38581d09cc6d2fee4">begin</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A csl::vector_expr::iterator at the beginning of argument for multi-argument expressions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="412" column="38" bodyfile="src/csl/scalarFunc.cpp" bodystart="741" bodyend="744"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a42f8f99108068dca2bd7a259577a0bcf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>csl::vector_expr::const_iterator</type>
+        <definition>csl::vector_expr::const_iterator csl::AbstractMultiFunc::end</definition>
+        <argsstring>() const override</argsstring>
+        <name>end</name>
+        <qualifiedname>csl::AbstractMultiFunc::end</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1ae2761d54f13310e13f5076d565edd7ef">end</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A csl::vector_expr::iterator at the end of argument for multi-argument expressions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="417" column="38" bodyfile="src/csl/scalarFunc.cpp" bodystart="746" bodyend="749"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a6cf9bbbcd0b0b3f75121f1c0a5cf4d57" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::AbstractMultiFunc::setArgument</definition>
+        <argsstring>(const Expr &amp;t_argument, int iArg=0) override</argsstring>
+        <name>setArgument</name>
+        <qualifiedname>csl::AbstractMultiFunc::setArgument</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aab2d2ac186b56d17d2cc0a105e145b11">setArgument</reimplements>
+        <reimplementedby refid="classcsl_1_1IProd_1a9c6895c9d37d17614f54e3baeec96585">setArgument</reimplementedby>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>t_argument</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iArg</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Replaces one particular <bold>argument</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New argument. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iArg(default=0)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Index" kindref="compound">Index</ref> of the argument to replace with t_argument. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="423" column="10" bodyfile="src/csl/scalarFunc.cpp" bodystart="751" bodyend="754"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a8e6df749f2e0afdbe8ae0993235dda54" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::AbstractMultiFunc::setVectorArgument</definition>
+        <argsstring>(const csl::vector_expr &amp;t_argument) override</argsstring>
+        <name>setVectorArgument</name>
+        <qualifiedname>csl::AbstractMultiFunc::setVectorArgument</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a83fee8ed28079bcac107455d58be9d5d">setVectorArgument</reimplements>
+        <param>
+          <type>const csl::vector_expr &amp;</type>
+          <declname>t_argument</declname>
+        </param>
+        <briefdescription>
+<para>Replaced the entire std::vector of argument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::vector of expressions to copy. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="425" column="10" bodyfile="src/csl/scalarFunc.cpp" bodystart="756" bodyend="759"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1ae240dfbf5dec5abdcd3006e69b40563c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractMultiFunc::isReal</definition>
+        <argsstring>() const override</argsstring>
+        <name>isReal</name>
+        <qualifiedname>csl::AbstractMultiFunc::isReal</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1ac73aba0c48a4b5740f7bfa09e438ca99">isReal</reimplements>
+        <reimplementedby refid="classcsl_1_1BooleanOperator_1af9a8fea573c902be82146ae3e56cf5a3">isReal</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Prod_1ae0608fd2fa4b22da81d692483f01b9fb">isReal</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Sum_1a9097ff85c564b700a829fd16ace7e4b3">isReal</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="427" column="10" bodyfile="src/csl/scalarFunc.cpp" bodystart="761" bodyend="767"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a7ba1daf07d310140f4c417e23d37e6eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractMultiFunc::isPurelyImaginary</definition>
+        <argsstring>() const override</argsstring>
+        <name>isPurelyImaginary</name>
+        <qualifiedname>csl::AbstractMultiFunc::isPurelyImaginary</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1acb67e8e96735b8f116d0e7ab33d7be77">isPurelyImaginary</reimplements>
+        <reimplementedby refid="classcsl_1_1BooleanOperator_1a323c74fa5260e24f6da692f42155c493">isPurelyImaginary</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Prod_1a1ae03daccbb1d0ff134d51f8b2a64fb4">isPurelyImaginary</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Sum_1ae03e0ca52605cf8b352c0b55674ef198">isPurelyImaginary</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="429" column="10" bodyfile="src/csl/scalarFunc.cpp" bodystart="769" bodyend="772"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a4740c75c01e1d8aeb7db075fc5377789" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>std::optional&lt; Expr &gt; csl::AbstractMultiFunc::getRealPart</definition>
+        <argsstring>() const override</argsstring>
+        <name>getRealPart</name>
+        <qualifiedname>csl::AbstractMultiFunc::getRealPart</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a415f64fdddaae445014d5e052956f889">getRealPart</reimplements>
+        <reimplementedby refid="classcsl_1_1BooleanOperator_1aaedb35156c894b14afd91ca75d620fd3">getRealPart</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Prod_1a74b08ed837b9be3299e99b5b355cb4d4">getRealPart</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Sum_1a340d0daf8560d7d9ec73a30a0e5b4fce">getRealPart</reimplementedby>
+        <briefdescription>
+<para><bold>Evaluates</bold> the <bold>real part</bold> of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> and returns it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The real part of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="431" column="19" bodyfile="src/csl/scalarFunc.cpp" bodystart="774" bodyend="777"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a232e9782e303c525a18f436e5e5f97b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::AbstractMultiFunc::getImaginaryPart</definition>
+        <argsstring>() const override</argsstring>
+        <name>getImaginaryPart</name>
+        <qualifiedname>csl::AbstractMultiFunc::getImaginaryPart</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a43f44bbb3685fc9f4a0402223b2e1004">getImaginaryPart</reimplements>
+        <reimplementedby refid="classcsl_1_1BooleanOperator_1a54853bc9447a6cf90ab9f6adc56e5825">getImaginaryPart</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Prod_1add2e178b9370eba2bd70d3ed17512a0c">getImaginaryPart</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Sum_1a91c2be7f869326606fba475ea557b409">getImaginaryPart</reimplementedby>
+        <briefdescription>
+<para><bold>Evaluates</bold> the <bold>imaginary part</bold> of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> and returns it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The imaginary part of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="433" column="10" bodyfile="src/csl/scalarFunc.cpp" bodystart="779" bodyend="782"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1ac1bea898b7169caabc409badff44c710" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>std::optional&lt; Expr &gt; csl::AbstractMultiFunc::getComplexModulus</definition>
+        <argsstring>() const override</argsstring>
+        <name>getComplexModulus</name>
+        <qualifiedname>csl::AbstractMultiFunc::getComplexModulus</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a859f792aec52ba1fe1181f81d1cc3451">getComplexModulus</reimplements>
+        <reimplementedby refid="classcsl_1_1BooleanOperator_1ae0c3f8e40eb89cd4e5b6c9ed8ee88ae1">getComplexModulus</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Prod_1af42fef880d91a3705f0a86065f53560d">getComplexModulus</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Sum_1a6a358933e479aa4dcb68c9fff7a4dcc3">getComplexModulus</reimplementedby>
+        <briefdescription>
+<para><bold>Evaluates</bold> the <bold>modulus in the complex plane</bold> of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> and returns it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The modulus part of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="435" column="19" bodyfile="src/csl/scalarFunc.cpp" bodystart="784" bodyend="788"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a46c3300eb0f87234002c476d3c7c9a14" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>std::optional&lt; Expr &gt; csl::AbstractMultiFunc::getComplexArgument</definition>
+        <argsstring>() const override</argsstring>
+        <name>getComplexArgument</name>
+        <qualifiedname>csl::AbstractMultiFunc::getComplexArgument</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a9cc64c66894acafc1f069dc40072084b">getComplexArgument</reimplements>
+        <reimplementedby refid="classcsl_1_1BooleanOperator_1af1a8f3a0f97d62f6da78d016b15415dd">getComplexArgument</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Prod_1aad33ce50bdda177231353749abb24b71">getComplexArgument</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Sum_1adc1cd9a04f2299205aa8d896ba03482b">getComplexArgument</reimplementedby>
+        <briefdescription>
+<para><bold>Evaluates</bold> the <bold>argument in the complex plane</bold> of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> and returns it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The argument part of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="437" column="19" bodyfile="src/csl/scalarFunc.cpp" bodystart="790" bodyend="793"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1abd84cb1aa54ef9875bae6f806ed1d753" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>optional&lt; Expr &gt; csl::AbstractMultiFunc::getComplexConjugate</definition>
+        <argsstring>() const override</argsstring>
+        <name>getComplexConjugate</name>
+        <qualifiedname>csl::AbstractMultiFunc::getComplexConjugate</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a03e8bdba20c6192a948892f212f09dbe">getComplexConjugate</reimplements>
+        <reimplementedby refid="classmty_1_1Propagator_1ab9ecfc58caf6e92e12beb50cdae7aea3">getComplexConjugate</reimplementedby>
+        <briefdescription>
+<para>Calculates and returns the complex conjugate of the expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>\bar{*this}. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="439" column="19" bodyfile="src/csl/scalarFunc.cpp" bodystart="795" bodyend="812"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a636313fd58465a56d3b41cb74f9ffaff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>optional&lt; Expr &gt; csl::AbstractMultiFunc::replaceIndex</definition>
+        <argsstring>(const Index &amp;indexToReplace, const Index &amp;newIndex, bool refresh=true) const override</argsstring>
+        <name>replaceIndex</name>
+        <qualifiedname>csl::AbstractMultiFunc::replaceIndex</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1acc0eb077e25c9a67d15269cf8d5f0511">replaceIndex</reimplements>
+        <reimplementedby refid="classcsl_1_1IProd_1a8f32fd847835d145cc8b4ff062d03c7d">replaceIndex</reimplementedby>
+        <reimplementedby refid="classcsl_1_1ISum_1ad3f536e97dbf9f257fc08d6a1ad1d597">replaceIndex</reimplementedby>
+        <param>
+          <type>const <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> &amp;</type>
+          <declname>indexToReplace</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> &amp;</type>
+          <declname>newIndex</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>refresh</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>For indicial expressions, this function searches <bold>indexToContract</bold> and replaces it with newIndex. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indexToContract</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Index" kindref="compound">Index</ref> that is newly contracted. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dummy new index that replaces <bold>indexToContract</bold> in the expression. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the index has been found. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="441" column="27" bodyfile="src/csl/scalarFunc.cpp" bodystart="814" bodyend="840"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a3db6d93888f6b8bb5719549e522a4afa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>std::optional&lt; Expr &gt; csl::AbstractMultiFunc::replaceIndices</definition>
+        <argsstring>(std::vector&lt; csl::Index &gt; const &amp;oldIndices, std::vector&lt; csl::Index &gt; const &amp;newIndices, bool refresh=true, bool flipped=false) const override</argsstring>
+        <name>replaceIndices</name>
+        <qualifiedname>csl::AbstractMultiFunc::replaceIndices</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1ac9e54a236015d14af42b0bcde41953f3">replaceIndices</reimplements>
+        <reimplementedby refid="classcsl_1_1IProd_1abfe07d5009e2813511d936c662ddbef3">replaceIndices</reimplementedby>
+        <reimplementedby refid="classcsl_1_1ISum_1a480bc2101ef3e41a874e897fda68524a">replaceIndices</reimplementedby>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt; const &amp;</type>
+          <declname>oldIndices</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt; const &amp;</type>
+          <declname>newIndices</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>refresh</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>flipped</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="447" column="5" bodyfile="src/csl/scalarFunc.cpp" bodystart="843" bodyend="869"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1aa82b52395acc9570f21ecca507dde7e2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">Tensor</ref></type>
+        <definition>Tensor csl::AbstractMultiFunc::getPoint</definition>
+        <argsstring>() const override</argsstring>
+        <name>getPoint</name>
+        <qualifiedname>csl::AbstractMultiFunc::getPoint</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a06b32036fea6a2583f506a6ef9508d74">getPoint</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="452" column="12" bodyfile="src/csl/scalarFunc.cpp" bodystart="687" bodyend="695"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1ad9eed372c276bc55ce8614a94962fef6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>optional&lt; Expr &gt; csl::AbstractMultiFunc::factor</definition>
+        <argsstring>(bool full=false) const override</argsstring>
+        <name>factor</name>
+        <qualifiedname>csl::AbstractMultiFunc::factor</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a0bc0de9c4ce5f77fc716af0f502d13d3">factor</reimplements>
+        <reimplementedby refid="classcsl_1_1ISum_1a04d25076743802b4a5d98f082e3441c6">factor</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Polynomial_1ae49aeb195fc59129d3c9e087b32a35b1">factor</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Sum_1af56a4a850dcb91db747ff8ca36f458a2">factor</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>full</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para><bold>Factors</bold> the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function tries to factor the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> wrt any <bold>factor</bold>. This will be more involved in calculation than the other factorizing function that takes the factor as a parameter. So this function <bold>must be used only</bold> if we don&apos;t know the factors we want at the end. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>full</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true the factorization is <bold>recursive</bold> through all the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="454" column="27" bodyfile="src/csl/scalarFunc.cpp" bodystart="871" bodyend="892"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a71ffe88901a200f59bdb88d4adf09a44" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>optional&lt; Expr &gt; csl::AbstractMultiFunc::factor</definition>
+        <argsstring>(Expr_info expr, bool full=false) const override</argsstring>
+        <name>factor</name>
+        <qualifiedname>csl::AbstractMultiFunc::factor</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a8fb3d657c65606d520688db6401fe650">factor</reimplements>
+        <reimplementedby refid="classcsl_1_1Sum_1aeb31f0009bdb90913b98c693578b54a3">factor</reimplementedby>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>factor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>full</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para><bold>Factors</bold> the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> wrt a <bold>particular</bold> <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> wrt which we try to factor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>full</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true the factorization is <bold>recursive</bold> through all the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="456" column="27" bodyfile="src/csl/scalarFunc.cpp" bodystart="894" bodyend="915"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1accd66bc16179cf88684a6db68e277921" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>optional&lt; Expr &gt; csl::AbstractMultiFunc::collect</definition>
+        <argsstring>(std::vector&lt; Expr &gt; const &amp;factors, bool full=false) const override</argsstring>
+        <name>collect</name>
+        <qualifiedname>csl::AbstractMultiFunc::collect</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1ab3746f1d3667846824ea51b8a2e00d31">collect</reimplements>
+        <reimplementedby refid="classcsl_1_1Sum_1af1f3a6d6201fef00ca9d4ad334cd01bd">collect</reimplementedby>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt; const &amp;</type>
+          <declname>factors</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>full</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Collects terms in sum according to some factors given by the user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function allows the factor with some specific scalar variables. For example, <formula id="6">$ ax + ay + by $</formula> can be factored in two ways. Either with <formula id="7">$ (a, b) $</formula> which gives <formula id="8">$ a(x+y) + by $</formula> ; or with <formula id="9">$ (x, y) $</formula> which gives <formula id="10">$ ax + (a+b)y $</formula>. With the collect function it is possible to choose precisely the set of variables that will be factored to express results in a standard way.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Factors to search in the expression. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>full</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean (default = false) that tells if the collection must be recursive (full expression depth).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The collected expression if modifications have been done. </para>
+</simplesect>
+<simplesect kind="return"><para>std::nullopt else.</para>
+</simplesect>
+<simplesect kind="note"><para>This function will probably replace the <ref refid="classcsl_1_1AbstractMultiFunc_1ad9eed372c276bc55ce8614a94962fef6" kindref="member">factor()</ref> function in the future.</para>
+</simplesect>
+<simplesect kind="note"><para>For now, the collect function does not support factorization by indicial tensors, whereas <ref refid="classcsl_1_1AbstractMultiFunc_1ad9eed372c276bc55ce8614a94962fef6" kindref="member">factor()</ref> does. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="459" column="27" bodyfile="src/csl/scalarFunc.cpp" bodystart="917" bodyend="938"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1aa7b240760c1c7d930053fbd38c812196" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>optional&lt; Expr &gt; csl::AbstractMultiFunc::expand</definition>
+        <argsstring>(bool full=false, bool inPlace=false) const override</argsstring>
+        <name>expand</name>
+        <qualifiedname>csl::AbstractMultiFunc::expand</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a3a87ab082152fea4fc2444659028b840">expand</reimplements>
+        <reimplementedby refid="classcsl_1_1Prod_1a2c508afc1d4a74cd1ca69b1f900993d5">expand</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>full</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inPlace</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para><bold>Develops</bold> the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function concerns only products (and exponents) that will be flatten to give at the end a sum of independant terms.<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>full</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true the expandment is <bold>recursive</bold> through all the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The expand <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="462" column="27" bodyfile="src/csl/scalarFunc.cpp" bodystart="940" bodyend="961"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1af09641d4d997d869626ff660ca4d3f8b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>optional&lt; Expr &gt; csl::AbstractMultiFunc::expand_if</definition>
+        <argsstring>(std::function&lt; bool(Expr const &amp;)&gt; const &amp;f, bool full=false, bool inPlace=false) const override</argsstring>
+        <name>expand_if</name>
+        <qualifiedname>csl::AbstractMultiFunc::expand_if</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aeb48aaaa856582b6359037fe94d2419b">expand_if</reimplements>
+        <reimplementedby refid="classcsl_1_1Prod_1aa6bb716b3dea854dd7e897976cf08788">expand_if</reimplementedby>
+        <param>
+          <type>std::function&lt; bool(<ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> const &amp;)&gt; const &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>full</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inPlace</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para><bold>Develops</bold> the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function concerns only products (and exponents) that will be flatten to give at the end a sum of independant terms.<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Functions that returns a boolean that determines which arguments must be expanded in products.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>full</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true the expandment is <bold>recursive</bold> through all the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The expand <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="473" column="5" bodyfile="src/csl/scalarFunc.cpp" bodystart="963" bodyend="976"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a9d64fefa1c3718d1fe431edfa4934e71" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractMultiFunc::dependsOn</definition>
+        <argsstring>(Expr_info expr) const override</argsstring>
+        <name>dependsOn</name>
+        <qualifiedname>csl::AbstractMultiFunc::dependsOn</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a40fe2ccf376dadd21b2d7a0f134d86c6">dependsOn</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Check recursively if the expression depends on <bold>expr</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression to search. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if a dependency in <bold>expr</bold> is found. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="477" column="10" bodyfile="src/csl/scalarFunc.cpp" bodystart="978" bodyend="989"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a32bbf7b44a59c1efe7e73961da575af4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractMultiFunc::dependsOn</definition>
+        <argsstring>(const AbstractParent *parent) const override</argsstring>
+        <name>dependsOn</name>
+        <qualifiedname>csl::AbstractMultiFunc::dependsOn</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1AbstractParent" kindref="compound">AbstractParent</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="479" column="10" bodyfile="src/csl/scalarFunc.cpp" bodystart="991" bodyend="1000"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1ad072ccb3f8007430a6d6dce53f32b441" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractMultiFunc::dependsExplicitlyOn</definition>
+        <argsstring>(Expr_info expr) const override</argsstring>
+        <name>dependsExplicitlyOn</name>
+        <qualifiedname>csl::AbstractMultiFunc::dependsExplicitlyOn</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1ac3c9887977249e4d71ea36c6377b3581">dependsExplicitlyOn</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Check recursively if <bold>expr</bold> is present in the expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression to search. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if <bold>expr</bold> is found. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="481" column="10" bodyfile="src/csl/scalarFunc.cpp" bodystart="1002" bodyend="1012"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a7c3599e88ef45e1abc9c878432c67ade" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractMultiFunc::dependsExplicitlyOn</definition>
+        <argsstring>(Parent_info expr) const override</argsstring>
+        <name>dependsExplicitlyOn</name>
+        <qualifiedname>csl::AbstractMultiFunc::dependsExplicitlyOn</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a0b26ad7a44e497af296318287bac539a">dependsExplicitlyOn</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1AbstractParent" kindref="compound">Parent_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="483" column="10" bodyfile="src/csl/scalarFunc.cpp" bodystart="1014" bodyend="1021"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1ac54eff0c503e2c2947b232622261c998" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractMultiFunc::commutesWith</definition>
+        <argsstring>(Expr_info expr, int sign=-1) const override</argsstring>
+        <name>commutesWith</name>
+        <qualifiedname>csl::AbstractMultiFunc::commutesWith</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a3f68d0cd93dfe2ac02d6d4afc80fb41a">commutesWith</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sign</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Tells if the object commutes with expr. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if <bold>*this</bold> commutes with <bold>expr</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="485" column="10" bodyfile="src/csl/scalarFunc.cpp" bodystart="1023" bodyend="1029"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a8014e107c584b6450d3cc1ce78e154ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int csl::AbstractMultiFunc::isPolynomial</definition>
+        <argsstring>(Expr_info expr) const override</argsstring>
+        <name>isPolynomial</name>
+        <qualifiedname>csl::AbstractMultiFunc::isPolynomial</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1acae10d5685ccec295fbd9be7996073cb">isPolynomial</reimplements>
+        <reimplementedby refid="classcsl_1_1Prod_1ad52e8f95508d38377324e9ef8fb4c28d">isPolynomial</reimplementedby>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Determines if the expression is a mononomial term in <bold>expr</bold>, i.e. a term of the form C*expr^n with C independent of expr, n integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Variable" kindref="compound">Variable</ref> of the supposed mononomial. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The order of the exponent if there is one (n in the example). </para>
+</simplesect>
+<simplesect kind="return"><para>-1 else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="487" column="9" bodyfile="src/csl/scalarFunc.cpp" bodystart="1031" bodyend="1034"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1ad4be44fbde5ebd97065a575992d498c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractMultiFunc::operator&lt;</definition>
+        <argsstring>(Expr_info other) const override</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>csl::AbstractMultiFunc::operator&lt;</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a5c1ba8dce7fbc19eb98807bd15a279c9">operator&lt;</reimplements>
+        <reimplementedby refid="classmty_1_1FeynmanIntegral_1a4fd80eac66e3bd46cff23cb5b3e8b52a">operator&lt;</reimplementedby>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Compares the simplicity of the expression to another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><bold>Expression</bold> to compare. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>False</bold> if <bold>expr</bold> is simpler or equivalent. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>True</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="489" column="5" bodyfile="src/csl/simplification.cpp" bodystart="682" bodyend="721"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1a26979a899fab4621102645d0f8366457" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> const &amp;</type>
+        <definition>Expr const  &amp; csl::AbstractMultiFunc::operator[]</definition>
+        <argsstring>(int i) const override</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>csl::AbstractMultiFunc::operator[]</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aa8331053065d1be2da89e70c45d24863">operator[]</reimplements>
+        <param>
+          <type>int</type>
+          <declname>iArg</declname>
+        </param>
+        <briefdescription>
+<para>Access operator for multi-argument expressions, equivalent to the function <ref refid="classcsl_1_1AbstractMultiFunc_1a75ae783c1bd8e55ccc005af538599def" kindref="member">getArgument()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iArg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Index" kindref="compound">Index</ref> of the argument to get. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>argument</bold>[iArg]. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="491" column="16" bodyfile="src/csl/scalarFunc.cpp" bodystart="1036" bodyend="1039"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractMultiFunc_1ae4922013ae4c2b23e6fab8bc9056ab42" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+        <definition>Expr &amp; csl::AbstractMultiFunc::operator[]</definition>
+        <argsstring>(int i) override</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>csl::AbstractMultiFunc::operator[]</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a560aa9993d506551c54a8c02d1445814">operator[]</reimplements>
+        <param>
+          <type>int</type>
+          <declname>iArg</declname>
+        </param>
+        <briefdescription>
+<para>Access operator for multi-argument expressions, returns a reference so this function is not const. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iArg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Index" kindref="compound">Index</ref> of the argument to get. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to <bold>argument</bold>[iArg]. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/scalarFunc.h" line="493" column="10" bodyfile="src/csl/scalarFunc.cpp" bodystart="1041" bodyend="1044"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Handle functions of <bold>multiple</bold> arguments. In the case of the call of a simplification function, if recursive, the function will be first applied on all the <bold>arguments</bold>, then to the function itself. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>csl::Abstract</label>
+        <link refid="classcsl_1_1Abstract"/>
+      </node>
+      <node id="1">
+        <label>csl::AbstractMultiFunc</label>
+        <link refid="classcsl_1_1AbstractMultiFunc"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>csl::BooleanOperator</label>
+        <link refid="classcsl_1_1BooleanOperator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>csl::IProd</label>
+        <link refid="classcsl_1_1IProd"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>csl::ISum</label>
+        <link refid="classcsl_1_1ISum"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>csl::Polynomial</label>
+        <link refid="classcsl_1_1Polynomial"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>csl::Prod</label>
+        <link refid="classcsl_1_1Prod"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>csl::Sum</label>
+        <link refid="classcsl_1_1Sum"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mty::FeynmanIntegral</label>
+        <link refid="classmty_1_1FeynmanIntegral"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mty::Propagator</label>
+        <link refid="classmty_1_1Propagator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>csl::Abstract</label>
+        <link refid="classcsl_1_1Abstract"/>
+      </node>
+      <node id="1">
+        <label>csl::AbstractMultiFunc</label>
+        <link refid="classcsl_1_1AbstractMultiFunc"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/csl/scalarFunc.h" line="334" column="1" bodyfile="src/csl/scalarFunc.h" bodystart="334" bodyend="494"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1Abstract_1ad5fee68c1f3dcbda0e936926fed17616" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>Abstract</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1ad7c6d28772b2684c20a42bbfcb8cf257" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>AbstractMultiFunc</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a7ccbae6ee27d3e2e26187ef3ea8f92b8" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>AbstractMultiFunc</name></member>
+      <member refid="classcsl_1_1Abstract_1a5549ac0c186b3c6febf332245a25a82c" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>addAntiSymmetry</name></member>
+      <member refid="classcsl_1_1Abstract_1abbab11282e5c6ac46b018642ff129f47" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>addDependency</name></member>
+      <member refid="classcsl_1_1Abstract_1a101219973341a39cf15f07e5e1aa388f" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>addition_own</name></member>
+      <member refid="classcsl_1_1Abstract_1ad431770faa4291116a50175193a11a88" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>addSymmetry</name></member>
+      <member refid="classcsl_1_1Abstract_1acd972aed8326d4c13534594e061ee6da" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>antisymmetrise</name></member>
+      <member refid="classcsl_1_1Abstract_1a61d3ab932182226f4670a62bbb22af4e" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>applyDiracDelta</name></member>
+      <member refid="classcsl_1_1Abstract_1a316956fea77627a716500a2bbfc1f3b7" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>applyOperator</name></member>
+      <member refid="classcsl_1_1Abstract_1a6305ce90c795bfb416d8e958c62f905c" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>applySelfStructureOn</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a8e44404eb3e6c23f7c7ddf10cdd3a152" prot="protected" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>argument</name></member>
+      <member refid="classcsl_1_1Abstract_1a27ad666bf7d533607da9675b0c645ee9" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>askTerm</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a6236c27a797993973fb45dc9f4906962" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>begin</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1aa405a3e5cd03bb390ce3e804fe8af806" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>begin</name></member>
+      <member refid="classcsl_1_1Abstract_1aa4cba37520821432f37e212fefbc2534" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>breakSpace</name></member>
+      <member refid="classcsl_1_1Abstract_1af0f40b77914e45f56bf87839d00211d7" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>breakSpace</name></member>
+      <member refid="classcsl_1_1Abstract_1afd9d0336808e8adf4ccdccb51587ed8c" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>checkIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a1ebd84082bb93418408cc0babe2dffe2" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>checkIndexStructure</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1accd66bc16179cf88684a6db68e277921" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>collect</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1ac54eff0c503e2c2947b232622261c998" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>commutesWith</name></member>
+      <member refid="classcsl_1_1Abstract_1a7caee12abb451168149779a668dfc59e" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>compareWithDummy</name></member>
+      <member refid="classcsl_1_1Abstract_1a0f16fda9fe72a89c61ece36101a11d95" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>compareWithDummy</name></member>
+      <member refid="classcsl_1_1Abstract_1aed79d20a0821205e6430c80a474117d3" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>contractIndex</name></member>
+      <member refid="classcsl_1_1Abstract_1ad874fc858295a737e6ce884530f1109b" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1Abstract_1abd35096982e92b669ea55d960c5f44be" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1Abstract_1af29c2898c5d3ba96de8018a0838c402c" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>copy</name></member>
+      <member refid="classcsl_1_1Abstract_1aaa996819710adc3b7529c74a628be623" prot="public" virt="pure-virtual"><scope>csl::AbstractMultiFunc</scope><name>copy_unique</name></member>
+      <member refid="classcsl_1_1Abstract_1a09648782dcf2e81abb5b864f476cc410" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>deepCopy</name></member>
+      <member refid="classcsl_1_1Abstract_1a10358c33402ed520dc5888b25bb26af3" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>deepRefresh</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1ad072ccb3f8007430a6d6dce53f32b441" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>dependsExplicitlyOn</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a7c3599e88ef45e1abc9c878432c67ade" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>dependsExplicitlyOn</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a9d64fefa1c3718d1fe431edfa4934e71" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>dependsOn</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a32bbf7b44a59c1efe7e73961da575af4" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>dependsOn</name></member>
+      <member refid="classcsl_1_1Abstract_1a9d7d8586a0df66ba8da33528d6400e66" prot="public" virt="virtual" ambiguityscope="csl::Abstract::"><scope>csl::AbstractMultiFunc</scope><name>dependsOn</name></member>
+      <member refid="classcsl_1_1Abstract_1aecab8c872023a2d0771e7e4f83bb05f8" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>derive</name></member>
+      <member refid="classcsl_1_1Abstract_1aeb08811cf370616477a92075e4a218ee" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>determinant</name></member>
+      <member refid="classcsl_1_1Abstract_1a1578c74aee1050b806a67e7a81a67f5c" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>division_own</name></member>
+      <member refid="classcsl_1_1Abstract_1a4cc7a46deaa3eaa7593909d74e76d4af" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>dot</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1ada1ce81d61672e15a142fe8d3bee98bd" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>empty</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a178ccaec7d4546873084591d93398153" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>end</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a42f8f99108068dca2bd7a259577a0bcf" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>end</name></member>
+      <member refid="classcsl_1_1Abstract_1aa3a4cb7f30e2a422fe27a513e03d6600" prot="public" virt="pure-virtual"><scope>csl::AbstractMultiFunc</scope><name>evaluate</name></member>
+      <member refid="classcsl_1_1Abstract_1a543d5a4f0432e166b492ad28a860a65f" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>evaluateScalar</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1aa7b240760c1c7d930053fbd38c812196" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>expand</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1af09641d4d997d869626ff660ca4d3f8b" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>expand_if</name></member>
+      <member refid="classcsl_1_1Abstract_1aa2696a0feb43766ef54e1e3dd3d6d134" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>exponentiation_own</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1ad9eed372c276bc55ce8614a94962fef6" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>factor</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a71ffe88901a200f59bdb88d4adf09a44" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>factor</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1acb17ac601dd6fb6c98a6de6983d41009" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>findSubExpression</name></member>
+      <member refid="classcsl_1_1Abstract_1a021946e84d8c1a019908cac578b16fe8" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getAllDependencies</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a75ae783c1bd8e55ccc005af538599def" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1af168c84e071262cc48108cf991526651" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a898d6cf2a7f348feacab189447bee1eb" prot="public" virt="virtual" ambiguityscope="csl::Abstract::"><scope>csl::AbstractMultiFunc</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1aa689fb64eecb86edbde6c745d1ce756b" prot="public" virt="virtual" ambiguityscope="csl::Abstract::"><scope>csl::AbstractMultiFunc</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1afeb26e1382411448ce3c65d50fefd8bb" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getCanonicalPermutation</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a2bc449bd37728479b8c6b0a9eea3bccf" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getCommutable</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a46c3300eb0f87234002c476d3c7c9a14" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getComplexArgument</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1abd84cb1aa54ef9875bae6f806ed1d753" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getComplexConjugate</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1ac1bea898b7169caabc409badff44c710" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getComplexModulus</name></member>
+      <member refid="classcsl_1_1Abstract_1a470d9f1267fba4a82e13af4a39470f81" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getComplexProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1af04c0e4426f0bf9df365afe0148d59df" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getContractedPair</name></member>
+      <member refid="classcsl_1_1Abstract_1aec707d949f0f98e08ab4642c93dd9eb5" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getContractionProperties</name></member>
+      <member refid="classcsl_1_1Abstract_1aa22f0e4c9c91f43b5cd61cbb873869eb" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getDeltaMinus</name></member>
+      <member refid="classcsl_1_1Abstract_1a69a657baf1c35ed581e9db2c47a71c99" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getDeltaPlus</name></member>
+      <member refid="classcsl_1_1Abstract_1a9531d78d67c82e288c0130da5b1ba80b" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getDenom</name></member>
+      <member refid="classcsl_1_1Abstract_1a5856c3d55a6d1406970f3656e61efe8e" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getDim</name></member>
+      <member refid="classcsl_1_1Abstract_1a77e067fc57c0c2e70d141079455fdbd7" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getElementary</name></member>
+      <member refid="classcsl_1_1Abstract_1ac513c930caa9939c2b9557f36a34ee69" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getExponents</name></member>
+      <member refid="classcsl_1_1Abstract_1ac34c9c6f05e692faeed2f030514787ad" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getFactors</name></member>
+      <member refid="classcsl_1_1Abstract_1aa4136dc23f1fba4bf897b54c8592ccfc" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getFreeIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1aa5b707a5efdaef7c7945cbd921c3f526" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getHermitianConjugate</name></member>
+      <member refid="classcsl_1_1Abstract_1aff5cca2b2c8190e59f6e34cb1e383d36" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getHermitianConjugate</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a232e9782e303c525a18f436e5e5f97b9" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getImaginaryPart</name></member>
+      <member refid="classcsl_1_1Abstract_1a3234ce243f6a2e11950be42f10100943" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getIndex</name></member>
+      <member refid="classcsl_1_1Abstract_1ae125a32b6f3d0368b6055d4e58c1ff3f" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1ae6a9a9ef3efd6bb83b62c0a353742d25" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>getIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1addb848bf4cdea207484a71e9b1006ead" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getIndexStructureView</name></member>
+      <member refid="classcsl_1_1Abstract_1a632e28530a68539fadacd7ab7ffc8be1" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getIndexStructureView</name></member>
+      <member refid="classcsl_1_1Abstract_1a3d6b1e294cf24dea17c3c4361226138b" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getInfBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1a9c4a302d1a3cbf4dd9394f5e5880d343" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getLatexName</name></member>
+      <member refid="classcsl_1_1Abstract_1a652101e34b2efa43114150e9af3c79d5" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getLibDependency</name></member>
+      <member refid="classcsl_1_1Abstract_1af7f5e7466e754984a2c4394a112464f7" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getName</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1af12bbdfb8a1b45d722d37f2444443457" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getNArgs</name></member>
+      <member refid="classcsl_1_1Abstract_1a42125e9765a771c47819548d342b0b28" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getNContractedPairs</name></member>
+      <member refid="classcsl_1_1Abstract_1a204dbd37b63432cb08932b995f49d3f4" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getNFactor</name></member>
+      <member refid="classcsl_1_1Abstract_1add364193f7a78ac28f7001c7f4036453" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getNIndices</name></member>
+      <member refid="classcsl_1_1Abstract_1a6aa6bcc7cb8ee1574f29dc6ab6c6f0ed" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getNum</name></member>
+      <member refid="classcsl_1_1Abstract_1aad25c117c8dfc4d9718ba41e8d3f33a6" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getNumericalFactor</name></member>
+      <member refid="classcsl_1_1Abstract_1a9c3ec3dfe1fbd8ead5c8d9aca421a863" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getOperand</name></member>
+      <member refid="classcsl_1_1Abstract_1a9500a21d75d03c695ec0c76493600b38" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getOrder</name></member>
+      <member refid="classcsl_1_1Abstract_1ae89eb7b1a9e0259a60154563f3315907" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getOrderOf</name></member>
+      <member refid="classcsl_1_1Abstract_1ab150130c9f67daaf6aba52b9f6b90941" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getParent</name></member>
+      <member refid="classcsl_1_1Abstract_1a15f775b5add9af8727ead2cfaab78ba2" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getParent_info</name></member>
+      <member refid="classcsl_1_1Abstract_1aea8459b3206eb3a2297eeea7688e9520" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getParity</name></member>
+      <member refid="classcsl_1_1Abstract_1a946d175d946da102c5f4cc91840703cb" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getPermutations</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1aa82b52395acc9570f21ecca507dde7e2" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getPoint</name></member>
+      <member refid="classcsl_1_1Abstract_1ade540a127da7304f2b7282f4dcaffc7f" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getPolynomialTerm</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a1b6044133a95c411324d20afe460c55b" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getPrimaryType</name></member>
+      <member refid="classcsl_1_1Abstract_1a07489d0569bc983718796d21c73f34b3" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getProduct</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a4740c75c01e1d8aeb7db075fc5377789" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getRealPart</name></member>
+      <member refid="classcsl_1_1Abstract_1a5b77f008f4b95030641224877004f06c" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getRegularExpression</name></member>
+      <member refid="classcsl_1_1Abstract_1a625efe55a17b97a1c0f085bdbf3a962a" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getShape</name></member>
+      <member refid="classcsl_1_1Abstract_1aa83df1d9dc202457113e5b38bd694fae" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getSign</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1af5fc70d8f2b9e7df0dfff973a754432a" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getSubSymbols</name></member>
+      <member refid="classcsl_1_1Abstract_1a7dcdc11b64c8c515933882168d0792ef" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a413c50b2663f57d38c1d3ec3cfeaa3ce" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a26a0854bca4c47e84a1da36a3de8c49f" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a29261a946b3398b6129237620754a8b9" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a8a067b70756c4eef758aa88076a95162" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1aeaf8154e39ff211b12e6382e675ccaad" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getSum</name></member>
+      <member refid="classcsl_1_1Abstract_1a2fcc223dbf5d880e923c07df142df5c8" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getSupBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1a1d36e7a5acc50766d5cd3f6d59df978d" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getTerm</name></member>
+      <member refid="classcsl_1_1Abstract_1a404c5e89a3aad8a8dabcb56d4120c0fe" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getTransposed</name></member>
+      <member refid="classcsl_1_1Abstract_1aca3debb143668fd3ab75a27a47dd0c13" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getTransposed</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a77d642a8a42845ad66da5faa78cb3c27" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getType</name></member>
+      <member refid="classcsl_1_1Abstract_1a78f98ba06476e464e3fd2fce0d1f8243" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getValue</name></member>
+      <member refid="classcsl_1_1Abstract_1a628563238145f3a9acc331f1a89ce32f" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getValued</name></member>
+      <member refid="classcsl_1_1Abstract_1ae85f810bbadbc792210c958e8f1b2ffb" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getVariable</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a5e910beb3bdf8459306fe0cda78c1c76" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getVectorArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a0188b049736016c970a2513ed9f6931f" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>getVectorialModulus</name></member>
+      <member refid="classcsl_1_1Abstract_1a94bf1455397fdd2df8dbbc3b41c2f3f4" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>hasChainContractionProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1aa31e08c251d96b8ea8ec8d385895c1ff" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>hasContractionProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1a8c42723e8bc6334c99f00898cc1d59d7" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>hermitian</name></member>
+      <member refid="classcsl_1_1Abstract_1a5437e7f685edf8549e6d3b34572343f8" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>insert</name></member>
+      <member refid="classcsl_1_1Abstract_1a1b68943aa7ecf60a63af0f2f368eef8f" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>inverseMatrix</name></member>
+      <member refid="classcsl_1_1Abstract_1a9347e75b0cd0b75e0f0a38db93b29d83" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>isAnOperator</name></member>
+      <member refid="classcsl_1_1Abstract_1ac09992d147b39388c8936b3bff648930" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>isArbitrary</name></member>
+      <member refid="classcsl_1_1Abstract_1ad74c068f1da78856321932b6b6ae17dc" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>isBuildingBlock</name></member>
+      <member refid="classcsl_1_1Abstract_1a22a594845a29429c9b4f19c92bd18cad" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>isComplexConjugate</name></member>
+      <member refid="classcsl_1_1Abstract_1a464f4f0613db9b4b0a4efe26a3a03d60" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>isEmpty</name></member>
+      <member refid="classcsl_1_1Abstract_1af2ce38838e35c5785f92373a1d830668" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>isHermitianConjugate</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1aee96fe96e6cf30e1022ee8f489884aa5" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>isIndexed</name></member>
+      <member refid="classcsl_1_1Abstract_1a9a014bfd266b5f8471f23580e271979b" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>isInteger</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a8014e107c584b6450d3cc1ce78e154ca" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>isPolynomial</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a7ba1daf07d310140f4c417e23d37e6eb" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>isPurelyImaginary</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1ae240dfbf5dec5abdcd3006e69b40563c" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>isReal</name></member>
+      <member refid="classcsl_1_1Abstract_1ab79c1d8df9e6b1a3eca66958f7dc489d" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>matchShape</name></member>
+      <member refid="classcsl_1_1Abstract_1ac3978c71035bf1cda50f5b9031d631af" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>memoryOverhead</name></member>
+      <member refid="classcsl_1_1Abstract_1a4f5ed458ba62f5b4cf61a9e1f8568af1" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>multiplication_own</name></member>
+      <member refid="classcsl_1_1Abstract_1af5b62a6308638064c42da80e9cc2cb7e" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1af4fd1b57df371dac7ccfd5a909620e49" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a96de5935a58a96d4c5b1e47966488923" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1ac99a619abde7e4c58f39e14d4d20fcf5" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a45206de7c7773b3cb150451ee3eb379e" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a0d3495220202bd417c1b58249c923f39" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1ad4be44fbde5ebd97065a575992d498c2" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a6e19587260a07dba65cf2a985e05516b" prot="public" virt="non-virtual" ambiguityscope="csl::Abstract::"><scope>csl::AbstractMultiFunc</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a2a1660498f2638f5e490d6e512eb32f4" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>operator&lt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1afbcac6df2fd7ac11f336189cf215124b" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>operator&lt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1a59ff2950fc8ca319f87a730450f14545" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>operator=</name></member>
+      <member refid="classcsl_1_1Abstract_1a8334e14cd5789168b037d3888ed60edd" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a12d929e34039e817e464abc560bd4a9d" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a3775f3088e784cc924cb7d26e118660e" prot="public" virt="pure-virtual"><scope>csl::AbstractMultiFunc</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a1f78f0cce24c93def3050743bc5f2845" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1aed43debcac4a19e0da44986774c522bc" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a2376f08c0aa5ffe783090381d102d3ae" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a485c6f3e10db539a70416cd0766b117d" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>operator&gt;</name></member>
+      <member refid="classcsl_1_1Abstract_1ab305bdf49212f03781e7f98024faeb66" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>operator&gt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a4c8883df19d7538b68fa96aadac9dfa9" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>operator&gt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1a6b931f7b159d57bad26ca9c9ea729aa1" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>operator&gt;=</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a26979a899fab4621102645d0f8366457" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>operator[]</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1ae4922013ae4c2b23e6fab8bc9056ab42" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>operator[]</name></member>
+      <member refid="classcsl_1_1Abstract_1a75d9abfa88d9d09a89d3a4becd9e6429" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>operatorAppliesOn</name></member>
+      <member refid="classcsl_1_1Abstract_1abe9aceabbc0a99642e84c9025dbdc767" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>permut</name></member>
+      <member refid="classcsl_1_1Abstract_1aed56cb85894209a9bbc9b8bdada5e6ab" prot="public" virt="pure-virtual"><scope>csl::AbstractMultiFunc</scope><name>print</name></member>
+      <member refid="classcsl_1_1Abstract_1a2910dd30d90915c11d48c01cab618dda" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>printCode</name></member>
+      <member refid="classcsl_1_1Abstract_1a89e45ffc7b65f92e77e592f76f70934c" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>printExplicit</name></member>
+      <member refid="classcsl_1_1Abstract_1aa067d4a97135bfe2052a7e21c28f75be" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>printLaTeX</name></member>
+      <member refid="classcsl_1_1Abstract_1a0645745feacf93470963b55f93cae1c0" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>printProp</name></member>
+      <member refid="classcsl_1_1Abstract_1aaeab3809e91989adbdf29c3f56d905b6" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>refresh</name></member>
+      <member refid="classcsl_1_1Abstract_1a8aab87c41acafaf1b1837b922495560d" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>regularLiteral</name></member>
+      <member refid="classcsl_1_1Abstract_1a2fe749450d2e610199801b189dc3d0f8" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>regularLiteral</name></member>
+      <member refid="classcsl_1_1Abstract_1aba5ef083016b2f3d9e6271f864b9b063" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>regularName</name></member>
+      <member refid="classcsl_1_1Abstract_1a1a8421d402d5ba82257188b545e8d668" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>regularName</name></member>
+      <member refid="classcsl_1_1Abstract_1a0e778c682b6cb02642b90e8ec8765441" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>removeDependency</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a636313fd58465a56d3b41cb74f9ffaff" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>replaceIndex</name></member>
+      <member refid="classcsl_1_1Abstract_1a9372ddd521fa661c5d3371e0d8d4dfc3" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>replaceIndexInPlace</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a3db6d93888f6b8bb5719549e522a4afa" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>replaceIndices</name></member>
+      <member refid="classcsl_1_1Abstract_1af0d95f3edc0562b1d75d60b670119842" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>resetIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a5c796713828ebfb74a7d8787d7802a76" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>self</name></member>
+      <member refid="classcsl_1_1Abstract_1aa6a40ceb6eb1aa79711ca126d5bdda02" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setAllDependencies</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a6cf9bbbcd0b0b3f75121f1c0a5cf4d57" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a45c3adb7ba4e2b8442247246a3792b44" prot="public" virt="virtual" ambiguityscope="csl::Abstract::"><scope>csl::AbstractMultiFunc</scope><name>setArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a7bb29d316b8f64652cef472a6c23f001" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setCommutable</name></member>
+      <member refid="classcsl_1_1Abstract_1ae35385480a1be08f5e7433535b58ac0b" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setComplexProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1a37ebc247831d6629d44117a490fca120" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setConjugated</name></member>
+      <member refid="classcsl_1_1Abstract_1aa6a04bb56578e7da143b3cd8d8fb7b26" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setElementary</name></member>
+      <member refid="classcsl_1_1Abstract_1afa50c743b8e7e76e637e98f165ad4e5d" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setEmpty</name></member>
+      <member refid="classcsl_1_1Abstract_1ac318016372d14b795893fe7e59199084" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setFullyAntiSymmetric</name></member>
+      <member refid="classcsl_1_1Abstract_1a4f90ebb7cf7c26782bd36bc2a67fc5d4" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setFullySymmetric</name></member>
+      <member refid="classcsl_1_1Abstract_1a70f946f9c59df045ef7416320ade89c7" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a5ecdb6ce7a2d9643da2f6161a06dfbbf" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setInfBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1a867135c96776248add60018f4aa7a578" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setName</name></member>
+      <member refid="classcsl_1_1Abstract_1a70df7be4486affa8dc891e3f25bf499f" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setOperand</name></member>
+      <member refid="classcsl_1_1Abstract_1ae7b8a14fc746ed72e4d5abd63373c5ba" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setOperandPrivate</name></member>
+      <member refid="classcsl_1_1Abstract_1a3003698af4978e774eeb2e62038f7432" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setParent</name></member>
+      <member refid="classcsl_1_1Abstract_1a3c175411df619e7504feb6d888fc82f1" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setPoint</name></member>
+      <member refid="classcsl_1_1Abstract_1aad7104a5b8855272a92a47c58f29e958" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setSupBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1aaf7f0692cb84ca861a5b3b641bea518b" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setValue</name></member>
+      <member refid="classcsl_1_1Abstract_1aa49c51bd285830e724f103e9fb61c464" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setValue</name></member>
+      <member refid="classcsl_1_1Abstract_1aa47ddab3aa047e86be34c70358d53548" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setVariable</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a8e6df749f2e0afdbe8ae0993235dda54" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>setVectorArgument</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a773f619ff0c678e3d1e8e34559a00d50" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>size</name></member>
+      <member refid="classcsl_1_1Abstract_1a4eeedaeaa39e75facf1060dce7c57a8f" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>suppressExponent</name></member>
+      <member refid="classcsl_1_1Abstract_1a43520e1d6d5fdad9b50f77c6e027f928" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>suppressTerm</name></member>
+      <member refid="classcsl_1_1Abstract_1a4faf1ffd8cb3b6c721e128980c0303d8" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>symmetrise</name></member>
+      <member refid="classcsl_1_1Abstract_1a7b83c6a13716688f45b02e6291d39aba" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>tensordot</name></member>
+      <member refid="classcsl_1_1Abstract_1aee4fa41a5e014f067395467542ee8831" prot="public" virt="non-virtual"><scope>csl::AbstractMultiFunc</scope><name>testDummy</name></member>
+      <member refid="classcsl_1_1Abstract_1a9a86d21f5c5f65eb7e524a8f8002c0e7" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>trace</name></member>
+      <member refid="classcsl_1_1Abstract_1aacab43e551e9259a39a79378373ce49c" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>trace</name></member>
+      <member refid="classcsl_1_1Abstract_1a1e97712696e5c40b28bc1e35987fea94" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>transpose</name></member>
+      <member refid="classcsl_1_1Abstract_1a40bdc4c76fdbbf3cbac3af4dce8286ed" prot="public" virt="virtual"><scope>csl::AbstractMultiFunc</scope><name>~Abstract</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

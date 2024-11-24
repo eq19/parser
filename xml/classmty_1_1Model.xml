@@ -1,0 +1,1724 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1Model" kind="class" language="C++" prot="public">
+    <compoundname>mty::Model</compoundname>
+    <basecompoundref refid="classmty_1_1ModelBuilder" prot="public" virt="non-virtual">mty::ModelBuilder</basecompoundref>
+    <derivedcompoundref refid="classmty_1_1MSSM__Model" prot="public" virt="non-virtual">mty::MSSM_Model</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1PMSSM__LEM" prot="public" virt="non-virtual">mty::PMSSM_LEM</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1QCD__Model" prot="public" virt="non-virtual">mty::QCD_Model</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1QED__Model" prot="public" virt="non-virtual">mty::QED_Model</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1SM__Model" prot="public" virt="non-virtual">mty::SM_Model</derivedcompoundref>
+    <includes refid="model_8h" local="no">model.h</includes>
+    <innerclass refid="structmty_1_1Model_1_1KinematicLink" prot="protected">mty::Model::KinematicLink</innerclass>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmty_1_1Model_1ae58d346fff796aebb346ddf9b072b675" prot="public" static="yes" mutable="no">
+        <type><ref refid="classmty_1_1Model" kindref="compound">Model</ref> *</type>
+        <definition>Model* mty::Model::current</definition>
+        <argsstring></argsstring>
+        <name>current</name>
+        <qualifiedname>mty::Model::current</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="66" column="25" bodyfile="src/marty/core/model.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmty_1_1Model_1ae83580ebe5e9e7b86395b649564f7bab" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmty_1_1FeynmanRule" kindref="compound">mty::FeynmanRule</ref> &gt;</type>
+        <definition>std::vector&lt;mty::FeynmanRule&gt; mty::Model::feynmanRules</definition>
+        <argsstring></argsstring>
+        <name>feynmanRules</name>
+        <qualifiedname>mty::Model::feynmanRules</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="297" column="17" bodyfile="src/marty/core/model.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1Model_1acd681a1c3cd8e412856ae9dc947238ca" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>mty::Model::Model</definition>
+        <argsstring>(Args &amp;&amp;...args)</argsstring>
+        <name>Model</name>
+        <qualifiedname>mty::Model::Model</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="74" column="14" bodyfile="src/marty/core/model.h" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1afe489bc615b9c998b64e4ea012f726e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Model::~Model</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~Model</name>
+        <qualifiedname>mty::Model::~Model</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="79" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a205f52139367be2e377a22179d42e54a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Model::Model</definition>
+        <argsstring>(Model &amp;&amp;other)=delete</argsstring>
+        <name>Model</name>
+        <qualifiedname>mty::Model::Model</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Model" kindref="compound">Model</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="81" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1ac6be0d661339a6ae1a494e6fa5bece1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Model" kindref="compound">Model</ref> &amp;</type>
+        <definition>Model &amp; mty::Model::operator=</definition>
+        <argsstring>(Model &amp;&amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>mty::Model::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Model" kindref="compound">Model</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="82" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a561960933549ea76620e7f8541caa6fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Model::Model</definition>
+        <argsstring>(Model const &amp;other)=delete</argsstring>
+        <name>Model</name>
+        <qualifiedname>mty::Model::Model</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Model" kindref="compound">Model</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="83" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a86311122d3442760da90fdfe02d8984a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Model" kindref="compound">Model</ref> &amp;</type>
+        <definition>Model &amp; mty::Model::operator=</definition>
+        <argsstring>(Model const &amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>mty::Model::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Model" kindref="compound">Model</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="84" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a81572f775f04af4e847c1af9119a68c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t mty::Model::getFeynmanRulesNumber</definition>
+        <argsstring>() const</argsstring>
+        <name>getFeynmanRulesNumber</name>
+        <qualifiedname>mty::Model::getFeynmanRulesNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="90" column="12" bodyfile="src/marty/core/model.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a4d57d7fdbd5c9d115b0acdb5777ca5f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classmty_1_1FeynmanRule" kindref="compound">mty::FeynmanRule</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; mty::FeynmanRule &gt; const  &amp; mty::Model::getFeynmanRules</definition>
+        <argsstring>()</argsstring>
+        <name>getFeynmanRules</name>
+        <qualifiedname>mty::Model::getFeynmanRules</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="92" column="23" bodyfile="src/marty/core/model.cpp" bodystart="1115" bodyend="1120"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1ab072502a1373dea0fba26613aee202a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1FeynmanRule" kindref="compound">mty::FeynmanRule</ref> &amp;</type>
+        <definition>mty::FeynmanRule &amp; mty::Model::getFeynmanRule</definition>
+        <argsstring>(size_t pos)</argsstring>
+        <name>getFeynmanRule</name>
+        <qualifiedname>mty::Model::getFeynmanRule</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="94" column="28" bodyfile="src/marty/core/model.cpp" bodystart="48" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1aa1318c338d578b80bb8dc427eced1550" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1FeynmanRule" kindref="compound">mty::FeynmanRule</ref> const &amp;</type>
+        <definition>mty::FeynmanRule const  &amp; mty::Model::getFeynmanRule</definition>
+        <argsstring>(size_t pos) const</argsstring>
+        <name>getFeynmanRule</name>
+        <qualifiedname>mty::Model::getFeynmanRule</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="95" column="28" bodyfile="src/marty/core/model.cpp" bodystart="57" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a7d2c45c24cacfcbc9cd6d7eb21abc54f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Model::filterFeynmanRules</definition>
+        <argsstring>()</argsstring>
+        <name>filterFeynmanRules</name>
+        <qualifiedname>mty::Model::filterFeynmanRules</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="101" column="10" bodyfile="src/marty/core/model.cpp" bodystart="1070" bodyend="1093"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1aa531ff600454e928cf35f686af6ada04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Model::computeFeynmanRules</definition>
+        <argsstring>()</argsstring>
+        <name>computeFeynmanRules</name>
+        <qualifiedname>mty::Model::computeFeynmanRules</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="107" column="10" bodyfile="src/marty/core/model.cpp" bodystart="1095" bodyend="1113"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a0ba3ed3e848095ba16e775fba1a83cef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Amplitude" kindref="compound">mty::Amplitude</ref></type>
+        <definition>mty::Amplitude mty::Model::computeAmplitude</definition>
+        <argsstring>(int order, std::vector&lt; mty::Insertion &gt; insertions, FeynOptions &amp;options)</argsstring>
+        <name>computeAmplitude</name>
+        <qualifiedname>mty::Model::computeAmplitude</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref> &gt;</type>
+          <declname>insertions</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="109" column="20" bodyfile="src/marty/core/model.cpp" bodystart="103" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a422b4e047749c880898f79cd3fd55278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Amplitude" kindref="compound">mty::Amplitude</ref></type>
+        <definition>mty::Amplitude mty::Model::computeAmplitude</definition>
+        <argsstring>(int order, std::vector&lt; mty::Insertion &gt; insertions, Kinematics const &amp;kinematics, FeynOptions &amp;options)</argsstring>
+        <name>computeAmplitude</name>
+        <qualifiedname>mty::Model::computeAmplitude</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref> &gt;</type>
+          <declname>insertions</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> const &amp;</type>
+          <declname>kinematics</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="113" column="20" bodyfile="src/marty/core/model.cpp" bodystart="113" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a98029dc71ef1c1dd6d2674e568332601" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Amplitude" kindref="compound">mty::Amplitude</ref></type>
+        <definition>mty::Amplitude mty::Model::computeAmplitude</definition>
+        <argsstring>(int order, std::vector&lt; mty::Insertion &gt; insertions)</argsstring>
+        <name>computeAmplitude</name>
+        <qualifiedname>mty::Model::computeAmplitude</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref> &gt;</type>
+          <declname>insertions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="118" column="20" bodyfile="src/marty/core/model.cpp" bodystart="88" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a300cf1418182c48db1bef365648c7e28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Amplitude" kindref="compound">mty::Amplitude</ref></type>
+        <definition>mty::Amplitude mty::Model::computeAmplitude</definition>
+        <argsstring>(int order, std::vector&lt; mty::Insertion &gt; insertions, Kinematics const &amp;kinematics)</argsstring>
+        <name>computeAmplitude</name>
+        <qualifiedname>mty::Model::computeAmplitude</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref> &gt;</type>
+          <declname>insertions</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> const &amp;</type>
+          <declname>kinematics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="121" column="20" bodyfile="src/marty/core/model.cpp" bodystart="95" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a19b048dc21b8f370718ee25676d42ae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Amplitude" kindref="compound">mty::Amplitude</ref></type>
+        <definition>mty::Amplitude mty::Model::computePartialAmplitude</definition>
+        <argsstring>(int order, std::vector&lt; mty::Insertion &gt; insertions, FeynOptions options={})</argsstring>
+        <name>computePartialAmplitude</name>
+        <qualifiedname>mty::Model::computePartialAmplitude</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref> &gt;</type>
+          <declname>insertions</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref></type>
+          <declname>options</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="126" column="5" bodyfile="src/marty/core/model.cpp" bodystart="185" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1aa4a4a7b79c55f77d62c0efce60120b0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Amplitude" kindref="compound">mty::Amplitude</ref></type>
+        <definition>mty::Amplitude mty::Model::computePartialAmplitude</definition>
+        <argsstring>(int order, std::vector&lt; mty::Insertion &gt; insertions, Kinematics const &amp;kinematics, FeynOptions options={})</argsstring>
+        <name>computePartialAmplitude</name>
+        <qualifiedname>mty::Model::computePartialAmplitude</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref> &gt;</type>
+          <declname>insertions</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> const &amp;</type>
+          <declname>kinematics</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref></type>
+          <declname>options</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="131" column="5" bodyfile="src/marty/core/model.cpp" bodystart="193" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a50d793bf1d0189626ed4aa932868bf8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Amplitude" kindref="compound">mty::Amplitude</ref></type>
+        <definition>mty::Amplitude mty::Model::computeAmplitude</definition>
+        <argsstring>(std::vector&lt; Lagrangian::TermType &gt; &amp;lagrangian, std::vector&lt; Insertion &gt; insertions, Kinematics const &amp;kinematics, FeynOptions options, std::vector&lt; FeynmanRule const * &gt; rules={})</argsstring>
+        <name>computeAmplitude</name>
+        <qualifiedname>mty::Model::computeAmplitude</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">Lagrangian::TermType</ref> &gt; &amp;</type>
+          <declname>lagrangian</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">Insertion</ref> &gt;</type>
+          <declname>insertions</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> const &amp;</type>
+          <declname>kinematics</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref></type>
+          <declname>options</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1FeynmanRule" kindref="compound">FeynmanRule</ref> const * &gt;</type>
+          <declname>rules</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Main method for the calculation of amplitude. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This overload is the only one performing the calculation, all the other overloads are simply redirections to simplify the interface, setting default parameters etc.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lagrangian</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set of interaction terms to use in the calculation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>insertions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>External fields. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fermionOrder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Order for external fermions in the resulting amplitude. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>kinematics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> of the process, (squared) momenta etc. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Options for the calculation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set of feynman rules if the calculation must be done using rules, otherwise empty vector.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the amplitude calculation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="155" column="5" bodyfile="src/marty/core/model.cpp" bodystart="139" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1adb572f1a1477d60c2d94da86edc0163f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Amplitude" kindref="compound">mty::Amplitude</ref></type>
+        <definition>mty::Amplitude mty::Model::computeAmplitude</definition>
+        <argsstring>(std::vector&lt; FeynmanRule const * &gt; &amp;feynRules, std::vector&lt; Insertion &gt; const &amp;insertions, Kinematics const &amp;kinematics, FeynOptions const &amp;options)</argsstring>
+        <name>computeAmplitude</name>
+        <qualifiedname>mty::Model::computeAmplitude</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1FeynmanRule" kindref="compound">FeynmanRule</ref> const * &gt; &amp;</type>
+          <declname>feynRules</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">Insertion</ref> &gt; const &amp;</type>
+          <declname>insertions</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> const &amp;</type>
+          <declname>kinematics</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref> const &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="162" column="5" bodyfile="src/marty/core/model.cpp" bodystart="171" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1ab32f0ac80caa7df32835a98778778fbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Model::computeSquaredAmplitude</definition>
+        <argsstring>(Amplitude const &amp;ampl, bool applyDegreesOfFreedomFactor=true)</argsstring>
+        <name>computeSquaredAmplitude</name>
+        <qualifiedname>mty::Model::computeSquaredAmplitude</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Amplitude" kindref="compound">Amplitude</ref> const &amp;</type>
+          <declname>ampl</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>applyDegreesOfFreedomFactor</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="167" column="15" bodyfile="src/marty/core/model.cpp" bodystart="202" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1ab337cabc6b65502a1a1b92d8a4266b60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Model::computeSquaredAmplitude</definition>
+        <argsstring>(WilsonSet const &amp;ampl, bool applyDegreesOfFreedomFactor=true)</argsstring>
+        <name>computeSquaredAmplitude</name>
+        <qualifiedname>mty::Model::computeSquaredAmplitude</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1WilsonSet" kindref="compound">WilsonSet</ref> const &amp;</type>
+          <declname>ampl</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>applyDegreesOfFreedomFactor</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="170" column="15" bodyfile="src/marty/core/model.cpp" bodystart="252" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a3ad835ff3db16aa5db37d7d7ecd2ebda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Model::computeSquaredAmplitude</definition>
+        <argsstring>(Amplitude const &amp;amplL, Amplitude const &amp;amplR, bool applyDegreesOfFreedomFactor=true)</argsstring>
+        <name>computeSquaredAmplitude</name>
+        <qualifiedname>mty::Model::computeSquaredAmplitude</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Amplitude" kindref="compound">Amplitude</ref> const &amp;</type>
+          <declname>amplL</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Amplitude" kindref="compound">Amplitude</ref> const &amp;</type>
+          <declname>amplR</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>applyDegreesOfFreedomFactor</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="173" column="15" bodyfile="src/marty/core/model.cpp" bodystart="208" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a5792c48a1c72009531667cb2b5fe1328" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Model::computeSquaredAmplitude</definition>
+        <argsstring>(WilsonSet const &amp;amplL, WilsonSet const &amp;amplR, bool applyDegreesOfFreedomFactor=true)</argsstring>
+        <name>computeSquaredAmplitude</name>
+        <qualifiedname>mty::Model::computeSquaredAmplitude</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1WilsonSet" kindref="compound">WilsonSet</ref> const &amp;</type>
+          <declname>amplL</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1WilsonSet" kindref="compound">WilsonSet</ref> const &amp;</type>
+          <declname>amplR</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>applyDegreesOfFreedomFactor</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="177" column="15" bodyfile="src/marty/core/model.cpp" bodystart="258" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1aaf53377f344c4c5682888621ad5b1743" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Model::squaredAmplitudeToPartialWidth</definition>
+        <argsstring>(csl::Expr const &amp;squaredAmplitude, std::vector&lt; Insertion &gt; const &amp;insertions, mty::Amplitude const &amp;initialAmplitude, bool applyMassCondition=true)</argsstring>
+        <name>squaredAmplitudeToPartialWidth</name>
+        <qualifiedname>mty::Model::squaredAmplitudeToPartialWidth</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>squaredAmplitude</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">Insertion</ref> &gt; const &amp;</type>
+          <declname>insertions</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Amplitude" kindref="compound">mty::Amplitude</ref> const &amp;</type>
+          <declname>initialAmplitude</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>applyMassCondition</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="182" column="5" bodyfile="src/marty/core/model.cpp" bodystart="355" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a426c615e7665921da5015888f7660c54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Model::computeWidth</definition>
+        <argsstring>(int orderLeft, int orderRight, mty::Insertion const &amp;particle, mty::FeynOptions options={})</argsstring>
+        <name>computeWidth</name>
+        <qualifiedname>mty::Model::computeWidth</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>orderLeft</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>orderRight</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref> const &amp;</type>
+          <declname>particle</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">mty::FeynOptions</ref></type>
+          <declname>options</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="187" column="15" bodyfile="src/marty/core/model.cpp" bodystart="392" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1af63c6eb63d42aa488a094303f09220b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Model::computeWidth</definition>
+        <argsstring>(int order, mty::Insertion const &amp;particle, mty::FeynOptions options={})</argsstring>
+        <name>computeWidth</name>
+        <qualifiedname>mty::Model::computeWidth</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref> const &amp;</type>
+          <declname>particle</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">mty::FeynOptions</ref></type>
+          <declname>options</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="192" column="15" bodyfile="src/marty/core/model.cpp" bodystart="445" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a5c4a8c8111817a18bf9bb5e026ba540a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Model::computeModelWidths</definition>
+        <argsstring>(int orderLeft, int orderRight, std::vector&lt; mty::Insertion &gt; const &amp;particles, mty::FeynOptions options={})</argsstring>
+        <name>computeModelWidths</name>
+        <qualifiedname>mty::Model::computeModelWidths</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>orderLeft</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>orderRight</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref> &gt; const &amp;</type>
+          <declname>particles</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">mty::FeynOptions</ref></type>
+          <declname>options</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="196" column="10" bodyfile="src/marty/core/model.cpp" bodystart="452" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a699cf5cdb0a189567d8e38619e363612" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Model::computeModelWidths</definition>
+        <argsstring>(int orderLeft, int orderRight, mty::FeynOptions options={})</argsstring>
+        <name>computeModelWidths</name>
+        <qualifiedname>mty::Model::computeModelWidths</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>orderLeft</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>orderRight</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">mty::FeynOptions</ref></type>
+          <declname>options</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="201" column="10" bodyfile="src/marty/core/model.cpp" bodystart="468" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a790a9a3538b2d5c31c5cb58d1d54e531" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Model::computeModelWidths</definition>
+        <argsstring>(int order, std::vector&lt; mty::Insertion &gt; const &amp;particles, mty::FeynOptions options={})</argsstring>
+        <name>computeModelWidths</name>
+        <qualifiedname>mty::Model::computeModelWidths</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref> &gt; const &amp;</type>
+          <declname>particles</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">mty::FeynOptions</ref></type>
+          <declname>options</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="205" column="10" bodyfile="src/marty/core/model.cpp" bodystart="483" bodyend="488"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a6becc26a8980043fb268b434aeece725" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Model::computeModelWidths</definition>
+        <argsstring>(int order, mty::FeynOptions options={})</argsstring>
+        <name>computeModelWidths</name>
+        <qualifiedname>mty::Model::computeModelWidths</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">mty::FeynOptions</ref></type>
+          <declname>options</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="209" column="10" bodyfile="src/marty/core/model.cpp" bodystart="490" bodyend="493"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a31f46836022c5060823aeef55daa89e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1WilsonSet" kindref="compound">WilsonSet</ref></type>
+        <definition>WilsonSet mty::Model::getWilsonCoefficients</definition>
+        <argsstring>(Amplitude const &amp;ampl, FeynOptions const &amp;feynOptions, DecompositionMode mode=DecompositionMode::Matching)</argsstring>
+        <name>getWilsonCoefficients</name>
+        <qualifiedname>mty::Model::getWilsonCoefficients</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Amplitude" kindref="compound">Amplitude</ref> const &amp;</type>
+          <declname>ampl</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref> const &amp;</type>
+          <declname>feynOptions</declname>
+        </param>
+        <param>
+          <type>DecompositionMode</type>
+          <declname>mode</declname>
+          <defval>DecompositionMode::Matching</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="211" column="15" bodyfile="src/marty/core/model.cpp" bodystart="558" bodyend="641"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a9c7b384737c177390ce07cb99c862d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1WilsonSet" kindref="compound">WilsonSet</ref></type>
+        <definition>WilsonSet mty::Model::getWilsonCoefficients</definition>
+        <argsstring>(Amplitude const &amp;ampl, DecompositionMode mode=DecompositionMode::Matching)</argsstring>
+        <name>getWilsonCoefficients</name>
+        <qualifiedname>mty::Model::getWilsonCoefficients</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Amplitude" kindref="compound">Amplitude</ref> const &amp;</type>
+          <declname>ampl</declname>
+        </param>
+        <param>
+          <type>DecompositionMode</type>
+          <declname>mode</declname>
+          <defval>DecompositionMode::Matching</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="216" column="15" bodyfile="src/marty/core/model.cpp" bodystart="515" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a4e7acbea9efd978273958055210af145" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1WilsonSet" kindref="compound">WilsonSet</ref></type>
+        <definition>WilsonSet mty::Model::computeWilsonCoefficients</definition>
+        <argsstring>(int order, std::vector&lt; Insertion &gt; const &amp;insertions, FeynOptions feynOptions={}, bool disableFermionOrdering=false)</argsstring>
+        <name>computeWilsonCoefficients</name>
+        <qualifiedname>mty::Model::computeWilsonCoefficients</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">Insertion</ref> &gt; const &amp;</type>
+          <declname>insertions</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref></type>
+          <declname>feynOptions</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>disableFermionOrdering</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="221" column="5" bodyfile="src/marty/core/model.cpp" bodystart="644" bodyend="686"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a2bd8d0b774f0516f9cf94fcb92c0614b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1WilsonSet" kindref="compound">WilsonSet</ref></type>
+        <definition>WilsonSet mty::Model::computeWilsonCoefficients_default</definition>
+        <argsstring>(int order, std::vector&lt; Insertion &gt; const &amp;insertions, FeynOptions const &amp;feynOptions={})</argsstring>
+        <name>computeWilsonCoefficients_default</name>
+        <qualifiedname>mty::Model::computeWilsonCoefficients_default</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">Insertion</ref> &gt; const &amp;</type>
+          <declname>insertions</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref> const &amp;</type>
+          <declname>feynOptions</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="227" column="5" bodyfile="src/marty/core/model.cpp" bodystart="688" bodyend="697"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a914e3cc4d8e68f3241a39d58c3c5bca2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1WilsonSet" kindref="compound">WilsonSet</ref></type>
+        <definition>WilsonSet mty::Model::computeWilsonCoefficients_2Fermions_1Vector</definition>
+        <argsstring>(std::vector&lt; Insertion &gt; const &amp;insertions, FeynOptions const &amp;feynOptions={})</argsstring>
+        <name>computeWilsonCoefficients_2Fermions_1Vector</name>
+        <qualifiedname>mty::Model::computeWilsonCoefficients_2Fermions_1Vector</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">Insertion</ref> &gt; const &amp;</type>
+          <declname>insertions</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref> const &amp;</type>
+          <declname>feynOptions</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="231" column="15" bodyfile="src/marty/core/model.cpp" bodystart="699" bodyend="703"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a16953891d279262767478af9350f434a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1WilsonSet" kindref="compound">WilsonSet</ref></type>
+        <definition>WilsonSet mty::Model::computeWilsonBoxes_4Fermions</definition>
+        <argsstring>(Kinematics const &amp;kinematics, FeynOptions feynOptions={})</argsstring>
+        <name>computeWilsonBoxes_4Fermions</name>
+        <qualifiedname>mty::Model::computeWilsonBoxes_4Fermions</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> const &amp;</type>
+          <declname>kinematics</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref></type>
+          <declname>feynOptions</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="235" column="15" bodyfile="src/marty/core/model.cpp" bodystart="705" bodyend="716"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a22342484ee32ece39386e2ebdccf24d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1WilsonSet" kindref="compound">WilsonSet</ref></type>
+        <definition>WilsonSet mty::Model::computeSingleWilsonPenguin_4Fermions</definition>
+        <argsstring>(Kinematics const &amp;kinematics, std::pair&lt; size_t, size_t &gt; const &amp;treeCoupling, std::pair&lt; size_t, size_t &gt; const &amp;loopCoupling, Insertion const &amp;mediator, FeynOptions feynOptions={})</argsstring>
+        <name>computeSingleWilsonPenguin_4Fermions</name>
+        <qualifiedname>mty::Model::computeSingleWilsonPenguin_4Fermions</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> const &amp;</type>
+          <declname>kinematics</declname>
+        </param>
+        <param>
+          <type>std::pair&lt; size_t, size_t &gt; const &amp;</type>
+          <declname>treeCoupling</declname>
+        </param>
+        <param>
+          <type>std::pair&lt; size_t, size_t &gt; const &amp;</type>
+          <declname>loopCoupling</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Insertion" kindref="compound">Insertion</ref> const &amp;</type>
+          <declname>mediator</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref></type>
+          <declname>feynOptions</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="238" column="15" bodyfile="src/marty/core/model.cpp" bodystart="739" bodyend="802"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1aabe352c6c1105912624bc8fd212d09c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1WilsonSet" kindref="compound">WilsonSet</ref></type>
+        <definition>WilsonSet mty::Model::computeWilsonPenguins_4Fermions</definition>
+        <argsstring>(Kinematics const &amp;kinematics, FeynOptions feynOptions={})</argsstring>
+        <name>computeWilsonPenguins_4Fermions</name>
+        <qualifiedname>mty::Model::computeWilsonPenguins_4Fermions</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> const &amp;</type>
+          <declname>kinematics</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref></type>
+          <declname>feynOptions</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="245" column="15" bodyfile="src/marty/core/model.cpp" bodystart="804" bodyend="855"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a29c03288619a20fe90cb40d4699bb90a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1WilsonSet" kindref="compound">WilsonSet</ref></type>
+        <definition>WilsonSet mty::Model::computeWilsonCoefficients_4Fermions</definition>
+        <argsstring>(std::vector&lt; Insertion &gt; insertions, FeynOptions feynOptions={})</argsstring>
+        <name>computeWilsonCoefficients_4Fermions</name>
+        <qualifiedname>mty::Model::computeWilsonCoefficients_4Fermions</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">Insertion</ref> &gt;</type>
+          <declname>insertions</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref></type>
+          <declname>feynOptions</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="249" column="5" bodyfile="src/marty/core/model.cpp" bodystart="858" bodyend="892"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1abbadd4c5e66efe9f5f5770949543f9bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Amplitude" kindref="compound">Amplitude</ref></type>
+        <definition>Amplitude mty::Model::connectAmplitudes</definition>
+        <argsstring>(Amplitude const &amp;M1, Amplitude const &amp;M2, FeynOptions const &amp;options={})</argsstring>
+        <name>connectAmplitudes</name>
+        <qualifiedname>mty::Model::connectAmplitudes</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Amplitude" kindref="compound">Amplitude</ref> const &amp;</type>
+          <declname>M1</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Amplitude" kindref="compound">Amplitude</ref> const &amp;</type>
+          <declname>M2</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref> const &amp;</type>
+          <declname>options</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="252" column="15" bodyfile="src/marty/core/model.cpp" bodystart="1044" bodyend="1068"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmty_1_1Model_1a611f7eb6ba8a6b1c19297356d34ae8d0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Model::projectOnBasis</definition>
+        <argsstring>(csl::Expr &amp;expr, OperatorBasis basis)</argsstring>
+        <name>projectOnBasis</name>
+        <qualifiedname>mty::Model::projectOnBasis</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacemty_1a3b8d44bbd788deaabcd8a279d26a9c84" kindref="member">OperatorBasis</ref></type>
+          <declname>basis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="256" column="17" bodyfile="src/marty/core/model.cpp" bodystart="495" bodyend="513"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmty_1_1Model_1a3cdfff3309fa62bfb1910c0ddf686f61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, Model const &amp;obj)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::Model::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Model" kindref="compound">Model</ref> const &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="258" column="12" bodyfile="src/marty/core/model.cpp" bodystart="1122" bodyend="1125"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmty_1_1Model_1a61280f0fc498e9f786f5e894b476473e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> &gt;</type>
+        <definition>std::vector&lt; mty::QuantumField &gt; mty::Model::recoverQuantumInsertions</definition>
+        <argsstring>(std::vector&lt; csl::Expr &gt; const &amp;insertions)</argsstring>
+        <name>recoverQuantumInsertions</name>
+        <qualifiedname>mty::Model::recoverQuantumInsertions</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+          <declname>insertions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="262" column="5" bodyfile="src/marty/core/model.cpp" bodystart="67" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1ab84c13ed9b364948742a1f50155de656" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1Model_1_1KinematicLink" kindref="compound">KinematicLink</ref></type>
+        <definition>Model::KinematicLink mty::Model::connectKinematics</definition>
+        <argsstring>(Amplitude &amp;M1, Amplitude &amp;M2) const</argsstring>
+        <name>connectKinematics</name>
+        <qualifiedname>mty::Model::connectKinematics</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Amplitude" kindref="compound">Amplitude</ref> &amp;</type>
+          <declname>M1</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Amplitude" kindref="compound">Amplitude</ref> &amp;</type>
+          <declname>M2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="280" column="19" bodyfile="src/marty/core/model.cpp" bodystart="941" bodyend="984"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a2ecb4ad3fdda06ee97dfc1c3dedd89af" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref>, <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>std::pair&lt; csl::Expr, csl::Expr &gt; mty::Model::getMomentumReplacement</definition>
+        <argsstring>(Amplitude const &amp;M, size_t replacedMomentum) const</argsstring>
+        <name>getMomentumReplacement</name>
+        <qualifiedname>mty::Model::getMomentumReplacement</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Amplitude" kindref="compound">Amplitude</ref> const &amp;</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>replacedMomentum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="283" column="5" bodyfile="src/marty/core/model.cpp" bodystart="906" bodyend="917"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a60af411ec83ab79c5cc16696f1c02310" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Model::replaceMomentumForLink</definition>
+        <argsstring>(Amplitude &amp;M, std::pair&lt; csl::Expr, csl::Expr &gt; const &amp;pReplacement) const</argsstring>
+        <name>replaceMomentumForLink</name>
+        <qualifiedname>mty::Model::replaceMomentumForLink</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Amplitude" kindref="compound">Amplitude</ref> &amp;</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type>std::pair&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref>, <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+          <declname>pReplacement</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="285" column="10" bodyfile="src/marty/core/model.cpp" bodystart="919" bodyend="926"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1ae4fec8f3aa3bb71a1d8657f42bb8ccf5" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::Model::mediatorToPropagator</definition>
+        <argsstring>(csl::Expr &amp;prod, KinematicLink const &amp;link) const</argsstring>
+        <name>mediatorToPropagator</name>
+        <qualifiedname>mty::Model::mediatorToPropagator</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>prod</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1Model_1_1KinematicLink" kindref="compound">KinematicLink</ref> const &amp;</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="289" column="10" bodyfile="src/marty/core/model.cpp" bodystart="986" bodyend="1017"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Model_1a0f32901201da3db0ac4e3483fe11924b" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Model::connectMediator</definition>
+        <argsstring>(csl::Expr const &amp;M1, csl::Expr const &amp;M2, KinematicLink const &amp;link) const</argsstring>
+        <name>connectMediator</name>
+        <qualifiedname>mty::Model::connectMediator</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>M1</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>M2</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1Model_1_1KinematicLink" kindref="compound">KinematicLink</ref> const &amp;</type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/model.h" line="292" column="15" bodyfile="src/marty/core/model.cpp" bodystart="1019" bodyend="1042"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Contains all objects in the theory. In particular <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> objects, <ref refid="classmty_1_1Gauge" kindref="compound">Gauge</ref>, <ref refid="classmty_1_1Flavor" kindref="compound">Flavor</ref>, <ref refid="classmty_1_1Particle" kindref="compound">Particle</ref>... </para>
+    </briefdescription>
+    <detaileddescription>
+<para>All utilities for model building / computations are present in this class. For the user, the most important functions are reimplemented in a class-independent manner in the file hepInterface.h. For the more advanced user that wants to handle specific types of objects, methods of this class provide more features than the interface. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="13">
+        <label>mty::GTHDM_Model</label>
+        <link refid="classmty_1_1GTHDM__Model"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mty::MSSM_HEM</label>
+        <link refid="classmty_1_1MSSM__HEM"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mty::MSSM_Model</label>
+        <link refid="classmty_1_1MSSM__Model"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::Model</label>
+        <link refid="classmty_1_1Model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mty::ModelBuilder</label>
+        <link refid="classmty_1_1ModelBuilder"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mty::ModelData</label>
+        <link refid="classmty_1_1ModelData"/>
+      </node>
+      <node id="7">
+        <label>mty::NMFV_Model</label>
+        <link refid="classmty_1_1NMFV__Model"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mty::PMSSM_LEM</label>
+        <link refid="classmty_1_1PMSSM__LEM"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mty::PMSSM_Model</label>
+        <link refid="classmty_1_1PMSSM__Model"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mty::QCD_Model</label>
+        <link refid="classmty_1_1QCD__Model"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mty::QED_Model</label>
+        <link refid="classmty_1_1QED__Model"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mty::SM_Model</label>
+        <link refid="classmty_1_1SM__Model"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>mty::THDM_Model&lt; type &gt;</label>
+        <link refid="classmty_1_1THDM__Model"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mty::THDM_Model&lt; GTHDM_type &gt;</label>
+        <link refid="classmty_1_1THDM__Model"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>csl::Space</label>
+        <link refid="classcsl_1_1Space"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>symbolicDim</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>delta</edgelabel>
+          <edgelabel>epsilon</edgelabel>
+          <edgelabel>inverseMetric</edgelabel>
+          <edgelabel>metric</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mty::Lagrangian</label>
+        <link refid="classmty_1_1Lagrangian"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>expression</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::Model</label>
+        <link refid="classmty_1_1Model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>current</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mty::ModelBuilder</label>
+        <link refid="classmty_1_1ModelBuilder"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mty::ModelData</label>
+        <link refid="classmty_1_1ModelData"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>defaultSpaceTime</edgelabel>
+          <edgelabel>spaceTime</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>L</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="6">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/model.h" line="63" column="1" bodyfile="src/marty/core/model.h" bodystart="63" bodyend="298"/>
+    <listofallmembers>
+      <member refid="classmty_1_1ModelBuilder_1a32dad3e5c4aff4611d57224f7a42efb0" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>abbreviateBigTerms</name></member>
+      <member refid="classmty_1_1ModelBuilder_1afa513279a9bfa0259fe0953769548a14" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>abbreviatedMassExpressions</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a97389c1d8a9cdf7d3e19dd70bb69a5db" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>abbreviateMassExpression</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a55d95af874a8f056c5ad94fa6cc35a41" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>abbreviateMassExpression</name></member>
+      <member refid="classmty_1_1ModelData_1a735b8c0ec06556dd29c4abf8e102a70e" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addBosonicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a3ded6dacae99d84a34bfa675743eacc9" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addBosonicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a37a73e7e437eae6e2fdc55cd9d7c8c9c" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a829014d5ceaa41972d7bafab5e15cf8a" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a00436871b30b35a347b906146d0d56a5" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a8a51a6ff2ec61d7f4bb454e253efec91" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a141ece1d3efee1b0e0a6e3b6bb613279" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addFlavorGroup</name></member>
+      <member refid="classmty_1_1ModelData_1aba0eb189ccb3a5d1e8b52ab51eaa86b2" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addFlavorGroup</name></member>
+      <member refid="classmty_1_1ModelData_1abd1763e959fc47c68d16234d42df78b0" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addGaugedGroup</name></member>
+      <member refid="classmty_1_1ModelData_1a55ca20dc39d8c7d58b8f78f45a450f33" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addGaugedGroup</name></member>
+      <member refid="classmty_1_1ModelData_1a00255feda9a2bc8ca1dcfd0cb17d474d" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addLagrangianTerm</name></member>
+      <member refid="classmty_1_1ModelData_1aea3dc9a2676c954f2403a278c2e41c8e" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addLagrangianTerm</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a960fbcc534233c42f5ec5a3fb0503249" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addMassAbbreviations</name></member>
+      <member refid="classmty_1_1ModelData_1a6fcec3f2efbbcb928b1addbed29ac953" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addParticle</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ae9022afeac57e3911b5d083a4c9c1ddc" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addParticleFamily</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a2beed8accc771f4a8813449c06a8bc07" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addParticleFamily</name></member>
+      <member refid="classmty_1_1ModelData_1a3ff5a51fa0a90f6d1d51c7ca7089afc6" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addParticles</name></member>
+      <member refid="classmty_1_1ModelData_1a560fd95f2a6a26c293c655c68431a71a" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addParticlesIn</name></member>
+      <member refid="classmty_1_1ModelData_1a8a951521cc75c351857c829883250432" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addScalarCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a3ff29e11d312b7c37c66666fb457ce76" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addScalarCoupling</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ad1a6e9459410e1c1c4bfd6497b4f0c12" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addSpectrum</name></member>
+      <member refid="classmty_1_1ModelData_1a94acca3e80227a8c25c325005777de5e" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>addTensorCoupling</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aa0ea7460def6380631679d00260cd132" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>applyDiagonalizationData</name></member>
+      <member refid="classmty_1_1ModelBuilder_1abccd47d222d9d898778e08fb953883ac" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>applyDiagonalizationData</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ab3d8001271d5b120ca2dfd89473186ba" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>applyDiagonalizationData</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a83b569445171eee2a7478f25ca1bc368" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>applyDiagonalizationData</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a318ac8bc7ab4bbec411b4a628dca7cb1" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>applyDiagonalizationData</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a2949b5f1f27d4abb9a614157a1365df0" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>applyDiracFermionEmbedding</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aee08724e1cd16ab4cab0d92775c9cd67" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>applyRotation</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac0d8b51a180e2df99ca90981dda413b5" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>applyRotation</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a4f2b8f2e3d9b0c31a06495c59f84e369" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>applyUnitaryCondition</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a9a209f0a1747445b1d61b4f6cd04c692" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>bidiagonalizeWithSpectrum</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a3debb98a3d0abe77285ada708f8c6644" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>birotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a9bb9403ad33539c80822df1170b078f8" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>birotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1af3233f5560ebfdbca4595d34c6cf9f32" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>birotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a65f8be8a9578b81a92f983770bcf3ffe" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>breakFlavorSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a3e53c4c43a390d601fd0a4737da5df09" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>breakFlavorSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1afca18a60b90fbc550632f8ec7496eb73" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>breakFlavorSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a2bff2d21abcf757f2895d29d8a8d38e6" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>breakFlavorSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aeb34f05e805149485249ab0711b34199" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>breakGaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a9d6565abaabd700c8204a6db8130f649" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>breakGaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a9de439011cb5788a7a1ca62f06160bb0" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>breakGaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aee384ed95cfbf209c4b1fd11d05e0a3c" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>breakGaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a37110b53ea8df12798f16e7e0f8bbceb" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>breakGaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a89865370c85b23d21b94aed2a4c35d82" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>breakGaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a386c9ee340178687aa411ee97da112d0" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>breakLagrangian</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ab37a715fb4c4f0b941457c5a60f0c688" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>breakLagrangian</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a18a82e5e66f04c8df2c9d8524971df66" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>breakU1GaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelData_1a0c48e931cd6b5d81377447f2c00aa50f" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>checkHermiticity</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a9d7164b35480562cbd5ba0685ba726b5" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>checksRotation</name></member>
+      <member refid="classmty_1_1ModelData_1ae32c0ea9f667dd69f4495a99ea12f8f8" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>checkValidity</name></member>
+      <member refid="classmty_1_1ModelData_1a688fc6395c0f782390bb69392accd0a0" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>checkValidity</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ad5670565c79dfbd865dff45b9b3126df" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>clearDependencies</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a813c69df706660ec8701212c8f395da2" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>clearDependencies</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a6253b33530eda9007aee8ba0783f7d42" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>clearProjectorsInMass</name></member>
+      <member refid="classmty_1_1Model_1a0ba3ed3e848095ba16e775fba1a83cef" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeAmplitude</name></member>
+      <member refid="classmty_1_1Model_1a422b4e047749c880898f79cd3fd55278" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeAmplitude</name></member>
+      <member refid="classmty_1_1Model_1a98029dc71ef1c1dd6d2674e568332601" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeAmplitude</name></member>
+      <member refid="classmty_1_1Model_1a300cf1418182c48db1bef365648c7e28" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeAmplitude</name></member>
+      <member refid="classmty_1_1Model_1a50d793bf1d0189626ed4aa932868bf8d" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeAmplitude</name></member>
+      <member refid="classmty_1_1Model_1adb572f1a1477d60c2d94da86edc0163f" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeAmplitude</name></member>
+      <member refid="classmty_1_1Model_1aa531ff600454e928cf35f686af6ada04" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeFeynmanRules</name></member>
+      <member refid="classmty_1_1Model_1a5c4a8c8111817a18bf9bb5e026ba540a" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeModelWidths</name></member>
+      <member refid="classmty_1_1Model_1a699cf5cdb0a189567d8e38619e363612" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeModelWidths</name></member>
+      <member refid="classmty_1_1Model_1a790a9a3538b2d5c31c5cb58d1d54e531" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeModelWidths</name></member>
+      <member refid="classmty_1_1Model_1a6becc26a8980043fb268b434aeece725" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeModelWidths</name></member>
+      <member refid="classmty_1_1Model_1a19b048dc21b8f370718ee25676d42ae6" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computePartialAmplitude</name></member>
+      <member refid="classmty_1_1Model_1aa4a4a7b79c55f77d62c0efce60120b0b" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computePartialAmplitude</name></member>
+      <member refid="classmty_1_1Model_1a22342484ee32ece39386e2ebdccf24d5" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeSingleWilsonPenguin_4Fermions</name></member>
+      <member refid="classmty_1_1Model_1ab32f0ac80caa7df32835a98778778fbf" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeSquaredAmplitude</name></member>
+      <member refid="classmty_1_1Model_1ab337cabc6b65502a1a1b92d8a4266b60" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeSquaredAmplitude</name></member>
+      <member refid="classmty_1_1Model_1a3ad835ff3db16aa5db37d7d7ecd2ebda" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeSquaredAmplitude</name></member>
+      <member refid="classmty_1_1Model_1a5792c48a1c72009531667cb2b5fe1328" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeSquaredAmplitude</name></member>
+      <member refid="classmty_1_1Model_1a426c615e7665921da5015888f7660c54" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeWidth</name></member>
+      <member refid="classmty_1_1Model_1af63c6eb63d42aa488a094303f09220b7" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeWidth</name></member>
+      <member refid="classmty_1_1Model_1a16953891d279262767478af9350f434a" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeWilsonBoxes_4Fermions</name></member>
+      <member refid="classmty_1_1Model_1a4e7acbea9efd978273958055210af145" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeWilsonCoefficients</name></member>
+      <member refid="classmty_1_1Model_1a914e3cc4d8e68f3241a39d58c3c5bca2" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeWilsonCoefficients_2Fermions_1Vector</name></member>
+      <member refid="classmty_1_1Model_1a29c03288619a20fe90cb40d4699bb90a" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeWilsonCoefficients_4Fermions</name></member>
+      <member refid="classmty_1_1Model_1a2bd8d0b774f0516f9cf94fcb92c0614b" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeWilsonCoefficients_default</name></member>
+      <member refid="classmty_1_1Model_1aabe352c6c1105912624bc8fd212d09c5" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>computeWilsonPenguins_4Fermions</name></member>
+      <member refid="classmty_1_1Model_1abbadd4c5e66efe9f5f5770949543f9bb" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>connectAmplitudes</name></member>
+      <member refid="classmty_1_1Model_1ab84c13ed9b364948742a1f50155de656" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>connectKinematics</name></member>
+      <member refid="classmty_1_1Model_1a0f32901201da3db0ac4e3483fe11924b" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>connectMediator</name></member>
+      <member refid="classmty_1_1Model_1ae58d346fff796aebb346ddf9b072b675" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>current</name></member>
+      <member refid="classmty_1_1ModelData_1a0c2b848cb5334d752fb94cf36f775037" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>defaultSpaceTime</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a26cab7d4dca673c724e9956f5f01007c" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>diagonalizeExplicitely</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aa3aad1e98867fc8a270e2b0328172eb6" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>diagonalizeMassMatrices</name></member>
+      <member refid="classmty_1_1ModelBuilder_1adb85d7023caebe1ce56962f444f151fe" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>diagonalizeSymbolically</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ad87f0f9a0ff6445577364ea59a4259f9" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>diagonalizeWithSpectrum</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a5f19f46a7cb0f76baa66194674b1f185" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>diagonalizeYukawa</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a6ce06aacc28dca65b5c217f501938291" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>diagonalizeYukawa</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac133cda7b4a28a7ccbfc885b655d9282" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>diagonalizeYukawa</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a0d0d4f4d19c02e704d186ccc5d282560" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>diracFermionEmbedding</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a2a4a7455c834421cbeb994a2e372ea30" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>diracFermionEmbedding</name></member>
+      <member refid="classmty_1_1ModelData_1ac4d923650a12c1c09a84029df16d358b" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doAddBosonicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a39d5a1cf3efe1c5962f06f2d241ca134" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doAddBosonicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a523989426179bac1d251c73881b1ba80" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doAddFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1ab4fc99c231534d418a2ef252db61f7ee" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doAddFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a43470a5465d906055dc1efc9ff0d8c2f" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doAddFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a250711d444eda40e7061613c5ce816e1" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doAddFermionicMass</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ad9d0ebf12a941e3156d586364bae37e6" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doDiagonalizeSymbolically</name></member>
+      <member refid="classmty_1_1ModelData_1a1c80d18c8b6e95e01448706a10bbcbe9" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doGenerateIndex</name></member>
+      <member refid="classmty_1_1ModelData_1a981867ca6196b6636e3b1e42e7974810" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doGenerateIndex</name></member>
+      <member refid="classmty_1_1ModelData_1ab9b86497cee717653102209820cbbd5b" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doGenerateIndex</name></member>
+      <member refid="classmty_1_1ModelData_1a0e0822ae0fb5c9f7eab940676e754606" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doGetCharge</name></member>
+      <member refid="classmty_1_1ModelData_1af546399ca6af2364c782cc8e5f21e952" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doGetFlavorIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1a911d6da7d89ca5d8bff041b421b0b2fb" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doGetFlavorIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1acae3d7143d8328e4609d83dd8c71846f" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doGetGaugeIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1ad06ea6d15f922117a7a1e95b444969bd" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doGetGenerator</name></member>
+      <member refid="classmty_1_1ModelData_1a016a87bc1b967b361728be7ebf0bb829" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doGetGroupIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1aa230fa5ecb255729fcc6632c375645ef" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doGetVectorSpace</name></member>
+      <member refid="classmty_1_1ModelData_1a321bf5399c6ae4f798483ebb777f5f19" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doGetVectorSpace</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a8abb0f4ea72ec5d8edfbc589f1d87952" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doPromoteToGhost</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac10aefaf0853f7c4c73d96217113c0bf" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doPromoteToGoldstone</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac29d0061ab1a60d9d7125ee73574ed33" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doPromoteToMajorana</name></member>
+      <member refid="classmty_1_1ModelData_1ad125c237e6e914da9721c1ad2f829cc9" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doRenameParticle</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a3124832d9c38aa6926b6a7a7a9c210c0" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>doSetGaugeChoice</name></member>
+      <member refid="classmty_1_1ModelData_1abe720a28b57178b178de3e4855d61e8d" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>enableChecks</name></member>
+      <member refid="classmty_1_1Model_1ae83580ebe5e9e7b86395b649564f7bab" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>feynmanRules</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ab3ef5b136e42d6052490a71e5ac01215" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>fieldInContent</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a41cde51b83619885bb314eb3ccaa480f" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>fillDependencies</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac5deb7e5dd423687590927fa96573a77" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>fillDependenciesForRotation</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a7765892a1d1341e13192fda47c8022ee" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>fillDependenciesForRotation</name></member>
+      <member refid="classmty_1_1Model_1a7d2c45c24cacfcbc9cd6d7eb21abc54f" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>filterFeynmanRules</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a8d45fa29214cf1fc0453fc186704618e" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>findAbreviation</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a3ab3948f29cb3774f5cc3e9def17270d" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>findInContent</name></member>
+      <member refid="classmty_1_1ModelData_1a17a67b688374a2e40d64f91ad6bda449" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>findParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a79c1ab7d9d90d32c08b8476c6db903f7" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>findParticle</name></member>
+      <member refid="classmty_1_1ModelData_1aa359b5f91dd305c1210f28d63a07e0c9" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>findParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a24872bf766f4ae39d8a4bcb29cc42a3c" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>findScalarCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a5b8aa549d956c6f4e589834236506ea8" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>findScalarCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1ad9e06ee155bd20ed3704e3b2a4f52de2" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>findTensorCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a6dc8a4ea047f83dc9515ae32b41cdf57" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>findTensorCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a3865ea0eb7512aeb3b4c9671dff2fa2d" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>findTensorCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1acd2a492afff864e92afce472a0f93521" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>flavor</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a2330a520bdc61c784601a66b92fb4a13" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>gatherMass</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aef4ee26da435b38315535d9042d93d2e" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>gatherMass</name></member>
+      <member refid="classmty_1_1ModelBuilder_1af1bdc9b72e7f77b660ae7758a71fa1b4" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>gatherMasses</name></member>
+      <member refid="classmty_1_1ModelData_1a4ccbd99905455d694e66450c9534d789" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>gauge</name></member>
+      <member refid="classmty_1_1ModelData_1a41a5df4205832ecea06029d8c5279b58" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>gaugeLocked</name></member>
+      <member refid="classmty_1_1ModelData_1a16349cd3276352508bafdd62e7d7a2ce" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>generateIndex</name></member>
+      <member refid="classmty_1_1ModelData_1a8ef303ba051cba21c0dc414c4f1ec24d" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>generateIndex</name></member>
+      <member refid="classmty_1_1ModelData_1a0b0bd73816c16ba006e78a48cae72221" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>generateIndex</name></member>
+      <member refid="classmty_1_1ModelData_1af4be49688cdb64ec8f30a6c08cd81200" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>generateIndices</name></member>
+      <member refid="classmty_1_1ModelData_1a0ceb4e381e41b3268114b581f3e0bcfa" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>generateIndices</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aa03ec390ac5041423c055e3c16948bd2" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getAbbreviatedMassExpressions</name></member>
+      <member refid="classmty_1_1ModelData_1a1dd379f5329b6f2fc9387027d722e177" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getCharge</name></member>
+      <member refid="classmty_1_1Model_1ab072502a1373dea0fba26613aee202a4" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getFeynmanRule</name></member>
+      <member refid="classmty_1_1Model_1aa1318c338d578b80bb8dc427eced1550" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getFeynmanRule</name></member>
+      <member refid="classmty_1_1Model_1a4d57d7fdbd5c9d115b0acdb5777ca5f8" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getFeynmanRules</name></member>
+      <member refid="classmty_1_1Model_1a81572f775f04af4e847c1af9119a68c2" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getFeynmanRulesNumber</name></member>
+      <member refid="classmty_1_1ModelData_1aae5cf459e02428a6af38eaf52e2afb1c" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getFlavor</name></member>
+      <member refid="classmty_1_1ModelData_1a45ab5f5b0d1c0cad683ca09f7c3464b9" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getFlavorGroup</name></member>
+      <member refid="classmty_1_1ModelData_1ad2a4a0a6f3a1f6ae5c9031e368752b32" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getFlavorGroup</name></member>
+      <member refid="classmty_1_1ModelData_1a63830e2ed2cfe83ca88ef543a72910ac" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getFlavorIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1aeaf76bf0b8ac08453be1c59668e03167" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getFlavorIrrep</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a5afd41e7732b805658763674b8fb0b49" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getFullMassMatrix</name></member>
+      <member refid="classmty_1_1ModelData_1a65b562936453b2e8b523c18038640c9d" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getGauge</name></member>
+      <member refid="classmty_1_1ModelData_1a21ba3b3aadc1bf88eb0ffeec0c682018" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getGaugedGroup</name></member>
+      <member refid="classmty_1_1ModelData_1a728963a7a75d3ed5873f4b0e2479f4e9" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getGaugedGroup</name></member>
+      <member refid="classmty_1_1ModelData_1af8628e14853768a183d1ad5e177ceb99" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getGaugeIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1a65c7386937937b39a4cc50163d8cd6d8" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getGenerator</name></member>
+      <member refid="classmty_1_1ModelData_1a93e89de6711cd85094ec66812b71b94d" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getGroup</name></member>
+      <member refid="classmty_1_1ModelData_1ae383ca2a22cbbf116003a1081703ecb3" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getGroup</name></member>
+      <member refid="classmty_1_1ModelData_1a92bf116fa335300b4e33788bc7b3ceb3" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getGroupIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1a9cd11de8be4b70e9272c77001b0ea659" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getLagrangian</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a0b54575b95ff87c153e560f5d039a770" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>getMassBlocks</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a13425e38899a734f8af4eae85d51ed9c" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>getMassMatrixOf</name></member>
+      <member refid="classmty_1_1Model_1a2ecb4ad3fdda06ee97dfc1c3dedd89af" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>getMomentumReplacement</name></member>
+      <member refid="classmty_1_1ModelData_1ac517a59f16a2ffe7d88a598efa6aebfb" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a3e6e949b9e44059344c0e094258c8f96" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a4494ade1b345860d21fc07f28f1e4c56" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a6a4519ebfcf20b7c1fabad8e358f4a7c" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a831fb3bf2be374f46317f25b251a4983" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getParticle</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a0696cd8bd5926834ce393f0e9a106004" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getParticleFamilies</name></member>
+      <member refid="classmty_1_1ModelData_1aff328d53055a760ff21a7e11a9cd1d5d" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getParticles</name></member>
+      <member refid="classmty_1_1ModelData_1a890fa70daad0e3128119b9f01142aa2d" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getParticles</name></member>
+      <member refid="classmty_1_1ModelData_1a363bea1914658f3e61abba137fc7d1ba" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getPhysicalParticles</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a03d5053b1c1c0da711b537b93356a316" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getRotationTerms</name></member>
+      <member refid="classmty_1_1ModelData_1a14bf61ee3f7bb3c8f0fddee9bc591a2b" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getScalarCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a72bc59d5ec27b26cfbcabcef426d13df" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getScalarCouplings</name></member>
+      <member refid="classmty_1_1ModelData_1ada92944c6d73dc4fd77fb9d9de9a0d50" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getSpaceTime</name></member>
+      <member refid="classmty_1_1ModelData_1a8939724bcccf03c671b71dad3d6096c4" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getTensorCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a1b033d00ca5c430001e0867d4dc9a689" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getTensorCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a68555f34a2b4a5131fe1dfddc01f4235" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getTensorCouplings</name></member>
+      <member refid="classmty_1_1ModelData_1ad1b358620e5d67d99a3f80726351d43d" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getVectorSpace</name></member>
+      <member refid="classmty_1_1ModelData_1aa7dee85afb6c11b4d94dda09c72e2d06" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getVectorSpace</name></member>
+      <member refid="classmty_1_1ModelData_1aa7dee85afb6c11b4d94dda09c72e2d06" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getVectorSpace</name></member>
+      <member refid="classmty_1_1ModelData_1ad1b358620e5d67d99a3f80726351d43d" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getVectorSpace</name></member>
+      <member refid="classmty_1_1Model_1a31f46836022c5060823aeef55daa89e7" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getWilsonCoefficients</name></member>
+      <member refid="classmty_1_1Model_1a9c7b384737c177390ce07cb99c862d64" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>getWilsonCoefficients</name></member>
+      <member refid="classmty_1_1ModelData_1a885ea54424b97937a71c63abd73c2f94" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>init</name></member>
+      <member refid="classmty_1_1ModelData_1a244e6e94e6b99e553d60662b1edd586c" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>initGaugedGroups</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ad7936197223db9be44d1587c91f21f32" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>integrateOutParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a51776a811cdfb712548bff4e855514fc" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>isEnableChecks</name></member>
+      <member refid="classmty_1_1ModelBuilder_1af3311fb1f85b165d7cbe8086caa65562" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>isValidMassTerm</name></member>
+      <member refid="classmty_1_1ModelData_1a5461496c1c46165da73c9e3694ea0fef" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>L</name></member>
+      <member refid="classmty_1_1Model_1ae4fec8f3aa3bb71a1d8657f42bb8ccf5" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>mediatorToPropagator</name></member>
+      <member refid="classmty_1_1Model_1acd681a1c3cd8e412856ae9dc947238ca" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>Model</name></member>
+      <member refid="classmty_1_1Model_1a205f52139367be2e377a22179d42e54a" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>Model</name></member>
+      <member refid="classmty_1_1Model_1a561960933549ea76620e7f8541caa6fb" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>Model</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a1748ef28e15a85153e049bb36b044003" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>ModelBuilder</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a8e6386afa6a344b3c5b0cac2cbb8dca1" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>ModelBuilder</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a50ab7f48fbd4e6f5809f0ad1a86e0d62" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>ModelBuilder</name></member>
+      <member refid="classmty_1_1ModelData_1a9279185550f1c347a64bfd2a9ebaee00" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>ModelData</name></member>
+      <member refid="classmty_1_1ModelData_1a9605a946ea704993e5381d77ad91e7e2" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>ModelData</name></member>
+      <member refid="classmty_1_1ModelData_1af46e5e818b74452ba01842e49b1b4e10" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>ModelData</name></member>
+      <member refid="classmty_1_1ModelData_1a99247ad3939f38c345c264bf95ae9fde" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>ModelData</name></member>
+      <member refid="classmty_1_1ModelData_1aaaa21f39c1b07bebfae1ec8587a77f96" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>ModelData</name></member>
+      <member refid="classmty_1_1ModelData_1a912f6cb9f24734d04f0233abe37dc472" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>ModelData</name></member>
+      <member refid="classmty_1_1ModelData_1a04d2554b2eb9fae6ac5f2ca285efd691" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>nMomentums</name></member>
+      <member refid="classmty_1_1Model_1a3cdfff3309fa62bfb1910c0ddf686f61" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classmty_1_1Model_1ac6be0d661339a6ae1a494e6fa5bece1b" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>operator=</name></member>
+      <member refid="classmty_1_1Model_1a86311122d3442760da90fdfe02d8984a" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>operator=</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a28d03f567297ec62743347c78ee1db64" prot="public" virt="non-virtual" ambiguityscope="mty::ModelBuilder::"><scope>mty::Model</scope><name>operator=</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a68bc05025fbbd10ddb40079d193af350" prot="public" virt="non-virtual" ambiguityscope="mty::ModelBuilder::"><scope>mty::Model</scope><name>operator=</name></member>
+      <member refid="classmty_1_1ModelData_1aee7a2e76bc89cf16f8fcb1da025eee90" prot="public" virt="non-virtual" ambiguityscope="mty::ModelData::"><scope>mty::Model</scope><name>operator=</name></member>
+      <member refid="classmty_1_1ModelData_1ae3c6ca1496b911a1c3de257b3b7b9d29" prot="public" virt="non-virtual" ambiguityscope="mty::ModelData::"><scope>mty::Model</scope><name>operator=</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a87fbd607766686b3b9e931fcbafcbf47" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>particleFamilies</name></member>
+      <member refid="classmty_1_1ModelData_1a06e20bc718bb77b006675355d05787a8" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>particles</name></member>
+      <member refid="classmty_1_1ModelData_1ac5cd6ae77d018b097251eb12f7c07935" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>printSubPart</name></member>
+      <member refid="classmty_1_1ModelData_1aba117d39831cd155a5eaff28e25831c1" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>printSubPart</name></member>
+      <member refid="classmty_1_1ModelData_1abaaaa2901d177aaa127bd09a157e78ba" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>printSubPart</name></member>
+      <member refid="classmty_1_1Model_1a611f7eb6ba8a6b1c19297356d34ae8d0" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>projectOnBasis</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ae7feb297c3a604f72282c74d2eecf4fc" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>promoteToGhost</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a6a583d0a04a66385d44b8c3c1e446798" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>promoteToGoldstone</name></member>
+      <member refid="classmty_1_1ModelBuilder_1af1cea58d99ed3b61fc030792596732b3" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>promoteToMajorana</name></member>
+      <member refid="classmty_1_1Model_1a61280f0fc498e9f786f5e894b476473e" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>recoverQuantumInsertions</name></member>
+      <member refid="classmty_1_1ModelBuilder_1acf121f4bddb2f942e57830912541fef7" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>refresh</name></member>
+      <member refid="classmty_1_1ModelData_1a6e6d33a9c6c02c5cb39519967cf2eefd" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>removeParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a2358049f9daaa694928dd1d38d6b23ea" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>removeParticle</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a944490d6e9fa6835ce0e925379f53fb2" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>removeParticleFamily</name></member>
+      <member refid="classmty_1_1ModelBuilder_1adcf09cb9d479da75fca90b55f1dfa3ca" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>removeParticleFamily</name></member>
+      <member refid="classmty_1_1ModelData_1a4ddc41d1e8f7acca4cad7c974f3503f2" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>removeParticles</name></member>
+      <member refid="classmty_1_1ModelData_1a49eb25eba186c9a33c370b5b6e88f12a" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>removeParticles</name></member>
+      <member refid="classmty_1_1ModelData_1aaacc3eb8d783277aed06cfd6149948f5" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>renameCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1ae29923e3065a1c4e7570f636444b197b" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>renameParticle</name></member>
+      <member refid="classmty_1_1ModelBuilder_1adf9b3246eaa47043532e765e57cd7c9d" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>replace</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a1fa2df4c029fbe0d3fbd6796214e2647" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>replace</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a245a887ce12dc7b75ac8d3d2ecbfe884" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>replace</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a7b71535fe847cb21c2fd99393e0601ea" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>replace</name></member>
+      <member refid="classmty_1_1Model_1a60af411ec83ab79c5cc16696f1c02310" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>replaceMomentumForLink</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ab2e0fb9514db3ab1ad2837f78f78509c" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>replaceTermInLagrangian</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aa1539abf551fe2ae0b61c77ecc1f2b53" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1afb70d3aef78c475279412d85e3d68781" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a1784f49e7f07ae5f2a9aa513cf52c97f" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a9fd33fe64989549dfd22d776d9271296" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ae7d0352bbbba2e167c97cd7d25062871" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a952bf371c6147b211725d3f6c781adff" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a8245b2e9c449800936f94d8047050e32" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac75edc621a192c25cabbdf25fad55b31" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1af3f33030e822492b774cdc5164981c5a" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a67fd295f4c74d281af2f6384bdd87703" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a8419af384f2907e8146b23368689cb04" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a08b99c3cf8f0893a32801f60618ff117" prot="public" virt="virtual"><scope>mty::Model</scope><name>saveModel</name></member>
+      <member refid="classmty_1_1ModelData_1a6d76f38990758e6b375db81a13bb09b8" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>saveModelFile</name></member>
+      <member refid="classmty_1_1ModelData_1a16f0fa1899f17a568d5fd4d9a2bf262e" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>saveModelFunction</name></member>
+      <member refid="classmty_1_1ModelData_1ab202ad13551a2d282403a3851b72acc7" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>saveModelFunctionWithRef</name></member>
+      <member refid="classmty_1_1ModelData_1ac9d4b0f26a093949ea711efe9cfe63a8" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>scalarCouplings</name></member>
+      <member refid="classmty_1_1ModelData_1a7d8c765d5c4a94f63d7ad3cab69f3d8b" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>setEnableChecks</name></member>
+      <member refid="classmty_1_1ModelData_1a42cbb420a4fe3f3577e928eb96268fc6" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>setFlavor</name></member>
+      <member refid="classmty_1_1ModelData_1ab71f9b6d40da88fef4f2615bfdc60b58" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>setGauge</name></member>
+      <member refid="classmty_1_1ModelBuilder_1affaaada85c309e35fc21c790a9f8aa8d" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>setGaugeChoice</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a1290d493d05f515a87063bd6ee93202f" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>setGaugeChoice</name></member>
+      <member refid="classmty_1_1ModelData_1a95fe10e0d9db993173ae43179d1cd72e" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>setSpaceTime</name></member>
+      <member refid="classmty_1_1ModelData_1a23fe2191603febad5a2fd095d1f7968c" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>spaceTime</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a1829895da09ff3d634ab5fd135e43a9d" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>spectra</name></member>
+      <member refid="classmty_1_1Model_1aaf53377f344c4c5682888621ad5b1743" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>squaredAmplitudeToPartialWidth</name></member>
+      <member refid="classmty_1_1ModelData_1af2e3b4ab81d40335e0fa43c21df1cf85" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>tensorCouplings</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a59480cfd60dee3fdca9aa4d5c6d91ed9" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>uniqueContent</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a74b837e7fa4355fafae26b68b2076de7" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>updateDiagonalizationData</name></member>
+      <member refid="classmty_1_1ModelData_1a284d23de3d1c3a8c00e604853567e800" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>writeDependencies</name></member>
+      <member refid="classmty_1_1ModelData_1a3180ccda678296961fd16f5650e86bf2" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>writeFlavor</name></member>
+      <member refid="classmty_1_1ModelData_1a8ff38807ea2f31c2e8806a39a819a309" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>writeGauge</name></member>
+      <member refid="classmty_1_1ModelData_1a51e3c9853c44b2fb8548b53662de61d4" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>writeHeader</name></member>
+      <member refid="classmty_1_1ModelData_1a673ce7f31f5c9c8d03d762b4b7e3483c" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>writeLagrangian</name></member>
+      <member refid="classmty_1_1ModelData_1a580945f23a58ab30d9005a36576e5449" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>writeMassAndWidth</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a003426353a45e41c3db269a80e08693a" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>writeMatrix</name></member>
+      <member refid="classmty_1_1ModelData_1a12bc1c99466d35a232ab048e1abe600f" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>writeParticles</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac1cd5456a604bc9098c2b48199a6d863" prot="protected" virt="non-virtual"><scope>mty::Model</scope><name>writeSpectrum</name></member>
+      <member refid="classmty_1_1Model_1afe489bc615b9c998b64e4ea012f726e5" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>~Model</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a2dfe40f9395a1eed194203c19aa912f2" prot="public" virt="non-virtual"><scope>mty::Model</scope><name>~ModelBuilder</name></member>
+      <member refid="classmty_1_1ModelData_1a7a3b96a9566e7372990b792cef551025" prot="public" virt="virtual"><scope>mty::Model</scope><name>~ModelData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

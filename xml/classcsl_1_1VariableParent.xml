@@ -1,0 +1,578 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcsl_1_1VariableParent" kind="class" language="C++" prot="public">
+    <compoundname>csl::VariableParent</compoundname>
+    <basecompoundref refid="classcsl_1_1LiteralParent" prot="public" virt="non-virtual">csl::LiteralParent</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcsl_1_1VariableParent_1ad818770128cdce275d160f66fa85c3fa" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool csl::VariableParent::elementary</definition>
+        <argsstring></argsstring>
+        <name>elementary</name>
+        <qualifiedname>csl::VariableParent::elementary</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="153" column="10" bodyfile="src/csl/variableParent.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1VariableParent_1a45822f751cd62d1fa729867fbb2b0857" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool csl::VariableParent::allDependencies</definition>
+        <argsstring></argsstring>
+        <name>allDependencies</name>
+        <qualifiedname>csl::VariableParent::allDependencies</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="161" column="10" bodyfile="src/csl/variableParent.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1VariableParent_1a6a64f0dbdd4759f7fc70bf290f70a4f7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unique_Expr_c &gt;</type>
+        <definition>std::vector&lt;unique_Expr_c&gt; csl::VariableParent::dependencies</definition>
+        <argsstring></argsstring>
+        <name>dependencies</name>
+        <qualifiedname>csl::VariableParent::dependencies</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="163" column="17" bodyfile="src/csl/variableParent.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcsl_1_1VariableParent_1aad63da696effccbb8197251288a8ea13" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::VariableParent::VariableParent</definition>
+        <argsstring>(std::string const &amp;t_name=&quot;&quot;)</argsstring>
+        <name>VariableParent</name>
+        <qualifiedname>csl::VariableParent::VariableParent</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="108" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1VariableParent_1a4d0bf751b5bf68a44a2d312ec84ac9ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::VariableParent::VariableParent</definition>
+        <argsstring>(std::string const &amp;t_name, long double t_value)</argsstring>
+        <name>VariableParent</name>
+        <qualifiedname>csl::VariableParent::VariableParent</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <param>
+          <type>long double</type>
+          <declname>t_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="110" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1VariableParent_1a732c417c0552e84f7875bbb20a2fb7c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::VariableParent::VariableParent</definition>
+        <argsstring>(std::string const &amp;t_name, Expr const &amp;t_value)</argsstring>
+        <name>VariableParent</name>
+        <qualifiedname>csl::VariableParent::VariableParent</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> const &amp;</type>
+          <declname>t_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="112" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1VariableParent_1a6ce40a1d402cabc3934f712add712042" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::VariableParent::VariableParent</definition>
+        <argsstring>(const VariableParent &amp;)=delete</argsstring>
+        <name>VariableParent</name>
+        <qualifiedname>csl::VariableParent::VariableParent</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1VariableParent" kindref="compound">VariableParent</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="115" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1VariableParent_1a7c428a59d1cd2bfb8865c8933e4f35c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1VariableParent" kindref="compound">VariableParent</ref> &amp;</type>
+        <definition>VariableParent &amp; csl::VariableParent::operator=</definition>
+        <argsstring>(const VariableParent &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>csl::VariableParent::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1VariableParent" kindref="compound">VariableParent</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="116" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1VariableParent_1ac52ef6a173f1499bda8db2a1850f0623" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>csl::VariableParent::~VariableParent</definition>
+        <argsstring>()</argsstring>
+        <name>~VariableParent</name>
+        <qualifiedname>csl::VariableParent::~VariableParent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="118" column="5" bodyfile="src/csl/variableParent.h" bodystart="118" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1VariableParent_1aba33fb8ddc1cc378ac6178c6aaee6e7a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespacecslParent_1a880f05263e57bd6cac32e48fd45b7339" kindref="member">cslParent::Type</ref></type>
+        <definition>cslParent::Type csl::VariableParent::getType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getType</name>
+        <qualifiedname>csl::VariableParent::getType</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a6a9115038be74e35dbcd8ecdbba7e5a1">getType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The type of the parent. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="122" column="21" bodyfile="src/csl/variableParent.h" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1VariableParent_1a294d94e9f12b9469b089c27034162407" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::VariableParent::printDefinition</definition>
+        <argsstring>(std::ostream &amp;out=std::cout, int indentSize=4, bool header=false) const override</argsstring>
+        <name>printDefinition</name>
+        <qualifiedname>csl::VariableParent::printDefinition</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a6c633dfff2c6a58ffbf2dae9ca9e07ae">printDefinition</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indentSize</declname>
+          <defval>4</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>header</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="127" column="10" bodyfile="src/csl/variableParent.cpp" bodystart="165" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1VariableParent_1aa81864bc958bd42dd08d85652e32fc7d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::VariableParent::isElementary</definition>
+        <argsstring>() const</argsstring>
+        <name>isElementary</name>
+        <qualifiedname>csl::VariableParent::isElementary</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="131" column="10" bodyfile="src/csl/variableParent.cpp" bodystart="197" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1VariableParent_1a761d259ebb856fdfb56d9a07e6f1df5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::VariableParent::isAllDependencies</definition>
+        <argsstring>() const</argsstring>
+        <name>isAllDependencies</name>
+        <qualifiedname>csl::VariableParent::isAllDependencies</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="133" column="10" bodyfile="src/csl/variableParent.cpp" bodystart="202" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1VariableParent_1a20c57719ca5d3129f3f4349946d961b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::VariableParent::setElementary</definition>
+        <argsstring>(bool t_elementary)</argsstring>
+        <name>setElementary</name>
+        <qualifiedname>csl::VariableParent::setElementary</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>t_elementary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="135" column="10" bodyfile="src/csl/variableParent.cpp" bodystart="207" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1VariableParent_1a7ae6c74de2f8b3e7c1bca7e344439262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::VariableParent::setAllDependencies</definition>
+        <argsstring>(bool t_allDependencies)</argsstring>
+        <name>setAllDependencies</name>
+        <qualifiedname>csl::VariableParent::setAllDependencies</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>t_allDependencies</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="137" column="10" bodyfile="src/csl/variableParent.cpp" bodystart="217" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1VariableParent_1a182f32b4aaddabcc6ea5219d9af44de6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::VariableParent::addDependency</definition>
+        <argsstring>(Expr_info expr)</argsstring>
+        <name>addDependency</name>
+        <qualifiedname>csl::VariableParent::addDependency</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="139" column="10" bodyfile="src/csl/variableParent.cpp" bodystart="229" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1VariableParent_1abfe972e7afc843d9eb2cc6135edcceb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::VariableParent::removeDependency</definition>
+        <argsstring>(Expr_info expr)</argsstring>
+        <name>removeDependency</name>
+        <qualifiedname>csl::VariableParent::removeDependency</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="141" column="10" bodyfile="src/csl/variableParent.cpp" bodystart="249" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1VariableParent_1aa752d83ccf00b8277329367836af6488" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::VariableParent::dependsOn</definition>
+        <argsstring>(Expr_info expr) const override</argsstring>
+        <name>dependsOn</name>
+        <qualifiedname>csl::VariableParent::dependsOn</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1adf55413672b9d58875485edd1db4e563">dependsOn</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Tells if the parent depends on another expression or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>from which we test the dependency. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the parent depends on<bold>expr</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="143" column="10" bodyfile="src/csl/variableParent.cpp" bodystart="264" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1VariableParent_1ab525ff95ff97917b950b97c2ba6e7887" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::VariableParent::commutesWith</definition>
+        <argsstring>(Expr_info expr, int sign=-1)</argsstring>
+        <name>commutesWith</name>
+        <qualifiedname>csl::VariableParent::commutesWith</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sign</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="145" column="10" bodyfile="src/csl/variableParent.cpp" bodystart="291" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1VariableParent_1a7d779e996bd61fdca257d3df3e449689" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::VariableParent::generateInstance</definition>
+        <argsstring>() override</argsstring>
+        <name>generateInstance</name>
+        <qualifiedname>csl::VariableParent::generateInstance</qualifiedname>
+        <reimplements refid="classcsl_1_1LiteralParent_1a128e778cfad90ebaeab4293751b4ae20">generateInstance</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="147" column="10" bodyfile="src/csl/variableParent.cpp" bodystart="313" bodyend="317"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcsl_1_1VariableParent_1a972a1f84c0a6b2565f42f557527a7bdb" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::VariableParent::isInstance</definition>
+        <argsstring>(Expr_info expr) const override</argsstring>
+        <name>isInstance</name>
+        <qualifiedname>csl::VariableParent::isInstance</qualifiedname>
+        <reimplements refid="classcsl_1_1LiteralParent_1afbab3cb73ea24c930361fa03760a91af">isInstance</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/variableParent.h" line="150" column="10" bodyfile="src/csl/variableParent.cpp" bodystart="319" bodyend="324"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>csl::AbstractParent</label>
+        <link refid="classcsl_1_1AbstractParent"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>csl::LiteralParent</label>
+        <link refid="classcsl_1_1LiteralParent"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>csl::VariableParent</label>
+        <link refid="classcsl_1_1VariableParent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::enable_shared_from_this&lt; AbstractParent &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>csl::AbstractParent</label>
+        <link refid="classcsl_1_1AbstractParent"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>csl::LiteralParent</label>
+        <link refid="classcsl_1_1LiteralParent"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>csl::VariableParent</label>
+        <link refid="classcsl_1_1VariableParent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::enable_shared_from_this&lt; AbstractParent &gt;</label>
+      </node>
+      <node id="6">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/csl/variableParent.h" line="105" column="1" bodyfile="src/csl/variableParent.h" bodystart="105" bodyend="164"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1AbstractParent_1a3a8495f4cc8281410f8aa512c64116cb" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>AbstractParent</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a961d277c9a277163931cb5b45906c83f" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>AbstractParent</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ad88d1dd79f22b67744640124252dc093" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>AbstractParent</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a5548d7f976f21a25d657fc723f7f7132" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>addAntiSymmetry</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a3b4d924a14d8427a9618cec74f118a3c" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>addComplexProperty</name></member>
+      <member refid="classcsl_1_1AbstractParent_1acce8745989273246a318d207e4c24ee9" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>addContractionProperty</name></member>
+      <member refid="classcsl_1_1VariableParent_1a182f32b4aaddabcc6ea5219d9af44de6" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>addDependency</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a0660c6be6cd4215181fd1c423ee1219b" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>addHermitianProperty</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a00090975a2f3144fd860ad0c41ec6764" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>addSelfContraction</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ac691c3943a7bd3eb9c671927e2f91dc7" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>addSpace</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a0a4a585286e48ff062c33e96ec09531b" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>addSymmetry</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ab6f3ca1657d6b2d3809adf39981e6204" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>addTraceLessNess</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ad6ce2c185af4de67ea998efcb48754d5" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>addTransposedProperty</name></member>
+      <member refid="classcsl_1_1VariableParent_1a45822f751cd62d1fa729867fbb2b0857" prot="private" virt="non-virtual"><scope>csl::VariableParent</scope><name>allDependencies</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a8369702a8c0a3e9838cc90aefcbb2d6f" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>breakSpace</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a177e5244cc4d4b6c1e0600a4f77b523f" prot="protected" virt="non-virtual"><scope>csl::VariableParent</scope><name>commutable</name></member>
+      <member refid="classcsl_1_1VariableParent_1ab525ff95ff97917b950b97c2ba6e7887" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>commutesWith</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ab058ceee466fd0997c060e83fc0a4e96" prot="protected" virt="non-virtual"><scope>csl::VariableParent</scope><name>complexProp</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a4df179280a63c410c84f7ea4edbcbee2" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1VariableParent_1a6a64f0dbdd4759f7fc70bf290f70a4f7" prot="private" virt="non-virtual"><scope>csl::VariableParent</scope><name>dependencies</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a74258391e7eae5a8cd0d629eabfe9ca9" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>dependsExplicitlyOn</name></member>
+      <member refid="classcsl_1_1VariableParent_1aa752d83ccf00b8277329367836af6488" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>dependsOn</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ad34cb190892a7b0d29cecf844d836e10" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>disableEvaluation</name></member>
+      <member refid="classcsl_1_1VariableParent_1ad818770128cdce275d160f66fa85c3fa" prot="private" virt="non-virtual"><scope>csl::VariableParent</scope><name>elementary</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a0cbecc9ebf1ba07087c4e275cf81a767" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>enableEvaluation</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a33ad22590439c20af630fd8046ea5dc8" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>evaluate</name></member>
+      <member refid="classcsl_1_1VariableParent_1a7d779e996bd61fdca257d3df3e449689" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>generateInstance</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a9d9f642ad348b33efb70b9f4cf839c1b" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getBaseName</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a4aba499d752eefc81a70cf75938782ca" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getBrokenParts</name></member>
+      <member refid="classcsl_1_1AbstractParent_1af8ae5696856c551204addb95271333bf" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>getCommutable</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ad0029cab35d92a9542c5fb21b6672212" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>getComplexProp</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ab893f8cc881da62b696c9a66abb1bbde" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getComplexProperty</name></member>
+      <member refid="classcsl_1_1AbstractParent_1aa4491a6a8adcf9042aa26a8498a9478b" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getContractionProperties</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ac45297ef35dab1807a158056ec8dfac3" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getDim</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a6c81260a7b64e93b88dea1935b524505" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getDim</name></member>
+      <member refid="classcsl_1_1AbstractParent_1af7cf14c2576a5b337f2e75059a5e002c" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getEncapsulated</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a38fb1b0329110a3caed8e68397c08c51" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getExactEncapsulated</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a77bb772ebe5adafe83a9f504a56e05d0" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getFieldSpace</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ab04c96ff80ee2f0786e59a7eafd71175" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getFullyAntiSymmetric</name></member>
+      <member refid="classcsl_1_1AbstractParent_1af56df7eb3d90348eda50e3d6cc5cd8b0" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getFullySymmetric</name></member>
+      <member refid="classcsl_1_1AbstractParent_1afd68c39bc8ac85924ba25e4a7cac7ff0" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getHermitianProperty</name></member>
+      <member refid="classcsl_1_1AbstractParent_1acacd759bca7fa6e750080a68ea970caa" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>getLatexName</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ab22f321502a8aa481865be3e58bb241d" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>getName</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ad42c4b140d48c9319e0ae47436d040e1" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getPermutation</name></member>
+      <member refid="classcsl_1_1LiteralParent_1aa4f13d4a38f4e1eb268b4a391d5e0d73" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getPrimaryType</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a236d774b05f017f117174469ba848142" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getSpace</name></member>
+      <member refid="classcsl_1_1AbstractParent_1adcc94486a83de9c73de39f78b1eafea4" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getTensor</name></member>
+      <member refid="classcsl_1_1AbstractParent_1affa574a83a5f60cc6fc9bd00f5dca747" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getTensor</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a4f86be4ff457fb18becedcca645b33f4" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getTrace</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a4077314469ddf178e3ec02e524b940c3" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getTransposedProperty</name></member>
+      <member refid="classcsl_1_1VariableParent_1aba33fb8ddc1cc378ac6178c6aaee6e7a" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>getType</name></member>
+      <member refid="classcsl_1_1LiteralParent_1a72e9ca6068e6305721c2392fb6b7adf3" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>getValue</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a29f41ce934d0e7260c1f8e8fddf70e14" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>hasChainContractionProperty</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a7f680e00248dd59a1545488ec4b43c07" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>hasContractionProperty</name></member>
+      <member refid="classcsl_1_1VariableParent_1a761d259ebb856fdfb56d9a07e6f1df5c" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>isAllDependencies</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a4e78f62f3624e0e6070f1da4ddd32943" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>isAnAbbreviation</name></member>
+      <member refid="classcsl_1_1VariableParent_1aa81864bc958bd42dd08d85652e32fc7d" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>isElementary</name></member>
+      <member refid="classcsl_1_1VariableParent_1a972a1f84c0a6b2565f42f557527a7bdb" prot="private" virt="virtual"><scope>csl::VariableParent</scope><name>isInstance</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ad22286f40e94e30a5adffa36314961c3" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>isTraceLessIn</name></member>
+      <member refid="classcsl_1_1LiteralParent_1a3761424d118cb70904b9bcc23616d287" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>isValued</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a98c857ebf734c15e7afd0d8a13988ac9" prot="protected" virt="non-virtual"><scope>csl::VariableParent</scope><name>latexName</name></member>
+      <member refid="classcsl_1_1LiteralParent_1a1cebebfcd282781f02378358dad4f790" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>LiteralParent</name></member>
+      <member refid="classcsl_1_1LiteralParent_1a59dd32bd2138c61f4981d655f53022e6" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>LiteralParent</name></member>
+      <member refid="classcsl_1_1LiteralParent_1ad94728259f5fb0da5ca6c28d77a073d7" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>LiteralParent</name></member>
+      <member refid="classcsl_1_1LiteralParent_1a4a41a1a31dd15495c8d7d744c8687f3c" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>LiteralParent</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a2ad6b4cd58d9b051a4d62f343bf48c2e" prot="protected" virt="non-virtual"><scope>csl::VariableParent</scope><name>name</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a8a7f7e45ca51c0720c2234d22191d196" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a67817d2d364178d734343aa2aaa8c621" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1AbstractParent_1aa9298445ca3a71e7af13ff61382c8c0f" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a2ef89e977355f65dd919fcb78647df89" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ad64079f8317747669f1c8b4c1498d8dc" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a4281c853db4878e925bc81440213dae0" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1AbstractParent_1aba91946c679a4e6e116f0fc75fc52e1e" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1VariableParent_1a7c428a59d1cd2bfb8865c8933e4f35c6" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>operator=</name></member>
+      <member refid="classcsl_1_1LiteralParent_1aa0880842a772a5dd5b9186d266a6b22e" prot="public" virt="non-virtual" ambiguityscope="csl::LiteralParent::"><scope>csl::VariableParent</scope><name>operator=</name></member>
+      <member refid="classcsl_1_1VariableParent_1a294d94e9f12b9469b089c27034162407" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>printDefinition</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a789915324d1e21a6be70bbd495ada1cc" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>printPropDefinition</name></member>
+      <member refid="classcsl_1_1AbstractParent_1af03f15bcc4f9dd93cf09739c9ecf4d03" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>removeContractionProperty</name></member>
+      <member refid="classcsl_1_1VariableParent_1abfe972e7afc843d9eb2cc6135edcceb2" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>removeDependency</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a0889b22a387aa58334e6c84aa9e7faf0" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>removeSelfContraction</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a0b06d1389b3f3ea597e91548810a3c70" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>removeTraceLessNess</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a831ac782bdbba8d40838c6aeffaa53f6" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>self</name></member>
+      <member refid="classcsl_1_1VariableParent_1a7ae6c74de2f8b3e7c1bca7e344439262" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>setAllDependencies</name></member>
+      <member refid="classcsl_1_1AbstractParent_1aae1bc83d1df8237e6bf50b6b8f732716" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>setCommutable</name></member>
+      <member refid="classcsl_1_1AbstractParent_1affd5de9db43c39e3ec0f1b9e391bcf4a" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>setComplexProperty</name></member>
+      <member refid="classcsl_1_1VariableParent_1a20c57719ca5d3129f3f4349946d961b7" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>setElementary</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a3085594e68b3845f352898e79237ba24" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>setEncapsulated</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a11b28bb5fd2bd261e76a3980341ead1d" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>setFieldSpace</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a8ecc485d2526a3975b79b0c4a3da21d9" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>setFullyAntiSymmetric</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a3e866d96e2600f1f6f723bf62dee42b0" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>setFullySymmetric</name></member>
+      <member refid="classcsl_1_1AbstractParent_1af9a8cfc57a0bdf8178489c198755565b" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>setLatexName</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a13e6f74e590cbf05dcafb4d9c3df8b9c" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>setName</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a79ad3927cad378f4e83055533ea20d46" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>setSymmetry</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a5dd9dd3730422db222a395139786ea4b" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>setTensor</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a3ec47d729864161605c7cbcc6f726f59" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>setTrace</name></member>
+      <member refid="classcsl_1_1LiteralParent_1a2cab37a2f24ae5c476a1b084df5d27d0" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>setValue</name></member>
+      <member refid="classcsl_1_1LiteralParent_1a02323cd859313679d802b87b20815d40" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>setValue</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a74bbbbc2b43939c166feb7d8e7cc8537" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>toggleEvaluation</name></member>
+      <member refid="classcsl_1_1LiteralParent_1ab3ca9a6269c276c43df3050763d43f31" prot="protected" virt="non-virtual"><scope>csl::VariableParent</scope><name>value</name></member>
+      <member refid="classcsl_1_1LiteralParent_1a605a2b79e8b011a53c735dec77e83908" prot="protected" virt="non-virtual"><scope>csl::VariableParent</scope><name>valued</name></member>
+      <member refid="classcsl_1_1VariableParent_1aad63da696effccbb8197251288a8ea13" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>VariableParent</name></member>
+      <member refid="classcsl_1_1VariableParent_1a4d0bf751b5bf68a44a2d312ec84ac9ed" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>VariableParent</name></member>
+      <member refid="classcsl_1_1VariableParent_1a732c417c0552e84f7875bbb20a2fb7c2" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>VariableParent</name></member>
+      <member refid="classcsl_1_1VariableParent_1a6ce40a1d402cabc3934f712add712042" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>VariableParent</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a6d13d559a8d68562b5827073b31b3c1a" prot="public" virt="virtual"><scope>csl::VariableParent</scope><name>~AbstractParent</name></member>
+      <member refid="classcsl_1_1LiteralParent_1afb53997656094d924380db5ebc2a0a47" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>~LiteralParent</name></member>
+      <member refid="classcsl_1_1VariableParent_1ac52ef6a173f1499bda8db2a1850f0623" prot="public" virt="non-virtual"><scope>csl::VariableParent</scope><name>~VariableParent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

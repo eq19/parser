@@ -1,0 +1,597 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1AbstractGroup" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mty::AbstractGroup</compoundname>
+    <derivedcompoundref refid="classmty_1_1SemiSimpleGroup" prot="public" virt="non-virtual">mty::SemiSimpleGroup</derivedcompoundref>
+    <includes refid="group_8h" local="no">group.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmty_1_1AbstractGroup_1aefbcfa83804f7acbd0b3b93694dcabba" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mty::AbstractGroup::dim</definition>
+        <argsstring></argsstring>
+        <name>dim</name>
+        <qualifiedname>mty::AbstractGroup::dim</qualifiedname>
+        <briefdescription>
+<para>Dimension of the group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="186" column="9" bodyfile="src/marty/core/group.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1AbstractGroup_1a859fa1942e9564d1d6f023de9c251a09" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mty::AbstractGroup::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>mty::AbstractGroup::name</qualifiedname>
+        <briefdescription>
+<para>Name of the group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="191" column="17" bodyfile="src/marty/core/group.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1AbstractGroup_1ad67e79474a67e9434a87ba91ef4d86d3" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmty_1_1GaugedGroup" kindref="compound">mty::GaugedGroup</ref> *</type>
+        <definition>mty::GaugedGroup* mty::AbstractGroup::gauged</definition>
+        <argsstring></argsstring>
+        <name>gauged</name>
+        <qualifiedname>mty::AbstractGroup::gauged</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="193" column="22" bodyfile="src/marty/core/group.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1AbstractGroup_1adcfa90e344e550ef4eb31bef2b9cf0a5" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::AbstractGroup::AbstractGroup</definition>
+        <argsstring>(const std::string &amp;t_name=&quot;&quot;)</argsstring>
+        <name>AbstractGroup</name>
+        <qualifiedname>mty::AbstractGroup::AbstractGroup</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>t_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Constructor with one optional parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the group. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="88" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1AbstractGroup_1afbb9c29efba97aacd880bd6389d66012" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::AbstractGroup::AbstractGroup</definition>
+        <argsstring>(int t_dim, const std::string &amp;t_name=&quot;&quot;)</argsstring>
+        <name>AbstractGroup</name>
+        <qualifiedname>mty::AbstractGroup::AbstractGroup</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>t_dim</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>t_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Constructor with two parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dimension of the group. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name (optional) of the group. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="95" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1AbstractGroup_1a606b55ecff6e3a9be9e8090ff87fb7cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual mty::AbstractGroup::~AbstractGroup</definition>
+        <argsstring>()</argsstring>
+        <name>~AbstractGroup</name>
+        <qualifiedname>mty::AbstractGroup::~AbstractGroup</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="100" column="13" bodyfile="src/marty/core/group.h" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1AbstractGroup_1ab06a0ac167dca306911171f79d846b3a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1SemiSimpleAlgebra" kindref="compound">SemiSimpleAlgebra</ref> *</type>
+        <definition>SemiSimpleAlgebra * mty::AbstractGroup::getAlgebra</definition>
+        <argsstring>() const</argsstring>
+        <name>getAlgebra</name>
+        <qualifiedname>mty::AbstractGroup::getAlgebra</qualifiedname>
+        <reimplementedby refid="classmty_1_1SemiSimpleGroup_1a1af257679905aedc7feed434f5a1ace1">getAlgebra</reimplementedby>
+        <briefdescription>
+<para>Virtual function. Raises an error if called. See reimplementations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="108" column="31" bodyfile="src/marty/core/group.cpp" bodystart="100" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1AbstractGroup_1a2cd9a30fe943b42d8435f7b5592959e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref></type>
+        <definition>mty::Irrep mty::AbstractGroup::highestWeightRep</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;highestWeight) const</argsstring>
+        <name>highestWeightRep</name>
+        <qualifiedname>mty::AbstractGroup::highestWeightRep</qualifiedname>
+        <reimplementedby refid="classmty_1_1SemiSimpleGroup_1a23925dcfec01c5bf963ccf504829415d">highestWeightRep</reimplementedby>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>highestWeight</declname>
+        </param>
+        <briefdescription>
+<para>Virtual function. Raises an error if called. See reimplementations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="115" column="5" bodyfile="src/marty/core/group.cpp" bodystart="106" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1AbstractGroup_1af766bd588555cdb1c9d1539a60ffef77" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref></type>
+        <definition>virtual Irrep mty::AbstractGroup::getTrivialRep</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getTrivialRep</name>
+        <qualifiedname>mty::AbstractGroup::getTrivialRep</qualifiedname>
+        <reimplementedby refid="classmty_1_1SemiSimpleGroup_1ae1e98e95d351ed86c20df592bddf2c24">getTrivialRep</reimplementedby>
+        <briefdescription>
+<para>Pure Virtual function. See reimplementations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="121" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1AbstractGroup_1a592bd77bd23ccbfc4dfe15ad299cc4f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref></type>
+        <definition>mty::Irrep mty::AbstractGroup::getAdjointRep</definition>
+        <argsstring>() const</argsstring>
+        <name>getAdjointRep</name>
+        <qualifiedname>mty::AbstractGroup::getAdjointRep</qualifiedname>
+        <reimplementedby refid="classmty_1_1group_1_1E6_1a50a128e9e48971d6152b12bac17680f8">getAdjointRep</reimplementedby>
+        <reimplementedby refid="classmty_1_1group_1_1E7_1afabbd83fa0f13185473ea44720566338">getAdjointRep</reimplementedby>
+        <reimplementedby refid="classmty_1_1group_1_1E8_1ad37ad548ecf37a66f3aedadce825101e">getAdjointRep</reimplementedby>
+        <reimplementedby refid="classmty_1_1group_1_1F4_1af87fec36027bdd05b4b2724155ca6cb3">getAdjointRep</reimplementedby>
+        <reimplementedby refid="classmty_1_1group_1_1G2_1a182077d69d4d756713ca01516d4ca2e1">getAdjointRep</reimplementedby>
+        <reimplementedby refid="classmty_1_1group_1_1SO_1a7bbe64a13344606ce028fcfa72a661fe">getAdjointRep</reimplementedby>
+        <reimplementedby refid="classmty_1_1group_1_1Sp_1aefc16d57cfa94ec5a6ddd389714bf5c3">getAdjointRep</reimplementedby>
+        <reimplementedby refid="classmty_1_1group_1_1SU_1a014dc5ad57fd3df54eaa87a56f7179b5">getAdjointRep</reimplementedby>
+        <reimplementedby refid="classmty_1_1group_1_1U1_1a38ac3ea02854553a35c7035b0ffbb166">getAdjointRep</reimplementedby>
+        <briefdescription>
+<para>Virtual function. Raises an error if called. See reimplementations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="127" column="19" bodyfile="src/marty/core/group.cpp" bodystart="113" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1AbstractGroup_1a3bd2daf2393fab718e2cea21392ed52b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespacemty_1_1group_1ab52e292a5e57ca7d8f7c28277435ecb9" kindref="member">group::Type</ref></type>
+        <definition>virtual group::Type mty::AbstractGroup::getType</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getType</name>
+        <qualifiedname>mty::AbstractGroup::getType</qualifiedname>
+        <reimplementedby refid="classmty_1_1group_1_1E6_1ade8589d6106c1376596ab893977a9280">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1group_1_1E7_1a0da7a72b4ae6effcb6dd0a4bb0ffd6e5">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1group_1_1E8_1a612a3163ec331b392807aecb26efa285">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1group_1_1F4_1aaf28bd2d9b6f24cd34e25cccd20260e2">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1group_1_1G2_1a4fe8810aa4e335d77f5de993eb2078d6">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1group_1_1Lorentz_1addadd0d1ab598965c61e190f1025a81c">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1group_1_1SO_1a5cc9479f7b2b86d29917bff1367fd6dc">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1group_1_1Sp_1acaf3d3e8992177ffeb548a1a31ca1abd">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1group_1_1SU_1a6b137d888a11d6a61755d235051c376b">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1group_1_1U1_1a7a6115850b8f2a25324292df5d87a6b3">getType</reimplementedby>
+        <briefdescription>
+<para>Returns the type of the group. See <ref refid="namespacemty_1_1group_1ab52e292a5e57ca7d8f7c28277435ecb9" kindref="member">mty::group::Type</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The type of the group. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="133" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1AbstractGroup_1a622e80d80a7339161515ca1f0c2357a5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmty_1_1GaugedGroup" kindref="compound">mty::GaugedGroup</ref> *</type>
+        <definition>mty::GaugedGroup * mty::AbstractGroup::getGaugedGroup</definition>
+        <argsstring>() const</argsstring>
+        <name>getGaugedGroup</name>
+        <qualifiedname>mty::AbstractGroup::getGaugedGroup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="135" column="22" bodyfile="src/marty/core/group.h" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1AbstractGroup_1a2ddd145c12dec58837f59112eb7272d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::AbstractGroup::setGaugedGroup</definition>
+        <argsstring>(mty::GaugedGroup *t_gauged)</argsstring>
+        <name>setGaugedGroup</name>
+        <qualifiedname>mty::AbstractGroup::setGaugedGroup</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1GaugedGroup" kindref="compound">mty::GaugedGroup</ref> *</type>
+          <declname>t_gauged</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="139" column="10" bodyfile="src/marty/core/group.h" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1AbstractGroup_1a8cd596873edd138759f02d10d5fa4577" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>string mty::AbstractGroup::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <qualifiedname>mty::AbstractGroup::getName</qualifiedname>
+        <briefdescription>
+<para>Returns the name of the group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The name of the group. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="148" column="17" bodyfile="src/marty/core/group.cpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1AbstractGroup_1a206ee8aff297cfb526fb99553cf28ea2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::AbstractGroup::getDim</definition>
+        <argsstring>() const</argsstring>
+        <name>getDim</name>
+        <qualifiedname>mty::AbstractGroup::getDim</qualifiedname>
+        <briefdescription>
+<para>Returns the dimension (integer) of the group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The dimension of the group. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="154" column="9" bodyfile="src/marty/core/group.cpp" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1AbstractGroup_1a6adca4959ceed967beb3e1af42bed3ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> *</type>
+        <definition>virtual const csl::Space * mty::AbstractGroup::getVectorSpace</definition>
+        <argsstring>(const Irrep &amp;irrep) const =0</argsstring>
+        <name>getVectorSpace</name>
+        <qualifiedname>mty::AbstractGroup::getVectorSpace</qualifiedname>
+        <reimplementedby refid="classmty_1_1SemiSimpleGroup_1af549263e0d55350d636fa82edd9acec5">getVectorSpace</reimplementedby>
+        <param>
+          <type>const <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &amp;</type>
+          <declname>irrep</declname>
+        </param>
+        <briefdescription>
+<para>Pure Virtual function. See reimplementations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="160" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1AbstractGroup_1abbb754aa6fe3cebe7047fa0ce6913783" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref></type>
+        <definition>AlgebraState mty::AbstractGroup::getHighestWeight</definition>
+        <argsstring>(const csl::Space *t_space) const</argsstring>
+        <name>getHighestWeight</name>
+        <qualifiedname>mty::AbstractGroup::getHighestWeight</qualifiedname>
+        <reimplementedby refid="classmty_1_1SemiSimpleGroup_1a95a05472197b6785212540fda811c98d">getHighestWeight</reimplementedby>
+        <param>
+          <type>const <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> *</type>
+          <declname>t_space</declname>
+        </param>
+        <briefdescription>
+<para>Virtual function. Raises an error if called. See reimplementations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="166" column="26" bodyfile="src/marty/core/group.cpp" bodystart="120" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1AbstractGroup_1a01cc0707069c3d55cd4f21dcf3845452" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; const <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> * &gt;</type>
+        <definition>virtual std::vector&lt; const csl::Space * &gt; mty::AbstractGroup::getAllVectorSpace</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getAllVectorSpace</name>
+        <qualifiedname>mty::AbstractGroup::getAllVectorSpace</qualifiedname>
+        <reimplementedby refid="classmty_1_1SemiSimpleGroup_1a0a07acf25f62aea2cd8ba477fe978b0a">getAllVectorSpace</reimplementedby>
+        <briefdescription>
+<para>Pure Virtual function. See reimplementations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="172" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1AbstractGroup_1a76d12a97064c7ebb4c31d9c09429ad51" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref></type>
+        <definition>virtual csl::Index mty::AbstractGroup::getCorrespondingIndex</definition>
+        <argsstring>(const std::string &amp;index_name, const QuantumFieldParent &amp;parent)=0</argsstring>
+        <name>getCorrespondingIndex</name>
+        <qualifiedname>mty::AbstractGroup::getCorrespondingIndex</qualifiedname>
+        <reimplementedby refid="classmty_1_1SemiSimpleGroup_1a39acccde07239d0b2ab74116f0b1c6a2">getCorrespondingIndex</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>index_name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref> &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Pure Virtual function. See reimplementations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="178" column="24"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Abstract base class for groups. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is mostly composed of empty virtual functions. It only handles a std::string for the name, and an integer for the dimension of the group. See <ref refid="classmty_1_1SemiSimpleGroup" kindref="compound">SemiSimpleGroup</ref> to get to group features. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mty::AbstractGroup</label>
+        <link refid="classmty_1_1AbstractGroup"/>
+      </node>
+      <node id="2">
+        <label>mty::SemiSimpleGroup</label>
+        <link refid="classmty_1_1SemiSimpleGroup"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mty::group::E6</label>
+        <link refid="classmty_1_1group_1_1E6"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mty::group::E7</label>
+        <link refid="classmty_1_1group_1_1E7"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mty::group::E8</label>
+        <link refid="classmty_1_1group_1_1E8"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mty::group::F4</label>
+        <link refid="classmty_1_1group_1_1F4"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mty::group::G2</label>
+        <link refid="classmty_1_1group_1_1G2"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mty::group::Lorentz</label>
+        <link refid="classmty_1_1group_1_1Lorentz"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mty::group::SO</label>
+        <link refid="classmty_1_1group_1_1SO"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mty::group::SU</label>
+        <link refid="classmty_1_1group_1_1SU"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mty::group::Sp</label>
+        <link refid="classmty_1_1group_1_1Sp"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mty::group::U1</label>
+        <link refid="classmty_1_1group_1_1U1"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>csl::Space</label>
+        <link refid="classcsl_1_1Space"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>symbolicDim</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>delta</edgelabel>
+          <edgelabel>epsilon</edgelabel>
+          <edgelabel>inverseMetric</edgelabel>
+          <edgelabel>metric</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::AbstractGroup</label>
+        <link refid="classmty_1_1AbstractGroup"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>gauged</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mty::Gauge</label>
+        <link refid="classmty_1_1Gauge"/>
+      </node>
+      <node id="2">
+        <label>mty::GaugedGroup</label>
+        <link refid="classmty_1_1GaugedGroup"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>gauge</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>group</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>coupling</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>adjointSpace</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>f</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>generator</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>boson</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>ghost</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mty::Generator</label>
+        <link refid="classmty_1_1Generator"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mty::IrrepMap&lt; mty::Generator &gt;</label>
+        <link refid="classmty_1_1IrrepMap"/>
+      </node>
+      <node id="4">
+        <label>mty::SemiSimpleGroup</label>
+        <link refid="classmty_1_1SemiSimpleGroup"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>std::shared_ptr&lt; GeneratorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="9">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="6">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="13">
+        <label>std::shared_ptr&lt; mty::GaugeBoson &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="14">
+        <label>std::shared_ptr&lt; mty::GhostBoson &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/group.h" line="81" column="1" bodyfile="src/marty/core/group.h" bodystart="81" bodyend="195"/>
+    <listofallmembers>
+      <member refid="classmty_1_1AbstractGroup_1adcfa90e344e550ef4eb31bef2b9cf0a5" prot="public" virt="non-virtual"><scope>mty::AbstractGroup</scope><name>AbstractGroup</name></member>
+      <member refid="classmty_1_1AbstractGroup_1afbb9c29efba97aacd880bd6389d66012" prot="public" virt="non-virtual"><scope>mty::AbstractGroup</scope><name>AbstractGroup</name></member>
+      <member refid="classmty_1_1AbstractGroup_1aefbcfa83804f7acbd0b3b93694dcabba" prot="protected" virt="non-virtual"><scope>mty::AbstractGroup</scope><name>dim</name></member>
+      <member refid="classmty_1_1AbstractGroup_1ad67e79474a67e9434a87ba91ef4d86d3" prot="protected" virt="non-virtual"><scope>mty::AbstractGroup</scope><name>gauged</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a592bd77bd23ccbfc4dfe15ad299cc4f3" prot="public" virt="virtual"><scope>mty::AbstractGroup</scope><name>getAdjointRep</name></member>
+      <member refid="classmty_1_1AbstractGroup_1ab06a0ac167dca306911171f79d846b3a" prot="public" virt="virtual"><scope>mty::AbstractGroup</scope><name>getAlgebra</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a01cc0707069c3d55cd4f21dcf3845452" prot="public" virt="pure-virtual"><scope>mty::AbstractGroup</scope><name>getAllVectorSpace</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a76d12a97064c7ebb4c31d9c09429ad51" prot="public" virt="pure-virtual"><scope>mty::AbstractGroup</scope><name>getCorrespondingIndex</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a206ee8aff297cfb526fb99553cf28ea2" prot="public" virt="non-virtual"><scope>mty::AbstractGroup</scope><name>getDim</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a622e80d80a7339161515ca1f0c2357a5" prot="public" virt="non-virtual"><scope>mty::AbstractGroup</scope><name>getGaugedGroup</name></member>
+      <member refid="classmty_1_1AbstractGroup_1abbb754aa6fe3cebe7047fa0ce6913783" prot="public" virt="virtual"><scope>mty::AbstractGroup</scope><name>getHighestWeight</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a8cd596873edd138759f02d10d5fa4577" prot="public" virt="non-virtual"><scope>mty::AbstractGroup</scope><name>getName</name></member>
+      <member refid="classmty_1_1AbstractGroup_1af766bd588555cdb1c9d1539a60ffef77" prot="public" virt="pure-virtual"><scope>mty::AbstractGroup</scope><name>getTrivialRep</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a3bd2daf2393fab718e2cea21392ed52b" prot="public" virt="pure-virtual"><scope>mty::AbstractGroup</scope><name>getType</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a6adca4959ceed967beb3e1af42bed3ec" prot="public" virt="pure-virtual"><scope>mty::AbstractGroup</scope><name>getVectorSpace</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a2cd9a30fe943b42d8435f7b5592959e9" prot="public" virt="virtual"><scope>mty::AbstractGroup</scope><name>highestWeightRep</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a859fa1942e9564d1d6f023de9c251a09" prot="protected" virt="non-virtual"><scope>mty::AbstractGroup</scope><name>name</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a2ddd145c12dec58837f59112eb7272d5" prot="public" virt="non-virtual"><scope>mty::AbstractGroup</scope><name>setGaugedGroup</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a606b55ecff6e3a9be9e8090ff87fb7cd" prot="public" virt="virtual"><scope>mty::AbstractGroup</scope><name>~AbstractGroup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

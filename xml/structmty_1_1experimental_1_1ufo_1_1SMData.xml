@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structmty_1_1experimental_1_1ufo_1_1SMData" kind="struct" language="C++" prot="public">
+    <compoundname>mty::experimental::ufo::SMData</compoundname>
+    <includes refid="ufosmdata_8h" local="no">ufosmdata.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmty_1_1experimental_1_1ufo_1_1SMData_1ae145b9d05f24c5b4398aad660474cefc" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mty::experimental::ufo::SMData::colorName</definition>
+        <argsstring></argsstring>
+        <name>colorName</name>
+        <qualifiedname>mty::experimental::ufo::SMData::colorName</qualifiedname>
+        <initializer>= &quot;C&quot;</initializer>
+        <briefdescription>
+<para>Name of the SM color group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/ufosmdata.h" line="40" column="21" bodyfile="src/marty/ufo/ufosmdata.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1experimental_1_1ufo_1_1SMData_1a667f38922353f8efbb0f0d21b0a6b1a9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mty::experimental::ufo::SMData::photonName</definition>
+        <argsstring></argsstring>
+        <name>photonName</name>
+        <qualifiedname>mty::experimental::ufo::SMData::photonName</qualifiedname>
+        <initializer>= &quot;A&quot;</initializer>
+        <briefdescription>
+<para>Name of the photon particle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/ufosmdata.h" line="45" column="21" bodyfile="src/marty/ufo/ufosmdata.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1experimental_1_1ufo_1_1SMData_1a0bd483e86a3b2f729d3a3cf18b89213e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mty::experimental::ufo::SMData::emCouplingName</definition>
+        <argsstring></argsstring>
+        <name>emCouplingName</name>
+        <qualifiedname>mty::experimental::ufo::SMData::emCouplingName</qualifiedname>
+        <initializer>= &quot;e_em&quot;</initializer>
+        <briefdescription>
+<para>Name of the electromagnetic coupling constant. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/ufosmdata.h" line="50" column="21" bodyfile="src/marty/ufo/ufosmdata.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class allowing to define custom conventions for SM-like models. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>All the SM conventions required for the generation of UFO files should be configurable by using a <ref refid="structmty_1_1experimental_1_1ufo_1_1SMData" kindref="compound">SMData</ref> object, and all configuration should have a default value. This class allows the conversion algorithms (from MARTY to UFO) to be convention-blind. Instead of defining fixed conventions for e.g. the photon or electromagnetic coupling names, all the algorithms use a <ref refid="structmty_1_1experimental_1_1ufo_1_1SMData" kindref="compound">SMData</ref> that should contain the conventions used in the MARTY model that is processed to generate a UFO output.</para>
+<para>For example, in a model in which the color group is named <computeroutput>&quot;SU3c&quot;</computeroutput> instead of <computeroutput>&quot;C&quot;</computeroutput>, it is possible to generate the UFO output by creating a custom <ref refid="structmty_1_1experimental_1_1ufo_1_1SMData" kindref="compound">SMData</ref> object and specifying the color group name: <programlisting><codeline><highlight class="normal"><ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref><sp/>model<sp/>=<sp/>someModel();</highlight></codeline>
+<codeline><highlight class="normal">SMData<sp/>smData;</highlight></codeline>
+<codeline><highlight class="normal">smData.colorName<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;SU3c&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>vertices<sp/>=<sp/><ref refid="namespacemty_1_1experimental_1_1ufo_1a33c9fb37d659970060f4bad95bdb487d" kindref="member">ufo::obtainSimplifiedVertices</ref>(model,<sp/>smData);</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="src/marty/ufo/ufosmdata.h" line="34" column="5" bodyfile="src/marty/ufo/ufosmdata.h" bodystart="35" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structmty_1_1experimental_1_1ufo_1_1SMData_1ae145b9d05f24c5b4398aad660474cefc" prot="public" virt="non-virtual"><scope>mty::experimental::ufo::SMData</scope><name>colorName</name></member>
+      <member refid="structmty_1_1experimental_1_1ufo_1_1SMData_1a0bd483e86a3b2f729d3a3cf18b89213e" prot="public" virt="non-virtual"><scope>mty::experimental::ufo::SMData</scope><name>emCouplingName</name></member>
+      <member refid="structmty_1_1experimental_1_1ufo_1_1SMData_1a667f38922353f8efbb0f0d21b0a6b1a9" prot="public" virt="non-virtual"><scope>mty::experimental::ufo::SMData</scope><name>photonName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="lhaData_8h" kind="file" language="C++">
+    <compoundname>lhaData.h</compoundname>
+    <includes refid="lhaBlocks_8h" local="yes">lhaBlocks.h</includes>
+    <includes refid="marty_2core_2std__vector__implementation_8h" local="yes">marty/core/std_vector_implementation.h</includes>
+    <includes local="no">optional</includes>
+    <includes local="no">string</includes>
+    <includes local="no">string_view</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="lhaBuiltIn_8cpp" local="yes">src/marty/core/lhaBuiltIn.cpp</includedby>
+    <includedby refid="lhaData_8cpp" local="yes">src/marty/lha/lhaData.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>marty/core/std_vector_implementation.h</label>
+        <link refid="marty_2core_2std__vector__implementation_8h"/>
+      </node>
+      <node id="2">
+        <label>lhaBlocks.h</label>
+        <link refid="lhaBlocks_8h"/>
+      </node>
+      <node id="1">
+        <label>src/marty/lha/lhaData.h</label>
+        <link refid="lhaData_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>optional</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>string_view</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structmty_1_1lha_1_1LHAElement" prot="public">mty::lha::LHAElement</innerclass>
+    <innerclass refid="structmty_1_1lha_1_1Comparator" prot="public">mty::lha::Comparator</innerclass>
+    <innerclass refid="classmty_1_1lha_1_1LHABlock" prot="public">mty::lha::LHABlock</innerclass>
+    <innerclass refid="classmty_1_1lha_1_1LHAFileData" prot="public">mty::lha::LHAFileData</innerclass>
+    <innernamespace refid="namespacemty">mty</innernamespace>
+    <innernamespace refid="namespacemty_1_1lha">mty::lha</innernamespace>
+    <briefdescription>
+<para>Contains all data containers for .lha files. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Grégoire Uhlrich </para>
+</simplesect>
+<simplesect kind="version"><para>2.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2020-09-02 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>MARTY.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MARTY<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MARTY<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>MARTY.<sp/>If<sp/>not,<sp/>see<sp/>&lt;https://www.gnu.org/licenses/&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LHADATA_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LHADATA_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lhaBlocks_8h" kindref="compound">lhaBlocks.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="marty_2core_2std__vector__implementation_8h" kindref="compound">marty/core/std_vector_implementation.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string_view&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">mty::lha<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="lhaBlocks_8h_1ab2b98516ff9520be75f72e27928e62a1" kindref="member">BlockType</ref><sp/>blockType(std::string_view<sp/>name);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">std::ostream<sp/>&amp;operator&lt;&lt;(std::ostream<sp/>&amp;out,<sp/>BlockType<sp/>type);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="lhaData_8h_1ae7d1f281bbc4f3a4db0f26feef9808bd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="lhaData_8h_1ae7d1f281bbc4f3a4db0f26feef9808bd" kindref="member">FloatType</ref><sp/>=<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>double;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="structmty_1_1lha_1_1LHAElement" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="structmty_1_1lha_1_1LHAElement_1a633ecc9b7732569dd277ecc0ab36afde" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structmty_1_1lha_1_1LHAElement_1a633ecc9b7732569dd277ecc0ab36afde" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="77" refid="structmty_1_1lha_1_1LHAElement_1aa1d7bb33ab8019b743ff34c400805941" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structmty_1_1lha_1_1LHAElement_1aa1d7bb33ab8019b743ff34c400805941" kindref="member">id_sup</ref>;</highlight></codeline>
+<codeline lineno="81" refid="structmty_1_1lha_1_1LHAElement_1ac0b7846419271c7ba030d3b3a7e5a0f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="lhaData_8h_1ae7d1f281bbc4f3a4db0f26feef9808bd" kindref="member">FloatType</ref><sp/><ref refid="structmty_1_1lha_1_1LHAElement_1ac0b7846419271c7ba030d3b3a7e5a0f5" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="structmty_1_1lha_1_1Comparator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmty_1_1lha_1_1Comparator" kindref="compound">Comparator</ref><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="structmty_1_1lha_1_1Comparator_1ad8ab47ddd27039da0fe551a6e560319e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structmty_1_1lha_1_1Comparator_1ad8ab47ddd27039da0fe551a6e560319e" kindref="member">compare</ref>(std::vector&lt;size_t&gt;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;pos1,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;size_t&gt;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;pos2)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pos1.size()<sp/>!=<sp/>pos2.size())</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pos1.size()<sp/>&lt;<sp/>pos2.size();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>iter1<sp/>=<sp/>pos1.begin();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>iter2<sp/>=<sp/>pos2.begin();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(iter1<sp/>!=<sp/>pos1.end())<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*iter1<sp/>&lt;<sp/>*iter2)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*iter2<sp/>&lt;<sp/>*iter1)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++iter1;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++iter2;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="structmty_1_1lha_1_1Comparator_1aca42eee05e3636cad9695f2303c036ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structmty_1_1lha_1_1Comparator_1aca42eee05e3636cad9695f2303c036ae" kindref="member">compare</ref>(<ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;A,<sp/><ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;B)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(A.id<sp/>!=<sp/>B.id)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>A.id<sp/>&lt;<sp/>B.id;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>A.id_sup<sp/>&lt;<sp/>B.id_sup;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="classmty_1_1lha_1_1LHABlock" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmty_1_1lha_1_1LHABlock" kindref="compound">LHABlock</ref><sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>IMPLEMENTS_STD_VECTOR(<ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref>,<sp/>elements)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="160" refid="classmty_1_1lha_1_1LHABlock_1a3cd72d16c6c273fa0f32988a47e0b5d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmty_1_1lha_1_1LHABlock" kindref="compound">LHABlock</ref>()<sp/>=<sp/>default;</highlight></codeline>
+<codeline lineno="164" refid="classmty_1_1lha_1_1LHABlock_1aa66b66e05594fe7b78e49e9c2931b4d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classmty_1_1lha_1_1LHABlock" kindref="compound">LHABlock</ref>()<sp/>=<sp/>default;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmty_1_1lha_1_1LHABlock" kindref="compound">LHABlock</ref>(std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>const<sp/>&amp;);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="classmty_1_1lha_1_1LHABlock_1a4803d7d5cfa690224bad8ce9da3c085b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>const<sp/>&amp;<ref refid="classmty_1_1lha_1_1LHABlock_1a4803d7d5cfa690224bad8ce9da3c085b" kindref="member">getName</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="177"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>name;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185" refid="classmty_1_1lha_1_1LHABlock_1a01b8433c0018a1cfa26e1126233ba651" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmty_1_1lha_1_1LHABlock_1a01b8433c0018a1cfa26e1126233ba651" kindref="member">setName</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;t_name)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name<sp/>=<sp/>t_name;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isName(std::string_view<sp/>t_name)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;LHAElement&gt;<sp/><ref refid="classmty_1_1lha_1_1LHABlock_1ab2b7401112f9125c8a9a62d3b1d25235" kindref="member">getElement</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;LHAElement&gt;<sp/><ref refid="classmty_1_1lha_1_1LHABlock_1ab2b7401112f9125c8a9a62d3b1d25235" kindref="member">getElement</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>id_sup<sp/>=<sp/>-1)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;LHAElement&gt;<sp/><ref refid="classmty_1_1lha_1_1LHABlock_1abeccaf30045ced438d81fa270ab50da4" kindref="member">getMultipleElements</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmty_1_1lha_1_1LHABlock_1af182fccc08679f9096a01b14a63b7e69" kindref="member">sortElements</ref>();</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmty_1_1lha_1_1LHABlock_1ad983d6a68601935a9753e9f703bc6b4b" kindref="member">addElement</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>id_sup,<sp/><ref refid="lhaData_8h_1ae7d1f281bbc4f3a4db0f26feef9808bd" kindref="member">FloatType</ref><sp/>value);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmty_1_1lha_1_1LHABlock_1ad983d6a68601935a9753e9f703bc6b4b" kindref="member">addElement</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/><ref refid="lhaData_8h_1ae7d1f281bbc4f3a4db0f26feef9808bd" kindref="member">FloatType</ref><sp/>value);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmty_1_1lha_1_1LHABlock_1ad983d6a68601935a9753e9f703bc6b4b" kindref="member">addElement</ref>(<ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;t_element);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmty_1_1lha_1_1LHABlock_1ad983d6a68601935a9753e9f703bc6b4b" kindref="member">addElement</ref>(<ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref><sp/>&amp;&amp;t_element);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>name;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;LHAElement&gt;<sp/>elements;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283" refid="classmty_1_1lha_1_1LHAFileData" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmty_1_1lha_1_1LHAFileData" kindref="compound">LHAFileData</ref><sp/>{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>npos<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>IMPLEMENTS_STD_VECTOR(<ref refid="classmty_1_1lha_1_1LHABlock" kindref="compound">LHABlock</ref>,<sp/>blocks)</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="293" refid="classmty_1_1lha_1_1LHAFileData_1a1766e8b12188fbd7ffcf65ffe3ee2aeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmty_1_1lha_1_1LHAFileData" kindref="compound">LHAFileData</ref>()<sp/>=<sp/>default;</highlight></codeline>
+<codeline lineno="297" refid="classmty_1_1lha_1_1LHAFileData_1abc13bbf3461c4ff295c06b609bab4fb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classmty_1_1lha_1_1LHAFileData" kindref="compound">LHAFileData</ref>()<sp/>=<sp/>default;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classmty_1_1lha_1_1LHAFileData_1afcc4c8c6f6c038a0df33b736ed0ffcd8" kindref="member">findBlock</ref>(std::string_view<sp/>nameBlock)<sp/>const;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmty_1_1lha_1_1LHAFileData_1ac7115e344c746f624fc7425d924c20d6" kindref="member">addBlock</ref>(std::string_view<sp/>nameBlock);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/>template<sp/>&lt;class...<sp/>Args&gt;</highlight></codeline>
+<codeline lineno="329" refid="classmty_1_1lha_1_1LHAFileData_1aa61d3a1452eceeaa7af5bdaf49a70747" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmty_1_1lha_1_1LHAFileData_1aa61d3a1452eceeaa7af5bdaf49a70747" kindref="member">addElement</ref>(std::string_view<sp/>nameBlock,<sp/>Args<sp/>&amp;&amp;...args)</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;b<sp/>:<sp/>blocks)</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(b.getName()<sp/>==<sp/>nameBlock)<sp/>{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b.addElement(std::forward&lt;Args&gt;(args)...);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;FloatType&gt;<sp/><ref refid="classmty_1_1lha_1_1LHAFileData_1adc9493c6bd2865f7a474fc290aa28fb7" kindref="member">getValues</ref>(std::string_view<sp/>nameBlock)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;FloatType&gt;<sp/><ref refid="classmty_1_1lha_1_1LHAFileData_1a573ceeeb2d1da187e85c116295ee5377" kindref="member">getValue</ref>(std::string_view<sp/>nameBlock,</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;FloatType&gt;</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmty_1_1lha_1_1LHAFileData_1a573ceeeb2d1da187e85c116295ee5377" kindref="member">getValue</ref>(std::string_view<sp/>nameBlock,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>j)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;LHABlock&gt;<sp/>blocks;</highlight></codeline>
+<codeline lineno="380"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal">std::ostream<sp/>&amp;operator&lt;&lt;(std::ostream<sp/>&amp;out,<sp/>LHAElement<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;element);</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal">std::ostream<sp/>&amp;operator&lt;&lt;(std::ostream<sp/>&amp;out,<sp/>LHABlock<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;block);</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal">std::ostream<sp/>&amp;operator&lt;&lt;(std::ostream<sp/>&amp;out,<sp/>LHAFileData<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;data);</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal">std::string<sp/>tolower(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;str);</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>End<sp/>of<sp/>namespace<sp/>mty::lha</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/marty/lha/lhaData.h"/>
+  </compounddef>
+</doxygen>

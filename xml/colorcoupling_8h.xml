@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="colorcoupling_8h" kind="file" language="C++">
+    <compoundname>colorcoupling.h</compoundname>
+    <includes local="no">marty.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="vertexinfo_8h" local="yes">src/marty/ufo/vertexinfo.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/marty/ufo/colorcoupling.h</label>
+        <link refid="colorcoupling_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>marty.h</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>src/marty/ufo/colorcoupling.h</label>
+        <link refid="colorcoupling_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/marty/ufo/marty-ufo.h</label>
+        <link refid="marty-ufo_8h"/>
+      </node>
+      <node id="4">
+        <label>src/marty/ufo/simplifiedvertex.h</label>
+        <link refid="simplifiedvertex_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/marty/ufo/vertexinfo.h</label>
+        <link refid="vertexinfo_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structmty_1_1experimental_1_1ufo_1_1ColorCoupling" prot="public">mty::experimental::ufo::ColorCoupling</innerclass>
+    <innernamespace refid="namespacemty">mty</innernamespace>
+    <innernamespace refid="namespacemty_1_1experimental">mty::experimental</innernamespace>
+    <innernamespace refid="namespacemty_1_1experimental_1_1ufo">mty::experimental::ufo</innernamespace>
+    <briefdescription>
+<para>Contains the <ref refid="structmty_1_1experimental_1_1ufo_1_1ColorCoupling" kindref="compound">mty::experimental::ufo::ColorCoupling</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;marty.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemty_1_1experimental_1_1ufo" kindref="compound">mty::experimental::ufo</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="structmty_1_1experimental_1_1ufo_1_1ColorCoupling" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmty_1_1experimental_1_1ufo_1_1ColorCoupling" kindref="compound">ColorCoupling</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="structmty_1_1experimental_1_1ufo_1_1ColorCoupling_1abc4bf94c6c3be9e5013919edf3454d72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/><ref refid="structmty_1_1experimental_1_1ufo_1_1ColorCoupling_1abc4bf94c6c3be9e5013919edf3454d72" kindref="member">generators</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mty::experimental::ufo</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/marty/ufo/colorcoupling.h"/>
+  </compounddef>
+</doxygen>

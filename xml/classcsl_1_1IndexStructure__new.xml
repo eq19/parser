@@ -1,0 +1,839 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcsl_1_1IndexStructure__new" kind="class" language="C++" prot="public">
+    <compoundname>csl::IndexStructure_new</compoundname>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>N</declname>
+        <defname>N</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classcsl_1_1IndexStructure__new_1ae240e5fbd1cfd8f5c630a51e79d928fe" prot="public" static="no">
+        <type>typename std::array&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref>, N &gt;::iterator</type>
+        <definition>using csl::IndexStructure_new&lt; N &gt;::iterator =  typename std::array&lt;csl::Index, N&gt;::iterator</definition>
+        <argsstring></argsstring>
+        <name>iterator</name>
+        <qualifiedname>csl::IndexStructure_new::iterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="82" column="5" bodyfile="src/csl/index_new.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classcsl_1_1IndexStructure__new_1a13e60773087cd72333395212bc02064e" prot="public" static="no">
+        <type>typename std::array&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref>, N &gt;::const_iterator</type>
+        <definition>using csl::IndexStructure_new&lt; N &gt;::const_iterator =  typename std::array&lt;csl::Index, N&gt;::const_iterator</definition>
+        <argsstring></argsstring>
+        <name>const_iterator</name>
+        <qualifiedname>csl::IndexStructure_new::const_iterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="83" column="5" bodyfile="src/csl/index_new.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classcsl_1_1IndexStructure__new_1ad3359224bbb5891e48669d3c992dc902" prot="public" static="no">
+        <type>typename std::array&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref>, N &gt;::reverse_iterator</type>
+        <definition>using csl::IndexStructure_new&lt; N &gt;::reverse_iterator = 
+        typename std::array&lt;csl::Index, N&gt;::reverse_iterator</definition>
+        <argsstring></argsstring>
+        <name>reverse_iterator</name>
+        <qualifiedname>csl::IndexStructure_new::reverse_iterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="84" column="5" bodyfile="src/csl/index_new.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classcsl_1_1IndexStructure__new_1ad372f6aa91f909f013120627406c11b0" prot="public" static="no">
+        <type>typename std::array&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref>, N &gt;::const_reverse_iterator</type>
+        <definition>using csl::IndexStructure_new&lt; N &gt;::const_reverse_iterator = 
+        typename std::array&lt;csl::Index, N&gt;::const_reverse_iterator</definition>
+        <argsstring></argsstring>
+        <name>const_reverse_iterator</name>
+        <qualifiedname>csl::IndexStructure_new::const_reverse_iterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="86" column="5" bodyfile="src/csl/index_new.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcsl_1_1IndexStructure__new_1aba8676c0a7aadf3b8fbfbbf7f967593e" prot="private" static="no" mutable="no">
+        <type>std::array&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref>, N &gt;</type>
+        <definition>std::array&lt;csl::Index, N&gt; csl::IndexStructure_new&lt; N &gt;::indices</definition>
+        <argsstring></argsstring>
+        <name>indices</name>
+        <qualifiedname>csl::IndexStructure_new::indices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="433" column="16" bodyfile="src/csl/index_new.h" bodystart="433" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a380435478218d2990a10e04875551e98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::IndexStructure_new&lt; N &gt;::IndexStructure_new</definition>
+        <argsstring>()=default</argsstring>
+        <name>IndexStructure_new</name>
+        <qualifiedname>csl::IndexStructure_new::IndexStructure_new</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="89" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1aa25fcc8717809bb359eed839429ef56a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::IndexStructure_new&lt; N &gt;::~IndexStructure_new</definition>
+        <argsstring>()=default</argsstring>
+        <name>~IndexStructure_new</name>
+        <qualifiedname>csl::IndexStructure_new::~IndexStructure_new</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="90" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1ae9c6304c8d889bfab02580dcfb4d0b9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::IndexStructure_new&lt; N &gt;::IndexStructure_new</definition>
+        <argsstring>(IndexStructure_new const &amp;)=default</argsstring>
+        <name>IndexStructure_new</name>
+        <qualifiedname>csl::IndexStructure_new::IndexStructure_new</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1IndexStructure__new" kindref="compound">IndexStructure_new</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="91" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a370c1c766d097f6ea1f4b65382f71120" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::IndexStructure_new&lt; N &gt;::IndexStructure_new</definition>
+        <argsstring>(IndexStructure_new &amp;&amp;)=default</argsstring>
+        <name>IndexStructure_new</name>
+        <qualifiedname>csl::IndexStructure_new::IndexStructure_new</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1IndexStructure__new" kindref="compound">IndexStructure_new</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="92" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a4610cd19f2607b6b732b2960f494ee91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1IndexStructure__new" kindref="compound">IndexStructure_new</ref>&lt; N &gt; &amp;</type>
+        <definition>IndexStructure_new&lt; N &gt; &amp; csl::IndexStructure_new&lt; N &gt;::operator=</definition>
+        <argsstring>(IndexStructure_new&lt; N &gt; const &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>csl::IndexStructure_new::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1IndexStructure__new" kindref="compound">IndexStructure_new</ref>&lt; N &gt; const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="93" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a2b32d1777304f33a1a273839bf36cf1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1IndexStructure__new" kindref="compound">IndexStructure_new</ref>&lt; N &gt; &amp;</type>
+        <definition>IndexStructure_new&lt; N &gt; &amp; csl::IndexStructure_new&lt; N &gt;::operator=</definition>
+        <argsstring>(IndexStructure_new&lt; N &gt; &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>csl::IndexStructure_new::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1IndexStructure__new" kindref="compound">IndexStructure_new</ref>&lt; N &gt; &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="94" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1aa4bc1291c8d15eeb6aaf8b9d8922af7a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>csl::IndexStructure_new&lt; N &gt;::IndexStructure_new</definition>
+        <argsstring>(csl::Index const &amp;first)</argsstring>
+        <name>IndexStructure_new</name>
+        <qualifiedname>csl::IndexStructure_new::IndexStructure_new</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>first</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="96" column="14" bodyfile="src/csl/index_new.h" bodystart="96" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a9c01b0a03c7be9969b99b825bf939495" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>csl::IndexStructure_new&lt; N &gt;::IndexStructure_new</definition>
+        <argsstring>(IndexStructureView const &amp;other)</argsstring>
+        <name>IndexStructure_new</name>
+        <qualifiedname>csl::IndexStructure_new::IndexStructure_new</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1IndexStructureView" kindref="compound">IndexStructureView</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="102" column="5" bodyfile="src/csl/index_new.h" bodystart="102" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a1bd8c1793521135c556b54b12b4c6045" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>csl::IndexStructure_new&lt; N &gt;::IndexStructure_new</definition>
+        <argsstring>(std::array&lt; csl::Index, N &gt; const &amp;t_indices)</argsstring>
+        <name>IndexStructure_new</name>
+        <qualifiedname>csl::IndexStructure_new::IndexStructure_new</qualifiedname>
+        <param>
+          <type>std::array&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref>, N &gt; const &amp;</type>
+          <declname>t_indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="112" column="14" bodyfile="src/csl/index_new.h" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a9c7236da03007d65fe14355b66eee74c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>csl::IndexStructure_new&lt; N &gt;::IndexStructure_new</definition>
+        <argsstring>(std::array&lt; csl::Index, N &gt; &amp;&amp;t_indices)</argsstring>
+        <name>IndexStructure_new</name>
+        <qualifiedname>csl::IndexStructure_new::IndexStructure_new</qualifiedname>
+        <param>
+          <type>std::array&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref>, N &gt; &amp;&amp;</type>
+          <declname>t_indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="117" column="14" bodyfile="src/csl/index_new.h" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a7b04a974ddbc6924dc98c9c295fd31a9" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::IndexStructure_new&lt; N &gt;::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>csl::IndexStructure_new::empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="122" column="20" bodyfile="src/csl/index_new.h" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1abba4c31a001e0de3790e1083f9b38d82" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t csl::IndexStructure_new&lt; N &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>csl::IndexStructure_new::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="127" column="22" bodyfile="src/csl/index_new.h" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1ada4fa45beaaa5cc62cbb43eb36db7912" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>iterator</type>
+        <definition>iterator csl::IndexStructure_new&lt; N &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>csl::IndexStructure_new::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="132" column="21" bodyfile="src/csl/index_new.h" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a9293a595ff98da926dbd84796c4a2d56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>iterator</type>
+        <definition>iterator csl::IndexStructure_new&lt; N &gt;::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>csl::IndexStructure_new::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="137" column="21" bodyfile="src/csl/index_new.h" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1afdbce25217fd7b4229d260e50dcdd341" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const_iterator</type>
+        <definition>const_iterator csl::IndexStructure_new&lt; N &gt;::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>csl::IndexStructure_new::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="142" column="27" bodyfile="src/csl/index_new.h" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1adb89d2add82f9b845dbc72a8e005b21f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const_iterator</type>
+        <definition>const_iterator csl::IndexStructure_new&lt; N &gt;::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>csl::IndexStructure_new::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="147" column="27" bodyfile="src/csl/index_new.h" bodystart="147" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a2122359a4c7b8e29c54e30c47cc78e12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>reverse_iterator</type>
+        <definition>reverse_iterator csl::IndexStructure_new&lt; N &gt;::rbegin</definition>
+        <argsstring>()</argsstring>
+        <name>rbegin</name>
+        <qualifiedname>csl::IndexStructure_new::rbegin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="152" column="29" bodyfile="src/csl/index_new.h" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a962a762f389fa9a253202f94dfd44eb7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>reverse_iterator</type>
+        <definition>reverse_iterator csl::IndexStructure_new&lt; N &gt;::rend</definition>
+        <argsstring>()</argsstring>
+        <name>rend</name>
+        <qualifiedname>csl::IndexStructure_new::rend</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="157" column="29" bodyfile="src/csl/index_new.h" bodystart="157" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1ae1fc539c542383e298987a98b787c9b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const_reverse_iterator</type>
+        <definition>const_reverse_iterator csl::IndexStructure_new&lt; N &gt;::rbegin</definition>
+        <argsstring>() const</argsstring>
+        <name>rbegin</name>
+        <qualifiedname>csl::IndexStructure_new::rbegin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="162" column="35" bodyfile="src/csl/index_new.h" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a04c671336c3c8390268699edd96e457d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const_reverse_iterator</type>
+        <definition>const_reverse_iterator csl::IndexStructure_new&lt; N &gt;::rend</definition>
+        <argsstring>() const</argsstring>
+        <name>rend</name>
+        <qualifiedname>csl::IndexStructure_new::rend</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="167" column="35" bodyfile="src/csl/index_new.h" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a480205cd5a0d09a7c0bbdf82ce0c04b1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref></type>
+        <definition>csl::Index csl::IndexStructure_new&lt; N &gt;::operator[]</definition>
+        <argsstring>(size_t pos) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>csl::IndexStructure_new::operator[]</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="172" column="16" bodyfile="src/csl/index_new.h" bodystart="172" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1af262bf65eab05590e25eba11e60c3128" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &amp;</type>
+        <definition>csl::Index &amp; csl::IndexStructure_new&lt; N &gt;::operator[]</definition>
+        <argsstring>(size_t pos)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>csl::IndexStructure_new::operator[]</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="177" column="16" bodyfile="src/csl/index_new.h" bodystart="177" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1af2adaafedf2f1e758e7bfb305f854cd4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>M</declname>
+            <defname>M</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcsl_1_1IndexStructure__new" kindref="compound">IndexStructure_new</ref>&lt; M+N &gt;</type>
+        <definition>IndexStructure_new&lt; M+N &gt; csl::IndexStructure_new&lt; N &gt;::operator+</definition>
+        <argsstring>(IndexStructure_new&lt; M &gt; const &amp;other) const</argsstring>
+        <name>operator+</name>
+        <qualifiedname>csl::IndexStructure_new::operator+</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1IndexStructure__new" kindref="compound">IndexStructure_new</ref>&lt; M &gt; const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="184" column="5" bodyfile="src/csl/index_new.h" bodystart="184" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1af041d1ef6fb570ec39ccfd1563bfcca4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt;</type>
+        <definition>std::vector&lt; csl::Index &gt; csl::IndexStructure_new&lt; N &gt;::getVectorIndex</definition>
+        <argsstring>() const</argsstring>
+        <name>getVectorIndex</name>
+        <qualifiedname>csl::IndexStructure_new::getVectorIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="194" column="17" bodyfile="src/csl/index_new.h" bodystart="194" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a3e74dadf03592d19ecd9b0fefd2febfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::IndexStructure_new&lt; N &gt;::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>csl::IndexStructure_new::reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="199" column="10" bodyfile="src/csl/index_new.h" bodystart="199" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a15458bcf88028e33bcd24c3c562caf2d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::IndexStructure_new&lt; N &gt;::exactMatch</definition>
+        <argsstring>(const IndexStructure_new&lt; N &gt; &amp;structure) const</argsstring>
+        <name>exactMatch</name>
+        <qualifiedname>csl::IndexStructure_new::exactMatch</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1IndexStructure__new" kindref="compound">IndexStructure_new</ref>&lt; N &gt; &amp;</type>
+          <declname>structure</declname>
+        </param>
+        <briefdescription>
+<para>Compares the IndexStructure_new&lt;N&gt; with <bold>structure</bold>. Each index must match exactly (see <ref refid="classcsl_1_1Index_1af60770e33d69e0e10f2a20de65ca27ae" kindref="member">Index::exactMatch()</ref>) with the <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> at the same place in the second structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>structure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IndexStructure_new&lt;N&gt; to compare.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the two structures match exactly. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="217" column="10" bodyfile="src/csl/index_new.h" bodystart="217" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a61d9c10da9b35e1cd84064a78c5fe4db" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::IndexStructure_new&lt; N &gt;::compareWithDummy</definition>
+        <argsstring>(const IndexStructure_new&lt; N &gt; &amp;structure) const</argsstring>
+        <name>compareWithDummy</name>
+        <qualifiedname>csl::IndexStructure_new::compareWithDummy</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1IndexStructure__new" kindref="compound">IndexStructure_new</ref>&lt; N &gt; &amp;</type>
+          <declname>structure</declname>
+        </param>
+        <briefdescription>
+<para>Compares *this with <bold>structure</bold> index by index (in order) using the function <ref refid="classcsl_1_1Index_1a3423a6f82a350eab6a7e2f3a039cb337" kindref="member">Index::compareWithDummy()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>structure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IndexStructure_new&lt;N&gt; to compare.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the two structures are equal wrt <ref refid="classcsl_1_1Index_1a3423a6f82a350eab6a7e2f3a039cb337" kindref="member">Index::compareWithDummy()</ref>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="237" column="10" bodyfile="src/csl/index_new.h" bodystart="237" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a110cbcd8abf5732286f3db213d3e8c55" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::IndexStructure_new&lt; N &gt;::compareWithDummy</definition>
+        <argsstring>(const IndexStructure_new&lt; N &gt; &amp;structure, std::map&lt; Index, Index &gt; &amp;constraints, bool keepAllCosntraints=false) const</argsstring>
+        <name>compareWithDummy</name>
+        <qualifiedname>csl::IndexStructure_new::compareWithDummy</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1IndexStructure__new" kindref="compound">IndexStructure_new</ref>&lt; N &gt; &amp;</type>
+          <declname>structure</declname>
+        </param>
+        <param>
+          <type>std::map&lt; <ref refid="classcsl_1_1Index" kindref="compound">Index</ref>, <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> &gt; &amp;</type>
+          <declname>constraints</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>keepAllCosntraints</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Compares *this with <bold>structure</bold> index by index (in order) using the function <ref refid="classcsl_1_1Index_1a3423a6f82a350eab6a7e2f3a039cb337" kindref="member">Index::compareWithDummy()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The map between indices contains matches between dummy indices. Dummy indices can a priori match between each other independently of their names, but one an <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> has been matched with another, the pair is put into <bold>constraints</bold>. This <bold>constraints</bold> map allows then to compare properly complex expressions containing dummy indices. The map <bold>constraints</bold> is modified in the function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>structure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IndexStructure_new&lt;N&gt; to compare. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>constraints</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Map of <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> to <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> storing constraints of correpondance between dummy indices.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the two structures are equal wrt <ref refid="classcsl_1_1Index_1a3423a6f82a350eab6a7e2f3a039cb337" kindref="member">Index::compareWithDummy()</ref>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="261" column="10" bodyfile="src/csl/index_new.h" bodystart="261" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1ac77392f6308a57c666ae2bf95149b3ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::IndexStructure_new&lt; N &gt;::operator==</definition>
+        <argsstring>(const IndexStructure_new&lt; N &gt; &amp;structure) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>csl::IndexStructure_new::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1IndexStructure__new" kindref="compound">IndexStructure_new</ref>&lt; N &gt; &amp;</type>
+          <declname>structure</declname>
+        </param>
+        <briefdescription>
+<para>operator==, compares the IndexStructure_new&lt;N&gt; to <bold>structure</bold> in terms of free structure, independently of the dummy indices or the order of free indices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>structure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IndexStructure_new&lt;N&gt; to compare with *this.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the two structures are equivalent, i.e. are compatible as two terms of a sum wrt Einstein&apos;)s convention. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="326" column="10" bodyfile="src/csl/index_new.h" bodystart="326" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a3b7b33d5fe8b47b3b1a1290793b443ed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::IndexStructure_new&lt; N &gt;::operator!=</definition>
+        <argsstring>(const IndexStructure_new&lt; N &gt; &amp;structure) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>csl::IndexStructure_new::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1IndexStructure__new" kindref="compound">IndexStructure_new</ref>&lt; N &gt; &amp;</type>
+          <declname>structure</declname>
+        </param>
+        <briefdescription>
+<para>operator!=, returns the opposite of <ref refid="classcsl_1_1IndexStructure__new_1ac77392f6308a57c666ae2bf95149b3ad" kindref="member">IndexStructure_new&lt;N&gt;::operator==()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>structure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IndexStructure_new&lt;N&gt; to compares</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>not IndexStructure_new&lt;N&gt;::operator==(structure). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="366" column="10" bodyfile="src/csl/index_new.h" bodystart="366" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a14838e7d024b1ac7cb2bbc700308c54b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::IndexStructure_new&lt; N &gt;::operator&lt;</definition>
+        <argsstring>(const IndexStructure_new&lt; N &gt; &amp;structure) const</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>csl::IndexStructure_new::operator&lt;</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1IndexStructure__new" kindref="compound">IndexStructure_new</ref>&lt; N &gt; &amp;</type>
+          <declname>structure</declname>
+        </param>
+        <briefdescription>
+<para>operator&lt;, simplicity comparator using comparators between indices, starting by comparing the first ones. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>structure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IndexStructure_new&lt;N&gt; to compare.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if *this is simpler than <bold>structure</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="379" column="5" bodyfile="src/csl/index_new.h" bodystart="379" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a6ea08ba67f5181600d664e891b8763ee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::IndexStructure_new&lt; N &gt;::operator&gt;</definition>
+        <argsstring>(const IndexStructure_new&lt; N &gt; &amp;structure) const</argsstring>
+        <name>operator&gt;</name>
+        <qualifiedname>csl::IndexStructure_new::operator&gt;</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1IndexStructure__new" kindref="compound">IndexStructure_new</ref>&lt; N &gt; &amp;</type>
+          <declname>structure</declname>
+        </param>
+        <briefdescription>
+<para>operator&gt;, simplicity comparator using comparators between indices, starting by comparing the first ones. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>structure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IndexStructure_new&lt;N&gt; to compare.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if <bold>structure</bold> is simpler than *this. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="401" column="10" bodyfile="src/csl/index_new.h" bodystart="401" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1a025358a09fd8058d006d169066fd8e3b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::IndexStructure_new&lt; N &gt;::operator&lt;=</definition>
+        <argsstring>(const IndexStructure_new&lt; N &gt; &amp;structure) const</argsstring>
+        <name>operator&lt;=</name>
+        <qualifiedname>csl::IndexStructure_new::operator&lt;=</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1IndexStructure__new" kindref="compound">IndexStructure_new</ref>&lt; N &gt; &amp;</type>
+          <declname>structure</declname>
+        </param>
+        <briefdescription>
+<para>operator&lt;=, simplicity comparator using comparators between indices, starting by comparing the first ones. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>structure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IndexStructure_new&lt;N&gt; to compare.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if &lt; or |=. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="414" column="5" bodyfile="src/csl/index_new.h" bodystart="414" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1IndexStructure__new_1aea35cdda8aeb2aeee6897ff67348c086" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::IndexStructure_new&lt; N &gt;::operator&gt;=</definition>
+        <argsstring>(const IndexStructure_new&lt; N &gt; &amp;structure) const</argsstring>
+        <name>operator&gt;=</name>
+        <qualifiedname>csl::IndexStructure_new::operator&gt;=</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1IndexStructure__new" kindref="compound">IndexStructure_new</ref>&lt; N &gt; &amp;</type>
+          <declname>structure</declname>
+        </param>
+        <briefdescription>
+<para>operator&gt;=, simplicity comparator using comparators between indices, starting by comparing the first ones. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>structure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IndexStructure_new&lt;N&gt; to compare.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if &gt; or |=. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/index_new.h" line="427" column="10" bodyfile="src/csl/index_new.h" bodystart="427" bodyend="430"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/csl/index_new.h" line="33" column="1" bodyfile="src/csl/index_new.h" bodystart="79" bodyend="434"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1IndexStructure__new_1ada4fa45beaaa5cc62cbb43eb36db7912" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>begin</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1afdbce25217fd7b4229d260e50dcdd341" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>begin</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a61d9c10da9b35e1cd84064a78c5fe4db" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>compareWithDummy</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a110cbcd8abf5732286f3db213d3e8c55" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>compareWithDummy</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a13e60773087cd72333395212bc02064e" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>const_iterator</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1ad372f6aa91f909f013120627406c11b0" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>const_reverse_iterator</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a7b04a974ddbc6924dc98c9c295fd31a9" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>empty</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a9293a595ff98da926dbd84796c4a2d56" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>end</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1adb89d2add82f9b845dbc72a8e005b21f" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>end</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a15458bcf88028e33bcd24c3c562caf2d" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>exactMatch</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1af041d1ef6fb570ec39ccfd1563bfcca4" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>getVectorIndex</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a380435478218d2990a10e04875551e98" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>IndexStructure_new</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1ae9c6304c8d889bfab02580dcfb4d0b9a" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>IndexStructure_new</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a370c1c766d097f6ea1f4b65382f71120" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>IndexStructure_new</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1aa4bc1291c8d15eeb6aaf8b9d8922af7a" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>IndexStructure_new</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a9c01b0a03c7be9969b99b825bf939495" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>IndexStructure_new</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a1bd8c1793521135c556b54b12b4c6045" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>IndexStructure_new</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a9c7236da03007d65fe14355b66eee74c" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>IndexStructure_new</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1aba8676c0a7aadf3b8fbfbbf7f967593e" prot="private" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>indices</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1ae240e5fbd1cfd8f5c630a51e79d928fe" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>iterator</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a3b7b33d5fe8b47b3b1a1290793b443ed" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1af2adaafedf2f1e758e7bfb305f854cd4" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>operator+</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a14838e7d024b1ac7cb2bbc700308c54b" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a025358a09fd8058d006d169066fd8e3b" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>operator&lt;=</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a4610cd19f2607b6b732b2960f494ee91" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>operator=</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a2b32d1777304f33a1a273839bf36cf1a" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>operator=</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1ac77392f6308a57c666ae2bf95149b3ad" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a6ea08ba67f5181600d664e891b8763ee" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>operator&gt;</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1aea35cdda8aeb2aeee6897ff67348c086" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>operator&gt;=</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a480205cd5a0d09a7c0bbdf82ce0c04b1" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>operator[]</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1af262bf65eab05590e25eba11e60c3128" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>operator[]</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a2122359a4c7b8e29c54e30c47cc78e12" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>rbegin</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1ae1fc539c542383e298987a98b787c9b0" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>rbegin</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a962a762f389fa9a253202f94dfd44eb7" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>rend</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a04c671336c3c8390268699edd96e457d" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>rend</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1a3e74dadf03592d19ecd9b0fefd2febfa" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>reset</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1ad3359224bbb5891e48669d3c992dc902" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>reverse_iterator</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1abba4c31a001e0de3790e1083f9b38d82" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>size</name></member>
+      <member refid="classcsl_1_1IndexStructure__new_1aa25fcc8717809bb359eed839429ef56a" prot="public" virt="non-virtual"><scope>csl::IndexStructure_new</scope><name>~IndexStructure_new</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

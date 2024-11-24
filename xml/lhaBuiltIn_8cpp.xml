@@ -1,0 +1,1563 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="lhaBuiltIn_8cpp" kind="file" language="C++">
+    <compoundname>lhaBuiltIn.cpp</compoundname>
+    <includes refid="lhaBuiltIn_8h" local="yes">lhaBuiltIn.h</includes>
+    <includes refid="lha_8h" local="yes">../lha/lha.h</includes>
+    <includes refid="lhaData_8h" local="yes">../lha/lhaData.h</includes>
+    <includes refid="mssm_8h" local="yes">../models/mssm.h</includes>
+    <includes refid="sm_8h" local="yes">../models/sm.h</includes>
+    <includes refid="mrtError_8h" local="yes">mrtError.h</includes>
+    <includes local="no">fstream</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>abreviation.h</label>
+        <link refid="abreviation_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>abstract.h</label>
+        <link refid="abstract_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>algo.h</label>
+        <link refid="algo_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>allocator.h</label>
+        <link refid="allocator_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>booleanOperators.h</label>
+        <link refid="booleanOperators_8h_source"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>buildingBlock.h</label>
+        <link refid="buildingBlock_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>cast.h</label>
+        <link refid="cast_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>commutation.h</label>
+        <link refid="commutation_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>comparison.h</label>
+        <link refid="comparison_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>conditional.h</label>
+        <link refid="conditional_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>counter.h</label>
+        <link refid="counter_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../../csl/csl.h</label>
+        <link refid="csl_2csl_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>cslcomplex.h</label>
+        <link refid="cslcomplex_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>default_move_cpy.h</label>
+        <link refid="default__move__cpy_8h"/>
+      </node>
+      <node id="54">
+        <label>diagonalization.h</label>
+        <link refid="diagonalization_8h"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>dichotomy.h</label>
+        <link refid="dichotomy_8h_source"/>
+      </node>
+      <node id="40">
+        <label>element.h</label>
+        <link refid="element_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>enum.h</label>
+        <link refid="enum_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>evaluation.h</label>
+        <link refid="evaluation_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>functional.h</label>
+        <link refid="functional_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>hardComparison.h</label>
+        <link refid="hardComparison_8h_source"/>
+      </node>
+      <node id="74">
+        <label>hardFactor.h</label>
+        <link refid="hardFactor_8h_source"/>
+      </node>
+      <node id="33">
+        <label>index.h</label>
+        <link refid="index_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>indicial.h</label>
+        <link refid="indicial_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>indicialExpander.h</label>
+        <link refid="indicialExpander_8h"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>initSanitizer.h</label>
+        <link refid="initSanitizer_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>interface_indicial.h</label>
+        <link refid="interface__indicial_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>librarydependency.h</label>
+        <link refid="librarydependency_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>libraryevaluator.h</label>
+        <link refid="libraryevaluator_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>libraryfunction.h</label>
+        <link refid="libraryfunction_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>librarygenerator.h</label>
+        <link refid="librarygenerator_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>librarygroup.h</label>
+        <link refid="librarygroup_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>librarytensor.h</label>
+        <link refid="librarytensor_8h"/>
+      </node>
+      <node id="82">
+        <label>linear_map.h</label>
+        <link refid="linear__map_8h_source"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>literal.h</label>
+        <link refid="literal_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>lock.h</label>
+        <link refid="lock_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>mathFunctions.h</label>
+        <link refid="mathFunctions_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>memory_pool.h</label>
+        <link refid="memory__pool_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>multipermutation.h</label>
+        <link refid="multipermutation_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>numerical.h</label>
+        <link refid="numerical_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>objectSymmetry.h</label>
+        <link refid="objectSymmetry_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>operations.h</label>
+        <link refid="operations_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>operator.h</label>
+        <link refid="operator_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>options.h</label>
+        <link refid="options_8h"/>
+      </node>
+      <node id="36">
+        <label>parent.h</label>
+        <link refid="parent_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>partialExpand.h</label>
+        <link refid="partialExpand_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>patternMatch.h</label>
+        <link refid="patternMatch_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>progressBar.h</label>
+        <link refid="progressBar_8h"/>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>pseudoIntegral.h</label>
+        <link refid="pseudoIntegral_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>replace.h</label>
+        <link refid="replace_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>scalarFunc.h</label>
+        <link refid="scalarFunc_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>scopedProperty.h</label>
+        <link refid="scopedProperty_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>simplification.h</label>
+        <link refid="simplification_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>sort.h</label>
+        <link refid="sort_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>space.h</label>
+        <link refid="space_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>std_shared_ptr_inheritance.h</label>
+        <link refid="std__shared__ptr__inheritance_8h"/>
+      </node>
+      <node id="34">
+        <label>std_vector_implementation.h</label>
+        <link refid="csl_2std__vector__implementation_8h"/>
+      </node>
+      <node id="29">
+        <label>support.h</label>
+        <link refid="support_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>symmetricCounter.h</label>
+        <link refid="symmetricCounter_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>symmetry.h</label>
+        <link refid="symmetry_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>tensorField.h</label>
+        <link refid="tensorField_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>timeMonitor.h</label>
+        <link refid="timeMonitor_8h"/>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>typedef.h</label>
+        <link refid="typedef_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>variableParent.h</label>
+        <link refid="variableParent_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>vector.h</label>
+        <link refid="vector_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>adjacencyMatrix.h</label>
+        <link refid="core_2adjacencyMatrix_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>../../grafed/core/latexLink.h</label>
+        <link refid="core_2latexLink_8h"/>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>planargraph.h</label>
+        <link refid="core_2planargraph_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>algebraState.h</label>
+        <link refid="algebraState_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>expander.h</label>
+        <link refid="expander_8h"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>fermionFlow.h</label>
+        <link refid="fermionFlow_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>fermionicField.h</label>
+        <link refid="fermionicField_8h"/>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>feynOptions.h</label>
+        <link refid="feynOptions_8h"/>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>feynmanRule.h</label>
+        <link refid="feynmanRule_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>flavor.h</label>
+        <link refid="flavor_8h"/>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>gauge.h</label>
+        <link refid="gauge_8h"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>gaugedGroup.h</label>
+        <link refid="gaugedGroup_8h"/>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>generator.h</label>
+        <link refid="generator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>graph.h</label>
+        <link refid="graph_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>group.h</label>
+        <link refid="group_8h"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>insertion.h</label>
+        <link refid="insertion_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>interactionTerm.h</label>
+        <link refid="interactionTerm_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>iterable.h</label>
+        <link refid="iterable_8h"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>kinematics.h</label>
+        <link refid="kinematics_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>lagrangian.h</label>
+        <link refid="lagrangian_8h"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/marty/core/lhaBuiltIn.cpp</label>
+        <link refid="lhaBuiltIn_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lhaBuiltIn.h</label>
+        <link refid="lhaBuiltIn_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>matrix.h</label>
+        <link refid="matrix_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>marty/core/model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>modelBuilder.h</label>
+        <link refid="modelBuilder_8h"/>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>modelData.h</label>
+        <link refid="modelData_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>mrtError.h</label>
+        <link refid="mrtError_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>mrtOptions.h</label>
+        <link refid="mrtOptions_8h"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>mrtUtils.h</label>
+        <link refid="mrtUtils_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>operatorBasis.h</label>
+        <link refid="operatorBasis_8h_source"/>
+      </node>
+      <node id="113">
+        <label>quantumField.h</label>
+        <link refid="quantumField_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>representation.h</label>
+        <link refid="representation_8h"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>scalarField.h</label>
+        <link refid="scalarField_8h"/>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>semiSimpleAlgebra.h</label>
+        <link refid="semiSimpleAlgebra_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>spectrum.h</label>
+        <link refid="spectrum_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>marty/core/std_vector_implementation.h</label>
+        <link refid="marty_2core_2std__vector__implementation_8h"/>
+      </node>
+      <node id="124">
+        <label>su_n_algebra.h</label>
+        <link refid="su__n__algebra_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>topology.h</label>
+        <link refid="topology_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>vectorField.h</label>
+        <link refid="vectorField_8h"/>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>../lha/lha.h</label>
+        <link refid="lha_8h"/>
+      </node>
+      <node id="104">
+        <label>lhaBlocks.h</label>
+        <link refid="lhaBlocks_8h"/>
+      </node>
+      <node id="103">
+        <label>../lha/lhaData.h</label>
+        <link refid="lhaData_8h"/>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>../models/mssm.h</label>
+        <link refid="mssm_8h_source"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>mssmData.h</label>
+        <link refid="mssmData_8h"/>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>../models/sm.h</label>
+        <link refid="sm_8h_source"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>../sgl/sgloptions.h</label>
+        <link refid="sgloptions_8h"/>
+      </node>
+      <node id="91">
+        <label>algorithm</label>
+      </node>
+      <node id="27">
+        <label>bitset</label>
+      </node>
+      <node id="6">
+        <label>cassert</label>
+      </node>
+      <node id="30">
+        <label>cmath</label>
+      </node>
+      <node id="24">
+        <label>csignal</label>
+      </node>
+      <node id="130">
+        <label>cstddef</label>
+      </node>
+      <node id="88">
+        <label>ctime</label>
+      </node>
+      <node id="81">
+        <label>exception</label>
+      </node>
+      <node id="99">
+        <label>fstream</label>
+      </node>
+      <node id="10">
+        <label>functional</label>
+      </node>
+      <node id="55">
+        <label>gsl/gsl_complex.h</label>
+      </node>
+      <node id="56">
+        <label>gsl/gsl_matrix.h</label>
+      </node>
+      <node id="117">
+        <label>gsl/gsl_vector.h</label>
+      </node>
+      <node id="13">
+        <label>initializer_list</label>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="100">
+        <label>limits</label>
+      </node>
+      <node id="61">
+        <label>list</label>
+      </node>
+      <node id="14">
+        <label>map</label>
+      </node>
+      <node id="11">
+        <label>memory</label>
+      </node>
+      <node id="17">
+        <label>mutex</label>
+      </node>
+      <node id="142">
+        <label>numeric</label>
+      </node>
+      <node id="12">
+        <label>optional</label>
+      </node>
+      <node id="15">
+        <label>set</label>
+      </node>
+      <node id="8">
+        <label>sstream</label>
+      </node>
+      <node id="85">
+        <label>stddef.h</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="25">
+        <label>string_view</label>
+      </node>
+      <node id="18">
+        <label>thread</label>
+      </node>
+      <node id="58">
+        <label>tuple</label>
+      </node>
+      <node id="68">
+        <label>type_traits</label>
+      </node>
+      <node id="69">
+        <label>typeinfo</label>
+      </node>
+      <node id="83">
+        <label>utility</label>
+      </node>
+      <node id="16">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacemty">mty</innernamespace>
+    <innernamespace refid="namespacemty_1_1lha">mty::lha</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>MARTY.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MARTY<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MARTY<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>MARTY.<sp/>If<sp/>not,<sp/>see<sp/>&lt;https://www.gnu.org/licenses/&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lhaBuiltIn_8h" kindref="compound">lhaBuiltIn.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lha_8h" kindref="compound">../lha/lha.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lhaData_8h" kindref="compound">../lha/lhaData.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../models/mssm.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../models/sm.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mrtError_8h" kindref="compound">mrtError.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">mty::lha<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>readFile(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;fileName)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ifstream<sp/>file(fileName,<sp/>std::ios::in);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>HEPAssert(</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file,<sp/>mty::error::NameError,<sp/></highlight><highlight class="stringliteral">&quot;File<sp/>\&quot;&quot;</highlight><highlight class="normal"><sp/>+<sp/>fileName<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\&quot;<sp/>not<sp/>found.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>readFile(file);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>file.close();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>readFile(std::ifstream<sp/>&amp;file)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>LHAFileData<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>Reader::readFile(file);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;FloatType&gt;<sp/>model_value<sp/>=<sp/>data.getValue(</highlight><highlight class="stringliteral">&quot;MODSEL&quot;</highlight><highlight class="normal">,<sp/>0);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model<sp/>=<sp/>(model_value)<sp/>?<sp/>std::round(*model_value)<sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>LHAInputData<sp/>&amp;sm<sp/><sp/><sp/><sp/>=<sp/>getSMInput();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;LHAInputData&gt;<sp/>&amp;mssm<sp/>=<sp/>getMSSMInput(model);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>applyLHAOnInputs(data,<sp/>sm);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;mssm_in<sp/>:<sp/>mssm)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>applyLHAOnInputs(data,<sp/>mssm_in);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>applyLHA(LHAFileData<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;data,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string_view<sp/><sp/><sp/>nameBlock,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;expr)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>HEPAssert(csl::IsLiteral(expr),</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mty::error::TypeError,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Expression<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>toString(expr)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>should<sp/>be<sp/>a<sp/>literal<sp/>for<sp/>lha<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;reader.&quot;</highlight><highlight class="normal">)<sp/>std::optional&lt;FloatType&gt;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/>data.getValue(nameBlock,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(value)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>expr-&gt;setValue(*value);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(value);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>applyLHA(LHAFileData<sp/>const<sp/>&amp;data,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string_view<sp/><sp/><sp/>nameBlock,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacecsl" kindref="compound">csl</ref>::Expr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;expr)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>HEPAssert(csl::IsLiteral(expr),</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mty::error::TypeError,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Expression<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>toString(expr)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>should<sp/>be<sp/>a<sp/>literal<sp/>for<sp/>lha<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;reading.&quot;</highlight><highlight class="normal">)<sp/>std::optional&lt;FloatType&gt;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/>data.getValue(nameBlock,<sp/>i,<sp/>j);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(value)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>expr-&gt;setValue(*value);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(value);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>applyLHA(LHAFileData<sp/>const<sp/>&amp;data,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string_view<sp/><sp/><sp/>nameBlock,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacecsl" kindref="compound">csl</ref>::Expr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;expr)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>HEPAssert(csl::IsMatrix(expr),</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mty::error::TypeError,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Expression<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>toString(expr)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>should<sp/>be<sp/>a<sp/>matrix<sp/>for<sp/>lha<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;block-type<sp/>reading.&quot;</highlight><highlight class="normal">)<sp/>auto<sp/>block</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>data.getValues(nameBlock);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(block.empty())</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>false;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>for<sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>!=<sp/><ref refid="namespacecsl" kindref="compound">csl</ref>::Size(expr);<sp/>++i)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>!=<sp/><ref refid="namespacecsl" kindref="compound">csl</ref>::Size(expr[i]);<sp/>++j)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(!applyLHA(data,<sp/>nameBlock,<sp/>i<sp/>+<sp/>1,<sp/>j<sp/>+<sp/>1,<sp/>expr[i][i]))</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>expr[i][j]-&gt;setValue(0);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>true;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>applyLHAOnInputs(LHAFileData<sp/>const<sp/>&amp;data,<sp/>LHAInputData<sp/>&amp;inputs)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;input<sp/>:<sp/>inputs)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(input.isMatrix)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>applyLHA(data,<sp/>inputs.nameBlock,<sp/>input.expr);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>applyLHA(data,<sp/>inputs.nameBlock,<sp/>input.id,<sp/>input.expr);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">LHAInputData<sp/>&amp;getSMInput()</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemty_1_1sm__input" kindref="compound">mty::sm_input</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>firstCall<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>LHAInputData<sp/>smInputs;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(firstCall)<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>smInputs.nameBlock<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;SMINPUTS&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>smInputs.push_back({1,<sp/>alpha_em,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>smInputs.push_back({2,<sp/>G_F,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>smInputs.push_back({3,<sp/>alpha_s,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>smInputs.push_back({4,<sp/>M_Z,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>smInputs.push_back({5,<sp/>m_b,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>smInputs.push_back({6,<sp/>m_t,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>smInputs.push_back({7,<sp/>m_tau,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>firstCall<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>smInputs;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">LHAInputData<sp/>getMINPARInput(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>model)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemty_1_1mssm__input" kindref="compound">mty::mssm_input</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>LHAInputData<sp/>minpar;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>minpar.nameBlock<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;MINPAR&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(model)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:<sp/></highlight><highlight class="comment">//<sp/>mSUGRA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minpar.push_back({1,<sp/><ref refid="namespacemty_1_1mssm__input_1aafd4184a11f7a0aad15bbed6a939559a" kindref="member">m_0</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minpar.push_back({2,<sp/><ref refid="namespacemty_1_1mssm__input_1a8153ad568c460dae83eb25939e4324dd" kindref="member">m_1</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minpar.push_back({3,<sp/><ref refid="namespacemty_1_1mssm__input_1aa9850c4cdb1bf56b2ea1bfae657b0edf" kindref="member">beta</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minpar.push_back({4,<sp/><ref refid="namespacemty_1_1mssm__input_1aec8dc3f947b3a1fd123382706aac44c0" kindref="member">sgn_mu</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minpar.push_back({5,<sp/><ref refid="namespacemty_1_1mssm__input_1a8d0725041d96d3156a75d50b49fe02dc" kindref="member">A_0</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:<sp/></highlight><highlight class="comment">//<sp/>mGMSB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minpar.push_back({1,<sp/><ref refid="namespacemty_1_1mssm__input_1a26284437e2a2107662253819fc810138" kindref="member">Lambda</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minpar.push_back({2,<sp/><ref refid="namespacemty_1_1mssm__input_1a8f17dd6149106ffcc746c3f7b50f0a8d" kindref="member">Mmess</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minpar.push_back({3,<sp/><ref refid="namespacemty_1_1mssm__input_1aa9850c4cdb1bf56b2ea1bfae657b0edf" kindref="member">beta</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minpar.push_back({4,<sp/><ref refid="namespacemty_1_1mssm__input_1aec8dc3f947b3a1fd123382706aac44c0" kindref="member">sgn_mu</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minpar.push_back({5,<sp/><ref refid="namespacemty_1_1mssm__input_1a95fdd7e4722e05e435d1239d52b903cc" kindref="member">N_5</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minpar.push_back({6,<sp/><ref refid="namespacemty_1_1mssm__input_1abbb8fef08036c619d254d4f1d99029e5" kindref="member">cgrav</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:<sp/></highlight><highlight class="comment">//<sp/>mAMSB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minpar.push_back({1,<sp/><ref refid="namespacemty_1_1mssm__input_1aafd4184a11f7a0aad15bbed6a939559a" kindref="member">m_0</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minpar.push_back({2,<sp/><ref refid="namespacemty_1_1mssm__input_1a4100ec10702e4480c7f6ad589cd6be31" kindref="member">m_3</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minpar.push_back({3,<sp/><ref refid="namespacemty_1_1mssm__input_1aa9850c4cdb1bf56b2ea1bfae657b0edf" kindref="member">beta</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minpar.push_back({4,<sp/><ref refid="namespacemty_1_1mssm__input_1aec8dc3f947b3a1fd123382706aac44c0" kindref="member">sgn_mu</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//<sp/>Other<sp/>models</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>minpar.push_back({3,<sp/><ref refid="namespacemty_1_1mssm__input_1aa9850c4cdb1bf56b2ea1bfae657b0edf" kindref="member">beta</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>minpar;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal">LHAInputData<sp/>getEXTPARInput()</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemty_1_1mssm__input" kindref="compound">mty::mssm_input</ref>;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>LHAInputData<sp/>extpar;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.nameBlock<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;EXTPAR&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({1,<sp/><ref refid="namespacemty_1_1mssm__input_1a5379fc4fd6d6dc2871f09dd7adf984a0" kindref="member">M1</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({2,<sp/><ref refid="namespacemty_1_1mssm__input_1a89c558e6e4456bbb785d7c6617b388df" kindref="member">M2</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({3,<sp/><ref refid="namespacemty_1_1mssm__input_1a54e38901cb8b9886dd85e52aed60c5db" kindref="member">M3</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({11,<sp/><ref refid="namespacemty_1_1mssm__input_1a55aec42343a73dd2efb96e2c84a02bd3" kindref="member">At</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({12,<sp/><ref refid="namespacemty_1_1mssm__input_1a42dcf4b6f9d66d88e2e65229e3f8756f" kindref="member">Ab</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({13,<sp/><ref refid="namespacemty_1_1mssm__input_1ac13323e65115178720d7b8f7950c4472" kindref="member">Atau</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({21,<sp/><ref refid="namespacemty_1_1mssm__input_1abe82e6d0f293a3d13301305ae5820259" kindref="member">MH1</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({22,<sp/><ref refid="namespacemty_1_1mssm__input_1ad9d85ceefaef60f7cda3faced0b49e00" kindref="member">MH2</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({23,<sp/><ref refid="namespacemty_1_1mssm__input_1afe322514383dc8825d2e8fda25d3cda8" kindref="member">mu</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({24,<sp/><ref refid="namespacemty_1_1mssm__input_1a27a19f31fbdc36f6dfaf0a6e78181a2e" kindref="member">MA</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({25,<sp/><ref refid="namespacemty_1_1mssm__input_1aa9850c4cdb1bf56b2ea1bfae657b0edf" kindref="member">beta</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({26,<sp/><ref refid="namespacemty_1_1mssm__input_1ad435d712fc414a433f6684f3008dbbbe" kindref="member">MA0</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({27,<sp/><ref refid="namespacemty_1_1mssm__input_1aea372afffde72506617c7b0ae3c1bef4" kindref="member">MHp</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({31,<sp/><ref refid="namespacemty_1_1mssm__input_1a6c89e340c59dd577697d919c1a68de96" kindref="member">MeR</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({32,<sp/><ref refid="namespacemty_1_1mssm__input_1a5f0f1369f7dc3d2cdc0bb0db238c4c2b" kindref="member">MmuR</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({33,<sp/><ref refid="namespacemty_1_1mssm__input_1a3c92668a0daaddd50fa70861f9f9fe11" kindref="member">MtauR</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({34,<sp/><ref refid="namespacemty_1_1mssm__input_1a6c89e340c59dd577697d919c1a68de96" kindref="member">MeR</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({35,<sp/><ref refid="namespacemty_1_1mssm__input_1a5f0f1369f7dc3d2cdc0bb0db238c4c2b" kindref="member">MmuR</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({36,<sp/><ref refid="namespacemty_1_1mssm__input_1a3c92668a0daaddd50fa70861f9f9fe11" kindref="member">MtauR</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({41,<sp/><ref refid="namespacemty_1_1mssm__input_1a17db11fbde1b3e21d2646dba2c2bba1a" kindref="member">Mq1L</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({42,<sp/><ref refid="namespacemty_1_1mssm__input_1a603d3ba00beba278bdff54666de1c85a" kindref="member">Mq2L</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({43,<sp/><ref refid="namespacemty_1_1mssm__input_1a22cbe48468cdf03376b89084e2d40659" kindref="member">Mq3L</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({44,<sp/><ref refid="namespacemty_1_1mssm__input_1a870550693c3df87b956595579bcbeda6" kindref="member">MquR</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({45,<sp/><ref refid="namespacemty_1_1mssm__input_1ae5732f306eb0630dffad4ec7ce11ec67" kindref="member">MqcR</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({46,<sp/><ref refid="namespacemty_1_1mssm__input_1a01aefd6be265f14faa4563b6627fc95e" kindref="member">MqtR</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({47,<sp/><ref refid="namespacemty_1_1mssm__input_1ae3b96625541369864e9f054ced96af85" kindref="member">MqdR</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({48,<sp/><ref refid="namespacemty_1_1mssm__input_1a4c7039fdd8be29f1b069e128e8440033" kindref="member">MqsR</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({49,<sp/><ref refid="namespacemty_1_1mssm__input_1a15bf57a844abd58fbcb4e29fc4f8bdba" kindref="member">MqbR</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({51,<sp/><ref refid="namespacemty_1_1mssm__input_1a71886707b93ec17dc29dfc046c8ef832" kindref="member">N1</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({52,<sp/><ref refid="namespacemty_1_1mssm__input_1a9fd0fb748db2fc5da1908499434c653e" kindref="member">N2</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>extpar.push_back({53,<sp/><ref refid="namespacemty_1_1mssm__input_1a11d03a7a521e8e05954e425769162ae8" kindref="member">N3</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>extpar;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal">LHAInputData<sp/>getMatrixInput(<ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>&amp;matrix,<sp/>std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;name)</highlight></codeline>
+<codeline lineno="213"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>LHAInputData<sp/>input;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>input.<ref refid="structmty_1_1lha_1_1LHAInputData_1a1dc04c58c7302dc70c9f5b985b92d65f" kindref="member">nameBlock</ref><sp/>=<sp/>name;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>input.push_back({0,<sp/>matrix,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>input;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal">std::vector&lt;LHAInputData&gt;<sp/>&amp;getMSSMInput(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>model)</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemty_1_1mssm__input" kindref="compound">mty::mssm_input</ref>;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>firstCall<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::vector&lt;LHAInputData&gt;<sp/>mssmInputs;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(firstCall)<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>firstCall<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mssmInputs.push_back(getMINPARInput(model));</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mssmInputs.push_back(getEXTPARInput());</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mssmInputs.push_back(getMatrixInput(MSQ2,<sp/></highlight><highlight class="stringliteral">&quot;MSQ2IN&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mssmInputs.push_back(getMatrixInput(MSL2,<sp/></highlight><highlight class="stringliteral">&quot;MSL2IN&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mssmInputs.push_back(getMatrixInput(MSu2,<sp/></highlight><highlight class="stringliteral">&quot;MSU2IN&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mssmInputs.push_back(getMatrixInput(MSd2,<sp/></highlight><highlight class="stringliteral">&quot;MSD2IN&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mssmInputs.push_back(getMatrixInput(MSe2,<sp/></highlight><highlight class="stringliteral">&quot;MSE2IN&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mssmInputs.push_back(getMatrixInput(Tu,<sp/></highlight><highlight class="stringliteral">&quot;TUIN&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mssmInputs.push_back(getMatrixInput(Td,<sp/></highlight><highlight class="stringliteral">&quot;TDIN&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mssmInputs.push_back(getMatrixInput(Te,<sp/></highlight><highlight class="stringliteral">&quot;TEIN&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mssmInputs;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mty::lha</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/marty/core/lhaBuiltIn.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1FlavorIrrep" kind="class" language="C++" prot="public">
+    <compoundname>mty::FlavorIrrep</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1FlavorIrrep_1a233e50e3e64de35b7fd3e6aad123156f" prot="private" static="no" mutable="no">
+        <type><ref refid="classmty_1_1Flavor" kindref="compound">Flavor</ref> const  *</type>
+        <definition>Flavor const* mty::FlavorIrrep::flavors</definition>
+        <argsstring></argsstring>
+        <name>flavors</name>
+        <qualifiedname>mty::FlavorIrrep::flavors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="184" column="18" bodyfile="src/marty/core/flavor.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FlavorIrrep_1ad91d3e0c035bf0279e831a8ed542aa0c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structmty_1_1FlavorFlag" kindref="compound">FlavorFlag</ref> &gt;</type>
+        <definition>std::vector&lt;FlavorFlag&gt; mty::FlavorIrrep::rep</definition>
+        <argsstring></argsstring>
+        <name>rep</name>
+        <qualifiedname>mty::FlavorIrrep::rep</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="186" column="17" bodyfile="src/marty/core/flavor.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmty_1_1FlavorIrrep_1a6162f4e33935217b4fe56b77f0050ecb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::FlavorIrrep::IMPLEMENTS_STD_VECTOR</definition>
+        <argsstring>(FlavorFlag, rep)</argsstring>
+        <name>IMPLEMENTS_STD_VECTOR</name>
+        <qualifiedname>mty::FlavorIrrep::IMPLEMENTS_STD_VECTOR</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1FlavorFlag" kindref="compound">FlavorFlag</ref></type>
+        </param>
+        <param>
+          <type>rep</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="153" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1FlavorIrrep_1a378f6c4a1f904200c019be613eeac409" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::FlavorIrrep::FlavorIrrep</definition>
+        <argsstring>()=default</argsstring>
+        <name>FlavorIrrep</name>
+        <qualifiedname>mty::FlavorIrrep::FlavorIrrep</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="156" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FlavorIrrep_1aa2f6080ca97a570dcc23e10506370678" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::FlavorIrrep::FlavorIrrep</definition>
+        <argsstring>(Flavor const *t_flavors)</argsstring>
+        <name>FlavorIrrep</name>
+        <qualifiedname>mty::FlavorIrrep::FlavorIrrep</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Flavor" kindref="compound">Flavor</ref> const *</type>
+          <declname>t_flavors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="158" column="5" bodyfile="src/marty/core/flavor.cpp" bodystart="124" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FlavorIrrep_1a09cd56a7e51efc37ff0565f923d2da3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::FlavorIrrep::FlavorIrrep</definition>
+        <argsstring>(Flavor const *t_flavors, FlavorIrrep const &amp;other)</argsstring>
+        <name>FlavorIrrep</name>
+        <qualifiedname>mty::FlavorIrrep::FlavorIrrep</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Flavor" kindref="compound">Flavor</ref> const *</type>
+          <declname>t_flavors</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FlavorIrrep" kindref="compound">FlavorIrrep</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="160" column="5" bodyfile="src/marty/core/flavor.cpp" bodystart="133" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FlavorIrrep_1ac5f874e75a8273ff6a2e2b0962415cad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::FlavorIrrep::FlavorIrrep</definition>
+        <argsstring>(FlavorIrrep const &amp;other)=default</argsstring>
+        <name>FlavorIrrep</name>
+        <qualifiedname>mty::FlavorIrrep::FlavorIrrep</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FlavorIrrep" kindref="compound">FlavorIrrep</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="162" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FlavorIrrep_1a53c5a030142f7c0108f4598a7e616b90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1FlavorIrrep" kindref="compound">FlavorIrrep</ref> &amp;</type>
+        <definition>FlavorIrrep &amp; mty::FlavorIrrep::operator=</definition>
+        <argsstring>(FlavorIrrep const &amp;other)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>mty::FlavorIrrep::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FlavorIrrep" kindref="compound">FlavorIrrep</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="164" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FlavorIrrep_1a685256264fe92b6e93c25b97365e59bf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classmty_1_1Flavor" kindref="compound">Flavor</ref> *</type>
+        <definition>const Flavor * mty::FlavorIrrep::getFlavor</definition>
+        <argsstring>() const</argsstring>
+        <name>getFlavor</name>
+        <qualifiedname>mty::FlavorIrrep::getFlavor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="166" column="18" bodyfile="src/marty/core/flavor.cpp" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FlavorIrrep_1a6c4138265851e983f16f80dcd6476f99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FlavorIrrep::setTrivialRepresentation</definition>
+        <argsstring>(FlavorGroup const *flavorGroup)</argsstring>
+        <name>setTrivialRepresentation</name>
+        <qualifiedname>mty::FlavorIrrep::setTrivialRepresentation</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FlavorGroup" kindref="compound">FlavorGroup</ref> const *</type>
+          <declname>flavorGroup</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="168" column="10" bodyfile="src/marty/core/flavor.cpp" bodystart="157" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FlavorIrrep_1abef714777bfa52cecd556caf8019d615" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FlavorIrrep::setFundamentalRepresentation</definition>
+        <argsstring>(FlavorGroup const *flavorGroup)</argsstring>
+        <name>setFundamentalRepresentation</name>
+        <qualifiedname>mty::FlavorIrrep::setFundamentalRepresentation</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FlavorGroup" kindref="compound">FlavorGroup</ref> const *</type>
+          <declname>flavorGroup</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="170" column="10" bodyfile="src/marty/core/flavor.cpp" bodystart="163" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FlavorIrrep_1a78c4f87e25db03e37c22dadec1b63d56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FlavorIrrep::setRepresentation</definition>
+        <argsstring>(FlavorGroup const *flavorGroup, FlavorFlag const &amp;irrep)</argsstring>
+        <name>setRepresentation</name>
+        <qualifiedname>mty::FlavorIrrep::setRepresentation</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FlavorGroup" kindref="compound">FlavorGroup</ref> const *</type>
+          <declname>flavorGroup</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1FlavorFlag" kindref="compound">FlavorFlag</ref> const &amp;</type>
+          <declname>irrep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="172" column="10" bodyfile="src/marty/core/flavor.cpp" bodystart="168" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FlavorIrrep_1aa218b42d39383bf07bfce0106cd12868" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::FlavorIrrep::operator==</definition>
+        <argsstring>(FlavorIrrep const &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>mty::FlavorIrrep::operator==</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FlavorIrrep" kindref="compound">FlavorIrrep</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="174" column="10" bodyfile="src/marty/core/flavor.cpp" bodystart="179" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FlavorIrrep_1a3afa0231ace6b4302f7845e4851eace8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::FlavorIrrep::operator!=</definition>
+        <argsstring>(FlavorIrrep const &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>mty::FlavorIrrep::operator!=</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FlavorIrrep" kindref="compound">FlavorIrrep</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="175" column="10" bodyfile="src/marty/core/flavor.h" bodystart="175" bodyend="178"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmty_1_1FlavorIrrep_1aa734b0134355ce7aee25c389d1e8b216" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;fout, const FlavorIrrep &amp;irrep)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::FlavorIrrep::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1FlavorIrrep" kindref="compound">FlavorIrrep</ref> &amp;</type>
+          <declname>irrep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="180" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/core/flavor.h" line="151" column="1" bodyfile="src/marty/core/flavor.h" bodystart="151" bodyend="187"/>
+    <listofallmembers>
+      <member refid="classmty_1_1FlavorIrrep_1a378f6c4a1f904200c019be613eeac409" prot="public" virt="non-virtual"><scope>mty::FlavorIrrep</scope><name>FlavorIrrep</name></member>
+      <member refid="classmty_1_1FlavorIrrep_1aa2f6080ca97a570dcc23e10506370678" prot="public" virt="non-virtual"><scope>mty::FlavorIrrep</scope><name>FlavorIrrep</name></member>
+      <member refid="classmty_1_1FlavorIrrep_1a09cd56a7e51efc37ff0565f923d2da3e" prot="public" virt="non-virtual"><scope>mty::FlavorIrrep</scope><name>FlavorIrrep</name></member>
+      <member refid="classmty_1_1FlavorIrrep_1ac5f874e75a8273ff6a2e2b0962415cad" prot="public" virt="non-virtual"><scope>mty::FlavorIrrep</scope><name>FlavorIrrep</name></member>
+      <member refid="classmty_1_1FlavorIrrep_1a233e50e3e64de35b7fd3e6aad123156f" prot="private" virt="non-virtual"><scope>mty::FlavorIrrep</scope><name>flavors</name></member>
+      <member refid="classmty_1_1FlavorIrrep_1a685256264fe92b6e93c25b97365e59bf" prot="public" virt="non-virtual"><scope>mty::FlavorIrrep</scope><name>getFlavor</name></member>
+      <member refid="classmty_1_1FlavorIrrep_1a6162f4e33935217b4fe56b77f0050ecb" prot="private" virt="non-virtual"><scope>mty::FlavorIrrep</scope><name>IMPLEMENTS_STD_VECTOR</name></member>
+      <member refid="classmty_1_1FlavorIrrep_1a3afa0231ace6b4302f7845e4851eace8" prot="public" virt="non-virtual"><scope>mty::FlavorIrrep</scope><name>operator!=</name></member>
+      <member refid="classmty_1_1FlavorIrrep_1aa734b0134355ce7aee25c389d1e8b216" prot="public" virt="non-virtual"><scope>mty::FlavorIrrep</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classmty_1_1FlavorIrrep_1a53c5a030142f7c0108f4598a7e616b90" prot="public" virt="non-virtual"><scope>mty::FlavorIrrep</scope><name>operator=</name></member>
+      <member refid="classmty_1_1FlavorIrrep_1aa218b42d39383bf07bfce0106cd12868" prot="public" virt="non-virtual"><scope>mty::FlavorIrrep</scope><name>operator==</name></member>
+      <member refid="classmty_1_1FlavorIrrep_1ad91d3e0c035bf0279e831a8ed542aa0c" prot="private" virt="non-virtual"><scope>mty::FlavorIrrep</scope><name>rep</name></member>
+      <member refid="classmty_1_1FlavorIrrep_1abef714777bfa52cecd556caf8019d615" prot="public" virt="non-virtual"><scope>mty::FlavorIrrep</scope><name>setFundamentalRepresentation</name></member>
+      <member refid="classmty_1_1FlavorIrrep_1a78c4f87e25db03e37c22dadec1b63d56" prot="public" virt="non-virtual"><scope>mty::FlavorIrrep</scope><name>setRepresentation</name></member>
+      <member refid="classmty_1_1FlavorIrrep_1a6c4138265851e983f16f80dcd6476f99" prot="public" virt="non-virtual"><scope>mty::FlavorIrrep</scope><name>setTrivialRepresentation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1Drawer" kind="class" language="C++" prot="public">
+    <compoundname>mty::Drawer</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1Drawer_1ac88dd7d6fce5ace9dbab9aa3ff656d2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Drawer::Drawer</definition>
+        <argsstring>()=delete</argsstring>
+        <name>Drawer</name>
+        <qualifiedname>mty::Drawer::Drawer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/drawer.h" line="38" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmty_1_1Drawer_1a8202958185f05a3390dc454b5d603102" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">drawer::LatexLinker</ref></type>
+        <definition>drawer::LatexLinker mty::Drawer::buildDiagram</definition>
+        <argsstring>(std::shared_ptr&lt; wick::Graph &gt; const &amp;graph, bool external=true, bool showMomenta=true)</argsstring>
+        <name>buildDiagram</name>
+        <qualifiedname>mty::Drawer::buildDiagram</qualifiedname>
+        <param>
+          <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">wick::Graph</ref> &gt; const &amp;</type>
+          <declname>graph</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>external</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>showMomenta</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/drawer.h" line="41" column="5" bodyfile="src/marty/core/drawer.cpp" bodystart="21" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Drawer_1a9553803ea70304f40be0fdeb29d04cab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">drawer::LatexLinker</ref></type>
+        <definition>drawer::LatexLinker mty::Drawer::buildDiagram</definition>
+        <argsstring>(std::shared_ptr&lt; wick::Graph &gt; const &amp;graph, drawer::Graph const &amp;model, std::map&lt; size_t, size_t &gt; &amp;mapping)</argsstring>
+        <name>buildDiagram</name>
+        <qualifiedname>mty::Drawer::buildDiagram</qualifiedname>
+        <param>
+          <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">wick::Graph</ref> &gt; const &amp;</type>
+          <declname>graph</declname>
+        </param>
+        <param>
+          <type><ref refid="classdrawer_1_1Graph" kindref="compound">drawer::Graph</ref> const &amp;</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>std::map&lt; size_t, size_t &gt; &amp;</type>
+          <declname>mapping</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/drawer.h" line="46" column="5" bodyfile="src/marty/core/drawer.cpp" bodystart="68" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Drawer_1aa184d7eb5f4a96f48bb40f8648d25875" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classdrawer_1_1LatexLinker" kindref="compound">drawer::LatexLinker</ref> &gt;</type>
+        <definition>std::vector&lt; drawer::LatexLinker &gt; mty::Drawer::buildDiagrams</definition>
+        <argsstring>(std::vector&lt; std::shared_ptr&lt; wick::Graph &gt; &gt; const &amp;graph, bool showMomenta=true)</argsstring>
+        <name>buildDiagrams</name>
+        <qualifiedname>mty::Drawer::buildDiagrams</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">wick::Graph</ref> &gt; &gt; const &amp;</type>
+          <declname>graph</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>showMomenta</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/drawer.h" line="51" column="5" bodyfile="src/marty/core/drawer.cpp" bodystart="179" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Drawer_1ae65f883fd1836a0ef15b968a7412115a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Drawer::launchViewer</definition>
+        <argsstring>(std::vector&lt; drawer::LatexLinker &gt; const &amp;links)</argsstring>
+        <name>launchViewer</name>
+        <qualifiedname>mty::Drawer::launchViewer</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classdrawer_1_1LatexLinker" kindref="compound">drawer::LatexLinker</ref> &gt; const &amp;</type>
+          <declname>links</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/drawer.h" line="54" column="17" bodyfile="src/marty/core/drawer.cpp" bodystart="212" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Drawer_1a98fb026e567033ddb2b360fe58ecf443" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Drawer::launchViewer</definition>
+        <argsstring>(std::vector&lt; std::shared_ptr&lt; wick::Graph &gt; &gt; const &amp;links, bool showMomenta=true)</argsstring>
+        <name>launchViewer</name>
+        <qualifiedname>mty::Drawer::launchViewer</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">wick::Graph</ref> &gt; &gt; const &amp;</type>
+          <declname>links</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>showMomenta</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/drawer.h" line="57" column="5" bodyfile="src/marty/core/drawer.cpp" bodystart="221" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Drawer_1ae240934f2e356b69d9855cf7bca5d6ce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Drawer::saveToJSON</definition>
+        <argsstring>(std::string const &amp;fileName, std::vector&lt; drawer::LatexLinker &gt; const &amp;links)</argsstring>
+        <name>saveToJSON</name>
+        <qualifiedname>mty::Drawer::saveToJSON</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classdrawer_1_1LatexLinker" kindref="compound">drawer::LatexLinker</ref> &gt; const &amp;</type>
+          <declname>links</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/drawer.h" line="60" column="17" bodyfile="src/marty/core/drawer.cpp" bodystart="227" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Drawer_1af780282a0180e5f55cff8486c804e34c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Drawer::saveToJSON</definition>
+        <argsstring>(std::string const &amp;fileName, std::vector&lt; std::shared_ptr&lt; wick::Graph &gt; &gt; const &amp;links, bool showMomenta=true)</argsstring>
+        <name>saveToJSON</name>
+        <qualifiedname>mty::Drawer::saveToJSON</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">wick::Graph</ref> &gt; &gt; const &amp;</type>
+          <declname>links</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>showMomenta</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/drawer.h" line="64" column="5" bodyfile="src/marty/core/drawer.cpp" bodystart="233" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Drawer_1a7f9c14ee472a10764446c48a45e65eea" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string mty::Drawer::buildLatex</definition>
+        <argsstring>(std::shared_ptr&lt; wick::Graph &gt; const &amp;graph)</argsstring>
+        <name>buildLatex</name>
+        <qualifiedname>mty::Drawer::buildLatex</qualifiedname>
+        <param>
+          <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">wick::Graph</ref> &gt; const &amp;</type>
+          <declname>graph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/drawer.h" line="68" column="24" bodyfile="src/marty/core/drawer.cpp" bodystart="241" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Drawer_1a74e45c89638ec2b4ee4dd124ca443643" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Drawer::exportPDF</definition>
+        <argsstring>(std::string const &amp;name, std::vector&lt; std::shared_ptr&lt; wick::Graph &gt; &gt; const &amp;graphs, std::string const &amp;path=&quot;diagrams&quot;)</argsstring>
+        <name>exportPDF</name>
+        <qualifiedname>mty::Drawer::exportPDF</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">wick::Graph</ref> &gt; &gt; const &amp;</type>
+          <declname>graphs</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>path</declname>
+          <defval>&quot;diagrams&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/drawer.h" line="71" column="5" bodyfile="src/marty/core/drawer.cpp" bodystart="249" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Drawer_1a4c805d43a4009833208d331b6a7153e9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Drawer::exportPNG</definition>
+        <argsstring>(std::string const &amp;name, std::vector&lt; std::shared_ptr&lt; wick::Graph &gt; &gt; const &amp;graphs, std::string const &amp;path=&quot;diagrams&quot;)</argsstring>
+        <name>exportPNG</name>
+        <qualifiedname>mty::Drawer::exportPNG</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">wick::Graph</ref> &gt; &gt; const &amp;</type>
+          <declname>graphs</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>path</declname>
+          <defval>&quot;diagrams&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/drawer.h" line="76" column="5" bodyfile="src/marty/core/drawer.cpp" bodystart="270" bodyend="288"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classmty_1_1Drawer_1a740258675e7c09ddc8648eb4f660950f" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>drawer::ParticleType</type>
+        <definition>drawer::ParticleType mty::Drawer::getType</definition>
+        <argsstring>(mty::QuantumField const &amp;field)</argsstring>
+        <name>getType</name>
+        <qualifiedname>mty::Drawer::getType</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> const &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/drawer.h" line="81" column="33" bodyfile="src/marty/core/drawer.cpp" bodystart="290" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Drawer_1a67f3f41464acd1de4214b82263fd5042" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdrawer_1_1Graph" kindref="compound">drawer::Graph</ref></type>
+        <definition>drawer::Graph mty::Drawer::convertGraph</definition>
+        <argsstring>(std::shared_ptr&lt; wick::Graph &gt; const &amp;graph, bool minimize=true, bool external=true)</argsstring>
+        <name>convertGraph</name>
+        <qualifiedname>mty::Drawer::convertGraph</qualifiedname>
+        <param>
+          <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">wick::Graph</ref> &gt; const &amp;</type>
+          <declname>graph</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>minimize</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>external</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/drawer.h" line="84" column="5" bodyfile="src/marty/core/drawer.cpp" bodystart="310" bodyend="338"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/core/drawer.h" line="35" column="1" bodyfile="src/marty/core/drawer.h" bodystart="35" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classmty_1_1Drawer_1a8202958185f05a3390dc454b5d603102" prot="public" virt="non-virtual"><scope>mty::Drawer</scope><name>buildDiagram</name></member>
+      <member refid="classmty_1_1Drawer_1a9553803ea70304f40be0fdeb29d04cab" prot="public" virt="non-virtual"><scope>mty::Drawer</scope><name>buildDiagram</name></member>
+      <member refid="classmty_1_1Drawer_1aa184d7eb5f4a96f48bb40f8648d25875" prot="public" virt="non-virtual"><scope>mty::Drawer</scope><name>buildDiagrams</name></member>
+      <member refid="classmty_1_1Drawer_1a7f9c14ee472a10764446c48a45e65eea" prot="public" virt="non-virtual"><scope>mty::Drawer</scope><name>buildLatex</name></member>
+      <member refid="classmty_1_1Drawer_1a67f3f41464acd1de4214b82263fd5042" prot="protected" virt="non-virtual"><scope>mty::Drawer</scope><name>convertGraph</name></member>
+      <member refid="classmty_1_1Drawer_1ac88dd7d6fce5ace9dbab9aa3ff656d2c" prot="public" virt="non-virtual"><scope>mty::Drawer</scope><name>Drawer</name></member>
+      <member refid="classmty_1_1Drawer_1a74e45c89638ec2b4ee4dd124ca443643" prot="public" virt="non-virtual"><scope>mty::Drawer</scope><name>exportPDF</name></member>
+      <member refid="classmty_1_1Drawer_1a4c805d43a4009833208d331b6a7153e9" prot="public" virt="non-virtual"><scope>mty::Drawer</scope><name>exportPNG</name></member>
+      <member refid="classmty_1_1Drawer_1a740258675e7c09ddc8648eb4f660950f" prot="protected" virt="non-virtual"><scope>mty::Drawer</scope><name>getType</name></member>
+      <member refid="classmty_1_1Drawer_1ae65f883fd1836a0ef15b968a7412115a" prot="public" virt="non-virtual"><scope>mty::Drawer</scope><name>launchViewer</name></member>
+      <member refid="classmty_1_1Drawer_1a98fb026e567033ddb2b360fe58ecf443" prot="public" virt="non-virtual"><scope>mty::Drawer</scope><name>launchViewer</name></member>
+      <member refid="classmty_1_1Drawer_1ae240934f2e356b69d9855cf7bca5d6ce" prot="public" virt="non-virtual"><scope>mty::Drawer</scope><name>saveToJSON</name></member>
+      <member refid="classmty_1_1Drawer_1af780282a0180e5f55cff8486c804e34c" prot="public" virt="non-virtual"><scope>mty::Drawer</scope><name>saveToJSON</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

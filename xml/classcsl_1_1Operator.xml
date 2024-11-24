@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcsl_1_1Operator" kind="class" language="C++" prot="public">
+    <compoundname>csl::Operator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">T</basecompoundref>
+    <includes refid="operator_8h" local="no">operator.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classcsl_1_1Operator_1aaf3e5ccf31c2699000627096abaa9ba8" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool csl::Operator&lt; T &gt;::empty</definition>
+        <argsstring></argsstring>
+        <name>empty</name>
+        <qualifiedname>csl::Operator::empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/operator.h" line="41" column="10" bodyfile="src/csl/operator.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcsl_1_1Operator_1abeb8555c87e755baed2b7caff64cbb70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>csl::Operator&lt; T &gt;::Operator</definition>
+        <argsstring>()</argsstring>
+        <name>Operator</name>
+        <qualifiedname>csl::Operator::Operator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/operator.h" line="44" column="5" bodyfile="src/csl/operator.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Operator_1ac46d14c2b95625f96bb07d65713ef139" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>csl::Operator&lt; T &gt;::Operator</definition>
+        <argsstring>(Args &amp;&amp;... args)</argsstring>
+        <name>Operator</name>
+        <qualifiedname>csl::Operator::Operator</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/operator.h" line="49" column="14" bodyfile="src/csl/operator.h" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Operator_1ad0d3e7465277ab30bc11413410daea6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>csl::Operator&lt; T &gt;::~Operator</definition>
+        <argsstring>()</argsstring>
+        <name>~Operator</name>
+        <qualifiedname>csl::Operator::~Operator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/operator.h" line="54" column="5" bodyfile="src/csl/operator.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Operator_1aa26c6f1e6a43ab0d529c170466e810b0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::Operator&lt; T &gt;::getCommutable</definition>
+        <argsstring>() const override</argsstring>
+        <name>getCommutable</name>
+        <qualifiedname>csl::Operator::getCommutable</qualifiedname>
+        <reimplementedby refid="classcsl_1_1RealPart_1a0da475d679751428325bac460a651d85">getCommutable</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/operator.h" line="56" column="10" bodyfile="src/csl/operator.h" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Operator_1adc9dd8a7ee3c9092e6d94d88d3e9f9fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::Operator&lt; T &gt;::commutesWith</definition>
+        <argsstring>(Expr_info other, int sign=-1) const override</argsstring>
+        <name>commutesWith</name>
+        <qualifiedname>csl::Operator::commutesWith</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sign</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/operator.h" line="58" column="10" bodyfile="src/csl/operator.h" bodystart="92" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Operator_1a740ec7cf6f100e21ab3e6e1dde93374b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::Operator&lt; T &gt;::isAnOperator</definition>
+        <argsstring>() const override</argsstring>
+        <name>isAnOperator</name>
+        <qualifiedname>csl::Operator::isAnOperator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/operator.h" line="60" column="10" bodyfile="src/csl/operator.h" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Operator_1aee71c873c2f3042ea748f1e9e07f7d6c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::Operator&lt; T &gt;::isEmpty</definition>
+        <argsstring>() const override</argsstring>
+        <name>isEmpty</name>
+        <qualifiedname>csl::Operator::isEmpty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/operator.h" line="62" column="10" bodyfile="src/csl/operator.h" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Operator_1a79761fde19842386022873d3332d2454" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::Operator&lt; T &gt;::setEmpty</definition>
+        <argsstring>(bool t_empty) override</argsstring>
+        <name>setEmpty</name>
+        <qualifiedname>csl::Operator::setEmpty</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>t_empty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/operator.h" line="64" column="10" bodyfile="src/csl/operator.h" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Operator_1a5a4637f0cc00891717e62a6bdfbd212f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::Operator&lt; T &gt;::setOperandPrivate</definition>
+        <argsstring>(const Expr &amp;operand, bool leaveEmpty) override</argsstring>
+        <name>setOperandPrivate</name>
+        <qualifiedname>csl::Operator::setOperandPrivate</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>operand</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>leaveEmpty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/operator.h" line="66" column="10" bodyfile="src/csl/operator.h" bodystart="120" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Operator_1ae9da277be3e179944e647d54acf13eea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::Operator&lt; T &gt;::applyOperator</definition>
+        <argsstring>(const Expr &amp;expr, bool leaveEmpty=false) const override</argsstring>
+        <name>applyOperator</name>
+        <qualifiedname>csl::Operator::applyOperator</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>leaveEmpty</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/operator.h" line="68" column="10" bodyfile="src/csl/operator.h" bodystart="136" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Operator_1a7e4ec8aa653557544dd3063af72d816f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>std::optional&lt; Expr &gt; csl::Operator&lt; T &gt;::expand</definition>
+        <argsstring>(bool full=false, bool inplace=false) const override</argsstring>
+        <name>expand</name>
+        <qualifiedname>csl::Operator::expand</qualifiedname>
+        <reimplementedby refid="classcsl_1_1TDerivativeElement_1add5adbf1747cd9343c96dca5a2b7479b">expand</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>full</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inplace</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/operator.h" line="71" column="19" bodyfile="src/csl/operator.h" bodystart="210" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Operator_1a453d864df2f26dcedca00592cc49ea55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>std::optional&lt; Expr &gt; csl::Operator&lt; T &gt;::expand_if</definition>
+        <argsstring>(std::function&lt; bool(Expr const &amp;)&gt; const &amp;f, bool full=false, bool inplace=false) const override</argsstring>
+        <name>expand_if</name>
+        <qualifiedname>csl::Operator::expand_if</qualifiedname>
+        <reimplementedby refid="classcsl_1_1TDerivativeElement_1a1fee5554d976f77bf0e2dd5a451890b7">expand_if</reimplementedby>
+        <param>
+          <type>std::function&lt; bool(<ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> const &amp;)&gt; const &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>full</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inplace</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/operator.h" line="74" column="19" bodyfile="src/csl/operator.h" bodystart="227" bodyend="243"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Linear operator O(a*X+b*Y) = a*O(X) + b*O(Y) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>T</label>
+      </node>
+      <node id="1">
+        <label>csl::Operator&lt; T &gt;</label>
+        <link refid="classcsl_1_1Operator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>T</label>
+      </node>
+      <node id="1">
+        <label>csl::Operator&lt; T &gt;</label>
+        <link refid="classcsl_1_1Operator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/csl/operator.h" line="38" column="1" bodyfile="src/csl/operator.h" bodystart="38" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1Operator_1ae9da277be3e179944e647d54acf13eea" prot="public" virt="non-virtual"><scope>csl::Operator</scope><name>applyOperator</name></member>
+      <member refid="classcsl_1_1Operator_1adc9dd8a7ee3c9092e6d94d88d3e9f9fe" prot="public" virt="non-virtual"><scope>csl::Operator</scope><name>commutesWith</name></member>
+      <member refid="classcsl_1_1Operator_1aaf3e5ccf31c2699000627096abaa9ba8" prot="protected" virt="non-virtual"><scope>csl::Operator</scope><name>empty</name></member>
+      <member refid="classcsl_1_1Operator_1a7e4ec8aa653557544dd3063af72d816f" prot="public" virt="non-virtual"><scope>csl::Operator</scope><name>expand</name></member>
+      <member refid="classcsl_1_1Operator_1a453d864df2f26dcedca00592cc49ea55" prot="public" virt="non-virtual"><scope>csl::Operator</scope><name>expand_if</name></member>
+      <member refid="classcsl_1_1Operator_1aa26c6f1e6a43ab0d529c170466e810b0" prot="public" virt="non-virtual"><scope>csl::Operator</scope><name>getCommutable</name></member>
+      <member refid="classcsl_1_1Operator_1a740ec7cf6f100e21ab3e6e1dde93374b" prot="public" virt="non-virtual"><scope>csl::Operator</scope><name>isAnOperator</name></member>
+      <member refid="classcsl_1_1Operator_1aee71c873c2f3042ea748f1e9e07f7d6c" prot="public" virt="non-virtual"><scope>csl::Operator</scope><name>isEmpty</name></member>
+      <member refid="classcsl_1_1Operator_1abeb8555c87e755baed2b7caff64cbb70" prot="public" virt="non-virtual"><scope>csl::Operator</scope><name>Operator</name></member>
+      <member refid="classcsl_1_1Operator_1ac46d14c2b95625f96bb07d65713ef139" prot="public" virt="non-virtual"><scope>csl::Operator</scope><name>Operator</name></member>
+      <member refid="classcsl_1_1Operator_1a79761fde19842386022873d3332d2454" prot="public" virt="non-virtual"><scope>csl::Operator</scope><name>setEmpty</name></member>
+      <member refid="classcsl_1_1Operator_1a5a4637f0cc00891717e62a6bdfbd212f" prot="public" virt="non-virtual"><scope>csl::Operator</scope><name>setOperandPrivate</name></member>
+      <member refid="classcsl_1_1Operator_1ad0d3e7465277ab30bc11413410daea6e" prot="public" virt="non-virtual"><scope>csl::Operator</scope><name>~Operator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

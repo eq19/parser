@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="topology_8h" kind="file" language="C++">
+    <compoundname>topology.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includedby refid="feynOptions_8h" local="yes">src/marty/core/feynOptions.h</includedby>
+    <includedby refid="feynmanDiagram_8h" local="yes">src/marty/core/feynmanDiagram.h</includedby>
+    <includedby refid="marty_2core_2marty_8h" local="yes">src/marty/core/marty.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/marty/core/topology.h</label>
+        <link refid="topology_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>src/marty.h</label>
+        <link refid="marty_8h_source"/>
+      </node>
+      <node id="12">
+        <label>src/marty/core/amplitude.h</label>
+        <link refid="amplitude_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/marty/core/amplitudeInitializer.h</label>
+        <link refid="amplitudeInitializer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>src/marty/core/drawer.h</label>
+        <link refid="drawer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>src/marty/core/expander.h</label>
+        <link refid="expander_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/marty/core/feynOptions.h</label>
+        <link refid="feynOptions_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>src/marty/core/feynmanDiagram.h</label>
+        <link refid="feynmanDiagram_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>src/marty/core/feynmanRule.h</label>
+        <link refid="feynmanRule_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>src/marty/core/filters.h</label>
+        <link refid="filters_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>src/marty/core/graph.h</label>
+        <link refid="graph_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/marty/core/marty.h</label>
+        <link refid="marty_2core_2marty_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>src/marty/core/model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>src/marty/core/mrtInterface.h</label>
+        <link refid="mrtInterface_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>src/marty/core/mrtInterfaceCurrent.h</label>
+        <link refid="mrtInterfaceCurrent_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>src/marty/core/mtylibrary.h</label>
+        <link refid="mtylibrary_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/marty/core/topology.h</label>
+        <link refid="topology_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>src/marty/core/wilson.h</label>
+        <link refid="wilson_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>src/marty/core/wilsonOperator.h</label>
+        <link refid="wilsonOperator_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>src/marty/models/gthdm.h</label>
+        <link refid="gthdm_8h_source"/>
+      </node>
+      <node id="19">
+        <label>src/marty/models/mssm.h</label>
+        <link refid="mssm_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>src/marty/models/nmfv.h</label>
+        <link refid="nmfv_8h_source"/>
+      </node>
+      <node id="20">
+        <label>src/marty/models/pmssm.h</label>
+        <link refid="pmssm_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>src/marty/models/pmssm_lem.h</label>
+        <link refid="pmssm__lem_8h_source"/>
+      </node>
+      <node id="6">
+        <label>src/marty/models/pmssm_lem/pmssm_data.h</label>
+        <link refid="pmssm__data_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/marty/models/pmssm_lem/pmssm_lem.h</label>
+        <link refid="pmssm__lem_2pmssm__lem_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>src/marty/models/qcd.h</label>
+        <link refid="qcd_8h_source"/>
+      </node>
+      <node id="23">
+        <label>src/marty/models/qed.h</label>
+        <link refid="qed_8h"/>
+      </node>
+      <node id="24">
+        <label>src/marty/models/sm.h</label>
+        <link refid="sm_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>src/marty/models/thdm.h</label>
+        <link refid="thdm_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacemty">mty</innernamespace>
+    <innernamespace refid="namespacemty_1_1Topology">mty::Topology</innernamespace>
+    <briefdescription>
+<para>Contains utilities to handle topologies for Feynman diagrams. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Grégoire Uhlrich </para>
+</simplesect>
+<simplesect kind="version"><para>2.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-05-05 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>MARTY.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MARTY<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MARTY<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>MARTY.<sp/>If<sp/>not,<sp/>see<sp/>&lt;https://www.gnu.org/licenses/&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="namespacemty_1_1Topology" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemty_1_1Topology" kindref="compound">mty::Topology</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ec" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ec" kindref="member">Type</ref><sp/>{</highlight></codeline>
+<codeline lineno="51" refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ecaefe9fa4dbe5b05a42326e7a59f7f5b98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ecaefe9fa4dbe5b05a42326e7a59f7f5b98" kindref="member">Tadpole</ref><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>0),<sp/></highlight></codeline>
+<codeline lineno="52" refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558eca2470c3eb39e6d7596c3ebd14c29d0ca7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558eca2470c3eb39e6d7596c3ebd14c29d0ca7" kindref="member">Mass</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>1),<sp/></highlight></codeline>
+<codeline lineno="53" refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ecaed8463d3120b4e5e3a839e9c21f290ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ecaed8463d3120b4e5e3a839e9c21f290ab" kindref="member">Triangle</ref><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>2),<sp/></highlight></codeline>
+<codeline lineno="54" refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ecab3e5136e03484c2fb6d667d7ad54b007" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ecab3e5136e03484c2fb6d667d7ad54b007" kindref="member">Box</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>3),<sp/></highlight></codeline>
+<codeline lineno="55" refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558eca02f92ef7b5f193dba4b8fc1614fe3346" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558eca02f92ef7b5f193dba4b8fc1614fe3346" kindref="member">Pentagon</ref><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>4),<sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558eca1b380921409e937573e8977efefc6a45" kindref="member">Any</ref><sp/>=<sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ecaefe9fa4dbe5b05a42326e7a59f7f5b98" kindref="member">Tadpole</ref><sp/>|<sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558eca2470c3eb39e6d7596c3ebd14c29d0ca7" kindref="member">Mass</ref><sp/>|<sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ecaed8463d3120b4e5e3a839e9c21f290ab" kindref="member">Triangle</ref><sp/>|<sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ecab3e5136e03484c2fb6d667d7ad54b007" kindref="member">Box</ref><sp/>|<sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558eca02f92ef7b5f193dba4b8fc1614fe3346" kindref="member">Pentagon</ref></highlight></codeline>
+<codeline lineno="60" refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558eca1b380921409e937573e8977efefc6a45" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="namespacemty_1_1Topology_1ab1de0812e27c87ba112c6a966aad6895" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacemty_1_1Topology_1ab1de0812e27c87ba112c6a966aad6895" kindref="member">topologyList</ref><sp/>=<sp/>{<ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ecaefe9fa4dbe5b05a42326e7a59f7f5b98" kindref="member">Tadpole</ref>,<sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558eca2470c3eb39e6d7596c3ebd14c29d0ca7" kindref="member">Mass</ref>,<sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ecaed8463d3120b4e5e3a839e9c21f290ab" kindref="member">Triangle</ref>,<sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ecab3e5136e03484c2fb6d667d7ad54b007" kindref="member">Box</ref>,<sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558eca02f92ef7b5f193dba4b8fc1614fe3346" kindref="member">Pentagon</ref>};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="namespacemty_1_1Topology_1a6de8ba3cc69defb53646935760a240ac" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacemty_1_1Topology_1a6de8ba3cc69defb53646935760a240ac" kindref="member">names</ref></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;Tadpole&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Mass&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Triangle&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Box&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Pentagon&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="namespacemty_1_1Topology_1a4ed99522cfac44a7941bead5c3e103fd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ec" kindref="member">Type</ref><sp/><ref refid="namespacemty_1_1Topology_1a4ed99522cfac44a7941bead5c3e103fd" kindref="member">legsToTopology</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nLegs)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ec" kindref="member">Type</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(((nLegs<sp/>==<sp/>1)<sp/>*<sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ecaefe9fa4dbe5b05a42326e7a59f7f5b98" kindref="member">Tadpole</ref>)<sp/>|<sp/>((nLegs<sp/>==<sp/>2)<sp/>*<sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558eca2470c3eb39e6d7596c3ebd14c29d0ca7" kindref="member">Mass</ref>)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>((nLegs<sp/>==<sp/>3)<sp/>*<sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ecaed8463d3120b4e5e3a839e9c21f290ab" kindref="member">Triangle</ref>)<sp/>|<sp/>((nLegs<sp/>==<sp/>4)<sp/>*<sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ecab3e5136e03484c2fb6d667d7ad54b007" kindref="member">Box</ref>)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>((nLegs<sp/>==<sp/>5)<sp/>*<sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558eca02f92ef7b5f193dba4b8fc1614fe3346" kindref="member">Pentagon</ref>));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="namespacemty_1_1Topology_1a248026936be29eeddb4174216151cc08" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::ostream<sp/>&amp;<ref refid="namespacemty_1_1Topology_1a248026936be29eeddb4174216151cc08" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;out,<sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ec" kindref="member">Type</ref><sp/>t)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(t<sp/>==<sp/><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558eca1b380921409e937573e8977efefc6a45" kindref="member">Any</ref>)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Any&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>*(<ref refid="namespacemty_1_1Topology_1a6de8ba3cc69defb53646935760a240ac" kindref="member">names</ref>.begin()<sp/>+<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(t)<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mty::Topology</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/marty/core/topology.h"/>
+  </compounddef>
+</doxygen>

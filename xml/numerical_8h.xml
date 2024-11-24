@@ -1,0 +1,1753 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="numerical_8h" kind="file" language="C++">
+    <compoundname>numerical.h</compoundname>
+    <includes refid="buildingBlock_8h" local="yes">buildingBlock.h</includes>
+    <includedby refid="abstract_8cpp" local="yes">src/csl/abstract.cpp</includedby>
+    <includedby refid="commutation_8cpp" local="yes">src/csl/commutation.cpp</includedby>
+    <includedby refid="comparison_8h" local="yes">src/csl/comparison.h</includedby>
+    <includedby refid="csl_2csl_8h" local="yes">src/csl/csl.h</includedby>
+    <includedby refid="element_8h" local="yes">src/csl/element.h</includedby>
+    <includedby refid="indicial_8cpp" local="yes">src/csl/indicial.cpp</includedby>
+    <includedby refid="indicial_8h" local="yes">src/csl/indicial.h</includedby>
+    <includedby refid="numerical_8cpp" local="yes">src/csl/numerical.cpp</includedby>
+    <includedby refid="operator_8h" local="yes">src/csl/operator.h</includedby>
+    <includedby refid="patternMatch_8cpp" local="yes">src/csl/patternMatch.cpp</includedby>
+    <includedby refid="scalarFunc_8h" local="yes">src/csl/scalarFunc.h</includedby>
+    <includedby refid="simplification_8cpp" local="yes">src/csl/simplification.cpp</includedby>
+    <includedby refid="space_8h" local="yes">src/csl/space.h</includedby>
+    <includedby refid="variableParent_8cpp" local="yes">src/csl/variableParent.cpp</includedby>
+    <includedby refid="vector_8cpp" local="yes">src/csl/vector.cpp</includedby>
+    <includedby refid="vector_8h" local="yes">src/csl/vector.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>abstract.h</label>
+        <link refid="abstract_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>allocator.h</label>
+        <link refid="allocator_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>buildingBlock.h</label>
+        <link refid="buildingBlock_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>enum.h</label>
+        <link refid="enum_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>evaluation.h</label>
+        <link refid="evaluation_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>memory_pool.h</label>
+        <link refid="memory__pool_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/csl/numerical.h</label>
+        <link refid="numerical_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>options.h</label>
+        <link refid="options_8h"/>
+      </node>
+      <node id="26">
+        <label>std_shared_ptr_inheritance.h</label>
+        <link refid="std__shared__ptr__inheritance_8h"/>
+      </node>
+      <node id="27">
+        <label>support.h</label>
+        <link refid="support_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>typedef.h</label>
+        <link refid="typedef_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>bitset</label>
+      </node>
+      <node id="4">
+        <label>cassert</label>
+      </node>
+      <node id="28">
+        <label>cmath</label>
+      </node>
+      <node id="22">
+        <label>csignal</label>
+      </node>
+      <node id="8">
+        <label>functional</label>
+      </node>
+      <node id="11">
+        <label>initializer_list</label>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="12">
+        <label>map</label>
+      </node>
+      <node id="9">
+        <label>memory</label>
+      </node>
+      <node id="15">
+        <label>mutex</label>
+      </node>
+      <node id="10">
+        <label>optional</label>
+      </node>
+      <node id="13">
+        <label>set</label>
+      </node>
+      <node id="6">
+        <label>sstream</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="23">
+        <label>string_view</label>
+      </node>
+      <node id="16">
+        <label>thread</label>
+      </node>
+      <node id="14">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>src/csl.h</label>
+        <link refid="csl_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>src/csl/abreviation.h</label>
+        <link refid="abreviation_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>src/csl/booleanOperators.h</label>
+        <link refid="booleanOperators_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>src/csl/commutation.h</label>
+        <link refid="commutation_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/csl/comparison.h</label>
+        <link refid="comparison_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/csl/csl.h</label>
+        <link refid="csl_2csl_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>src/csl/cslcomplex.h</label>
+        <link refid="cslcomplex_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>src/csl/diagonalization.h</label>
+        <link refid="diagonalization_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>src/csl/element.h</label>
+        <link refid="element_8h"/>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>src/csl/indicial.h</label>
+        <link refid="indicial_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>src/csl/libraryfunction.h</label>
+        <link refid="libraryfunction_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>src/csl/librarygenerator.h</label>
+        <link refid="librarygenerator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>src/csl/librarygroup.h</label>
+        <link refid="librarygroup_8h_source"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>src/csl/mathFunctions.h</label>
+        <link refid="mathFunctions_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/csl/numerical.h</label>
+        <link refid="numerical_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>src/csl/operations.h</label>
+        <link refid="operations_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>src/csl/operator.h</label>
+        <link refid="operator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>src/csl/pseudoIntegral.h</label>
+        <link refid="pseudoIntegral_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>src/csl/scalarFunc.h</label>
+        <link refid="scalarFunc_8h"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>src/csl/space.h</label>
+        <link refid="space_8h"/>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>src/csl/tensorField.h</label>
+        <link refid="tensorField_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>src/csl/vector.h</label>
+        <link refid="vector_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>src/marty.h</label>
+        <link refid="marty_8h_source"/>
+      </node>
+      <node id="97">
+        <label>src/marty/core/algebra.h</label>
+        <link refid="algebra_8h"/>
+      </node>
+      <node id="54">
+        <label>src/marty/core/amplitude.h</label>
+        <link refid="amplitude_8h"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>src/marty/core/amplitudeInitializer.h</label>
+        <link refid="amplitudeInitializer_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>src/marty/core/amplitudeSimplification.h</label>
+        <link refid="amplitudeSimplification_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>src/marty/core/bernoulli.h</label>
+        <link refid="bernoulli_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>src/marty/core/cache.h</label>
+        <link refid="cache_8h_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>src/marty/core/ckm.h</label>
+        <link refid="ckm_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>src/marty/core/colorSimplification.h</label>
+        <link refid="colorSimplification_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>src/marty/core/colorSpace.h</label>
+        <link refid="colorSpace_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>src/marty/core/diracology.h</label>
+        <link refid="diracology_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>src/marty/core/drawer.h</label>
+        <link refid="drawer_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>src/marty/core/expander.h</label>
+        <link refid="expander_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>src/marty/core/fermionChain.h</label>
+        <link refid="fermionChain_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>src/marty/core/fermionFlow.h</label>
+        <link refid="fermionFlow_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>src/marty/core/fermionicField.h</label>
+        <link refid="fermionicField_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>src/marty/core/feynOptions.h</label>
+        <link refid="feynOptions_8h"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>src/marty/core/feynmanDiagram.h</label>
+        <link refid="feynmanDiagram_8h"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>src/marty/core/feynmanIntegral.h</label>
+        <link refid="feynmanIntegral_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>src/marty/core/feynmanRule.h</label>
+        <link refid="feynmanRule_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>src/marty/core/feynruleMomentum.h</label>
+        <link refid="feynruleMomentum_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>src/marty/core/filters.h</label>
+        <link refid="filters_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>src/marty/core/flavor.h</label>
+        <link refid="flavor_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>src/marty/core/gauge.h</label>
+        <link refid="gauge_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>src/marty/core/gauged.h</label>
+        <link refid="gauged_8h"/>
+      </node>
+      <node id="69">
+        <label>src/marty/core/gaugedGroup.h</label>
+        <link refid="gaugedGroup_8h"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>src/marty/core/generator.h</label>
+        <link refid="generator_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>src/marty/core/ghostField.h</label>
+        <link refid="ghostField_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>src/marty/core/goldstoneField.h</label>
+        <link refid="goldstoneField_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>src/marty/core/graph.h</label>
+        <link refid="graph_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>src/marty/core/group.h</label>
+        <link refid="group_8h"/>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>src/marty/core/groupIndices.h</label>
+        <link refid="groupIndices_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>src/marty/core/insertion.h</label>
+        <link refid="insertion_8h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>src/marty/core/interactionTerm.h</label>
+        <link refid="interactionTerm_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>src/marty/core/iterable.h</label>
+        <link refid="iterable_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>src/marty/core/kinematics.h</label>
+        <link refid="kinematics_8h"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>src/marty/core/lagrangian.h</label>
+        <link refid="lagrangian_8h"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>src/marty/core/lhaBuiltIn.h</label>
+        <link refid="lhaBuiltIn_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>src/marty/core/looptools_extension.h</label>
+        <link refid="looptools__extension_8h"/>
+      </node>
+      <node id="10">
+        <label>src/marty/core/marty.h</label>
+        <link refid="marty_2core_2marty_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>src/marty/core/model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>src/marty/core/modelBuilder.h</label>
+        <link refid="modelBuilder_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>src/marty/core/modelData.h</label>
+        <link refid="modelData_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>src/marty/core/momentumConservation.h</label>
+        <link refid="momentumConservation_8h"/>
+      </node>
+      <node id="57">
+        <label>src/marty/core/mrtInterface.h</label>
+        <link refid="mrtInterface_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>src/marty/core/mrtInterfaceCurrent.h</label>
+        <link refid="mrtInterfaceCurrent_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>src/marty/core/mrtUtils.h</label>
+        <link refid="mrtUtils_8h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>src/marty/core/mtylibrary.h</label>
+        <link refid="mtylibrary_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>src/marty/core/polarization.h</label>
+        <link refid="polarization_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>src/marty/core/propagator.h</label>
+        <link refid="propagator_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>src/marty/core/quantumField.h</label>
+        <link refid="quantumField_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>src/marty/core/quantumFieldTheory.h</label>
+        <link refid="quantumFieldTheory_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>src/marty/core/representation.h</label>
+        <link refid="representation_8h"/>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>src/marty/core/scalarField.h</label>
+        <link refid="scalarField_8h"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>src/marty/core/semiSimpleAlgebra.h</label>
+        <link refid="semiSimpleAlgebra_8h"/>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/marty/core/sglconverter.h</label>
+        <link refid="sglconverter_8h_source"/>
+      </node>
+      <node id="7">
+        <label>src/marty/core/sglsimplify.h</label>
+        <link refid="sglsimplify_8h_source"/>
+      </node>
+      <node id="79">
+        <label>src/marty/core/spectrum.h</label>
+        <link refid="spectrum_8h"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>src/marty/core/su_n_algebra.h</label>
+        <link refid="su__n__algebra_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>src/marty/core/traceIdentities.h</label>
+        <link refid="traceIdentities_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>src/marty/core/vectorField.h</label>
+        <link refid="vectorField_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>src/marty/core/wick.h</label>
+        <link refid="wick_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>src/marty/core/wilson.h</label>
+        <link refid="wilson_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>src/marty/core/wilsonOperator.h</label>
+        <link refid="wilsonOperator_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>src/marty/models/gthdm.h</label>
+        <link refid="gthdm_8h_source"/>
+      </node>
+      <node id="59">
+        <label>src/marty/models/mssm.h</label>
+        <link refid="mssm_8h_source"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>src/marty/models/mssmData.h</label>
+        <link refid="mssmData_8h"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>src/marty/models/nmfv.h</label>
+        <link refid="nmfv_8h_source"/>
+      </node>
+      <node id="60">
+        <label>src/marty/models/pmssm.h</label>
+        <link refid="pmssm_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>src/marty/models/pmssm_lem.h</label>
+        <link refid="pmssm__lem_8h_source"/>
+      </node>
+      <node id="12">
+        <label>src/marty/models/pmssm_lem/pmssm_data.h</label>
+        <link refid="pmssm__data_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>src/marty/models/pmssm_lem/pmssm_lem.h</label>
+        <link refid="pmssm__lem_2pmssm__lem_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>src/marty/models/qcd.h</label>
+        <link refid="qcd_8h_source"/>
+      </node>
+      <node id="63">
+        <label>src/marty/models/qed.h</label>
+        <link refid="qed_8h"/>
+      </node>
+      <node id="64">
+        <label>src/marty/models/sm.h</label>
+        <link refid="sm_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>src/marty/models/thdm.h</label>
+        <link refid="thdm_8h_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/marty/sgl/abstractgammasym.h</label>
+        <link refid="abstractgammasym_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>src/marty/sgl/contraction.h</label>
+        <link refid="contraction_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>src/marty/sgl/cslconverter.h</label>
+        <link refid="cslconverter_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>src/marty/sgl/cslexpr.h</label>
+        <link refid="cslexpr_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>src/marty/sgl/epsilonindex.h</label>
+        <link refid="epsilonindex_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>src/marty/sgl/gammaindex.h</label>
+        <link refid="gammaindex_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>src/marty/sgl/generalizedindex.h</label>
+        <link refid="generalizedindex_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>src/marty/sgl/indexchain.h</label>
+        <link refid="indexchain_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>src/marty/sgl/metricindex.h</label>
+        <link refid="metricindex_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>src/marty/sgl/momentumindex.h</label>
+        <link refid="momentumindex_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>src/marty/sgl/multifunction.h</label>
+        <link refid="multifunction_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>src/marty/sgl/ordering.h</label>
+        <link refid="ordering_8h"/>
+      </node>
+      <node id="9">
+        <label>src/marty/sgl/sgl.h</label>
+        <link refid="sgl_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>src/marty/sgl/sglalgo.h</label>
+        <link refid="sglalgo_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>src/marty/sgl/sglcommutation.h</label>
+        <link refid="sglcommutation_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>src/marty/sgl/sglfield.h</label>
+        <link refid="sglfield_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>src/marty/sgl/sglinterface.h</label>
+        <link refid="sglinterface_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>src/marty/sgl/sgloperations.h</label>
+        <link refid="sgloperations_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>src/marty/sgl/simplify.h</label>
+        <link refid="simplify_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>src/marty/sgl/tensorset.h</label>
+        <link refid="tensorset_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>src/marty/sgl/tracer.h</label>
+        <link refid="tracer_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>src/marty/sgl/typecast.h</label>
+        <link refid="typecast_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classcsl_1_1AbstractNumerical" prot="public">csl::AbstractNumerical</innerclass>
+    <innerclass refid="classcsl_1_1Integer" prot="public">csl::Integer</innerclass>
+    <innerclass refid="classcsl_1_1Float" prot="public">csl::Float</innerclass>
+    <innerclass refid="classcsl_1_1IntFraction" prot="public">csl::IntFraction</innerclass>
+    <innerclass refid="classcsl_1_1Complex" prot="public">csl::Complex</innerclass>
+    <innernamespace refid="namespacecsl">csl</innernamespace>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="numerical_8h_1a6c0bd592aa2e6ac8e81dfc616a0ff584" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>const csl::Expr CSL_0</definition>
+        <argsstring></argsstring>
+        <name>CSL_0</name>
+        <initializer>= csl::make_shared&lt;<ref refid="classcsl_1_1Integer" kindref="compound">csl::Integer</ref>&gt;(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="485" column="24" bodyfile="src/csl/numerical.h" bodystart="485" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="numerical_8h_1aefc269874597d317bf5d1dba10e33a35" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>const csl::Expr CSL_1</definition>
+        <argsstring></argsstring>
+        <name>CSL_1</name>
+        <initializer>= csl::make_shared&lt;<ref refid="classcsl_1_1Integer" kindref="compound">csl::Integer</ref>&gt;(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="487" column="24" bodyfile="src/csl/numerical.h" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="numerical_8h_1afc765e15b0e01b64dcc4bced3b8d1148" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>const csl::Expr CSL_2</definition>
+        <argsstring></argsstring>
+        <name>CSL_2</name>
+        <initializer>= csl::make_shared&lt;<ref refid="classcsl_1_1Integer" kindref="compound">csl::Integer</ref>&gt;(2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="489" column="24" bodyfile="src/csl/numerical.h" bodystart="489" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="numerical_8h_1a09d521275ba90cae9c6249ca1c30b228" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>const csl::Expr CSL_M_1</definition>
+        <argsstring></argsstring>
+        <name>CSL_M_1</name>
+        <initializer>= csl::make_shared&lt;<ref refid="classcsl_1_1Integer" kindref="compound">csl::Integer</ref>&gt;(-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="491" column="24" bodyfile="src/csl/numerical.h" bodystart="491" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="numerical_8h_1ae0c5edc452d7ab2f6ed7d00ce1bca32d" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>const csl::Expr CSL_M_2</definition>
+        <argsstring></argsstring>
+        <name>CSL_M_2</name>
+        <initializer>= csl::make_shared&lt;<ref refid="classcsl_1_1Integer" kindref="compound">csl::Integer</ref>&gt;(-2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="493" column="24" bodyfile="src/csl/numerical.h" bodystart="493" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="numerical_8h_1a40f9ca462f26e8b3472e7351aedaa158" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>const csl::Expr CSL_HALF</definition>
+        <argsstring></argsstring>
+        <name>CSL_HALF</name>
+        <initializer>= csl::make_shared&lt;<ref refid="classcsl_1_1IntFraction" kindref="compound">csl::IntFraction</ref>&gt;(1, 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="495" column="24" bodyfile="src/csl/numerical.h" bodystart="495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="numerical_8h_1a7a5c50bc5fc7d3ccea09094bef667761" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>const csl::Expr CSL_THIRD</definition>
+        <argsstring></argsstring>
+        <name>CSL_THIRD</name>
+        <initializer>= csl::make_shared&lt;<ref refid="classcsl_1_1IntFraction" kindref="compound">csl::IntFraction</ref>&gt;(1, 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="497" column="24" bodyfile="src/csl/numerical.h" bodystart="497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="numerical_8h_1a918fd6bbd094e5161ee0d096d332e447" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>const csl::Expr CSL_M_HALF</definition>
+        <argsstring></argsstring>
+        <name>CSL_M_HALF</name>
+        <initializer>= csl::make_shared&lt;<ref refid="classcsl_1_1IntFraction" kindref="compound">csl::IntFraction</ref>&gt;(-1, 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="499" column="24" bodyfile="src/csl/numerical.h" bodystart="499" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="numerical_8h_1a9c24b07f61d0fec5bca7603c7ef8e974" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>const csl::Expr CSL_M_THIRD</definition>
+        <argsstring></argsstring>
+        <name>CSL_M_THIRD</name>
+        <initializer>= csl::make_shared&lt;<ref refid="classcsl_1_1IntFraction" kindref="compound">csl::IntFraction</ref>&gt;(-1, 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="501" column="24" bodyfile="src/csl/numerical.h" bodystart="501" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Grégoire Uhlrich </para>
+</simplesect>
+<simplesect kind="version"><para>2.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2020-11-05 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>MARTY.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MARTY<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MARTY<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>MARTY.<sp/>If<sp/>not,<sp/>see<sp/>&lt;https://www.gnu.org/licenses/&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>NUMERICAL_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUMERICAL_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="buildingBlock_8h" kindref="compound">buildingBlock.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecsl" kindref="compound">csl</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classcsl_1_1AbstractNumerical" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcsl_1_1AbstractNumerical" kindref="compound">AbstractNumerical</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1AbstractBuildingBlock" kindref="compound">AbstractBuildingBlock</ref><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1AbstractNumerical" kindref="compound">AbstractNumerical</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classcsl_1_1AbstractNumerical_1ab546a5a971f3547b7bbf2940465d70e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacecsl_1a70046459ec0082db8cb97005c13c9a54" kindref="member">csl::PrimaryType</ref><sp/><ref refid="classcsl_1_1AbstractNumerical_1ab546a5a971f3547b7bbf2940465d70e9" kindref="member">getPrimaryType</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="39"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacecsl_1a70046459ec0082db8cb97005c13c9a54a5225763efc97aebd39e5a303fceb57ac" kindref="member">csl::PrimaryType::Numerical</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printCode(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mode<sp/>=<sp/>0,<sp/>std::ostream<sp/>&amp;out<sp/>=<sp/>std::cout)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Parent&gt;<sp/>getSubSymbols()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1AbstractNumerical_1ac3c2bbe76a12e7e7d08009b82e1fb7c1" kindref="member">getNumericalFactor</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;Expr&gt;<sp/><ref refid="classcsl_1_1AbstractNumerical_1a092aae72532fd13bcc79392bd18ebfad" kindref="member">getTerm</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;Expr&gt;<sp/><ref refid="classcsl_1_1AbstractNumerical_1af911961cd47a4cec8c31cb9fafaf74d6" kindref="member">getComplexArgument</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classcsl_1_1AbstractNumerical_1afe459bd13460da89d77acb73d19baa59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1AbstractNumerical_1afe459bd13460da89d77acb73d19baa59" kindref="member">dependsOn</ref>(<ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref>)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="52"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1AbstractNumerical_1afe459bd13460da89d77acb73d19baa59" kindref="member">dependsOn</ref>(<ref refid="classcsl_1_1AbstractParent" kindref="compound">Parent_info</ref>)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="56"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59" refid="classcsl_1_1AbstractNumerical_1a1cc3b916f6ff6b0b63c17095c1375adc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1AbstractNumerical_1a1cc3b916f6ff6b0b63c17095c1375adc" kindref="member">dependsExplicitlyOn</ref>(<ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref>)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="60"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1AbstractNumerical_1a1cc3b916f6ff6b0b63c17095c1375adc" kindref="member">dependsExplicitlyOn</ref>(<ref refid="classcsl_1_1AbstractParent" kindref="compound">Parent_info</ref>)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="64"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>AbstractNumerical::AbstractNumerical()<sp/>:<sp/>AbstractBuildingBlock()</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">/*************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Numerical<sp/>classes<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/*************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classcsl_1_1Integer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcsl_1_1Integer" kindref="compound">Integer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1AbstractNumerical" kindref="compound">AbstractNumerical</ref><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84" refid="classcsl_1_1Integer_1a23724af0e10c950fb77775b360634f1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Integer_1a23724af0e10c950fb77775b360634f1d" kindref="member">value</ref>;<sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Integer_1a36186701678cc62a89eef1595d81b66a" kindref="member">Integer</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Integer_1a36186701678cc62a89eef1595d81b66a" kindref="member">Integer</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t_value);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Integer" kindref="compound">~Integer</ref>()</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__record_data_alloc(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classcsl_1_1Integer_1a93751bbb2c3673de15a6a4f7f6f138ff" kindref="member">getType</ref>()));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacecsl_1ace591865c69b6315c533a1a325777312" kindref="member">csl::Type</ref><sp/><ref refid="classcsl_1_1Integer_1a93751bbb2c3673de15a6a4f7f6f138ff" kindref="member">getType</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="classcsl_1_1Integer_1ac5571ab9be29c389391e69d8794b93a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Integer_1ac5571ab9be29c389391e69d8794b93a8" kindref="member">isInteger</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="110"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Integer_1a5ce6964933d7a9a7df7e8e4254b446be" kindref="member">setValue</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t_value)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Integer_1a1c8d479f0f4fee521934707dafd162ab" kindref="member">print</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mode<sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostream<sp/>&amp;out<sp/><sp/><sp/><sp/><sp/>=<sp/>std::cout,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LibraryMode<sp/><sp/><sp/>libMode<sp/>=<sp/>LibraryMode::NoLib)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classcsl_1_1Integer_1ab775bd9a73cd2a9c410e1fdc02c8b9b9" kindref="member">printLaTeX</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mode<sp/>=<sp/>0)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Integer_1a3b0670d4d8bddf30871f72a15a30f856" kindref="member">evaluateScalar</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;Expr&gt;<sp/><ref refid="classcsl_1_1Integer_1a029be2af666fd37d37412473cceeb546" kindref="member">evaluate</ref>(csl::eval::mode<sp/>user_mode</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>csl::eval::base)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>unique_Expr<sp/>copy_unique()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1Integer_1a69ec91334a0491aadfebc431d2174343" kindref="member">multiplication_own</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>&amp;expr,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>side<sp/>=<sp/>1)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1Integer_1ad00b35bd5e52a36445b6e99265f20240" kindref="member">addition_own</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>&amp;expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1Integer_1a98edda5fd2b84eb6fb6a5c0000d4c4fe" kindref="member">division_own</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>&amp;expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1Integer_1a26e655bb92db0fad0c3970746c8e5c93" kindref="member">exponentiation_own</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>&amp;expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;Expr&gt;<sp/><ref refid="classcsl_1_1Integer_1a341c2f0b7aa9cd523ff5ee48c9ba49f0" kindref="member">derive</ref>(<ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref><sp/>expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Integer_1a000e1bcdac9556d30acbd0a3059308cd" kindref="member">operator==</ref>(<ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref><sp/>expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&lt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref><sp/>*expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="classcsl_1_1Float" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcsl_1_1Float" kindref="compound">Float</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1AbstractNumerical" kindref="compound">AbstractNumerical</ref><sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="171" refid="classcsl_1_1Float_1a05e5f76e26b313dd420fe760b5fc4430" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Float_1a05e5f76e26b313dd420fe760b5fc4430" kindref="member">value</ref>;<sp/></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Float_1afc5e54b01aa2895dfbda343c13718164" kindref="member">Float</ref>();</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Float_1afc5e54b01aa2895dfbda343c13718164" kindref="member">Float</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t_value);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Float" kindref="compound">~Float</ref>()</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__record_data_alloc(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classcsl_1_1Float_1a23bf3dff3c0506d854366653bb9a177d" kindref="member">getType</ref>()));</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacecsl_1ace591865c69b6315c533a1a325777312" kindref="member">csl::Type</ref><sp/><ref refid="classcsl_1_1Float_1a23bf3dff3c0506d854366653bb9a177d" kindref="member">getType</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Float_1a2588061b9db6b5af2253bc181b859ef8" kindref="member">isInteger</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Float_1a42a8b3b242e0fb3e9b19f10f14bb21a4" kindref="member">setValue</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t_value)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Float_1a507979a5b36edb4e3f076f75ba010e7c" kindref="member">print</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mode<sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostream<sp/>&amp;out<sp/><sp/><sp/><sp/><sp/>=<sp/>std::cout,</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LibraryMode<sp/><sp/><sp/>libMode<sp/>=<sp/>LibraryMode::NoLib)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classcsl_1_1Float_1a19efbc737f9188703d55730839b744c0" kindref="member">printLaTeX</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mode<sp/>=<sp/>0)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Float_1a244fc461c1b78ecdf0791d64cef8100d" kindref="member">evaluateScalar</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;Expr&gt;<sp/><ref refid="classcsl_1_1Float_1ab4d0c0ffa060f4a4242fa1920b5f7c7e" kindref="member">evaluate</ref>(csl::eval::mode<sp/>user_mode</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>csl::eval::base)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>unique_Expr<sp/>copy_unique()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>refresh()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1Float_1a0acfdd639afdbbb6f904a2cd74aaac31" kindref="member">multiplication_own</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>&amp;expr,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>side<sp/>=<sp/>1)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1Float_1ac269f085d5e4f9f43d4a5500751cfe33" kindref="member">addition_own</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>&amp;expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1Float_1a7a35025055eaba4cc64707ac79e2aabc" kindref="member">division_own</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>&amp;expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1Float_1a6a20dfce78e1b4a979d11731db030987" kindref="member">exponentiation_own</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>&amp;expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;Expr&gt;<sp/><ref refid="classcsl_1_1Float_1ad8c19d92099f26157248fc9023f9f599" kindref="member">derive</ref>(<ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref><sp/>expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Float_1a76dda7f710c690c2a950d2279c6eae3e" kindref="member">operator==</ref>(<ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref><sp/>expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&lt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref><sp/>*expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="classcsl_1_1IntFraction" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcsl_1_1IntFraction" kindref="compound">IntFraction</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1AbstractNumerical" kindref="compound">AbstractNumerical</ref><sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="259" refid="classcsl_1_1IntFraction_1a882b0045bb535f36a07168e2e7dbe3af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1IntFraction_1a882b0045bb535f36a07168e2e7dbe3af" kindref="member">num</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="260" refid="classcsl_1_1IntFraction_1a3e5298693263b385b5e9b666e8811543" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1IntFraction_1a3e5298693263b385b5e9b666e8811543" kindref="member">denom</ref>;<sp/></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1IntFraction_1a64af43389b114e1a6769b7ded051b8f6" kindref="member">IntFraction</ref>();</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1IntFraction_1a64af43389b114e1a6769b7ded051b8f6" kindref="member">IntFraction</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t_num);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1IntFraction_1a64af43389b114e1a6769b7ded051b8f6" kindref="member">IntFraction</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t_num,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t_denom);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1IntFraction_1a64af43389b114e1a6769b7ded051b8f6" kindref="member">IntFraction</ref>(<ref refid="classcsl_1_1IntFraction" kindref="compound">IntFraction</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;)<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1IntFraction" kindref="compound">~IntFraction</ref>()</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__record_data_alloc(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classcsl_1_1IntFraction_1abebe0ae65269c3fdddc7759008cc488d" kindref="member">getType</ref>()));</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacecsl_1ace591865c69b6315c533a1a325777312" kindref="member">csl::Type</ref><sp/><ref refid="classcsl_1_1IntFraction_1abebe0ae65269c3fdddc7759008cc488d" kindref="member">getType</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1IntFraction_1aafccd523414a7c7ae8d2a4081bbc76a8" kindref="member">getNum</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1IntFraction_1ab3c87296f84c24abd4e5d0531b992404" kindref="member">getDenom</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1IntFraction_1a3278490e3c91491cc8d0a07cccdc13d0" kindref="member">print</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mode<sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostream<sp/>&amp;out<sp/><sp/><sp/><sp/><sp/>=<sp/>std::cout,</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LibraryMode<sp/><sp/><sp/>libMode<sp/>=<sp/>LibraryMode::NoLib)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printCode(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mode<sp/>=<sp/>0,<sp/>std::ostream<sp/>&amp;out<sp/>=<sp/>std::cout)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classcsl_1_1IntFraction_1af5517b79f442b4fdc42116e717098cfe" kindref="member">printLaTeX</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mode<sp/>=<sp/>0)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1IntFraction_1a73241811979616fa6106f9ba2addd23e" kindref="member">evaluateScalar</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;Expr&gt;<sp/><ref refid="classcsl_1_1IntFraction_1aff12a6c06a577d55f295d3d474118a73" kindref="member">evaluate</ref>(csl::eval::mode<sp/>user_mode</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>csl::eval::base)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>unique_Expr<sp/>copy_unique()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>refresh()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1IntFraction_1a084df9668bd846370585d44ba07d75a0" kindref="member">multiplication_own</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>&amp;expr,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>side<sp/>=<sp/>1)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1IntFraction_1ac3d446b547d4c8b7d3b5359b87c756d5" kindref="member">addition_own</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>&amp;expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1IntFraction_1a0dc80b9e319900617056e4ab3c233c06" kindref="member">division_own</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>&amp;expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1IntFraction_1a2184e11c09413bea72653bad45e8f997" kindref="member">exponentiation_own</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>&amp;expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;Expr&gt;<sp/><ref refid="classcsl_1_1IntFraction_1a36c47cf74777eb484bd138d826c23edc" kindref="member">derive</ref>(<ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref><sp/>expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1IntFraction_1ad0e5efc8234d94656457b21ce95b6946" kindref="member">operator==</ref>(<ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref><sp/>expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&lt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref><sp/>*expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight><highlight class="comment">/*************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Inline<sp/>functions<sp/>(non<sp/>virtual<sp/>and<sp/>short)<sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight><highlight class="comment">/*************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358" refid="classcsl_1_1Integer_1a36186701678cc62a89eef1595d81b66a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Integer_1a36186701678cc62a89eef1595d81b66a" kindref="member">Integer::Integer</ref>()<sp/>:<sp/><ref refid="classcsl_1_1AbstractNumerical" kindref="compound">AbstractNumerical</ref>(),<sp/>value(0)</highlight></codeline>
+<codeline lineno="359"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="360"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="361" refid="classcsl_1_1Integer_1a54d83e1707273d9e5f758813c24720ad" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Integer_1a36186701678cc62a89eef1595d81b66a" kindref="member">Integer::Integer</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t_value)</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classcsl_1_1AbstractNumerical" kindref="compound">AbstractNumerical</ref>(),<sp/>value(t_value)</highlight></codeline>
+<codeline lineno="363"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="364"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366" refid="classcsl_1_1Float_1afc5e54b01aa2895dfbda343c13718164" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Float_1afc5e54b01aa2895dfbda343c13718164" kindref="member">Float::Float</ref>()<sp/>:<sp/><ref refid="classcsl_1_1AbstractNumerical" kindref="compound">AbstractNumerical</ref>(),<sp/>value(0)</highlight></codeline>
+<codeline lineno="367"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="368"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="369" refid="classcsl_1_1Float_1ae220be59f0cf4932908492e3d9179426" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Float_1afc5e54b01aa2895dfbda343c13718164" kindref="member">Float::Float</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t_value)<sp/>:<sp/><ref refid="classcsl_1_1AbstractNumerical" kindref="compound">AbstractNumerical</ref>(),<sp/>value(t_value)</highlight></codeline>
+<codeline lineno="370"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="371"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>IntFraction<sp/>constructor<sp/>with<sp/>t_num<sp/>and<sp/>t_denom<sp/>is<sp/>in<sp/>the<sp/>.cpp<sp/>file<sp/>(more</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight><highlight class="comment">//<sp/>complex).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375" refid="classcsl_1_1IntFraction_1a64af43389b114e1a6769b7ded051b8f6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1IntFraction_1a64af43389b114e1a6769b7ded051b8f6" kindref="member">IntFraction::IntFraction</ref>()<sp/>:<sp/><ref refid="classcsl_1_1AbstractNumerical" kindref="compound">AbstractNumerical</ref>(),<sp/>num(0),<sp/>denom(1)</highlight></codeline>
+<codeline lineno="376"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="377"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="378" refid="classcsl_1_1IntFraction_1a8d7b4363a1ea1e122b2c7d688d14a06a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1IntFraction_1a64af43389b114e1a6769b7ded051b8f6" kindref="member">IntFraction::IntFraction</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t_num)</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classcsl_1_1AbstractNumerical" kindref="compound">AbstractNumerical</ref>(),<sp/>num(t_num),<sp/>denom(1)</highlight></codeline>
+<codeline lineno="380"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="381"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383" refid="classcsl_1_1Complex" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcsl_1_1Complex" kindref="compound">Complex</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1AbstractNumerical" kindref="compound">AbstractNumerical</ref><sp/>{</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="386" refid="classcsl_1_1Complex_1a2954f81f2288e793b7ae9e33e31d9892" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1Complex_1a2954f81f2288e793b7ae9e33e31d9892" kindref="member">real</ref>;<sp/></highlight></codeline>
+<codeline lineno="388" refid="classcsl_1_1Complex_1a1e8118d164e468662c5b2230f24e0f18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1Complex_1a1e8118d164e468662c5b2230f24e0f18" kindref="member">imag</ref>;<sp/></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Complex_1a383d6b164ce284ae9af78cf4f9e4d876" kindref="member">Complex</ref>();</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Complex_1a383d6b164ce284ae9af78cf4f9e4d876" kindref="member">Complex</ref>(<ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>t_real);</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Complex_1a383d6b164ce284ae9af78cf4f9e4d876" kindref="member">Complex</ref>(<ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>t_real,<sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>t_imag);</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Complex" kindref="compound">~Complex</ref>()</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__record_data_alloc(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classcsl_1_1Complex_1ab203dc18378296c2b7d484773bec8746" kindref="member">getType</ref>()));</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacecsl_1ace591865c69b6315c533a1a325777312" kindref="member">csl::Type</ref><sp/><ref refid="classcsl_1_1Complex_1ab203dc18378296c2b7d484773bec8746" kindref="member">getType</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Complex_1a840991e02d47506b35ee49b16d8dd8b0" kindref="member">print</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mode<sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostream<sp/>&amp;out<sp/><sp/><sp/><sp/><sp/>=<sp/>std::cout,</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LibraryMode<sp/><sp/><sp/>libMode<sp/>=<sp/>LibraryMode::NoLib)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printCode(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mode<sp/>=<sp/>0,<sp/>std::ostream<sp/>&amp;out<sp/>=<sp/>std::cout)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"></highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classcsl_1_1Complex_1a8405fa57577ecae2935fa40b703db69b" kindref="member">printLaTeX</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mode<sp/>=<sp/>0)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Complex_1a4a5a2813d3cba5cc8c761959f3dd17fb" kindref="member">evaluateScalar</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;Expr&gt;<sp/><ref refid="classcsl_1_1Complex_1a0651cc75f7010f12fdd80cd0d458b568" kindref="member">evaluate</ref>(csl::eval::mode<sp/>user_mode</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>csl::eval::base)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isReal()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isPurelyImaginary()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;Expr&gt;<sp/><ref refid="classcsl_1_1Complex_1a0a71859b7fdc28a6cd36290823282746" kindref="member">getRealPart</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1Complex_1a38b17d76b63dc1afdb59c4405b1aff6d" kindref="member">getImaginaryPart</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"></highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;Expr&gt;<sp/><ref refid="classcsl_1_1Complex_1a3cbe87d94da0eeca27369afc69f2fa4d" kindref="member">getComplexArgument</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;Expr&gt;<sp/><ref refid="classcsl_1_1Complex_1afc7177213e2612bddfe1e299847a0386" kindref="member">getComplexModulus</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;Expr&gt;<sp/><ref refid="classcsl_1_1Complex_1ae87c5c2100541896a3b474d5908a6e3d" kindref="member">getComplexConjugate</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/>unique_Expr<sp/>copy_unique()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>refresh()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1Complex_1a79889fc60628f60564ed7a60b1fad1a3" kindref="member">multiplication_own</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>&amp;expr,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>side<sp/>=<sp/>1)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1Complex_1a69a2af4ec8f4f12a56cc1fc41223bc78" kindref="member">addition_own</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>&amp;expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1Complex_1a63e2aab7c637beb7fa67ccbc9b8b8c12" kindref="member">division_own</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>&amp;expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/><ref refid="classcsl_1_1Complex_1a46dbf92ea6c22239857b6e41eb01b297" kindref="member">exponentiation_own</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/>&amp;expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"></highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;Expr&gt;<sp/><ref refid="classcsl_1_1Complex_1acb2b53b0866d8fb7fb6a3911285944aa" kindref="member">derive</ref>(<ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref><sp/>expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Complex_1aa13ebbff936c3fac16bdf2fc9eea1547" kindref="member">operator==</ref>(<ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref><sp/>expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"></highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&lt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref><sp/>*expr)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"></highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>checkNumerical(<ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;expr)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="466"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal">Expr<sp/>float_s(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal">Expr<sp/>int_s(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"></highlight></codeline>
+<codeline lineno="472"><highlight class="normal">Expr<sp/>autonumber_s(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="474"><highlight class="normal">Expr<sp/>intfraction_s(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>denom);</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal">Expr<sp/>complex_s(Expr<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;real,<sp/>Expr<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;imag);</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"></highlight></codeline>
+<codeline lineno="478"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>csl::allocator&lt;Integer&gt;<sp/><sp/><sp/><sp/><sp/>alloc_integer;</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>csl::allocator&lt;Float&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>alloc_float;</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>csl::allocator&lt;IntFraction&gt;<sp/>alloc_intfraction;</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>csl::allocator&lt;Complex&gt;<sp/><sp/><sp/><sp/><sp/>alloc_complex;</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"></highlight></codeline>
+<codeline lineno="483"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>End<sp/>of<sp/>namespace<sp/>csl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="484"><highlight class="normal"></highlight></codeline>
+<codeline lineno="485"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>CSL_0<sp/>=<sp/>csl::make_shared&lt;csl::Integer&gt;(0);</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight></codeline>
+<codeline lineno="487"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>CSL_1<sp/>=<sp/>csl::make_shared&lt;csl::Integer&gt;(1);</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"></highlight></codeline>
+<codeline lineno="489"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>CSL_2<sp/>=<sp/>csl::make_shared&lt;csl::Integer&gt;(2);</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight></codeline>
+<codeline lineno="491"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>CSL_M_1<sp/>=<sp/>csl::make_shared&lt;csl::Integer&gt;(-1);</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>CSL_M_2<sp/>=<sp/>csl::make_shared&lt;csl::Integer&gt;(-2);</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"></highlight></codeline>
+<codeline lineno="495"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>CSL_HALF<sp/>=<sp/>csl::make_shared&lt;csl::IntFraction&gt;(1,<sp/>2);</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"></highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>CSL_THIRD<sp/>=<sp/>csl::make_shared&lt;csl::IntFraction&gt;(1,<sp/>3);</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"></highlight></codeline>
+<codeline lineno="499"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>CSL_M_HALF<sp/>=<sp/>csl::make_shared&lt;csl::IntFraction&gt;(-1,<sp/>2);</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"></highlight></codeline>
+<codeline lineno="501"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>CSL_M_THIRD<sp/>=<sp/>csl::make_shared&lt;csl::IntFraction&gt;(-1,<sp/>3);</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"></highlight></codeline>
+<codeline lineno="503"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/csl/numerical.h"/>
+  </compounddef>
+</doxygen>

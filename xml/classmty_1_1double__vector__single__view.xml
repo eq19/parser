@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1double__vector__single__view" kind="class" language="C++" prot="public">
+    <compoundname>mty::double_vector_single_view</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Type</type>
+      </param>
+      <param>
+        <type>class double_vector_type</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmty_1_1double__vector__single__view_1ac1ef89a05c8ab4abd72ef2a011e6b17d" prot="public" static="no">
+        <type>typename std::vector&lt; Type &gt;::iterator</type>
+        <definition>using mty::double_vector_single_view&lt; Type, double_vector_type &gt;::iterator =  typename std::vector&lt;Type&gt;::iterator</definition>
+        <argsstring></argsstring>
+        <name>iterator</name>
+        <qualifiedname>mty::double_vector_single_view::iterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="42" column="5" bodyfile="src/marty/core/doubleVector.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmty_1_1double__vector__single__view_1ad357601d8e3130a94d26b13f5ce3cd4e" prot="public" static="no">
+        <type>typename std::vector&lt; Type &gt;::const_iterator</type>
+        <definition>using mty::double_vector_single_view&lt; Type, double_vector_type &gt;::const_iterator =  typename std::vector&lt;Type&gt;::const_iterator</definition>
+        <argsstring></argsstring>
+        <name>const_iterator</name>
+        <qualifiedname>mty::double_vector_single_view::const_iterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="43" column="5" bodyfile="src/marty/core/doubleVector.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmty_1_1double__vector__single__view_1a9a182877ce96032e81ea285858fce828" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class double_vector&lt; Type &gt;</definition>
+        <argsstring></argsstring>
+        <name>double_vector&lt; Type &gt;</name>
+        <qualifiedname>mty::double_vector_single_view::double_vector&lt; Type &gt;</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1double__vector" kindref="compound">double_vector</ref>&lt; Type &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="399" column="15" bodyfile="src/marty/core/doubleVector.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classmty_1_1double__vector__single__view_1a374d64556702be8cd82b97c5e6c4f0ca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class double_vector_iterator&lt; Type, double_vector_type &gt;</definition>
+        <argsstring></argsstring>
+        <name>double_vector_iterator&lt; Type, double_vector_type &gt;</name>
+        <qualifiedname>mty::double_vector_single_view::double_vector_iterator&lt; Type, double_vector_type &gt;</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1double__vector__iterator" kindref="compound">double_vector_iterator</ref>&lt; Type, double_vector_type &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="399" column="15" bodyfile="src/marty/core/doubleVector.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1double__vector__single__view_1a0e9615a23e5c4c66eb6c707826ddb77f" prot="private" static="no" mutable="no">
+        <type>double_vector_type</type>
+        <definition>double_vector_type mty::double_vector_single_view&lt; Type, double_vector_type &gt;::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>mty::double_vector_single_view::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="105" column="24" bodyfile="src/marty/core/doubleVector.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1double__vector__single__view_1afa6c3d94702226424310639e158c9738" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t mty::double_vector_single_view&lt; Type, double_vector_type &gt;::pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <qualifiedname>mty::double_vector_single_view::pos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="106" column="24" bodyfile="src/marty/core/doubleVector.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1double__vector__single__view_1ac69ae7997deaf33c712d01b49185ac05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mty::double_vector_single_view&lt; Type, double_vector_type &gt;::double_vector_single_view</definition>
+        <argsstring>(double_vector_type t_data, size_t t_pos)</argsstring>
+        <name>double_vector_single_view</name>
+        <qualifiedname>mty::double_vector_single_view::double_vector_single_view</qualifiedname>
+        <param>
+          <type>double_vector_type</type>
+          <declname>t_data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>t_pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="45" column="5" bodyfile="src/marty/core/doubleVector.h" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1double__vector__single__view_1a2a8ef47c8db6e39b6db0ba4805670de4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::double_vector_single_view&lt; Type, double_vector_type &gt;::double_vector_single_view</definition>
+        <argsstring>(double_vector_single_view const &amp;other)=delete</argsstring>
+        <name>double_vector_single_view</name>
+        <qualifiedname>mty::double_vector_single_view::double_vector_single_view</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1double__vector__single__view" kindref="compound">double_vector_single_view</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="50" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1double__vector__single__view_1a5d92bdca1c612e00500ecf9783323c32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmty_1_1double__vector__single__view" kindref="compound">double_vector_single_view</ref> &amp;</type>
+        <definition>double_vector_single_view &amp; mty::double_vector_single_view&lt; Type, double_vector_type &gt;::operator=</definition>
+        <argsstring>(double_vector_single_view const &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>mty::double_vector_single_view::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1double__vector__single__view" kindref="compound">double_vector_single_view</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="52" column="5" bodyfile="src/marty/core/doubleVector.h" bodystart="52" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1double__vector__single__view_1ad48a20ab0e9714d72fe08df58ecb46ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::double_vector_single_view&lt; Type, double_vector_type &gt;::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>mty::double_vector_single_view::empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="69" column="10" bodyfile="src/marty/core/doubleVector.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1double__vector__single__view_1a479eff208a2543466121ce11aa07db78" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t mty::double_vector_single_view&lt; Type, double_vector_type &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>mty::double_vector_single_view::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="73" column="12" bodyfile="src/marty/core/doubleVector.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1double__vector__single__view_1ad618bac8597d1ec39bf95654b664375b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::double_vector_single_view&lt; Type, double_vector_type &gt;::push_back</definition>
+        <argsstring>(Type const &amp;el)</argsstring>
+        <name>push_back</name>
+        <qualifiedname>mty::double_vector_single_view::push_back</qualifiedname>
+        <param>
+          <type>Type const &amp;</type>
+          <declname>el</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="78" column="10" bodyfile="src/marty/core/doubleVector.h" bodystart="325" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1double__vector__single__view_1acbf51981fbd0ea82e63884c0864e38de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::double_vector_single_view&lt; Type, double_vector_type &gt;::erase</definition>
+        <argsstring>(const_iterator pos)</argsstring>
+        <name>erase</name>
+        <qualifiedname>mty::double_vector_single_view::erase</qualifiedname>
+        <param>
+          <type>const_iterator</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="80" column="10" bodyfile="src/marty/core/doubleVector.h" bodystart="332" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1double__vector__single__view_1a6a6eb50033702abc09bf7bbffde51701" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>iterator</type>
+        <definition>iterator mty::double_vector_single_view&lt; Type, double_vector_type &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>mty::double_vector_single_view::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="82" column="14" bodyfile="src/marty/core/doubleVector.h" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1double__vector__single__view_1a0e2b2813746d7e178eaf0e9f4a29736c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>iterator</type>
+        <definition>iterator mty::double_vector_single_view&lt; Type, double_vector_type &gt;::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>mty::double_vector_single_view::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="86" column="14" bodyfile="src/marty/core/doubleVector.h" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1double__vector__single__view_1aa3c61832d50e9a339f2705e183272ec0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const_iterator</type>
+        <definition>const_iterator mty::double_vector_single_view&lt; Type, double_vector_type &gt;::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>mty::double_vector_single_view::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="91" column="20" bodyfile="src/marty/core/doubleVector.h" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1double__vector__single__view_1a940877abf5dca030fb73feb5fc87a616" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const_iterator</type>
+        <definition>const_iterator mty::double_vector_single_view&lt; Type, double_vector_type &gt;::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>mty::double_vector_single_view::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="96" column="20" bodyfile="src/marty/core/doubleVector.h" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1double__vector__single__view_1a896d5b41ea7d42637e70970ba1958d79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Type &amp;</type>
+        <definition>Type &amp; mty::double_vector_single_view&lt; Type, double_vector_type &gt;::operator[]</definition>
+        <argsstring>(size_t i)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>mty::double_vector_single_view::operator[]</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="101" column="16" bodyfile="src/marty/core/doubleVector.h" bodystart="339" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1double__vector__single__view_1ae7290eadf5705dc50e441157c51452cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Type const &amp;</type>
+        <definition>Type const  &amp; mty::double_vector_single_view&lt; Type, double_vector_type &gt;::operator[]</definition>
+        <argsstring>(size_t i) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>mty::double_vector_single_view::operator[]</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/doubleVector.h" line="102" column="16" bodyfile="src/marty/core/doubleVector.h" bodystart="346" bodyend="349"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/core/doubleVector.h" line="37" column="1" bodyfile="src/marty/core/doubleVector.h" bodystart="37" bodyend="107"/>
+    <listofallmembers>
+      <member refid="classmty_1_1double__vector__single__view_1a6a6eb50033702abc09bf7bbffde51701" prot="public" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>begin</name></member>
+      <member refid="classmty_1_1double__vector__single__view_1aa3c61832d50e9a339f2705e183272ec0" prot="public" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>begin</name></member>
+      <member refid="classmty_1_1double__vector__single__view_1ad357601d8e3130a94d26b13f5ce3cd4e" prot="public" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>const_iterator</name></member>
+      <member refid="classmty_1_1double__vector__single__view_1a0e9615a23e5c4c66eb6c707826ddb77f" prot="private" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>data</name></member>
+      <member refid="classmty_1_1double__vector__single__view_1a9a182877ce96032e81ea285858fce828" prot="private" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>double_vector&lt; Type &gt;</name></member>
+      <member refid="classmty_1_1double__vector__single__view_1a374d64556702be8cd82b97c5e6c4f0ca" prot="private" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>double_vector_iterator&lt; Type, double_vector_type &gt;</name></member>
+      <member refid="classmty_1_1double__vector__single__view_1ac69ae7997deaf33c712d01b49185ac05" prot="public" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>double_vector_single_view</name></member>
+      <member refid="classmty_1_1double__vector__single__view_1a2a8ef47c8db6e39b6db0ba4805670de4" prot="public" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>double_vector_single_view</name></member>
+      <member refid="classmty_1_1double__vector__single__view_1ad48a20ab0e9714d72fe08df58ecb46ab" prot="public" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>empty</name></member>
+      <member refid="classmty_1_1double__vector__single__view_1a0e2b2813746d7e178eaf0e9f4a29736c" prot="public" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>end</name></member>
+      <member refid="classmty_1_1double__vector__single__view_1a940877abf5dca030fb73feb5fc87a616" prot="public" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>end</name></member>
+      <member refid="classmty_1_1double__vector__single__view_1acbf51981fbd0ea82e63884c0864e38de" prot="public" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>erase</name></member>
+      <member refid="classmty_1_1double__vector__single__view_1ac1ef89a05c8ab4abd72ef2a011e6b17d" prot="public" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>iterator</name></member>
+      <member refid="classmty_1_1double__vector__single__view_1a5d92bdca1c612e00500ecf9783323c32" prot="public" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>operator=</name></member>
+      <member refid="classmty_1_1double__vector__single__view_1a896d5b41ea7d42637e70970ba1958d79" prot="public" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>operator[]</name></member>
+      <member refid="classmty_1_1double__vector__single__view_1ae7290eadf5705dc50e441157c51452cf" prot="public" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>operator[]</name></member>
+      <member refid="classmty_1_1double__vector__single__view_1afa6c3d94702226424310639e158c9738" prot="private" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>pos</name></member>
+      <member refid="classmty_1_1double__vector__single__view_1ad618bac8597d1ec39bf95654b664375b" prot="public" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>push_back</name></member>
+      <member refid="classmty_1_1double__vector__single__view_1a479eff208a2543466121ce11aa07db78" prot="public" virt="non-virtual"><scope>mty::double_vector_single_view</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

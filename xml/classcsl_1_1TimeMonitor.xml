@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcsl_1_1TimeMonitor" kind="class" language="C++" prot="public">
+    <compoundname>csl::TimeMonitor</compoundname>
+    <innerclass refid="structcsl_1_1TimeMonitor_1_1Time" prot="public">csl::TimeMonitor::Time</innerclass>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcsl_1_1TimeMonitor_1ae7cf2f8a9b34bebbf96796a8e68fe4c4" prot="public" static="yes" mutable="no">
+        <type>char</type>
+        <definition>char csl::TimeMonitor::separator</definition>
+        <argsstring></argsstring>
+        <name>separator</name>
+        <qualifiedname>csl::TimeMonitor::separator</qualifiedname>
+        <initializer>= &apos;\&apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/timeMonitor.h" line="34" column="24" bodyfile="src/csl/timeMonitor.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcsl_1_1TimeMonitor_1aec7029a9212f3997108409c4ffbf2098" prot="private" static="no" mutable="no">
+        <type>std::clock_t</type>
+        <definition>std::clock_t csl::TimeMonitor::m_start</definition>
+        <argsstring></argsstring>
+        <name>m_start</name>
+        <qualifiedname>csl::TimeMonitor::m_start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/timeMonitor.h" line="74" column="18" bodyfile="src/csl/timeMonitor.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1TimeMonitor_1a200b14bd5392bc721398785e9b29aa4b" prot="private" static="no" mutable="no">
+        <type><ref refid="structcsl_1_1TimeMonitor_1_1Time" kindref="compound">Time</ref></type>
+        <definition>Time csl::TimeMonitor::m_time</definition>
+        <argsstring></argsstring>
+        <name>m_time</name>
+        <qualifiedname>csl::TimeMonitor::m_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/timeMonitor.h" line="75" column="18" bodyfile="src/csl/timeMonitor.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcsl_1_1TimeMonitor_1a2c48aa76a97705595d4ba89c14a1c7e5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::TimeMonitor::print</definition>
+        <argsstring>(size_t nSec, std::ostream &amp;out)</argsstring>
+        <name>print</name>
+        <qualifiedname>csl::TimeMonitor::print</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>nSec</declname>
+        </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/timeMonitor.h" line="43" column="17" bodyfile="src/csl/timeMonitor.cpp" bodystart="23" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TimeMonitor_1a74bdae6bd9c3400ca0717939446ff19c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcsl_1_1TimeMonitor_1_1Time" kindref="compound">Time</ref></type>
+        <definition>TimeMonitor::Time csl::TimeMonitor::processSec</definition>
+        <argsstring>(size_t n_sec)</argsstring>
+        <name>processSec</name>
+        <qualifiedname>csl::TimeMonitor::processSec</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>n_sec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/timeMonitor.h" line="44" column="17" bodyfile="src/csl/timeMonitor.cpp" bodystart="48" bodyend="59"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcsl_1_1TimeMonitor_1a8922a8b69453347742e6e5ea5d41c95e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::TimeMonitor::TimeMonitor</definition>
+        <argsstring>()</argsstring>
+        <name>TimeMonitor</name>
+        <qualifiedname>csl::TimeMonitor::TimeMonitor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/timeMonitor.h" line="47" column="5" bodyfile="src/csl/timeMonitor.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TimeMonitor_1a8734194717708e7790b1a80a0cedc36b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::TimeMonitor::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>csl::TimeMonitor::reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/timeMonitor.h" line="49" column="10" bodyfile="src/csl/timeMonitor.cpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TimeMonitor_1a3f9d8b4e0bcc7a44b287575f35568d37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::TimeMonitor::print</definition>
+        <argsstring>(std::ostream &amp;out)</argsstring>
+        <name>print</name>
+        <qualifiedname>csl::TimeMonitor::print</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/timeMonitor.h" line="50" column="10" bodyfile="src/csl/timeMonitor.cpp" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TimeMonitor_1a9461783e484f8f1a2ade9d877c88fda1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t csl::TimeMonitor::getHour</definition>
+        <argsstring>() const</argsstring>
+        <name>getHour</name>
+        <qualifiedname>csl::TimeMonitor::getHour</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/timeMonitor.h" line="52" column="12" bodyfile="src/csl/timeMonitor.h" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TimeMonitor_1aa621ccb65caaa67d639bee95751bf7d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t csl::TimeMonitor::getMin</definition>
+        <argsstring>() const</argsstring>
+        <name>getMin</name>
+        <qualifiedname>csl::TimeMonitor::getMin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/timeMonitor.h" line="57" column="12" bodyfile="src/csl/timeMonitor.h" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TimeMonitor_1a720911621c98b97b1c9dceb2434a3296" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t csl::TimeMonitor::getSec</definition>
+        <argsstring>() const</argsstring>
+        <name>getSec</name>
+        <qualifiedname>csl::TimeMonitor::getSec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/timeMonitor.h" line="62" column="12" bodyfile="src/csl/timeMonitor.h" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TimeMonitor_1affced02a46eeba59ecca19af57f5d4ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t csl::TimeMonitor::getTotalSec</definition>
+        <argsstring>() const</argsstring>
+        <name>getTotalSec</name>
+        <qualifiedname>csl::TimeMonitor::getTotalSec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/timeMonitor.h" line="67" column="12" bodyfile="src/csl/timeMonitor.h" bodystart="67" bodyend="70"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/csl/timeMonitor.h" line="31" column="1" bodyfile="src/csl/timeMonitor.h" bodystart="31" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1TimeMonitor_1a9461783e484f8f1a2ade9d877c88fda1" prot="public" virt="non-virtual"><scope>csl::TimeMonitor</scope><name>getHour</name></member>
+      <member refid="classcsl_1_1TimeMonitor_1aa621ccb65caaa67d639bee95751bf7d5" prot="public" virt="non-virtual"><scope>csl::TimeMonitor</scope><name>getMin</name></member>
+      <member refid="classcsl_1_1TimeMonitor_1a720911621c98b97b1c9dceb2434a3296" prot="public" virt="non-virtual"><scope>csl::TimeMonitor</scope><name>getSec</name></member>
+      <member refid="classcsl_1_1TimeMonitor_1affced02a46eeba59ecca19af57f5d4ea" prot="public" virt="non-virtual"><scope>csl::TimeMonitor</scope><name>getTotalSec</name></member>
+      <member refid="classcsl_1_1TimeMonitor_1aec7029a9212f3997108409c4ffbf2098" prot="private" virt="non-virtual"><scope>csl::TimeMonitor</scope><name>m_start</name></member>
+      <member refid="classcsl_1_1TimeMonitor_1a200b14bd5392bc721398785e9b29aa4b" prot="private" virt="non-virtual"><scope>csl::TimeMonitor</scope><name>m_time</name></member>
+      <member refid="classcsl_1_1TimeMonitor_1a2c48aa76a97705595d4ba89c14a1c7e5" prot="public" virt="non-virtual"><scope>csl::TimeMonitor</scope><name>print</name></member>
+      <member refid="classcsl_1_1TimeMonitor_1a3f9d8b4e0bcc7a44b287575f35568d37" prot="public" virt="non-virtual"><scope>csl::TimeMonitor</scope><name>print</name></member>
+      <member refid="classcsl_1_1TimeMonitor_1a74bdae6bd9c3400ca0717939446ff19c" prot="public" virt="non-virtual"><scope>csl::TimeMonitor</scope><name>processSec</name></member>
+      <member refid="classcsl_1_1TimeMonitor_1a8734194717708e7790b1a80a0cedc36b" prot="public" virt="non-virtual"><scope>csl::TimeMonitor</scope><name>reset</name></member>
+      <member refid="classcsl_1_1TimeMonitor_1ae7cf2f8a9b34bebbf96796a8e68fe4c4" prot="public" virt="non-virtual"><scope>csl::TimeMonitor</scope><name>separator</name></member>
+      <member refid="classcsl_1_1TimeMonitor_1a8922a8b69453347742e6e5ea5d41c95e" prot="public" virt="non-virtual"><scope>csl::TimeMonitor</scope><name>TimeMonitor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

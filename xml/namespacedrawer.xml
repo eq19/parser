@@ -1,0 +1,1463 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespacedrawer" kind="namespace" language="C++">
+    <compoundname>drawer</compoundname>
+    <innerclass refid="classdrawer_1_1Base__iterable" prot="public">drawer::Base_iterable</innerclass>
+    <innerclass refid="classdrawer_1_1Energy" prot="public">drawer::Energy</innerclass>
+    <innerclass refid="classdrawer_1_1Graph" prot="public">drawer::Graph</innerclass>
+    <innerclass refid="classdrawer_1_1LatexLinker" prot="public">drawer::LatexLinker</innerclass>
+    <innerclass refid="structdrawer_1_1line" prot="public">drawer::line</innerclass>
+    <innerclass refid="classdrawer_1_1Matrix" prot="public">drawer::Matrix</innerclass>
+    <innerclass refid="structdrawer_1_1next" prot="public">drawer::next</innerclass>
+    <innerclass refid="structdrawer_1_1Point" prot="public">drawer::Point</innerclass>
+    <innerclass refid="classdrawer_1_1Vector" prot="public">drawer::Vector</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dca" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>ParticleType</name>
+        <qualifiedname>drawer::ParticleType</qualifiedname>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaaf60357a8d17e45793298323f1b372a74" prot="public">
+          <name>Scalar</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaacf3f85bb7addc2eea8262f9adca181fb" prot="public">
+          <name>ChargedScalar</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa845ce7423e64db8dde79f10d772c57a7" prot="public">
+          <name>Fermion</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa8ad47d8451f2d98d2d944850db2ac15f" prot="public">
+          <name>Majorana</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa57dea6f5039281b7fee517fc43bf3110" prot="public">
+          <name>Vector</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaae4e9bb16d8970a3d4689ae990f6c27a7" prot="public">
+          <name>Gluon</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaac564eaf12116722c3a36999a40567d05" prot="public">
+          <name>Gaugino</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa79b65f9e5e7843cfa7bdfd70003eab93" prot="public">
+          <name>Gluino</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa401357e57c765967393ba391a338e89b" prot="public">
+          <name>Ghost</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaaf60357a8d17e45793298323f1b372a74" prot="public">
+          <name>Scalar</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaacf3f85bb7addc2eea8262f9adca181fb" prot="public">
+          <name>ChargedScalar</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa845ce7423e64db8dde79f10d772c57a7" prot="public">
+          <name>Fermion</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa8ad47d8451f2d98d2d944850db2ac15f" prot="public">
+          <name>Majorana</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa57dea6f5039281b7fee517fc43bf3110" prot="public">
+          <name>Vector</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaae4e9bb16d8970a3d4689ae990f6c27a7" prot="public">
+          <name>Gluon</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaac564eaf12116722c3a36999a40567d05" prot="public">
+          <name>Gaugino</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa79b65f9e5e7843cfa7bdfd70003eab93" prot="public">
+          <name>Gluino</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa401357e57c765967393ba391a338e89b" prot="public">
+          <name>Ghost</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.h" line="35" column="1" bodyfile="src/grafed/core/latexLink.h" bodystart="35" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dca" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>ParticleType</name>
+        <qualifiedname>drawer::ParticleType</qualifiedname>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaaf60357a8d17e45793298323f1b372a74" prot="public">
+          <name>Scalar</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaacf3f85bb7addc2eea8262f9adca181fb" prot="public">
+          <name>ChargedScalar</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa845ce7423e64db8dde79f10d772c57a7" prot="public">
+          <name>Fermion</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa8ad47d8451f2d98d2d944850db2ac15f" prot="public">
+          <name>Majorana</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa57dea6f5039281b7fee517fc43bf3110" prot="public">
+          <name>Vector</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaae4e9bb16d8970a3d4689ae990f6c27a7" prot="public">
+          <name>Gluon</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaac564eaf12116722c3a36999a40567d05" prot="public">
+          <name>Gaugino</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa79b65f9e5e7843cfa7bdfd70003eab93" prot="public">
+          <name>Gluino</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa401357e57c765967393ba391a338e89b" prot="public">
+          <name>Ghost</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaaf60357a8d17e45793298323f1b372a74" prot="public">
+          <name>Scalar</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaacf3f85bb7addc2eea8262f9adca181fb" prot="public">
+          <name>ChargedScalar</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa845ce7423e64db8dde79f10d772c57a7" prot="public">
+          <name>Fermion</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa8ad47d8451f2d98d2d944850db2ac15f" prot="public">
+          <name>Majorana</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa57dea6f5039281b7fee517fc43bf3110" prot="public">
+          <name>Vector</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaae4e9bb16d8970a3d4689ae990f6c27a7" prot="public">
+          <name>Gluon</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaac564eaf12116722c3a36999a40567d05" prot="public">
+          <name>Gaugino</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa79b65f9e5e7843cfa7bdfd70003eab93" prot="public">
+          <name>Gluino</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gui_2latexLink_8h_1a22620106b1b9aef1be304a2e200f8dcaa401357e57c765967393ba391a338e89b" prot="public">
+          <name>Ghost</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexLink.h" line="35" column="1" bodyfile="src/grafed/gui/latexLink.h" bodystart="35" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="core_2adjacencyMatrix_8h_1a280dd11be5a7517fba7a7942d931e35b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U1</type>
+          </param>
+          <param>
+            <type>class U2</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; drawer::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, Vector&lt; U1, U2 &gt; const &amp;vec)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>drawer::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="classdrawer_1_1Vector" kindref="compound">Vector</ref>&lt; U1, U2 &gt; const &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/adjacencyMatrix.h" line="175" column="1" bodyfile="src/grafed/core/adjacencyMatrix.h" bodystart="175" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2adjacencyMatrix_8h_1a0bb18d5068a46b7e5559eab8523712d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U1</type>
+          </param>
+          <param>
+            <type>typename U2</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; drawer::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, Matrix&lt; U1, U2 &gt; const &amp;mat)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>drawer::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; U1, U2 &gt; const &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/adjacencyMatrix.h" line="247" column="1" bodyfile="src/grafed/core/adjacencyMatrix.h" bodystart="247" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2adjacencyMatrix_8h_1a1f0cd30227003a64e868970078c80ade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T1</type>
+          </param>
+          <param>
+            <type>class T2</type>
+          </param>
+          <param>
+            <type>class T3</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdrawer_1_1Vector" kindref="compound">Vector</ref>&lt; T1, T2 &gt;</type>
+        <definition>Vector&lt; T1, T2 &gt; drawer::operator+</definition>
+        <argsstring>(Vector&lt; T1, T2 &gt; const &amp;vec, T3 value)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>drawer::operator+</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1Vector" kindref="compound">Vector</ref>&lt; T1, T2 &gt; const &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>T3</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/adjacencyMatrix.h" line="261" column="8" bodyfile="src/grafed/core/adjacencyMatrix.h" bodystart="261" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2adjacencyMatrix_8h_1aaedf49aeca88a08b51b8eb45c383f630" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T1</type>
+          </param>
+          <param>
+            <type>class T2</type>
+          </param>
+          <param>
+            <type>class T3</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdrawer_1_1Vector" kindref="compound">Vector</ref>&lt; T1, T2 &gt;</type>
+        <definition>Vector&lt; T1, T2 &gt; drawer::operator+</definition>
+        <argsstring>(T3 value, Vector&lt; T1, T2 &gt; const &amp;vec)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>drawer::operator+</qualifiedname>
+        <param>
+          <type>T3</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type><ref refid="classdrawer_1_1Vector" kindref="compound">Vector</ref>&lt; T1, T2 &gt; const &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/adjacencyMatrix.h" line="272" column="8" bodyfile="src/grafed/core/adjacencyMatrix.h" bodystart="272" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2adjacencyMatrix_8h_1a857b3d6b9d247b0eb0863132f77e90bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T1</type>
+          </param>
+          <param>
+            <type>class T2</type>
+          </param>
+          <param>
+            <type>class T3</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdrawer_1_1Vector" kindref="compound">Vector</ref>&lt; T1, T2 &gt;</type>
+        <definition>Vector&lt; T1, T2 &gt; drawer::operator*</definition>
+        <argsstring>(Vector&lt; T1, T2 &gt; const &amp;vec, T3 value)</argsstring>
+        <name>operator*</name>
+        <qualifiedname>drawer::operator*</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1Vector" kindref="compound">Vector</ref>&lt; T1, T2 &gt; const &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>T3</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/adjacencyMatrix.h" line="283" column="8" bodyfile="src/grafed/core/adjacencyMatrix.h" bodystart="283" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2adjacencyMatrix_8h_1a3912dd405d535f7cbcd8f7574cadcc3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T1</type>
+          </param>
+          <param>
+            <type>class T2</type>
+          </param>
+          <param>
+            <type>class T3</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdrawer_1_1Vector" kindref="compound">Vector</ref>&lt; T1, T2 &gt;</type>
+        <definition>Vector&lt; T1, T2 &gt; drawer::operator*</definition>
+        <argsstring>(T3 value, Vector&lt; T1, T2 &gt; const &amp;vec)</argsstring>
+        <name>operator*</name>
+        <qualifiedname>drawer::operator*</qualifiedname>
+        <param>
+          <type>T3</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type><ref refid="classdrawer_1_1Vector" kindref="compound">Vector</ref>&lt; T1, T2 &gt; const &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/adjacencyMatrix.h" line="294" column="8" bodyfile="src/grafed/core/adjacencyMatrix.h" bodystart="294" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2adjacencyMatrix_8h_1a34d062eba4eb8d61b734ddb4acdee736" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T1</type>
+          </param>
+          <param>
+            <type>class T2</type>
+          </param>
+          <param>
+            <type>class T3</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; T1, T2 &gt;</type>
+        <definition>Matrix&lt; T1, T2 &gt; drawer::operator+</definition>
+        <argsstring>(Matrix&lt; T1, T2 &gt; const &amp;vec, T3 value)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>drawer::operator+</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; T1, T2 &gt; const &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>T3</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/adjacencyMatrix.h" line="305" column="8" bodyfile="src/grafed/core/adjacencyMatrix.h" bodystart="305" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2adjacencyMatrix_8h_1a31334a593fd9e6dde34bdc791b0e41a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T1</type>
+          </param>
+          <param>
+            <type>class T2</type>
+          </param>
+          <param>
+            <type>class T3</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; T1, T2 &gt;</type>
+        <definition>Matrix&lt; T1, T2 &gt; drawer::operator+</definition>
+        <argsstring>(T3 value, Matrix&lt; T1, T2 &gt; const &amp;vec)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>drawer::operator+</qualifiedname>
+        <param>
+          <type>T3</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; T1, T2 &gt; const &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/adjacencyMatrix.h" line="316" column="8" bodyfile="src/grafed/core/adjacencyMatrix.h" bodystart="316" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2adjacencyMatrix_8h_1ad9aa11407a3e7914faef9d341754c7e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T1</type>
+          </param>
+          <param>
+            <type>class T2</type>
+          </param>
+          <param>
+            <type>class T3</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; T1, T2 &gt;</type>
+        <definition>Matrix&lt; T1, T2 &gt; drawer::operator*</definition>
+        <argsstring>(Matrix&lt; T1, T2 &gt; const &amp;vec, T3 value)</argsstring>
+        <name>operator*</name>
+        <qualifiedname>drawer::operator*</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; T1, T2 &gt; const &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>T3</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/adjacencyMatrix.h" line="327" column="8" bodyfile="src/grafed/core/adjacencyMatrix.h" bodystart="327" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2adjacencyMatrix_8h_1a9c3f25ce8d12039beb95aa592a1d02d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T1</type>
+          </param>
+          <param>
+            <type>class T2</type>
+          </param>
+          <param>
+            <type>class T3</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; T1, T2 &gt;</type>
+        <definition>Matrix&lt; T1, T2 &gt; drawer::operator*</definition>
+        <argsstring>(T3 value, Matrix&lt; T1, T2 &gt; const &amp;vec)</argsstring>
+        <name>operator*</name>
+        <qualifiedname>drawer::operator*</qualifiedname>
+        <param>
+          <type>T3</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; T1, T2 &gt; const &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/adjacencyMatrix.h" line="338" column="8" bodyfile="src/grafed/core/adjacencyMatrix.h" bodystart="338" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2adjacencyMatrix_8h_1af8dcf41d2a88ab0a0170311df6a6afe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T1</type>
+          </param>
+          <param>
+            <type>class T2</type>
+          </param>
+          <param>
+            <type>class T3</type>
+          </param>
+          <param>
+            <type>class T4</type>
+          </param>
+        </templateparamlist>
+        <type>T1</type>
+        <definition>T1 drawer::operator*</definition>
+        <argsstring>(Vector&lt; T1, T2 &gt; const &amp;left, Vector&lt; T3, T4 &gt; const &amp;right)</argsstring>
+        <name>operator*</name>
+        <qualifiedname>drawer::operator*</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1Vector" kindref="compound">Vector</ref>&lt; T1, T2 &gt; const &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type><ref refid="classdrawer_1_1Vector" kindref="compound">Vector</ref>&lt; T3, T4 &gt; const &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/adjacencyMatrix.h" line="349" column="4" bodyfile="src/grafed/core/adjacencyMatrix.h" bodystart="349" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2adjacencyMatrix_8h_1a53f338033df545021ebefacf56e25994" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T1</type>
+          </param>
+          <param>
+            <type>class T2</type>
+          </param>
+          <param>
+            <type>class T3</type>
+          </param>
+          <param>
+            <type>class T4</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdrawer_1_1Vector" kindref="compound">Vector</ref>&lt; T1, T2 &gt;</type>
+        <definition>Vector&lt; T1, T2 &gt; drawer::operator*</definition>
+        <argsstring>(Vector&lt; T1, T2 &gt; const &amp;left, Matrix&lt; T3, T4 &gt; const &amp;right)</argsstring>
+        <name>operator*</name>
+        <qualifiedname>drawer::operator*</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1Vector" kindref="compound">Vector</ref>&lt; T1, T2 &gt; const &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; T3, T4 &gt; const &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/adjacencyMatrix.h" line="362" column="8" bodyfile="src/grafed/core/adjacencyMatrix.h" bodystart="362" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2adjacencyMatrix_8h_1a81d63f48c4ca3ebda5db74b8db0a0132" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T1</type>
+          </param>
+          <param>
+            <type>class T2</type>
+          </param>
+          <param>
+            <type>class T3</type>
+          </param>
+          <param>
+            <type>class T4</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdrawer_1_1Vector" kindref="compound">Vector</ref>&lt; T1, T2 &gt;</type>
+        <definition>Vector&lt; T1, T2 &gt; drawer::operator*</definition>
+        <argsstring>(Matrix&lt; T1, T2 &gt; const &amp;left, Vector&lt; T3, T4 &gt; const &amp;right)</argsstring>
+        <name>operator*</name>
+        <qualifiedname>drawer::operator*</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; T1, T2 &gt; const &amp;</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type><ref refid="classdrawer_1_1Vector" kindref="compound">Vector</ref>&lt; T3, T4 &gt; const &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/adjacencyMatrix.h" line="377" column="8" bodyfile="src/grafed/core/adjacencyMatrix.h" bodystart="377" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2adjacencyMatrix_8h_1a7c75279d17dbd8ae3beeb007fef30521" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U1</type>
+          </param>
+          <param>
+            <type>class U2</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; U1, U2 &gt;</type>
+        <definition>Matrix&lt; U1, U2 &gt; drawer::operator*</definition>
+        <argsstring>(Matrix&lt; U1, U2 &gt; const &amp;A, Matrix&lt; U1, U2 &gt; const &amp;B)</argsstring>
+        <name>operator*</name>
+        <qualifiedname>drawer::operator*</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; U1, U2 &gt; const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; U1, U2 &gt; const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/adjacencyMatrix.h" line="392" column="8" bodyfile="src/grafed/core/adjacencyMatrix.h" bodystart="392" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2adjacencyMatrix_8h_1a7b63d69bbcc650b05d9f1faaed86b8c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U1</type>
+          </param>
+          <param>
+            <type>class U2</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; U1, U2 &gt; &amp;</type>
+        <definition>Matrix&lt; U1, U2 &gt; &amp; drawer::operator*=</definition>
+        <argsstring>(Matrix&lt; U1, U2 &gt; &amp;A, Matrix&lt; U1, U2 &gt; const &amp;B)</argsstring>
+        <name>operator*=</name>
+        <qualifiedname>drawer::operator*=</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; U1, U2 &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; U1, U2 &gt; const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/adjacencyMatrix.h" line="406" column="8" bodyfile="src/grafed/core/adjacencyMatrix.h" bodystart="406" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2adjacencyMatrix_8h_1a053361baab161d53dad4870c7076fa0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U1</type>
+          </param>
+          <param>
+            <type>class U2</type>
+          </param>
+          <param>
+            <type>class Int_type</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; U1, U2 &gt;</type>
+        <definition>Matrix&lt; U1, U2 &gt; drawer::pow</definition>
+        <argsstring>(Matrix&lt; U1, U2 &gt; const &amp;mat, Int_type value)</argsstring>
+        <name>pow</name>
+        <qualifiedname>drawer::pow</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; U1, U2 &gt; const &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <param>
+          <type>Int_type</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/adjacencyMatrix.h" line="412" column="8" bodyfile="src/grafed/core/adjacencyMatrix.h" bodystart="412" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2latexLink_8cpp_1ad1295c7e70cfe52d15707a657c6672b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; drawer::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, ParticleType type)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>drawer::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>ParticleType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.cpp" line="23" column="1" bodyfile="src/grafed/core/latexLink.cpp" bodystart="23" bodyend="59" declfile="src/grafed/gui/latexLink.h" declline="49" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2latexLink_8cpp_1a1202f1b32350a630ec69180ff790fbc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; drawer::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, LatexLinker &amp;linker)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>drawer::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">LatexLinker</ref> &amp;</type>
+          <declname>linker</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/latexLink.cpp" line="706" column="1" bodyfile="src/grafed/core/latexLink.cpp" bodystart="706" bodyend="710"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8cpp_1ac086b3eda7ee1503f6fed52595b9a22d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool drawer::totalAdjacency</definition>
+        <argsstring>(Matrix&lt; int &gt; const &amp;A, size_t pos)</argsstring>
+        <name>totalAdjacency</name>
+        <qualifiedname>drawer::totalAdjacency</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; int &gt; const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.cpp" line="87" column="6" bodyfile="src/grafed/core/planargraph.cpp" bodystart="87" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8cpp_1a27eac13fe7400c9fb3b2b0d3d2aaa4e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool drawer::walked</definition>
+        <argsstring>(std::vector&lt; size_t &gt; const &amp;walked, size_t pos)</argsstring>
+        <name>walked</name>
+        <qualifiedname>drawer::walked</qualifiedname>
+        <param>
+          <type>std::vector&lt; size_t &gt; const &amp;</type>
+          <declname>walked</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.cpp" line="96" column="6" bodyfile="src/grafed/core/planargraph.cpp" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8cpp_1a4faa3230db161df69968db1352a6f3f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; <ref refid="structdrawer_1_1next" kindref="compound">next</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt; next &gt; &gt; drawer::getSorted</definition>
+        <argsstring>(std::vector&lt; next &gt; const &amp;init)</argsstring>
+        <name>getSorted</name>
+        <qualifiedname>drawer::getSorted</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="structdrawer_1_1next" kindref="compound">next</ref> &gt; const &amp;</type>
+          <declname>init</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.cpp" line="116" column="13" bodyfile="src/grafed/core/planargraph.cpp" bodystart="116" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8cpp_1a958a8ae03fdafd1c68dfb85aa0ad3a68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool drawer::next_permutation</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; next &gt; &gt; &amp;sorted)</argsstring>
+        <name>next_permutation</name>
+        <qualifiedname>drawer::next_permutation</qualifiedname>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="structdrawer_1_1next" kindref="compound">next</ref> &gt; &gt; &amp;</type>
+          <declname>sorted</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.cpp" line="140" column="6" bodyfile="src/grafed/core/planargraph.cpp" bodystart="140" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8cpp_1a3fd6708e12dc5295acfdbf8ff23502d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool drawer::walkerStep</definition>
+        <argsstring>(Matrix&lt; int &gt; const &amp;A, Matrix&lt; int &gt; const &amp;B, size_t iA, size_t iB, std::vector&lt; size_t &gt; &amp;A_walked, std::vector&lt; size_t &gt; &amp;B_walked, std::map&lt; size_t, size_t &gt; &amp;mapAtoB)</argsstring>
+        <name>walkerStep</name>
+        <qualifiedname>drawer::walkerStep</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; int &gt; const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; int &gt; const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>iA</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>iB</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; size_t &gt; &amp;</type>
+          <declname>A_walked</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; size_t &gt; &amp;</type>
+          <declname>B_walked</declname>
+        </param>
+        <param>
+          <type>std::map&lt; size_t, size_t &gt; &amp;</type>
+          <declname>mapAtoB</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.cpp" line="152" column="6" bodyfile="src/grafed/core/planargraph.cpp" bodystart="152" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8cpp_1a05356c1a74183da6e9fb52395ca104d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool drawer::compare</definition>
+        <argsstring>(Matrix&lt; int &gt; const &amp;A, Matrix&lt; int &gt; const &amp;B, size_t iA, size_t iB, std::map&lt; size_t, size_t &gt; &amp;mapping)</argsstring>
+        <name>compare</name>
+        <qualifiedname>drawer::compare</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; int &gt; const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classdrawer_1_1Matrix" kindref="compound">Matrix</ref>&lt; int &gt; const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>iA</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>iB</declname>
+        </param>
+        <param>
+          <type>std::map&lt; size_t, size_t &gt; &amp;</type>
+          <declname>mapping</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.cpp" line="222" column="6" bodyfile="src/grafed/core/planargraph.cpp" bodystart="222" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8cpp_1a4784230e7aae1d258ffc1d3ffe131f1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; drawer::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, Graph const &amp;graph)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>drawer::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="classdrawer_1_1Graph" kindref="compound">Graph</ref> const &amp;</type>
+          <declname>graph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.cpp" line="874" column="1" bodyfile="src/grafed/core/planargraph.cpp" bodystart="874" bodyend="886"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8h_1ab82e091639a8b9573e1a3af152af6569" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref></type>
+        <definition>Point drawer::operator+</definition>
+        <argsstring>(Point const &amp;B, Point const &amp;A)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>drawer::operator+</qualifiedname>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.h" line="376" column="14" bodyfile="src/grafed/core/planargraph.h" bodystart="376" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8h_1a0afecaa8abaa403b13fd21d0d4a546b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref></type>
+        <definition>Point drawer::operator+</definition>
+        <argsstring>(T const &amp;B, Point const &amp;A)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>drawer::operator+</qualifiedname>
+        <param>
+          <type>T const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.h" line="384" column="7" bodyfile="src/grafed/core/planargraph.h" bodystart="384" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8h_1a401d42751434016dd5bd77935e881724" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref></type>
+        <definition>Point drawer::operator+</definition>
+        <argsstring>(Point const &amp;A, T const &amp;B)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>drawer::operator+</qualifiedname>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>T const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.h" line="392" column="7" bodyfile="src/grafed/core/planargraph.h" bodystart="392" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8h_1ab7ee3990e4ec2f9993ef18fd54cdbd23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref></type>
+        <definition>Point drawer::operator*</definition>
+        <argsstring>(T const &amp;B, Point const &amp;A)</argsstring>
+        <name>operator*</name>
+        <qualifiedname>drawer::operator*</qualifiedname>
+        <param>
+          <type>T const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.h" line="400" column="7" bodyfile="src/grafed/core/planargraph.h" bodystart="400" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8h_1a7fd5e2b5ecbc50e84cc9326ac6bf4efb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref></type>
+        <definition>Point drawer::operator*</definition>
+        <argsstring>(Point const &amp;A, T const &amp;B)</argsstring>
+        <name>operator*</name>
+        <qualifiedname>drawer::operator*</qualifiedname>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>T const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.h" line="408" column="7" bodyfile="src/grafed/core/planargraph.h" bodystart="408" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8h_1af1c45b3b68007416f8409313cc898ea5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref></type>
+        <definition>Point drawer::operator-</definition>
+        <argsstring>(Point const &amp;A)</argsstring>
+        <name>operator-</name>
+        <qualifiedname>drawer::operator-</qualifiedname>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.h" line="415" column="14" bodyfile="src/grafed/core/planargraph.h" bodystart="415" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8h_1a70be93a9e1ea6edb4184f2292b3efefb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref></type>
+        <definition>Point drawer::operator-</definition>
+        <argsstring>(Point const &amp;A, Point const &amp;B)</argsstring>
+        <name>operator-</name>
+        <qualifiedname>drawer::operator-</qualifiedname>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.h" line="420" column="14" bodyfile="src/grafed/core/planargraph.h" bodystart="420" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8h_1a4f49e28f8dce2de8a713e37e84515647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref></type>
+        <definition>Point drawer::operator-</definition>
+        <argsstring>(T const &amp;B, Point const &amp;A)</argsstring>
+        <name>operator-</name>
+        <qualifiedname>drawer::operator-</qualifiedname>
+        <param>
+          <type>T const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.h" line="426" column="7" bodyfile="src/grafed/core/planargraph.h" bodystart="426" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8h_1ae03d254a8e664bab5d22777d8c428ba2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref></type>
+        <definition>Point drawer::operator-</definition>
+        <argsstring>(Point const &amp;A, T const &amp;B)</argsstring>
+        <name>operator-</name>
+        <qualifiedname>drawer::operator-</qualifiedname>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>T const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.h" line="434" column="7" bodyfile="src/grafed/core/planargraph.h" bodystart="434" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8h_1a56429f669966d8a22761b7b486492910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref></type>
+        <definition>Point drawer::operator/</definition>
+        <argsstring>(T const &amp;B, Point const &amp;A)</argsstring>
+        <name>operator/</name>
+        <qualifiedname>drawer::operator/</qualifiedname>
+        <param>
+          <type>T const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.h" line="442" column="7" bodyfile="src/grafed/core/planargraph.h" bodystart="442" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8h_1a0bf7c273c6b5d0ce55c6d31abcf2e4fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref></type>
+        <definition>Point drawer::operator/</definition>
+        <argsstring>(Point const &amp;A, T const &amp;B)</argsstring>
+        <name>operator/</name>
+        <qualifiedname>drawer::operator/</qualifiedname>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>T const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.h" line="450" column="7" bodyfile="src/grafed/core/planargraph.h" bodystart="450" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8h_1a0bbba19c48fc02f6dc29f5296b262d0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double drawer::distance2</definition>
+        <argsstring>(Point const &amp;A, Point const &amp;B)</argsstring>
+        <name>distance2</name>
+        <qualifiedname>drawer::distance2</qualifiedname>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.h" line="457" column="15" bodyfile="src/grafed/core/planargraph.h" bodystart="457" bodyend="464"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8h_1ac626360ba15aced1579fdb7a379e9122" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double drawer::distance</definition>
+        <argsstring>(Point const &amp;A, Point const &amp;B)</argsstring>
+        <name>distance</name>
+        <qualifiedname>drawer::distance</qualifiedname>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.h" line="466" column="15" bodyfile="src/grafed/core/planargraph.h" bodystart="466" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8h_1ad637bc294c8aea5f10b5179224d1434c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double drawer::remainder</definition>
+        <argsstring>(double angle)</argsstring>
+        <name>remainder</name>
+        <qualifiedname>drawer::remainder</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.h" line="471" column="15" bodyfile="src/grafed/core/planargraph.h" bodystart="471" bodyend="476"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8h_1a763a6b36f0fad99cf04a876faf370b9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double drawer::angle</definition>
+        <argsstring>(Point const &amp;ref, Point const &amp;A, Point const &amp;B)</argsstring>
+        <name>angle</name>
+        <qualifiedname>drawer::angle</qualifiedname>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>ref</declname>
+        </param>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.h" line="478" column="15" bodyfile="src/grafed/core/planargraph.h" bodystart="478" bodyend="482"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2planargraph_8h_1ac5d8ae9d41d9688fc93afffcafc2194a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structdrawer_1_1line" kindref="compound">line</ref></type>
+        <definition>line drawer::getEquation</definition>
+        <argsstring>(Point const &amp;A, Point const &amp;B)</argsstring>
+        <name>getEquation</name>
+        <qualifiedname>drawer::getEquation</qualifiedname>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="structdrawer_1_1Point" kindref="compound">Point</ref> const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/core/planargraph.h" line="490" column="13" bodyfile="src/grafed/core/planargraph.h" bodystart="490" bodyend="497"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/grafed/core/adjacencyMatrix.h" line="29" column="1"/>
+  </compounddef>
+</doxygen>

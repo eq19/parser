@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classEdgeForm" kind="class" language="C++" prot="public">
+    <compoundname>EdgeForm</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classEdgeForm_1ae192ce7456d4f912cb31359cd0cc164a" prot="private" static="no" mutable="no">
+        <type>Ui::EdgeForm *</type>
+        <definition>Ui::EdgeForm* EdgeForm::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <qualifiedname>EdgeForm::ui</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edgeform.h" line="49" column="21" bodyfile="src/grafed/gui/edgeform.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEdgeForm_1a1e4993bbae93b1089818fd2d7640f2a3" prot="private" static="no" mutable="no">
+        <type><ref refid="classEdge" kindref="compound">Edge</ref> *</type>
+        <definition>Edge* EdgeForm::edge</definition>
+        <argsstring></argsstring>
+        <name>edge</name>
+        <qualifiedname>EdgeForm::edge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edgeform.h" line="50" column="21" bodyfile="src/grafed/gui/edgeform.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEdgeForm_1a137ceff9c8888c0a7b5fedaa4df7338b" prot="private" static="no" mutable="no">
+        <type><ref refid="classDiagramRenderer" kindref="compound">DiagramRenderer</ref> *</type>
+        <definition>DiagramRenderer* EdgeForm::renderer</definition>
+        <argsstring></argsstring>
+        <name>renderer</name>
+        <qualifiedname>EdgeForm::renderer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edgeform.h" line="51" column="21" bodyfile="src/grafed/gui/edgeform.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEdgeForm_1a6031438247bb3191d3e706339e8923cf" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EdgeForm::EdgeForm</definition>
+        <argsstring>(Edge *edge, DiagramRenderer *parent=nullptr)</argsstring>
+        <name>EdgeForm</name>
+        <qualifiedname>EdgeForm::EdgeForm</qualifiedname>
+        <param>
+          <type><ref refid="classEdge" kindref="compound">Edge</ref> *</type>
+          <declname>edge</declname>
+        </param>
+        <param>
+          <type><ref refid="classDiagramRenderer" kindref="compound">DiagramRenderer</ref> *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edgeform.h" line="38" column="14" bodyfile="src/grafed/gui/edgeform.cpp" bodystart="21" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdgeForm_1ad3699091a042dd1de3726f72d6b85979" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EdgeForm::~EdgeForm</definition>
+        <argsstring>()</argsstring>
+        <name>~EdgeForm</name>
+        <qualifiedname>EdgeForm::~EdgeForm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edgeform.h" line="40" column="5" bodyfile="src/grafed/gui/edgeform.cpp" bodystart="92" bodyend="95"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classEdgeForm_1abf8b20c05c0560f3b06cddeb8862f3cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EdgeForm::particleTypeChange</definition>
+        <argsstring>(int row, int col)</argsstring>
+        <name>particleTypeChange</name>
+        <qualifiedname>EdgeForm::particleTypeChange</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edgeform.h" line="44" column="10" bodyfile="src/grafed/gui/edgeform.cpp" bodystart="114" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="slot" id="classEdgeForm_1a0fe99aa421867851f06f29572d36ef62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EdgeForm::setFlipped</definition>
+        <argsstring>(int state)</argsstring>
+        <name>setFlipped</name>
+        <qualifiedname>EdgeForm::setFlipped</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edgeform.h" line="45" column="10" bodyfile="src/grafed/gui/edgeform.cpp" bodystart="97" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="slot" id="classEdgeForm_1a0857aa0bbd974cdc2f067a812fc6fbb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EdgeForm::changeColor</definition>
+        <argsstring>()</argsstring>
+        <name>changeColor</name>
+        <qualifiedname>EdgeForm::changeColor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edgeform.h" line="46" column="10" bodyfile="src/grafed/gui/edgeform.cpp" bodystart="105" bodyend="112"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EdgeForm</label>
+        <link refid="classEdgeForm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>EdgeForm</label>
+        <link refid="classEdgeForm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/grafed/gui/edgeform.h" line="34" column="1" bodyfile="src/grafed/gui/edgeform.h" bodystart="34" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classEdgeForm_1a0857aa0bbd974cdc2f067a812fc6fbb8" prot="public" virt="non-virtual"><scope>EdgeForm</scope><name>changeColor</name></member>
+      <member refid="classEdgeForm_1a1e4993bbae93b1089818fd2d7640f2a3" prot="private" virt="non-virtual"><scope>EdgeForm</scope><name>edge</name></member>
+      <member refid="classEdgeForm_1a6031438247bb3191d3e706339e8923cf" prot="public" virt="non-virtual"><scope>EdgeForm</scope><name>EdgeForm</name></member>
+      <member refid="classEdgeForm_1abf8b20c05c0560f3b06cddeb8862f3cb" prot="public" virt="non-virtual"><scope>EdgeForm</scope><name>particleTypeChange</name></member>
+      <member refid="classEdgeForm_1a137ceff9c8888c0a7b5fedaa4df7338b" prot="private" virt="non-virtual"><scope>EdgeForm</scope><name>renderer</name></member>
+      <member refid="classEdgeForm_1a0fe99aa421867851f06f29572d36ef62" prot="public" virt="non-virtual"><scope>EdgeForm</scope><name>setFlipped</name></member>
+      <member refid="classEdgeForm_1ae192ce7456d4f912cb31359cd0cc164a" prot="private" virt="non-virtual"><scope>EdgeForm</scope><name>ui</name></member>
+      <member refid="classEdgeForm_1ad3699091a042dd1de3726f72d6b85979" prot="public" virt="non-virtual"><scope>EdgeForm</scope><name>~EdgeForm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

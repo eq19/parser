@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structsgl_1_1Commutation" kind="struct" language="C++" prot="public">
+    <compoundname>sgl::Commutation</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsgl_1_1Commutation_1a7a58f1befca6ac82439999dc3e4862f4" prot="public" static="no" mutable="no">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref></type>
+        <definition>GExpr sgl::Commutation::factor</definition>
+        <argsstring></argsstring>
+        <name>factor</name>
+        <qualifiedname>sgl::Commutation::factor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/sglcommutation.h" line="30" column="16" bodyfile="src/marty/sgl/sglcommutation.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsgl_1_1Commutation_1a85a93facb642cce6874deb98f8c18fcc" prot="public" static="no" mutable="no">
+        <type><ref refid="classsgl_1_1GammaIndex" kindref="compound">GammaIndex</ref></type>
+        <definition>GammaIndex sgl::Commutation::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <qualifiedname>sgl::Commutation::left</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/sglcommutation.h" line="31" column="16" bodyfile="src/marty/sgl/sglcommutation.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsgl_1_1Commutation_1ada7afb5da4fa187da1e412bc5a284bdc" prot="public" static="no" mutable="no">
+        <type><ref refid="classsgl_1_1GammaIndex" kindref="compound">GammaIndex</ref></type>
+        <definition>GammaIndex sgl::Commutation::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <qualifiedname>sgl::Commutation::right</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/sglcommutation.h" line="32" column="16" bodyfile="src/marty/sgl/sglcommutation.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsgl_1_1Commutation_1a39f1864294aaf1aa93f90d061eadfb0c" prot="public" static="no" mutable="no">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref></type>
+        <definition>GExpr sgl::Commutation::remnant</definition>
+        <argsstring></argsstring>
+        <name>remnant</name>
+        <qualifiedname>sgl::Commutation::remnant</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/sglcommutation.h" line="33" column="16" bodyfile="src/marty/sgl/sglcommutation.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>sgl::AbstractGammaSym</label>
+        <link refid="classsgl_1_1AbstractGammaSym"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sgl::AbstractGeneralizedIndex</label>
+        <link refid="classsgl_1_1AbstractGeneralizedIndex"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>sgl::AbstractLiteral</label>
+        <link refid="classsgl_1_1AbstractLiteral"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sgl::Commutation</label>
+        <link refid="structsgl_1_1Commutation"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>factor</edgelabel>
+          <edgelabel>remnant</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sgl::GExpr</label>
+        <link refid="classsgl_1_1GExpr"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sgl::GammaIndex</label>
+        <link refid="classsgl_1_1GammaIndex"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>std::enable_shared_from_this&lt; AbstractGammaSym &gt;</label>
+      </node>
+      <node id="3">
+        <label>std::shared_ptr&lt; AbstractGammaSym &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/sgl/sglcommutation.h" line="29" column="1" bodyfile="src/marty/sgl/sglcommutation.h" bodystart="29" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structsgl_1_1Commutation_1a7a58f1befca6ac82439999dc3e4862f4" prot="public" virt="non-virtual"><scope>sgl::Commutation</scope><name>factor</name></member>
+      <member refid="structsgl_1_1Commutation_1a85a93facb642cce6874deb98f8c18fcc" prot="public" virt="non-virtual"><scope>sgl::Commutation</scope><name>left</name></member>
+      <member refid="structsgl_1_1Commutation_1a39f1864294aaf1aa93f90d061eadfb0c" prot="public" virt="non-virtual"><scope>sgl::Commutation</scope><name>remnant</name></member>
+      <member refid="structsgl_1_1Commutation_1ada7afb5da4fa187da1e412bc5a284bdc" prot="public" virt="non-virtual"><scope>sgl::Commutation</scope><name>right</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

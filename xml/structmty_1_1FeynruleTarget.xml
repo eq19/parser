@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structmty_1_1FeynruleTarget" kind="struct" language="C++" prot="public">
+    <compoundname>mty::FeynruleTarget</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmty_1_1FeynruleTarget_1af3a3fb00b89a8df313d74fc31b2e3b07" prot="public" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::FeynruleTarget::factor</definition>
+        <argsstring></argsstring>
+        <name>factor</name>
+        <qualifiedname>mty::FeynruleTarget::factor</qualifiedname>
+        <initializer>= CSL_1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="57" column="17" bodyfile="src/marty/core/feynruleMomentum.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1FeynruleTarget_1ab82ae64dcdc9f3a775d237e20848ab25" prot="public" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref></type>
+        <definition>csl::Tensor mty::FeynruleTarget::momentum</definition>
+        <argsstring></argsstring>
+        <name>momentum</name>
+        <qualifiedname>mty::FeynruleTarget::momentum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="58" column="17" bodyfile="src/marty/core/feynruleMomentum.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structmty_1_1FeynruleTarget_1a3c9d2ca9cf6f873b7a40d2867a9f06a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mty::FeynruleTarget::FeynruleTarget</definition>
+        <argsstring>()</argsstring>
+        <name>FeynruleTarget</name>
+        <qualifiedname>mty::FeynruleTarget::FeynruleTarget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="60" column="5" bodyfile="src/marty/core/feynruleMomentum.h" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="structmty_1_1FeynruleTarget_1a7cb7adda519ecbd95433f5f55e67405a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mty::FeynruleTarget::FeynruleTarget</definition>
+        <argsstring>(csl::Tensor const &amp;m)</argsstring>
+        <name>FeynruleTarget</name>
+        <qualifiedname>mty::FeynruleTarget::FeynruleTarget</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> const &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="63" column="5" bodyfile="src/marty/core/feynruleMomentum.h" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="structmty_1_1FeynruleTarget_1a0f17d589e1774b7f7eb18d3489db80ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mty::FeynruleTarget::FeynruleTarget</definition>
+        <argsstring>(csl::Expr const &amp;f, csl::Tensor const &amp;m)</argsstring>
+        <name>FeynruleTarget</name>
+        <qualifiedname>mty::FeynruleTarget::FeynruleTarget</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> const &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="66" column="5" bodyfile="src/marty/core/feynruleMomentum.h" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="structmty_1_1FeynruleTarget_1a0790702155a0b6e5b8e661906208fff3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::FeynruleTarget::operator==</definition>
+        <argsstring>(FeynruleTarget const &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>mty::FeynruleTarget::operator==</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1FeynruleTarget" kindref="compound">FeynruleTarget</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="71" column="10" bodyfile="src/marty/core/feynruleMomentum.h" bodystart="71" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::FeynruleTarget</label>
+        <link refid="structmty_1_1FeynruleTarget"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>factor</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>momentum</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="3">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/feynruleMomentum.h" line="56" column="1" bodyfile="src/marty/core/feynruleMomentum.h" bodystart="56" bodyend="76"/>
+    <listofallmembers>
+      <member refid="structmty_1_1FeynruleTarget_1af3a3fb00b89a8df313d74fc31b2e3b07" prot="public" virt="non-virtual"><scope>mty::FeynruleTarget</scope><name>factor</name></member>
+      <member refid="structmty_1_1FeynruleTarget_1a3c9d2ca9cf6f873b7a40d2867a9f06a2" prot="public" virt="non-virtual"><scope>mty::FeynruleTarget</scope><name>FeynruleTarget</name></member>
+      <member refid="structmty_1_1FeynruleTarget_1a7cb7adda519ecbd95433f5f55e67405a" prot="public" virt="non-virtual"><scope>mty::FeynruleTarget</scope><name>FeynruleTarget</name></member>
+      <member refid="structmty_1_1FeynruleTarget_1a0f17d589e1774b7f7eb18d3489db80ad" prot="public" virt="non-virtual"><scope>mty::FeynruleTarget</scope><name>FeynruleTarget</name></member>
+      <member refid="structmty_1_1FeynruleTarget_1ab82ae64dcdc9f3a775d237e20848ab25" prot="public" virt="non-virtual"><scope>mty::FeynruleTarget</scope><name>momentum</name></member>
+      <member refid="structmty_1_1FeynruleTarget_1a0790702155a0b6e5b8e661906208fff3" prot="public" virt="non-virtual"><scope>mty::FeynruleTarget</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

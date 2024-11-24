@@ -1,0 +1,820 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespacemty_1_1filter" kind="namespace" language="C++">
+    <compoundname>mty::filter</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemty_1_1filter_1aaff7084114835b4567ca297a4dc64a1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class ParticleIterator</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto mty::filter::disableParticles</definition>
+        <argsstring>(ParticleIterator first, ParticleIterator last)</argsstring>
+        <name>disableParticles</name>
+        <qualifiedname>mty::filter::disableParticles</qualifiedname>
+        <param>
+          <type>ParticleIterator</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>ParticleIterator</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+<para>Filter disabling a range of particles provided begin and end iterators for the given range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function does not accept ranges of other objects than <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref>. To get filters directly from particle names, see the other overloads. This function is the only one actually doing the job, the other overloads are delegating to it.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ParticleIterator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Iterator type, must point to <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> objects. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Begin iterator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End iterator</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a4b0441b267801313062a3fddcb1ac7db" kindref="member">mty::FeynOptions::LagrangianFilter</ref> filter filtering out all particles contained between <bold>first</bold> and <bold>last</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="105" column="6" bodyfile="src/marty/core/filters.h" bodystart="105" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1ac72f73c53e7ed3a56d67f863f4840a33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::filter::disableParticles</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;particles)</argsstring>
+        <name>disableParticles</name>
+        <qualifiedname>mty::filter::disableParticles</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>particles</declname>
+        </param>
+        <briefdescription>
+<para>Filter disabling a range of particles in a std::vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range of particles to disable.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a4b0441b267801313062a3fddcb1ac7db" kindref="member">mty::FeynOptions::LagrangianFilter</ref> filter filtering out all particles contained in the <bold>particles</bold> range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="124" column="13" bodyfile="src/marty/core/filters.h" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1adef1eeb25bfd3aecb3eddba9aa88c2c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::filter::disableParticles</definition>
+        <argsstring>(std::initializer_list&lt; mty::Particle &gt; particles)</argsstring>
+        <name>disableParticles</name>
+        <qualifiedname>mty::filter::disableParticles</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt;</type>
+          <declname>particles</declname>
+        </param>
+        <briefdescription>
+<para>Filter disabling a range of particles in an initializer_list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range of particles to disable.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a4b0441b267801313062a3fddcb1ac7db" kindref="member">mty::FeynOptions::LagrangianFilter</ref> filter filtering out all particles contained in the <bold>particles</bold> range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="137" column="13" bodyfile="src/marty/core/filters.h" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1a31661297d1b7917ec2b265966d925981" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::filter::disableParticles</definition>
+        <argsstring>(std::initializer_list&lt; std::string_view &gt; names, mty::Model const &amp;model= *Model::current)</argsstring>
+        <name>disableParticles</name>
+        <qualifiedname>mty::filter::disableParticles</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; std::string_view &gt;</type>
+          <declname>names</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref> const &amp;</type>
+          <declname>model</declname>
+          <defval>*Model::current</defval>
+        </param>
+        <briefdescription>
+<para>Filter disabling a range of particles from their names in an initializer_list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range of particle names to disable. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Model" kindref="compound">Model</ref> in which particles are taken, default is the current <ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a4b0441b267801313062a3fddcb1ac7db" kindref="member">mty::FeynOptions::LagrangianFilter</ref> filter filtering out all particles contained in the <bold>particles</bold> range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="153" column="13" bodyfile="src/marty/core/filters.h" bodystart="153" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1ae283b151873ebe2bac4dade532e070d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::filter::disableParticle</definition>
+        <argsstring>(mty::Particle const &amp;particle)</argsstring>
+        <name>disableParticle</name>
+        <qualifiedname>mty::filter::disableParticle</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>particle</declname>
+        </param>
+        <briefdescription>
+<para>Filter disabling one particle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> to disable.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a4b0441b267801313062a3fddcb1ac7db" kindref="member">mty::FeynOptions::LagrangianFilter</ref> filter filtering out the particle <bold>particle</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="167" column="13" bodyfile="src/marty/core/filters.h" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1a2e056672230a58b2ac0a9b29411f27f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::filter::disableParticle</definition>
+        <argsstring>(std::string_view name, mty::Model const &amp;model= *Model::current)</argsstring>
+        <name>disableParticle</name>
+        <qualifiedname>mty::filter::disableParticle</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref> const &amp;</type>
+          <declname>model</declname>
+          <defval>*Model::current</defval>
+        </param>
+        <briefdescription>
+<para>Filter disabling one particle given its name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the particle to disable. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Model" kindref="compound">Model</ref> in which the particle is taken, default is the current <ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a4b0441b267801313062a3fddcb1ac7db" kindref="member">mty::FeynOptions::LagrangianFilter</ref> filter filtering out the particle named <bold>particle</bold> in the model <bold>model</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="182" column="13" bodyfile="src/marty/core/filters.h" bodystart="182" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1a42c52adbab78e6b4b44b7b2a790b1aad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class ParticleIterator</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto mty::filter::disableParticleCombination</definition>
+        <argsstring>(ParticleIterator first, ParticleIterator last)</argsstring>
+        <name>disableParticleCombination</name>
+        <qualifiedname>mty::filter::disableParticleCombination</qualifiedname>
+        <param>
+          <type>ParticleIterator</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>ParticleIterator</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+<para>Filter disabling a particular combination of particles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function does not accept ranges of other objects than <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref>. To get filters directly from particle names, see the other overloads. This function is the only one actually doing the job, the other overloads are delegating to it.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ParticleIterator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Iterator type, must point to <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> objects. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Begin iterator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End iterator.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">mty::FeynOptions::DiagramFilter</ref> filtering out diagrams containing <bold>all</bold> particles contained in the range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="205" column="6" bodyfile="src/marty/core/filters.h" bodystart="205" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1ac49a0487108d20d17f7b9e7504c78c8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::filter::disableParticleCombination</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;particles)</argsstring>
+        <name>disableParticleCombination</name>
+        <qualifiedname>mty::filter::disableParticleCombination</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>particles</declname>
+        </param>
+        <briefdescription>
+<para>Filter disabling a particular combination of particles from a std::vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range of particles, combination to disable in diagrams.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">mty::FeynOptions::DiagramFilter</ref> filtering out diagrams containing <bold>all</bold> particles contained in the range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="226" column="1" bodyfile="src/marty/core/filters.h" bodystart="226" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1ad18105419ec64e49830dcb753c461019" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::filter::disableParticleCombination</definition>
+        <argsstring>(std::initializer_list&lt; mty::Particle &gt; particles)</argsstring>
+        <name>disableParticleCombination</name>
+        <qualifiedname>mty::filter::disableParticleCombination</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt;</type>
+          <declname>particles</declname>
+        </param>
+        <briefdescription>
+<para>Filter disabling a particular combination of particles from a std::initializer_list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range of particles, combination to disable in diagrams.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">mty::FeynOptions::DiagramFilter</ref> filtering out diagrams containing <bold>all</bold> particles contained in the range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="241" column="1" bodyfile="src/marty/core/filters.h" bodystart="241" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1a02c4bad84d02e3f7347f3de65b513e64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::filter::disableParticleCombination</definition>
+        <argsstring>(std::initializer_list&lt; std::string_view &gt; names, mty::Model const &amp;model= *Model::current)</argsstring>
+        <name>disableParticleCombination</name>
+        <qualifiedname>mty::filter::disableParticleCombination</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; std::string_view &gt;</type>
+          <declname>names</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref> const &amp;</type>
+          <declname>model</declname>
+          <defval>*Model::current</defval>
+        </param>
+        <briefdescription>
+<para>Filter disabling a particular combination of particle from their names. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range of particle names, combination to disable in diagrams. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Model" kindref="compound">Model</ref> in which the particles are taken, default is the current <ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">mty::FeynOptions::DiagramFilter</ref> filtering out diagrams containing <bold>all</bold> particles contained in the range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="259" column="1" bodyfile="src/marty/core/filters.h" bodystart="259" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1a9e20f5ffc607433b363a6566cb12b401" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class ParticleIterator</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto mty::filter::forceParticleCombination</definition>
+        <argsstring>(ParticleIterator first, ParticleIterator last)</argsstring>
+        <name>forceParticleCombination</name>
+        <qualifiedname>mty::filter::forceParticleCombination</qualifiedname>
+        <param>
+          <type>ParticleIterator</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>ParticleIterator</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+<para>Filter forcing a particular combination of particles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function does not accept ranges of other objects than <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref>. To get filters directly from particle names, see the other overloads. This function is the only one actually doing the job, the other overloads are delegating to it.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ParticleIterator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Iterator type, must point to <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> objects. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Begin iterator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End iterator.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">mty::FeynOptions::DiagramFilter</ref> filtering out diagrams that do not contain all the particles given in the range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="282" column="6" bodyfile="src/marty/core/filters.h" bodystart="282" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1a669849c63e375c6d6d959dc846fbda87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::filter::forceParticleCombination</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;particles)</argsstring>
+        <name>forceParticleCombination</name>
+        <qualifiedname>mty::filter::forceParticleCombination</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>particles</declname>
+        </param>
+        <briefdescription>
+<para>Filter forcing a particular combination of particles given in a std::vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range of particles, combination to force in diagrams.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">mty::FeynOptions::DiagramFilter</ref> filtering out diagrams that do not contain all the particles given in the range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="303" column="1" bodyfile="src/marty/core/filters.h" bodystart="303" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1a94921eaad18cd7af5f9ec39da5366fc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::filter::forceParticleCombination</definition>
+        <argsstring>(std::initializer_list&lt; mty::Particle &gt; particles)</argsstring>
+        <name>forceParticleCombination</name>
+        <qualifiedname>mty::filter::forceParticleCombination</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt;</type>
+          <declname>particles</declname>
+        </param>
+        <briefdescription>
+<para>Filter forcing a particular combination of particles given in a std::initializer_list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range of particles, combination to force in diagrams.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">mty::FeynOptions::DiagramFilter</ref> filtering out diagrams that do not contain all the particles given in the range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="318" column="1" bodyfile="src/marty/core/filters.h" bodystart="318" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1a7defd6cff83fe2f27c96ae33cd912513" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::filter::forceParticleCombination</definition>
+        <argsstring>(std::initializer_list&lt; std::string_view &gt; names, mty::Model const &amp;model= *Model::current)</argsstring>
+        <name>forceParticleCombination</name>
+        <qualifiedname>mty::filter::forceParticleCombination</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; std::string_view &gt;</type>
+          <declname>names</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref> const &amp;</type>
+          <declname>model</declname>
+          <defval>*Model::current</defval>
+        </param>
+        <briefdescription>
+<para>Filter forcing a particular combination of particles given their names. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range of particle names, combination to force in diagrams. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Model" kindref="compound">Model</ref> in which particles are taken, default is mty::Model::current.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">mty::FeynOptions::DiagramFilter</ref> filtering out diagrams that do not contain all the particles given in the range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="335" column="1" bodyfile="src/marty/core/filters.h" bodystart="335" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1a7b8b2b289267203dbd7f2d5634d0d4e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::filter::forceParticle</definition>
+        <argsstring>(mty::Particle const &amp;particle)</argsstring>
+        <name>forceParticle</name>
+        <qualifiedname>mty::filter::forceParticle</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>particle</declname>
+        </param>
+        <briefdescription>
+<para>Filter forcing one particle in diagrams. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> to force in diagrams.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">mty::FeynOptions::DiagramFilter</ref> filtering out all diagrams that do not contain the given particle. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="349" column="13" bodyfile="src/marty/core/filters.h" bodystart="349" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1aaf209b9adc5b50ee8f4ddd6ee624f20a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::filter::forceParticle</definition>
+        <argsstring>(std::string_view name, mty::Model const &amp;model= *Model::current)</argsstring>
+        <name>forceParticle</name>
+        <qualifiedname>mty::filter::forceParticle</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref> const &amp;</type>
+          <declname>model</declname>
+          <defval>*Model::current</defval>
+        </param>
+        <briefdescription>
+<para>Filter forcing one particle in diagrams given its name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> name to force in diagrams. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Model" kindref="compound">Model</ref> in which the particle is taken, default is mty::Model::current.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">mty::FeynOptions::DiagramFilter</ref> filtering out all diagrams that do not contain the given particle. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="364" column="13" bodyfile="src/marty/core/filters.h" bodystart="364" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1a148155b1786a0c761cfdc0d21e06b133" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class ParticleIterator</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto mty::filter::forceParticles</definition>
+        <argsstring>(ParticleIterator first, ParticleIterator last)</argsstring>
+        <name>forceParticles</name>
+        <qualifiedname>mty::filter::forceParticles</qualifiedname>
+        <param>
+          <type>ParticleIterator</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>ParticleIterator</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+<para>Filter forcing particles in diagrams. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function does not accept ranges of other objects than <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref>. To get filters directly from particle names, see the other overloads. This function is the only one actually doing the job, the other overloads are delegating to it.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ParticleIterator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Iterator type, must point to <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> objects. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Begin iterator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End iterator.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">mty::FeynOptions::DiagramFilter</ref> filtering out diagrams that do not contain any of the particles given in the range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="387" column="6" bodyfile="src/marty/core/filters.h" bodystart="387" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1abf90f0031cab01585176170352d38e44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::filter::forceParticles</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;particles)</argsstring>
+        <name>forceParticles</name>
+        <qualifiedname>mty::filter::forceParticles</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>particles</declname>
+        </param>
+        <briefdescription>
+<para>Filter forcing particles in diagrams given in a std::vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> range to force in diagrams.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">mty::FeynOptions::DiagramFilter</ref> filtering out diagrams that do not contain any of the particles given in the range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="406" column="13" bodyfile="src/marty/core/filters.h" bodystart="406" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1a3342b7b3a435f23c63fb51653a8ad1ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::filter::forceParticles</definition>
+        <argsstring>(std::initializer_list&lt; mty::Particle &gt; particles)</argsstring>
+        <name>forceParticles</name>
+        <qualifiedname>mty::filter::forceParticles</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt;</type>
+          <declname>particles</declname>
+        </param>
+        <briefdescription>
+<para>Filter forcing particles in diagrams given in a std::initializer_list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> range to force in diagrams.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">mty::FeynOptions::DiagramFilter</ref> filtering out diagrams that do not contain any of the particles given in the range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="420" column="13" bodyfile="src/marty/core/filters.h" bodystart="420" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1filter_1a34d9d177950b0976f15d0bbc56e21eb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::filter::forceParticles</definition>
+        <argsstring>(std::initializer_list&lt; std::string_view &gt; names, mty::Model const &amp;model= *Model::current)</argsstring>
+        <name>forceParticles</name>
+        <qualifiedname>mty::filter::forceParticles</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; std::string_view &gt;</type>
+          <declname>names</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref> const &amp;</type>
+          <declname>model</declname>
+          <defval>*Model::current</defval>
+        </param>
+        <briefdescription>
+<para>Filter forcing particles in diagrams given their names. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>names</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range of particle names to force in diagrams. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Model" kindref="compound">Model</ref> in which particles are taken, default is mty::Model::current.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">mty::FeynOptions::DiagramFilter</ref> filtering out diagrams that do not contain any of the particles given in the range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/filters.h" line="435" column="13" bodyfile="src/marty/core/filters.h" bodystart="435" bodyend="439"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Namespace containing built-in filters in MARTY. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/core/filters.h" line="85" column="1"/>
+  </compounddef>
+</doxygen>

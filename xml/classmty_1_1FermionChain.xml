@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1FermionChain" kind="class" language="C++" prot="public">
+    <compoundname>mty::FermionChain</compoundname>
+    <innerclass refid="structmty_1_1FermionChain_1_1Chain" prot="public">mty::FermionChain::Chain</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1FermionChain_1afcb5b3692894e54bff676f2e59e319d9" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classmty_1_1DiracSpace" kindref="compound">mty::DiracSpace</ref> *</type>
+        <definition>const mty::DiracSpace* mty::FermionChain::diracSpace</definition>
+        <argsstring></argsstring>
+        <name>diracSpace</name>
+        <qualifiedname>mty::FermionChain::diracSpace</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/fermionChain.h" line="52" column="27" bodyfile="src/marty/core/fermionChain.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FermionChain_1a1d2d55f35491a46655cdba8578a50516" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>std::vector&lt;csl::Expr&gt; mty::FermionChain::tensors</definition>
+        <argsstring></argsstring>
+        <name>tensors</name>
+        <qualifiedname>mty::FermionChain::tensors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/fermionChain.h" line="53" column="17" bodyfile="src/marty/core/fermionChain.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1FermionChain_1a62172e2a38f39fe076336cf3d483bd30" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::FermionChain::FermionChain</definition>
+        <argsstring>(const csl::Space *t_diracSpace)</argsstring>
+        <name>FermionChain</name>
+        <qualifiedname>mty::FermionChain::FermionChain</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> *</type>
+          <declname>t_diracSpace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/fermionChain.h" line="39" column="14" bodyfile="src/marty/core/fermionChain.cpp" bodystart="27" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FermionChain_1a95ef4c1396ce4c5037cbeaba59e2f64e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::FermionChain::applyOn</definition>
+        <argsstring>(csl::Expr &amp;prod, bool makeAbbreviation=true) const</argsstring>
+        <name>applyOn</name>
+        <qualifiedname>mty::FermionChain::applyOn</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>prod</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>makeAbbreviation</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/fermionChain.h" line="41" column="10" bodyfile="src/marty/core/fermionChain.cpp" bodystart="37" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FermionChain_1ad454e6dd5540c7eb4c9e8a6801ac999f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &amp;</type>
+        <definition>std::vector&lt; csl::Expr &gt; &amp; mty::FermionChain::getTensorsInChain</definition>
+        <argsstring>()</argsstring>
+        <name>getTensorsInChain</name>
+        <qualifiedname>mty::FermionChain::getTensorsInChain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/fermionChain.h" line="47" column="17" bodyfile="src/marty/core/fermionChain.cpp" bodystart="204" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FermionChain_1ac76138b15c89b6a5de19403ccd41ac7f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; csl::Expr &gt; const  &amp; mty::FermionChain::getTensorsInChain</definition>
+        <argsstring>() const</argsstring>
+        <name>getTensorsInChain</name>
+        <qualifiedname>mty::FermionChain::getTensorsInChain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/fermionChain.h" line="49" column="23" bodyfile="src/marty/core/fermionChain.cpp" bodystart="209" bodyend="212"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmty_1_1FermionChain_1a44e5f2ce0ca3091de687f58226b63110" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1FermionChain_1_1Chain" kindref="compound">Chain</ref> &gt;</type>
+        <definition>std::vector&lt; FermionChain::Chain &gt; mty::FermionChain::getChains</definition>
+        <argsstring>(csl::Expr const &amp;prod, DiracSpace const *diracSpace, bool keepBorders=false)</argsstring>
+        <name>getChains</name>
+        <qualifiedname>mty::FermionChain::getChains</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>prod</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1DiracSpace" kindref="compound">DiracSpace</ref> const *</type>
+          <declname>diracSpace</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>keepBorders</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/fermionChain.h" line="43" column="24" bodyfile="src/marty/core/fermionChain.cpp" bodystart="145" bodyend="202"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/core/fermionChain.h" line="31" column="1" bodyfile="src/marty/core/fermionChain.h" bodystart="31" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classmty_1_1FermionChain_1a95ef4c1396ce4c5037cbeaba59e2f64e" prot="public" virt="non-virtual"><scope>mty::FermionChain</scope><name>applyOn</name></member>
+      <member refid="classmty_1_1FermionChain_1afcb5b3692894e54bff676f2e59e319d9" prot="private" virt="non-virtual"><scope>mty::FermionChain</scope><name>diracSpace</name></member>
+      <member refid="classmty_1_1FermionChain_1a62172e2a38f39fe076336cf3d483bd30" prot="public" virt="non-virtual"><scope>mty::FermionChain</scope><name>FermionChain</name></member>
+      <member refid="classmty_1_1FermionChain_1a44e5f2ce0ca3091de687f58226b63110" prot="public" virt="non-virtual"><scope>mty::FermionChain</scope><name>getChains</name></member>
+      <member refid="classmty_1_1FermionChain_1ad454e6dd5540c7eb4c9e8a6801ac999f" prot="public" virt="non-virtual"><scope>mty::FermionChain</scope><name>getTensorsInChain</name></member>
+      <member refid="classmty_1_1FermionChain_1ac76138b15c89b6a5de19403ccd41ac7f" prot="public" virt="non-virtual"><scope>mty::FermionChain</scope><name>getTensorsInChain</name></member>
+      <member refid="classmty_1_1FermionChain_1a1d2d55f35491a46655cdba8578a50516" prot="private" virt="non-virtual"><scope>mty::FermionChain</scope><name>tensors</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

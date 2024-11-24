@@ -1,0 +1,477 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classMainWindow" kind="class" language="C++" prot="public">
+    <compoundname>MainWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMainWindow_1a5a3eb262660797d9a4d52ed16edb6d11" prot="private" static="no" mutable="no">
+        <type>Ui::MainWindow *</type>
+        <definition>Ui::MainWindow* MainWindow::m_ui</definition>
+        <argsstring></argsstring>
+        <name>m_ui</name>
+        <qualifiedname>MainWindow::m_ui</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="70" column="20" bodyfile="src/grafed/gui/mainwindow.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1acf2f9067838cc33a677aa8339ad0ac27" prot="private" static="no" mutable="no">
+        <type><ref refid="classMainWidget" kindref="compound">MainWidget</ref> *</type>
+        <definition>MainWidget* MainWindow::mainWidget</definition>
+        <argsstring></argsstring>
+        <name>mainWidget</name>
+        <qualifiedname>MainWindow::mainWidget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="71" column="20" bodyfile="src/grafed/gui/mainwindow.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a1346bae9e3b26e60faf1560ac41a9e65" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MainWindow::saved</definition>
+        <argsstring></argsstring>
+        <name>saved</name>
+        <qualifiedname>MainWindow::saved</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="72" column="21" bodyfile="src/grafed/gui/mainwindow.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMainWindow_1aa6e09b5042d261dcbaa92feae581a2f9" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::MainWindow</definition>
+        <argsstring>(QString const &amp;nameFile, QWidget *parent=nullptr)</argsstring>
+        <name>MainWindow</name>
+        <qualifiedname>MainWindow::MainWindow</qualifiedname>
+        <param>
+          <type>QString const &amp;</type>
+          <declname>nameFile</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="37" column="14" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="20" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a996c5a2b6f77944776856f08ec30858d" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::MainWindow</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>MainWindow</name>
+        <qualifiedname>MainWindow::MainWindow</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="38" column="14" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="46" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a1f7d2c56410fc1bfa135bb907d43313f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::~MainWindow</definition>
+        <argsstring>() override</argsstring>
+        <name>~MainWindow</name>
+        <qualifiedname>MainWindow::~MainWindow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="39" column="5" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="86" bodyend="90"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classMainWindow_1a207a4e9f1adfc555dec33082b8d43d83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::setDiagramMode</definition>
+        <argsstring>()</argsstring>
+        <name>setDiagramMode</name>
+        <qualifiedname>MainWindow::setDiagramMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="43" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="101" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ad222a15d5ca5960746a7d14e0aca6758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::setSessionMode</definition>
+        <argsstring>()</argsstring>
+        <name>setSessionMode</name>
+        <qualifiedname>MainWindow::setSessionMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="44" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="115" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1aee0119848aa8b3569f355d8cc139a020" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::newDiagram</definition>
+        <argsstring>()</argsstring>
+        <name>newDiagram</name>
+        <qualifiedname>MainWindow::newDiagram</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="45" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="128" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ae30d9faac5df3ac9ba68c2d32545ee19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::newSession</definition>
+        <argsstring>()</argsstring>
+        <name>newSession</name>
+        <qualifiedname>MainWindow::newSession</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="46" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1aa7473e4bbbcc281706ac2edef864fb45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::open</definition>
+        <argsstring>()</argsstring>
+        <name>open</name>
+        <qualifiedname>MainWindow::open</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="47" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="138" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a3ba1a371fb10e731ae0926ae85efeb4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::save</definition>
+        <argsstring>()</argsstring>
+        <name>save</name>
+        <qualifiedname>MainWindow::save</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="48" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="143" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a7fbef0054cdec7bbbf3c06fb12af473c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::saveAs</definition>
+        <argsstring>()</argsstring>
+        <name>saveAs</name>
+        <qualifiedname>MainWindow::saveAs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="49" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1aa068a77613461ba93bca3b246696ff19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::exportPNG</definition>
+        <argsstring>()</argsstring>
+        <name>exportPNG</name>
+        <qualifiedname>MainWindow::exportPNG</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="50" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="153" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a3d7816791ab4c8c8871d33b61b22a2f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::exportPDF</definition>
+        <argsstring>()</argsstring>
+        <name>exportPDF</name>
+        <qualifiedname>MainWindow::exportPDF</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="51" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="158" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a966b0b5689d4841ebd533a6bfe5bc02e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::latexSource</definition>
+        <argsstring>()</argsstring>
+        <name>latexSource</name>
+        <qualifiedname>MainWindow::latexSource</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="53" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="163" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1af5a3981236d9fba069a2b2fbc692949e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::latexSourceToClipboard</definition>
+        <argsstring>()</argsstring>
+        <name>latexSourceToClipboard</name>
+        <qualifiedname>MainWindow::latexSourceToClipboard</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="54" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="168" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1adbf9ee3a0be906f9451dd06e6ac8c525" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::latexExportPNG</definition>
+        <argsstring>()</argsstring>
+        <name>latexExportPNG</name>
+        <qualifiedname>MainWindow::latexExportPNG</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="55" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="173" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ac2be2d861bb1abd3e9f2d3ded2950e3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::latexExportPDF</definition>
+        <argsstring>()</argsstring>
+        <name>latexExportPDF</name>
+        <qualifiedname>MainWindow::latexExportPDF</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="56" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="178" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ab2917ff41b46632b8478752d972be7cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::normalMode</definition>
+        <argsstring>()</argsstring>
+        <name>normalMode</name>
+        <qualifiedname>MainWindow::normalMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="58" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="183" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a1fa83d3e255da80ca3d9e9e04697a63c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::selectMode</definition>
+        <argsstring>()</argsstring>
+        <name>selectMode</name>
+        <qualifiedname>MainWindow::selectMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="59" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="197" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1af2d4b92fe8248d27eb1f2e8f9a12e30f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::insertMode</definition>
+        <argsstring>()</argsstring>
+        <name>insertMode</name>
+        <qualifiedname>MainWindow::insertMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="60" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="190" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a55ae3e0d4303334ccabae0a5050cfd88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::keyPressEvent</definition>
+        <argsstring>(QKeyEvent *event) override</argsstring>
+        <name>keyPressEvent</name>
+        <qualifiedname>MainWindow::keyPressEvent</qualifiedname>
+        <param>
+          <type>QKeyEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="62" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="204" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a7e5c29a25c95c09da8b707adb483c35c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MainWindow::eventFilter</definition>
+        <argsstring>(QObject *, QEvent *) override</argsstring>
+        <name>eventFilter</name>
+        <qualifiedname>MainWindow::eventFilter</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <defname>target</defname>
+        </param>
+        <param>
+          <type>QEvent *</type>
+          <defname>event</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="63" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="208" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a05fb9d72c044aa3bb7d187b994704e2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::closeEvent</definition>
+        <argsstring>(QCloseEvent *event) override</argsstring>
+        <name>closeEvent</name>
+        <qualifiedname>MainWindow::closeEvent</qualifiedname>
+        <param>
+          <type>QCloseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="64" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="92" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a994387673da5a6d338253f02d5d4c062" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::isSaved</definition>
+        <argsstring>()</argsstring>
+        <name>isSaved</name>
+        <qualifiedname>MainWindow::isSaved</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="66" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="78" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a3dcbebf80a40a787317d5a2f3c0c04bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::isChanged</definition>
+        <argsstring>()</argsstring>
+        <name>isChanged</name>
+        <qualifiedname>MainWindow::isChanged</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/mainwindow.h" line="67" column="10" bodyfile="src/grafed/gui/mainwindow.cpp" bodystart="70" bodyend="76"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MainWindow</label>
+        <link refid="classMainWindow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MainWindow</label>
+        <link refid="classMainWindow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/grafed/gui/mainwindow.h" line="33" column="1" bodyfile="src/grafed/gui/mainwindow.h" bodystart="33" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classMainWindow_1a05fb9d72c044aa3bb7d187b994704e2f" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>closeEvent</name></member>
+      <member refid="classMainWindow_1a7e5c29a25c95c09da8b707adb483c35c" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>eventFilter</name></member>
+      <member refid="classMainWindow_1a3d7816791ab4c8c8871d33b61b22a2f4" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>exportPDF</name></member>
+      <member refid="classMainWindow_1aa068a77613461ba93bca3b246696ff19" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>exportPNG</name></member>
+      <member refid="classMainWindow_1af2d4b92fe8248d27eb1f2e8f9a12e30f" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>insertMode</name></member>
+      <member refid="classMainWindow_1a3dcbebf80a40a787317d5a2f3c0c04bb" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>isChanged</name></member>
+      <member refid="classMainWindow_1a994387673da5a6d338253f02d5d4c062" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>isSaved</name></member>
+      <member refid="classMainWindow_1a55ae3e0d4303334ccabae0a5050cfd88" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>keyPressEvent</name></member>
+      <member refid="classMainWindow_1ac2be2d861bb1abd3e9f2d3ded2950e3a" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>latexExportPDF</name></member>
+      <member refid="classMainWindow_1adbf9ee3a0be906f9451dd06e6ac8c525" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>latexExportPNG</name></member>
+      <member refid="classMainWindow_1a966b0b5689d4841ebd533a6bfe5bc02e" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>latexSource</name></member>
+      <member refid="classMainWindow_1af5a3981236d9fba069a2b2fbc692949e" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>latexSourceToClipboard</name></member>
+      <member refid="classMainWindow_1a5a3eb262660797d9a4d52ed16edb6d11" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>m_ui</name></member>
+      <member refid="classMainWindow_1acf2f9067838cc33a677aa8339ad0ac27" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>mainWidget</name></member>
+      <member refid="classMainWindow_1aa6e09b5042d261dcbaa92feae581a2f9" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>MainWindow</name></member>
+      <member refid="classMainWindow_1a996c5a2b6f77944776856f08ec30858d" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>MainWindow</name></member>
+      <member refid="classMainWindow_1aee0119848aa8b3569f355d8cc139a020" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>newDiagram</name></member>
+      <member refid="classMainWindow_1ae30d9faac5df3ac9ba68c2d32545ee19" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>newSession</name></member>
+      <member refid="classMainWindow_1ab2917ff41b46632b8478752d972be7cc" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>normalMode</name></member>
+      <member refid="classMainWindow_1aa7473e4bbbcc281706ac2edef864fb45" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>open</name></member>
+      <member refid="classMainWindow_1a3ba1a371fb10e731ae0926ae85efeb4f" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>save</name></member>
+      <member refid="classMainWindow_1a7fbef0054cdec7bbbf3c06fb12af473c" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>saveAs</name></member>
+      <member refid="classMainWindow_1a1346bae9e3b26e60faf1560ac41a9e65" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>saved</name></member>
+      <member refid="classMainWindow_1a1fa83d3e255da80ca3d9e9e04697a63c" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>selectMode</name></member>
+      <member refid="classMainWindow_1a207a4e9f1adfc555dec33082b8d43d83" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>setDiagramMode</name></member>
+      <member refid="classMainWindow_1ad222a15d5ca5960746a7d14e0aca6758" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>setSessionMode</name></member>
+      <member refid="classMainWindow_1a1f7d2c56410fc1bfa135bb907d43313f" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>~MainWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

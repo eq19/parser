@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classsymmetricCounter" kind="class" language="C++" prot="public">
+    <compoundname>symmetricCounter</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsymmetricCounter_1a11729f613976be80be526203ed12d3b1" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>char</type>
+        <definition>char symmetricCounter&lt; T &gt;::separator</definition>
+        <argsstring></argsstring>
+        <name>separator</name>
+        <qualifiedname>symmetricCounter::separator</qualifiedname>
+        <initializer>= &apos;\&apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetricCounter.h" line="37" column="27" bodyfile="src/csl/symmetricCounter.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsymmetricCounter_1a6a6b04d68efe27c7babea8a5539837ac" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t symmetricCounter&lt; T &gt;::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <qualifiedname>symmetricCounter::max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetricCounter.h" line="138" column="12" bodyfile="src/csl/symmetricCounter.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsymmetricCounter_1a6cc8f7b13b64e75fa9dc7f9bc447b475" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt;T&gt; symmetricCounter&lt; T &gt;::counter</definition>
+        <argsstring></argsstring>
+        <name>counter</name>
+        <qualifiedname>symmetricCounter::counter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetricCounter.h" line="140" column="17" bodyfile="src/csl/symmetricCounter.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsymmetricCounter_1a7bb9a057dc1bc4750e3bf5b2440feeea" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>symmetricCounter&lt; T &gt;::IMPLEMENTS_STD_VECTOR</definition>
+        <argsstring>(T, counter)</argsstring>
+        <name>IMPLEMENTS_STD_VECTOR</name>
+        <qualifiedname>symmetricCounter::IMPLEMENTS_STD_VECTOR</qualifiedname>
+        <param>
+          <type>T</type>
+        </param>
+        <param>
+          <type><ref refid="classcounter" kindref="compound">counter</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetricCounter.h" line="34" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsymmetricCounter_1a3938e0cc7cf0669d6e5bf90efde51005" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>symmetricCounter&lt; T &gt;::symmetricCounter</definition>
+        <argsstring>(size_t N)</argsstring>
+        <name>symmetricCounter</name>
+        <qualifiedname>symmetricCounter::symmetricCounter</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetricCounter.h" line="39" column="5" bodyfile="src/csl/symmetricCounter.h" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classsymmetricCounter_1af01f6ffc7f4cdf411c06488b797acfcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>symmetricCounter&lt; T &gt;::symmetricCounter</definition>
+        <argsstring>(size_t N, size_t t_max)</argsstring>
+        <name>symmetricCounter</name>
+        <qualifiedname>symmetricCounter::symmetricCounter</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>t_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetricCounter.h" line="43" column="5" bodyfile="src/csl/symmetricCounter.h" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classsymmetricCounter_1a62a4ec95f8d97deb3cf2b141a07d5001" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsymmetricCounter" kindref="compound">symmetricCounter</ref>&lt; T &gt;</type>
+        <definition>symmetricCounter&lt; T &gt; symmetricCounter&lt; T &gt;::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <qualifiedname>symmetricCounter::operator++</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetricCounter.h" line="47" column="22" bodyfile="src/csl/symmetricCounter.h" bodystart="47" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classsymmetricCounter_1ac10a3d61c71b99376f15b7f98c4f3a2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsymmetricCounter" kindref="compound">symmetricCounter</ref>&lt; T &gt; &amp;</type>
+        <definition>symmetricCounter&lt; T &gt; &amp; symmetricCounter&lt; T &gt;::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <qualifiedname>symmetricCounter::operator++</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetricCounter.h" line="54" column="22" bodyfile="src/csl/symmetricCounter.h" bodystart="54" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classsymmetricCounter_1a3e49dbb7079c5ddd2cd3f7ae9d248243" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t symmetricCounter&lt; T &gt;::factor</definition>
+        <argsstring>() const</argsstring>
+        <name>factor</name>
+        <qualifiedname>symmetricCounter::factor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetricCounter.h" line="77" column="12" bodyfile="src/csl/symmetricCounter.h" bodystart="77" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classsymmetricCounter_1aabe8e030f62af41242db743eedff0e98" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>symmetricCounter&lt; T &gt;::operator bool</definition>
+        <argsstring>() const</argsstring>
+        <name>operator bool</name>
+        <qualifiedname>symmetricCounter::operator bool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetricCounter.h" line="92" column="5" bodyfile="src/csl/symmetricCounter.h" bodystart="92" bodyend="98"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsymmetricCounter_1a0335cbe3b493e730f782cad418680644" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t symmetricCounter&lt; T &gt;::combinatorial</definition>
+        <argsstring>(size_t N, size_t m)</argsstring>
+        <name>combinatorial</name>
+        <qualifiedname>symmetricCounter::combinatorial</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetricCounter.h" line="63" column="19" bodyfile="src/csl/symmetricCounter.h" bodystart="63" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classsymmetricCounter_1ace1441f8e74a72a9b9a8e74ab362c473" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, symmetricCounter&lt; T &gt; const &amp;c)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>symmetricCounter::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="classsymmetricCounter" kindref="compound">symmetricCounter</ref>&lt; T &gt; const &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetricCounter.h" line="100" column="12" bodyfile="src/csl/symmetricCounter.h" bodystart="100" bodyend="108"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classsymmetricCounter_1a43381494e4543bfe3dde6e7a6e978eb2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool symmetricCounter&lt; T &gt;::increment</definition>
+        <argsstring>(size_t pos)</argsstring>
+        <name>increment</name>
+        <qualifiedname>symmetricCounter::increment</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetricCounter.h" line="111" column="10" bodyfile="src/csl/symmetricCounter.h" bodystart="111" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classsymmetricCounter_1a9969f3502e22d9ba98ac621fd0252937" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void symmetricCounter&lt; T &gt;::adjust</definition>
+        <argsstring>()</argsstring>
+        <name>adjust</name>
+        <qualifiedname>symmetricCounter::adjust</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetricCounter.h" line="123" column="10" bodyfile="src/csl/symmetricCounter.h" bodystart="123" bodyend="135"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/csl/symmetricCounter.h" line="32" column="1" bodyfile="src/csl/symmetricCounter.h" bodystart="32" bodyend="141"/>
+    <listofallmembers>
+      <member refid="classsymmetricCounter_1a9969f3502e22d9ba98ac621fd0252937" prot="protected" virt="non-virtual"><scope>symmetricCounter</scope><name>adjust</name></member>
+      <member refid="classsymmetricCounter_1a0335cbe3b493e730f782cad418680644" prot="public" virt="non-virtual"><scope>symmetricCounter</scope><name>combinatorial</name></member>
+      <member refid="classsymmetricCounter_1a6cc8f7b13b64e75fa9dc7f9bc447b475" prot="private" virt="non-virtual"><scope>symmetricCounter</scope><name>counter</name></member>
+      <member refid="classsymmetricCounter_1a3e49dbb7079c5ddd2cd3f7ae9d248243" prot="public" virt="non-virtual"><scope>symmetricCounter</scope><name>factor</name></member>
+      <member refid="classsymmetricCounter_1a7bb9a057dc1bc4750e3bf5b2440feeea" prot="private" virt="non-virtual"><scope>symmetricCounter</scope><name>IMPLEMENTS_STD_VECTOR</name></member>
+      <member refid="classsymmetricCounter_1a43381494e4543bfe3dde6e7a6e978eb2" prot="protected" virt="non-virtual"><scope>symmetricCounter</scope><name>increment</name></member>
+      <member refid="classsymmetricCounter_1a6a6b04d68efe27c7babea8a5539837ac" prot="private" virt="non-virtual"><scope>symmetricCounter</scope><name>max</name></member>
+      <member refid="classsymmetricCounter_1aabe8e030f62af41242db743eedff0e98" prot="public" virt="non-virtual"><scope>symmetricCounter</scope><name>operator bool</name></member>
+      <member refid="classsymmetricCounter_1a62a4ec95f8d97deb3cf2b141a07d5001" prot="public" virt="non-virtual"><scope>symmetricCounter</scope><name>operator++</name></member>
+      <member refid="classsymmetricCounter_1ac10a3d61c71b99376f15b7f98c4f3a2e" prot="public" virt="non-virtual"><scope>symmetricCounter</scope><name>operator++</name></member>
+      <member refid="classsymmetricCounter_1ace1441f8e74a72a9b9a8e74ab362c473" prot="public" virt="non-virtual"><scope>symmetricCounter</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classsymmetricCounter_1a11729f613976be80be526203ed12d3b1" prot="public" virt="non-virtual"><scope>symmetricCounter</scope><name>separator</name></member>
+      <member refid="classsymmetricCounter_1a3938e0cc7cf0669d6e5bf90efde51005" prot="public" virt="non-virtual"><scope>symmetricCounter</scope><name>symmetricCounter</name></member>
+      <member refid="classsymmetricCounter_1af01f6ffc7f4cdf411c06488b797acfcd" prot="public" virt="non-virtual"><scope>symmetricCounter</scope><name>symmetricCounter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

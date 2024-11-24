@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1group_1_1SO" kind="class" language="C++" prot="public">
+    <compoundname>mty::group::SO</compoundname>
+    <basecompoundref refid="classmty_1_1SemiSimpleGroup" prot="public" virt="non-virtual">mty::SemiSimpleGroup</basecompoundref>
+    <includes refid="group_8h" local="no">group.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1group_1_1SO_1a73df54d94ded126dbaba8833cf2834b2" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::group::SO::SO</definition>
+        <argsstring>(std::string const &amp;t_name, int t_dim=3)</argsstring>
+        <name>SO</name>
+        <qualifiedname>mty::group::SO::SO</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>t_dim</declname>
+          <defval>3</defval>
+        </param>
+        <briefdescription>
+<para>Constructor with two parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the group. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dimension (optional, default = 3) of the group. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="483" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1group_1_1SO_1ab101acd308e9a2332c23c1544fcade03" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::group::SO::SO</definition>
+        <argsstring>(int t_dim=3)</argsstring>
+        <name>SO</name>
+        <qualifiedname>mty::group::SO::SO</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>t_dim</declname>
+          <defval>3</defval>
+        </param>
+        <briefdescription>
+<para>Constructor with one parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dimension (optional, default = 3) of the group. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="489" column="14" bodyfile="src/marty/core/group.cpp" bodystart="339" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1group_1_1SO_1a5cc9479f7b2b86d29917bff1367fd6dc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacemty_1_1group_1ab52e292a5e57ca7d8f7c28277435ecb9" kindref="member">mty::group::Type</ref></type>
+        <definition>mty::group::Type mty::group::SO::getType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getType</name>
+        <qualifiedname>mty::group::SO::getType</qualifiedname>
+        <reimplements refid="classmty_1_1AbstractGroup_1a3bd2daf2393fab718e2cea21392ed52b">getType</reimplements>
+        <briefdescription>
+<para>Returns the type of the group. See <ref refid="namespacemty_1_1group_1ab52e292a5e57ca7d8f7c28277435ecb9" kindref="member">mty::group::Type</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="namespacemty_1_1group_1ab52e292a5e57ca7d8f7c28277435ecb9a98d0360b392de5f1d53acdd6489b6e88" kindref="member">group::Type::SO</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="495" column="22" bodyfile="src/marty/core/group.cpp" bodystart="357" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1group_1_1SO_1a7bbe64a13344606ce028fcfa72a661fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1Irrep" kindref="compound">mty::Irrep</ref></type>
+        <definition>mty::Irrep mty::group::SO::getAdjointRep</definition>
+        <argsstring>() const override</argsstring>
+        <name>getAdjointRep</name>
+        <qualifiedname>mty::group::SO::getAdjointRep</qualifiedname>
+        <reimplements refid="classmty_1_1AbstractGroup_1a592bd77bd23ccbfc4dfe15ad299cc4f3">getAdjointRep</reimplements>
+        <briefdescription>
+<para>Returns the adjoint representation of <formula id="102">$ SO(N) $</formula>, i.e. the representation of the gauge boson. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The adjoint representation is needed automatically in general in order to define gauge bosons without the help of the user. Adjoint representations expressed in terms of dynkin labels (highest weight state) can be found in the literature, see the manual for references. <simplesect kind="return"><para>The <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> of heighest weight <formula id="125">$ (0,1,...,0,0) $</formula>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="506" column="16" bodyfile="src/marty/core/group.cpp" bodystart="362" bodyend="377"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Special orthogonal group. The algebra of <formula id="102">$ SO(N) $</formula> is <formula id="115">$ B_{(N-1)/2} $</formula> if <formula id="41">$ N $</formula> is odd, <formula id="116">$ D_{N/2} $</formula> else. See <ref refid="classmty_1_1algebra_1_1B" kindref="compound">mty::algebra::B</ref> and <ref refid="classmty_1_1algebra_1_1D" kindref="compound">mty::algebra::D</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>mty::AbstractGroup</label>
+        <link refid="classmty_1_1AbstractGroup"/>
+      </node>
+      <node id="2">
+        <label>mty::SemiSimpleGroup</label>
+        <link refid="classmty_1_1SemiSimpleGroup"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::group::SO</label>
+        <link refid="classmty_1_1group_1_1SO"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>csl::Space</label>
+        <link refid="classcsl_1_1Space"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>symbolicDim</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>delta</edgelabel>
+          <edgelabel>epsilon</edgelabel>
+          <edgelabel>inverseMetric</edgelabel>
+          <edgelabel>metric</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mty::AbstractGroup</label>
+        <link refid="classmty_1_1AbstractGroup"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>gauged</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mty::Gauge</label>
+        <link refid="classmty_1_1Gauge"/>
+      </node>
+      <node id="4">
+        <label>mty::GaugedGroup</label>
+        <link refid="classmty_1_1GaugedGroup"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>gauge</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>group</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>coupling</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>adjointSpace</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>f</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>generator</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>boson</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>ghost</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mty::Generator</label>
+        <link refid="classmty_1_1Generator"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>mty::IrrepMap&lt; mty::Generator &gt;</label>
+        <link refid="classmty_1_1IrrepMap"/>
+      </node>
+      <node id="2">
+        <label>mty::SemiSimpleGroup</label>
+        <link refid="classmty_1_1SemiSimpleGroup"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::group::SO</label>
+        <link refid="classmty_1_1group_1_1SO"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>std::shared_ptr&lt; GeneratorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="10">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="7">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="14">
+        <label>std::shared_ptr&lt; mty::GaugeBoson &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="15">
+        <label>std::shared_ptr&lt; mty::GhostBoson &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/group.h" line="475" column="1" bodyfile="src/marty/core/group.h" bodystart="475" bodyend="507"/>
+    <listofallmembers>
+      <member refid="classmty_1_1AbstractGroup_1adcfa90e344e550ef4eb31bef2b9cf0a5" prot="public" virt="non-virtual"><scope>mty::group::SO</scope><name>AbstractGroup</name></member>
+      <member refid="classmty_1_1AbstractGroup_1afbb9c29efba97aacd880bd6389d66012" prot="public" virt="non-virtual"><scope>mty::group::SO</scope><name>AbstractGroup</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a3f1605da17191cd78631157d0b0df29d" prot="protected" virt="non-virtual"><scope>mty::group::SO</scope><name>algebra</name></member>
+      <member refid="classmty_1_1AbstractGroup_1aefbcfa83804f7acbd0b3b93694dcabba" prot="protected" virt="non-virtual"><scope>mty::group::SO</scope><name>dim</name></member>
+      <member refid="classmty_1_1AbstractGroup_1ad67e79474a67e9434a87ba91ef4d86d3" prot="protected" virt="non-virtual"><scope>mty::group::SO</scope><name>gauged</name></member>
+      <member refid="classmty_1_1group_1_1SO_1a7bbe64a13344606ce028fcfa72a661fe" prot="public" virt="virtual"><scope>mty::group::SO</scope><name>getAdjointRep</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a1af257679905aedc7feed434f5a1ace1" prot="public" virt="virtual"><scope>mty::group::SO</scope><name>getAlgebra</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a0a07acf25f62aea2cd8ba477fe978b0a" prot="public" virt="virtual"><scope>mty::group::SO</scope><name>getAllVectorSpace</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a39acccde07239d0b2ab74116f0b1c6a2" prot="public" virt="virtual"><scope>mty::group::SO</scope><name>getCorrespondingIndex</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a206ee8aff297cfb526fb99553cf28ea2" prot="public" virt="non-virtual"><scope>mty::group::SO</scope><name>getDim</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a622e80d80a7339161515ca1f0c2357a5" prot="public" virt="non-virtual"><scope>mty::group::SO</scope><name>getGaugedGroup</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a95a05472197b6785212540fda811c98d" prot="public" virt="virtual"><scope>mty::group::SO</scope><name>getHighestWeight</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a8cd596873edd138759f02d10d5fa4577" prot="public" virt="non-virtual"><scope>mty::group::SO</scope><name>getName</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a9242e469fb0e3d3c86f7897ba03adcb7" prot="public" virt="non-virtual"><scope>mty::group::SO</scope><name>getQuadraticCasimir</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1ae1e98e95d351ed86c20df592bddf2c24" prot="public" virt="virtual"><scope>mty::group::SO</scope><name>getTrivialRep</name></member>
+      <member refid="classmty_1_1group_1_1SO_1a5cc9479f7b2b86d29917bff1367fd6dc" prot="public" virt="virtual"><scope>mty::group::SO</scope><name>getType</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1af549263e0d55350d636fa82edd9acec5" prot="public" virt="virtual"><scope>mty::group::SO</scope><name>getVectorSpace</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a23925dcfec01c5bf963ccf504829415d" prot="public" virt="virtual"><scope>mty::group::SO</scope><name>highestWeightRep</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a859fa1942e9564d1d6f023de9c251a09" prot="protected" virt="non-virtual"><scope>mty::group::SO</scope><name>name</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1aa7de545c51c494c8f80eba695c269569" prot="protected" virt="non-virtual"><scope>mty::group::SO</scope><name>quadraticCasimir</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a6b4b186b68f71a5e6940c616f7c20f58" prot="public" virt="non-virtual"><scope>mty::group::SO</scope><name>SemiSimpleGroup</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1aab95fc4e4ebb7276086217daba5b6873" prot="public" virt="non-virtual"><scope>mty::group::SO</scope><name>SemiSimpleGroup</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a051277e572c8b6c06152e20cc7e52108" prot="public" virt="non-virtual"><scope>mty::group::SO</scope><name>setAlgebra</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a2ddd145c12dec58837f59112eb7272d5" prot="public" virt="non-virtual"><scope>mty::group::SO</scope><name>setGaugedGroup</name></member>
+      <member refid="classmty_1_1group_1_1SO_1a73df54d94ded126dbaba8833cf2834b2" prot="public" virt="non-virtual"><scope>mty::group::SO</scope><name>SO</name></member>
+      <member refid="classmty_1_1group_1_1SO_1ab101acd308e9a2332c23c1544fcade03" prot="public" virt="non-virtual"><scope>mty::group::SO</scope><name>SO</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a44f258072322ed3c76d2ad5740effb2a" prot="public" virt="non-virtual"><scope>mty::group::SO</scope><name>tensorProduct</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1ac4656a1e2ecd13fc2bcf4a8b14e8db96" prot="public" virt="non-virtual"><scope>mty::group::SO</scope><name>tensorProduct</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a3c706805c999baa5d4b1caed344d005f" prot="protected" virt="non-virtual"><scope>mty::group::SO</scope><name>vectorSpaces</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a606b55ecff6e3a9be9e8090ff87fb7cd" prot="public" virt="virtual"><scope>mty::group::SO</scope><name>~AbstractGroup</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1ae4d983be8e2f9760255a9ae7534fed8b" prot="public" virt="non-virtual"><scope>mty::group::SO</scope><name>~SemiSimpleGroup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

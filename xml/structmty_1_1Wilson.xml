@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structmty_1_1Wilson" kind="struct" language="C++" prot="public">
+    <compoundname>mty::Wilson</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmty_1_1Wilson_1a4d9d16420152809a93049f777a3381a5" prot="public" static="no" mutable="no">
+        <type><ref refid="classmty_1_1WilsonCoefficient" kindref="compound">WilsonCoefficient</ref></type>
+        <definition>WilsonCoefficient mty::Wilson::coef</definition>
+        <argsstring></argsstring>
+        <name>coef</name>
+        <qualifiedname>mty::Wilson::coef</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/wilson.h" line="87" column="23" bodyfile="src/marty/core/wilson.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1Wilson_1afb69b78a0025c73645ffee93dbdc4517" prot="public" static="no" mutable="no">
+        <type><ref refid="classmty_1_1WilsonOperator" kindref="compound">WilsonOperator</ref></type>
+        <definition>WilsonOperator mty::Wilson::op</definition>
+        <argsstring></argsstring>
+        <name>op</name>
+        <qualifiedname>mty::Wilson::op</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/wilson.h" line="88" column="23" bodyfile="src/marty/core/wilson.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structmty_1_1Wilson_1a67112ad64fd6ca8db1c014168f6fc0b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::Wilson::isNull</definition>
+        <argsstring>() const</argsstring>
+        <name>isNull</name>
+        <qualifiedname>mty::Wilson::isNull</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/wilson.h" line="90" column="10" bodyfile="src/marty/core/wilson.h" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="structmty_1_1Wilson_1a34584a0096eccc1962747b20ae473ba9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Wilson::print</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>print</name>
+        <qualifiedname>mty::Wilson::print</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/wilson.h" line="95" column="10" bodyfile="src/marty/core/wilson.h" bodystart="95" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="structmty_1_1Wilson_1ad6b9df5b6423f1cace569132f62543be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Wilson::getExpression</definition>
+        <argsstring>() const</argsstring>
+        <name>getExpression</name>
+        <qualifiedname>mty::Wilson::getExpression</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/wilson.h" line="104" column="15" bodyfile="src/marty/core/wilson.h" bodystart="104" bodyend="108"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="structmty_1_1Wilson_1a7fecfdda0cd4dbcc45a3f9c6a0820257" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, Wilson const &amp;wil)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::Wilson::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1Wilson" kindref="compound">Wilson</ref> const &amp;</type>
+          <declname>wil</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/wilson.h" line="110" column="12" bodyfile="src/marty/core/wilson.h" bodystart="110" bodyend="114"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>mty::Wilson</label>
+        <link refid="structmty_1_1Wilson"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>coef</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>op</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mty::WilsonCoefficient</label>
+        <link refid="classmty_1_1WilsonCoefficient"/>
+      </node>
+      <node id="3">
+        <label>mty::WilsonOperator</label>
+        <link refid="classmty_1_1WilsonOperator"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/wilson.h" line="85" column="1" bodyfile="src/marty/core/wilson.h" bodystart="85" bodyend="115"/>
+    <listofallmembers>
+      <member refid="structmty_1_1Wilson_1a4d9d16420152809a93049f777a3381a5" prot="public" virt="non-virtual"><scope>mty::Wilson</scope><name>coef</name></member>
+      <member refid="structmty_1_1Wilson_1ad6b9df5b6423f1cace569132f62543be" prot="public" virt="non-virtual"><scope>mty::Wilson</scope><name>getExpression</name></member>
+      <member refid="structmty_1_1Wilson_1a67112ad64fd6ca8db1c014168f6fc0b2" prot="public" virt="non-virtual"><scope>mty::Wilson</scope><name>isNull</name></member>
+      <member refid="structmty_1_1Wilson_1afb69b78a0025c73645ffee93dbdc4517" prot="public" virt="non-virtual"><scope>mty::Wilson</scope><name>op</name></member>
+      <member refid="structmty_1_1Wilson_1a7fecfdda0cd4dbcc45a3f9c6a0820257" prot="public" virt="non-virtual"><scope>mty::Wilson</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structmty_1_1Wilson_1a34584a0096eccc1962747b20ae473ba9" prot="public" virt="non-virtual"><scope>mty::Wilson</scope><name>print</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

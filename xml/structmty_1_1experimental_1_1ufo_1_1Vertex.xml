@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structmty_1_1experimental_1_1ufo_1_1Vertex" kind="struct" language="C++" prot="public">
+    <compoundname>mty::experimental::ufo::Vertex</compoundname>
+    <includes refid="vertexinfo_8h" local="no">vertexinfo.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmty_1_1experimental_1_1ufo_1_1Vertex_1a07c00b0b71b114b7dd0b26452f80c29c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structmty_1_1experimental_1_1ufo_1_1Field" kindref="compound">Field</ref> &gt;</type>
+        <definition>std::vector&lt;Field&gt; mty::experimental::ufo::Vertex::fields</definition>
+        <argsstring></argsstring>
+        <name>fields</name>
+        <qualifiedname>mty::experimental::ufo::Vertex::fields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Collection of external fields for the vertex. <simplesect kind="see"><para><ref refid="structmty_1_1experimental_1_1ufo_1_1Field" kindref="compound">Field</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/vertexinfo.h" line="54" column="21" bodyfile="src/marty/ufo/vertexinfo.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1experimental_1_1ufo_1_1Vertex_1a924cd1b3e21ad704384711a50a8aecca" prot="public" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::experimental::ufo::Vertex::coupling</definition>
+        <argsstring></argsstring>
+        <name>coupling</name>
+        <qualifiedname>mty::experimental::ufo::Vertex::coupling</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CSL symbolic expression containing the coupling constants and numerical factors of the vertex. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/vertexinfo.h" line="58" column="19" bodyfile="src/marty/ufo/vertexinfo.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1experimental_1_1ufo_1_1Vertex_1a6046d65f6ad7df21cc8db7ba691a52c9" prot="public" static="no" mutable="no">
+        <type><ref refid="structmty_1_1experimental_1_1ufo_1_1LorentzCoupling" kindref="compound">LorentzCoupling</ref></type>
+        <definition>LorentzCoupling mty::experimental::ufo::Vertex::lorentz</definition>
+        <argsstring></argsstring>
+        <name>lorentz</name>
+        <qualifiedname>mty::experimental::ufo::Vertex::lorentz</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Lorentzcoupling, contains Minkowski indices and gamma-matrix products. <simplesect kind="see"><para><ref refid="structmty_1_1experimental_1_1ufo_1_1LorentzCoupling" kindref="compound">LorentzCoupling</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/vertexinfo.h" line="63" column="25" bodyfile="src/marty/ufo/vertexinfo.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1experimental_1_1ufo_1_1Vertex_1ad0b29d71f4d5aa25593bff372872192a" prot="public" static="no" mutable="no">
+        <type><ref refid="structmty_1_1experimental_1_1ufo_1_1ColorCoupling" kindref="compound">ColorCoupling</ref></type>
+        <definition>ColorCoupling mty::experimental::ufo::Vertex::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>mty::experimental::ufo::Vertex::color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Colorcoupling, contains the coupling in the <formula id="306">$ SU(3)_C $</formula> group, i.e. generators. <simplesect kind="see"><para><ref refid="structmty_1_1experimental_1_1ufo_1_1ColorCoupling" kindref="compound">ColorCoupling</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/vertexinfo.h" line="68" column="23" bodyfile="src/marty/ufo/vertexinfo.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Main object containing all simplified information about the interaction to be simply translated into UFO format. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The external fields, stored in <ref refid="structmty_1_1experimental_1_1ufo_1_1Field" kindref="compound">Field</ref> objects, contain all the information about particle species, conjugation, spin, representation etc.</para>
+<para>The vertex is decomposed in four parts that must be perfectly factored. These four parts are:<itemizedlist>
+<listitem><para><bold>Coupling constants:</bold> They are stored in a simple CSL expression as they do not have any specific structure. The expression <formula id="343">$ -\frac{ig}{\sqrt{2}M_W} $</formula> is an example of coupling constant.</para>
+</listitem><listitem><para><bold>Tensors in Dirac or Minkowski spaces:</bold> They are both stored in the same <ref refid="structmty_1_1experimental_1_1ufo_1_1LorentzCoupling" kindref="compound">LorentzCoupling</ref> object. These tensors can be gamma matrices <formula id="344">$ \gamma^\mu $</formula> and related tensors, the Minkowski metric <formula id="345">$ g^{\mu\nu} $</formula> or external momenta <formula id="340">$ p_i^\mu $</formula> (all incoming).</para>
+</listitem><listitem><para><bold>Color tensors:</bold> They are stored in a <ref refid="structmty_1_1experimental_1_1ufo_1_1ColorCoupling" kindref="compound">ColorCoupling</ref> object and are limited to <formula id="306">$ SU(3)_C $</formula> generators <formula id="346">$ T^A,\,f^{ABC} $</formula>.</para>
+</listitem></itemizedlist>
+</para>
+<para>If the 4 parts cannot be exactly factored (e.g. the 4-gluon vertex that mixes color and Lorentz couplings), the Feynman rule is expanded and each term is stored in a different vertex.</para>
+<para><simplesect kind="see"><para><ref refid="structmty_1_1experimental_1_1ufo_1_1Field" kindref="compound">Field</ref>, <ref refid="structmty_1_1experimental_1_1ufo_1_1LorentzCoupling" kindref="compound">LorentzCoupling</ref>, <ref refid="structmty_1_1experimental_1_1ufo_1_1ColorCoupling" kindref="compound">ColorCoupling</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mty::experimental::ufo::ColorCoupling</label>
+        <link refid="structmty_1_1experimental_1_1ufo_1_1ColorCoupling"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>generators</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mty::experimental::ufo::LorentzCoupling</label>
+        <link refid="structmty_1_1experimental_1_1ufo_1_1LorentzCoupling"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>lorentzFactor</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::experimental::ufo::Vertex</label>
+        <link refid="structmty_1_1experimental_1_1ufo_1_1Vertex"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>coupling</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>lorentz</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>color</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/ufo/vertexinfo.h" line="50" column="5" bodyfile="src/marty/ufo/vertexinfo.h" bodystart="51" bodyend="69"/>
+    <listofallmembers>
+      <member refid="structmty_1_1experimental_1_1ufo_1_1Vertex_1ad0b29d71f4d5aa25593bff372872192a" prot="public" virt="non-virtual"><scope>mty::experimental::ufo::Vertex</scope><name>color</name></member>
+      <member refid="structmty_1_1experimental_1_1ufo_1_1Vertex_1a924cd1b3e21ad704384711a50a8aecca" prot="public" virt="non-virtual"><scope>mty::experimental::ufo::Vertex</scope><name>coupling</name></member>
+      <member refid="structmty_1_1experimental_1_1ufo_1_1Vertex_1a07c00b0b71b114b7dd0b26452f80c29c" prot="public" virt="non-virtual"><scope>mty::experimental::ufo::Vertex</scope><name>fields</name></member>
+      <member refid="structmty_1_1experimental_1_1ufo_1_1Vertex_1a6046d65f6ad7df21cc8db7ba691a52c9" prot="public" virt="non-virtual"><scope>mty::experimental::ufo::Vertex</scope><name>lorentz</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,648 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classDiagonalizer" kind="class" language="C++" prot="public">
+    <compoundname>Diagonalizer</compoundname>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classDiagonalizer_1a2cb0662f0254c67a8a83f3e6420e0be8" prot="public" static="no">
+        <type>double</type>
+        <definition>using Diagonalizer::real =  double</definition>
+        <argsstring></argsstring>
+        <name>real</name>
+        <qualifiedname>Diagonalizer::real</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="42" column="5" bodyfile="src/csl/libdiagonalization.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classDiagonalizer_1aaa0eb1a6603ec242e2a1e68c6b38f34e" prot="public" static="no">
+        <type>std::complex&lt; real &gt;</type>
+        <definition>using Diagonalizer::complex =  std::complex&lt;real&gt;</definition>
+        <argsstring></argsstring>
+        <name>complex</name>
+        <qualifiedname>Diagonalizer::complex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="43" column="5" bodyfile="src/csl/libdiagonalization.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classDiagonalizer_1a2c92a052d25a89508412715ef1fa7c42" prot="public" static="yes" mutable="no">
+        <type>real</type>
+        <definition>real Diagonalizer::precision</definition>
+        <argsstring></argsstring>
+        <name>precision</name>
+        <qualifiedname>Diagonalizer::precision</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="46" column="17" bodyfile="src/csl/libdiagonalization.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classDiagonalizer_1ae78def33469c5c4b491927a80c342d27" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; complex &gt;</type>
+        <definition>std::vector&lt;complex&gt; Diagonalizer::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <qualifiedname>Diagonalizer::m_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="122" column="17" bodyfile="src/csl/libdiagonalization.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagonalizer_1a0bda15f3697a91a73de1a19a6ea822cc" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Diagonalizer::m_N</definition>
+        <argsstring></argsstring>
+        <name>m_N</name>
+        <qualifiedname>Diagonalizer::m_N</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="123" column="26" bodyfile="src/csl/libdiagonalization.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagonalizer_1ac23bdf064fece7f387fe1a9bbd740cb0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Diagonalizer::m_bidiag</definition>
+        <argsstring></argsstring>
+        <name>m_bidiag</name>
+        <qualifiedname>Diagonalizer::m_bidiag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="124" column="26" bodyfile="src/csl/libdiagonalization.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagonalizer_1a2afb1f7901e7d557aeab3bfd04e9b452" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Diagonalizer::m_computed</definition>
+        <argsstring></argsstring>
+        <name>m_computed</name>
+        <qualifiedname>Diagonalizer::m_computed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="125" column="26" bodyfile="src/csl/libdiagonalization.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagonalizer_1a625bd928a5d5168cb9959c9b6d120dd6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; complex &gt;</type>
+        <definition>std::vector&lt;complex&gt; Diagonalizer::m_transfer</definition>
+        <argsstring></argsstring>
+        <name>m_transfer</name>
+        <qualifiedname>Diagonalizer::m_transfer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="127" column="17" bodyfile="src/csl/libdiagonalization.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagonalizer_1aacf5ff3e37e314e30d00d0e138060035" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; complex &gt;</type>
+        <definition>std::vector&lt;complex&gt; Diagonalizer::m_transfer2</definition>
+        <argsstring></argsstring>
+        <name>m_transfer2</name>
+        <qualifiedname>Diagonalizer::m_transfer2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="128" column="17" bodyfile="src/csl/libdiagonalization.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagonalizer_1ac5fa94ecece0be740fdbbf3901d88513" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; real &gt;</type>
+        <definition>std::vector&lt;real&gt; Diagonalizer::m_mass</definition>
+        <argsstring></argsstring>
+        <name>m_mass</name>
+        <qualifiedname>Diagonalizer::m_mass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="129" column="20" bodyfile="src/csl/libdiagonalization.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classDiagonalizer_1a0c8fd0fd64a579cb4cdbdfc793ed8655" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Diagonalizer::applyDiagonalization</definition>
+        <argsstring>(std::initializer_list&lt; complex &gt; massMatrix, std::initializer_list&lt; complex * &gt; transfer, std::initializer_list&lt; real * &gt; masses)</argsstring>
+        <name>applyDiagonalization</name>
+        <qualifiedname>Diagonalizer::applyDiagonalization</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; complex &gt;</type>
+          <declname>massMatrix</declname>
+        </param>
+        <param>
+          <type>std::initializer_list&lt; complex * &gt;</type>
+          <declname>transfer</declname>
+        </param>
+        <param>
+          <type>std::initializer_list&lt; real * &gt;</type>
+          <declname>masses</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="48" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1a2bf13ca6ba340d532985c41145fd8f6d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Diagonalizer::applyBiDiagonalization</definition>
+        <argsstring>(std::initializer_list&lt; complex &gt; massMatrix, std::initializer_list&lt; complex * &gt; transfer, std::initializer_list&lt; complex * &gt; transfer2, std::initializer_list&lt; real * &gt; masses)</argsstring>
+        <name>applyBiDiagonalization</name>
+        <qualifiedname>Diagonalizer::applyBiDiagonalization</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; complex &gt;</type>
+          <declname>massMatrix</declname>
+        </param>
+        <param>
+          <type>std::initializer_list&lt; complex * &gt;</type>
+          <declname>transfer</declname>
+        </param>
+        <param>
+          <type>std::initializer_list&lt; complex * &gt;</type>
+          <declname>transfer2</declname>
+        </param>
+        <param>
+          <type>std::initializer_list&lt; real * &gt;</type>
+          <declname>masses</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="53" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDiagonalizer_1a4e12651588d2a198cc9cf2d2e8d9e725" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Diagonalizer::Diagonalizer</definition>
+        <argsstring>(std::initializer_list&lt; complex &gt; massMatrix, bool biDiag=false)</argsstring>
+        <name>Diagonalizer</name>
+        <qualifiedname>Diagonalizer::Diagonalizer</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; complex &gt;</type>
+          <declname>massMatrix</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>biDiag</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="58" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1addc02bdc0540e4917c337dddfe4e692a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Diagonalizer::~Diagonalizer</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Diagonalizer</name>
+        <qualifiedname>Diagonalizer::~Diagonalizer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="61" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1aa53e15b1179578c2c82dc49de7733774" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; complex &gt; const &amp;</type>
+        <definition>std::vector&lt; complex &gt; const  &amp; Diagonalizer::transfer</definition>
+        <argsstring>()</argsstring>
+        <name>transfer</name>
+        <qualifiedname>Diagonalizer::transfer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="63" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1ad100642b32982aafcf641b554e273e94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; complex &gt; const &amp;</type>
+        <definition>std::vector&lt; complex &gt; const  &amp; Diagonalizer::transfer2</definition>
+        <argsstring>()</argsstring>
+        <name>transfer2</name>
+        <qualifiedname>Diagonalizer::transfer2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="65" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1a560bc358be93e96a6e7b611824e9af66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; real &gt; const &amp;</type>
+        <definition>std::vector&lt; real &gt; const  &amp; Diagonalizer::mass</definition>
+        <argsstring>()</argsstring>
+        <name>mass</name>
+        <qualifiedname>Diagonalizer::mass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="67" column="23"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classDiagonalizer_1a23b392f2bfa9667c3d6dd3d15e435992" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagonalizer::updateDiagonalization</definition>
+        <argsstring>()</argsstring>
+        <name>updateDiagonalization</name>
+        <qualifiedname>Diagonalizer::updateDiagonalization</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="70" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1ae1e2c2288851a1c462b3c031ab1a9b06" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagonalizer::diagonalize</definition>
+        <argsstring>(std::vector&lt; complex &gt; massMatrix, std::vector&lt; complex &gt; &amp;transfer, std::vector&lt; real &gt; &amp;mass, bool bidiagonalization=false)</argsstring>
+        <name>diagonalize</name>
+        <qualifiedname>Diagonalizer::diagonalize</qualifiedname>
+        <param>
+          <type>std::vector&lt; complex &gt;</type>
+          <declname>massMatrix</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; complex &gt; &amp;</type>
+          <declname>transfer</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; real &gt; &amp;</type>
+          <declname>mass</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bidiagonalization</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="72" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1abeee89b39e2f56eee6619fda73598013" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagonalizer::swap</definition>
+        <argsstring>(const size_t i, const size_t j, std::vector&lt; complex &gt; &amp;transfer, std::vector&lt; real &gt; &amp;mass)</argsstring>
+        <name>swap</name>
+        <qualifiedname>Diagonalizer::swap</qualifiedname>
+        <param>
+          <type>const size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; complex &gt; &amp;</type>
+          <declname>transfer</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; real &gt; &amp;</type>
+          <declname>mass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="77" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1a6197e35c9229918d262f9a32212fcf82" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagonalizer::sort</definition>
+        <argsstring>(std::vector&lt; complex &gt; &amp;transfer, std::vector&lt; real &gt; &amp;mass)</argsstring>
+        <name>sort</name>
+        <qualifiedname>Diagonalizer::sort</qualifiedname>
+        <param>
+          <type>std::vector&lt; complex &gt; &amp;</type>
+          <declname>transfer</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; real &gt; &amp;</type>
+          <declname>mass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="82" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1a163f423943a5168a1ae2c4552bccb232" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagonalizer::sort</definition>
+        <argsstring>(std::vector&lt; complex &gt; &amp;transfer, std::vector&lt; complex &gt; &amp;transfer2, std::vector&lt; real &gt; &amp;mass)</argsstring>
+        <name>sort</name>
+        <qualifiedname>Diagonalizer::sort</qualifiedname>
+        <param>
+          <type>std::vector&lt; complex &gt; &amp;</type>
+          <declname>transfer</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; complex &gt; &amp;</type>
+          <declname>transfer2</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; real &gt; &amp;</type>
+          <declname>mass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="84" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1aff43b7cfdbaf474bd44cc11e5550361b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagonalizer::diagonalize</definition>
+        <argsstring>()</argsstring>
+        <name>diagonalize</name>
+        <qualifiedname>Diagonalizer::diagonalize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="88" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1aad33c9d6c205c60bda4f02588e6e32ca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagonalizer::bidiagonalize</definition>
+        <argsstring>()</argsstring>
+        <name>bidiagonalize</name>
+        <qualifiedname>Diagonalizer::bidiagonalize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="90" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1a0575819eab6e32fcd94869f29ae87342" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Diagonalizer::index</definition>
+        <argsstring>(const size_t i, const size_t j) const</argsstring>
+        <name>index</name>
+        <qualifiedname>Diagonalizer::index</qualifiedname>
+        <param>
+          <type>const size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="92" column="19" bodyfile="src/csl/libdiagonalization.h" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1aeae0f7520be336359363500cbdb15298" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>gsl_matrix_complex *</type>
+        <definition>gsl_matrix_complex * Diagonalizer::getGSLMassMatrix</definition>
+        <argsstring>(std::vector&lt; complex &gt; const &amp;massMatrix) const</argsstring>
+        <name>getGSLMassMatrix</name>
+        <qualifiedname>Diagonalizer::getGSLMassMatrix</qualifiedname>
+        <param>
+          <type>std::vector&lt; complex &gt; const &amp;</type>
+          <declname>massMatrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="98" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1a95f3671d7800a9f2e830c9fc2468d4b6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagonalizer::loadGSLMatrix</definition>
+        <argsstring>(gsl_matrix_complex const *matrix, std::vector&lt; complex &gt; &amp;target)</argsstring>
+        <name>loadGSLMatrix</name>
+        <qualifiedname>Diagonalizer::loadGSLMatrix</qualifiedname>
+        <param>
+          <type>gsl_matrix_complex const *</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; complex &gt; &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="100" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1af3396f1f348c785df5803df8e3b236ae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagonalizer::loadGSLVector</definition>
+        <argsstring>(gsl_vector const *vect, std::vector&lt; real &gt; &amp;target)</argsstring>
+        <name>loadGSLVector</name>
+        <qualifiedname>Diagonalizer::loadGSLVector</qualifiedname>
+        <param>
+          <type>gsl_vector const *</type>
+          <declname>vect</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; real &gt; &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="103" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1a10ba0cfc9b17f5677b7e22262eceb552" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagonalizer::positiveDiagonal</definition>
+        <argsstring>(std::vector&lt; complex &gt; &amp;transfer)</argsstring>
+        <name>positiveDiagonal</name>
+        <qualifiedname>Diagonalizer::positiveDiagonal</qualifiedname>
+        <param>
+          <type>std::vector&lt; complex &gt; &amp;</type>
+          <declname>transfer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="105" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1aafc58394a0f17fe831679393c4cca104" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; complex &gt;</type>
+        <definition>std::vector&lt; complex &gt; Diagonalizer::hermitian</definition>
+        <argsstring>(std::vector&lt; complex &gt; const &amp;init) const</argsstring>
+        <name>hermitian</name>
+        <qualifiedname>Diagonalizer::hermitian</qualifiedname>
+        <param>
+          <type>std::vector&lt; complex &gt; const &amp;</type>
+          <declname>init</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="107" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1ae2228e88f9ced32af96bb837c890a7d8" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; complex &gt;</type>
+        <definition>std::vector&lt; complex &gt; Diagonalizer::dot</definition>
+        <argsstring>(std::vector&lt; complex &gt; const &amp;A, std::vector&lt; complex &gt; const &amp;B) const</argsstring>
+        <name>dot</name>
+        <qualifiedname>Diagonalizer::dot</qualifiedname>
+        <param>
+          <type>std::vector&lt; complex &gt; const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; complex &gt; const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="109" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagonalizer_1a56e449ed96b2479ba27345f712efd395" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Diagonalizer::print</definition>
+        <argsstring>(std::vector&lt; T &gt; const &amp;v) const</argsstring>
+        <name>print</name>
+        <qualifiedname>Diagonalizer::print</qualifiedname>
+        <param>
+          <type>std::vector&lt; T &gt; const &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/libdiagonalization.h" line="113" column="10" bodyfile="src/csl/libdiagonalization.h" bodystart="113" bodyend="119"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/csl/libdiagonalization.h" line="35" column="1" bodyfile="src/csl/libdiagonalization.h" bodystart="35" bodyend="130"/>
+    <listofallmembers>
+      <member refid="classDiagonalizer_1a2bf13ca6ba340d532985c41145fd8f6d" prot="public" virt="non-virtual"><scope>Diagonalizer</scope><name>applyBiDiagonalization</name></member>
+      <member refid="classDiagonalizer_1a0c8fd0fd64a579cb4cdbdfc793ed8655" prot="public" virt="non-virtual"><scope>Diagonalizer</scope><name>applyDiagonalization</name></member>
+      <member refid="classDiagonalizer_1aad33c9d6c205c60bda4f02588e6e32ca" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>bidiagonalize</name></member>
+      <member refid="classDiagonalizer_1aaa0eb1a6603ec242e2a1e68c6b38f34e" prot="public" virt="non-virtual"><scope>Diagonalizer</scope><name>complex</name></member>
+      <member refid="classDiagonalizer_1ae1e2c2288851a1c462b3c031ab1a9b06" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>diagonalize</name></member>
+      <member refid="classDiagonalizer_1aff43b7cfdbaf474bd44cc11e5550361b" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>diagonalize</name></member>
+      <member refid="classDiagonalizer_1a4e12651588d2a198cc9cf2d2e8d9e725" prot="public" virt="non-virtual"><scope>Diagonalizer</scope><name>Diagonalizer</name></member>
+      <member refid="classDiagonalizer_1ae2228e88f9ced32af96bb837c890a7d8" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>dot</name></member>
+      <member refid="classDiagonalizer_1aeae0f7520be336359363500cbdb15298" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>getGSLMassMatrix</name></member>
+      <member refid="classDiagonalizer_1aafc58394a0f17fe831679393c4cca104" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>hermitian</name></member>
+      <member refid="classDiagonalizer_1a0575819eab6e32fcd94869f29ae87342" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>index</name></member>
+      <member refid="classDiagonalizer_1a95f3671d7800a9f2e830c9fc2468d4b6" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>loadGSLMatrix</name></member>
+      <member refid="classDiagonalizer_1af3396f1f348c785df5803df8e3b236ae" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>loadGSLVector</name></member>
+      <member refid="classDiagonalizer_1ac23bdf064fece7f387fe1a9bbd740cb0" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>m_bidiag</name></member>
+      <member refid="classDiagonalizer_1a2afb1f7901e7d557aeab3bfd04e9b452" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>m_computed</name></member>
+      <member refid="classDiagonalizer_1ae78def33469c5c4b491927a80c342d27" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>m_data</name></member>
+      <member refid="classDiagonalizer_1ac5fa94ecece0be740fdbbf3901d88513" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>m_mass</name></member>
+      <member refid="classDiagonalizer_1a0bda15f3697a91a73de1a19a6ea822cc" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>m_N</name></member>
+      <member refid="classDiagonalizer_1a625bd928a5d5168cb9959c9b6d120dd6" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>m_transfer</name></member>
+      <member refid="classDiagonalizer_1aacf5ff3e37e314e30d00d0e138060035" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>m_transfer2</name></member>
+      <member refid="classDiagonalizer_1a560bc358be93e96a6e7b611824e9af66" prot="public" virt="non-virtual"><scope>Diagonalizer</scope><name>mass</name></member>
+      <member refid="classDiagonalizer_1a10ba0cfc9b17f5677b7e22262eceb552" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>positiveDiagonal</name></member>
+      <member refid="classDiagonalizer_1a2c92a052d25a89508412715ef1fa7c42" prot="public" virt="non-virtual"><scope>Diagonalizer</scope><name>precision</name></member>
+      <member refid="classDiagonalizer_1a56e449ed96b2479ba27345f712efd395" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>print</name></member>
+      <member refid="classDiagonalizer_1a2cb0662f0254c67a8a83f3e6420e0be8" prot="public" virt="non-virtual"><scope>Diagonalizer</scope><name>real</name></member>
+      <member refid="classDiagonalizer_1a6197e35c9229918d262f9a32212fcf82" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>sort</name></member>
+      <member refid="classDiagonalizer_1a163f423943a5168a1ae2c4552bccb232" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>sort</name></member>
+      <member refid="classDiagonalizer_1abeee89b39e2f56eee6619fda73598013" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>swap</name></member>
+      <member refid="classDiagonalizer_1aa53e15b1179578c2c82dc49de7733774" prot="public" virt="non-virtual"><scope>Diagonalizer</scope><name>transfer</name></member>
+      <member refid="classDiagonalizer_1ad100642b32982aafcf641b554e273e94" prot="public" virt="non-virtual"><scope>Diagonalizer</scope><name>transfer2</name></member>
+      <member refid="classDiagonalizer_1a23b392f2bfa9667c3d6dd3d15e435992" prot="private" virt="non-virtual"><scope>Diagonalizer</scope><name>updateDiagonalization</name></member>
+      <member refid="classDiagonalizer_1addc02bdc0540e4917c337dddfe4e692a" prot="public" virt="non-virtual"><scope>Diagonalizer</scope><name>~Diagonalizer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

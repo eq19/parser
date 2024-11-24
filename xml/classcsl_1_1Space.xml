@@ -1,0 +1,1179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcsl_1_1Space" kind="class" language="C++" prot="public">
+    <compoundname>csl::Space</compoundname>
+    <derivedcompoundref refid="classcolor_1_1ColorSpace" prot="public" virt="non-virtual">color::ColorSpace</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1DiracSpace" prot="public" virt="non-virtual">mty::DiracSpace</derivedcompoundref>
+    <includes refid="space_8h" local="no">space.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcsl_1_1Space_1a1133f351866aca2c4ccaf5440ae70457" prot="public" static="no" mutable="yes">
+        <type>bool</type>
+        <definition>bool csl::Space::keepCycles</definition>
+        <argsstring></argsstring>
+        <name>keepCycles</name>
+        <qualifiedname>csl::Space::keepCycles</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="64" column="18" bodyfile="src/csl/space.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classcsl_1_1Space_1a09f62985fe3db824893d375783f6e552" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool csl::Space::applyMetric</definition>
+        <argsstring></argsstring>
+        <name>applyMetric</name>
+        <qualifiedname>csl::Space::applyMetric</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="66" column="17" bodyfile="src/csl/space.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classcsl_1_1Space_1a5492e168d367d61c45c685835a623244" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string csl::Space::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>csl::Space::name</qualifiedname>
+        <briefdescription>
+<para>Name of the vector space. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="72" column="17" bodyfile="src/csl/space.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1Space_1a0bb4f39fe932f6028ba31f7072e94caa" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int csl::Space::dim</definition>
+        <argsstring></argsstring>
+        <name>dim</name>
+        <qualifiedname>csl::Space::dim</qualifiedname>
+        <briefdescription>
+<para>Dimension of the space. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="77" column="9" bodyfile="src/csl/space.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1Space_1a66de99da8500ab5931ad5ae7366826b6" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr csl::Space::symbolicDim</definition>
+        <argsstring></argsstring>
+        <name>symbolicDim</name>
+        <qualifiedname>csl::Space::symbolicDim</qualifiedname>
+        <initializer>= <ref refid="literal_8h_1a65960e7645699e5eeed663bab0d2309b" kindref="member">CSL_UNDEF</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="79" column="15" bodyfile="src/csl/space.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1Space_1ad73c369af3d12acd80df17f4143b9551" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool csl::Space::signedIndex</definition>
+        <argsstring></argsstring>
+        <name>signedIndex</name>
+        <qualifiedname>csl::Space::signedIndex</qualifiedname>
+        <briefdescription>
+<para>Property of indices: if true, it means that the metric is non trivial (given by the user at initialization) and that up- or down- position of indices matter in expressions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="86" column="10" bodyfile="src/csl/space.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1Space_1a770b7f272ce58a442a6d7eaa7583af78" prot="protected" static="no" mutable="yes">
+        <type>std::map&lt; char, std::string &gt;</type>
+        <definition>std::map&lt;char, std::string&gt; csl::Space::nameIndices</definition>
+        <argsstring></argsstring>
+        <name>nameIndices</name>
+        <qualifiedname>csl::Space::nameIndices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="89" column="22" bodyfile="src/csl/space.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1Space_1a08d0b51a8c3a61963e12b442d49ef5dd" prot="protected" static="no" mutable="yes">
+        <type>std::map&lt; std::string, char &gt;</type>
+        <definition>std::map&lt;std::string, char&gt; csl::Space::specIndices</definition>
+        <argsstring></argsstring>
+        <name>specIndices</name>
+        <qualifiedname>csl::Space::specIndices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="91" column="22" bodyfile="src/csl/space.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1Space_1a474dca7629f4655ad29e4b3ee6430f3a" prot="protected" static="no" mutable="yes">
+        <type>std::vector&lt; std::pair&lt; std::string, Index::ID_type &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;std::string, Index::ID_type&gt; &gt; csl::Space::availableIndices</definition>
+        <argsstring></argsstring>
+        <name>availableIndices</name>
+        <qualifiedname>csl::Space::availableIndices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="94" column="9" bodyfile="src/csl/space.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1Space_1a368024ae81726c26c7af95f7837fab23" prot="protected" static="no" mutable="yes">
+        <type>std::vector&lt; std::pair&lt; std::string, unsigned short &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;std::string, unsigned short&gt; &gt; csl::Space::availableVectors</definition>
+        <argsstring></argsstring>
+        <name>availableVectors</name>
+        <qualifiedname>csl::Space::availableVectors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="97" column="9" bodyfile="src/csl/space.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1Space_1a3b7ea855db886563c8d6e2bef902682d" prot="protected" static="no" mutable="yes">
+        <type>std::vector&lt; std::string &gt;::const_iterator</type>
+        <definition>std::vector&lt;std::string&gt;::const_iterator csl::Space::defaultName</definition>
+        <argsstring></argsstring>
+        <name>defaultName</name>
+        <qualifiedname>csl::Space::defaultName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="99" column="42" bodyfile="src/csl/space.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1Space_1ad3e1d183de6994aae95c633205bca51a" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; csl::Space::defaultIndexNames</definition>
+        <argsstring></argsstring>
+        <name>defaultIndexNames</name>
+        <qualifiedname>csl::Space::defaultIndexNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="101" column="17" bodyfile="src/csl/space.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1Space_1a98c96a51dd8656972534f1890cdc7f88" prot="protected" static="no" mutable="yes">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">Tensor</ref></type>
+        <definition>Tensor csl::Space::delta</definition>
+        <argsstring></argsstring>
+        <name>delta</name>
+        <qualifiedname>csl::Space::delta</qualifiedname>
+        <briefdescription>
+<para>Kronecker delta, public attribute for readability in usage. Element i,j of the tensor is then accessible by space.delta({i,j}) with i,j indices in this space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This attribute is mutable because access functions for parents (operator() to get <ref refid="classcsl_1_1TensorElement" kindref="compound">TensorElement</ref>) is not const, and all many <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> objects are declared const. So we declare this attribute mutable so that the compiler allows it to be changed, event for <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> objets declared const. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="114" column="20" bodyfile="src/csl/space.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1Space_1adb37e6c8c611b83ce476a165b65bf978" prot="protected" static="no" mutable="yes">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">Tensor</ref></type>
+        <definition>Tensor csl::Space::metric</definition>
+        <argsstring></argsstring>
+        <name>metric</name>
+        <qualifiedname>csl::Space::metric</qualifiedname>
+        <briefdescription>
+<para>Public attribute for readability in usage. Element i,j of the tensor is then accessible by space.metric({i,j}) with i,j indices in this space. It corresponds to the metric of the space if it is non trivial, or is redirected to the kronecker delta else. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This attribute is mutable because access functions for parents (operator() to get <ref refid="classcsl_1_1TensorElement" kindref="compound">TensorElement</ref>) is not const, and all many <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> objects are declared const. So we declare this attribute mutable so that the compiler allows it to be changed, event for <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> objets declared const. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="128" column="20" bodyfile="src/csl/space.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1Space_1ad74accb2e9c4c109246436a3afef2b6e" prot="protected" static="no" mutable="yes">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">Tensor</ref></type>
+        <definition>Tensor csl::Space::inverseMetric</definition>
+        <argsstring></argsstring>
+        <name>inverseMetric</name>
+        <qualifiedname>csl::Space::inverseMetric</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="130" column="20" bodyfile="src/csl/space.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1Space_1a27f9b2bfce0a21ddbde0581e7b861daa" prot="protected" static="no" mutable="yes">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">Tensor</ref></type>
+        <definition>Tensor csl::Space::epsilon</definition>
+        <argsstring></argsstring>
+        <name>epsilon</name>
+        <qualifiedname>csl::Space::epsilon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="132" column="20" bodyfile="src/csl/space.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcsl_1_1Space_1ae2c19f01c2f4178429c9308204fc46c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::Space::Space</definition>
+        <argsstring>(const std::string &amp;t_name, int t_dim, std::vector&lt; std::string &gt; const &amp;indexNames={&quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;})</argsstring>
+        <name>Space</name>
+        <qualifiedname>csl::Space::Space</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>t_dim</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>indexNames</declname>
+          <defval>{&quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;}</defval>
+        </param>
+        <briefdescription>
+<para>Initializes the name and the dimension of the space, no metric so only the kronecker delta is relevant, and indices are not signed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the <ref refid="classcsl_1_1Space" kindref="compound">Space</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dimension of the <ref refid="classcsl_1_1Space" kindref="compound">Space</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="142" column="5" bodyfile="src/csl/space.cpp" bodystart="27" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1ae9a8a760bba6985fd84bc3223056be36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::Space::Space</definition>
+        <argsstring>(const std::string &amp;t_name, csl::Expr const &amp;t_dim, std::vector&lt; std::string &gt; const &amp;indexNames={&quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;})</argsstring>
+        <name>Space</name>
+        <qualifiedname>csl::Space::Space</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>t_dim</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>indexNames</declname>
+          <defval>{&quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;}</defval>
+        </param>
+        <briefdescription>
+<para>Initializes the name and the dimension of the space, no metric so only the kronecker delta is relevant, and indices are not signed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the <ref refid="classcsl_1_1Space" kindref="compound">Space</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dimension of the <ref refid="classcsl_1_1Space" kindref="compound">Space</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="153" column="5" bodyfile="src/csl/space.cpp" bodystart="48" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a76e7e8294faef61ec0257b9915b5c8d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::Space::Space</definition>
+        <argsstring>(const std::string &amp;t_name, int t_dim, const std::string &amp;name_metric, const Expr &amp;t_metric, std::vector&lt; std::string &gt; const &amp;indexNames={&quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;})</argsstring>
+        <name>Space</name>
+        <qualifiedname>csl::Space::Space</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>t_dim</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name_metric</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>t_metric</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>indexNames</declname>
+          <defval>{&quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;}</defval>
+        </param>
+        <briefdescription>
+<para>Initializes name, dimension of the space. Here the metrix is given by the user (also its explicit tensor, like diag (-1,1,1,1) for the Minkowski <ref refid="classcsl_1_1Space" kindref="compound">Space</ref>). This constructor constructs then a <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> with signed indices and a non-trivial metric. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the <ref refid="classcsl_1_1Space" kindref="compound">Space</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dimension of the <ref refid="classcsl_1_1Space" kindref="compound">Space</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name_metric</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the metric. Can be set to CSL_UNDEF. In this case the tensor metric will not be defined (but the indexed object g_ab will). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_metric</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Explicit <ref refid="classcsl_1_1TensorElement" kindref="compound">TensorElement</ref> for the metric (should be a 2D square matrix, symmetric). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="171" column="5" bodyfile="src/csl/space.cpp" bodystart="70" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a8f77196927553767c6ebf2e17afd0a69" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>csl::Space::~Space</definition>
+        <argsstring>()</argsstring>
+        <name>~Space</name>
+        <qualifiedname>csl::Space::~Space</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="180" column="13" bodyfile="src/csl/space.cpp" bodystart="99" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a5b6d85a6ad9c156459a8f9a387e883fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::Space::printCode</definition>
+        <argsstring>(std::ostream &amp;out, int indentSize) const</argsstring>
+        <name>printCode</name>
+        <qualifiedname>csl::Space::printCode</qualifiedname>
+        <reimplementedby refid="classcolor_1_1ColorSpace_1a08f3b53e3c1375925eb3e6a68eb9a0b7">printCode</reimplementedby>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indentSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="182" column="18" bodyfile="src/csl/space.cpp" bodystart="103" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1aaf8d904aef388f27895262bbc38ea87e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::Space::printDefinition</definition>
+        <argsstring>(std::ostream &amp;out, int indentSize, bool header=false) const</argsstring>
+        <name>printDefinition</name>
+        <qualifiedname>csl::Space::printDefinition</qualifiedname>
+        <reimplementedby refid="classcolor_1_1ColorSpace_1aa8079d5a40c3347e44288ade000c1d29">printDefinition</reimplementedby>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indentSize</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>header</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="184" column="18" bodyfile="src/csl/space.cpp" bodystart="109" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a968b828ad5aa203d744a28eb742d957f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string csl::Space::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <qualifiedname>csl::Space::getName</qualifiedname>
+        <reimplementedby refid="classcolor_1_1ColorSpace_1a82e5727cfa16c88d8fb424d21ec5b5b0">getName</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The name of the <ref refid="classcsl_1_1Space" kindref="compound">Space</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="191" column="25" bodyfile="src/csl/space.cpp" bodystart="180" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a43ea5e810ae5b49ee6a2b92e3aab45b7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string csl::Space::getNextIndexName</definition>
+        <argsstring>() const</argsstring>
+        <name>getNextIndexName</name>
+        <qualifiedname>csl::Space::getNextIndexName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="193" column="24" bodyfile="src/csl/space.h" bodystart="371" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1ad88a09611615307c2706d41412f81ef2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string csl::Space::getIndexName</definition>
+        <argsstring>(char spec) const</argsstring>
+        <name>getIndexName</name>
+        <qualifiedname>csl::Space::getIndexName</qualifiedname>
+        <param>
+          <type>char</type>
+          <declname>spec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="195" column="24" bodyfile="src/csl/space.h" bodystart="294" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a27f0c6e4fe30a5bd712c3f21511cc173" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string_view</type>
+        <definition>std::string_view csl::Space::getIndexNameView</definition>
+        <argsstring>(char spec) const</argsstring>
+        <name>getIndexNameView</name>
+        <qualifiedname>csl::Space::getIndexNameView</qualifiedname>
+        <param>
+          <type>char</type>
+          <declname>spec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="197" column="29" bodyfile="src/csl/space.h" bodystart="299" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1ac113a6cf91e0cb3d399970afc62c7999" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>char csl::Space::getSpecFromIndexName</definition>
+        <argsstring>(std::string const &amp;t_name) const</argsstring>
+        <name>getSpecFromIndexName</name>
+        <qualifiedname>csl::Space::getSpecFromIndexName</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="199" column="17" bodyfile="src/csl/space.h" bodystart="304" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1ad5f5d81d0a1b9491809fc90f8b6a5545" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int csl::Space::getDim</definition>
+        <argsstring>() const</argsstring>
+        <name>getDim</name>
+        <qualifiedname>csl::Space::getDim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The dimension of the <ref refid="classcsl_1_1Space" kindref="compound">Space</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="204" column="16" bodyfile="src/csl/space.h" bodystart="323" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1ac0c47dede17d3902cf375f38950de656" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr csl::Space::getSymbolicDim</definition>
+        <argsstring>() const</argsstring>
+        <name>getSymbolicDim</name>
+        <qualifiedname>csl::Space::getSymbolicDim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The dimension of the <ref refid="classcsl_1_1Space" kindref="compound">Space</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="209" column="22" bodyfile="src/csl/space.h" bodystart="328" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a6cec2c26132ef1bae61f2c6b012c16f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::Space::getSignedIndex</definition>
+        <argsstring>() const</argsstring>
+        <name>getSignedIndex</name>
+        <qualifiedname>csl::Space::getSignedIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the indices in this <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> are signed. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="215" column="17" bodyfile="src/csl/space.h" bodystart="333" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a1541a2a6235389129d368b13272853f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::Space::hasSpecialTraceProperty</definition>
+        <argsstring>(const csl::vector_expr &amp;tensors) const</argsstring>
+        <name>hasSpecialTraceProperty</name>
+        <qualifiedname>csl::Space::hasSpecialTraceProperty</qualifiedname>
+        <reimplementedby refid="classcolor_1_1ColorSpace_1a48553ba6a07b3eab8d652aae9b8161ca">hasSpecialTraceProperty</reimplementedby>
+        <param>
+          <type>const csl::vector_expr &amp;</type>
+          <declname>tensors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="218" column="5" bodyfile="src/csl/space.cpp" bodystart="185" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1acc2dc003fec546913809f7ef3e9e03c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>csl::vector_expr</type>
+        <definition>csl::vector_expr csl::Space::getSignature</definition>
+        <argsstring>() const</argsstring>
+        <name>getSignature</name>
+        <qualifiedname>csl::Space::getSignature</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="220" column="22" bodyfile="src/csl/space.cpp" bodystart="191" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a6d857ec120dc5dd45a1830f89a885f05" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">Tensor</ref></type>
+        <definition>Tensor csl::Space::getMetric</definition>
+        <argsstring>() const</argsstring>
+        <name>getMetric</name>
+        <qualifiedname>csl::Space::getMetric</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="222" column="12" bodyfile="src/csl/space.cpp" bodystart="201" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a07ba9b8414cbcd39afe2a632208f7294" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">Tensor</ref></type>
+        <definition>Tensor csl::Space::getInverseMetric</definition>
+        <argsstring>() const</argsstring>
+        <name>getInverseMetric</name>
+        <qualifiedname>csl::Space::getInverseMetric</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="224" column="12" bodyfile="src/csl/space.cpp" bodystart="206" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1ae3995c3ed2af1656446ba77cee6dfe32" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">Tensor</ref></type>
+        <definition>Tensor csl::Space::getDelta</definition>
+        <argsstring>() const</argsstring>
+        <name>getDelta</name>
+        <qualifiedname>csl::Space::getDelta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="226" column="12" bodyfile="src/csl/space.cpp" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a048579060d6e892777e53a2dabf928c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">Tensor</ref></type>
+        <definition>Tensor csl::Space::getEpsilon</definition>
+        <argsstring>() const</argsstring>
+        <name>getEpsilon</name>
+        <qualifiedname>csl::Space::getEpsilon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="228" column="12" bodyfile="src/csl/space.cpp" bodystart="216" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1ad645509baf26605ae86ff7ffdd3233aa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::Space::applyMetricOnTensor</definition>
+        <argsstring>(Expr const &amp;tensor, size_t axis, bool covariant) const</argsstring>
+        <name>applyMetricOnTensor</name>
+        <qualifiedname>csl::Space::applyMetricOnTensor</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> const &amp;</type>
+          <declname>tensor</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>covariant</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="231" column="5" bodyfile="src/csl/space.cpp" bodystart="226" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a3e22f45ad75d9f625ef0637cd777190f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Index" kindref="compound">Index</ref></type>
+        <definition>Index csl::Space::generateIndex</definition>
+        <argsstring>(const std::string &amp;name) const</argsstring>
+        <name>generateIndex</name>
+        <qualifiedname>csl::Space::generateIndex</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Generates and returns an index in the right <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> (itself) of name <bold>name</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the <ref refid="classcsl_1_1Index" kindref="compound">Index</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> of name <bold>name</bold> living in the <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *this. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="241" column="18" bodyfile="src/csl/space.h" bodystart="366" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a57e35dce20e198e9eabab3224061ab07" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Index" kindref="compound">Index</ref></type>
+        <definition>Index csl::Space::generateIndex</definition>
+        <argsstring>() const</argsstring>
+        <name>generateIndex</name>
+        <qualifiedname>csl::Space::generateIndex</qualifiedname>
+        <briefdescription>
+<para>Generates and returns an index in the right <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> (itself) of name defined by the program. For now the index is name i_{number}, but in the future one should be able to defined a set of names for a given space, for example {&quot;mu&quot;, &quot;nu&quot;, &quot;rhi&quot;, &quot;sigma&quot;}... </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> of name i_{number} living in the <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *this. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="251" column="18" bodyfile="src/csl/space.h" bodystart="380" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a2119016c4b1a6d231b97e3c20781b49a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> &gt;</type>
+        <definition>std::vector&lt; Index &gt; csl::Space::generateIndices</definition>
+        <argsstring>(size_t N) const</argsstring>
+        <name>generateIndices</name>
+        <qualifiedname>csl::Space::generateIndices</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="253" column="24" bodyfile="src/csl/space.h" bodystart="385" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a6961dd8b230baa432699ddcb5b85a875" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> &gt;</type>
+        <definition>std::vector&lt; Index &gt; csl::Space::generateIndices</definition>
+        <argsstring>(size_t N, const std::string &amp;name) const</argsstring>
+        <name>generateIndices</name>
+        <qualifiedname>csl::Space::generateIndices</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="254" column="24" bodyfile="src/csl/space.h" bodystart="394" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a23ec526397be2dc363118a9efa8c6094" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Index" kindref="compound">Index</ref></type>
+        <definition>Index csl::Space::generateSimilar</definition>
+        <argsstring>(const Index &amp;model) const</argsstring>
+        <name>generateSimilar</name>
+        <qualifiedname>csl::Space::generateSimilar</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> &amp;</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="257" column="18" bodyfile="src/csl/space.h" bodystart="359" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1af2328a57416440f652efeed38b2c87e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::Space::resetIndexNumber</definition>
+        <argsstring>() const</argsstring>
+        <name>resetIndexNumber</name>
+        <qualifiedname>csl::Space::resetIndexNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="259" column="17" bodyfile="src/csl/space.h" bodystart="338" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a191f9429fe6f855f8397c4e83d9f0f11" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::Space::refreshIndexName</definition>
+        <argsstring>(Index &amp;index) const</argsstring>
+        <name>refreshIndexName</name>
+        <qualifiedname>csl::Space::refreshIndexName</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">Index</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="261" column="17" bodyfile="src/csl/space.h" bodystart="344" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a3a5473e7e5075c398bdd98c2029dfaac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::Space::generateVector</definition>
+        <argsstring>(const std::string &amp;t_name) const</argsstring>
+        <name>generateVector</name>
+        <qualifiedname>csl::Space::generateVector</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <briefdescription>
+<para>Generates and returns a <ref refid="classcsl_1_1Vector" kindref="compound">Vector</ref> in the right <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> (itself) of name <bold>name</bold>, filled with <ref refid="classcsl_1_1Variable" kindref="compound">Variable</ref> objects as components (X_0, X_1, ...) for a <bold>name</bold> &quot;X&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the <ref refid="classcsl_1_1Vector" kindref="compound">Vector</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classcsl_1_1Vector" kindref="compound">Vector</ref> of Variables living in the <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *this. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="272" column="10" bodyfile="src/csl/space.cpp" bodystart="263" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1ad27b0e9a5e2b2c1c6639f0479f57c690" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>string csl::Space::generateVectorName</definition>
+        <argsstring>(const std::string &amp;t_name) const</argsstring>
+        <name>generateVectorName</name>
+        <qualifiedname>csl::Space::generateVectorName</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="274" column="17" bodyfile="src/csl/space.cpp" bodystart="268" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1aeb8ce5559b38c8666a940f4197169a86" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::Space::addIndexNames</definition>
+        <argsstring>(const std::string &amp;name) const</argsstring>
+        <name>addIndexNames</name>
+        <qualifiedname>csl::Space::addIndexNames</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="276" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a38fd8931aadb3be1c6f09f38c87ceb09" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::Space::addVectorNames</definition>
+        <argsstring>(const std::string &amp;name) const</argsstring>
+        <name>addVectorNames</name>
+        <qualifiedname>csl::Space::addVectorNames</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="278" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1adadeb704e8cf9399c71db5a4827891de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::Space::addIndexNames</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;names) const</argsstring>
+        <name>addIndexNames</name>
+        <qualifiedname>csl::Space::addIndexNames</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>names</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="280" column="10" bodyfile="src/csl/space.cpp" bodystart="292" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a5a803d0b429bc88545cd645c8c7eb95a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::Space::addVectorNames</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;names) const</argsstring>
+        <name>addVectorNames</name>
+        <qualifiedname>csl::Space::addVectorNames</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>names</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="282" column="10" bodyfile="src/csl/space.cpp" bodystart="283" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a35cf0a3479e3d5efdb3d7000fecbf56b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::Space::calculateTrace</definition>
+        <argsstring>(csl::vector_expr tensors) const</argsstring>
+        <name>calculateTrace</name>
+        <qualifiedname>csl::Space::calculateTrace</qualifiedname>
+        <reimplementedby refid="classcolor_1_1ColorSpace_1ab61190805455138c617d76ff751c90de">calculateTrace</reimplementedby>
+        <param>
+          <type>csl::vector_expr</type>
+          <declname>tensors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="284" column="18" bodyfile="src/csl/space.cpp" bodystart="316" bodyend="320"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcsl_1_1Space_1a7550dcfe47b2aab765761f1bd759e0eb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::Space::buildEpsilon</definition>
+        <argsstring>()</argsstring>
+        <name>buildEpsilon</name>
+        <qualifiedname>csl::Space::buildEpsilon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="287" column="10" bodyfile="src/csl/space.cpp" bodystart="143" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1aca20a98ae1e46e65893cc373015012da" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Index::ID_type</type>
+        <definition>Index::ID_type csl::Space::getID</definition>
+        <argsstring>(std::string_view name) const</argsstring>
+        <name>getID</name>
+        <qualifiedname>csl::Space::getID</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="289" column="27" bodyfile="src/csl/space.h" bodystart="349" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Space_1a8eb38044441d203ba7b0e86e64db49c4" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>string csl::Space::getProperVectorName</definition>
+        <argsstring>(const std::string &amp;initialName) const</argsstring>
+        <name>getProperVectorName</name>
+        <qualifiedname>csl::Space::getProperVectorName</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>initialName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/space.h" line="291" column="17" bodyfile="src/csl/space.cpp" bodystart="301" bodyend="314"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="classcsl_1_1Vector" kindref="compound">Vector</ref> space that has a name, a dimension, a delta tensor and possibly a non-trivial metric. If a metric is given, the indices in this space are signed, i.e. their up- or down- position matter in expressions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>color::ColorSpace</label>
+        <link refid="classcolor_1_1ColorSpace"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>csl::Space</label>
+        <link refid="classcsl_1_1Space"/>
+      </node>
+      <node id="3">
+        <label>mty::DiracSpace</label>
+        <link refid="classmty_1_1DiracSpace"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>csl::Space</label>
+        <link refid="classcsl_1_1Space"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>symbolicDim</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>delta</edgelabel>
+          <edgelabel>epsilon</edgelabel>
+          <edgelabel>inverseMetric</edgelabel>
+          <edgelabel>metric</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="3">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/csl/space.h" line="61" column="1" bodyfile="src/csl/space.h" bodystart="61" bodyend="292"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1Space_1aeb8ce5559b38c8666a940f4197169a86" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>addIndexNames</name></member>
+      <member refid="classcsl_1_1Space_1adadeb704e8cf9399c71db5a4827891de" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>addIndexNames</name></member>
+      <member refid="classcsl_1_1Space_1a38fd8931aadb3be1c6f09f38c87ceb09" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>addVectorNames</name></member>
+      <member refid="classcsl_1_1Space_1a5a803d0b429bc88545cd645c8c7eb95a" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>addVectorNames</name></member>
+      <member refid="classcsl_1_1Space_1a09f62985fe3db824893d375783f6e552" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>applyMetric</name></member>
+      <member refid="classcsl_1_1Space_1ad645509baf26605ae86ff7ffdd3233aa" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>applyMetricOnTensor</name></member>
+      <member refid="classcsl_1_1Space_1a474dca7629f4655ad29e4b3ee6430f3a" prot="protected" virt="non-virtual"><scope>csl::Space</scope><name>availableIndices</name></member>
+      <member refid="classcsl_1_1Space_1a368024ae81726c26c7af95f7837fab23" prot="protected" virt="non-virtual"><scope>csl::Space</scope><name>availableVectors</name></member>
+      <member refid="classcsl_1_1Space_1a7550dcfe47b2aab765761f1bd759e0eb" prot="private" virt="non-virtual"><scope>csl::Space</scope><name>buildEpsilon</name></member>
+      <member refid="classcsl_1_1Space_1a35cf0a3479e3d5efdb3d7000fecbf56b" prot="public" virt="virtual"><scope>csl::Space</scope><name>calculateTrace</name></member>
+      <member refid="classcsl_1_1Space_1ad3e1d183de6994aae95c633205bca51a" prot="protected" virt="non-virtual"><scope>csl::Space</scope><name>defaultIndexNames</name></member>
+      <member refid="classcsl_1_1Space_1a3b7ea855db886563c8d6e2bef902682d" prot="protected" virt="non-virtual"><scope>csl::Space</scope><name>defaultName</name></member>
+      <member refid="classcsl_1_1Space_1a98c96a51dd8656972534f1890cdc7f88" prot="protected" virt="non-virtual"><scope>csl::Space</scope><name>delta</name></member>
+      <member refid="classcsl_1_1Space_1a0bb4f39fe932f6028ba31f7072e94caa" prot="protected" virt="non-virtual"><scope>csl::Space</scope><name>dim</name></member>
+      <member refid="classcsl_1_1Space_1a27f9b2bfce0a21ddbde0581e7b861daa" prot="protected" virt="non-virtual"><scope>csl::Space</scope><name>epsilon</name></member>
+      <member refid="classcsl_1_1Space_1a3e22f45ad75d9f625ef0637cd777190f" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>generateIndex</name></member>
+      <member refid="classcsl_1_1Space_1a57e35dce20e198e9eabab3224061ab07" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>generateIndex</name></member>
+      <member refid="classcsl_1_1Space_1a2119016c4b1a6d231b97e3c20781b49a" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>generateIndices</name></member>
+      <member refid="classcsl_1_1Space_1a6961dd8b230baa432699ddcb5b85a875" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>generateIndices</name></member>
+      <member refid="classcsl_1_1Space_1a23ec526397be2dc363118a9efa8c6094" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>generateSimilar</name></member>
+      <member refid="classcsl_1_1Space_1a3a5473e7e5075c398bdd98c2029dfaac" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>generateVector</name></member>
+      <member refid="classcsl_1_1Space_1ad27b0e9a5e2b2c1c6639f0479f57c690" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>generateVectorName</name></member>
+      <member refid="classcsl_1_1Space_1ae3995c3ed2af1656446ba77cee6dfe32" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>getDelta</name></member>
+      <member refid="classcsl_1_1Space_1ad5f5d81d0a1b9491809fc90f8b6a5545" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>getDim</name></member>
+      <member refid="classcsl_1_1Space_1a048579060d6e892777e53a2dabf928c8" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>getEpsilon</name></member>
+      <member refid="classcsl_1_1Space_1aca20a98ae1e46e65893cc373015012da" prot="private" virt="non-virtual"><scope>csl::Space</scope><name>getID</name></member>
+      <member refid="classcsl_1_1Space_1ad88a09611615307c2706d41412f81ef2" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>getIndexName</name></member>
+      <member refid="classcsl_1_1Space_1a27f0c6e4fe30a5bd712c3f21511cc173" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>getIndexNameView</name></member>
+      <member refid="classcsl_1_1Space_1a07ba9b8414cbcd39afe2a632208f7294" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>getInverseMetric</name></member>
+      <member refid="classcsl_1_1Space_1a6d857ec120dc5dd45a1830f89a885f05" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>getMetric</name></member>
+      <member refid="classcsl_1_1Space_1a968b828ad5aa203d744a28eb742d957f" prot="public" virt="virtual"><scope>csl::Space</scope><name>getName</name></member>
+      <member refid="classcsl_1_1Space_1a43ea5e810ae5b49ee6a2b92e3aab45b7" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>getNextIndexName</name></member>
+      <member refid="classcsl_1_1Space_1a8eb38044441d203ba7b0e86e64db49c4" prot="private" virt="non-virtual"><scope>csl::Space</scope><name>getProperVectorName</name></member>
+      <member refid="classcsl_1_1Space_1acc2dc003fec546913809f7ef3e9e03c9" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>getSignature</name></member>
+      <member refid="classcsl_1_1Space_1a6cec2c26132ef1bae61f2c6b012c16f3" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>getSignedIndex</name></member>
+      <member refid="classcsl_1_1Space_1ac113a6cf91e0cb3d399970afc62c7999" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>getSpecFromIndexName</name></member>
+      <member refid="classcsl_1_1Space_1ac0c47dede17d3902cf375f38950de656" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>getSymbolicDim</name></member>
+      <member refid="classcsl_1_1Space_1a1541a2a6235389129d368b13272853f8" prot="public" virt="virtual"><scope>csl::Space</scope><name>hasSpecialTraceProperty</name></member>
+      <member refid="classcsl_1_1Space_1ad74accb2e9c4c109246436a3afef2b6e" prot="protected" virt="non-virtual"><scope>csl::Space</scope><name>inverseMetric</name></member>
+      <member refid="classcsl_1_1Space_1a1133f351866aca2c4ccaf5440ae70457" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>keepCycles</name></member>
+      <member refid="classcsl_1_1Space_1adb37e6c8c611b83ce476a165b65bf978" prot="protected" virt="non-virtual"><scope>csl::Space</scope><name>metric</name></member>
+      <member refid="classcsl_1_1Space_1a5492e168d367d61c45c685835a623244" prot="protected" virt="non-virtual"><scope>csl::Space</scope><name>name</name></member>
+      <member refid="classcsl_1_1Space_1a770b7f272ce58a442a6d7eaa7583af78" prot="protected" virt="non-virtual"><scope>csl::Space</scope><name>nameIndices</name></member>
+      <member refid="classcsl_1_1Space_1a5b6d85a6ad9c156459a8f9a387e883fa" prot="public" virt="virtual"><scope>csl::Space</scope><name>printCode</name></member>
+      <member refid="classcsl_1_1Space_1aaf8d904aef388f27895262bbc38ea87e" prot="public" virt="virtual"><scope>csl::Space</scope><name>printDefinition</name></member>
+      <member refid="classcsl_1_1Space_1a191f9429fe6f855f8397c4e83d9f0f11" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>refreshIndexName</name></member>
+      <member refid="classcsl_1_1Space_1af2328a57416440f652efeed38b2c87e0" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>resetIndexNumber</name></member>
+      <member refid="classcsl_1_1Space_1ad73c369af3d12acd80df17f4143b9551" prot="protected" virt="non-virtual"><scope>csl::Space</scope><name>signedIndex</name></member>
+      <member refid="classcsl_1_1Space_1ae2c19f01c2f4178429c9308204fc46c3" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>Space</name></member>
+      <member refid="classcsl_1_1Space_1ae9a8a760bba6985fd84bc3223056be36" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>Space</name></member>
+      <member refid="classcsl_1_1Space_1a76e7e8294faef61ec0257b9915b5c8d8" prot="public" virt="non-virtual"><scope>csl::Space</scope><name>Space</name></member>
+      <member refid="classcsl_1_1Space_1a08d0b51a8c3a61963e12b442d49ef5dd" prot="protected" virt="non-virtual"><scope>csl::Space</scope><name>specIndices</name></member>
+      <member refid="classcsl_1_1Space_1a66de99da8500ab5931ad5ae7366826b6" prot="protected" virt="non-virtual"><scope>csl::Space</scope><name>symbolicDim</name></member>
+      <member refid="classcsl_1_1Space_1a8f77196927553767c6ebf2e17afd0a69" prot="public" virt="virtual"><scope>csl::Space</scope><name>~Space</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

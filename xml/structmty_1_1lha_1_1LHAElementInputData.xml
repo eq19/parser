@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structmty_1_1lha_1_1LHAElementInputData" kind="struct" language="C++" prot="public">
+    <compoundname>mty::lha::LHAElementInputData</compoundname>
+    <includes refid="lhaBuiltIn_8h" local="no">lhaBuiltIn.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmty_1_1lha_1_1LHAElementInputData_1af35892671e44e43df1a6160683d4570e" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t mty::lha::LHAElementInputData::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>mty::lha::LHAElementInputData::id</qualifiedname>
+        <briefdescription>
+<para>Possible id (if not matrix) of the expression. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lhaBuiltIn.h" line="134" column="12" bodyfile="src/marty/core/lhaBuiltIn.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1lha_1_1LHAElementInputData_1a1e1fbd99649a0f32eab8da96b0fee9f0" prot="public" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::lha::LHAElementInputData::expr</definition>
+        <argsstring></argsstring>
+        <name>expr</name>
+        <qualifiedname>mty::lha::LHAElementInputData::expr</qualifiedname>
+        <briefdescription>
+<para>Expression to modify. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lhaBuiltIn.h" line="138" column="15" bodyfile="src/marty/core/lhaBuiltIn.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1lha_1_1LHAElementInputData_1a7d286dc8353634b13521e73dc7df3eb5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::lha::LHAElementInputData::isMatrix</definition>
+        <argsstring></argsstring>
+        <name>isMatrix</name>
+        <qualifiedname>mty::lha::LHAElementInputData::isMatrix</qualifiedname>
+        <briefdescription>
+<para>True if the expression is a matrix. Ohterwise must be a literal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lhaBuiltIn.h" line="142" column="10" bodyfile="src/marty/core/lhaBuiltIn.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Helper struct to define easily an object on which LHA data will apply. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::lha::LHAElementInputData</label>
+        <link refid="structmty_1_1lha_1_1LHAElementInputData"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>expr</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/lhaBuiltIn.h" line="130" column="1" bodyfile="src/marty/core/lhaBuiltIn.h" bodystart="130" bodyend="143"/>
+    <listofallmembers>
+      <member refid="structmty_1_1lha_1_1LHAElementInputData_1a1e1fbd99649a0f32eab8da96b0fee9f0" prot="public" virt="non-virtual"><scope>mty::lha::LHAElementInputData</scope><name>expr</name></member>
+      <member refid="structmty_1_1lha_1_1LHAElementInputData_1af35892671e44e43df1a6160683d4570e" prot="public" virt="non-virtual"><scope>mty::lha::LHAElementInputData</scope><name>id</name></member>
+      <member refid="structmty_1_1lha_1_1LHAElementInputData_1a7d286dc8353634b13521e73dc7df3eb5" prot="public" virt="non-virtual"><scope>mty::lha::LHAElementInputData</scope><name>isMatrix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

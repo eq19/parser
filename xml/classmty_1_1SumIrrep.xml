@@ -1,0 +1,418 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1SumIrrep" kind="class" language="C++" prot="public">
+    <compoundname>mty::SumIrrep</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::vector&lt; Irrep &gt;</basecompoundref>
+    <includes refid="representation_8h" local="no">representation.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmty_1_1SumIrrep_1a0e073d7140681b250fcb70e9507aa328" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="classmty_1_1SemiSimpleAlgebra" kindref="compound">SemiSimpleAlgebra</ref> *</type>
+        <definition>const SemiSimpleAlgebra* mty::SumIrrep::algebra</definition>
+        <argsstring></argsstring>
+        <name>algebra</name>
+        <qualifiedname>mty::SumIrrep::algebra</qualifiedname>
+        <briefdescription>
+<para>Pointer to the algebra from which the Irreps in the sum are irreducible representations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/representation.h" line="460" column="29" bodyfile="src/marty/core/representation.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1SumIrrep_1a69b388d7a19a2d95c485dbc527f5ae02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::SumIrrep::SumIrrep</definition>
+        <argsstring>()</argsstring>
+        <name>SumIrrep</name>
+        <qualifiedname>mty::SumIrrep::SumIrrep</qualifiedname>
+        <briefdescription>
+<para>Default constructor. Initializes an empty <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/representation.h" line="361" column="5" bodyfile="src/marty/core/representation.cpp" bodystart="223" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumIrrep_1a0e5a1b82a4df3ffe1171c5b994dd1bf5" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::SumIrrep::SumIrrep</definition>
+        <argsstring>(const std::vector&lt; Irrep &gt; &amp;t_irrep)</argsstring>
+        <name>SumIrrep</name>
+        <qualifiedname>mty::SumIrrep::SumIrrep</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &gt; &amp;</type>
+          <declname>t_irrep</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with one parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_irrep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::vector of <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> in the sum. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/representation.h" line="367" column="14" bodyfile="src/marty/core/representation.cpp" bodystart="227" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumIrrep_1a9c384b5da3c0086cda1eb222e2e38deb" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::SumIrrep::SumIrrep</definition>
+        <argsstring>(const Irrep &amp;other)</argsstring>
+        <name>SumIrrep</name>
+        <qualifiedname>mty::SumIrrep::SumIrrep</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with one parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First (and unique for now) representation in the sum. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/representation.h" line="373" column="14" bodyfile="src/marty/core/representation.cpp" bodystart="240" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumIrrep_1aa6d4eb627bdc10dc1b4c0f7267f4b58f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mty::SumIrrep::~SumIrrep</definition>
+        <argsstring>()</argsstring>
+        <name>~SumIrrep</name>
+        <qualifiedname>mty::SumIrrep::~SumIrrep</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/representation.h" line="378" column="5" bodyfile="src/marty/core/representation.h" bodystart="378" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumIrrep_1a2b44ae2592f868084e8c3c8f4a340129" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::SumIrrep::getDim</definition>
+        <argsstring>() const</argsstring>
+        <name>getDim</name>
+        <qualifiedname>mty::SumIrrep::getDim</qualifiedname>
+        <briefdescription>
+<para>Calculates and returns the total dimension of the <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref>, i.e. the sum of the dimensions of all representations in the sum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For example, the dimension of  <formula id="277">$ 1\oplus 8\oplus8 \oplus 10
+$</formula> is 27. <simplesect kind="return"><para>The dimension of the <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/representation.h" line="386" column="9" bodyfile="src/marty/core/representation.cpp" bodystart="245" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumIrrep_1a071a75eb1c19b1d3f3fa78cb20c5dcb0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classmty_1_1SemiSimpleAlgebra" kindref="compound">SemiSimpleAlgebra</ref> *</type>
+        <definition>const SemiSimpleAlgebra * mty::SumIrrep::getAlgebra</definition>
+        <argsstring>() const</argsstring>
+        <name>getAlgebra</name>
+        <qualifiedname>mty::SumIrrep::getAlgebra</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to the (const) <ref refid="classmty_1_1SemiSimpleAlgebra" kindref="compound">SemiSimpleAlgebra</ref> of which the Irreps are representations. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/representation.h" line="392" column="29" bodyfile="src/marty/core/representation.cpp" bodystart="253" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumIrrep_1af3707745221d70bba88d0ec118184956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::SumIrrep::insertSort</definition>
+        <argsstring>(const Irrep &amp;other)</argsstring>
+        <name>insertSort</name>
+        <qualifiedname>mty::SumIrrep::insertSort</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Inserts a new <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> in the sum, sorting by dimension (lower dimensions first). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> to insert. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/representation.h" line="399" column="10" bodyfile="src/marty/core/representation.cpp" bodystart="258" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumIrrep_1a30e9f5e8384263f3b6bf6748bada06d6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref></type>
+        <definition>SumIrrep mty::SumIrrep::operator+</definition>
+        <argsstring>(const Irrep &amp;other) const</argsstring>
+        <name>operator+</name>
+        <qualifiedname>mty::SumIrrep::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Implements the sum of the <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> with an <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> (<bold>other</bold>), stores it in a <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> and returns it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> similar to <bold>*this</bold> is created, and <bold>other</bold> is inserted in it, calling <ref refid="classmty_1_1SumIrrep_1af3707745221d70bba88d0ec118184956" kindref="member">SumIrrep::insertSort()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second operand in the sum. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> of ***this** and <bold>other</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/representation.h" line="409" column="14" bodyfile="src/marty/core/representation.cpp" bodystart="287" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumIrrep_1a7fc96066229355423c8422896d355c4d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref></type>
+        <definition>SumIrrep mty::SumIrrep::operator+</definition>
+        <argsstring>(const SumIrrep &amp;other) const</argsstring>
+        <name>operator+</name>
+        <qualifiedname>mty::SumIrrep::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Implements the sum of the <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> with a <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> (<bold>other</bold>), stores it in a <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> and returns it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The two lists of <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> objects are simply merged in a new <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> and sorted. The total dimension of the result is the sum of the two operands&apos; dimensions. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second operand in the sum. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> of ***this** and <bold>other</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/representation.h" line="420" column="14" bodyfile="src/marty/core/representation.cpp" bodystart="295" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumIrrep_1a39ddcc0116907babe7bd485269623854" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref></type>
+        <definition>SumIrrep mty::SumIrrep::operator*</definition>
+        <argsstring>(const Irrep &amp;other) const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>mty::SumIrrep::operator*</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Calculates and returns the product of ***this** and <bold>other</bold> in the form of a sum of irreducible representations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The product is exanded the same way as Irrep::operator*(SumIrrep const&amp; other) to yield a direct sum of <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref>, stored in a new <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> that is returned. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right operand in the product of representation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The product decomposed in sum of <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/representation.h" line="431" column="14" bodyfile="src/marty/core/representation.cpp" bodystart="304" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumIrrep_1a88ee9a73418464535be6e823c8522a9c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref></type>
+        <definition>SumIrrep mty::SumIrrep::operator*</definition>
+        <argsstring>(const SumIrrep &amp;other) const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>mty::SumIrrep::operator*</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Calculates and returns the product of ***this** and <bold>other</bold> in the form of a sum of irreducible representations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The product is exanded the same way as Irrep::operator*(SumIrrep const&amp; other) to yield a direct sum of <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref>, stored in a new <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> that is returned. For example,   <formula id="278">\[ (2\oplus 2)
+\times (1\oplus 3) = (2\times 1)\oplus (2\times 3)\oplus (2\times 1)
+\oplus (2\times 3) = 1\oplus 1\oplus 2\oplus 2\oplus 4\oplus 4.\]</formula> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right operand in the product of representation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The product decomposed in sum of <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/representation.h" line="444" column="14" bodyfile="src/marty/core/representation.cpp" bodystart="313" bodyend="321"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmty_1_1SumIrrep_1a89fdc86c6f97b8fd1522964cc071fb2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;fout, const SumIrrep &amp;s)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::SumIrrep::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Overload of the operator&lt;&lt; for <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref>. Displays the total dimension and all dimensions of <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> in the Sum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output flux. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>irrep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> to display. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The modified flux. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/representation.h" line="453" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Contains a sum of <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> (irreducible representation) of a given <ref refid="classmty_1_1SemiSimpleAlgebra" kindref="compound">SemiSimpleAlgebra</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is a containor of a set of irreducible representations, <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> objects, result of the decomposition of a tensor product of different <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref>. An example in <formula id="257">$ SU(2)$</formula>: <formula id="258">\[2 \times 2 = 1 \oplus 3\]</formula>, <formula id="259">$1 \oplus 3$</formula> is a <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> of size 2, containing the trivial representation of dimension 1, and the triplet. This class keeps its different <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> sorted by increasing dimension at all time in order to respect usual conventions to display them. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mty::SumIrrep</label>
+        <link refid="classmty_1_1SumIrrep"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; Irrep &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mty::SemiSimpleAlgebra</label>
+        <link refid="classmty_1_1SemiSimpleAlgebra"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>inverseCartan</edgelabel>
+          <edgelabel>symbolicCartan</edgelabel>
+          <edgelabel>symbolicMetric</edgelabel>
+          <edgelabel>symbolicRho</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::SumIrrep</label>
+        <link refid="classmty_1_1SumIrrep"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>algebra</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; Irrep &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/representation.h" line="355" column="1" bodyfile="src/marty/core/representation.h" bodystart="355" bodyend="461"/>
+    <listofallmembers>
+      <member refid="classmty_1_1SumIrrep_1a0e073d7140681b250fcb70e9507aa328" prot="protected" virt="non-virtual"><scope>mty::SumIrrep</scope><name>algebra</name></member>
+      <member refid="classmty_1_1SumIrrep_1a071a75eb1c19b1d3f3fa78cb20c5dcb0" prot="public" virt="non-virtual"><scope>mty::SumIrrep</scope><name>getAlgebra</name></member>
+      <member refid="classmty_1_1SumIrrep_1a2b44ae2592f868084e8c3c8f4a340129" prot="public" virt="non-virtual"><scope>mty::SumIrrep</scope><name>getDim</name></member>
+      <member refid="classmty_1_1SumIrrep_1af3707745221d70bba88d0ec118184956" prot="public" virt="non-virtual"><scope>mty::SumIrrep</scope><name>insertSort</name></member>
+      <member refid="classmty_1_1SumIrrep_1a39ddcc0116907babe7bd485269623854" prot="public" virt="non-virtual"><scope>mty::SumIrrep</scope><name>operator*</name></member>
+      <member refid="classmty_1_1SumIrrep_1a88ee9a73418464535be6e823c8522a9c" prot="public" virt="non-virtual"><scope>mty::SumIrrep</scope><name>operator*</name></member>
+      <member refid="classmty_1_1SumIrrep_1a30e9f5e8384263f3b6bf6748bada06d6" prot="public" virt="non-virtual"><scope>mty::SumIrrep</scope><name>operator+</name></member>
+      <member refid="classmty_1_1SumIrrep_1a7fc96066229355423c8422896d355c4d" prot="public" virt="non-virtual"><scope>mty::SumIrrep</scope><name>operator+</name></member>
+      <member refid="classmty_1_1SumIrrep_1a89fdc86c6f97b8fd1522964cc071fb2a" prot="public" virt="non-virtual"><scope>mty::SumIrrep</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classmty_1_1SumIrrep_1a69b388d7a19a2d95c485dbc527f5ae02" prot="public" virt="non-virtual"><scope>mty::SumIrrep</scope><name>SumIrrep</name></member>
+      <member refid="classmty_1_1SumIrrep_1a0e5a1b82a4df3ffe1171c5b994dd1bf5" prot="public" virt="non-virtual"><scope>mty::SumIrrep</scope><name>SumIrrep</name></member>
+      <member refid="classmty_1_1SumIrrep_1a9c384b5da3c0086cda1eb222e2e38deb" prot="public" virt="non-virtual"><scope>mty::SumIrrep</scope><name>SumIrrep</name></member>
+      <member refid="classmty_1_1SumIrrep_1aa6d4eb627bdc10dc1b4c0f7267f4b58f" prot="public" virt="non-virtual"><scope>mty::SumIrrep</scope><name>~SumIrrep</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

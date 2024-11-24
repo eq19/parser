@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1ProcessData" kind="class" language="C++" prot="public">
+    <compoundname>mty::ProcessData</compoundname>
+    <innerclass refid="structmty_1_1ProcessData_1_1Process" prot="private">mty::ProcessData::Process</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1ProcessData_1a1dcbcdb3c0bbb62c724e7ff369df1b86" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; Process &gt;</type>
+        <definition>std::vector&lt;Process&gt; mty::ProcessData::processes</definition>
+        <argsstring></argsstring>
+        <name>processes</name>
+        <qualifiedname>mty::ProcessData::processes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/processdata.h" line="53" column="21" bodyfile="src/marty-plugins/boltzmann-solver/processdata.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1ProcessData_1a58e30180e22a56ea7b57854a9ceccc33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::ProcessData::ProcessData</definition>
+        <argsstring>()</argsstring>
+        <name>ProcessData</name>
+        <qualifiedname>mty::ProcessData::ProcessData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/processdata.h" line="25" column="9" bodyfile="src/marty-plugins/boltzmann-solver/processdata.cpp" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ProcessData_1a15022c07e0bc41f8b26523d9091329d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Process &amp;</type>
+        <definition>ProcessData::Process &amp; mty::ProcessData::addProcess</definition>
+        <argsstring>(std::string const &amp;name, std::vector&lt; mty::Insertion &gt; const &amp;insertions, QuantumNumberData const &amp;qData)</argsstring>
+        <name>addProcess</name>
+        <qualifiedname>mty::ProcessData::addProcess</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref> &gt; const &amp;</type>
+          <declname>insertions</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1QuantumNumberData" kindref="compound">QuantumNumberData</ref> const &amp;</type>
+          <declname>qData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/processdata.h" line="27" column="17" bodyfile="src/marty-plugins/boltzmann-solver/processdata.cpp" bodystart="11" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ProcessData_1ab6c68574a77fd14831c260f9e09da66c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::unique_ptr&lt; <ref refid="classJSON_1_1Node" kindref="compound">JSON::Node</ref> &gt;</type>
+        <definition>std::unique_ptr&lt; JSON::Node &gt; mty::ProcessData::generateJSONParticleList</definition>
+        <argsstring>(std::string const &amp;listName, std::vector&lt; mty::Insertion &gt; const &amp;particles) const</argsstring>
+        <name>generateJSONParticleList</name>
+        <qualifiedname>mty::ProcessData::generateJSONParticleList</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>listName</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref> &gt; const &amp;</type>
+          <declname>particles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/processdata.h" line="33" column="25" bodyfile="src/marty-plugins/boltzmann-solver/processdata.cpp" bodystart="33" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ProcessData_1acbee587e94f4461a6b8afc7e905226db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::unique_ptr&lt; <ref refid="classJSON_1_1Node" kindref="compound">JSON::Node</ref> &gt;</type>
+        <definition>std::unique_ptr&lt; JSON::Node &gt; mty::ProcessData::generateJSONQNumberList</definition>
+        <argsstring>(std::string const &amp;listName, std::map&lt; std::string, int &gt; const &amp;qNumbers) const</argsstring>
+        <name>generateJSONQNumberList</name>
+        <qualifiedname>mty::ProcessData::generateJSONQNumberList</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>listName</declname>
+        </param>
+        <param>
+          <type>std::map&lt; std::string, int &gt; const &amp;</type>
+          <declname>qNumbers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/processdata.h" line="38" column="25" bodyfile="src/marty-plugins/boltzmann-solver/processdata.cpp" bodystart="50" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ProcessData_1a348f768241db8a8f2b2f1d80e210ec21" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::unique_ptr&lt; <ref refid="classJSON_1_1Node" kindref="compound">JSON::Node</ref> &gt;</type>
+        <definition>std::unique_ptr&lt; JSON::Node &gt; mty::ProcessData::generateJSONData</definition>
+        <argsstring>() const</argsstring>
+        <name>generateJSONData</name>
+        <qualifiedname>mty::ProcessData::generateJSONData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/processdata.h" line="43" column="25" bodyfile="src/marty-plugins/boltzmann-solver/processdata.cpp" bodystart="68" bodyend="87"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmty_1_1ProcessData_1a165f01ea18ce14fcd2e300525ec04be7" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ProcessData::processQuantumNumbers</definition>
+        <argsstring>(Process &amp;process, QuantumNumberData const &amp;qData) const</argsstring>
+        <name>processQuantumNumbers</name>
+        <qualifiedname>mty::ProcessData::processQuantumNumbers</qualifiedname>
+        <param>
+          <type>Process &amp;</type>
+          <declname>process</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1QuantumNumberData" kindref="compound">QuantumNumberData</ref> const &amp;</type>
+          <declname>qData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/processdata.h" line="47" column="14" bodyfile="src/marty-plugins/boltzmann-solver/processdata.cpp" bodystart="89" bodyend="106"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty-plugins/boltzmann-solver/processdata.h" line="10" column="5" bodyfile="src/marty-plugins/boltzmann-solver/processdata.h" bodystart="10" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classmty_1_1ProcessData_1a15022c07e0bc41f8b26523d9091329d4" prot="public" virt="non-virtual"><scope>mty::ProcessData</scope><name>addProcess</name></member>
+      <member refid="classmty_1_1ProcessData_1a348f768241db8a8f2b2f1d80e210ec21" prot="public" virt="non-virtual"><scope>mty::ProcessData</scope><name>generateJSONData</name></member>
+      <member refid="classmty_1_1ProcessData_1ab6c68574a77fd14831c260f9e09da66c" prot="public" virt="non-virtual"><scope>mty::ProcessData</scope><name>generateJSONParticleList</name></member>
+      <member refid="classmty_1_1ProcessData_1acbee587e94f4461a6b8afc7e905226db" prot="public" virt="non-virtual"><scope>mty::ProcessData</scope><name>generateJSONQNumberList</name></member>
+      <member refid="classmty_1_1ProcessData_1a58e30180e22a56ea7b57854a9ceccc33" prot="public" virt="non-virtual"><scope>mty::ProcessData</scope><name>ProcessData</name></member>
+      <member refid="classmty_1_1ProcessData_1a1dcbcdb3c0bbb62c724e7ff369df1b86" prot="private" virt="non-virtual"><scope>mty::ProcessData</scope><name>processes</name></member>
+      <member refid="classmty_1_1ProcessData_1a165f01ea18ce14fcd2e300525ec04be7" prot="private" virt="non-virtual"><scope>mty::ProcessData</scope><name>processQuantumNumbers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structcolor_1_1TraceIndices" kind="struct" language="C++" prot="public">
+    <compoundname>color::TraceIndices</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcolor_1_1TraceIndices_1abef749b5d7d6130ffb6c95e7fbde0771" prot="public" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr color::TraceIndices::factor</definition>
+        <argsstring></argsstring>
+        <name>factor</name>
+        <qualifiedname>color::TraceIndices::factor</qualifiedname>
+        <initializer>= CSL_1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="37" column="29" bodyfile="src/marty/core/colorSpace.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcolor_1_1TraceIndices_1a1c6fc654e76220e389cd2ab4d80d5e57" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt;</type>
+        <definition>std::vector&lt;csl::Index&gt; color::TraceIndices::indices</definition>
+        <argsstring></argsstring>
+        <name>indices</name>
+        <qualifiedname>color::TraceIndices::indices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="38" column="17" bodyfile="src/marty/core/colorSpace.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcolor_1_1TraceIndices_1aa34c020780e4575ffac45f169555fb74" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t color::TraceIndices::symmetry</definition>
+        <argsstring></argsstring>
+        <name>symmetry</name>
+        <qualifiedname>color::TraceIndices::symmetry</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="39" column="29" bodyfile="src/marty/core/colorSpace.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcolor_1_1TraceIndices_1a666f1abd0aae45cf81fbc156c696e964" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool color::TraceIndices::isSymmetrized</definition>
+        <argsstring>() const</argsstring>
+        <name>isSymmetrized</name>
+        <qualifiedname>color::TraceIndices::isSymmetrized</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="43" column="10" bodyfile="src/marty/core/colorSpace.h" bodystart="43" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="structcolor_1_1TraceIndices_1a0936c94aebfa2abecec0f90ce3dd6e5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, TraceIndices const &amp;trace)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>color::TraceIndices::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> const &amp;</type>
+          <declname>trace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="48" column="12" bodyfile="src/marty/core/colorSpace.cpp" bodystart="52" bodyend="63"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>color::TraceIndices</label>
+        <link refid="structcolor_1_1TraceIndices"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>factor</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/colorSpace.h" line="36" column="1" bodyfile="src/marty/core/colorSpace.h" bodystart="36" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structcolor_1_1TraceIndices_1abef749b5d7d6130ffb6c95e7fbde0771" prot="public" virt="non-virtual"><scope>color::TraceIndices</scope><name>factor</name></member>
+      <member refid="structcolor_1_1TraceIndices_1a1c6fc654e76220e389cd2ab4d80d5e57" prot="public" virt="non-virtual"><scope>color::TraceIndices</scope><name>indices</name></member>
+      <member refid="structcolor_1_1TraceIndices_1a666f1abd0aae45cf81fbc156c696e964" prot="public" virt="non-virtual"><scope>color::TraceIndices</scope><name>isSymmetrized</name></member>
+      <member refid="structcolor_1_1TraceIndices_1a0936c94aebfa2abecec0f90ce3dd6e5c" prot="public" virt="non-virtual"><scope>color::TraceIndices</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structcolor_1_1TraceIndices_1aa34c020780e4575ffac45f169555fb74" prot="public" virt="non-virtual"><scope>color::TraceIndices</scope><name>symmetry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

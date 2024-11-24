@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structmty_1_1PartnerShip" kind="struct" language="C++" prot="public">
+    <compoundname>mty::PartnerShip</compoundname>
+    <includes refid="quantumField_8h" local="no">quantumField.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmty_1_1PartnerShip_1ad2f539eb54636aefa3fd7c9d55f3dfd2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mty::PartnerShip::self</definition>
+        <argsstring></argsstring>
+        <name>self</name>
+        <qualifiedname>mty::PartnerShip::self</qualifiedname>
+        <initializer>{-1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="117" column="10" bodyfile="src/marty/core/quantumField.h" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1PartnerShip_1a13e3741d0a5abeef41450cf9fb0656a5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mty::PartnerShip::partner</definition>
+        <argsstring></argsstring>
+        <name>partner</name>
+        <qualifiedname>mty::PartnerShip::partner</qualifiedname>
+        <initializer>{-1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="118" column="10" bodyfile="src/marty/core/quantumField.h" bodystart="118" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1PartnerShip_1a02c3055bbbdb758954f83660029dcba0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::PartnerShip::isLeft</definition>
+        <argsstring></argsstring>
+        <name>isLeft</name>
+        <qualifiedname>mty::PartnerShip::isLeft</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="119" column="10" bodyfile="src/marty/core/quantumField.h" bodystart="119" bodyend="119"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structmty_1_1PartnerShip_1abd01d59573aef6993dff4fc657e5c023" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::PartnerShip::isHappyWith</definition>
+        <argsstring>(PartnerShip const &amp;other) const</argsstring>
+        <name>isHappyWith</name>
+        <qualifiedname>mty::PartnerShip::isHappyWith</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1PartnerShip" kindref="compound">PartnerShip</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="121" column="10" bodyfile="src/marty/core/quantumField.h" bodystart="121" bodyend="125"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Structure containing data about fermion ordering. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Each external fermion in a process owns such data. self is the integer corresponding to the fermion, partner the number representing its partner and isLeft a boolean telling if the fermion must be on the left of the chain or not. Take an example with fermions <formula id="207">$ \psi _i $</formula>;   <formula id="208">\[
+     \left(\bar{\psi}_2 \psi _3\right)\left(\bar{\psi}_4 \psi _1\right),
+\]</formula> fermions <formula id="207">$ \psi _i $</formula> have respectively PartnerShips  <formula id="209">$ (2, 3, true)
+$</formula>, <formula id="210">$ (3, 2, false) $</formula>, <formula id="211">$ (4, 1, true) $</formula> and <formula id="212">$ (1, 4, false) $</formula>. </para>
+    </detaileddescription>
+    <location file="src/marty/core/quantumField.h" line="116" column="1" bodyfile="src/marty/core/quantumField.h" bodystart="116" bodyend="126"/>
+    <listofallmembers>
+      <member refid="structmty_1_1PartnerShip_1abd01d59573aef6993dff4fc657e5c023" prot="public" virt="non-virtual"><scope>mty::PartnerShip</scope><name>isHappyWith</name></member>
+      <member refid="structmty_1_1PartnerShip_1a02c3055bbbdb758954f83660029dcba0" prot="public" virt="non-virtual"><scope>mty::PartnerShip</scope><name>isLeft</name></member>
+      <member refid="structmty_1_1PartnerShip_1a13e3741d0a5abeef41450cf9fb0656a5" prot="public" virt="non-virtual"><scope>mty::PartnerShip</scope><name>partner</name></member>
+      <member refid="structmty_1_1PartnerShip_1ad2f539eb54636aefa3fd7c9d55f3dfd2" prot="public" virt="non-virtual"><scope>mty::PartnerShip</scope><name>self</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

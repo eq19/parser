@@ -1,0 +1,1292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1Spectrum" kind="class" language="C++" prot="public">
+    <compoundname>mty::Spectrum</compoundname>
+    <includes refid="spectrum_8h" local="no">spectrum.h</includes>
+    <innerclass refid="structmty_1_1Spectrum_1_1MatrixEl" prot="public">mty::Spectrum::MatrixEl</innerclass>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmty_1_1Spectrum_1a28f31be44a5779a3f557cf64d7619893" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classboost_1_1numeric_1_1ublas_1_1matrix" kindref="compound">boost::numeric::ublas::matrix</ref>&lt; T &gt;</type>
+        <definition>using mty::Spectrum::matrix =  boost::numeric::ublas::matrix&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>matrix</name>
+        <qualifiedname>mty::Spectrum::matrix</qualifiedname>
+        <briefdescription>
+<para>Using for matrices in boost libraries. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the value type in the matrix. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="90" column="5" bodyfile="src/marty/core/spectrum.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmty_1_1Spectrum_1a21ed2efd16f13d09b0bfc60bc6343fd7" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classboost_1_1numeric_1_1ublas_1_1identity__matrix" kindref="compound">boost::numeric::ublas::identity_matrix</ref>&lt; T &gt;</type>
+        <definition>using mty::Spectrum::id_matrix =  boost::numeric::ublas::identity_matrix&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>id_matrix</name>
+        <qualifiedname>mty::Spectrum::id_matrix</qualifiedname>
+        <briefdescription>
+<para>Using for identity matrices in boost libraries. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the value type in the matrix. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="98" column="5" bodyfile="src/marty/core/spectrum.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmty_1_1Spectrum_1a4a85127864868bb34dfaafe1bfb3cae8" prot="public" static="no">
+        <type>double</type>
+        <definition>using mty::Spectrum::FloatType =  double</definition>
+        <argsstring></argsstring>
+        <name>FloatType</name>
+        <qualifiedname>mty::Spectrum::FloatType</qualifiedname>
+        <briefdescription>
+<para>Type of floating point variable for numerical diagonalization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="102" column="5" bodyfile="src/marty/core/spectrum.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmty_1_1Spectrum_1a6d3bf395743fa4877414e31480904652" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::Spectrum::bidiagonalization</definition>
+        <argsstring></argsstring>
+        <name>bidiagonalization</name>
+        <qualifiedname>mty::Spectrum::bidiagonalization</qualifiedname>
+        <briefdescription>
+<para>Tells if this class is used for a standard diagonalization (false) or a bi-diagonalization (true). Default is false. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="425" column="10" bodyfile="src/marty/core/spectrum.h" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Spectrum_1af579c0b4a88d49790bf33e0daf94cd28" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::Spectrum::replaceMasses</definition>
+        <argsstring></argsstring>
+        <name>replaceMasses</name>
+        <qualifiedname>mty::Spectrum::replaceMasses</qualifiedname>
+        <briefdescription>
+<para>Tells if masses must be directly replaced by their numerical values when applying diagonalization (default = true). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="430" column="10" bodyfile="src/marty/core/spectrum.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Spectrum_1a5929563bb8351585702a96fb8412fd8d" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::Spectrum::replaceMixings</definition>
+        <argsstring></argsstring>
+        <name>replaceMixings</name>
+        <qualifiedname>mty::Spectrum::replaceMixings</qualifiedname>
+        <briefdescription>
+<para>Tells if mixings must be directly replaced by their numerical values when applying diagonalization (default = true). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="435" column="10" bodyfile="src/marty/core/spectrum.h" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Spectrum_1a7a2b263e2655c6161c7ea01ab1727a91" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt;</type>
+        <definition>std::vector&lt;mty::Particle&gt; mty::Spectrum::fields</definition>
+        <argsstring></argsstring>
+        <name>fields</name>
+        <qualifiedname>mty::Spectrum::fields</qualifiedname>
+        <briefdescription>
+<para>List of fields in the mass block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="439" column="17" bodyfile="src/marty/core/spectrum.h" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Spectrum_1a4cf258d7e5efcc32e953052b3abf9045" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt;</type>
+        <definition>std::vector&lt;mty::Particle&gt; mty::Spectrum::newFields</definition>
+        <argsstring></argsstring>
+        <name>newFields</name>
+        <qualifiedname>mty::Spectrum::newFields</qualifiedname>
+        <briefdescription>
+<para>List of fields introduced after the rotation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="443" column="17" bodyfile="src/marty/core/spectrum.h" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Spectrum_1ac11410fc963dc8e4435c743617fc7a28" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmty_1_1Spectrum_1a28f31be44a5779a3f557cf64d7619893" kindref="member">matrix</ref>&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>matrix&lt;csl::Expr&gt; mty::Spectrum::mass</definition>
+        <argsstring></argsstring>
+        <name>mass</name>
+        <qualifiedname>mty::Spectrum::mass</qualifiedname>
+        <briefdescription>
+<para>Mass matrix. This object should contain only quantities with defined numerical when calling the diagonalization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="448" column="12" bodyfile="src/marty/core/spectrum.h" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Spectrum_1ae7ddc54425e7890ef74584395c1e5e07" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmty_1_1Spectrum_1a28f31be44a5779a3f557cf64d7619893" kindref="member">matrix</ref>&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>matrix&lt;csl::Expr&gt; mty::Spectrum::mixing</definition>
+        <argsstring></argsstring>
+        <name>mixing</name>
+        <qualifiedname>mty::Spectrum::mixing</qualifiedname>
+        <briefdescription>
+<para>Initial mixing matrix, contains the symbolic variables that enter expressions before the diagonalization is done. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="453" column="12" bodyfile="src/marty/core/spectrum.h" bodystart="453" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Spectrum_1af906137b86a5fcc272a7872c83a10a37" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmty_1_1Spectrum_1a28f31be44a5779a3f557cf64d7619893" kindref="member">matrix</ref>&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>matrix&lt;csl::Expr&gt; mty::Spectrum::mixing2</definition>
+        <argsstring></argsstring>
+        <name>mixing2</name>
+        <qualifiedname>mty::Spectrum::mixing2</qualifiedname>
+        <briefdescription>
+<para>Second mixing matrix, used for bi-diagonalization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="457" column="12" bodyfile="src/marty/core/spectrum.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Spectrum_1aa4ee531ee64d9d227a478fb3c404e5b0" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Spectrum::massData</definition>
+        <argsstring></argsstring>
+        <name>massData</name>
+        <qualifiedname>mty::Spectrum::massData</qualifiedname>
+        <briefdescription>
+<para>Numerical mass matrix, once values have been given and <ref refid="classmty_1_1Spectrum_1a0b7ec40a113011ca40b8d27f7f07aaf5" kindref="member">updateData()</ref> has been called. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="462" column="15" bodyfile="src/marty/core/spectrum.h" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Spectrum_1af1feaa528c24bc3fe7f395af502ffadf" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Spectrum::diagonal</definition>
+        <argsstring></argsstring>
+        <name>diagonal</name>
+        <qualifiedname>mty::Spectrum::diagonal</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Diagonalized mass matrix if the diagonalization has been done. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="466" column="15" bodyfile="src/marty/core/spectrum.h" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Spectrum_1abba16e8f300337206d7ddfabbf8a2dfe" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Spectrum::transfer</definition>
+        <argsstring></argsstring>
+        <name>transfer</name>
+        <qualifiedname>mty::Spectrum::transfer</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Second transfer matrix used for bi-diagonalization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="470" column="15" bodyfile="src/marty/core/spectrum.h" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Spectrum_1ae7264df6b9dbddbe2c249069c11eb411" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Spectrum::transfer2</definition>
+        <argsstring></argsstring>
+        <name>transfer2</name>
+        <qualifiedname>mty::Spectrum::transfer2</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Transfer matrix if the diagonalization has been done. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="474" column="15" bodyfile="src/marty/core/spectrum.h" bodystart="474" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1Spectrum_1a0e458f0bf8da1aeee7f8c7cf9f164d32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Spectrum::Spectrum</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;t_particles, std::vector&lt; mty::Particle &gt; const &amp;t_newParticles, std::vector&lt; csl::Expr &gt; const &amp;terms, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;t_mixing)</argsstring>
+        <name>Spectrum</name>
+        <qualifiedname>mty::Spectrum::Spectrum</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>t_particles</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>t_newParticles</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+          <declname>terms</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>t_mixing</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with 3 parameters, for standard diagonalization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_particles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Particles to diagonalize. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_newParticles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New particles introduces after rotation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>terms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of mass terms for <bold>particles</bold>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_mixing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mixing introduced to symbolically diagonalize the mass matrix (2D matrix as vector). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="133" column="5" bodyfile="src/marty/core/spectrum.cpp" bodystart="29" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1ab110d190749143545bfd4e45582fa27a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Spectrum::Spectrum</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;t_newParticles, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;t_mass, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;t_mixing, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;t_mixing2=std::vector&lt; std::vector&lt; csl::Expr &gt; &gt;())</argsstring>
+        <name>Spectrum</name>
+        <qualifiedname>mty::Spectrum::Spectrum</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>t_newParticles</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>t_mass</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>t_mixing</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>t_mixing2</declname>
+          <defval>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Constructor with 3 parameters, for standard diagonalization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This constructor will not do anything apart from reading parameters. These parameters are considered to have already been treated by a <ref refid="classmty_1_1Spectrum" kindref="compound">Spectrum</ref> object. It us used in particular to re-build <ref refid="classmty_1_1Spectrum" kindref="compound">Spectrum</ref> object in a different program (<ref refid="classmty_1_1Lagrangian" kindref="compound">Lagrangian</ref> code generation).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_newParticles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New particles introduces after rotation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_mass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial mass matrix for the <ref refid="classmty_1_1Spectrum" kindref="compound">Spectrum</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_mixing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mixing introduced to symbolically diagonalize the mass matrix (2D matrix as vector). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_mixing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mixing introduced to symbolically diagonalize the mass matrix (2D matrix as vector) for right particles, if there is. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="153" column="5" bodyfile="src/marty/core/spectrum.cpp" bodystart="42" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1a9eb4a603f45c1293be3ddd22a4c43f50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Spectrum::Spectrum</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;partA, std::vector&lt; mty::Particle &gt; const &amp;partB, std::vector&lt; mty::Particle &gt; const &amp;newPartA, std::vector&lt; mty::Particle &gt; const &amp;newPartB, std::vector&lt; csl::Expr &gt; const &amp;terms, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;mixingA, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;mixingB)</argsstring>
+        <name>Spectrum</name>
+        <qualifiedname>mty::Spectrum::Spectrum</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>partA</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>partB</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>newPartA</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>newPartB</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+          <declname>terms</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>mixingA</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>mixingB</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with 6 parameters, for bi-diagonalization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>partA</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left block of particles to diagonalize </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>partB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right block of particles to diagonalize </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newPartA</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New particles introduces after rotation, left block. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newPartB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New particles introduces after rotation, right block. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>terms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of mass terms for the particles. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mixingA</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mixing introduced to symbolically diagonalize the mass matrix (2D matrix as vector) for left particles. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mixingB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mixing introduced to symbolically diagonalize the mass matrix (2D matrix as vector) for right particles. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="172" column="5" bodyfile="src/marty/core/spectrum.cpp" bodystart="63" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1ae11029ac9fca7dc74e9d20247ae639ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Spectrum::Spectrum</definition>
+        <argsstring>()=default</argsstring>
+        <name>Spectrum</name>
+        <qualifiedname>mty::Spectrum::Spectrum</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="183" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1ac7335cb3ea345b9395fd1726ae45b148" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Spectrum::~Spectrum</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Spectrum</name>
+        <qualifiedname>mty::Spectrum::~Spectrum</qualifiedname>
+        <briefdescription>
+<para>Default destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="187" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1a4a6e6531d88f02b67172fc6bfee69e71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Spectrum::Spectrum</definition>
+        <argsstring>(Spectrum const &amp;)=default</argsstring>
+        <name>Spectrum</name>
+        <qualifiedname>mty::Spectrum::Spectrum</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Spectrum" kindref="compound">Spectrum</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+<para>Default copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="192" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1adecdc73bbb3ed17107de4bcff5ca7fa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Spectrum::Spectrum</definition>
+        <argsstring>(Spectrum &amp;&amp;)=default</argsstring>
+        <name>Spectrum</name>
+        <qualifiedname>mty::Spectrum::Spectrum</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Default move constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="196" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1a71732278631353eae36e031267a3adb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+        <definition>Spectrum &amp; mty::Spectrum::operator=</definition>
+        <argsstring>(Spectrum const &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>mty::Spectrum::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Spectrum" kindref="compound">Spectrum</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+<para>Default copy assignement operator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="200" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1a878d37c795861fa9e208999b60d9df6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+        <definition>Spectrum &amp; mty::Spectrum::operator=</definition>
+        <argsstring>(Spectrum &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>mty::Spectrum::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Default move assignement operator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="204" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1ad27d62e9c4b2af17f1481ba8d3e2758e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; mty::Particle &gt; const  &amp; mty::Spectrum::getParticles</definition>
+        <argsstring>() const</argsstring>
+        <name>getParticles</name>
+        <qualifiedname>mty::Spectrum::getParticles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="206" column="23" bodyfile="src/marty/core/spectrum.h" bodystart="206" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1a39054ba3b5d3bf3dad81e6756c42fe8a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmty_1_1Spectrum_1a28f31be44a5779a3f557cf64d7619893" kindref="member">matrix</ref>&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+        <definition>matrix&lt; csl::Expr &gt; const  &amp; mty::Spectrum::getMassTerms</definition>
+        <argsstring>() const</argsstring>
+        <name>getMassTerms</name>
+        <qualifiedname>mty::Spectrum::getMassTerms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="211" column="18" bodyfile="src/marty/core/spectrum.h" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1aed02343ec04ccec554e2e1cf7e520e96" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmty_1_1Spectrum_1a28f31be44a5779a3f557cf64d7619893" kindref="member">matrix</ref>&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+        <definition>matrix&lt; csl::Expr &gt; const  &amp; mty::Spectrum::getMixings</definition>
+        <argsstring>() const</argsstring>
+        <name>getMixings</name>
+        <qualifiedname>mty::Spectrum::getMixings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="216" column="18" bodyfile="src/marty/core/spectrum.h" bodystart="216" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1ad3d79a24dc20bc08d18a95ce68bc98db" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmty_1_1Spectrum_1a28f31be44a5779a3f557cf64d7619893" kindref="member">matrix</ref>&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+        <definition>matrix&lt; csl::Expr &gt; const  &amp; mty::Spectrum::getMixings2</definition>
+        <argsstring>() const</argsstring>
+        <name>getMixings2</name>
+        <qualifiedname>mty::Spectrum::getMixings2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="221" column="18" bodyfile="src/marty/core/spectrum.h" bodystart="221" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1ad58aa1b067c3174019ca5ff2649463b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::Spectrum::getReplaceMasses</definition>
+        <argsstring>() const</argsstring>
+        <name>getReplaceMasses</name>
+        <qualifiedname>mty::Spectrum::getReplaceMasses</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>replaceMasses</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="229" column="10" bodyfile="src/marty/core/spectrum.h" bodystart="229" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1ab6dcec88d88893c717b8db45a4ee203f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::Spectrum::getReplaceMixings</definition>
+        <argsstring>() const</argsstring>
+        <name>getReplaceMixings</name>
+        <qualifiedname>mty::Spectrum::getReplaceMixings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>replaceMixings</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="236" column="10" bodyfile="src/marty/core/spectrum.h" bodystart="236" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1addebe53023cf642b9a53b91226a18b2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Spectrum::setReplaceMasses</definition>
+        <argsstring>(bool t_replaceMasses)</argsstring>
+        <name>setReplaceMasses</name>
+        <qualifiedname>mty::Spectrum::setReplaceMasses</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>t_replaceMasses</declname>
+        </param>
+        <briefdescription>
+<para>Sets <bold>replaceMasses</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_replaceMasses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New value for <bold>replaceMasses</bold>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="246" column="10" bodyfile="src/marty/core/spectrum.h" bodystart="246" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1a9843c4dcdbfaee8eecd95481ef36fb9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Spectrum::setReplaceMixings</definition>
+        <argsstring>(bool t_replaceMixings)</argsstring>
+        <name>setReplaceMixings</name>
+        <qualifiedname>mty::Spectrum::setReplaceMixings</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>t_replaceMixings</declname>
+        </param>
+        <briefdescription>
+<para>Sets <bold>replaceMixings</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_replaceMixings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New value for <bold>replaceMixings</bold>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="255" column="10" bodyfile="src/marty/core/spectrum.h" bodystart="255" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1a7881b785947e8a29921c5dc29deba31b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::Spectrum::isDiagonalized</definition>
+        <argsstring>() const</argsstring>
+        <name>isDiagonalized</name>
+        <qualifiedname>mty::Spectrum::isDiagonalized</qualifiedname>
+        <briefdescription>
+<para>Tells if the mass matrix has been numerically diagonalized. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If this function returns true, it means that replacement may be applied on expressions, using <ref refid="classmty_1_1Spectrum_1aac31958043bd65755fa0a779becb967c" kindref="member">applyOn()</ref>. If initial mass parameters have a numerical value, consider calling <ref refid="classmty_1_1Spectrum_1a0b7ec40a113011ca40b8d27f7f07aaf5" kindref="member">updateData()</ref>, then checking that everything is going well checking that this function returns true, and finally apply the diagonalization on any expression you want using <ref refid="classmty_1_1Spectrum_1aac31958043bd65755fa0a779becb967c" kindref="member">applyOn()</ref>.</para>
+<para><simplesect kind="return"><para><bold>True</bold> if all masses and mixings have been computed numerically. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1Spectrum_1aac31958043bd65755fa0a779becb967c" kindref="member">applyOn()</ref>, <ref refid="classmty_1_1Spectrum_1a0b7ec40a113011ca40b8d27f7f07aaf5" kindref="member">updateData()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="276" column="10" bodyfile="src/marty/core/spectrum.cpp" bodystart="83" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1a9b464b32ccd8c0ddf247efe901aadb18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Spectrum::setBlock</definition>
+        <argsstring>(std::vector&lt; csl::Expr &gt; const &amp;terms, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;t_mixing)</argsstring>
+        <name>setBlock</name>
+        <qualifiedname>mty::Spectrum::setBlock</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+          <declname>terms</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>t_mixing</declname>
+        </param>
+        <briefdescription>
+<para>Instantiates the <ref refid="classmty_1_1Spectrum" kindref="compound">Spectrum</ref> object with a mass terms and a mixing matrix for standard diagonalization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function simply gathers all terms in <bold>terms</bold> to create the mass matrix. The mixing matrix used to symbolically diagonalize the fields must also be given.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>terms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass terms for the fields. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_mixing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mixing matrix. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="289" column="10" bodyfile="src/marty/core/spectrum.cpp" bodystart="89" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1aceab6627d803c4a8462940814c3fdf6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Spectrum::setBlock</definition>
+        <argsstring>(std::vector&lt; csl::Expr &gt; const &amp;terms, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;mixingA, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;mixingB)</argsstring>
+        <name>setBlock</name>
+        <qualifiedname>mty::Spectrum::setBlock</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+          <declname>terms</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>mixingA</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>mixingB</declname>
+        </param>
+        <briefdescription>
+<para>Instantiates the <ref refid="classmty_1_1Spectrum" kindref="compound">Spectrum</ref> object with a mass terms and two mixing matrices for bi-diagonalization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function simply gathers all terms in <bold>terms</bold> to create the mass matrix. The mixing matrices used to symbolically diagonalize the fields must also be given.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>terms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass terms for the fields. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mixingA</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mixing matrix of left fields. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mixingB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mixing matrix of right fields. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="304" column="10" bodyfile="src/marty/core/spectrum.cpp" bodystart="110" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1a0b7ec40a113011ca40b8d27f7f07aaf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Spectrum::updateData</definition>
+        <argsstring>()</argsstring>
+        <name>updateData</name>
+        <qualifiedname>mty::Spectrum::updateData</qualifiedname>
+        <briefdescription>
+<para>Updates the mass matrix, if the elements have values (for example) after a lha file loading. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should be called once all the initial elements of the mass matrix have a defined value.</para>
+<para>To properly define a value, you must use the function <ref refid="classcsl_1_1Abstract_1aaf7f0692cb84ca861a5b3b641bea518b" kindref="member">csl::Abstract::setValue()</ref> of the symbolic constants. For example with a mass matrix  <formula id="299">$ \left(\begin{array}{cc}a &amp;&amp; b \\ c &amp;&amp; d
+\end{array}\right),$</formula> one must write <programlisting><codeline><highlight class="normal">M[0][0]-&gt;setValue(523.5);<sp/></highlight><highlight class="comment">//<sp/>good</highlight></codeline>
+</programlisting> and <bold>not</bold> <programlisting><codeline><highlight class="normal">M[0][0]<sp/>=<sp/>523.5;<sp/></highlight><highlight class="comment">//<sp/>very<sp/>bad</highlight></codeline>
+</programlisting> In the latter case, the matrix element is replaced by the value 523.5, but the variable a that actually appears in the <ref refid="classmty_1_1Spectrum" kindref="compound">Spectrum</ref> class still has no value. The diagonalization cannot be performed then. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="329" column="10" bodyfile="src/marty/core/spectrum.cpp" bodystart="134" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1aac31958043bd65755fa0a779becb967c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Spectrum::applyOn</definition>
+        <argsstring>(csl::Expr &amp;expr) const</argsstring>
+        <name>applyOn</name>
+        <qualifiedname>mty::Spectrum::applyOn</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Applies the diagonalization on an expression, replacing masses and mixings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should be called if <ref refid="classmty_1_1Spectrum_1a0b7ec40a113011ca40b8d27f7f07aaf5" kindref="member">updateData()</ref> has already been called and if all elements of the initial mass matrix have defined values.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression on which the diagonalization is applied. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="340" column="10" bodyfile="src/marty/core/spectrum.cpp" bodystart="179" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1a1666f1c101114111c94655f3cf911be7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Spectrum::applyOn</definition>
+        <argsstring>(std::vector&lt; csl::Expr &gt; &amp;expr) const</argsstring>
+        <name>applyOn</name>
+        <qualifiedname>mty::Spectrum::applyOn</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Applies the diagonalization on a vector of expressions, replacing masses and mixings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should be called if <ref refid="classmty_1_1Spectrum_1a0b7ec40a113011ca40b8d27f7f07aaf5" kindref="member">updateData()</ref> has already been called and if all elements of the initial mass matrix have defined values.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expressions on which the diagonalization is applied. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="351" column="10" bodyfile="src/marty/core/spectrum.cpp" bodystart="188" bodyend="194"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmty_1_1Spectrum_1aac4edea95e09a9653eab12e770ee4c70" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t mty::Spectrum::getFieldPos</definition>
+        <argsstring>(QuantumField const &amp;field) const</argsstring>
+        <name>getFieldPos</name>
+        <qualifiedname>mty::Spectrum::getFieldPos</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> const &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+<para>Returns the position of the field <bold>field</bold> in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The position of <bold>field</bold> in the attribute <bold>fields</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="361" column="12" bodyfile="src/marty/core/spectrum.cpp" bodystart="196" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1a08130b1319aae1272a4e568667473571" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1Spectrum_1_1MatrixEl" kindref="compound">MatrixEl</ref></type>
+        <definition>Spectrum::MatrixEl mty::Spectrum::getMassFromTerm</definition>
+        <argsstring>(csl::Expr const &amp;term) const</argsstring>
+        <name>getMassFromTerm</name>
+        <qualifiedname>mty::Spectrum::getMassFromTerm</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+<para>Returns a <ref refid="structmty_1_1Spectrum_1_1MatrixEl" kindref="compound">MatrixEl</ref> object from a <ref refid="classmty_1_1Lagrangian" kindref="compound">Lagrangian</ref> term. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>term</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Lagrangian" kindref="compound">Lagrangian</ref> term.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="structmty_1_1Spectrum_1_1MatrixEl" kindref="compound">MatrixEl</ref> containing the position of the term in the matrix, and the term itself. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="371" column="14" bodyfile="src/marty/core/spectrum.cpp" bodystart="213" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1a46ca019e97fc525d2ffe2c4b8793e691" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Spectrum::addMassTerm</definition>
+        <argsstring>(MatrixEl &amp;&amp;matrixEl)</argsstring>
+        <name>addMassTerm</name>
+        <qualifiedname>mty::Spectrum::addMassTerm</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1Spectrum_1_1MatrixEl" kindref="compound">MatrixEl</ref> &amp;&amp;</type>
+          <declname>matrixEl</declname>
+        </param>
+        <briefdescription>
+<para>Adds a mass term to the <ref refid="classmty_1_1Spectrum" kindref="compound">Spectrum</ref> from a <ref refid="structmty_1_1Spectrum_1_1MatrixEl" kindref="compound">MatrixEl</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matrixEl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Matrix element containing the term and its position in the mass matrix. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="394" column="10" bodyfile="src/marty/core/spectrum.cpp" bodystart="300" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1acd11f4e67766f21f3c32758b99e2c0bb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Spectrum::diagonalize</definition>
+        <argsstring>()</argsstring>
+        <name>diagonalize</name>
+        <qualifiedname>mty::Spectrum::diagonalize</qualifiedname>
+        <briefdescription>
+<para>Diagonalizes the mass matrix numerically. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="399" column="10" bodyfile="src/marty/core/spectrum.cpp" bodystart="308" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1ad23a6f0626f333b5f7cb19cc792e2d50" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Spectrum::bidiagonalize</definition>
+        <argsstring>()</argsstring>
+        <name>bidiagonalize</name>
+        <qualifiedname>mty::Spectrum::bidiagonalize</qualifiedname>
+        <briefdescription>
+<para>Bi-diagonalizes the mass mattrix numerically. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="404" column="10" bodyfile="src/marty/core/spectrum.cpp" bodystart="316" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1a902720ead308de9a64e063d5550360ca" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Spectrum::applyDiagonalizationOn</definition>
+        <argsstring>(csl::Expr &amp;expr) const</argsstring>
+        <name>applyDiagonalizationOn</name>
+        <qualifiedname>mty::Spectrum::applyDiagonalizationOn</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Applies the result of the diagonalization on an expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> to modify. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="411" column="10" bodyfile="src/marty/core/spectrum.cpp" bodystart="345" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Spectrum_1a7e3cd19323a7a48ee1523bb9cbadace9" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Spectrum::applyBidiagonalizationOn</definition>
+        <argsstring>(csl::Expr &amp;expr) const</argsstring>
+        <name>applyBidiagonalizationOn</name>
+        <qualifiedname>mty::Spectrum::applyBidiagonalizationOn</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Applies the result of the bi-diagonalization on an expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> to modify. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="418" column="10" bodyfile="src/marty/core/spectrum.cpp" bodystart="378" bodyend="405"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classmty_1_1Spectrum_1a25ea082d257726f4c9e5ef71a8905827" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Spectrum::replace</definition>
+        <argsstring>(csl::Expr &amp;expr, std::vector&lt; csl::Expr &gt; const &amp;oldExpr, std::vector&lt; csl::Expr &gt; const &amp;newExpr)</argsstring>
+        <name>replace</name>
+        <qualifiedname>mty::Spectrum::replace</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+          <declname>oldExpr</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+          <declname>newExpr</declname>
+        </param>
+        <briefdescription>
+<para>Replaces corresponding mixings / masses in an expression, if the numerical diagonalization has been performed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Is abbreviations are encountered, the content of the abbreviation os also looked up for the replacement.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression in which we apply the diagonalization. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>oldExpr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Old mixings / masses. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newExpr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New mixings / masses. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="384" column="17" bodyfile="src/marty/core/spectrum.cpp" bodystart="162" bodyend="177"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class handling numerical diagonalization for HEP models. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>For some mass mixings, the standard way to proceed in MARTY (when a simple diagonalization is not possible) is to create a symbolic mixing matrix, fully general, that enters amplitudes. Calculations are done with these mixings. If later one wants to specify numerically the initial mass matrix, this class may diagonalize it and recover the mixing matrix from it. Then, the actual (numerical) mixings may be applied on an expression (for example an amplitude or <ref refid="structmty_1_1Wilson" kindref="compound">Wilson</ref> coefficient), replacing old masses by numerical eigenvalues and symbolic mixings by their values.</para>
+<para>There is three parts when using this object. First: the initialization from a <ref refid="structmty_1_1MassBlock" kindref="compound">MassBlock</ref> and mixing terms. It needs the initial mass matrix, and the mixing matrix that you instored to symbolically diagonalize it in full generality. Then, once all the matrix elements of the initial mass matrix have a numerical value you must call <ref refid="classmty_1_1Spectrum_1a0b7ec40a113011ca40b8d27f7f07aaf5" kindref="member">updateData()</ref> to initialize the numerical matrix. Finally, you may call <ref refid="classmty_1_1Spectrum_1aac31958043bd65755fa0a779becb967c" kindref="member">applyOn()</ref> to apply this diagonalization to an expression (or several).</para>
+<para>Two types of diagonalization are possible. For a given quantum field <formula id="290">$ \Phi $</formula> (bosonic or fermionic), you may have something like <formula id="291">$ \Phi ^\dagger M \Phi $</formula> in which case <formula id="78">$ M $</formula> is an hermitian matrix as the <ref refid="classmty_1_1Lagrangian" kindref="compound">Lagrangian</ref> must be real. A <bold>standard diagonalization</bold> must then be performed, i.e.    <formula id="292">\[
+     \Phi \mapsto \Phi ^\prime = U\Phi,\\
+     \Phi ^\dagger \mapsto \Phi ^{\prime\dagger} = \Phi ^\dagger
+U^\dagger,\\ UMU^\dagger \equiv D, \text{ the diagonal mass matrix. } \]</formula> Another possibility are terms of the form  <formula id="293">$ \Phi _L^\dagger M \Phi _R
++ \Phi _R^\dagger M^\dagger \Phi_L $</formula>, with <formula id="294">$ \Phi _L $</formula> and <formula id="295">$ \Phi _R $</formula> different fields. In that case, a <bold>bi-diagonalization</bold> must be performed, i.e.       <formula id="296">\[
+     \Phi _R \mapsto \Phi _R^\prime = U\Phi _R,\\
+     \Phi _L \mapsto \Phi _L^\prime = V\Phi _L,\\
+     V^\dagger MU = D, \text{ the diagonal mass matrix, }\\
+     V^\dagger MM^\dagger V = D^2,\\
+     U^\dagger M^\dagger M U = D^2\\
+\]</formula> In this case there is actually two diagonalizations to perform, for <formula id="297">$ MM^\dagger $</formula> and <formula id="298">$ M^\dagger M $</formula>.</para>
+<para><simplesect kind="see"><para><ref refid="classcsl_1_1Diagonalizer" kindref="compound">csl::Diagonalizer</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>boost::numeric::ublas::matrix&lt; csl::Expr &gt;</label>
+        <link refid="classboost_1_1numeric_1_1ublas_1_1matrix"/>
+      </node>
+      <node id="3">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::Spectrum</label>
+        <link refid="classmty_1_1Spectrum"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mass</edgelabel>
+          <edgelabel>mixing</edgelabel>
+          <edgelabel>mixing2</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>diagonal</edgelabel>
+          <edgelabel>massData</edgelabel>
+          <edgelabel>transfer</edgelabel>
+          <edgelabel>transfer2</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/spectrum.h" line="81" column="1" bodyfile="src/marty/core/spectrum.h" bodystart="81" bodyend="475"/>
+    <listofallmembers>
+      <member refid="classmty_1_1Spectrum_1a46ca019e97fc525d2ffe2c4b8793e691" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>addMassTerm</name></member>
+      <member refid="classmty_1_1Spectrum_1a7e3cd19323a7a48ee1523bb9cbadace9" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>applyBidiagonalizationOn</name></member>
+      <member refid="classmty_1_1Spectrum_1a902720ead308de9a64e063d5550360ca" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>applyDiagonalizationOn</name></member>
+      <member refid="classmty_1_1Spectrum_1aac31958043bd65755fa0a779becb967c" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>applyOn</name></member>
+      <member refid="classmty_1_1Spectrum_1a1666f1c101114111c94655f3cf911be7" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>applyOn</name></member>
+      <member refid="classmty_1_1Spectrum_1a6d3bf395743fa4877414e31480904652" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>bidiagonalization</name></member>
+      <member refid="classmty_1_1Spectrum_1ad23a6f0626f333b5f7cb19cc792e2d50" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>bidiagonalize</name></member>
+      <member refid="classmty_1_1Spectrum_1af1feaa528c24bc3fe7f395af502ffadf" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>diagonal</name></member>
+      <member refid="classmty_1_1Spectrum_1acd11f4e67766f21f3c32758b99e2c0bb" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>diagonalize</name></member>
+      <member refid="classmty_1_1Spectrum_1a7a2b263e2655c6161c7ea01ab1727a91" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>fields</name></member>
+      <member refid="classmty_1_1Spectrum_1a4a85127864868bb34dfaafe1bfb3cae8" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>FloatType</name></member>
+      <member refid="classmty_1_1Spectrum_1aac4edea95e09a9653eab12e770ee4c70" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>getFieldPos</name></member>
+      <member refid="classmty_1_1Spectrum_1a08130b1319aae1272a4e568667473571" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>getMassFromTerm</name></member>
+      <member refid="classmty_1_1Spectrum_1a39054ba3b5d3bf3dad81e6756c42fe8a" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>getMassTerms</name></member>
+      <member refid="classmty_1_1Spectrum_1aed02343ec04ccec554e2e1cf7e520e96" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>getMixings</name></member>
+      <member refid="classmty_1_1Spectrum_1ad3d79a24dc20bc08d18a95ce68bc98db" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>getMixings2</name></member>
+      <member refid="classmty_1_1Spectrum_1ad27d62e9c4b2af17f1481ba8d3e2758e" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>getParticles</name></member>
+      <member refid="classmty_1_1Spectrum_1ad58aa1b067c3174019ca5ff2649463b2" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>getReplaceMasses</name></member>
+      <member refid="classmty_1_1Spectrum_1ab6dcec88d88893c717b8db45a4ee203f" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>getReplaceMixings</name></member>
+      <member refid="classmty_1_1Spectrum_1a21ed2efd16f13d09b0bfc60bc6343fd7" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>id_matrix</name></member>
+      <member refid="classmty_1_1Spectrum_1a7881b785947e8a29921c5dc29deba31b" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>isDiagonalized</name></member>
+      <member refid="classmty_1_1Spectrum_1ac11410fc963dc8e4435c743617fc7a28" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>mass</name></member>
+      <member refid="classmty_1_1Spectrum_1aa4ee531ee64d9d227a478fb3c404e5b0" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>massData</name></member>
+      <member refid="classmty_1_1Spectrum_1a28f31be44a5779a3f557cf64d7619893" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>matrix</name></member>
+      <member refid="classmty_1_1Spectrum_1ae7ddc54425e7890ef74584395c1e5e07" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>mixing</name></member>
+      <member refid="classmty_1_1Spectrum_1af906137b86a5fcc272a7872c83a10a37" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>mixing2</name></member>
+      <member refid="classmty_1_1Spectrum_1a4cf258d7e5efcc32e953052b3abf9045" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>newFields</name></member>
+      <member refid="classmty_1_1Spectrum_1a71732278631353eae36e031267a3adb2" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>operator=</name></member>
+      <member refid="classmty_1_1Spectrum_1a878d37c795861fa9e208999b60d9df6f" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>operator=</name></member>
+      <member refid="classmty_1_1Spectrum_1a25ea082d257726f4c9e5ef71a8905827" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>replace</name></member>
+      <member refid="classmty_1_1Spectrum_1af579c0b4a88d49790bf33e0daf94cd28" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>replaceMasses</name></member>
+      <member refid="classmty_1_1Spectrum_1a5929563bb8351585702a96fb8412fd8d" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>replaceMixings</name></member>
+      <member refid="classmty_1_1Spectrum_1a9b464b32ccd8c0ddf247efe901aadb18" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>setBlock</name></member>
+      <member refid="classmty_1_1Spectrum_1aceab6627d803c4a8462940814c3fdf6f" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>setBlock</name></member>
+      <member refid="classmty_1_1Spectrum_1addebe53023cf642b9a53b91226a18b2e" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>setReplaceMasses</name></member>
+      <member refid="classmty_1_1Spectrum_1a9843c4dcdbfaee8eecd95481ef36fb9d" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>setReplaceMixings</name></member>
+      <member refid="classmty_1_1Spectrum_1a0e458f0bf8da1aeee7f8c7cf9f164d32" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>Spectrum</name></member>
+      <member refid="classmty_1_1Spectrum_1ab110d190749143545bfd4e45582fa27a" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>Spectrum</name></member>
+      <member refid="classmty_1_1Spectrum_1a9eb4a603f45c1293be3ddd22a4c43f50" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>Spectrum</name></member>
+      <member refid="classmty_1_1Spectrum_1ae11029ac9fca7dc74e9d20247ae639ba" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>Spectrum</name></member>
+      <member refid="classmty_1_1Spectrum_1a4a6e6531d88f02b67172fc6bfee69e71" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>Spectrum</name></member>
+      <member refid="classmty_1_1Spectrum_1adecdc73bbb3ed17107de4bcff5ca7fa0" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>Spectrum</name></member>
+      <member refid="classmty_1_1Spectrum_1abba16e8f300337206d7ddfabbf8a2dfe" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>transfer</name></member>
+      <member refid="classmty_1_1Spectrum_1ae7264df6b9dbddbe2c249069c11eb411" prot="protected" virt="non-virtual"><scope>mty::Spectrum</scope><name>transfer2</name></member>
+      <member refid="classmty_1_1Spectrum_1a0b7ec40a113011ca40b8d27f7f07aaf5" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>updateData</name></member>
+      <member refid="classmty_1_1Spectrum_1ac7335cb3ea345b9395fd1726ae45b148" prot="public" virt="non-virtual"><scope>mty::Spectrum</scope><name>~Spectrum</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

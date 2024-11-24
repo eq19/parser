@@ -1,0 +1,984 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1Kinematics" kind="class" language="C++" prot="public">
+    <compoundname>mty::Kinematics</compoundname>
+    <includes refid="kinematics_8h" local="no">kinematics.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1Kinematics_1aa2efc6c45b90c1c16dbbfa71687e17f0" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref> &gt;</type>
+        <definition>std::vector&lt;mty::Insertion&gt; mty::Kinematics::insertions</definition>
+        <argsstring></argsstring>
+        <name>insertions</name>
+        <qualifiedname>mty::Kinematics::insertions</qualifiedname>
+        <briefdescription>
+<para>Set of insertions of the process. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="346" column="17" bodyfile="src/marty/core/kinematics.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Kinematics_1adddfecf9e497772dda35a29d6cff504b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &gt;</type>
+        <definition>std::vector&lt;csl::Tensor&gt; mty::Kinematics::momenta</definition>
+        <argsstring></argsstring>
+        <name>momenta</name>
+        <qualifiedname>mty::Kinematics::momenta</qualifiedname>
+        <briefdescription>
+<para>Set of external momenta of the process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>There are exactly <formula id="152">$N$</formula> momenta for <formula id="152">$N$</formula> insertions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="353" column="17" bodyfile="src/marty/core/kinematics.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Kinematics_1a724cda0e79e975ace161063893b4d48a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>std::vector&lt;csl::Expr&gt; mty::Kinematics::externalSpinTensors</definition>
+        <argsstring></argsstring>
+        <name>externalSpinTensors</name>
+        <qualifiedname>mty::Kinematics::externalSpinTensors</qualifiedname>
+        <briefdescription>
+<para>Set of external spin tensors (mty::PolarisationField). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Each element can also be CSL_UNDEF if there is no spin tensor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="360" column="17" bodyfile="src/marty/core/kinematics.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Kinematics_1ab2f69493a2c1dea645bc26756c52c600" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; size_t &gt;</type>
+        <definition>std::vector&lt;size_t&gt; mty::Kinematics::indices</definition>
+        <argsstring></argsstring>
+        <name>indices</name>
+        <qualifiedname>mty::Kinematics::indices</qualifiedname>
+        <briefdescription>
+<para>Indices of momenta. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Momenta are defined as <formula id="58">$ p_i $</formula> with indices <formula id="142">$ i $</formula>. This member allows the <ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> to keep this information, considering for example that a set of momenta <formula id="153">$ (p_2, p_3, p_1) $</formula> will have indices <formula id="154">$ (2, 3, 1) $</formula>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="370" column="17" bodyfile="src/marty/core/kinematics.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Kinematics_1aa2a07608f3d4a5dae47e13cef0a7b5bd" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>std::vector&lt;csl::Expr&gt; mty::Kinematics::squaredMomenta</definition>
+        <argsstring></argsstring>
+        <name>squaredMomenta</name>
+        <qualifiedname>mty::Kinematics::squaredMomenta</qualifiedname>
+        <briefdescription>
+<para>Set of squared external momenta for the process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For <formula id="152">$N$</formula> insertions, there are <formula id="152">$N$</formula> external momenta and <formula id="155">$ N(N+1)/2 $</formula> squared momenta defined by   <formula id="156">\[
+     s_{ij} \equiv g_{\mu\nu}p_i^\mu p_j^\nu, \text{ with } i \leq j.
+\]</formula> For on-shell particles, one has   <formula id="157">\[
+     s_{ii} = m_i^2.
+\]</formula> This container is linear whereas the data it represents is 2-dimensional, see squaredMomentumIndex() that provides the relation between the 2D index and the physical index for this container. For now this container is redundant and contains both <formula id="150">$ s_{ij} $</formula> and <formula id="158">$ s_{ji} $</formula> that are equal. This is however not an important overhead and is less error prone that storing a triangle matrix in a linear container. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="392" column="17" bodyfile="src/marty/core/kinematics.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a320a21d522f1a623afe821c0b1c04584" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Kinematics::Kinematics</definition>
+        <argsstring>()=default</argsstring>
+        <name>Kinematics</name>
+        <qualifiedname>mty::Kinematics::Kinematics</qualifiedname>
+        <briefdescription>
+<para>Default constructor: empty process. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="45" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a49b13686de79a921bf8cce4e8ed86a97" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Kinematics::Kinematics</definition>
+        <argsstring>(std::vector&lt; mty::Insertion &gt; const &amp;t_insertions)</argsstring>
+        <name>Kinematics</name>
+        <qualifiedname>mty::Kinematics::Kinematics</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref> &gt; const &amp;</type>
+          <declname>t_insertions</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the object only from insertions, creates the required momenta. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_insertions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Insertions of the process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="53" column="14" bodyfile="src/marty/core/kinematics.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a7d3e3349bd1ee4574449dae8c60bfad7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Kinematics::Kinematics</definition>
+        <argsstring>(std::vector&lt; mty::Insertion &gt; const &amp;t_insertions, std::vector&lt; csl::Tensor &gt; const &amp;t_momenta, bool initSquaredMomenta=true)</argsstring>
+        <name>Kinematics</name>
+        <qualifiedname>mty::Kinematics::Kinematics</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref> &gt; const &amp;</type>
+          <declname>t_insertions</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &gt; const &amp;</type>
+          <declname>t_momenta</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>initSquaredMomenta</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Initializes the object from insertions and momenta. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Squared momenta are determined from the momenta given as parameters through the relation <formula id="139">$ s_{ij} = g_{\mu\nu}p_i^\mu p_j^\nu $</formula>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_insertions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Insertions of the process. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_momenta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>External momenta of the process. Should be of the same size as <bold>t_insertions</bold>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="66" column="5" bodyfile="src/marty/core/kinematics.cpp" bodystart="31" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a68de3da7161148d99d445730fa4448ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Kinematics::Kinematics</definition>
+        <argsstring>(std::vector&lt; mty::Insertion &gt; const &amp;t_insertions, std::vector&lt; size_t &gt; const &amp;indices)</argsstring>
+        <name>Kinematics</name>
+        <qualifiedname>mty::Kinematics::Kinematics</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref> &gt; const &amp;</type>
+          <declname>t_insertions</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; size_t &gt; const &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the object from insertions and indices for momenta. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Indices given as parameter determine the name of the different momenta, replacing the default <formula id="140">$ p_1, p_2 ..., p_N $</formula> that corresponds to indices <formula id="141">$ {1, 2, ..., N} $</formula>. The range of indices can be arbitrary provided that its size corresponds to the number of different insertions and that all indices are different. Then squared momenta are determined from the momenta created from the indices through the relation <formula id="139">$ s_{ij} = g_{\mu\nu}p_i^\mu p_j^\nu $</formula>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_insertions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Insertions of the process. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indices to initialize momenta names. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="86" column="5" bodyfile="src/marty/core/kinematics.cpp" bodystart="50" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1addf875ca82d140fb0cfa7a3e3af5610f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t mty::Kinematics::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>mty::Kinematics::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the size of the kinematics objects i.e. the number of insertions / momenta. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="93" column="12" bodyfile="src/marty/core/kinematics.h" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a762b7cd965aec4948f183cf1140b46d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref> const &amp;</type>
+        <definition>mty::Insertion const  &amp; mty::Kinematics::insertion</definition>
+        <argsstring>(size_t i) const</argsstring>
+        <name>insertion</name>
+        <qualifiedname>mty::Kinematics::insertion</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Returns the insertion in position i. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the insertion to get (starts at 0).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The insertion in position <bold>i</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="105" column="26" bodyfile="src/marty/core/kinematics.h" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a4a83629b674884bb355ce175d74ee64e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> const &amp;</type>
+        <definition>csl::Tensor const  &amp; mty::Kinematics::momentum</definition>
+        <argsstring>(size_t i) const</argsstring>
+        <name>momentum</name>
+        <qualifiedname>mty::Kinematics::momentum</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Returns the momentum in position i. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position of the momentum to get (starts at 0).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The momentum in position <bold>i</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="117" column="23" bodyfile="src/marty/core/kinematics.h" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a39dff37b04aad93e7f0bcb8cf0775c01" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Kinematics::squaredMomentum</definition>
+        <argsstring>(size_t i, size_t j) const</argsstring>
+        <name>squaredMomentum</name>
+        <qualifiedname>mty::Kinematics::squaredMomentum</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="122" column="15" bodyfile="src/marty/core/kinematics.h" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1aa834425c043e566221f2ccd8ee27310c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classmty_1_1Insertion" kindref="compound">mty::Insertion</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; mty::Insertion &gt; const  &amp; mty::Kinematics::getInsertions</definition>
+        <argsstring>() const</argsstring>
+        <name>getInsertions</name>
+        <qualifiedname>mty::Kinematics::getInsertions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A const reference to the range of insertions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="130" column="23" bodyfile="src/marty/core/kinematics.h" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a470fa2aa6fca310676fbde8bdf0e77f8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; csl::Expr &gt; const  &amp; mty::Kinematics::getExternalSpinTensors</definition>
+        <argsstring>() const</argsstring>
+        <name>getExternalSpinTensors</name>
+        <qualifiedname>mty::Kinematics::getExternalSpinTensors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A const reference to the external spin tensors. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="138" column="23" bodyfile="src/marty/core/kinematics.h" bodystart="138" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a2d5bf49c4a2ac87133a593f100bd29bd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; csl::Tensor &gt; const  &amp; mty::Kinematics::getMomenta</definition>
+        <argsstring>() const</argsstring>
+        <name>getMomenta</name>
+        <qualifiedname>mty::Kinematics::getMomenta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A const reference to the range of momenta. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="146" column="23" bodyfile="src/marty/core/kinematics.h" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a87ba407c2e75ce851f365d37f8ea5e4a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &gt;</type>
+        <definition>std::vector&lt; csl::Tensor &gt; mty::Kinematics::getOrderedMomenta</definition>
+        <argsstring>() const</argsstring>
+        <name>getOrderedMomenta</name>
+        <qualifiedname>mty::Kinematics::getOrderedMomenta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns the momenta in order (p_1, p_2, p_3, ...) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="154" column="17" bodyfile="src/marty/core/kinematics.cpp" bodystart="64" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1acdbffeadf496ef6c40bb86e8c484042e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; csl::Expr &gt; const  &amp; mty::Kinematics::getSquaredMomenta</definition>
+        <argsstring>() const</argsstring>
+        <name>getSquaredMomenta</name>
+        <qualifiedname>mty::Kinematics::getSquaredMomenta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A const reference to the range of squared momenta. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="159" column="23" bodyfile="src/marty/core/kinematics.h" bodystart="159" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a06145f1d0e43a76152047fb7f0083412" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; size_t &gt; const &amp;</type>
+        <definition>std::vector&lt; size_t &gt; const  &amp; mty::Kinematics::getIndices</definition>
+        <argsstring>() const</argsstring>
+        <name>getIndices</name>
+        <qualifiedname>mty::Kinematics::getIndices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>indices </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="167" column="23" bodyfile="src/marty/core/kinematics.h" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a7864e5b0b59e73820c9b30b6587a69f9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Kinematics::getDegreesOfFreedomFactor</definition>
+        <argsstring>() const</argsstring>
+        <name>getDegreesOfFreedomFactor</name>
+        <qualifiedname>mty::Kinematics::getDegreesOfFreedomFactor</qualifiedname>
+        <briefdescription>
+<para>Returns the combinatorial factor corresponding to the process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function takes into account two different factors required in the squared amplitude calculation, namely the number of incoming degrees if freedom to average over them, and the combinatorial factor taking into account indistinguishable outgoing particles. For <formula id="41">$ N $</formula> incoming particles indexed by <formula id="142">$ i $</formula> and <formula id="78">$ M $</formula> groups of indistinguishable outgoing particles of respective sizes <formula id="143">$ m_j $</formula>, this function returns a symbolic factor equal to   <formula id="144">\[
+     F = \prod _i\dfrac{1}{d_i}\cdot \prod _j \dfrac{1}{m_j!},
+\]</formula> with <formula id="145">$ d_i $</formula> the number of degrees of freedom of the incoming particle $i$ taking into account spin and gauge representations dimensions.</para>
+<para><simplesect kind="note"><para>For spin 1 particles, the spin dimension is 2 if the particle is massless, 3 otherwise. </para>
+</simplesect>
+<simplesect kind="note"><para>Indistinguishable particles are particles of the exact same species, with the same complex conjugation property (e.g. <formula id="146">$ W^+ $</formula> and <formula id="147">$ W^- $</formula> are distinguishable, <formula id="148">$ Z $</formula> and <formula id="148">$ Z $</formula> are not).</para>
+</simplesect>
+<simplesect kind="return"><para>The factor <formula id="149">$ F $</formula> calculated as the combinatorial factor for the corresponding squared amplitude. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="200" column="15" bodyfile="src/marty/core/kinematics.cpp" bodystart="90" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a4e6058928a38fc31e61beb3783927e8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Kinematics::setExternalSpinTensors</definition>
+        <argsstring>(std::vector&lt; csl::Expr &gt; const &amp;terms)</argsstring>
+        <name>setExternalSpinTensors</name>
+        <qualifiedname>mty::Kinematics::setExternalSpinTensors</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+          <declname>terms</declname>
+        </param>
+        <briefdescription>
+<para>Sets the external spin tensors from a collection of exprssions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Each term is parsed and the first mty::PolarisationField object is detected and stored as external spin tensor. If no spin tensor is found, CSL_UNDEF is used as default value for the tensor.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>terms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set of expressions, typically results of <ref refid="classmty_1_1QuantumField_1a2bb6b0c05f1b9d5b81c7823181d9d502" kindref="member">mty::QuantumField::getLSZInsertion()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="213" column="10" bodyfile="src/marty/core/kinematics.cpp" bodystart="121" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1aecb0ee5064fe7c437e03634b12340950" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref></type>
+        <definition>Kinematics mty::Kinematics::subset</definition>
+        <argsstring>(std::vector&lt; size_t &gt; pos) const</argsstring>
+        <name>subset</name>
+        <qualifiedname>mty::Kinematics::subset</qualifiedname>
+        <param>
+          <type>std::vector&lt; size_t &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Returns a subset of the <ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> object taking only some indices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range of insertions indices of the subset to return.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> object with a subset of insertions and (squared-)momenta containing only objects at given positions given by <bold>pos</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="225" column="16" bodyfile="src/marty/core/kinematics.cpp" bodystart="187" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a370bfb2cb9622362eb2dab58c0d0e030" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Kinematics::applyPermutation</definition>
+        <argsstring>(std::vector&lt; size_t &gt; const &amp;pos)</argsstring>
+        <name>applyPermutation</name>
+        <qualifiedname>mty::Kinematics::applyPermutation</qualifiedname>
+        <param>
+          <type>std::vector&lt; size_t &gt; const &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Permutes elements inside the <ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> object, keeping insertions and (squared-)momenta aligned with each other. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Permutation. Must be of the same size as the <ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> object and contain all indices in <formula id="141">$ {1, 2, ..., N} $</formula>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="234" column="10" bodyfile="src/marty/core/kinematics.cpp" bodystart="212" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a50dffc918daedd24cc292d8ee4d74faf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref></type>
+        <definition>Kinematics mty::Kinematics::applyIndices</definition>
+        <argsstring>(std::vector&lt; size_t &gt; const &amp;indices) const</argsstring>
+        <name>applyIndices</name>
+        <qualifiedname>mty::Kinematics::applyIndices</qualifiedname>
+        <param>
+          <type>std::vector&lt; size_t &gt; const &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new kinemtics object with newly created momenta for the same insertions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set of indices constructing the momenta for the new <ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The copy of the current <ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> object with new momenta corresponding to <bold>indices</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="246" column="16" bodyfile="src/marty/core/kinematics.cpp" bodystart="278" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a14ec4ff15956d0ca16d612885aea6b5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Kinematics::sortFromIndices</definition>
+        <argsstring>()</argsstring>
+        <name>sortFromIndices</name>
+        <qualifiedname>mty::Kinematics::sortFromIndices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="248" column="10" bodyfile="src/marty/core/kinematics.cpp" bodystart="223" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a37d0fb55fd68496304948a72ab1d27a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref></type>
+        <definition>Kinematics mty::Kinematics::alignedWith</definition>
+        <argsstring>(Kinematics const &amp;other) const</argsstring>
+        <name>alignedWith</name>
+        <qualifiedname>mty::Kinematics::alignedWith</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="250" column="16" bodyfile="src/marty/core/kinematics.cpp" bodystart="243" bodyend="276"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmty_1_1Kinematics_1af19290e7de1b6c033a647551594be814" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Kinematics::replace</definition>
+        <argsstring>(csl::Expr &amp;expr, Kinematics const &amp;k1, Kinematics const &amp;k2)</argsstring>
+        <name>replace</name>
+        <qualifiedname>mty::Kinematics::replace</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> const &amp;</type>
+          <declname>k1</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> const &amp;</type>
+          <declname>k2</declname>
+        </param>
+        <briefdescription>
+<para>Replaces in an expression the relevant (squared-)momenta corresponding to the replacement of one <ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> object to another. This function must receive two kinematics of the same size, and replaces in <bold>expr</bold> the (squared-)momenta of <bold>k1</bold> by those of <bold>k2</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression in which the replacement takes place. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left kinematics, its momenta are replaced. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right kinematics, its momenta take place in <bold>expr</bold>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="263" column="5" bodyfile="src/marty/core/kinematics.cpp" bodystart="285" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1addb610b2ee9cda03916bd64790a25996" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref></type>
+        <definition>Kinematics mty::Kinematics::merge</definition>
+        <argsstring>(Kinematics const &amp;k1, Kinematics const &amp;k2)</argsstring>
+        <name>merge</name>
+        <qualifiedname>mty::Kinematics::merge</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> const &amp;</type>
+          <declname>k1</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> const &amp;</type>
+          <declname>k2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="265" column="23" bodyfile="src/marty/core/kinematics.cpp" bodystart="317" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1ab3b48f9e1b6fdb19eee0bbeac8d4beb0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; size_t &gt;</type>
+        <definition>static std::vector&lt; size_t &gt; mty::Kinematics::defaultIndices</definition>
+        <argsstring>(size_t N)</argsstring>
+        <name>defaultIndices</name>
+        <qualifiedname>mty::Kinematics::defaultIndices</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+<para>Returns the default range of indices form 1 to N. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the container to return.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A std::vector&lt;size_t&gt; equal to <formula id="141">$ {1, 2, ..., N} $</formula>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="274" column="24" bodyfile="src/marty/core/kinematics.h" bodystart="274" bodyend="279"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmty_1_1Kinematics_1ad78f74ccf665b98e1849ccb5d9b193bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, Kinematics const &amp;kin)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::Kinematics::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> const &amp;</type>
+          <declname>kin</declname>
+        </param>
+        <briefdescription>
+<para>Overload of output stream operator for <ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output stream. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>kin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref> object to display.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The modified stream. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="289" column="12" bodyfile="src/marty/core/kinematics.cpp" bodystart="351" bodyend="366"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a7ad5229c2dbd15088f0a4117b68a24a3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Kinematics::initMomentaSquared</definition>
+        <argsstring>(std::vector&lt; size_t &gt; const &amp;indices)</argsstring>
+        <name>initMomentaSquared</name>
+        <qualifiedname>mty::Kinematics::initMomentaSquared</qualifiedname>
+        <param>
+          <type>std::vector&lt; size_t &gt; const &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+<para>Calculates and fills momenta squared from momenta contractions following the expression given in the documentation of squaredMomenta. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Range of indices names for momenta to initialize corresponding names for <formula id="150">$ s_{ij} $</formula> objects. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="300" column="10" bodyfile="src/marty/core/kinematics.cpp" bodystart="141" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a74fd863cd12a431de9b849f21d6d3e75" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Kinematics::addContraction</definition>
+        <argsstring>(csl::Tensor &amp;p1, csl::Tensor &amp;p2, csl::Expr const &amp;res)</argsstring>
+        <name>addContraction</name>
+        <qualifiedname>mty::Kinematics::addContraction</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>Adds a CSL contraction for momenta. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function delegates to CSL the responsibility to add the contraction property for <formula id="151">$ p_1\cdot p_2 $</formula> calling cgl::TensorParent::addSelfContraction() so that this contraction is simplified when encountered in calculations and replaced by the result.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Left momentum in the contraction. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right momentum in the contraction. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result of the contraction (see squaredMomenta). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="316" column="5" bodyfile="src/marty/core/kinematics.cpp" bodystart="171" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1a8cf3d0e51e66e15129b8761967c7a2a8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Kinematics::setSquaredMomentum</definition>
+        <argsstring>(size_t i, size_t j, csl::Expr const &amp;res)</argsstring>
+        <name>setSquaredMomentum</name>
+        <qualifiedname>mty::Kinematics::setSquaredMomentum</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>Sets a squared momentum from its indices and the corresponding expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the left momentum. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the right momentum. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression result of the contraction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="326" column="10" bodyfile="src/marty/core/kinematics.cpp" bodystart="179" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Kinematics_1ad3d02f702bb5757c35b6d4f9e73f4e52" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t mty::Kinematics::squaredMomentumIndex</definition>
+        <argsstring>(size_t i, size_t j) const</argsstring>
+        <name>squaredMomentumIndex</name>
+        <qualifiedname>mty::Kinematics::squaredMomentumIndex</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Returns the index corresponding to a given momenta product. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the left momentum. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the right momentum.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The index corresponding to <formula id="150">$ s_{ij} $</formula> in the linear range containing squared momenta. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/kinematics.h" line="337" column="12" bodyfile="src/marty/core/kinematics.h" bodystart="337" bodyend="340"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Stores insertion and momenta data and provides a simple interface to manipulate it. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/core/kinematics.h" line="39" column="1" bodyfile="src/marty/core/kinematics.h" bodystart="39" bodyend="393"/>
+    <listofallmembers>
+      <member refid="classmty_1_1Kinematics_1a74fd863cd12a431de9b849f21d6d3e75" prot="private" virt="non-virtual"><scope>mty::Kinematics</scope><name>addContraction</name></member>
+      <member refid="classmty_1_1Kinematics_1a37d0fb55fd68496304948a72ab1d27a2" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>alignedWith</name></member>
+      <member refid="classmty_1_1Kinematics_1a50dffc918daedd24cc292d8ee4d74faf" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>applyIndices</name></member>
+      <member refid="classmty_1_1Kinematics_1a370bfb2cb9622362eb2dab58c0d0e030" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>applyPermutation</name></member>
+      <member refid="classmty_1_1Kinematics_1ab3b48f9e1b6fdb19eee0bbeac8d4beb0" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>defaultIndices</name></member>
+      <member refid="classmty_1_1Kinematics_1a724cda0e79e975ace161063893b4d48a" prot="private" virt="non-virtual"><scope>mty::Kinematics</scope><name>externalSpinTensors</name></member>
+      <member refid="classmty_1_1Kinematics_1a7864e5b0b59e73820c9b30b6587a69f9" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>getDegreesOfFreedomFactor</name></member>
+      <member refid="classmty_1_1Kinematics_1a470fa2aa6fca310676fbde8bdf0e77f8" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>getExternalSpinTensors</name></member>
+      <member refid="classmty_1_1Kinematics_1a06145f1d0e43a76152047fb7f0083412" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>getIndices</name></member>
+      <member refid="classmty_1_1Kinematics_1aa834425c043e566221f2ccd8ee27310c" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>getInsertions</name></member>
+      <member refid="classmty_1_1Kinematics_1a2d5bf49c4a2ac87133a593f100bd29bd" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>getMomenta</name></member>
+      <member refid="classmty_1_1Kinematics_1a87ba407c2e75ce851f365d37f8ea5e4a" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>getOrderedMomenta</name></member>
+      <member refid="classmty_1_1Kinematics_1acdbffeadf496ef6c40bb86e8c484042e" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>getSquaredMomenta</name></member>
+      <member refid="classmty_1_1Kinematics_1ab2f69493a2c1dea645bc26756c52c600" prot="private" virt="non-virtual"><scope>mty::Kinematics</scope><name>indices</name></member>
+      <member refid="classmty_1_1Kinematics_1a7ad5229c2dbd15088f0a4117b68a24a3" prot="private" virt="non-virtual"><scope>mty::Kinematics</scope><name>initMomentaSquared</name></member>
+      <member refid="classmty_1_1Kinematics_1a762b7cd965aec4948f183cf1140b46d5" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>insertion</name></member>
+      <member refid="classmty_1_1Kinematics_1aa2efc6c45b90c1c16dbbfa71687e17f0" prot="private" virt="non-virtual"><scope>mty::Kinematics</scope><name>insertions</name></member>
+      <member refid="classmty_1_1Kinematics_1a320a21d522f1a623afe821c0b1c04584" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>Kinematics</name></member>
+      <member refid="classmty_1_1Kinematics_1a49b13686de79a921bf8cce4e8ed86a97" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>Kinematics</name></member>
+      <member refid="classmty_1_1Kinematics_1a7d3e3349bd1ee4574449dae8c60bfad7" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>Kinematics</name></member>
+      <member refid="classmty_1_1Kinematics_1a68de3da7161148d99d445730fa4448ff" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>Kinematics</name></member>
+      <member refid="classmty_1_1Kinematics_1addb610b2ee9cda03916bd64790a25996" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>merge</name></member>
+      <member refid="classmty_1_1Kinematics_1adddfecf9e497772dda35a29d6cff504b" prot="private" virt="non-virtual"><scope>mty::Kinematics</scope><name>momenta</name></member>
+      <member refid="classmty_1_1Kinematics_1a4a83629b674884bb355ce175d74ee64e" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>momentum</name></member>
+      <member refid="classmty_1_1Kinematics_1ad78f74ccf665b98e1849ccb5d9b193bf" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classmty_1_1Kinematics_1af19290e7de1b6c033a647551594be814" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>replace</name></member>
+      <member refid="classmty_1_1Kinematics_1a4e6058928a38fc31e61beb3783927e8e" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>setExternalSpinTensors</name></member>
+      <member refid="classmty_1_1Kinematics_1a8cf3d0e51e66e15129b8761967c7a2a8" prot="private" virt="non-virtual"><scope>mty::Kinematics</scope><name>setSquaredMomentum</name></member>
+      <member refid="classmty_1_1Kinematics_1addf875ca82d140fb0cfa7a3e3af5610f" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>size</name></member>
+      <member refid="classmty_1_1Kinematics_1a14ec4ff15956d0ca16d612885aea6b5f" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>sortFromIndices</name></member>
+      <member refid="classmty_1_1Kinematics_1aa2a07608f3d4a5dae47e13cef0a7b5bd" prot="private" virt="non-virtual"><scope>mty::Kinematics</scope><name>squaredMomenta</name></member>
+      <member refid="classmty_1_1Kinematics_1a39dff37b04aad93e7f0bcb8cf0775c01" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>squaredMomentum</name></member>
+      <member refid="classmty_1_1Kinematics_1ad3d02f702bb5757c35b6d4f9e73f4e52" prot="private" virt="non-virtual"><scope>mty::Kinematics</scope><name>squaredMomentumIndex</name></member>
+      <member refid="classmty_1_1Kinematics_1aecb0ee5064fe7c437e03634b12340950" prot="public" virt="non-virtual"><scope>mty::Kinematics</scope><name>subset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

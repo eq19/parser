@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structmty_1_1Spectrum_1_1MatrixEl" kind="struct" language="C++" prot="public">
+    <compoundname>mty::Spectrum::MatrixEl</compoundname>
+    <includes refid="spectrum_8h" local="no">spectrum.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmty_1_1Spectrum_1_1MatrixEl_1abb4dc4231b6f60b29e48a8a13f25538a" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t mty::Spectrum::MatrixEl::i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <qualifiedname>mty::Spectrum::MatrixEl::i</qualifiedname>
+        <briefdescription>
+<para>Row index of the term. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="112" column="16" bodyfile="src/marty/core/spectrum.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1Spectrum_1_1MatrixEl_1a466f840c17023c4140b13432de72332d" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t mty::Spectrum::MatrixEl::j</definition>
+        <argsstring></argsstring>
+        <name>j</name>
+        <qualifiedname>mty::Spectrum::MatrixEl::j</qualifiedname>
+        <briefdescription>
+<para>Column index of the term. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="116" column="16" bodyfile="src/marty/core/spectrum.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1Spectrum_1_1MatrixEl_1a915d43941f93f54ba5740fbc9223226e" prot="public" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Spectrum::MatrixEl::term</definition>
+        <argsstring></argsstring>
+        <name>term</name>
+        <qualifiedname>mty::Spectrum::MatrixEl::term</qualifiedname>
+        <briefdescription>
+<para>Actual term. Fields are removed, it should then be a purely scalar factor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/spectrum.h" line="121" column="19" bodyfile="src/marty/core/spectrum.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Small structure containing a mass term (without fields) and its position in the mass matrix. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::Spectrum::MatrixEl</label>
+        <link refid="structmty_1_1Spectrum_1_1MatrixEl"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>term</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/spectrum.h" line="108" column="5" bodyfile="src/marty/core/spectrum.h" bodystart="108" bodyend="122"/>
+    <listofallmembers>
+      <member refid="structmty_1_1Spectrum_1_1MatrixEl_1abb4dc4231b6f60b29e48a8a13f25538a" prot="public" virt="non-virtual"><scope>mty::Spectrum::MatrixEl</scope><name>i</name></member>
+      <member refid="structmty_1_1Spectrum_1_1MatrixEl_1a466f840c17023c4140b13432de72332d" prot="public" virt="non-virtual"><scope>mty::Spectrum::MatrixEl</scope><name>j</name></member>
+      <member refid="structmty_1_1Spectrum_1_1MatrixEl_1a915d43941f93f54ba5740fbc9223226e" prot="public" virt="non-virtual"><scope>mty::Spectrum::MatrixEl</scope><name>term</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

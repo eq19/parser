@@ -1,0 +1,662 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="algebraState_8h" kind="file" language="C++">
+    <compoundname>algebraState.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="algebra_8h" local="yes">src/marty/core/algebra.h</includedby>
+    <includedby refid="algebraState_8cpp" local="yes">src/marty/core/algebraState.cpp</includedby>
+    <includedby refid="semiSimpleAlgebra_8h" local="yes">src/marty/core/semiSimpleAlgebra.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/marty/core/algebraState.h</label>
+        <link refid="algebraState_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="7">
+        <label>src/marty.h</label>
+        <link refid="marty_8h_source"/>
+      </node>
+      <node id="2">
+        <label>src/marty/core/algebra.h</label>
+        <link refid="algebra_8h"/>
+      </node>
+      <node id="1">
+        <label>src/marty/core/algebraState.h</label>
+        <link refid="algebraState_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>src/marty/core/amplitude.h</label>
+        <link refid="amplitude_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>src/marty/core/amplitudeInitializer.h</label>
+        <link refid="amplitudeInitializer_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/marty/core/colorSimplification.h</label>
+        <link refid="colorSimplification_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/marty/core/colorSpace.h</label>
+        <link refid="colorSpace_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>src/marty/core/diracology.h</label>
+        <link refid="diracology_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>src/marty/core/drawer.h</label>
+        <link refid="drawer_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>src/marty/core/expander.h</label>
+        <link refid="expander_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>src/marty/core/fermionicField.h</label>
+        <link refid="fermionicField_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>src/marty/core/feynOptions.h</label>
+        <link refid="feynOptions_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>src/marty/core/feynmanDiagram.h</label>
+        <link refid="feynmanDiagram_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>src/marty/core/feynmanRule.h</label>
+        <link refid="feynmanRule_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>src/marty/core/feynruleMomentum.h</label>
+        <link refid="feynruleMomentum_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>src/marty/core/filters.h</label>
+        <link refid="filters_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>src/marty/core/flavor.h</label>
+        <link refid="flavor_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>src/marty/core/gauge.h</label>
+        <link refid="gauge_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>src/marty/core/gauged.h</label>
+        <link refid="gauged_8h"/>
+      </node>
+      <node id="63">
+        <label>src/marty/core/gaugedGroup.h</label>
+        <link refid="gaugedGroup_8h"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>src/marty/core/generator.h</label>
+        <link refid="generator_8h"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>src/marty/core/ghostField.h</label>
+        <link refid="ghostField_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>src/marty/core/goldstoneField.h</label>
+        <link refid="goldstoneField_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>src/marty/core/graph.h</label>
+        <link refid="graph_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>src/marty/core/group.h</label>
+        <link refid="group_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>src/marty/core/groupIndices.h</label>
+        <link refid="groupIndices_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>src/marty/core/insertion.h</label>
+        <link refid="insertion_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>src/marty/core/interactionTerm.h</label>
+        <link refid="interactionTerm_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>src/marty/core/kinematics.h</label>
+        <link refid="kinematics_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>src/marty/core/lagrangian.h</label>
+        <link refid="lagrangian_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/marty/core/marty.h</label>
+        <link refid="marty_2core_2marty_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>src/marty/core/model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>src/marty/core/modelBuilder.h</label>
+        <link refid="modelBuilder_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>src/marty/core/modelData.h</label>
+        <link refid="modelData_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>src/marty/core/momentumConservation.h</label>
+        <link refid="momentumConservation_8h"/>
+      </node>
+      <node id="31">
+        <label>src/marty/core/mrtInterface.h</label>
+        <link refid="mrtInterface_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>src/marty/core/mrtInterfaceCurrent.h</label>
+        <link refid="mrtInterfaceCurrent_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>src/marty/core/mtylibrary.h</label>
+        <link refid="mtylibrary_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>src/marty/core/polarization.h</label>
+        <link refid="polarization_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>src/marty/core/quantumField.h</label>
+        <link refid="quantumField_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>src/marty/core/quantumFieldTheory.h</label>
+        <link refid="quantumFieldTheory_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>src/marty/core/representation.h</label>
+        <link refid="representation_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>src/marty/core/scalarField.h</label>
+        <link refid="scalarField_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/marty/core/semiSimpleAlgebra.h</label>
+        <link refid="semiSimpleAlgebra_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>src/marty/core/spectrum.h</label>
+        <link refid="spectrum_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>src/marty/core/traceIdentities.h</label>
+        <link refid="traceIdentities_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>src/marty/core/vectorField.h</label>
+        <link refid="vectorField_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>src/marty/core/wick.h</label>
+        <link refid="wick_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>src/marty/core/wilson.h</label>
+        <link refid="wilson_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>src/marty/core/wilsonOperator.h</label>
+        <link refid="wilsonOperator_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>src/marty/models/gthdm.h</label>
+        <link refid="gthdm_8h_source"/>
+      </node>
+      <node id="35">
+        <label>src/marty/models/mssm.h</label>
+        <link refid="mssm_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>src/marty/models/mssmData.h</label>
+        <link refid="mssmData_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>src/marty/models/nmfv.h</label>
+        <link refid="nmfv_8h_source"/>
+      </node>
+      <node id="36">
+        <label>src/marty/models/pmssm.h</label>
+        <link refid="pmssm_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>src/marty/models/pmssm_lem.h</label>
+        <link refid="pmssm__lem_8h_source"/>
+      </node>
+      <node id="8">
+        <label>src/marty/models/pmssm_lem/pmssm_data.h</label>
+        <link refid="pmssm__data_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>src/marty/models/pmssm_lem/pmssm_lem.h</label>
+        <link refid="pmssm__lem_2pmssm__lem_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>src/marty/models/qcd.h</label>
+        <link refid="qcd_8h_source"/>
+      </node>
+      <node id="39">
+        <label>src/marty/models/qed.h</label>
+        <link refid="qed_8h"/>
+      </node>
+      <node id="40">
+        <label>src/marty/models/sm.h</label>
+        <link refid="sm_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>src/marty/models/thdm.h</label>
+        <link refid="thdm_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>src/marty/sgl/contraction.h</label>
+        <link refid="contraction_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>src/marty/sgl/gammaindex.h</label>
+        <link refid="gammaindex_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>src/marty/sgl/indexchain.h</label>
+        <link refid="indexchain_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>src/marty/sgl/sgl.h</label>
+        <link refid="sgl_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>src/marty/sgl/sglcommutation.h</label>
+        <link refid="sglcommutation_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmty_1_1AlgebraState" prot="public">mty::AlgebraState</innerclass>
+    <innernamespace refid="namespacemty">mty</innernamespace>
+    <briefdescription>
+<para>Class AlgebraState that represents the set of dinkin labels for a state in a semi simple Lie Algebra. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Gregoire Uhlrich </para>
+</simplesect>
+<simplesect kind="version"><para>1.3 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>MARTY.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MARTY<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MARTY<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>MARTY.<sp/>If<sp/>not,<sp/>see<sp/>&lt;https://www.gnu.org/licenses/&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ALGEBRA_STATE_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALGEBRA_STATE_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemty" kindref="compound">mty</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classmty_1_1AlgebraState" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41" refid="classmty_1_1AlgebraState_1aa150a172f99650ad242909d28c4a3e5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmty_1_1AlgebraState_1aa150a172f99650ad242909d28c4a3e5e" kindref="member">AlgebraState</ref>()<sp/>:<sp/>std::vector&lt;int&gt;()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classmty_1_1AlgebraState_1a692968d9ab2f1cfc1f074b03288661e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classmty_1_1AlgebraState_1a692968d9ab2f1cfc1f074b03288661e7" kindref="member">AlgebraState</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>&amp;vec)<sp/>:<sp/>std::vector&lt;int&gt;(vec)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref><sp/><ref refid="classmty_1_1AlgebraState_1a85a2d48c8c01c94b5832a89c8020c976" kindref="member">applyAnnihilator</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>&amp;shifts)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classmty_1_1AlgebraState_1a69bfd8d90690ad1332a6e0ccd3b1cebb" kindref="member">eigenValue</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>&amp;root,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>&amp;normRoots,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>normLambda)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="classmty_1_1AlgebraState_1a333f3d7c302826735fdb9da521d8ce0e" kindref="member">getLabels</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&lt;(<ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;other)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="82"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">std::vector&lt;int&gt;</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(*this)<sp/>&lt;<sp/>other;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classmty_1_1AlgebraState_1a322f4db520cf58f1460e3afaace1b603" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream<sp/>&amp;<ref refid="classmty_1_1AlgebraState_1a322f4db520cf58f1460e3afaace1b603" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;<sp/><sp/><sp/><sp/><sp/><sp/>fout,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref><sp/>&amp;state);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>End<sp/>of<sp/>namespace<sp/>mty</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/marty/core/algebraState.h"/>
+  </compounddef>
+</doxygen>

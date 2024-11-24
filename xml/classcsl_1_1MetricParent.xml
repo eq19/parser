@@ -1,0 +1,502 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcsl_1_1MetricParent" kind="class" language="C++" prot="public">
+    <compoundname>csl::MetricParent</compoundname>
+    <basecompoundref refid="classcsl_1_1TensorParent" prot="public" virt="non-virtual">csl::TensorParent</basecompoundref>
+    <includes refid="indicial_8h" local="no">indicial.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcsl_1_1MetricParent_1a70157042bb8eab3e011ef7cb5448df99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::MetricParent::MetricParent</definition>
+        <argsstring>()</argsstring>
+        <name>MetricParent</name>
+        <qualifiedname>csl::MetricParent::MetricParent</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="583" column="5" bodyfile="src/csl/indicial.cpp" bodystart="1870" bodyend="1872"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1MetricParent_1aeec97495820f377e23e68b20e4656bfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::MetricParent::MetricParent</definition>
+        <argsstring>(const MetricParent &amp;abstract)=delete</argsstring>
+        <name>MetricParent</name>
+        <qualifiedname>csl::MetricParent::MetricParent</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1MetricParent" kindref="compound">MetricParent</ref> &amp;</type>
+          <declname>abstract</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="585" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1MetricParent_1a0a8b39b70996a901adcc241813316e1f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::MetricParent::MetricParent</definition>
+        <argsstring>(const DeltaParent &amp;abstract)</argsstring>
+        <name>MetricParent</name>
+        <qualifiedname>csl::MetricParent::MetricParent</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1DeltaParent" kindref="compound">DeltaParent</ref> &amp;</type>
+          <declname>abstract</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor from a <ref refid="classcsl_1_1DeltaParent" kindref="compound">DeltaParent</ref>: the metric is just a kronecker delta. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="591" column="14" bodyfile="src/csl/indicial.cpp" bodystart="1874" bodyend="1878"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1MetricParent_1aeb55044402c1f9be1acdced724160e7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::MetricParent::MetricParent</definition>
+        <argsstring>(const Space *t_space, const Expr &amp;t_tensor, const std::string &amp;t_name=&quot;g&quot;)</argsstring>
+        <name>MetricParent</name>
+        <qualifiedname>csl::MetricParent::MetricParent</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *</type>
+          <declname>t_space</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>t_tensor</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>t_name</declname>
+          <defval>&quot;g&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Constructor from a <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> and a tensor. The tensor here must be specified. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_space</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Space" kindref="compound">Space</ref> in which the metric must be applied. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Tensor" kindref="compound">Tensor</ref> (Squared symmetric matrix) representing the metric. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the metric. Default = &quot;g&quot;. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="602" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1MetricParent_1a875cd07756660e32347d3b1f48f10ae3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::MetricParent::MetricParent</definition>
+        <argsstring>(const Space *t_space, const std::string &amp;t_name=&quot;g&quot;)</argsstring>
+        <name>MetricParent</name>
+        <qualifiedname>csl::MetricParent::MetricParent</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *</type>
+          <declname>t_space</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>t_name</declname>
+          <defval>&quot;g&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="606" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1MetricParent_1a2194d37ed574daf54deba112e482637d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacecslParent_1a880f05263e57bd6cac32e48fd45b7339" kindref="member">cslParent::Type</ref></type>
+        <definition>cslParent::Type csl::MetricParent::getType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getType</name>
+        <qualifiedname>csl::MetricParent::getType</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a6a9115038be74e35dbcd8ecdbba7e5a1">getType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The type of the parent. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="608" column="21" bodyfile="src/csl/indicial.cpp" bodystart="1911" bodyend="1914"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1MetricParent_1af91920eba4f5346a39a13e393f806526" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::MetricParent::hasContractionProperty</definition>
+        <argsstring>(const Abstract *self, Expr_info B) const override</argsstring>
+        <name>hasContractionProperty</name>
+        <qualifiedname>csl::MetricParent::hasContractionProperty</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a7f680e00248dd59a1545488ec4b43c07">hasContractionProperty</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> *</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>Tells if an <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> has contraction properties with another expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the element corresponding to the parent. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other expression. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if there is one particular contraction property. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="610" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1916" bodyend="1925"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1MetricParent_1a42674b8cb437b52c60adb3338718661d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::MetricParent::contraction</definition>
+        <argsstring>(const Abstract *self, Expr_info B) const override</argsstring>
+        <name>contraction</name>
+        <qualifiedname>csl::MetricParent::contraction</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a4df179280a63c410c84f7ea4edbcbee2">contraction</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> *</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>Applies a contractoin property if there is one between <bold>self</bold> and <bold>B</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the element corresponding to the parent. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other expression. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The contracted object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="613" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1927" bodyend="1962"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1MetricParent_1aac09675c61194c6002ae7b5c2cdd582e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::MetricParent::printDefinition</definition>
+        <argsstring>(std::ostream &amp;out=std::cout, int indentSize=4, bool header=false) const override</argsstring>
+        <name>printDefinition</name>
+        <qualifiedname>csl::MetricParent::printDefinition</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a6c633dfff2c6a58ffbf2dae9ca9e07ae">printDefinition</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indentSize</declname>
+          <defval>4</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>header</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="615" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1964" bodyend="1977"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1MetricParent_1a1c137eb96960fbff8eb9aa9792149bd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::MetricParent::operator()</definition>
+        <argsstring>(std::vector&lt; Index &gt; indices) override</argsstring>
+        <name>operator()</name>
+        <qualifiedname>csl::MetricParent::operator()</qualifiedname>
+        <reimplements refid="classcsl_1_1TensorParent_1a4d65c157315e20d9c6855d0a14b7ba63">operator()</reimplements>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> &gt;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+<para>Generate the Element for an <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> of arbitrary dimension</para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of indices to generate the <ref refid="classcsl_1_1TensorElement" kindref="compound">TensorElement</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding <ref refid="classcsl_1_1TensorElement" kindref="compound">TensorElement</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="619" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1979" bodyend="2002"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Specialization of <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> for a matric object (two indices symmetric etc). An object of type <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> initializated with a metric will automatically have signed indices. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>csl::AbstractParent</label>
+        <link refid="classcsl_1_1AbstractParent"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>csl::MetricParent</label>
+        <link refid="classcsl_1_1MetricParent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>csl::TensorParent</label>
+        <link refid="classcsl_1_1TensorParent"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::enable_shared_from_this&lt; AbstractParent &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>csl::AbstractParent</label>
+        <link refid="classcsl_1_1AbstractParent"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>csl::MetricParent</label>
+        <link refid="classcsl_1_1MetricParent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>csl::Symmetry</label>
+        <link refid="classcsl_1_1Symmetry"/>
+      </node>
+      <node id="2">
+        <label>csl::TensorParent</label>
+        <link refid="classcsl_1_1TensorParent"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>symmetry</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>tensor</edgelabel>
+          <edgelabel>trace</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::enable_shared_from_this&lt; AbstractParent &gt;</label>
+      </node>
+      <node id="7">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/csl/indicial.h" line="577" column="1" bodyfile="src/csl/indicial.h" bodystart="577" bodyend="620"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1AbstractParent_1a3a8495f4cc8281410f8aa512c64116cb" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>AbstractParent</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a961d277c9a277163931cb5b45906c83f" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>AbstractParent</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ad88d1dd79f22b67744640124252dc093" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>AbstractParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1abdfaf46f9699cea8ac9cea9b7dcec388" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>addAntiSymmetry</name></member>
+      <member refid="classcsl_1_1TensorParent_1a4e64e8c6d44452b8457401570e8fdee1" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>addComplexProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1aae4c207cf3365ebf833975cb4b4e92f8" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>addContractionProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1a464d54dcfae18bb913b4bf6a6629adab" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>addHermitianProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1a81eabaf09cb9fe1855a35a91faf3b132" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>addSelfContraction</name></member>
+      <member refid="classcsl_1_1TensorParent_1a17fb05141415ac442cb8f5b6e88bc329" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>addSpace</name></member>
+      <member refid="classcsl_1_1TensorParent_1ac9a495db8af3074a6c329d84a1b7cb91" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>addSymmetry</name></member>
+      <member refid="classcsl_1_1TensorParent_1a47f7c70202336b11674b15a6895b16ed" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>addTraceLessNess</name></member>
+      <member refid="classcsl_1_1TensorParent_1af3fc929cce72fcf95aad56ebe51c8881" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>addTransposedProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1aef208f53719c900f1b0a4b6f57fb9f48" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>applyProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1ab1a4d5405370ca6a59c35f87f8b2e5b7" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>breakSpace</name></member>
+      <member refid="classcsl_1_1TensorParent_1ac562be01bc8c902fdd85072f07714b7f" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>brokenParts</name></member>
+      <member refid="classcsl_1_1TensorParent_1a7a4851df688d387978d14564ae898b2c" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>chainContraction</name></member>
+      <member refid="classcsl_1_1TensorParent_1a1785b59dcf8041a7e097b9c4034d666a" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>checkIndexRequest</name></member>
+      <member refid="classcsl_1_1TensorParent_1a56c5366a63a06eec34bae9b9cd2fbeaf" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>checkIndexRequest</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a177e5244cc4d4b6c1e0600a4f77b523f" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>commutable</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ab058ceee466fd0997c060e83fc0a4e96" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>complexProp</name></member>
+      <member refid="classcsl_1_1TensorParent_1a0bee5fadcbac24cc611318499a6b9243" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>conjugateProperty</name></member>
+      <member refid="classcsl_1_1MetricParent_1a42674b8cb437b52c60adb3338718661d" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1TensorParent_1a3657ec01e4768d2f5daf416b83126cc1" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>covariant</name></member>
+      <member refid="classcsl_1_1TensorParent_1a86bbf18d3861f4e97c186206f4d43ccb" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>createFixedIndices</name></member>
+      <member refid="classcsl_1_1TensorParent_1aaf00e073ad5c8badf90869efcb327239" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>createFixedIndices</name></member>
+      <member refid="classcsl_1_1TensorParent_1a14f4bcb3c19fb4e8cb8ccf3a61719f27" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>dependsExplicitlyOn</name></member>
+      <member refid="classcsl_1_1TensorParent_1a7a0dbe923e3491cc35fa48c175baee43" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>dependsOn</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ad34cb190892a7b0d29cecf844d836e10" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>disableEvaluation</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a0cbecc9ebf1ba07087c4e275cf81a767" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>enableEvaluation</name></member>
+      <member refid="classcsl_1_1TensorParent_1adddc8255d23e5816e9cda53f5e8a034e" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>evaluate</name></member>
+      <member refid="classcsl_1_1TensorParent_1aa7e656c4430ca22d4ba01c02e21f500e" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>extContraction</name></member>
+      <member refid="classcsl_1_1TensorParent_1ab2a7b1370956a56cf793b88beb6ce5f3" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>externalTensors</name></member>
+      <member refid="classcsl_1_1TensorParent_1aa0dae8fe45934513b287849169dbba93" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>fullyAntiSymmetric</name></member>
+      <member refid="classcsl_1_1TensorParent_1a59e24724c7c0c2ee05617769c78c454e" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>fullySymmetric</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a9d9f642ad348b33efb70b9f4cf839c1b" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getBaseName</name></member>
+      <member refid="classcsl_1_1TensorParent_1acdb63d093ac13e3ec7f4bde54ca86738" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getBrokenParts</name></member>
+      <member refid="classcsl_1_1AbstractParent_1af8ae5696856c551204addb95271333bf" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>getCommutable</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ad0029cab35d92a9542c5fb21b6672212" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>getComplexProp</name></member>
+      <member refid="classcsl_1_1TensorParent_1a67f7479000987afe784cf41d139a97a6" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getComplexProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1a84c9f98e1531b573a63e67c667f7cba6" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getContractionProperties</name></member>
+      <member refid="classcsl_1_1TensorParent_1a5bff2bf79a3985d9020bee392f440990" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getDim</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ac45297ef35dab1807a158056ec8dfac3" prot="public" virt="virtual" ambiguityscope="csl::AbstractParent::"><scope>csl::MetricParent</scope><name>getDim</name></member>
+      <member refid="classcsl_1_1AbstractParent_1af7cf14c2576a5b337f2e75059a5e002c" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getEncapsulated</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a38fb1b0329110a3caed8e68397c08c51" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getExactEncapsulated</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a77bb772ebe5adafe83a9f504a56e05d0" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getFieldSpace</name></member>
+      <member refid="classcsl_1_1TensorParent_1a4b974963fac5f42fe6f3ea5ca7ed93b6" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getFullyAntiSymmetric</name></member>
+      <member refid="classcsl_1_1TensorParent_1aa4af33bfd789ef86dd5775b7a4558a01" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getFullySymmetric</name></member>
+      <member refid="classcsl_1_1TensorParent_1a36af50ffc43694e38539c9a0f282653b" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getHermitianProperty</name></member>
+      <member refid="classcsl_1_1AbstractParent_1acacd759bca7fa6e750080a68ea970caa" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>getLatexName</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ab22f321502a8aa481865be3e58bb241d" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>getName</name></member>
+      <member refid="classcsl_1_1TensorParent_1a57d5160b0d1a94e376bbbec3d5ab5735" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getPermutation</name></member>
+      <member refid="classcsl_1_1TensorParent_1a9526dde46fc8cbe38a6cc9910441986f" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getPrimaryType</name></member>
+      <member refid="classcsl_1_1TensorParent_1ae501e7e880e885ddcd65d946d69ef53c" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getSpace</name></member>
+      <member refid="classcsl_1_1TensorParent_1a09a777f09a8e69e177beef0055f0062a" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>getSymmetry</name></member>
+      <member refid="classcsl_1_1TensorParent_1a889012a413646fa644b39c24366673f1" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getTensor</name></member>
+      <member refid="classcsl_1_1TensorParent_1aef2a4af73762e024d8bd5f0fa0e6d359" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getTensor</name></member>
+      <member refid="classcsl_1_1TensorParent_1a13f343f42228eecf7986e8a361091627" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getTrace</name></member>
+      <member refid="classcsl_1_1TensorParent_1aad0b86fccab27dcef313d5be70edc806" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getTransposedProperty</name></member>
+      <member refid="classcsl_1_1MetricParent_1a2194d37ed574daf54deba112e482637d" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>getType</name></member>
+      <member refid="classcsl_1_1TensorParent_1a29c887ab51d1dfa876f869fbba3c8479" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>hasChainContractionProperty</name></member>
+      <member refid="classcsl_1_1MetricParent_1af91920eba4f5346a39a13e393f806526" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>hasContractionProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1a4bb5b8f6ae27e07622ab74ffdd461486" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>hermitianProperty</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a4e78f62f3624e0e6070f1da4ddd32943" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>isAnAbbreviation</name></member>
+      <member refid="classcsl_1_1TensorParent_1a592a243554b0bdeb58c34efe4eedaeee" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>isTraceLessIn</name></member>
+      <member refid="classcsl_1_1TensorParent_1a892cd4e2f9ca94f6e9aee17f779b6090" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>isValued</name></member>
+      <member refid="classcsl_1_1TensorParent_1ae7ec718cfaa3c9598463723a36f74f17" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>keepBestPermutation</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a98c857ebf734c15e7afd0d8a13988ac9" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>latexName</name></member>
+      <member refid="classcsl_1_1MetricParent_1a70157042bb8eab3e011ef7cb5448df99" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>MetricParent</name></member>
+      <member refid="classcsl_1_1MetricParent_1aeec97495820f377e23e68b20e4656bfc" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>MetricParent</name></member>
+      <member refid="classcsl_1_1MetricParent_1a0a8b39b70996a901adcc241813316e1f" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>MetricParent</name></member>
+      <member refid="classcsl_1_1MetricParent_1aeb55044402c1f9be1acdced724160e7e" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>MetricParent</name></member>
+      <member refid="classcsl_1_1MetricParent_1a875cd07756660e32347d3b1f48f10ae3" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>MetricParent</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a2ad6b4cd58d9b051a4d62f343bf48c2e" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>name</name></member>
+      <member refid="classcsl_1_1TensorParent_1acb363ae0d9495875816d243352735ccf" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1MetricParent_1a1c137eb96960fbff8eb9aa9792149bd2" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1TensorParent_1a335867b85b438d48eaf0457cb5c83469" prot="public" virt="virtual" ambiguityscope="csl::TensorParent::"><scope>csl::MetricParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1TensorParent_1a76840bf24d5392c521467ecb662cc15e" prot="public" virt="virtual" ambiguityscope="csl::TensorParent::"><scope>csl::MetricParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a67817d2d364178d734343aa2aaa8c621" prot="public" virt="virtual" ambiguityscope="csl::AbstractParent::"><scope>csl::MetricParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ad64079f8317747669f1c8b4c1498d8dc" prot="public" virt="virtual" ambiguityscope="csl::AbstractParent::"><scope>csl::MetricParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a4281c853db4878e925bc81440213dae0" prot="public" virt="virtual" ambiguityscope="csl::AbstractParent::"><scope>csl::MetricParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1AbstractParent_1aba91946c679a4e6e116f0fc75fc52e1e" prot="public" virt="virtual" ambiguityscope="csl::AbstractParent::"><scope>csl::MetricParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1TensorParent_1a18f7711d34c8bcdb3e034b7b82b76e09" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1MetricParent_1aac09675c61194c6002ae7b5c2cdd582e" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>printDefinition</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a789915324d1e21a6be70bbd495ada1cc" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>printPropDefinition</name></member>
+      <member refid="classcsl_1_1TensorParent_1a44c54413e4600c7d5589879671f8d474" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>removeContractionProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1a8753c5b10ccca6f049cbd5e852fbb21b" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>removeSelfContraction</name></member>
+      <member refid="classcsl_1_1TensorParent_1a05b90066cf74b7fc304a474df4e64a05" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>removeTraceLessNess</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a831ac782bdbba8d40838c6aeffaa53f6" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>self</name></member>
+      <member refid="classcsl_1_1TensorParent_1a10cab17d2ba7b927d3b30278201ea9dc" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>selfContraction</name></member>
+      <member refid="classcsl_1_1AbstractParent_1aae1bc83d1df8237e6bf50b6b8f732716" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>setCommutable</name></member>
+      <member refid="classcsl_1_1TensorParent_1ae441946c9f40502d9330aab7be1c9790" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>setComplexProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1a19c75060fbf2040abeb2ca7c61069aec" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>setElementary</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a3085594e68b3845f352898e79237ba24" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>setEncapsulated</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a11b28bb5fd2bd261e76a3980341ead1d" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>setFieldSpace</name></member>
+      <member refid="classcsl_1_1TensorParent_1ae0d6d12f0cd4efe83154cbf79978d088" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>setFullyAntiSymmetric</name></member>
+      <member refid="classcsl_1_1TensorParent_1ac99c17db4d68be67761930e0289ee5e0" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>setFullySymmetric</name></member>
+      <member refid="classcsl_1_1TensorParent_1a25ee0fbfeb78f1044dd56691b40c10ca" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>setKeepBestPermutation</name></member>
+      <member refid="classcsl_1_1AbstractParent_1af9a8cfc57a0bdf8178489c198755565b" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>setLatexName</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a13e6f74e590cbf05dcafb4d9c3df8b9c" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>setName</name></member>
+      <member refid="classcsl_1_1TensorParent_1aa61f52e3ea9ae4beb190442ac0e7aacc" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>setSymmetry</name></member>
+      <member refid="classcsl_1_1TensorParent_1a4eacd947decb14e003f81a8053d94e11" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>setTensor</name></member>
+      <member refid="classcsl_1_1TensorParent_1aa5bd4990cfc0d955edf1614a42d0d011" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>setTrace</name></member>
+      <member refid="classcsl_1_1TensorParent_1ae740d077dfcc386a407ca33d3619a5a9" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>space</name></member>
+      <member refid="classcsl_1_1TensorParent_1adc7dcdd4a866af29f99edc06924c2617" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>symmetry</name></member>
+      <member refid="classcsl_1_1TensorParent_1a61267f78d93f470771cf63f174322e01" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>tensor</name></member>
+      <member refid="classcsl_1_1TensorParent_1ab4af4e561398f75e81b0ca44c2200d8d" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1a04f4e5b6b75716a794e2c275530ae011" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1a34fe9aa77d890d2f797890d044d23727" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1a3381ecd1d560c4a80b2bf4804ef45b93" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1a1dea1d8fe995338d286bf35b48396b7b" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1a72bf7b821897d7b35f6ede9448c60e43" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1ada2f60750c2e2d3f7fa573d8de73d313" prot="public" virt="non-virtual"><scope>csl::MetricParent</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a74bbbbc2b43939c166feb7d8e7cc8537" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>toggleEvaluation</name></member>
+      <member refid="classcsl_1_1TensorParent_1a5db8129d9af05c907e28f046471650e1" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>trace</name></member>
+      <member refid="classcsl_1_1TensorParent_1ab6f004f8a41fff3afb5d62cac078d450" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>traceLessNess</name></member>
+      <member refid="classcsl_1_1TensorParent_1a81701d7f66909acf26cbe0f4d257ffdc" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>transposedProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1ac374a59f2a77225b51fd4f01f727f73b" prot="protected" virt="non-virtual"><scope>csl::MetricParent</scope><name>valued</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a6d13d559a8d68562b5827073b31b3c1a" prot="public" virt="virtual"><scope>csl::MetricParent</scope><name>~AbstractParent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

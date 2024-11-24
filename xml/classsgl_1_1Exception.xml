@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classsgl_1_1Exception" kind="class" language="C++" prot="public">
+    <compoundname>sgl::Exception</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::exception</basecompoundref>
+    <derivedcompoundref refid="classsgl_1_1AbstractCallError" prot="public" virt="non-virtual">sgl::AbstractCallError</derivedcompoundref>
+    <derivedcompoundref refid="classsgl_1_1IndexError" prot="public" virt="non-virtual">sgl::IndexError</derivedcompoundref>
+    <derivedcompoundref refid="classsgl_1_1MathError" prot="public" virt="non-virtual">sgl::MathError</derivedcompoundref>
+    <derivedcompoundref refid="classsgl_1_1TypeError" prot="public" virt="non-virtual">sgl::TypeError</derivedcompoundref>
+    <derivedcompoundref refid="classsgl_1_1ValueError" prot="public" virt="non-virtual">sgl::ValueError</derivedcompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsgl_1_1Exception_1ab9a4ec9508eade0fe1aa359a81c175be" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string sgl::Exception::_msg</definition>
+        <argsstring></argsstring>
+        <name>_msg</name>
+        <qualifiedname>sgl::Exception::_msg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/exceptions.h" line="50" column="17" bodyfile="src/marty/sgl/exceptions.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsgl_1_1Exception_1a46d3ea70b9972315b8712c16ff99417c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sgl::Exception::Exception</definition>
+        <argsstring>()=default</argsstring>
+        <name>Exception</name>
+        <qualifiedname>sgl::Exception::Exception</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/exceptions.h" line="34" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1Exception_1a91129378f342287e4b759e084663ec64" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>sgl::Exception::Exception</definition>
+        <argsstring>(Args &amp;&amp;...args)</argsstring>
+        <name>Exception</name>
+        <qualifiedname>sgl::Exception::Exception</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/exceptions.h" line="37" column="14" bodyfile="src/marty/sgl/exceptions.h" bodystart="37" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1Exception_1a7bb05ead5013004ac691d5cbdfa5afc5" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>char const *</type>
+        <definition>char const  * sgl::Exception::what</definition>
+        <argsstring>() const noexcept override</argsstring>
+        <name>what</name>
+        <qualifiedname>sgl::Exception::what</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/exceptions.h" line="44" column="16" bodyfile="src/marty/sgl/exceptions.h" bodystart="44" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>sgl::AbstractCallError</label>
+        <link refid="classsgl_1_1AbstractCallError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sgl::Exception</label>
+        <link refid="classsgl_1_1Exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sgl::IndexError</label>
+        <link refid="classsgl_1_1IndexError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sgl::MathError</label>
+        <link refid="classsgl_1_1MathError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>sgl::TypeError</label>
+        <link refid="classsgl_1_1TypeError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>sgl::ValueError</label>
+        <link refid="classsgl_1_1ValueError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>sgl::Exception</label>
+        <link refid="classsgl_1_1Exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/sgl/exceptions.h" line="32" column="1" bodyfile="src/marty/sgl/exceptions.h" bodystart="32" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classsgl_1_1Exception_1ab9a4ec9508eade0fe1aa359a81c175be" prot="private" virt="non-virtual"><scope>sgl::Exception</scope><name>_msg</name></member>
+      <member refid="classsgl_1_1Exception_1a46d3ea70b9972315b8712c16ff99417c" prot="public" virt="non-virtual"><scope>sgl::Exception</scope><name>Exception</name></member>
+      <member refid="classsgl_1_1Exception_1a91129378f342287e4b759e084663ec64" prot="public" virt="non-virtual"><scope>sgl::Exception</scope><name>Exception</name></member>
+      <member refid="classsgl_1_1Exception_1a7bb05ead5013004ac691d5cbdfa5afc5" prot="public" virt="non-virtual"><scope>sgl::Exception</scope><name>what</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

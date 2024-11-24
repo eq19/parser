@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classsgl_1_1DebugLog" kind="class" language="C++" prot="public">
+    <compoundname>sgl::DebugLog</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsgl_1_1DebugLog_1af068791b53b454749300d9e2287e7f35" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream sgl::DebugLog::fout</definition>
+        <argsstring></argsstring>
+        <name>fout</name>
+        <qualifiedname>sgl::DebugLog::fout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/debuglog.h" line="86" column="19" bodyfile="src/marty/sgl/debuglog.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsgl_1_1DebugLog_1a8e107182dbf769de8c2be5d7374cc11f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sgl::DebugLog::DebugLog</definition>
+        <argsstring>()=default</argsstring>
+        <name>DebugLog</name>
+        <qualifiedname>sgl::DebugLog::DebugLog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/debuglog.h" line="33" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1DebugLog_1a2a0bcae524c16dd0262fec4876a90e8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sgl::DebugLog::DebugLog</definition>
+        <argsstring>(std::string_view name)</argsstring>
+        <name>DebugLog</name>
+        <qualifiedname>sgl::DebugLog::DebugLog</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/debuglog.h" line="34" column="5" bodyfile="src/marty/sgl/debuglog.h" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1DebugLog_1a47aa484452ef6b9a47223126899ee1e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sgl::DebugLog::activate</definition>
+        <argsstring>(std::string_view name)</argsstring>
+        <name>activate</name>
+        <qualifiedname>sgl::DebugLog::activate</qualifiedname>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/debuglog.h" line="38" column="10" bodyfile="src/marty/sgl/debuglog.h" bodystart="38" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1DebugLog_1adf0e6797a94044c5b3282e9acf8a80e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sgl::DebugLog::out_impl</definition>
+        <argsstring>()</argsstring>
+        <name>out_impl</name>
+        <qualifiedname>sgl::DebugLog::out_impl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/debuglog.h" line="44" column="10" bodyfile="src/marty/sgl/debuglog.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1DebugLog_1afab9e25e02c2cb62b419d797f2dd23c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class First</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void sgl::DebugLog::out_impl</definition>
+        <argsstring>(First const &amp;first)</argsstring>
+        <name>out_impl</name>
+        <qualifiedname>sgl::DebugLog::out_impl</qualifiedname>
+        <param>
+          <type>First const &amp;</type>
+          <declname>first</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/debuglog.h" line="49" column="10" bodyfile="src/marty/sgl/debuglog.h" bodystart="49" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1DebugLog_1ac565edbb459c5d6e3432bdd477fc3562" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class First</type>
+          </param>
+          <param>
+            <type>class Second</type>
+          </param>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void sgl::DebugLog::out_impl</definition>
+        <argsstring>(First const &amp;first, Second const &amp;second, Args &amp;&amp;... args)</argsstring>
+        <name>out_impl</name>
+        <qualifiedname>sgl::DebugLog::out_impl</qualifiedname>
+        <param>
+          <type>First const &amp;</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>Second const &amp;</type>
+          <declname>second</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/debuglog.h" line="57" column="10" bodyfile="src/marty/sgl/debuglog.h" bodystart="57" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1DebugLog_1a19b0c56d2349222a7d0cc451b5a83924" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void sgl::DebugLog::out</definition>
+        <argsstring>(Args &amp;&amp;... args)</argsstring>
+        <name>out</name>
+        <qualifiedname>sgl::DebugLog::out</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/debuglog.h" line="66" column="10" bodyfile="src/marty/sgl/debuglog.h" bodystart="66" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1DebugLog_1a9229b75f0927a149064da03bf8456369" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sgl::DebugLog::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <qualifiedname>sgl::DebugLog::close</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/debuglog.h" line="74" column="10" bodyfile="src/marty/sgl/debuglog.h" bodystart="74" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1DebugLog_1a638c33b871d1c3c56f04f41ae9e4af7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sgl::DebugLog::~DebugLog</definition>
+        <argsstring>()</argsstring>
+        <name>~DebugLog</name>
+        <qualifiedname>sgl::DebugLog::~DebugLog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/debuglog.h" line="80" column="5" bodyfile="src/marty/sgl/debuglog.h" bodystart="80" bodyend="83"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/sgl/debuglog.h" line="30" column="1" bodyfile="src/marty/sgl/debuglog.h" bodystart="30" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classsgl_1_1DebugLog_1a47aa484452ef6b9a47223126899ee1e4" prot="public" virt="non-virtual"><scope>sgl::DebugLog</scope><name>activate</name></member>
+      <member refid="classsgl_1_1DebugLog_1a9229b75f0927a149064da03bf8456369" prot="public" virt="non-virtual"><scope>sgl::DebugLog</scope><name>close</name></member>
+      <member refid="classsgl_1_1DebugLog_1a8e107182dbf769de8c2be5d7374cc11f" prot="public" virt="non-virtual"><scope>sgl::DebugLog</scope><name>DebugLog</name></member>
+      <member refid="classsgl_1_1DebugLog_1a2a0bcae524c16dd0262fec4876a90e8a" prot="public" virt="non-virtual"><scope>sgl::DebugLog</scope><name>DebugLog</name></member>
+      <member refid="classsgl_1_1DebugLog_1af068791b53b454749300d9e2287e7f35" prot="private" virt="non-virtual"><scope>sgl::DebugLog</scope><name>fout</name></member>
+      <member refid="classsgl_1_1DebugLog_1a19b0c56d2349222a7d0cc451b5a83924" prot="public" virt="non-virtual"><scope>sgl::DebugLog</scope><name>out</name></member>
+      <member refid="classsgl_1_1DebugLog_1adf0e6797a94044c5b3282e9acf8a80e1" prot="public" virt="non-virtual"><scope>sgl::DebugLog</scope><name>out_impl</name></member>
+      <member refid="classsgl_1_1DebugLog_1afab9e25e02c2cb62b419d797f2dd23c9" prot="public" virt="non-virtual"><scope>sgl::DebugLog</scope><name>out_impl</name></member>
+      <member refid="classsgl_1_1DebugLog_1ac565edbb459c5d6e3432bdd477fc3562" prot="public" virt="non-virtual"><scope>sgl::DebugLog</scope><name>out_impl</name></member>
+      <member refid="classsgl_1_1DebugLog_1a638c33b871d1c3c56f04f41ae9e4af7a" prot="public" virt="non-virtual"><scope>sgl::DebugLog</scope><name>~DebugLog</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

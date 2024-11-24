@@ -1,0 +1,2260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcsl_1_1TensorParent" kind="class" language="C++" prot="public">
+    <compoundname>csl::TensorParent</compoundname>
+    <basecompoundref refid="classcsl_1_1AbstractParent" prot="public" virt="non-virtual">csl::AbstractParent</basecompoundref>
+    <derivedcompoundref refid="classcsl_1_1DeltaParent" prot="public" virt="non-virtual">csl::DeltaParent</derivedcompoundref>
+    <derivedcompoundref refid="classcsl_1_1EpsilonParent" prot="public" virt="non-virtual">csl::EpsilonParent</derivedcompoundref>
+    <derivedcompoundref refid="classcsl_1_1MetricParent" prot="public" virt="non-virtual">csl::MetricParent</derivedcompoundref>
+    <derivedcompoundref refid="classcsl_1_1TensorFieldParent" prot="public" virt="non-virtual">csl::TensorFieldParent</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1GeneratorParent" prot="public" virt="non-virtual">mty::GeneratorParent</derivedcompoundref>
+    <includes refid="indicial_8h" local="no">indicial.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classcsl_1_1TensorParent_1ae740d077dfcc386a407ca33d3619a5a9" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> * &gt;</type>
+        <definition>std::vector&lt;const Space *&gt; csl::TensorParent::space</definition>
+        <argsstring></argsstring>
+        <name>space</name>
+        <qualifiedname>csl::TensorParent::space</qualifiedname>
+        <briefdescription>
+<para><ref refid="classcsl_1_1Vector" kindref="compound">Vector</ref> spaces in which the indices live. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="233" column="17" bodyfile="src/csl/indicial.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1TensorParent_1a3657ec01e4768d2f5daf416b83126cc1" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; bool &gt;</type>
+        <definition>std::vector&lt;bool&gt; csl::TensorParent::covariant</definition>
+        <argsstring></argsstring>
+        <name>covariant</name>
+        <qualifiedname>csl::TensorParent::covariant</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="235" column="17" bodyfile="src/csl/indicial.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1TensorParent_1ae7ec718cfaa3c9598463723a36f74f17" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool csl::TensorParent::keepBestPermutation</definition>
+        <argsstring></argsstring>
+        <name>keepBestPermutation</name>
+        <qualifiedname>csl::TensorParent::keepBestPermutation</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="237" column="10" bodyfile="src/csl/indicial.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1TensorParent_1adc7dcdd4a866af29f99edc06924c2617" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Symmetry" kindref="compound">Symmetry</ref></type>
+        <definition>Symmetry csl::TensorParent::symmetry</definition>
+        <argsstring></argsstring>
+        <name>symmetry</name>
+        <qualifiedname>csl::TensorParent::symmetry</qualifiedname>
+        <briefdescription>
+<para><ref refid="classcsl_1_1Symmetry" kindref="compound">Symmetry</ref> properties of the tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="241" column="14" bodyfile="src/csl/indicial.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1TensorParent_1a59e24724c7c0c2ee05617769c78c454e" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool csl::TensorParent::fullySymmetric</definition>
+        <argsstring></argsstring>
+        <name>fullySymmetric</name>
+        <qualifiedname>csl::TensorParent::fullySymmetric</qualifiedname>
+        <briefdescription>
+<para>Attribute that can be set to <bold>True</bold> if the tensor must be fully symmetric. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="246" column="10" bodyfile="src/csl/indicial.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1TensorParent_1aa0dae8fe45934513b287849169dbba93" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool csl::TensorParent::fullyAntiSymmetric</definition>
+        <argsstring></argsstring>
+        <name>fullyAntiSymmetric</name>
+        <qualifiedname>csl::TensorParent::fullyAntiSymmetric</qualifiedname>
+        <briefdescription>
+<para>Attribute that can be set to <bold>True</bold> if the tensor must be fully anti-symmetric. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="251" column="10" bodyfile="src/csl/indicial.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1TensorParent_1a10cab17d2ba7b927d3b30278201ea9dc" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; <ref refid="classcsl_1_1SelfContraction" kindref="compound">SelfContraction</ref>, <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;SelfContraction, Expr&gt; &gt; csl::TensorParent::selfContraction</definition>
+        <argsstring></argsstring>
+        <name>selfContraction</name>
+        <qualifiedname>csl::TensorParent::selfContraction</qualifiedname>
+        <briefdescription>
+<para>List of (self) constractions that have special properties. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="255" column="17" bodyfile="src/csl/indicial.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1TensorParent_1aa7e656c4430ca22d4ba01c02e21f500e" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; <ref refid="classcsl_1_1SelfContraction" kindref="compound">SelfContraction</ref>, <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;SelfContraction, Expr&gt; &gt; csl::TensorParent::extContraction</definition>
+        <argsstring></argsstring>
+        <name>extContraction</name>
+        <qualifiedname>csl::TensorParent::extContraction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="256" column="17" bodyfile="src/csl/indicial.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1TensorParent_1ab2a7b1370956a56cf793b88beb6ce5f3" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classcsl_1_1AbstractParent" kindref="compound">csl::AbstractParent</ref> const * &gt;</type>
+        <definition>std::vector&lt;csl::AbstractParent const *&gt; csl::TensorParent::externalTensors</definition>
+        <argsstring></argsstring>
+        <name>externalTensors</name>
+        <qualifiedname>csl::TensorParent::externalTensors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="257" column="22" bodyfile="src/csl/indicial.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1TensorParent_1ab6f004f8a41fff3afb5d62cac078d450" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> const * &gt;</type>
+        <definition>std::vector&lt;csl::Space const *&gt; csl::TensorParent::traceLessNess</definition>
+        <argsstring></argsstring>
+        <name>traceLessNess</name>
+        <qualifiedname>csl::TensorParent::traceLessNess</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="259" column="17" bodyfile="src/csl/indicial.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1TensorParent_1a7a4851df688d387978d14564ae898b2c" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classcsl_1_1ContractionChain" kindref="compound">ContractionChain</ref> &gt;</type>
+        <definition>std::vector&lt;ContractionChain&gt; csl::TensorParent::chainContraction</definition>
+        <argsstring></argsstring>
+        <name>chainContraction</name>
+        <qualifiedname>csl::TensorParent::chainContraction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="261" column="17" bodyfile="src/csl/indicial.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1TensorParent_1ac562be01bc8c902fdd85072f07714b7f" prot="protected" static="no" mutable="yes">
+        <type>std::map&lt; const <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> *, std::vector&lt; <ref refid="classcsl_1_1Parent" kindref="compound">csl::Parent</ref> &gt; &gt;</type>
+        <definition>std::map&lt;const csl::Space *, std::vector&lt;csl::Parent&gt; &gt; csl::TensorParent::brokenParts</definition>
+        <argsstring></argsstring>
+        <name>brokenParts</name>
+        <qualifiedname>csl::TensorParent::brokenParts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="263" column="22" bodyfile="src/csl/indicial.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1TensorParent_1ac374a59f2a77225b51fd4f01f727f73b" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool csl::TensorParent::valued</definition>
+        <argsstring></argsstring>
+        <name>valued</name>
+        <qualifiedname>csl::TensorParent::valued</qualifiedname>
+        <briefdescription>
+<para>Boolean that is <bold>True</bold> iif an explicit tensor is given. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="267" column="10" bodyfile="src/csl/indicial.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1TensorParent_1a61267f78d93f470771cf63f174322e01" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::TensorParent::tensor</definition>
+        <argsstring></argsstring>
+        <name>tensor</name>
+        <qualifiedname>csl::TensorParent::tensor</qualifiedname>
+        <briefdescription>
+<para>Explicit tensor that can be set by the user. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="271" column="10" bodyfile="src/csl/indicial.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1TensorParent_1a5db8129d9af05c907e28f046471650e1" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::TensorParent::trace</definition>
+        <argsstring></argsstring>
+        <name>trace</name>
+        <qualifiedname>csl::TensorParent::trace</qualifiedname>
+        <briefdescription>
+<para>(almost) Unused attribute going to disappear. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="275" column="10" bodyfile="src/csl/indicial.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1TensorParent_1a0bee5fadcbac24cc611318499a6b9243" prot="protected" static="no" mutable="no">
+        <type>std::optional&lt; std::pair&lt; <ref refid="classcsl_1_1IndexStructure" kindref="compound">IndexStructure</ref>, <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt; &gt;</type>
+        <definition>std::optional&lt;std::pair&lt;IndexStructure, Expr&gt; &gt; csl::TensorParent::conjugateProperty</definition>
+        <argsstring></argsstring>
+        <name>conjugateProperty</name>
+        <qualifiedname>csl::TensorParent::conjugateProperty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="277" column="19" bodyfile="src/csl/indicial.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1TensorParent_1a4bb5b8f6ae27e07622ab74ffdd461486" prot="protected" static="no" mutable="no">
+        <type>std::map&lt; const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *, std::pair&lt; <ref refid="classcsl_1_1IndexStructure" kindref="compound">IndexStructure</ref>, <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt; &gt;</type>
+        <definition>std::map&lt;const Space *, std::pair&lt;IndexStructure, Expr&gt; &gt; csl::TensorParent::hermitianProperty</definition>
+        <argsstring></argsstring>
+        <name>hermitianProperty</name>
+        <qualifiedname>csl::TensorParent::hermitianProperty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="279" column="14" bodyfile="src/csl/indicial.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1TensorParent_1a81701d7f66909acf26cbe0f4d257ffdc" prot="protected" static="no" mutable="no">
+        <type>std::map&lt; const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *, std::pair&lt; <ref refid="classcsl_1_1IndexStructure" kindref="compound">IndexStructure</ref>, <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt; &gt;</type>
+        <definition>std::map&lt;const Space *, std::pair&lt;IndexStructure, Expr&gt; &gt; csl::TensorParent::transposedProperty</definition>
+        <argsstring></argsstring>
+        <name>transposedProperty</name>
+        <qualifiedname>csl::TensorParent::transposedProperty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="282" column="9" bodyfile="src/csl/indicial.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1ab4af4e561398f75e81b0ca44c2200d8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::TensorParent::TensorParent</definition>
+        <argsstring>()</argsstring>
+        <name>TensorParent</name>
+        <qualifiedname>csl::TensorParent::TensorParent</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="287" column="5" bodyfile="src/csl/indicial.cpp" bodystart="871" bodyend="882"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a04f4e5b6b75716a794e2c275530ae011" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::TensorParent::TensorParent</definition>
+        <argsstring>(const std::string &amp;t_name)</argsstring>
+        <name>TensorParent</name>
+        <qualifiedname>csl::TensorParent::TensorParent</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <briefdescription>
+<para>Constructor that initializes only the name of the parent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the parent. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="292" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a34fe9aa77d890d2f797890d044d23727" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::TensorParent::TensorParent</definition>
+        <argsstring>(const TensorParent &amp;abstract)=default</argsstring>
+        <name>TensorParent</name>
+        <qualifiedname>csl::TensorParent::TensorParent</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> &amp;</type>
+          <declname>abstract</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor = c++ default. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="296" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a3381ecd1d560c4a80b2bf4804ef45b93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::TensorParent::TensorParent</definition>
+        <argsstring>(const std::string &amp;t_name, const Space *t_space)</argsstring>
+        <name>TensorParent</name>
+        <qualifiedname>csl::TensorParent::TensorParent</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *</type>
+          <declname>t_space</declname>
+        </param>
+        <briefdescription>
+<para>Constructor of a 1-indexed parent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the parent. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_space</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Vector" kindref="compound">Vector</ref> space in which the <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> lives. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="302" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a1dea1d8fe995338d286bf35b48396b7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::TensorParent::TensorParent</definition>
+        <argsstring>(const std::string &amp;t_name, const std::vector&lt; const Space * &gt; &amp;t_space)</argsstring>
+        <name>TensorParent</name>
+        <qualifiedname>csl::TensorParent::TensorParent</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> * &gt; &amp;</type>
+          <declname>t_space</declname>
+        </param>
+        <briefdescription>
+<para>Constructor of a n-indexed parent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the parent. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_space</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of the n spaces in which each index lives. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="308" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a72bf7b821897d7b35f6ede9448c60e43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::TensorParent::TensorParent</definition>
+        <argsstring>(const std::string &amp;t_name, const std::vector&lt; const Space * &gt; &amp;t_space, const Expr &amp;t_tensor)</argsstring>
+        <name>TensorParent</name>
+        <qualifiedname>csl::TensorParent::TensorParent</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> * &gt; &amp;</type>
+          <declname>t_space</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>t_tensor</declname>
+        </param>
+        <briefdescription>
+<para>Constructor of a n-indexed parent, with explicit tensor <bold>tensor</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the parent. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_space</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of the n spaces in which each index lives. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Explicit tensor. Must match exactly the shape given by the <ref refid="classcsl_1_1IndexStructure" kindref="compound">IndexStructure</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="318" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1ada2f60750c2e2d3f7fa573d8de73d313" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::TensorParent::TensorParent</definition>
+        <argsstring>(const std::string &amp;t_name, const Space *t_space, const Expr &amp;t_tensor)</argsstring>
+        <name>TensorParent</name>
+        <qualifiedname>csl::TensorParent::TensorParent</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *</type>
+          <declname>t_space</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>t_tensor</declname>
+        </param>
+        <briefdescription>
+<para>Constructor of a 1-indexed parent, with explicit tensor <bold>tensor</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the parent. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_space</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Vector" kindref="compound">Vector</ref> space in which the index lives. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Explicit tensor. Must match exactly the shape given by the <ref refid="classcsl_1_1IndexStructure" kindref="compound">IndexStructure</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="329" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a9526dde46fc8cbe38a6cc9910441986f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacecslParent_1a83f078a60370b86ccd6b113eedff51c2" kindref="member">cslParent::PrimaryType</ref></type>
+        <definition>cslParent::PrimaryType csl::TensorParent::getPrimaryType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getPrimaryType</name>
+        <qualifiedname>csl::TensorParent::getPrimaryType</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a02948077d67665cbe33ba0f8febda859">getPrimaryType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The primary type of the parent. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="343" column="28" bodyfile="src/csl/indicial.cpp" bodystart="954" bodyend="957"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1aa5d0d77665f81cd08e1a053f434daef1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacecslParent_1a880f05263e57bd6cac32e48fd45b7339" kindref="member">cslParent::Type</ref></type>
+        <definition>cslParent::Type csl::TensorParent::getType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getType</name>
+        <qualifiedname>csl::TensorParent::getType</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a6a9115038be74e35dbcd8ecdbba7e5a1">getType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The type of the parent. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="345" column="21" bodyfile="src/csl/indicial.cpp" bodystart="959" bodyend="962"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1ac5d2812d6de63bcad34360314576a9b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::printDefinition</definition>
+        <argsstring>(std::ostream &amp;out=std::cout, int indentSize=4, bool header=false) const override</argsstring>
+        <name>printDefinition</name>
+        <qualifiedname>csl::TensorParent::printDefinition</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a6c633dfff2c6a58ffbf2dae9ca9e07ae">printDefinition</reimplements>
+        <reimplementedby refid="classmty_1_1VectorBoson_1af229a782c5dc2085c0eaf3ad784757ad">printDefinition</reimplementedby>
+        <reimplementedby refid="classmty_1_1WeylFermion_1a5459f2fd69252b1e40dd76e783cc8071">printDefinition</reimplementedby>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indentSize</declname>
+          <defval>4</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>header</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="347" column="10" bodyfile="src/csl/indicial.cpp" bodystart="964" bodyend="983"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a5bff2bf79a3985d9020bee392f440990" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int csl::TensorParent::getDim</definition>
+        <argsstring>(const Space *t_space) const override</argsstring>
+        <name>getDim</name>
+        <qualifiedname>csl::TensorParent::getDim</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a6c81260a7b64e93b88dea1935b524505">getDim</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *</type>
+          <declname>t_space</declname>
+        </param>
+        <briefdescription>
+<para>Returns the dimension of the parent relatively to a certain vector space, i.e. the number of indices in this vector space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_space</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Vector" kindref="compound">Vector</ref> space to investigate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The dimansion in <bold>t_space</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="351" column="9" bodyfile="src/csl/indicial.cpp" bodystart="985" bodyend="992"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1ae501e7e880e885ddcd65d946d69ef53c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> * &gt;</type>
+        <definition>vector&lt; const Space * &gt; csl::TensorParent::getSpace</definition>
+        <argsstring>() const override</argsstring>
+        <name>getSpace</name>
+        <qualifiedname>csl::TensorParent::getSpace</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a236d774b05f017f117174469ba848142">getSpace</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The list of vector-spaces in which live the indices. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="355" column="17" bodyfile="src/csl/indicial.cpp" bodystart="994" bodyend="997"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a09a777f09a8e69e177beef0055f0062a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Symmetry" kindref="compound">Symmetry</ref></type>
+        <definition>Symmetry csl::TensorParent::getSymmetry</definition>
+        <argsstring>() const</argsstring>
+        <name>getSymmetry</name>
+        <qualifiedname>csl::TensorParent::getSymmetry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The <ref refid="classcsl_1_1Symmetry" kindref="compound">Symmetry</ref> object describing the parent&apos;s properties. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="359" column="14" bodyfile="src/csl/indicial.cpp" bodystart="999" bodyend="1002"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1aa4af33bfd789ef86dd5775b7a4558a01" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::TensorParent::getFullySymmetric</definition>
+        <argsstring>() const override</argsstring>
+        <name>getFullySymmetric</name>
+        <qualifiedname>csl::TensorParent::getFullySymmetric</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1af56df7eb3d90348eda50e3d6cc5cd8b0">getFullySymmetric</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the parent is indicial and fully symmetric in its indices. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="361" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1004" bodyend="1007"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a4b974963fac5f42fe6f3ea5ca7ed93b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::TensorParent::getFullyAntiSymmetric</definition>
+        <argsstring>() const override</argsstring>
+        <name>getFullyAntiSymmetric</name>
+        <qualifiedname>csl::TensorParent::getFullyAntiSymmetric</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1ab04c96ff80ee2f0786e59a7eafd71175">getFullyAntiSymmetric</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the parent is indicial and fully antisymmetric in its indices. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="363" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1008" bodyend="1011"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a57d5160b0d1a94e376bbbec3d5ab5735" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> &gt;</type>
+        <definition>vector&lt; Permutation &gt; csl::TensorParent::getPermutation</definition>
+        <argsstring>() const override</argsstring>
+        <name>getPermutation</name>
+        <qualifiedname>csl::TensorParent::getPermutation</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1ad42c4b140d48c9319e0ae47436d040e1">getPermutation</reimplements>
+        <briefdescription>
+<para>For an <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> returns all the possible permutations of the tensor with respect to the symmetries or antisymmetries in a vector of <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A std::vector&lt;Permutation&gt; with all possible permutations of the tensor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="365" column="17" bodyfile="src/csl/indicial.cpp" bodystart="1042" bodyend="1045"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a892cd4e2f9ca94f6e9aee17f779b6090" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::TensorParent::isValued</definition>
+        <argsstring>() const override</argsstring>
+        <name>isValued</name>
+        <qualifiedname>csl::TensorParent::isValued</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1aa8028cba1cf0ca3e754111e52d629d24">isValued</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="367" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1013" bodyend="1016"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a889012a413646fa644b39c24366673f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::TensorParent::getTensor</definition>
+        <argsstring>() const override</argsstring>
+        <name>getTensor</name>
+        <qualifiedname>csl::TensorParent::getTensor</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1adcc94486a83de9c73de39f78b1eafea4">getTensor</reimplements>
+        <briefdescription>
+<para>For a valued <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> returns the corresponding tensor. Valued means that the tensor has been defined by the user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>tensor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="369" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1018" bodyend="1021"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1aef2a4af73762e024d8bd5f0fa0e6d359" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::TensorParent::getTensor</definition>
+        <argsstring>(Expr_info self) const override</argsstring>
+        <name>getTensor</name>
+        <qualifiedname>csl::TensorParent::getTensor</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1affa574a83a5f60cc6fc9bd00f5dca747">getTensor</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>self</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="371" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1023" bodyend="1035"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a13f343f42228eecf7986e8a361091627" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::TensorParent::getTrace</definition>
+        <argsstring>() const override</argsstring>
+        <name>getTrace</name>
+        <qualifiedname>csl::TensorParent::getTrace</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a4f86be4ff457fb18becedcca645b33f4">getTrace</reimplements>
+        <briefdescription>
+<para>For an <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> of dimension 2 (in a given unique space) returns the trace of it, i.e. the sum of its diagonal elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="373" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1037" bodyend="1040"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a7a0dbe923e3491cc35fa48c175baee43" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::TensorParent::dependsOn</definition>
+        <argsstring>(Expr_info expr) const override</argsstring>
+        <name>dependsOn</name>
+        <qualifiedname>csl::TensorParent::dependsOn</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1adf55413672b9d58875485edd1db4e563">dependsOn</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Tells if the parent depends on another expression or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>from which we test the dependency. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the parent depends on<bold>expr</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="375" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1123" bodyend="1132"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a14f4bcb3c19fb4e8cb8ccf3a61719f27" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::TensorParent::dependsExplicitlyOn</definition>
+        <argsstring>(Expr_info expr) const override</argsstring>
+        <name>dependsExplicitlyOn</name>
+        <qualifiedname>csl::TensorParent::dependsExplicitlyOn</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a74258391e7eae5a8cd0d629eabfe9ca9">dependsExplicitlyOn</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Tells if the parent depends explicitely on another expression or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>from which we test the dependency. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the parent depends on<bold>expr</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="377" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1134" bodyend="1143"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1ae441946c9f40502d9330aab7be1c9790" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::setComplexProperty</definition>
+        <argsstring>(csl::ComplexProperty t_prop) override</argsstring>
+        <name>setComplexProperty</name>
+        <qualifiedname>csl::TensorParent::setComplexProperty</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1affd5de9db43c39e3ec0f1b9e391bcf4a">setComplexProperty</reimplements>
+        <param>
+          <type><ref refid="namespacecsl_1ac54d9e79dc6697a8eacc07c754b11c0e" kindref="member">csl::ComplexProperty</ref></type>
+          <declname>t_prop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="379" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1052" bodyend="1059"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a25ee0fbfeb78f1044dd56691b40c10ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::setKeepBestPermutation</definition>
+        <argsstring>(bool keep)</argsstring>
+        <name>setKeepBestPermutation</name>
+        <qualifiedname>csl::TensorParent::setKeepBestPermutation</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>keep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="381" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1061" bodyend="1064"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1ac99c17db4d68be67761930e0289ee5e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::setFullySymmetric</definition>
+        <argsstring>() override</argsstring>
+        <name>setFullySymmetric</name>
+        <qualifiedname>csl::TensorParent::setFullySymmetric</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a3e866d96e2600f1f6f723bf62dee42b0">setFullySymmetric</reimplements>
+        <briefdescription>
+<para>Set the <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> fully symmetric. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="383" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1066" bodyend="1070"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1ae0d6d12f0cd4efe83154cbf79978d088" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::setFullyAntiSymmetric</definition>
+        <argsstring>() override</argsstring>
+        <name>setFullyAntiSymmetric</name>
+        <qualifiedname>csl::TensorParent::setFullyAntiSymmetric</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a8ecc485d2526a3975b79b0c4a3da21d9">setFullyAntiSymmetric</reimplements>
+        <briefdescription>
+<para>Set the <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> fully antisymmetric. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="385" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1071" bodyend="1075"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a592a243554b0bdeb58c34efe4eedaeee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::TensorParent::isTraceLessIn</definition>
+        <argsstring>(csl::Space const *space) const override</argsstring>
+        <name>isTraceLessIn</name>
+        <qualifiedname>csl::TensorParent::isTraceLessIn</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1ad22286f40e94e30a5adffa36314961c3">isTraceLessIn</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> const *</type>
+          <declname>space</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="387" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1077" bodyend="1081"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a47f7c70202336b11674b15a6895b16ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::addTraceLessNess</definition>
+        <argsstring>(csl::Space const *space) override</argsstring>
+        <name>addTraceLessNess</name>
+        <qualifiedname>csl::TensorParent::addTraceLessNess</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1ab6f3ca1657d6b2d3809adf39981e6204">addTraceLessNess</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> const *</type>
+          <declname>space</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="388" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1082" bodyend="1085"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a05b90066cf74b7fc304a474df4e64a05" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::removeTraceLessNess</definition>
+        <argsstring>(csl::Space const *space) override</argsstring>
+        <name>removeTraceLessNess</name>
+        <qualifiedname>csl::TensorParent::removeTraceLessNess</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a0b06d1389b3f3ea597e91548810a3c70">removeTraceLessNess</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> const *</type>
+          <declname>space</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="389" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1086" bodyend="1091"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a17fb05141415ac442cb8f5b6e88bc329" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::addSpace</definition>
+        <argsstring>(const Space *space) override</argsstring>
+        <name>addSpace</name>
+        <qualifiedname>csl::TensorParent::addSpace</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1ac691c3943a7bd3eb9c671927e2f91dc7">addSpace</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *</type>
+          <declname>t_space</declname>
+        </param>
+        <briefdescription>
+<para>Adds a dimension to an <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> in a specific vector space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_space</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Space" kindref="compound">Space</ref> in which we add an index. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="391" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1047" bodyend="1050"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1ac9a495db8af3074a6c329d84a1b7cb91" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::addSymmetry</definition>
+        <argsstring>(int i1, int i2) override</argsstring>
+        <name>addSymmetry</name>
+        <qualifiedname>csl::TensorParent::addSymmetry</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a0a4a585286e48ff062c33e96ec09531b">addSymmetry</reimplements>
+        <param>
+          <type>int</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i2</declname>
+        </param>
+        <briefdescription>
+<para>Adds a symmetry between indices in position <bold>i1</bold> and <bold>i2</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Index" kindref="compound">Index</ref> of the first index in the symmetry. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Index" kindref="compound">Index</ref> of the second index in the symmetry. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="393" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1093" bodyend="1107"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1abdfaf46f9699cea8ac9cea9b7dcec388" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::addAntiSymmetry</definition>
+        <argsstring>(int i1, int i2) override</argsstring>
+        <name>addAntiSymmetry</name>
+        <qualifiedname>csl::TensorParent::addAntiSymmetry</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a5548d7f976f21a25d657fc723f7f7132">addAntiSymmetry</reimplements>
+        <param>
+          <type>int</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i2</declname>
+        </param>
+        <briefdescription>
+<para>Adds an antisymmetry between indices in position <bold>i1</bold> and <bold>i2</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Index" kindref="compound">Index</ref> of the first index in the symmetry.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Index" kindref="compound">Index</ref> of the second index in the symmetry. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="395" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1108" bodyend="1121"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1aa61f52e3ea9ae4beb190442ac0e7aacc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::setSymmetry</definition>
+        <argsstring>(const Symmetry &amp;t_symetry) override</argsstring>
+        <name>setSymmetry</name>
+        <qualifiedname>csl::TensorParent::setSymmetry</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a79ad3927cad378f4e83055533ea20d46">setSymmetry</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Symmetry" kindref="compound">Symmetry</ref> &amp;</type>
+          <declname>t_symmetry</declname>
+        </param>
+        <briefdescription>
+<para>Sets all the symmetry properties of an <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> from an object of type <ref refid="classcsl_1_1Symmetry" kindref="compound">Symmetry</ref>. This erase all possible properties of (anti)symmetry the parent had before that. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_symmetry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New symmetry of the parent. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="397" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1388" bodyend="1397"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a4eacd947decb14e003f81a8053d94e11" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::setTensor</definition>
+        <argsstring>(const Expr &amp;t_tensor) override</argsstring>
+        <name>setTensor</name>
+        <qualifiedname>csl::TensorParent::setTensor</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a5dd9dd3730422db222a395139786ea4b">setTensor</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>t_tensor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>New</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tensor corresponding to the <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref>. Must match the index structure of course. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="399" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1399" bodyend="1419"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1aa5bd4990cfc0d955edf1614a42d0d011" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::setTrace</definition>
+        <argsstring>(const Expr &amp;t_trace) override</argsstring>
+        <name>setTrace</name>
+        <qualifiedname>csl::TensorParent::setTrace</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a3ec47d729864161605c7cbcc6f726f59">setTrace</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>t_trace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="401" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1421" bodyend="1424"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a19c75060fbf2040abeb2ca7c61069aec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::setElementary</definition>
+        <argsstring>(bool t_elementary)</argsstring>
+        <name>setElementary</name>
+        <qualifiedname>csl::TensorParent::setElementary</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>t_elementary</declname>
+        </param>
+        <briefdescription>
+<para>Sets all potential variables in the tensor associated with the indicial object elementary. For example, setting a vector as elementary will set all vector elements (if they are variables) as elementary variables, i.e. that depend only on themselves. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_elementary</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean property of elementary-ness. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="411" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1426" bodyend="1431"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1aee4452e0bd10be255d394ed3463780a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::TensorParent::hasContractionProperty</definition>
+        <argsstring>(const Abstract *self, Expr_info B) const override</argsstring>
+        <name>hasContractionProperty</name>
+        <qualifiedname>csl::TensorParent::hasContractionProperty</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a7f680e00248dd59a1545488ec4b43c07">hasContractionProperty</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> *</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>Tells if an <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> has contraction properties with another expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the element corresponding to the parent. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other expression. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if there is one particular contraction property. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="413" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1465" bodyend="1504"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a84c9f98e1531b573a63e67c667f7cba6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1ContractionChain" kindref="compound">ContractionChain</ref> &gt;</type>
+        <definition>vector&lt; ContractionChain &gt; csl::TensorParent::getContractionProperties</definition>
+        <argsstring>() const override</argsstring>
+        <name>getContractionProperties</name>
+        <qualifiedname>csl::TensorParent::getContractionProperties</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1aa4491a6a8adcf9042aa26a8498a9478b">getContractionProperties</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="416" column="17" bodyfile="src/csl/indicial.cpp" bodystart="1230" bodyend="1233"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1afdb6b8332cd4a18e3835099e0fab9f32" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::TensorParent::contraction</definition>
+        <argsstring>(const Abstract *self, Expr_info B) const override</argsstring>
+        <name>contraction</name>
+        <qualifiedname>csl::TensorParent::contraction</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a4df179280a63c410c84f7ea4edbcbee2">contraction</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> *</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>Applies a contractoin property if there is one between <bold>self</bold> and <bold>B</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the element corresponding to the parent. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other expression. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The contracted object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="418" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1506" bodyend="1552"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a81eabaf09cb9fe1855a35a91faf3b132" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::addSelfContraction</definition>
+        <argsstring>(const Expr &amp;A, const Expr &amp;B, const Expr &amp;res, std::optional&lt; std::function&lt; bool(Expr_info, Expr_info)&gt; &gt; condition=std::nullopt) override</argsstring>
+        <name>addSelfContraction</name>
+        <qualifiedname>csl::TensorParent::addSelfContraction</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a00090975a2f3144fd860ad0c41ec6764">addSelfContraction</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>std::optional&lt; std::function&lt; bool(<ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref>, <ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref>)&gt; &gt;</type>
+          <declname>condition</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <briefdescription>
+<para>Adds a contraction property between an Element and another that share the parent (*this). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First Element in the contraction. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second Element in the contraction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>res The result of the contraction. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="420" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1145" bodyend="1206"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a8753c5b10ccca6f049cbd5e852fbb21b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::removeSelfContraction</definition>
+        <argsstring>(const Expr &amp;A, const Expr &amp;B) override</argsstring>
+        <name>removeSelfContraction</name>
+        <qualifiedname>csl::TensorParent::removeSelfContraction</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a0889b22a387aa58334e6c84aa9e7faf0">removeSelfContraction</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="427" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1208" bodyend="1223"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a29c887ab51d1dfa876f869fbba3c8479" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::TensorParent::hasChainContractionProperty</definition>
+        <argsstring>() const override</argsstring>
+        <name>hasChainContractionProperty</name>
+        <qualifiedname>csl::TensorParent::hasChainContractionProperty</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a29f41ce934d0e7260c1f8e8fddf70e14">hasChainContractionProperty</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="429" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1225" bodyend="1228"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1aae4c207cf3365ebf833975cb4b4e92f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::addContractionProperty</definition>
+        <argsstring>(csl::vector_expr const &amp;leftHandSide, const Expr &amp;rightHandSide) override</argsstring>
+        <name>addContractionProperty</name>
+        <qualifiedname>csl::TensorParent::addContractionProperty</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1acce8745989273246a318d207e4c24ee9">addContractionProperty</reimplements>
+        <param>
+          <type>csl::vector_expr const &amp;</type>
+          <declname>leftHandSide</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>rightHandSide</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="431" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1235" bodyend="1240"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a44c54413e4600c7d5589879671f8d474" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::removeContractionProperty</definition>
+        <argsstring>(csl::vector_expr const &amp;leftHandSide, const Expr &amp;rightHandSide) override</argsstring>
+        <name>removeContractionProperty</name>
+        <qualifiedname>csl::TensorParent::removeContractionProperty</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1af03f15bcc4f9dd93cf09739c9ecf4d03">removeContractionProperty</reimplements>
+        <param>
+          <type>csl::vector_expr const &amp;</type>
+          <declname>leftHandSide</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>rightHandSide</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="434" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1242" bodyend="1252"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a67f7479000987afe784cf41d139a97a6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>optional&lt; Expr &gt; csl::TensorParent::getComplexProperty</definition>
+        <argsstring>(Expr_info self) const override</argsstring>
+        <name>getComplexProperty</name>
+        <qualifiedname>csl::TensorParent::getComplexProperty</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1ab893f8cc881da62b696c9a66abb1bbde">getComplexProperty</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>self</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="437" column="19" bodyfile="src/csl/indicial.cpp" bodystart="1273" bodyend="1282"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a36af50ffc43694e38539c9a0f282653b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>optional&lt; Expr &gt; csl::TensorParent::getHermitianProperty</definition>
+        <argsstring>(Expr_info self, const Space *t_space) const override</argsstring>
+        <name>getHermitianProperty</name>
+        <qualifiedname>csl::TensorParent::getHermitianProperty</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1afd68c39bc8ac85924ba25e4a7cac7ff0">getHermitianProperty</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *</type>
+          <declname>t_space</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="440" column="5" bodyfile="src/csl/indicial.cpp" bodystart="1284" bodyend="1295"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1aad0b86fccab27dcef313d5be70edc806" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>optional&lt; Expr &gt; csl::TensorParent::getTransposedProperty</definition>
+        <argsstring>(Expr_info self, const Space *t_space) const override</argsstring>
+        <name>getTransposedProperty</name>
+        <qualifiedname>csl::TensorParent::getTransposedProperty</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a4077314469ddf178e3ec02e524b940c3">getTransposedProperty</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *</type>
+          <declname>t_space</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="443" column="5" bodyfile="src/csl/indicial.cpp" bodystart="1297" bodyend="1308"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1adddc8255d23e5816e9cda53f5e8a034e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>optional&lt; Expr &gt; csl::TensorParent::evaluate</definition>
+        <argsstring>(Expr_info self, csl::eval::mode user_mode=csl::eval::base) const override</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>csl::TensorParent::evaluate</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a33ad22590439c20af630fd8046ea5dc8">evaluate</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type>csl::eval::mode</type>
+          <declname>user_mode</declname>
+          <defval>csl::eval::base</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="445" column="19" bodyfile="src/csl/indicial.cpp" bodystart="1310" bodyend="1322"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a4e64e8c6d44452b8457401570e8fdee1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::addComplexProperty</definition>
+        <argsstring>(const Expr &amp;init, const Expr &amp;res) override</argsstring>
+        <name>addComplexProperty</name>
+        <qualifiedname>csl::TensorParent::addComplexProperty</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a3b4d924a14d8427a9618cec74f118a3c">addComplexProperty</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>init</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="449" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1324" bodyend="1329"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a464d54dcfae18bb913b4bf6a6629adab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::addHermitianProperty</definition>
+        <argsstring>(const Space *space, const Expr &amp;init, const Expr &amp;res) override</argsstring>
+        <name>addHermitianProperty</name>
+        <qualifiedname>csl::TensorParent::addHermitianProperty</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a0660c6be6cd4215181fd1c423ee1219b">addHermitianProperty</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *</type>
+          <declname>space</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>init</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="451" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1331" bodyend="1357"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1af3fc929cce72fcf95aad56ebe51c8881" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::addTransposedProperty</definition>
+        <argsstring>(const Space *space, const Expr &amp;init, const Expr &amp;res) override</argsstring>
+        <name>addTransposedProperty</name>
+        <qualifiedname>csl::TensorParent::addTransposedProperty</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1ad6ce2c185af4de67ea998efcb48754d5">addTransposedProperty</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *</type>
+          <declname>space</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>init</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="455" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1359" bodyend="1386"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1acdb63d093ac13e3ec7f4bde54ca86738" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Parent" kindref="compound">Parent</ref> &gt;</type>
+        <definition>std::vector&lt; Parent &gt; csl::TensorParent::getBrokenParts</definition>
+        <argsstring>(const Space *broken) const override</argsstring>
+        <name>getBrokenParts</name>
+        <qualifiedname>csl::TensorParent::getBrokenParts</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a4aba499d752eefc81a70cf75938782ca">getBrokenParts</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *</type>
+          <declname>broken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="459" column="17" bodyfile="src/csl/indicial.cpp" bodystart="1712" bodyend="1715"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1ab1a4d5405370ca6a59c35f87f8b2e5b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Parent" kindref="compound">Parent</ref> &gt;</type>
+        <definition>vector&lt; Parent &gt; csl::TensorParent::breakSpace</definition>
+        <argsstring>(const Space *broken, const std::vector&lt; const Space * &gt; &amp;newSpace, const std::vector&lt; size_t &gt; &amp;pieces) const override</argsstring>
+        <name>breakSpace</name>
+        <qualifiedname>csl::TensorParent::breakSpace</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a8369702a8c0a3e9838cc90aefcbb2d6f">breakSpace</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *</type>
+          <declname>broken</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> * &gt; &amp;</type>
+          <declname>newSpace</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; size_t &gt; &amp;</type>
+          <declname>pieces</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="462" column="5" bodyfile="src/csl/indicial.cpp" bodystart="1738" bodyend="1799"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a335867b85b438d48eaf0457cb5c83469" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::TensorParent::operator()</definition>
+        <argsstring>(Index index) override</argsstring>
+        <name>operator()</name>
+        <qualifiedname>csl::TensorParent::operator()</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a8a7f7e45ca51c0720c2234d22191d196">operator()</reimplements>
+        <reimplementedby refid="classmty_1_1GeneratorParent_1a0992e4009b8f7eae2a93b407a59c8d60">operator()</reimplementedby>
+        <reimplementedby refid="classmty_1_1QuantumFieldParent_1a64f7543217b809e39a686180b2e67754">operator()</reimplementedby>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">Index</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Generate the Element for an <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> of dimension 1 (a single index). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> of the Element. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding <ref refid="classcsl_1_1TensorElement" kindref="compound">TensorElement</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="466" column="18" bodyfile="src/csl/indicial.cpp" bodystart="1801" bodyend="1812"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a4d65c157315e20d9c6855d0a14b7ba63" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::TensorParent::operator()</definition>
+        <argsstring>(std::vector&lt; Index &gt; indices) override</argsstring>
+        <name>operator()</name>
+        <qualifiedname>csl::TensorParent::operator()</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1aa9298445ca3a71e7af13ff61382c8c0f">operator()</reimplements>
+        <reimplementedby refid="classcsl_1_1DeltaParent_1aa0b6e8538707f3621caaadc29d2145c7">operator()</reimplementedby>
+        <reimplementedby refid="classcsl_1_1EpsilonParent_1a69dcb179ab67784a6520b95d196747b8">operator()</reimplementedby>
+        <reimplementedby refid="classcsl_1_1MetricParent_1a1c137eb96960fbff8eb9aa9792149bd2">operator()</reimplementedby>
+        <reimplementedby refid="classmty_1_1GeneratorParent_1a1a8ee61b9646e0b4a397de8f9118fa92">operator()</reimplementedby>
+        <reimplementedby refid="classmty_1_1QuantumFieldParent_1a6d5cf783b576fc3bac49987c41fa6590">operator()</reimplementedby>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> &gt;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+<para>Generate the Element for an <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> of arbitrary dimension</para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of indices to generate the <ref refid="classcsl_1_1TensorElement" kindref="compound">TensorElement</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding <ref refid="classcsl_1_1TensorElement" kindref="compound">TensorElement</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="468" column="18" bodyfile="src/csl/indicial.cpp" bodystart="1819" bodyend="1833"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a76840bf24d5392c521467ecb662cc15e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::TensorParent::operator()</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;indices) override</argsstring>
+        <name>operator()</name>
+        <qualifiedname>csl::TensorParent::operator()</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a2ef89e977355f65dd919fcb78647df89">operator()</reimplements>
+        <reimplementedby refid="classmty_1_1GeneratorParent_1a7ec6a28ac9e77e9852e5228f7f54038a">operator()</reimplementedby>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="470" column="18" bodyfile="src/csl/indicial.cpp" bodystart="1814" bodyend="1817"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a18f7711d34c8bcdb3e034b7b82b76e09" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::TensorParent::operator==</definition>
+        <argsstring>(const TensorParent &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>csl::TensorParent::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Compares the parent with another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the parents are equivalent. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="476" column="18" bodyfile="src/csl/indicial.cpp" bodystart="1835" bodyend="1840"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1acb363ae0d9495875816d243352735ccf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::TensorParent::operator!=</definition>
+        <argsstring>(const TensorParent &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>csl::TensorParent::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Compares the parent with another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>False</bold> if the parents are equivalent. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>True</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="482" column="18" bodyfile="src/csl/indicial.cpp" bodystart="1842" bodyend="1845"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classcsl_1_1TensorParent_1ad738cf1b8e14d37d99a56dde23eae513" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; TensorParent &gt; tensor_s</definition>
+        <argsstring>(Args &amp;&amp;... args)</argsstring>
+        <name>tensor_s</name>
+        <qualifiedname>csl::TensorParent::tensor_s</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="335" column="28" bodyfile="src/csl/indicial.h" bodystart="505" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="friend" id="classcsl_1_1TensorParent_1a5e5f367f3b85508ef1371165633dcc3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; TensorParent &gt; tensor_s</definition>
+        <argsstring>(std::string const &amp;name, std::vector&lt; const Space * &gt; const &amp;indices, Args &amp;&amp;... args)</argsstring>
+        <name>tensor_s</name>
+        <qualifiedname>csl::TensorParent::tensor_s</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> * &gt; const &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="339" column="5" bodyfile="src/csl/indicial.h" bodystart="512" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="friend" id="classcsl_1_1TensorParent_1a82f0c3cb0949553a1c57424a0bf03afe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;fout, const TensorParent &amp;i)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>csl::TensorParent::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Displays an <ref refid="classcsl_1_1TensorParent" kindref="compound">TensorParent</ref> p. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\function std::ostream&amp; <ref refid="classcsl_1_1TensorParent_1a82f0c3cb0949553a1c57424a0bf03afe" kindref="member">operator&lt;&lt;(std::ostream&amp; fout,
+                                    const TensorParent&amp; p)</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="488" column="12" bodyfile="src/csl/indicial.cpp" bodystart="1847" bodyend="1862"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1aef208f53719c900f1b0a4b6f57fb9f48" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::applyProperty</definition>
+        <argsstring>(Expr_info self, IndexStructure const &amp;structure, Expr &amp;res) const</argsstring>
+        <name>applyProperty</name>
+        <qualifiedname>csl::TensorParent::applyProperty</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1IndexStructure" kindref="compound">IndexStructure</ref> const &amp;</type>
+          <declname>structure</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="491" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1254" bodyend="1271"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a1785b59dcf8041a7e097b9c4034d666a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::checkIndexRequest</definition>
+        <argsstring>(const Index &amp;index)</argsstring>
+        <name>checkIndexRequest</name>
+        <qualifiedname>csl::TensorParent::checkIndexRequest</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="495" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1554" bodyend="1557"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a56c5366a63a06eec34bae9b9cd2fbeaf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::checkIndexRequest</definition>
+        <argsstring>(const std::vector&lt; Index &gt; &amp;request)</argsstring>
+        <name>checkIndexRequest</name>
+        <qualifiedname>csl::TensorParent::checkIndexRequest</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> &gt; &amp;</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="497" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1558" bodyend="1585"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1a86bbf18d3861f4e97c186206f4d43ccb" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::createFixedIndices</definition>
+        <argsstring>(Index &amp;index) const</argsstring>
+        <name>createFixedIndices</name>
+        <qualifiedname>csl::TensorParent::createFixedIndices</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">Index</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="499" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1587" bodyend="1593"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1TensorParent_1aaf00e073ad5c8badf90869efcb327239" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::TensorParent::createFixedIndices</definition>
+        <argsstring>(std::vector&lt; Index &gt; &amp;indices) const</argsstring>
+        <name>createFixedIndices</name>
+        <qualifiedname>csl::TensorParent::createFixedIndices</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="501" column="10" bodyfile="src/csl/indicial.cpp" bodystart="1595" bodyend="1602"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="classcsl_1_1Parent" kindref="compound">Parent</ref> of an indicial object, allows to generate them (<ref refid="classcsl_1_1TensorElement" kindref="compound">TensorElement</ref>). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>csl::AbstractParent</label>
+        <link refid="classcsl_1_1AbstractParent"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>csl::DeltaParent</label>
+        <link refid="classcsl_1_1DeltaParent"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>csl::EpsilonParent</label>
+        <link refid="classcsl_1_1EpsilonParent"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>csl::MetricParent</label>
+        <link refid="classcsl_1_1MetricParent"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>csl::TDerivativeParent</label>
+        <link refid="classcsl_1_1TDerivativeParent"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>csl::TensorFieldParent</label>
+        <link refid="classcsl_1_1TensorFieldParent"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>csl::TensorParent</label>
+        <link refid="classcsl_1_1TensorParent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mty::BaseVectorBoson</label>
+        <link refid="classmty_1_1BaseVectorBoson"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>mty::DiracFermion</label>
+        <link refid="classmty_1_1DiracFermion"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mty::FieldStrength</label>
+        <link refid="classmty_1_1FieldStrength"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>mty::GaugeBoson</label>
+        <link refid="classmty_1_1GaugeBoson"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>mty::GeneratorParent</label>
+        <link refid="classmty_1_1GeneratorParent"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>mty::GhostBoson</label>
+        <link refid="classmty_1_1GhostBoson"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>mty::GoldstoneBoson</label>
+        <link refid="classmty_1_1GoldstoneBoson"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mty::QuantumFieldParent</label>
+        <link refid="classmty_1_1QuantumFieldParent"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>mty::ScalarBoson</label>
+        <link refid="classmty_1_1ScalarBoson"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mty::VectorBoson</label>
+        <link refid="classmty_1_1VectorBoson"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>mty::WeylFermion</label>
+        <link refid="classmty_1_1WeylFermion"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::enable_shared_from_this&lt; AbstractParent &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>csl::AbstractParent</label>
+        <link refid="classcsl_1_1AbstractParent"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>csl::Symmetry</label>
+        <link refid="classcsl_1_1Symmetry"/>
+      </node>
+      <node id="1">
+        <label>csl::TensorParent</label>
+        <link refid="classcsl_1_1TensorParent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>symmetry</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>tensor</edgelabel>
+          <edgelabel>trace</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::enable_shared_from_this&lt; AbstractParent &gt;</label>
+      </node>
+      <node id="6">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/csl/indicial.h" line="228" column="1" bodyfile="src/csl/indicial.h" bodystart="228" bodyend="502"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1AbstractParent_1a3a8495f4cc8281410f8aa512c64116cb" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>AbstractParent</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a961d277c9a277163931cb5b45906c83f" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>AbstractParent</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ad88d1dd79f22b67744640124252dc093" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>AbstractParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1abdfaf46f9699cea8ac9cea9b7dcec388" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>addAntiSymmetry</name></member>
+      <member refid="classcsl_1_1TensorParent_1a4e64e8c6d44452b8457401570e8fdee1" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>addComplexProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1aae4c207cf3365ebf833975cb4b4e92f8" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>addContractionProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1a464d54dcfae18bb913b4bf6a6629adab" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>addHermitianProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1a81eabaf09cb9fe1855a35a91faf3b132" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>addSelfContraction</name></member>
+      <member refid="classcsl_1_1TensorParent_1a17fb05141415ac442cb8f5b6e88bc329" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>addSpace</name></member>
+      <member refid="classcsl_1_1TensorParent_1ac9a495db8af3074a6c329d84a1b7cb91" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>addSymmetry</name></member>
+      <member refid="classcsl_1_1TensorParent_1a47f7c70202336b11674b15a6895b16ed" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>addTraceLessNess</name></member>
+      <member refid="classcsl_1_1TensorParent_1af3fc929cce72fcf95aad56ebe51c8881" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>addTransposedProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1aef208f53719c900f1b0a4b6f57fb9f48" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>applyProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1ab1a4d5405370ca6a59c35f87f8b2e5b7" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>breakSpace</name></member>
+      <member refid="classcsl_1_1TensorParent_1ac562be01bc8c902fdd85072f07714b7f" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>brokenParts</name></member>
+      <member refid="classcsl_1_1TensorParent_1a7a4851df688d387978d14564ae898b2c" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>chainContraction</name></member>
+      <member refid="classcsl_1_1TensorParent_1a1785b59dcf8041a7e097b9c4034d666a" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>checkIndexRequest</name></member>
+      <member refid="classcsl_1_1TensorParent_1a56c5366a63a06eec34bae9b9cd2fbeaf" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>checkIndexRequest</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a177e5244cc4d4b6c1e0600a4f77b523f" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>commutable</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ab058ceee466fd0997c060e83fc0a4e96" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>complexProp</name></member>
+      <member refid="classcsl_1_1TensorParent_1a0bee5fadcbac24cc611318499a6b9243" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>conjugateProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1afdb6b8332cd4a18e3835099e0fab9f32" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1TensorParent_1a3657ec01e4768d2f5daf416b83126cc1" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>covariant</name></member>
+      <member refid="classcsl_1_1TensorParent_1a86bbf18d3861f4e97c186206f4d43ccb" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>createFixedIndices</name></member>
+      <member refid="classcsl_1_1TensorParent_1aaf00e073ad5c8badf90869efcb327239" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>createFixedIndices</name></member>
+      <member refid="classcsl_1_1TensorParent_1a14f4bcb3c19fb4e8cb8ccf3a61719f27" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>dependsExplicitlyOn</name></member>
+      <member refid="classcsl_1_1TensorParent_1a7a0dbe923e3491cc35fa48c175baee43" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>dependsOn</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ad34cb190892a7b0d29cecf844d836e10" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>disableEvaluation</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a0cbecc9ebf1ba07087c4e275cf81a767" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>enableEvaluation</name></member>
+      <member refid="classcsl_1_1TensorParent_1adddc8255d23e5816e9cda53f5e8a034e" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>evaluate</name></member>
+      <member refid="classcsl_1_1TensorParent_1aa7e656c4430ca22d4ba01c02e21f500e" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>extContraction</name></member>
+      <member refid="classcsl_1_1TensorParent_1ab2a7b1370956a56cf793b88beb6ce5f3" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>externalTensors</name></member>
+      <member refid="classcsl_1_1TensorParent_1aa0dae8fe45934513b287849169dbba93" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>fullyAntiSymmetric</name></member>
+      <member refid="classcsl_1_1TensorParent_1a59e24724c7c0c2ee05617769c78c454e" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>fullySymmetric</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a9d9f642ad348b33efb70b9f4cf839c1b" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getBaseName</name></member>
+      <member refid="classcsl_1_1TensorParent_1acdb63d093ac13e3ec7f4bde54ca86738" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getBrokenParts</name></member>
+      <member refid="classcsl_1_1AbstractParent_1af8ae5696856c551204addb95271333bf" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>getCommutable</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ad0029cab35d92a9542c5fb21b6672212" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>getComplexProp</name></member>
+      <member refid="classcsl_1_1TensorParent_1a67f7479000987afe784cf41d139a97a6" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getComplexProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1a84c9f98e1531b573a63e67c667f7cba6" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getContractionProperties</name></member>
+      <member refid="classcsl_1_1TensorParent_1a5bff2bf79a3985d9020bee392f440990" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getDim</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ac45297ef35dab1807a158056ec8dfac3" prot="public" virt="virtual" ambiguityscope="csl::AbstractParent::"><scope>csl::TensorParent</scope><name>getDim</name></member>
+      <member refid="classcsl_1_1AbstractParent_1af7cf14c2576a5b337f2e75059a5e002c" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getEncapsulated</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a38fb1b0329110a3caed8e68397c08c51" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getExactEncapsulated</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a77bb772ebe5adafe83a9f504a56e05d0" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getFieldSpace</name></member>
+      <member refid="classcsl_1_1TensorParent_1a4b974963fac5f42fe6f3ea5ca7ed93b6" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getFullyAntiSymmetric</name></member>
+      <member refid="classcsl_1_1TensorParent_1aa4af33bfd789ef86dd5775b7a4558a01" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getFullySymmetric</name></member>
+      <member refid="classcsl_1_1TensorParent_1a36af50ffc43694e38539c9a0f282653b" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getHermitianProperty</name></member>
+      <member refid="classcsl_1_1AbstractParent_1acacd759bca7fa6e750080a68ea970caa" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>getLatexName</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ab22f321502a8aa481865be3e58bb241d" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>getName</name></member>
+      <member refid="classcsl_1_1TensorParent_1a57d5160b0d1a94e376bbbec3d5ab5735" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getPermutation</name></member>
+      <member refid="classcsl_1_1TensorParent_1a9526dde46fc8cbe38a6cc9910441986f" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getPrimaryType</name></member>
+      <member refid="classcsl_1_1TensorParent_1ae501e7e880e885ddcd65d946d69ef53c" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getSpace</name></member>
+      <member refid="classcsl_1_1TensorParent_1a09a777f09a8e69e177beef0055f0062a" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>getSymmetry</name></member>
+      <member refid="classcsl_1_1TensorParent_1a889012a413646fa644b39c24366673f1" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getTensor</name></member>
+      <member refid="classcsl_1_1TensorParent_1aef2a4af73762e024d8bd5f0fa0e6d359" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getTensor</name></member>
+      <member refid="classcsl_1_1TensorParent_1a13f343f42228eecf7986e8a361091627" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getTrace</name></member>
+      <member refid="classcsl_1_1TensorParent_1aad0b86fccab27dcef313d5be70edc806" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getTransposedProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1aa5d0d77665f81cd08e1a053f434daef1" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>getType</name></member>
+      <member refid="classcsl_1_1TensorParent_1a29c887ab51d1dfa876f869fbba3c8479" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>hasChainContractionProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1aee4452e0bd10be255d394ed3463780a3" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>hasContractionProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1a4bb5b8f6ae27e07622ab74ffdd461486" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>hermitianProperty</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a4e78f62f3624e0e6070f1da4ddd32943" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>isAnAbbreviation</name></member>
+      <member refid="classcsl_1_1TensorParent_1a592a243554b0bdeb58c34efe4eedaeee" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>isTraceLessIn</name></member>
+      <member refid="classcsl_1_1TensorParent_1a892cd4e2f9ca94f6e9aee17f779b6090" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>isValued</name></member>
+      <member refid="classcsl_1_1TensorParent_1ae7ec718cfaa3c9598463723a36f74f17" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>keepBestPermutation</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a98c857ebf734c15e7afd0d8a13988ac9" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>latexName</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a2ad6b4cd58d9b051a4d62f343bf48c2e" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>name</name></member>
+      <member refid="classcsl_1_1TensorParent_1acb363ae0d9495875816d243352735ccf" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1TensorParent_1a335867b85b438d48eaf0457cb5c83469" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1TensorParent_1a4d65c157315e20d9c6855d0a14b7ba63" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1TensorParent_1a76840bf24d5392c521467ecb662cc15e" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a67817d2d364178d734343aa2aaa8c621" prot="public" virt="virtual" ambiguityscope="csl::AbstractParent::"><scope>csl::TensorParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ad64079f8317747669f1c8b4c1498d8dc" prot="public" virt="virtual" ambiguityscope="csl::AbstractParent::"><scope>csl::TensorParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a4281c853db4878e925bc81440213dae0" prot="public" virt="virtual" ambiguityscope="csl::AbstractParent::"><scope>csl::TensorParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1AbstractParent_1aba91946c679a4e6e116f0fc75fc52e1e" prot="public" virt="virtual" ambiguityscope="csl::AbstractParent::"><scope>csl::TensorParent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1TensorParent_1a82f0c3cb0949553a1c57424a0bf03afe" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classcsl_1_1TensorParent_1a18f7711d34c8bcdb3e034b7b82b76e09" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1TensorParent_1ac5d2812d6de63bcad34360314576a9b9" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>printDefinition</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a789915324d1e21a6be70bbd495ada1cc" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>printPropDefinition</name></member>
+      <member refid="classcsl_1_1TensorParent_1a44c54413e4600c7d5589879671f8d474" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>removeContractionProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1a8753c5b10ccca6f049cbd5e852fbb21b" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>removeSelfContraction</name></member>
+      <member refid="classcsl_1_1TensorParent_1a05b90066cf74b7fc304a474df4e64a05" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>removeTraceLessNess</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a831ac782bdbba8d40838c6aeffaa53f6" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>self</name></member>
+      <member refid="classcsl_1_1TensorParent_1a10cab17d2ba7b927d3b30278201ea9dc" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>selfContraction</name></member>
+      <member refid="classcsl_1_1AbstractParent_1aae1bc83d1df8237e6bf50b6b8f732716" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>setCommutable</name></member>
+      <member refid="classcsl_1_1TensorParent_1ae441946c9f40502d9330aab7be1c9790" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>setComplexProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1a19c75060fbf2040abeb2ca7c61069aec" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>setElementary</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a3085594e68b3845f352898e79237ba24" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>setEncapsulated</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a11b28bb5fd2bd261e76a3980341ead1d" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>setFieldSpace</name></member>
+      <member refid="classcsl_1_1TensorParent_1ae0d6d12f0cd4efe83154cbf79978d088" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>setFullyAntiSymmetric</name></member>
+      <member refid="classcsl_1_1TensorParent_1ac99c17db4d68be67761930e0289ee5e0" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>setFullySymmetric</name></member>
+      <member refid="classcsl_1_1TensorParent_1a25ee0fbfeb78f1044dd56691b40c10ca" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>setKeepBestPermutation</name></member>
+      <member refid="classcsl_1_1AbstractParent_1af9a8cfc57a0bdf8178489c198755565b" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>setLatexName</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a13e6f74e590cbf05dcafb4d9c3df8b9c" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>setName</name></member>
+      <member refid="classcsl_1_1TensorParent_1aa61f52e3ea9ae4beb190442ac0e7aacc" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>setSymmetry</name></member>
+      <member refid="classcsl_1_1TensorParent_1a4eacd947decb14e003f81a8053d94e11" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>setTensor</name></member>
+      <member refid="classcsl_1_1TensorParent_1aa5bd4990cfc0d955edf1614a42d0d011" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>setTrace</name></member>
+      <member refid="classcsl_1_1TensorParent_1ae740d077dfcc386a407ca33d3619a5a9" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>space</name></member>
+      <member refid="classcsl_1_1TensorParent_1adc7dcdd4a866af29f99edc06924c2617" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>symmetry</name></member>
+      <member refid="classcsl_1_1TensorParent_1a61267f78d93f470771cf63f174322e01" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>tensor</name></member>
+      <member refid="classcsl_1_1TensorParent_1ad738cf1b8e14d37d99a56dde23eae513" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>tensor_s</name></member>
+      <member refid="classcsl_1_1TensorParent_1a5e5f367f3b85508ef1371165633dcc3b" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>tensor_s</name></member>
+      <member refid="classcsl_1_1TensorParent_1ab4af4e561398f75e81b0ca44c2200d8d" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1a04f4e5b6b75716a794e2c275530ae011" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1a34fe9aa77d890d2f797890d044d23727" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1a3381ecd1d560c4a80b2bf4804ef45b93" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1a1dea1d8fe995338d286bf35b48396b7b" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1a72bf7b821897d7b35f6ede9448c60e43" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1ada2f60750c2e2d3f7fa573d8de73d313" prot="public" virt="non-virtual"><scope>csl::TensorParent</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a74bbbbc2b43939c166feb7d8e7cc8537" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>toggleEvaluation</name></member>
+      <member refid="classcsl_1_1TensorParent_1a5db8129d9af05c907e28f046471650e1" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>trace</name></member>
+      <member refid="classcsl_1_1TensorParent_1ab6f004f8a41fff3afb5d62cac078d450" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>traceLessNess</name></member>
+      <member refid="classcsl_1_1TensorParent_1a81701d7f66909acf26cbe0f4d257ffdc" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>transposedProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1ac374a59f2a77225b51fd4f01f727f73b" prot="protected" virt="non-virtual"><scope>csl::TensorParent</scope><name>valued</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a6d13d559a8d68562b5827073b31b3c1a" prot="public" virt="virtual"><scope>csl::TensorParent</scope><name>~AbstractParent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

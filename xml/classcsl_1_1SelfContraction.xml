@@ -1,0 +1,470 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcsl_1_1SelfContraction" kind="class" language="C++" prot="public">
+    <compoundname>csl::SelfContraction</compoundname>
+    <includes refid="indicial_8h" local="no">indicial.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classcsl_1_1SelfContraction_1af87aa6e61e5f4d208d33891a13cf9f98" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; int, <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;int, csl::Index&gt; &gt; csl::SelfContraction::specialAValues</definition>
+        <argsstring></argsstring>
+        <name>specialAValues</name>
+        <qualifiedname>csl::SelfContraction::specialAValues</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="56" column="17" bodyfile="src/csl/indicial.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1SelfContraction_1afd2fb7085feafae8688044bc82549cb0" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; int, <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;int, csl::Index&gt; &gt; csl::SelfContraction::specialBValues</definition>
+        <argsstring></argsstring>
+        <name>specialBValues</name>
+        <qualifiedname>csl::SelfContraction::specialBValues</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="58" column="17" bodyfile="src/csl/indicial.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1SelfContraction_1aec95d702c5297e89b9bd82ccb7db6307" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; int, int &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;int, int&gt; &gt; csl::SelfContraction::contraction</definition>
+        <argsstring></argsstring>
+        <name>contraction</name>
+        <qualifiedname>csl::SelfContraction::contraction</qualifiedname>
+        <briefdescription>
+<para>Contains a list of pairs of integers. Each pair corresponds to the places of the two contracted indices (respectively in the two expressions). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="64" column="17" bodyfile="src/csl/indicial.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1SelfContraction_1a74ffe9b179c56fd87cc6b2028bda730c" prot="protected" static="no" mutable="no">
+        <type>std::optional&lt; std::function&lt; bool(<ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref>, <ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref>)&gt; &gt;</type>
+        <definition>std::optional&lt;std::function&lt;bool(Expr_info, Expr_info)&gt; &gt; csl::SelfContraction::condition</definition>
+        <argsstring></argsstring>
+        <name>condition</name>
+        <qualifiedname>csl::SelfContraction::condition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="66" column="19" bodyfile="src/csl/indicial.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1SelfContraction_1a938705ff16a24ac85bc4e75d605abcf1" prot="protected" static="no" mutable="no">
+        <type>std::array&lt; <ref refid="classcsl_1_1IndexStructure" kindref="compound">IndexStructure</ref>, 2 &gt;</type>
+        <definition>std::array&lt;IndexStructure, 2&gt; csl::SelfContraction::freeStructures</definition>
+        <argsstring></argsstring>
+        <name>freeStructures</name>
+        <qualifiedname>csl::SelfContraction::freeStructures</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="68" column="16" bodyfile="src/csl/indicial.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1SelfContraction_1a878e0feeece0279483afe0953bbda404" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool csl::SelfContraction::swappable</definition>
+        <argsstring></argsstring>
+        <name>swappable</name>
+        <qualifiedname>csl::SelfContraction::swappable</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="70" column="10" bodyfile="src/csl/indicial.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcsl_1_1SelfContraction_1a1a314b3318be21df15d7cd53dc8a8fb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>csl::SelfContraction::SelfContraction</definition>
+        <argsstring>()</argsstring>
+        <name>SelfContraction</name>
+        <qualifiedname>csl::SelfContraction::SelfContraction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="73" column="5" bodyfile="src/csl/indicial.h" bodystart="73" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1SelfContraction_1a1f8e6b3736d1687d997796f1481416d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::SelfContraction::SelfContraction</definition>
+        <argsstring>(const Expr &amp;A, const Expr &amp;B, std::optional&lt; std::function&lt; bool(Expr_info, Expr_info)&gt; &gt; t_condition=std::nullopt)</argsstring>
+        <name>SelfContraction</name>
+        <qualifiedname>csl::SelfContraction::SelfContraction</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>std::optional&lt; std::function&lt; bool(<ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref>, <ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref>)&gt; &gt;</type>
+          <declname>t_condition</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. Takes two tensors and determines the contractions between the two. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Must be an <ref refid="classcsl_1_1TensorElement" kindref="compound">TensorElement</ref>.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Must be an <ref refid="classcsl_1_1TensorElement" kindref="compound">TensorElement</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="81" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1SelfContraction_1ae18d9573ae0b477032855cc63594f143" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::SelfContraction::SelfContraction</definition>
+        <argsstring>(Expr_info A, Expr_info B, std::optional&lt; std::function&lt; bool(Expr_info, Expr_info)&gt; &gt; t_condition=std::nullopt)</argsstring>
+        <name>SelfContraction</name>
+        <qualifiedname>csl::SelfContraction::SelfContraction</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>std::optional&lt; std::function&lt; bool(<ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref>, <ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref>)&gt; &gt;</type>
+          <declname>t_condition</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="87" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1SelfContraction_1ace6312eed5c6ccb41b6b1d71664b1419" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::SelfContraction::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>csl::SelfContraction::empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the <ref refid="classcsl_1_1SelfContraction" kindref="compound">SelfContraction</ref> is empty (no pair of integers). </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="96" column="10" bodyfile="src/csl/indicial.cpp" bodystart="198" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1SelfContraction_1acc3419fb3756b9e6fb9ad3c9d82d3b5b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::SelfContraction::conditionAppliesOn</definition>
+        <argsstring>(Expr_info A, Expr_info B) const</argsstring>
+        <name>conditionAppliesOn</name>
+        <qualifiedname>csl::SelfContraction::conditionAppliesOn</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="98" column="10" bodyfile="src/csl/indicial.cpp" bodystart="203" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1SelfContraction_1a2ca356bb367298d07f75c4bca4a897b1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::SelfContraction::conditionAppliesOn</definition>
+        <argsstring>(const Expr &amp;A, const Expr &amp;B) const</argsstring>
+        <name>conditionAppliesOn</name>
+        <qualifiedname>csl::SelfContraction::conditionAppliesOn</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="100" column="10" bodyfile="src/csl/indicial.cpp" bodystart="210" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1SelfContraction_1a8b998e8356c03b45c81aa1e5e1c0c5ef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::SelfContraction::isSwappable</definition>
+        <argsstring>() const</argsstring>
+        <name>isSwappable</name>
+        <qualifiedname>csl::SelfContraction::isSwappable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="102" column="10" bodyfile="src/csl/indicial.h" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1SelfContraction_1a6f3efedcd2d457c7262b434568e1f687" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::SelfContraction::setSwappable</definition>
+        <argsstring>(bool t_swappable)</argsstring>
+        <name>setSwappable</name>
+        <qualifiedname>csl::SelfContraction::setSwappable</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>t_swappable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="107" column="10" bodyfile="src/csl/indicial.h" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1SelfContraction_1a45abcf33d0e4a277bab9ff02465d34b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::SelfContraction::operator==</definition>
+        <argsstring>(const SelfContraction &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>csl::SelfContraction::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1SelfContraction" kindref="compound">SelfContraction</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Compares the <ref refid="classcsl_1_1SelfContraction" kindref="compound">SelfContraction</ref> with another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the <bold>other</bold> is a part of *this. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="116" column="10" bodyfile="src/csl/indicial.cpp" bodystart="345" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1SelfContraction_1ae27612e2d81afc9f2b0720b32ef744f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::SelfContraction::applyIndices</definition>
+        <argsstring>(const Expr &amp;A, const Expr &amp;B, const SelfContraction &amp;targetContraction, const Expr &amp;res) const</argsstring>
+        <name>applyIndices</name>
+        <qualifiedname>csl::SelfContraction::applyIndices</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1SelfContraction" kindref="compound">SelfContraction</ref> &amp;</type>
+          <declname>targetContraction</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="118" column="10" bodyfile="src/csl/indicial.cpp" bodystart="240" bodyend="288"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classcsl_1_1SelfContraction_1a4eb4bd5aff6d24ce23fda15cbe32967d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;fout, const SelfContraction &amp;c)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>csl::SelfContraction::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1SelfContraction" kindref="compound">SelfContraction</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Displays the <ref refid="classcsl_1_1SelfContraction" kindref="compound">SelfContraction</ref> <bold>c</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\function std::ostream&amp; <ref refid="classcsl_1_1SelfContraction_1a4eb4bd5aff6d24ce23fda15cbe32967d" kindref="member">operator&lt;&lt;(std::ostream&amp; fout,
+                                   const SelfContraction&amp; C)</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="127" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcsl_1_1SelfContraction_1a63538827ffbdeea219548e54dd223b93" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1SelfContraction" kindref="compound">SelfContraction</ref></type>
+        <definition>SelfContraction csl::SelfContraction::getSwapped</definition>
+        <argsstring>() const</argsstring>
+        <name>getSwapped</name>
+        <qualifiedname>csl::SelfContraction::getSwapped</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="131" column="21" bodyfile="src/csl/indicial.cpp" bodystart="290" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1SelfContraction_1a027f8888bd4a0ede2089e397d724658c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1IndexStructure" kindref="compound">IndexStructure</ref></type>
+        <definition>IndexStructure csl::SelfContraction::getFreeContractionIndex</definition>
+        <argsstring>(const Expr &amp;expr, int index) const</argsstring>
+        <name>getFreeContractionIndex</name>
+        <qualifiedname>csl::SelfContraction::getFreeContractionIndex</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="133" column="20" bodyfile="src/csl/indicial.cpp" bodystart="215" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1SelfContraction_1a0c0114fd30617c253e389b052e20c4f5" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::SelfContraction::compare</definition>
+        <argsstring>(const SelfContraction &amp;other) const</argsstring>
+        <name>compare</name>
+        <qualifiedname>csl::SelfContraction::compare</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1SelfContraction" kindref="compound">SelfContraction</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="135" column="10" bodyfile="src/csl/indicial.cpp" bodystart="310" bodyend="343"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcsl_1_1SelfContraction_1a6e8953a022ad3b2b30e74b9de08cde35" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::SelfContraction::comparePairs</definition>
+        <argsstring>(const std::vector&lt; std::pair&lt; int, Index &gt; &gt; &amp;A, const std::vector&lt; std::pair&lt; int, Index &gt; &gt; &amp;B)</argsstring>
+        <name>comparePairs</name>
+        <qualifiedname>csl::SelfContraction::comparePairs</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::pair&lt; int, <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> &gt; &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::pair&lt; int, <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> &gt; &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="137" column="17" bodyfile="src/csl/indicial.cpp" bodystart="126" bodyend="150"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Small class that allows to handle contractions of indices between tensors. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class provides a constructor that takes two <ref refid="classcsl_1_1TensorElement" kindref="compound">TensorElement</ref> and determines automatically the contractions between the two, and an operator== that compares two contractions to see if they are the same. </para>
+    </detaileddescription>
+    <location file="src/csl/indicial.h" line="53" column="1" bodyfile="src/csl/indicial.h" bodystart="53" bodyend="139"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1SelfContraction_1ae27612e2d81afc9f2b0720b32ef744f7" prot="public" virt="non-virtual"><scope>csl::SelfContraction</scope><name>applyIndices</name></member>
+      <member refid="classcsl_1_1SelfContraction_1a0c0114fd30617c253e389b052e20c4f5" prot="private" virt="non-virtual"><scope>csl::SelfContraction</scope><name>compare</name></member>
+      <member refid="classcsl_1_1SelfContraction_1a6e8953a022ad3b2b30e74b9de08cde35" prot="private" virt="non-virtual"><scope>csl::SelfContraction</scope><name>comparePairs</name></member>
+      <member refid="classcsl_1_1SelfContraction_1a74ffe9b179c56fd87cc6b2028bda730c" prot="protected" virt="non-virtual"><scope>csl::SelfContraction</scope><name>condition</name></member>
+      <member refid="classcsl_1_1SelfContraction_1acc3419fb3756b9e6fb9ad3c9d82d3b5b" prot="public" virt="non-virtual"><scope>csl::SelfContraction</scope><name>conditionAppliesOn</name></member>
+      <member refid="classcsl_1_1SelfContraction_1a2ca356bb367298d07f75c4bca4a897b1" prot="public" virt="non-virtual"><scope>csl::SelfContraction</scope><name>conditionAppliesOn</name></member>
+      <member refid="classcsl_1_1SelfContraction_1aec95d702c5297e89b9bd82ccb7db6307" prot="protected" virt="non-virtual"><scope>csl::SelfContraction</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1SelfContraction_1ace6312eed5c6ccb41b6b1d71664b1419" prot="public" virt="non-virtual"><scope>csl::SelfContraction</scope><name>empty</name></member>
+      <member refid="classcsl_1_1SelfContraction_1a938705ff16a24ac85bc4e75d605abcf1" prot="protected" virt="non-virtual"><scope>csl::SelfContraction</scope><name>freeStructures</name></member>
+      <member refid="classcsl_1_1SelfContraction_1a027f8888bd4a0ede2089e397d724658c" prot="private" virt="non-virtual"><scope>csl::SelfContraction</scope><name>getFreeContractionIndex</name></member>
+      <member refid="classcsl_1_1SelfContraction_1a63538827ffbdeea219548e54dd223b93" prot="private" virt="non-virtual"><scope>csl::SelfContraction</scope><name>getSwapped</name></member>
+      <member refid="classcsl_1_1SelfContraction_1a8b998e8356c03b45c81aa1e5e1c0c5ef" prot="public" virt="non-virtual"><scope>csl::SelfContraction</scope><name>isSwappable</name></member>
+      <member refid="classcsl_1_1SelfContraction_1a4eb4bd5aff6d24ce23fda15cbe32967d" prot="public" virt="non-virtual"><scope>csl::SelfContraction</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classcsl_1_1SelfContraction_1a45abcf33d0e4a277bab9ff02465d34b7" prot="public" virt="non-virtual"><scope>csl::SelfContraction</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1SelfContraction_1a1a314b3318be21df15d7cd53dc8a8fb5" prot="public" virt="non-virtual"><scope>csl::SelfContraction</scope><name>SelfContraction</name></member>
+      <member refid="classcsl_1_1SelfContraction_1a1f8e6b3736d1687d997796f1481416d2" prot="public" virt="non-virtual"><scope>csl::SelfContraction</scope><name>SelfContraction</name></member>
+      <member refid="classcsl_1_1SelfContraction_1ae18d9573ae0b477032855cc63594f143" prot="public" virt="non-virtual"><scope>csl::SelfContraction</scope><name>SelfContraction</name></member>
+      <member refid="classcsl_1_1SelfContraction_1a6f3efedcd2d457c7262b434568e1f687" prot="public" virt="non-virtual"><scope>csl::SelfContraction</scope><name>setSwappable</name></member>
+      <member refid="classcsl_1_1SelfContraction_1af87aa6e61e5f4d208d33891a13cf9f98" prot="protected" virt="non-virtual"><scope>csl::SelfContraction</scope><name>specialAValues</name></member>
+      <member refid="classcsl_1_1SelfContraction_1afd2fb7085feafae8688044bc82549cb0" prot="protected" virt="non-virtual"><scope>csl::SelfContraction</scope><name>specialBValues</name></member>
+      <member refid="classcsl_1_1SelfContraction_1a878e0feeece0279483afe0953bbda404" prot="protected" virt="non-virtual"><scope>csl::SelfContraction</scope><name>swappable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

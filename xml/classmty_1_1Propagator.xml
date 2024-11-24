@@ -1,0 +1,620 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1Propagator" kind="class" language="C++" prot="public">
+    <compoundname>mty::Propagator</compoundname>
+    <basecompoundref refid="classcsl_1_1AbstractMultiFunc" prot="public" virt="non-virtual">csl::AbstractMultiFunc</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmty_1_1Propagator_1a95a93fbd52ef3b89db8eab5736f9cb72" prot="public" static="yes" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Propagator::Peps</definition>
+        <argsstring></argsstring>
+        <name>Peps</name>
+        <qualifiedname>mty::Propagator::Peps</qualifiedname>
+        <initializer>= csl::constant_s(&quot;reg_prop&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/propagator.h" line="33" column="29" bodyfile="src/marty/core/propagator.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1Propagator_1ac4ef21e9fa093b7f94f83c75771b56ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Propagator::Propagator</definition>
+        <argsstring>()=default</argsstring>
+        <name>Propagator</name>
+        <qualifiedname>mty::Propagator::Propagator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/propagator.h" line="35" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Propagator_1a4b4d42d659524e6d4336815689b35567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Propagator::Propagator</definition>
+        <argsstring>(csl::Expr const &amp;impulsion, csl::Expr const &amp;mass, csl::Expr const &amp;width=CSL_0)</argsstring>
+        <name>Propagator</name>
+        <qualifiedname>mty::Propagator::Propagator</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>impulsion</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>mass</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>width</declname>
+          <defval>CSL_0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/propagator.h" line="37" column="5" bodyfile="src/marty/core/propagator.cpp" bodystart="29" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Propagator_1a5d240f68dcabe6e6c5030eea6610992e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mty::Propagator::print</definition>
+        <argsstring>(int mode=0, std::ostream &amp;out=std::cout, csl::LibraryMode libMode=csl::LibraryMode::NoLib) const override</argsstring>
+        <name>print</name>
+        <qualifiedname>mty::Propagator::print</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aed56cb85894209a9bbc9b8bdada5e6ab">print</reimplements>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <param>
+          <type>csl::LibraryMode</type>
+          <declname>libMode</declname>
+          <defval>csl::LibraryMode::NoLib</defval>
+        </param>
+        <briefdescription>
+<para>Displays the abstract in standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tells if the Abstract is printed alone (default) or in another expr. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/propagator.h" line="41" column="10" bodyfile="src/marty/core/propagator.cpp" bodystart="47" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Propagator_1a3e70c97608eaa794f5be57d3e49316f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string mty::Propagator::printLaTeX</definition>
+        <argsstring>(int mode=0) const override</argsstring>
+        <name>printLaTeX</name>
+        <qualifiedname>mty::Propagator::printLaTeX</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aa067d4a97135bfe2052a7e21c28f75be">printLaTeX</reimplements>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Creates a LaTeX output for the Abstract. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tells if the Abstract is printed alone (default) or in another expr. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The string corresponding to the LaTeX output. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/propagator.h" line="46" column="17" bodyfile="src/marty/core/propagator.cpp" bodystart="74" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Propagator_1ac71a7f6902559bcecad97efaa2ab8d03" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>csl::unique_Expr</type>
+        <definition>csl::unique_Expr mty::Propagator::copy_unique</definition>
+        <argsstring>() const override</argsstring>
+        <name>copy_unique</name>
+        <qualifiedname>mty::Propagator::copy_unique</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aaa996819710adc3b7529c74a628be623">copy_unique</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/propagator.h" line="48" column="22" bodyfile="src/marty/core/propagator.cpp" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Propagator_1a2ae1a2d85f5b5426a565b964b7d54201" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Propagator::refresh</definition>
+        <argsstring>() const override</argsstring>
+        <name>refresh</name>
+        <qualifiedname>mty::Propagator::refresh</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aaeab3809e91989adbdf29c3f56d905b6">refresh</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/propagator.h" line="50" column="15" bodyfile="src/marty/core/propagator.cpp" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Propagator_1aeed6121c2788b74c9b8919ced2ee2615" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Propagator::deepCopy</definition>
+        <argsstring>() const override</argsstring>
+        <name>deepCopy</name>
+        <qualifiedname>mty::Propagator::deepCopy</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a09648782dcf2e81abb5b864f476cc410">deepCopy</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/propagator.h" line="52" column="15" bodyfile="src/marty/core/propagator.cpp" bodystart="110" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Propagator_1a1cd17128c7468afd1e0108df83e5d627" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Propagator::deepRefresh</definition>
+        <argsstring>() const override</argsstring>
+        <name>deepRefresh</name>
+        <qualifiedname>mty::Propagator::deepRefresh</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a10358c33402ed520dc5888b25bb26af3">deepRefresh</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/propagator.h" line="54" column="15" bodyfile="src/marty/core/propagator.cpp" bodystart="117" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Propagator_1a0a3615ae1fbafd41d788ec49b8f72389" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>std::optional&lt; csl::Expr &gt; mty::Propagator::evaluate</definition>
+        <argsstring>(csl::eval::mode user_mode=csl::eval::base) const override</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>mty::Propagator::evaluate</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aa3a4cb7f30e2a422fe27a513e03d6600">evaluate</reimplements>
+        <param>
+          <type>csl::eval::mode</type>
+          <declname>user_mode</declname>
+          <defval>csl::eval::base</defval>
+        </param>
+        <briefdescription>
+<para><bold>Evaluates</bold> the Abstract. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Replaces all variables by their value and evaluating. This function must be used instead of <ref refid="classcsl_1_1Abstract_1a543d5a4f0432e166b492ad28a860a65f" kindref="member">evaluateScalar()</ref> when treating not only real scalars.* In particular (x=2, y=3) x+iy evaluates to 3+ 3i whereas <ref refid="classcsl_1_1Abstract_1a543d5a4f0432e166b492ad28a860a65f" kindref="member">evaluateScalar()</ref> would return 3. <simplesect kind="return"><para>The abstract result of the evaluation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/propagator.h" line="56" column="19" bodyfile="src/marty/core/propagator.cpp" bodystart="124" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Propagator_1afecab05b1d6f115e0e088de0fdba9cec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>std::optional&lt; csl::Expr &gt; mty::Propagator::derive</definition>
+        <argsstring>(csl::Expr_info variable) const override</argsstring>
+        <name>derive</name>
+        <qualifiedname>mty::Propagator::derive</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aecab8c872023a2d0771e7e4f83bb05f8">derive</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">csl::Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the derivative of the Abstract wrt another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is possible to derive wrt any complicated expr. In this case however, the calculation is <bold>not</bold> <bold>always</bold> <bold>mathematically</bold> <bold>correct</bold>. The program just searches for equal Abstract or Abstract with the same name. In particular dx/d(exp(x))=0. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression wrt which we derive. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The derivative. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/propagator.h" line="59" column="19" bodyfile="src/marty/core/propagator.cpp" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Propagator_1ab9ecfc58caf6e92e12beb50cdae7aea3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>std::optional&lt; csl::Expr &gt; mty::Propagator::getComplexConjugate</definition>
+        <argsstring>() const override</argsstring>
+        <name>getComplexConjugate</name>
+        <qualifiedname>mty::Propagator::getComplexConjugate</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractMultiFunc_1abd84cb1aa54ef9875bae6f806ed1d753">getComplexConjugate</reimplements>
+        <briefdescription>
+<para>Calculates and returns the complex conjugate of the expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>\bar{*this}. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/propagator.h" line="61" column="19" bodyfile="src/marty/core/propagator.cpp" bodystart="97" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Propagator_1a64bb51cbde78978918ab6f6d2e79d675" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mty::Propagator::isIndexed</definition>
+        <argsstring>() const override</argsstring>
+        <name>isIndexed</name>
+        <qualifiedname>mty::Propagator::isIndexed</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractMultiFunc_1aee96fe96e6cf30e1022ee8f489884aa5">isIndexed</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the expression is indexed. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/propagator.h" line="63" column="10" bodyfile="src/marty/core/propagator.cpp" bodystart="155" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Propagator_1a4eed1878efc6b43f841bc7a5a660801a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1IndexStructure" kindref="compound">csl::IndexStructure</ref></type>
+        <definition>csl::IndexStructure mty::Propagator::getIndexStructure</definition>
+        <argsstring>() const override</argsstring>
+        <name>getIndexStructure</name>
+        <qualifiedname>mty::Propagator::getIndexStructure</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1ae125a32b6f3d0368b6055d4e58c1ff3f">getIndexStructure</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The index structure of the <bold>Indicial</bold> expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/propagator.h" line="65" column="25" bodyfile="src/marty/core/propagator.cpp" bodystart="160" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Propagator_1a7c3d452c486999e32d030c4448922ec8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mty::Propagator::operator==</definition>
+        <argsstring>(csl::Expr_info other) const override</argsstring>
+        <name>operator==</name>
+        <qualifiedname>mty::Propagator::operator==</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a3775f3088e784cc924cb7d26e118660e">operator==</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">csl::Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para><bold>Compares</bold> the Abstract with another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Here if two Abstracts have the same name, the function will return <bold>true</bold> even if they are <bold>not</bold> <bold>mathematically</bold> <bold>equal</bold>. So beware not to name different things the same way. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Abstract to compare. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the two Abstracts are the same (or have the same name). </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/propagator.h" line="67" column="10" bodyfile="src/marty/core/propagator.cpp" bodystart="165" bodyend="184"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>csl::Abstract</label>
+        <link refid="classcsl_1_1Abstract"/>
+      </node>
+      <node id="2">
+        <label>csl::AbstractMultiFunc</label>
+        <link refid="classcsl_1_1AbstractMultiFunc"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::Propagator</label>
+        <link refid="classmty_1_1Propagator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>csl::Abstract</label>
+        <link refid="classcsl_1_1Abstract"/>
+      </node>
+      <node id="2">
+        <label>csl::AbstractMultiFunc</label>
+        <link refid="classcsl_1_1AbstractMultiFunc"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::Propagator</label>
+        <link refid="classmty_1_1Propagator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Peps</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/propagator.h" line="30" column="1" bodyfile="src/marty/core/propagator.h" bodystart="30" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1Abstract_1ad5fee68c1f3dcbda0e936926fed17616" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>Abstract</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1ad7c6d28772b2684c20a42bbfcb8cf257" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>AbstractMultiFunc</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a7ccbae6ee27d3e2e26187ef3ea8f92b8" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>AbstractMultiFunc</name></member>
+      <member refid="classcsl_1_1Abstract_1a5549ac0c186b3c6febf332245a25a82c" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>addAntiSymmetry</name></member>
+      <member refid="classcsl_1_1Abstract_1abbab11282e5c6ac46b018642ff129f47" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>addDependency</name></member>
+      <member refid="classcsl_1_1Abstract_1a101219973341a39cf15f07e5e1aa388f" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>addition_own</name></member>
+      <member refid="classcsl_1_1Abstract_1ad431770faa4291116a50175193a11a88" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>addSymmetry</name></member>
+      <member refid="classcsl_1_1Abstract_1acd972aed8326d4c13534594e061ee6da" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>antisymmetrise</name></member>
+      <member refid="classcsl_1_1Abstract_1a61d3ab932182226f4670a62bbb22af4e" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>applyDiracDelta</name></member>
+      <member refid="classcsl_1_1Abstract_1a316956fea77627a716500a2bbfc1f3b7" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>applyOperator</name></member>
+      <member refid="classcsl_1_1Abstract_1a6305ce90c795bfb416d8e958c62f905c" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>applySelfStructureOn</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a8e44404eb3e6c23f7c7ddf10cdd3a152" prot="protected" virt="non-virtual"><scope>mty::Propagator</scope><name>argument</name></member>
+      <member refid="classcsl_1_1Abstract_1a27ad666bf7d533607da9675b0c645ee9" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>askTerm</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a6236c27a797993973fb45dc9f4906962" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>begin</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1aa405a3e5cd03bb390ce3e804fe8af806" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>begin</name></member>
+      <member refid="classcsl_1_1Abstract_1aa4cba37520821432f37e212fefbc2534" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>breakSpace</name></member>
+      <member refid="classcsl_1_1Abstract_1af0f40b77914e45f56bf87839d00211d7" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>breakSpace</name></member>
+      <member refid="classcsl_1_1Abstract_1afd9d0336808e8adf4ccdccb51587ed8c" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>checkIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a1ebd84082bb93418408cc0babe2dffe2" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>checkIndexStructure</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1accd66bc16179cf88684a6db68e277921" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>collect</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1ac54eff0c503e2c2947b232622261c998" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>commutesWith</name></member>
+      <member refid="classcsl_1_1Abstract_1a7caee12abb451168149779a668dfc59e" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>compareWithDummy</name></member>
+      <member refid="classcsl_1_1Abstract_1a0f16fda9fe72a89c61ece36101a11d95" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>compareWithDummy</name></member>
+      <member refid="classcsl_1_1Abstract_1aed79d20a0821205e6430c80a474117d3" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>contractIndex</name></member>
+      <member refid="classcsl_1_1Abstract_1ad874fc858295a737e6ce884530f1109b" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1Abstract_1abd35096982e92b669ea55d960c5f44be" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1Abstract_1af29c2898c5d3ba96de8018a0838c402c" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>copy</name></member>
+      <member refid="classmty_1_1Propagator_1ac71a7f6902559bcecad97efaa2ab8d03" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>copy_unique</name></member>
+      <member refid="classmty_1_1Propagator_1aeed6121c2788b74c9b8919ced2ee2615" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>deepCopy</name></member>
+      <member refid="classmty_1_1Propagator_1a1cd17128c7468afd1e0108df83e5d627" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>deepRefresh</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1ad072ccb3f8007430a6d6dce53f32b441" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>dependsExplicitlyOn</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a7c3599e88ef45e1abc9c878432c67ade" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>dependsExplicitlyOn</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a9d64fefa1c3718d1fe431edfa4934e71" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>dependsOn</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a32bbf7b44a59c1efe7e73961da575af4" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>dependsOn</name></member>
+      <member refid="classcsl_1_1Abstract_1a9d7d8586a0df66ba8da33528d6400e66" prot="public" virt="virtual" ambiguityscope="csl::Abstract::"><scope>mty::Propagator</scope><name>dependsOn</name></member>
+      <member refid="classmty_1_1Propagator_1afecab05b1d6f115e0e088de0fdba9cec" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>derive</name></member>
+      <member refid="classcsl_1_1Abstract_1aeb08811cf370616477a92075e4a218ee" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>determinant</name></member>
+      <member refid="classcsl_1_1Abstract_1a1578c74aee1050b806a67e7a81a67f5c" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>division_own</name></member>
+      <member refid="classcsl_1_1Abstract_1a4cc7a46deaa3eaa7593909d74e76d4af" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>dot</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1ada1ce81d61672e15a142fe8d3bee98bd" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>empty</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a178ccaec7d4546873084591d93398153" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>end</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a42f8f99108068dca2bd7a259577a0bcf" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>end</name></member>
+      <member refid="classmty_1_1Propagator_1a0a3615ae1fbafd41d788ec49b8f72389" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>evaluate</name></member>
+      <member refid="classcsl_1_1Abstract_1a543d5a4f0432e166b492ad28a860a65f" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>evaluateScalar</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1aa7b240760c1c7d930053fbd38c812196" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>expand</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1af09641d4d997d869626ff660ca4d3f8b" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>expand_if</name></member>
+      <member refid="classcsl_1_1Abstract_1aa2696a0feb43766ef54e1e3dd3d6d134" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>exponentiation_own</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1ad9eed372c276bc55ce8614a94962fef6" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>factor</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a71ffe88901a200f59bdb88d4adf09a44" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>factor</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1acb17ac601dd6fb6c98a6de6983d41009" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>findSubExpression</name></member>
+      <member refid="classcsl_1_1Abstract_1a021946e84d8c1a019908cac578b16fe8" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getAllDependencies</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a75ae783c1bd8e55ccc005af538599def" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1af168c84e071262cc48108cf991526651" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a898d6cf2a7f348feacab189447bee1eb" prot="public" virt="virtual" ambiguityscope="csl::Abstract::"><scope>mty::Propagator</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1aa689fb64eecb86edbde6c745d1ce756b" prot="public" virt="virtual" ambiguityscope="csl::Abstract::"><scope>mty::Propagator</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1afeb26e1382411448ce3c65d50fefd8bb" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getCanonicalPermutation</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a2bc449bd37728479b8c6b0a9eea3bccf" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getCommutable</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a46c3300eb0f87234002c476d3c7c9a14" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getComplexArgument</name></member>
+      <member refid="classmty_1_1Propagator_1ab9ecfc58caf6e92e12beb50cdae7aea3" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getComplexConjugate</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1ac1bea898b7169caabc409badff44c710" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getComplexModulus</name></member>
+      <member refid="classcsl_1_1Abstract_1a470d9f1267fba4a82e13af4a39470f81" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getComplexProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1af04c0e4426f0bf9df365afe0148d59df" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getContractedPair</name></member>
+      <member refid="classcsl_1_1Abstract_1aec707d949f0f98e08ab4642c93dd9eb5" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getContractionProperties</name></member>
+      <member refid="classcsl_1_1Abstract_1aa22f0e4c9c91f43b5cd61cbb873869eb" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getDeltaMinus</name></member>
+      <member refid="classcsl_1_1Abstract_1a69a657baf1c35ed581e9db2c47a71c99" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getDeltaPlus</name></member>
+      <member refid="classcsl_1_1Abstract_1a9531d78d67c82e288c0130da5b1ba80b" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getDenom</name></member>
+      <member refid="classcsl_1_1Abstract_1a5856c3d55a6d1406970f3656e61efe8e" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getDim</name></member>
+      <member refid="classcsl_1_1Abstract_1a77e067fc57c0c2e70d141079455fdbd7" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getElementary</name></member>
+      <member refid="classcsl_1_1Abstract_1ac513c930caa9939c2b9557f36a34ee69" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getExponents</name></member>
+      <member refid="classcsl_1_1Abstract_1ac34c9c6f05e692faeed2f030514787ad" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getFactors</name></member>
+      <member refid="classcsl_1_1Abstract_1aa4136dc23f1fba4bf897b54c8592ccfc" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getFreeIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1aa5b707a5efdaef7c7945cbd921c3f526" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getHermitianConjugate</name></member>
+      <member refid="classcsl_1_1Abstract_1aff5cca2b2c8190e59f6e34cb1e383d36" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getHermitianConjugate</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a232e9782e303c525a18f436e5e5f97b9" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getImaginaryPart</name></member>
+      <member refid="classcsl_1_1Abstract_1a3234ce243f6a2e11950be42f10100943" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getIndex</name></member>
+      <member refid="classmty_1_1Propagator_1a4eed1878efc6b43f841bc7a5a660801a" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1ae6a9a9ef3efd6bb83b62c0a353742d25" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractMultiFunc::"><scope>mty::Propagator</scope><name>getIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1addb848bf4cdea207484a71e9b1006ead" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getIndexStructureView</name></member>
+      <member refid="classcsl_1_1Abstract_1a632e28530a68539fadacd7ab7ffc8be1" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getIndexStructureView</name></member>
+      <member refid="classcsl_1_1Abstract_1a3d6b1e294cf24dea17c3c4361226138b" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getInfBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1a9c4a302d1a3cbf4dd9394f5e5880d343" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getLatexName</name></member>
+      <member refid="classcsl_1_1Abstract_1a652101e34b2efa43114150e9af3c79d5" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getLibDependency</name></member>
+      <member refid="classcsl_1_1Abstract_1af7f5e7466e754984a2c4394a112464f7" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getName</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1af12bbdfb8a1b45d722d37f2444443457" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getNArgs</name></member>
+      <member refid="classcsl_1_1Abstract_1a42125e9765a771c47819548d342b0b28" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getNContractedPairs</name></member>
+      <member refid="classcsl_1_1Abstract_1a204dbd37b63432cb08932b995f49d3f4" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getNFactor</name></member>
+      <member refid="classcsl_1_1Abstract_1add364193f7a78ac28f7001c7f4036453" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getNIndices</name></member>
+      <member refid="classcsl_1_1Abstract_1a6aa6bcc7cb8ee1574f29dc6ab6c6f0ed" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getNum</name></member>
+      <member refid="classcsl_1_1Abstract_1aad25c117c8dfc4d9718ba41e8d3f33a6" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getNumericalFactor</name></member>
+      <member refid="classcsl_1_1Abstract_1a9c3ec3dfe1fbd8ead5c8d9aca421a863" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getOperand</name></member>
+      <member refid="classcsl_1_1Abstract_1a9500a21d75d03c695ec0c76493600b38" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getOrder</name></member>
+      <member refid="classcsl_1_1Abstract_1ae89eb7b1a9e0259a60154563f3315907" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getOrderOf</name></member>
+      <member refid="classcsl_1_1Abstract_1ab150130c9f67daaf6aba52b9f6b90941" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getParent</name></member>
+      <member refid="classcsl_1_1Abstract_1a15f775b5add9af8727ead2cfaab78ba2" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getParent_info</name></member>
+      <member refid="classcsl_1_1Abstract_1aea8459b3206eb3a2297eeea7688e9520" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getParity</name></member>
+      <member refid="classcsl_1_1Abstract_1a946d175d946da102c5f4cc91840703cb" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getPermutations</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1aa82b52395acc9570f21ecca507dde7e2" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getPoint</name></member>
+      <member refid="classcsl_1_1Abstract_1ade540a127da7304f2b7282f4dcaffc7f" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getPolynomialTerm</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a1b6044133a95c411324d20afe460c55b" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getPrimaryType</name></member>
+      <member refid="classcsl_1_1Abstract_1a07489d0569bc983718796d21c73f34b3" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getProduct</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a4740c75c01e1d8aeb7db075fc5377789" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getRealPart</name></member>
+      <member refid="classcsl_1_1Abstract_1a5b77f008f4b95030641224877004f06c" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getRegularExpression</name></member>
+      <member refid="classcsl_1_1Abstract_1a625efe55a17b97a1c0f085bdbf3a962a" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getShape</name></member>
+      <member refid="classcsl_1_1Abstract_1aa83df1d9dc202457113e5b38bd694fae" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getSign</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1af5fc70d8f2b9e7df0dfff973a754432a" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getSubSymbols</name></member>
+      <member refid="classcsl_1_1Abstract_1a7dcdc11b64c8c515933882168d0792ef" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a413c50b2663f57d38c1d3ec3cfeaa3ce" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a26a0854bca4c47e84a1da36a3de8c49f" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a29261a946b3398b6129237620754a8b9" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a8a067b70756c4eef758aa88076a95162" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1aeaf8154e39ff211b12e6382e675ccaad" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getSum</name></member>
+      <member refid="classcsl_1_1Abstract_1a2fcc223dbf5d880e923c07df142df5c8" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getSupBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1a1d36e7a5acc50766d5cd3f6d59df978d" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getTerm</name></member>
+      <member refid="classcsl_1_1Abstract_1a404c5e89a3aad8a8dabcb56d4120c0fe" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getTransposed</name></member>
+      <member refid="classcsl_1_1Abstract_1aca3debb143668fd3ab75a27a47dd0c13" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getTransposed</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a77d642a8a42845ad66da5faa78cb3c27" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getType</name></member>
+      <member refid="classcsl_1_1Abstract_1a78f98ba06476e464e3fd2fce0d1f8243" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getValue</name></member>
+      <member refid="classcsl_1_1Abstract_1a628563238145f3a9acc331f1a89ce32f" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getValued</name></member>
+      <member refid="classcsl_1_1Abstract_1ae85f810bbadbc792210c958e8f1b2ffb" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getVariable</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a5e910beb3bdf8459306fe0cda78c1c76" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getVectorArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a0188b049736016c970a2513ed9f6931f" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>getVectorialModulus</name></member>
+      <member refid="classcsl_1_1Abstract_1a94bf1455397fdd2df8dbbc3b41c2f3f4" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>hasChainContractionProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1aa31e08c251d96b8ea8ec8d385895c1ff" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>hasContractionProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1a8c42723e8bc6334c99f00898cc1d59d7" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>hermitian</name></member>
+      <member refid="classcsl_1_1Abstract_1a5437e7f685edf8549e6d3b34572343f8" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>insert</name></member>
+      <member refid="classcsl_1_1Abstract_1a1b68943aa7ecf60a63af0f2f368eef8f" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>inverseMatrix</name></member>
+      <member refid="classcsl_1_1Abstract_1a9347e75b0cd0b75e0f0a38db93b29d83" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>isAnOperator</name></member>
+      <member refid="classcsl_1_1Abstract_1ac09992d147b39388c8936b3bff648930" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>isArbitrary</name></member>
+      <member refid="classcsl_1_1Abstract_1ad74c068f1da78856321932b6b6ae17dc" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>isBuildingBlock</name></member>
+      <member refid="classcsl_1_1Abstract_1a22a594845a29429c9b4f19c92bd18cad" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>isComplexConjugate</name></member>
+      <member refid="classcsl_1_1Abstract_1a464f4f0613db9b4b0a4efe26a3a03d60" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>isEmpty</name></member>
+      <member refid="classcsl_1_1Abstract_1af2ce38838e35c5785f92373a1d830668" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>isHermitianConjugate</name></member>
+      <member refid="classmty_1_1Propagator_1a64bb51cbde78978918ab6f6d2e79d675" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>isIndexed</name></member>
+      <member refid="classcsl_1_1Abstract_1a9a014bfd266b5f8471f23580e271979b" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>isInteger</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a8014e107c584b6450d3cc1ce78e154ca" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>isPolynomial</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a7ba1daf07d310140f4c417e23d37e6eb" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>isPurelyImaginary</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1ae240dfbf5dec5abdcd3006e69b40563c" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>isReal</name></member>
+      <member refid="classcsl_1_1Abstract_1ab79c1d8df9e6b1a3eca66958f7dc489d" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>matchShape</name></member>
+      <member refid="classcsl_1_1Abstract_1ac3978c71035bf1cda50f5b9031d631af" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>memoryOverhead</name></member>
+      <member refid="classcsl_1_1Abstract_1a4f5ed458ba62f5b4cf61a9e1f8568af1" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>multiplication_own</name></member>
+      <member refid="classcsl_1_1Abstract_1af5b62a6308638064c42da80e9cc2cb7e" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1af4fd1b57df371dac7ccfd5a909620e49" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a96de5935a58a96d4c5b1e47966488923" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1ac99a619abde7e4c58f39e14d4d20fcf5" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a45206de7c7773b3cb150451ee3eb379e" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a0d3495220202bd417c1b58249c923f39" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1ad4be44fbde5ebd97065a575992d498c2" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a6e19587260a07dba65cf2a985e05516b" prot="public" virt="non-virtual" ambiguityscope="csl::Abstract::"><scope>mty::Propagator</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a2a1660498f2638f5e490d6e512eb32f4" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>operator&lt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1afbcac6df2fd7ac11f336189cf215124b" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>operator&lt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1a59ff2950fc8ca319f87a730450f14545" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>operator=</name></member>
+      <member refid="classmty_1_1Propagator_1a7c3d452c486999e32d030c4448922ec8" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a8334e14cd5789168b037d3888ed60edd" prot="public" virt="virtual" ambiguityscope="csl::AbstractMultiFunc::"><scope>mty::Propagator</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a12d929e34039e817e464abc560bd4a9d" prot="public" virt="virtual" ambiguityscope="csl::AbstractMultiFunc::"><scope>mty::Propagator</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a1f78f0cce24c93def3050743bc5f2845" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractMultiFunc::"><scope>mty::Propagator</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1aed43debcac4a19e0da44986774c522bc" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractMultiFunc::"><scope>mty::Propagator</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a2376f08c0aa5ffe783090381d102d3ae" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractMultiFunc::"><scope>mty::Propagator</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a485c6f3e10db539a70416cd0766b117d" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>operator&gt;</name></member>
+      <member refid="classcsl_1_1Abstract_1ab305bdf49212f03781e7f98024faeb66" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>operator&gt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a4c8883df19d7538b68fa96aadac9dfa9" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>operator&gt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1a6b931f7b159d57bad26ca9c9ea729aa1" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>operator&gt;=</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a26979a899fab4621102645d0f8366457" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>operator[]</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1ae4922013ae4c2b23e6fab8bc9056ab42" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>operator[]</name></member>
+      <member refid="classcsl_1_1Abstract_1a75d9abfa88d9d09a89d3a4becd9e6429" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>operatorAppliesOn</name></member>
+      <member refid="classmty_1_1Propagator_1a95a93fbd52ef3b89db8eab5736f9cb72" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>Peps</name></member>
+      <member refid="classcsl_1_1Abstract_1abe9aceabbc0a99642e84c9025dbdc767" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>permut</name></member>
+      <member refid="classmty_1_1Propagator_1a5d240f68dcabe6e6c5030eea6610992e" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>print</name></member>
+      <member refid="classcsl_1_1Abstract_1a2910dd30d90915c11d48c01cab618dda" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>printCode</name></member>
+      <member refid="classcsl_1_1Abstract_1a89e45ffc7b65f92e77e592f76f70934c" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>printExplicit</name></member>
+      <member refid="classmty_1_1Propagator_1a3e70c97608eaa794f5be57d3e49316f7" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>printLaTeX</name></member>
+      <member refid="classcsl_1_1Abstract_1a0645745feacf93470963b55f93cae1c0" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>printProp</name></member>
+      <member refid="classmty_1_1Propagator_1ac4ef21e9fa093b7f94f83c75771b56ef" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>Propagator</name></member>
+      <member refid="classmty_1_1Propagator_1a4b4d42d659524e6d4336815689b35567" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>Propagator</name></member>
+      <member refid="classmty_1_1Propagator_1a2ae1a2d85f5b5426a565b964b7d54201" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>refresh</name></member>
+      <member refid="classcsl_1_1Abstract_1a8aab87c41acafaf1b1837b922495560d" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>regularLiteral</name></member>
+      <member refid="classcsl_1_1Abstract_1a2fe749450d2e610199801b189dc3d0f8" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>regularLiteral</name></member>
+      <member refid="classcsl_1_1Abstract_1aba5ef083016b2f3d9e6271f864b9b063" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>regularName</name></member>
+      <member refid="classcsl_1_1Abstract_1a1a8421d402d5ba82257188b545e8d668" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>regularName</name></member>
+      <member refid="classcsl_1_1Abstract_1a0e778c682b6cb02642b90e8ec8765441" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>removeDependency</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a636313fd58465a56d3b41cb74f9ffaff" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>replaceIndex</name></member>
+      <member refid="classcsl_1_1Abstract_1a9372ddd521fa661c5d3371e0d8d4dfc3" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>replaceIndexInPlace</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a3db6d93888f6b8bb5719549e522a4afa" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>replaceIndices</name></member>
+      <member refid="classcsl_1_1Abstract_1af0d95f3edc0562b1d75d60b670119842" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>resetIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a5c796713828ebfb74a7d8787d7802a76" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>self</name></member>
+      <member refid="classcsl_1_1Abstract_1aa6a40ceb6eb1aa79711ca126d5bdda02" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setAllDependencies</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a6cf9bbbcd0b0b3f75121f1c0a5cf4d57" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a45c3adb7ba4e2b8442247246a3792b44" prot="public" virt="virtual" ambiguityscope="csl::Abstract::"><scope>mty::Propagator</scope><name>setArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a7bb29d316b8f64652cef472a6c23f001" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setCommutable</name></member>
+      <member refid="classcsl_1_1Abstract_1ae35385480a1be08f5e7433535b58ac0b" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setComplexProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1a37ebc247831d6629d44117a490fca120" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setConjugated</name></member>
+      <member refid="classcsl_1_1Abstract_1aa6a04bb56578e7da143b3cd8d8fb7b26" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setElementary</name></member>
+      <member refid="classcsl_1_1Abstract_1afa50c743b8e7e76e637e98f165ad4e5d" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setEmpty</name></member>
+      <member refid="classcsl_1_1Abstract_1ac318016372d14b795893fe7e59199084" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setFullyAntiSymmetric</name></member>
+      <member refid="classcsl_1_1Abstract_1a4f90ebb7cf7c26782bd36bc2a67fc5d4" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setFullySymmetric</name></member>
+      <member refid="classcsl_1_1Abstract_1a70f946f9c59df045ef7416320ade89c7" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a5ecdb6ce7a2d9643da2f6161a06dfbbf" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setInfBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1a867135c96776248add60018f4aa7a578" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setName</name></member>
+      <member refid="classcsl_1_1Abstract_1a70df7be4486affa8dc891e3f25bf499f" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setOperand</name></member>
+      <member refid="classcsl_1_1Abstract_1ae7b8a14fc746ed72e4d5abd63373c5ba" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setOperandPrivate</name></member>
+      <member refid="classcsl_1_1Abstract_1a3003698af4978e774eeb2e62038f7432" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setParent</name></member>
+      <member refid="classcsl_1_1Abstract_1a3c175411df619e7504feb6d888fc82f1" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setPoint</name></member>
+      <member refid="classcsl_1_1Abstract_1aad7104a5b8855272a92a47c58f29e958" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setSupBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1aaf7f0692cb84ca861a5b3b641bea518b" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setValue</name></member>
+      <member refid="classcsl_1_1Abstract_1aa49c51bd285830e724f103e9fb61c464" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setValue</name></member>
+      <member refid="classcsl_1_1Abstract_1aa47ddab3aa047e86be34c70358d53548" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setVariable</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a8e6df749f2e0afdbe8ae0993235dda54" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>setVectorArgument</name></member>
+      <member refid="classcsl_1_1AbstractMultiFunc_1a773f619ff0c678e3d1e8e34559a00d50" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>size</name></member>
+      <member refid="classcsl_1_1Abstract_1a4eeedaeaa39e75facf1060dce7c57a8f" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>suppressExponent</name></member>
+      <member refid="classcsl_1_1Abstract_1a43520e1d6d5fdad9b50f77c6e027f928" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>suppressTerm</name></member>
+      <member refid="classcsl_1_1Abstract_1a4faf1ffd8cb3b6c721e128980c0303d8" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>symmetrise</name></member>
+      <member refid="classcsl_1_1Abstract_1a7b83c6a13716688f45b02e6291d39aba" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>tensordot</name></member>
+      <member refid="classcsl_1_1Abstract_1aee4fa41a5e014f067395467542ee8831" prot="public" virt="non-virtual"><scope>mty::Propagator</scope><name>testDummy</name></member>
+      <member refid="classcsl_1_1Abstract_1a9a86d21f5c5f65eb7e524a8f8002c0e7" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>trace</name></member>
+      <member refid="classcsl_1_1Abstract_1aacab43e551e9259a39a79378373ce49c" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>trace</name></member>
+      <member refid="classcsl_1_1Abstract_1a1e97712696e5c40b28bc1e35987fea94" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>transpose</name></member>
+      <member refid="classcsl_1_1Abstract_1a40bdc4c76fdbbf3cbac3af4dce8286ed" prot="public" virt="virtual"><scope>mty::Propagator</scope><name>~Abstract</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

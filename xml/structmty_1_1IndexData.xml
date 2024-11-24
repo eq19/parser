@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structmty_1_1IndexData" kind="struct" language="C++" prot="public">
+    <compoundname>mty::IndexData</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmty_1_1IndexData_1a75eb777123a366ec4ce900bb49b54885" prot="public" static="no" mutable="no">
+        <type><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref></type>
+        <definition>AlgebraState mty::IndexData::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <qualifiedname>mty::IndexData::state</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="80" column="18" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1IndexData_1aa442262d78051eb589e5ed0eea3b0d30" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t mty::IndexData::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <qualifiedname>mty::IndexData::p</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="81" column="18" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1IndexData_1aba557d742b2ba4b26b9390031a518228" prot="public" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::IndexData::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <qualifiedname>mty::IndexData::index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="82" column="18" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mty::AlgebraState</label>
+        <link refid="classmty_1_1AlgebraState"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::IndexData</label>
+        <link refid="structmty_1_1IndexData"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>state</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>index</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="3">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/semiSimpleAlgebra.h" line="79" column="1" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="79" bodyend="83"/>
+    <listofallmembers>
+      <member refid="structmty_1_1IndexData_1aba557d742b2ba4b26b9390031a518228" prot="public" virt="non-virtual"><scope>mty::IndexData</scope><name>index</name></member>
+      <member refid="structmty_1_1IndexData_1aa442262d78051eb589e5ed0eea3b0d30" prot="public" virt="non-virtual"><scope>mty::IndexData</scope><name>p</name></member>
+      <member refid="structmty_1_1IndexData_1a75eb777123a366ec4ce900bb49b54885" prot="public" virt="non-virtual"><scope>mty::IndexData</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

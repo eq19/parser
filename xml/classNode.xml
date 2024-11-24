@@ -1,0 +1,971 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classNode" kind="class" language="C++" prot="public">
+    <compoundname>Node</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QGraphicsObject</basecompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classNode_1ae716c5198bdf4b0a810324756b0f8f11" prot="public" static="no" strong="no">
+        <type></type>
+        <name></name>
+        <qualifiedname>Node</qualifiedname>
+        <enumvalue id="classNode_1ae716c5198bdf4b0a810324756b0f8f11a0df509db5bcc8da1ec6af739b50791b5" prot="public">
+          <name>Type</name>
+          <initializer>= static_cast&lt;int&gt;(UserType) + 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="48" column="5" bodyfile="src/grafed/gui/node.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classNode_1a344ca05a21ce667cbb1b04fb851399be" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>qint32</type>
+        <definition>qint32 Node::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>Node::size</qualifiedname>
+        <initializer>= 16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="126" column="29" bodyfile="src/grafed/gui/node.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNode_1a5bf3a3d6bb51f0959c784252fcbee6ee" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>qreal</type>
+        <definition>qreal Node::zValue</definition>
+        <argsstring></argsstring>
+        <name>zValue</name>
+        <qualifiedname>Node::zValue</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="127" column="29" bodyfile="src/grafed/gui/node.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNode_1a61e01324c0be8bf36d41da9fb8b02cf7" prot="public" static="no" mutable="no">
+        <type><ref refid="classProxy" kindref="compound">Proxy</ref> *</type>
+        <definition>Proxy* Node::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <qualifiedname>Node::label</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="129" column="11" bodyfile="src/grafed/gui/node.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classNode_1aed07593938588b6fd48973bcb1c8c7a2" prot="private" static="no" mutable="no">
+        <type>QPointF</type>
+        <definition>QPointF Node::oldPos</definition>
+        <argsstring></argsstring>
+        <name>oldPos</name>
+        <qualifiedname>Node::oldPos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="132" column="20" bodyfile="src/grafed/gui/node.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNode_1ace2f049a54551227ec828016ccdb6569" prot="private" static="no" mutable="no">
+        <type><ref refid="classDiagram" kindref="compound">Diagram</ref> *</type>
+        <definition>Diagram* Node::graph</definition>
+        <argsstring></argsstring>
+        <name>graph</name>
+        <qualifiedname>Node::graph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="133" column="19" bodyfile="src/grafed/gui/node.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNode_1ab9831d6fb8b73a6d4d58d3c46504f1c1" prot="private" static="no" mutable="no">
+        <type><ref refid="classDiagramWidget" kindref="compound">DiagramWidget</ref> *</type>
+        <definition>DiagramWidget* Node::widget</definition>
+        <argsstring></argsstring>
+        <name>widget</name>
+        <qualifiedname>Node::widget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="134" column="19" bodyfile="src/grafed/gui/node.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNode_1a90575cbf03f1a5f4655fa7ed15354d51" prot="private" static="no" mutable="no">
+        <type>QColor</type>
+        <definition>QColor Node::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>Node::color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="135" column="20" bodyfile="src/grafed/gui/node.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNode_1a93734a22333190876555f1698b9c4a8f" prot="private" static="no" mutable="no">
+        <type>qint32</type>
+        <definition>qint32 Node::nodeSize</definition>
+        <argsstring></argsstring>
+        <name>nodeSize</name>
+        <qualifiedname>Node::nodeSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="136" column="20" bodyfile="src/grafed/gui/node.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNode_1a60cc8b7dec11508e53c318faa29f27da" prot="private" static="no" mutable="no">
+        <type>qint32</type>
+        <definition>qint32 Node::nodeType</definition>
+        <argsstring></argsstring>
+        <name>nodeType</name>
+        <qualifiedname>Node::nodeType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="137" column="20" bodyfile="src/grafed/gui/node.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNode_1a71638ab628368331e626641ad255d585" prot="private" static="no" mutable="no">
+        <type>qint32</type>
+        <definition>qint32 Node::doubleClicked</definition>
+        <argsstring></argsstring>
+        <name>doubleClicked</name>
+        <qualifiedname>Node::doubleClicked</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="138" column="20" bodyfile="src/grafed/gui/node.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNode_1abd8bb29de1e35326939a3c57773e5fc5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Node::graphFocus</definition>
+        <argsstring></argsstring>
+        <name>graphFocus</name>
+        <qualifiedname>Node::graphFocus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="139" column="20" bodyfile="src/grafed/gui/node.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classNode_1a0ac05adced2193e138e38b2b748d10c5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Node::displayNode</definition>
+        <argsstring></argsstring>
+        <name>displayNode</name>
+        <qualifiedname>Node::displayNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="140" column="20" bodyfile="src/grafed/gui/node.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classNode_1a31510070018f109100674b3bf4887a0b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; QPointF, QPointF &gt;</type>
+        <definition>std::pair&lt; QPointF, QPointF &gt; Node::getEffectiveNodes</definition>
+        <argsstring>(Node *first, Node *second)</argsstring>
+        <name>getEffectiveNodes</name>
+        <qualifiedname>Node::getEffectiveNodes</qualifiedname>
+        <param>
+          <type><ref refid="classNode" kindref="compound">Node</ref> *</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type><ref refid="classNode" kindref="compound">Node</ref> *</type>
+          <declname>second</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="43" column="22" bodyfile="src/grafed/gui/node.cpp" bodystart="35" bodyend="51"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNode_1acad7ab04c3457b1e095b21b9ebbf3257" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Node::Node</definition>
+        <argsstring>(Diagram *DiagramWidget)</argsstring>
+        <name>Node</name>
+        <qualifiedname>Node::Node</qualifiedname>
+        <param>
+          <type><ref refid="classDiagram" kindref="compound">Diagram</ref> *</type>
+          <declname>DiagramWidget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="46" column="5" bodyfile="src/grafed/gui/node.cpp" bodystart="53" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1af48418d690ba7a21aea37168beaa865a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Node::type</definition>
+        <argsstring>() const override</argsstring>
+        <name>type</name>
+        <qualifiedname>Node::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="49" column="9" bodyfile="src/grafed/gui/node.h" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1ac0fb73d1da9da939950a7ca1172c7899" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString Node::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <qualifiedname>Node::getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="54" column="13" bodyfile="src/grafed/gui/node.cpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1ae7a48aec6a36f8cf35caa9f95bdd814b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>qint32</type>
+        <definition>qint32 Node::getNodeSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getNodeSize</name>
+        <qualifiedname>Node::getNodeSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="55" column="13" bodyfile="src/grafed/gui/node.h" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1afad3296e37615ab2a3f0f4d118029620" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QColor</type>
+        <definition>QColor Node::getColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getColor</name>
+        <qualifiedname>Node::getColor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="59" column="12" bodyfile="src/grafed/gui/node.h" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1ae8958b14cd714af77268e05152b5c3c5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>qint32</type>
+        <definition>qint32 Node::getNodeType</definition>
+        <argsstring>() const</argsstring>
+        <name>getNodeType</name>
+        <qualifiedname>Node::getNodeType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="63" column="12" bodyfile="src/grafed/gui/node.h" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1ab8a260b067f03b5fb7acb1d7cb59b5b1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Node::hasGraphFocus</definition>
+        <argsstring>() const</argsstring>
+        <name>hasGraphFocus</name>
+        <qualifiedname>Node::hasGraphFocus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="67" column="10" bodyfile="src/grafed/gui/node.cpp" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a0d059730d9a4d8cd69b3714bb03c8a28" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Node::isOperator</definition>
+        <argsstring>() const</argsstring>
+        <name>isOperator</name>
+        <qualifiedname>Node::isOperator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="68" column="10" bodyfile="src/grafed/gui/node.cpp" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a8371f1dd14d0bfbf648da7027010db06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::focusInGraph</definition>
+        <argsstring>()</argsstring>
+        <name>focusInGraph</name>
+        <qualifiedname>Node::focusInGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="69" column="10" bodyfile="src/grafed/gui/node.cpp" bodystart="87" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a7bb09c5fdd3ca591a79b4f10a3ec5ad9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::unFocusInGraph</definition>
+        <argsstring>()</argsstring>
+        <name>unFocusInGraph</name>
+        <qualifiedname>Node::unFocusInGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="70" column="10" bodyfile="src/grafed/gui/node.cpp" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a1b70360c1ef5469ca1e4ef58e6caac1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::setOperator</definition>
+        <argsstring>(bool t_op)</argsstring>
+        <name>setOperator</name>
+        <qualifiedname>Node::setOperator</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>t_op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="71" column="10" bodyfile="src/grafed/gui/node.cpp" bodystart="99" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1aabb7a36fd19fbcaa9bf9ee75f6458240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::setGridPos</definition>
+        <argsstring>(qreal x, qreal y)</argsstring>
+        <name>setGridPos</name>
+        <qualifiedname>Node::setGridPos</qualifiedname>
+        <param>
+          <type>qreal</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>qreal</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="72" column="10" bodyfile="src/grafed/gui/node.cpp" bodystart="320" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1ac66c99f4d31253c86494bc38d02d2d64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::setDiagramWidget</definition>
+        <argsstring>(DiagramWidget *t_widget)</argsstring>
+        <name>setDiagramWidget</name>
+        <qualifiedname>Node::setDiagramWidget</qualifiedname>
+        <param>
+          <type><ref refid="classDiagramWidget" kindref="compound">DiagramWidget</ref> *</type>
+          <declname>t_widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="73" column="10" bodyfile="src/grafed/gui/node.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a327ee966db1211cee4b9759bd928580a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QRectF</type>
+        <definition>QRectF Node::boundingRect</definition>
+        <argsstring>() const override</argsstring>
+        <name>boundingRect</name>
+        <qualifiedname>Node::boundingRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="78" column="18" bodyfile="src/grafed/gui/node.cpp" bodystart="179" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a0b1a8467340a3554ac57b43f56a90818" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QPainterPath</type>
+        <definition>QPainterPath Node::shape</definition>
+        <argsstring>() const override</argsstring>
+        <name>shape</name>
+        <qualifiedname>Node::shape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="79" column="18" bodyfile="src/grafed/gui/node.cpp" bodystart="188" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a35fd12d92a7ca5d7679c81ab6747a764" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::paint</definition>
+        <argsstring>(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</argsstring>
+        <name>paint</name>
+        <qualifiedname>Node::paint</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <param>
+          <type>const QStyleOptionGraphicsItem *</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="80" column="18" bodyfile="src/grafed/gui/node.cpp" bodystart="198" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a3c5fb05d1844a401decb31e0ef08ca61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::paintCross</definition>
+        <argsstring>(QPainter *painter)</argsstring>
+        <name>paintCross</name>
+        <qualifiedname>Node::paintCross</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="83" column="18" bodyfile="src/grafed/gui/node.cpp" bodystart="241" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a62902684d4f90164ded2ac2fd151bb89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::paintDisk</definition>
+        <argsstring>(QPainter *painter)</argsstring>
+        <name>paintDisk</name>
+        <qualifiedname>Node::paintDisk</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="84" column="18" bodyfile="src/grafed/gui/node.cpp" bodystart="233" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a9e489ee9aa93a08c2d6a488da59a5190" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::paintCircle</definition>
+        <argsstring>(QPainter *painter)</argsstring>
+        <name>paintCircle</name>
+        <qualifiedname>Node::paintCircle</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="85" column="18" bodyfile="src/grafed/gui/node.cpp" bodystart="227" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a010a9e5b75fcd6ea0ce06594e52f0092" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::paintHatch</definition>
+        <argsstring>(QPainter *painter)</argsstring>
+        <name>paintHatch</name>
+        <qualifiedname>Node::paintHatch</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="86" column="18" bodyfile="src/grafed/gui/node.cpp" bodystart="249" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a923e6e794a54891e390be77a4b318890" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::show</definition>
+        <argsstring>()</argsstring>
+        <name>show</name>
+        <qualifiedname>Node::show</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="87" column="18" bodyfile="src/grafed/gui/node.cpp" bodystart="268" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a1dba9627846bd694c15bc92cfb51000f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::hide</definition>
+        <argsstring>()</argsstring>
+        <name>hide</name>
+        <qualifiedname>Node::hide</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="88" column="18" bodyfile="src/grafed/gui/node.cpp" bodystart="273" bodyend="276"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classNode_1ad125028959a694ddbfe6007277d7991f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::setName</definition>
+        <argsstring>(QString const &amp;t_name)</argsstring>
+        <name>setName</name>
+        <qualifiedname>Node::setName</qualifiedname>
+        <param>
+          <type>QString const &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="92" column="10" bodyfile="src/grafed/gui/node.cpp" bodystart="107" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="slot" id="classNode_1a19b0cd07e4cdd59ca58bc2e1b09e80d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::setNodeSize</definition>
+        <argsstring>(qint32 t_size)</argsstring>
+        <name>setNodeSize</name>
+        <qualifiedname>Node::setNodeSize</qualifiedname>
+        <param>
+          <type>qint32</type>
+          <declname>t_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="93" column="10" bodyfile="src/grafed/gui/node.h" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="slot" id="classNode_1af42c543b5ca7457a122233425ed0e601" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::setColor</definition>
+        <argsstring>(QColor t_color)</argsstring>
+        <name>setColor</name>
+        <qualifiedname>Node::setColor</qualifiedname>
+        <param>
+          <type>QColor</type>
+          <declname>t_color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="98" column="10" bodyfile="src/grafed/gui/node.h" bodystart="98" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="slot" id="classNode_1aee9bc46ae29fbf2280bc7bcb4f463ae1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::setNodeType</definition>
+        <argsstring>(qint32 t_nodeType)</argsstring>
+        <name>setNodeType</name>
+        <qualifiedname>Node::setNodeType</qualifiedname>
+        <param>
+          <type>qint32</type>
+          <declname>t_nodeType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="103" column="10" bodyfile="src/grafed/gui/node.h" bodystart="103" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="slot" id="classNode_1a1ef9c7c495a7e276748ac7c25081edcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::changeNode</definition>
+        <argsstring>(QAction *action=nullptr)</argsstring>
+        <name>changeNode</name>
+        <qualifiedname>Node::changeNode</qualifiedname>
+        <param>
+          <type>QAction *</type>
+          <declname>action</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="108" column="10" bodyfile="src/grafed/gui/node.cpp" bodystart="121" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="slot" id="classNode_1ab1452d69f5065d9d687dd23ed185dd18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::changeColor</definition>
+        <argsstring>()</argsstring>
+        <name>changeColor</name>
+        <qualifiedname>Node::changeColor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="109" column="10" bodyfile="src/grafed/gui/node.cpp" bodystart="137" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="slot" id="classNode_1ad848a592f46ac0318cef56769f6221e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::changeName</definition>
+        <argsstring>()</argsstring>
+        <name>changeName</name>
+        <qualifiedname>Node::changeName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="110" column="10" bodyfile="src/grafed/gui/node.cpp" bodystart="147" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="slot" id="classNode_1ab14c6e873f3d8eec14fedb7ca15317b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::moveLabel</definition>
+        <argsstring>()</argsstring>
+        <name>moveLabel</name>
+        <qualifiedname>Node::moveLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="111" column="10" bodyfile="src/grafed/gui/node.cpp" bodystart="163" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="slot" id="classNode_1a2d879c55e6982531981b6d1ca8938ade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::updateEdge</definition>
+        <argsstring>()</argsstring>
+        <name>updateEdge</name>
+        <qualifiedname>Node::updateEdge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="112" column="10" bodyfile="src/grafed/gui/node.cpp" bodystart="171" bodyend="177"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classNode_1a18959a6037e96225835e07a32b4024ed" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant Node::itemChange</definition>
+        <argsstring>(GraphicsItemChange change, const QVariant &amp;value) override</argsstring>
+        <name>itemChange</name>
+        <qualifiedname>Node::itemChange</qualifiedname>
+        <param>
+          <type>GraphicsItemChange</type>
+          <declname>change</declname>
+        </param>
+        <param>
+          <type>const QVariant &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="115" column="14" bodyfile="src/grafed/gui/node.cpp" bodystart="284" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1aec73a09dfc127415b86cf09cde4d6c6b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::mouseMoveEvent</definition>
+        <argsstring>(QGraphicsSceneMouseEvent *event) override</argsstring>
+        <name>mouseMoveEvent</name>
+        <qualifiedname>Node::mouseMoveEvent</qualifiedname>
+        <param>
+          <type>QGraphicsSceneMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="118" column="10" bodyfile="src/grafed/gui/node.cpp" bodystart="296" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a2412d8007e9fd9cd1e3bf7afee57906e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::mousePressEvent</definition>
+        <argsstring>(QGraphicsSceneMouseEvent *event) override</argsstring>
+        <name>mousePressEvent</name>
+        <qualifiedname>Node::mousePressEvent</qualifiedname>
+        <param>
+          <type>QGraphicsSceneMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="119" column="10" bodyfile="src/grafed/gui/node.cpp" bodystart="301" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1aa94860b6269a430f3dd8ed1433c25d67" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::mouseDoubleClickEvent</definition>
+        <argsstring>(QGraphicsSceneMouseEvent *event) override</argsstring>
+        <name>mouseDoubleClickEvent</name>
+        <qualifiedname>Node::mouseDoubleClickEvent</qualifiedname>
+        <param>
+          <type>QGraphicsSceneMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="120" column="10" bodyfile="src/grafed/gui/node.cpp" bodystart="343" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1afc1bc6e8ea97c95e6ced177e828f70e9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::mouseReleaseEvent</definition>
+        <argsstring>(QGraphicsSceneMouseEvent *event) override</argsstring>
+        <name>mouseReleaseEvent</name>
+        <qualifiedname>Node::mouseReleaseEvent</qualifiedname>
+        <param>
+          <type>QGraphicsSceneMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="121" column="10" bodyfile="src/grafed/gui/node.cpp" bodystart="325" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1a8facb13d78091a58b727a6368ccf74f4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::dropEvent</definition>
+        <argsstring>(QGraphicsSceneDragDropEvent *event) override</argsstring>
+        <name>dropEvent</name>
+        <qualifiedname>Node::dropEvent</qualifiedname>
+        <param>
+          <type>QGraphicsSceneDragDropEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="122" column="10" bodyfile="src/grafed/gui/node.cpp" bodystart="352" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="classNode_1ac7b956795b2d4b16c59c1155bd7cba91" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <qualifiedname>Node::update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/node.h" line="123" column="10" bodyfile="src/grafed/gui/node.cpp" bodystart="278" bodyend="282"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Node</label>
+        <link refid="classNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QGraphicsObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>DiagramWidget</label>
+        <link refid="classDiagramWidget"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Node</label>
+        <link refid="classNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>label</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Proxy</label>
+        <link refid="classProxy"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>widget</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QGraphicsObject</label>
+      </node>
+      <node id="4">
+        <label>QGraphicsProxyWidget</label>
+      </node>
+      <node id="6">
+        <label>QGraphicsView</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/grafed/gui/node.h" line="39" column="1" bodyfile="src/grafed/gui/node.h" bodystart="39" bodyend="141"/>
+    <listofallmembers>
+      <member refid="classNode_1a327ee966db1211cee4b9759bd928580a" prot="public" virt="non-virtual"><scope>Node</scope><name>boundingRect</name></member>
+      <member refid="classNode_1ab1452d69f5065d9d687dd23ed185dd18" prot="public" virt="non-virtual"><scope>Node</scope><name>changeColor</name></member>
+      <member refid="classNode_1ad848a592f46ac0318cef56769f6221e3" prot="public" virt="non-virtual"><scope>Node</scope><name>changeName</name></member>
+      <member refid="classNode_1a1ef9c7c495a7e276748ac7c25081edcc" prot="public" virt="non-virtual"><scope>Node</scope><name>changeNode</name></member>
+      <member refid="classNode_1a90575cbf03f1a5f4655fa7ed15354d51" prot="private" virt="non-virtual"><scope>Node</scope><name>color</name></member>
+      <member refid="classNode_1a0ac05adced2193e138e38b2b748d10c5" prot="private" virt="non-virtual"><scope>Node</scope><name>displayNode</name></member>
+      <member refid="classNode_1a71638ab628368331e626641ad255d585" prot="private" virt="non-virtual"><scope>Node</scope><name>doubleClicked</name></member>
+      <member refid="classNode_1a8facb13d78091a58b727a6368ccf74f4" prot="protected" virt="non-virtual"><scope>Node</scope><name>dropEvent</name></member>
+      <member refid="classNode_1a8371f1dd14d0bfbf648da7027010db06" prot="public" virt="non-virtual"><scope>Node</scope><name>focusInGraph</name></member>
+      <member refid="classNode_1afad3296e37615ab2a3f0f4d118029620" prot="public" virt="non-virtual"><scope>Node</scope><name>getColor</name></member>
+      <member refid="classNode_1a31510070018f109100674b3bf4887a0b" prot="public" virt="non-virtual"><scope>Node</scope><name>getEffectiveNodes</name></member>
+      <member refid="classNode_1ac0fb73d1da9da939950a7ca1172c7899" prot="public" virt="non-virtual"><scope>Node</scope><name>getName</name></member>
+      <member refid="classNode_1ae7a48aec6a36f8cf35caa9f95bdd814b" prot="public" virt="non-virtual"><scope>Node</scope><name>getNodeSize</name></member>
+      <member refid="classNode_1ae8958b14cd714af77268e05152b5c3c5" prot="public" virt="non-virtual"><scope>Node</scope><name>getNodeType</name></member>
+      <member refid="classNode_1ace2f049a54551227ec828016ccdb6569" prot="private" virt="non-virtual"><scope>Node</scope><name>graph</name></member>
+      <member refid="classNode_1abd8bb29de1e35326939a3c57773e5fc5" prot="private" virt="non-virtual"><scope>Node</scope><name>graphFocus</name></member>
+      <member refid="classNode_1ab8a260b067f03b5fb7acb1d7cb59b5b1" prot="public" virt="non-virtual"><scope>Node</scope><name>hasGraphFocus</name></member>
+      <member refid="classNode_1a1dba9627846bd694c15bc92cfb51000f" prot="public" virt="non-virtual"><scope>Node</scope><name>hide</name></member>
+      <member refid="classNode_1a0d059730d9a4d8cd69b3714bb03c8a28" prot="public" virt="non-virtual"><scope>Node</scope><name>isOperator</name></member>
+      <member refid="classNode_1a18959a6037e96225835e07a32b4024ed" prot="protected" virt="non-virtual"><scope>Node</scope><name>itemChange</name></member>
+      <member refid="classNode_1a61e01324c0be8bf36d41da9fb8b02cf7" prot="public" virt="non-virtual"><scope>Node</scope><name>label</name></member>
+      <member refid="classNode_1aa94860b6269a430f3dd8ed1433c25d67" prot="protected" virt="non-virtual"><scope>Node</scope><name>mouseDoubleClickEvent</name></member>
+      <member refid="classNode_1aec73a09dfc127415b86cf09cde4d6c6b" prot="protected" virt="non-virtual"><scope>Node</scope><name>mouseMoveEvent</name></member>
+      <member refid="classNode_1a2412d8007e9fd9cd1e3bf7afee57906e" prot="protected" virt="non-virtual"><scope>Node</scope><name>mousePressEvent</name></member>
+      <member refid="classNode_1afc1bc6e8ea97c95e6ced177e828f70e9" prot="protected" virt="non-virtual"><scope>Node</scope><name>mouseReleaseEvent</name></member>
+      <member refid="classNode_1ab14c6e873f3d8eec14fedb7ca15317b2" prot="public" virt="non-virtual"><scope>Node</scope><name>moveLabel</name></member>
+      <member refid="classNode_1acad7ab04c3457b1e095b21b9ebbf3257" prot="public" virt="non-virtual"><scope>Node</scope><name>Node</name></member>
+      <member refid="classNode_1a93734a22333190876555f1698b9c4a8f" prot="private" virt="non-virtual"><scope>Node</scope><name>nodeSize</name></member>
+      <member refid="classNode_1a60cc8b7dec11508e53c318faa29f27da" prot="private" virt="non-virtual"><scope>Node</scope><name>nodeType</name></member>
+      <member refid="classNode_1aed07593938588b6fd48973bcb1c8c7a2" prot="private" virt="non-virtual"><scope>Node</scope><name>oldPos</name></member>
+      <member refid="classNode_1a35fd12d92a7ca5d7679c81ab6747a764" prot="public" virt="non-virtual"><scope>Node</scope><name>paint</name></member>
+      <member refid="classNode_1a9e489ee9aa93a08c2d6a488da59a5190" prot="public" virt="non-virtual"><scope>Node</scope><name>paintCircle</name></member>
+      <member refid="classNode_1a3c5fb05d1844a401decb31e0ef08ca61" prot="public" virt="non-virtual"><scope>Node</scope><name>paintCross</name></member>
+      <member refid="classNode_1a62902684d4f90164ded2ac2fd151bb89" prot="public" virt="non-virtual"><scope>Node</scope><name>paintDisk</name></member>
+      <member refid="classNode_1a010a9e5b75fcd6ea0ce06594e52f0092" prot="public" virt="non-virtual"><scope>Node</scope><name>paintHatch</name></member>
+      <member refid="classNode_1af42c543b5ca7457a122233425ed0e601" prot="public" virt="non-virtual"><scope>Node</scope><name>setColor</name></member>
+      <member refid="classNode_1ac66c99f4d31253c86494bc38d02d2d64" prot="public" virt="non-virtual"><scope>Node</scope><name>setDiagramWidget</name></member>
+      <member refid="classNode_1aabb7a36fd19fbcaa9bf9ee75f6458240" prot="public" virt="non-virtual"><scope>Node</scope><name>setGridPos</name></member>
+      <member refid="classNode_1ad125028959a694ddbfe6007277d7991f" prot="public" virt="non-virtual"><scope>Node</scope><name>setName</name></member>
+      <member refid="classNode_1a19b0cd07e4cdd59ca58bc2e1b09e80d2" prot="public" virt="non-virtual"><scope>Node</scope><name>setNodeSize</name></member>
+      <member refid="classNode_1aee9bc46ae29fbf2280bc7bcb4f463ae1" prot="public" virt="non-virtual"><scope>Node</scope><name>setNodeType</name></member>
+      <member refid="classNode_1a1b70360c1ef5469ca1e4ef58e6caac1d" prot="public" virt="non-virtual"><scope>Node</scope><name>setOperator</name></member>
+      <member refid="classNode_1a0b1a8467340a3554ac57b43f56a90818" prot="public" virt="non-virtual"><scope>Node</scope><name>shape</name></member>
+      <member refid="classNode_1a923e6e794a54891e390be77a4b318890" prot="public" virt="non-virtual"><scope>Node</scope><name>show</name></member>
+      <member refid="classNode_1a344ca05a21ce667cbb1b04fb851399be" prot="public" virt="non-virtual"><scope>Node</scope><name>size</name></member>
+      <member refid="classNode_1ae716c5198bdf4b0a810324756b0f8f11a0df509db5bcc8da1ec6af739b50791b5" prot="public" virt="non-virtual"><scope>Node</scope><name>Type</name></member>
+      <member refid="classNode_1af48418d690ba7a21aea37168beaa865a" prot="public" virt="non-virtual"><scope>Node</scope><name>type</name></member>
+      <member refid="classNode_1a7bb09c5fdd3ca591a79b4f10a3ec5ad9" prot="public" virt="non-virtual"><scope>Node</scope><name>unFocusInGraph</name></member>
+      <member refid="classNode_1ac7b956795b2d4b16c59c1155bd7cba91" prot="protected" virt="non-virtual"><scope>Node</scope><name>update</name></member>
+      <member refid="classNode_1a2d879c55e6982531981b6d1ca8938ade" prot="public" virt="non-virtual"><scope>Node</scope><name>updateEdge</name></member>
+      <member refid="classNode_1ab9831d6fb8b73a6d4d58d3c46504f1c1" prot="private" virt="non-virtual"><scope>Node</scope><name>widget</name></member>
+      <member refid="classNode_1a5bf3a3d6bb51f0959c784252fcbee6ee" prot="public" virt="non-virtual"><scope>Node</scope><name>zValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

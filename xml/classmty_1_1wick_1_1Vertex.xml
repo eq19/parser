@@ -1,0 +1,604 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1wick_1_1Vertex" kind="class" language="C++" prot="public">
+    <compoundname>mty::wick::Vertex</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::vector&lt; std::shared_ptr&lt; Node &gt; &gt;</basecompoundref>
+    <includes refid="graph_8h" local="no">graph.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmty_1_1wick_1_1Vertex_1a82a4c35ab241ffcfaf5e64b804a883f6" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::wick::Vertex::external</definition>
+        <argsstring></argsstring>
+        <name>external</name>
+        <qualifiedname>mty::wick::Vertex::external</qualifiedname>
+        <briefdescription>
+<para>Tells if the <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> is external, i.e. composed of field insertions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="257" column="10" bodyfile="src/marty/core/graph.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1wick_1_1Vertex_1aa328f00924e9f8636d4003b434375dd4" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t mty::wick::Vertex::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>mty::wick::Vertex::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="259" column="12" bodyfile="src/marty/core/graph.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1ae771515f4f7af2a0e15250a37a35ea0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::wick::Vertex::Vertex</definition>
+        <argsstring>()</argsstring>
+        <name>Vertex</name>
+        <qualifiedname>mty::wick::Vertex::Vertex</qualifiedname>
+        <briefdescription>
+<para>Default constructor, initializes an empty <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="113" column="5" bodyfile="src/marty/core/graph.cpp" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1ab0b5406819b707deaa9d1a4b36ae8f97" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::wick::Vertex::Vertex</definition>
+        <argsstring>(const std::vector&lt; const mty::QuantumField * &gt; &amp;fields, size_t id, bool t_external=false)</argsstring>
+        <name>Vertex</name>
+        <qualifiedname>mty::wick::Vertex::Vertex</qualifiedname>
+        <param>
+          <type>const std::vector&lt; const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> * &gt; &amp;</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>t_external</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Constructor with 2 parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fields</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::vector of <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> in the <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_external</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tells if the vertex is external (field insertion in correlator). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="121" column="14" bodyfile="src/marty/core/graph.cpp" bodystart="71" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1ae715b32591a449cd76924f7cd5e2b7f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::wick::Vertex::Vertex</definition>
+        <argsstring>(const Vertex &amp;other)</argsstring>
+        <name>Vertex</name>
+        <qualifiedname>mty::wick::Vertex::Vertex</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. See <ref refid="classmty_1_1wick_1_1Vertex_1ac66e75a21c18c432b797d81525e4a892" kindref="member">Vertex::operator=()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="128" column="5" bodyfile="src/marty/core/graph.cpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1a1e8740061f82ab57b3fa3a8e46cca069" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::wick::Vertex::isExternal</definition>
+        <argsstring>() const</argsstring>
+        <name>isExternal</name>
+        <qualifiedname>mty::wick::Vertex::isExternal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>external (i.e. if the <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> comes from field insertions). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="133" column="10" bodyfile="src/marty/core/graph.cpp" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1afa3bb366dc7cd1e2b1814b5d91954bc1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::wick::Vertex::isFree</definition>
+        <argsstring>() const</argsstring>
+        <name>isFree</name>
+        <qualifiedname>mty::wick::Vertex::isFree</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> is free, i.e. has no contraction. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="139" column="10" bodyfile="src/marty/core/graph.cpp" bodystart="91" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1a61b4d2f7ac647efe49ed9ff57846deb0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::wick::Vertex::hasFreeNode</definition>
+        <argsstring>() const</argsstring>
+        <name>hasFreeNode</name>
+        <qualifiedname>mty::wick::Vertex::hasFreeNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> has at least one free <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="145" column="10" bodyfile="src/marty/core/graph.cpp" bodystart="99" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1a8b103ce52002573284f3c1cc91b42349" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::wick::Vertex::hasFreeNode</definition>
+        <argsstring>(const mty::QuantumField *field) const</argsstring>
+        <name>hasFreeNode</name>
+        <qualifiedname>mty::wick::Vertex::hasFreeNode</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> *</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+<para>Tells if a <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> can be contracted with (has free nodes for) a particular <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> we want to contract. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> has at least one contractible <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> with <bold>field</bold> (see isExactlyContractiblewith()). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="154" column="10" bodyfile="src/marty/core/graph.cpp" bodystart="107" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1a8adf89623beda59a0b8e8e1d75943ff1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::wick::Vertex::containsExplicit</definition>
+        <argsstring>(const mty::QuantumField *field) const</argsstring>
+        <name>containsExplicit</name>
+        <qualifiedname>mty::wick::Vertex::containsExplicit</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> *</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="156" column="10" bodyfile="src/marty/core/graph.cpp" bodystart="117" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1a3e12e853087cab2d3401949381b1d192" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::wick::Vertex::isDegenerateWith</definition>
+        <argsstring>(const Vertex &amp;other) const</argsstring>
+        <name>isDegenerateWith</name>
+        <qualifiedname>mty::wick::Vertex::isDegenerateWith</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Tells if the <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> is degenerate with another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the two vertices have the same field content. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="163" column="10" bodyfile="src/marty/core/graph.cpp" bodystart="125" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1aebc4a91da0718cc77eb02159463f4bb6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> *</type>
+        <definition>const QuantumField * mty::wick::Vertex::getFirstContractibleField</definition>
+        <argsstring>() const</argsstring>
+        <name>getFirstContractibleField</name>
+        <qualifiedname>mty::wick::Vertex::getFirstContractibleField</qualifiedname>
+        <briefdescription>
+<para>Returns the field associated to the first contractible <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> of the <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref>. This function calls an error if the <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> is fully contracted. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> of the first contractible <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="171" column="29" bodyfile="src/marty/core/graph.cpp" bodystart="166" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1a8187f571dfb8553c9161d7f686cb0ec7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt;</type>
+        <definition>shared_ptr&lt; Node &gt; mty::wick::Vertex::getFirstContractibleNode</definition>
+        <argsstring>() const</argsstring>
+        <name>getFirstContractibleNode</name>
+        <qualifiedname>mty::wick::Vertex::getFirstContractibleNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A shared_ptr to the the first constractible <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> if ther is one. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>nullptr</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="177" column="21" bodyfile="src/marty/core/graph.cpp" bodystart="179" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1a497d0b6e6b320c673a61fab75a361862" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt;</type>
+        <definition>shared_ptr&lt; Node &gt; mty::wick::Vertex::getFirstContractibleNode</definition>
+        <argsstring>(const mty::QuantumField *field) const</argsstring>
+        <name>getFirstContractibleNode</name>
+        <qualifiedname>mty::wick::Vertex::getFirstContractibleNode</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> *</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+<para>Returns the first <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> contractible with <bold>field</bold> if there is one. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> we want to contract. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A shared_ptr to the the first <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> contractible with <bold>field</bold> if ther is one. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>nullptr</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="186" column="5" bodyfile="src/marty/core/graph.cpp" bodystart="189" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1a7bfafbb34ec576d7996b93e31a2fcf89" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt; &gt;</type>
+        <definition>vector&lt; shared_ptr&lt; Node &gt; &gt; mty::wick::Vertex::getContractibleNodes</definition>
+        <argsstring>() const</argsstring>
+        <name>getContractibleNodes</name>
+        <qualifiedname>mty::wick::Vertex::getContractibleNodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A std::vector filled with all contractible <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> objects in the <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="192" column="17" bodyfile="src/marty/core/graph.cpp" bodystart="198" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1a0c8c4129a1370962b0cbb22be2992963" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt; &gt;</type>
+        <definition>vector&lt; shared_ptr&lt; Node &gt; &gt; mty::wick::Vertex::getContractibleNodes</definition>
+        <argsstring>(const mty::QuantumField *field) const</argsstring>
+        <name>getContractibleNodes</name>
+        <qualifiedname>mty::wick::Vertex::getContractibleNodes</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> *</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="195" column="5" bodyfile="src/marty/core/graph.cpp" bodystart="208" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1ad82ce111bfa46bf2672eebecfa2535e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::wick::Vertex::setExternal</definition>
+        <argsstring>(bool t_external)</argsstring>
+        <name>setExternal</name>
+        <qualifiedname>mty::wick::Vertex::setExternal</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>t_external</declname>
+        </param>
+        <briefdescription>
+<para>Sets the external property of the <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref>. <bold>True</bold> means that the <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> is composed of field insertions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="201" column="10" bodyfile="src/marty/core/graph.cpp" bodystart="218" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1af62d68cf719f90d6592e5131ba37d638" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::wick::Vertex::getDegeneracy</definition>
+        <argsstring>(const mty::QuantumField *t_field) const</argsstring>
+        <name>getDegeneracy</name>
+        <qualifiedname>mty::wick::Vertex::getDegeneracy</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> *</type>
+          <declname>t_field</declname>
+        </param>
+        <briefdescription>
+<para>Computes and returns the degeneracy of the <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> with respect to a given <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref>. The degeneracy is the number of free Nodes contractible with <bold>field</bold>. See isExactlyContractiblewith(). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> we want to contract. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of free <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> contractible with <bold>field</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="210" column="9" bodyfile="src/marty/core/graph.cpp" bodystart="223" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1ada589d69c6ad69de78c920735b89d688" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::wick::Vertex::getTotalDegeneracyFactor</definition>
+        <argsstring>() const</argsstring>
+        <name>getTotalDegeneracyFactor</name>
+        <qualifiedname>mty::wick::Vertex::getTotalDegeneracyFactor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="212" column="9" bodyfile="src/marty/core/graph.cpp" bodystart="234" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1ac66e75a21c18c432b797d81525e4a892" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> &amp;</type>
+        <definition>Vertex &amp; mty::wick::Vertex::operator=</definition>
+        <argsstring>(const Vertex &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>mty::wick::Vertex::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Overload of operator= for <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A little subtlety lies there. Nodes that are already contracted are not really copied, i.e. only the shared_ptr are copied. In that case the two final vertices have a pointer to the same <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> in memory. This is because in the contraction algorithm, a contracted <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> do not change at all after that. However, free nodes are really copied (the two Vertices have two different Nodes) because in two different graphs, the two Nodes can be contracted with different possible partners, and then will be different.<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> to copy. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the modified <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="226" column="12" bodyfile="src/marty/core/graph.cpp" bodystart="252" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1af4d49a29529f4527db07c8831ad569f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::wick::Vertex::operator==</definition>
+        <argsstring>(const Vertex &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>mty::wick::Vertex::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Overload of operator== for <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Tells if the field content is the same and in the same order. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> to compare. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the field contents are identical. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="235" column="10" bodyfile="src/marty/core/graph.cpp" bodystart="270" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Vertex_1a374cab6c98282f24ab1df1c60a99b7e5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::wick::Vertex::operator!=</definition>
+        <argsstring>(const Vertex &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>mty::wick::Vertex::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Overload of operator!= for <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref>. See <ref refid="classmty_1_1wick_1_1Vertex_1af4d49a29529f4527db07c8831ad569f3" kindref="member">Vertex::operator==()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>False</bold> if the field contents are identical. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>True</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="242" column="10" bodyfile="src/marty/core/graph.cpp" bodystart="281" bodyend="284"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmty_1_1wick_1_1Vertex_1a766b7767cee9b431e45dc86a8cd6b156" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;fout, const Vertex &amp;v)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::wick::Vertex::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Overload of operator&lt;&lt; for <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output stream. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> to display. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The modified stream. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="250" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents a <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> in feynman diagrams, i.e. a set of Nodes at the same space-time point. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mty::wick::Vertex</label>
+        <link refid="classmty_1_1wick_1_1Vertex"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; std::shared_ptr&lt; Node &gt; &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mty::wick::Vertex</label>
+        <link refid="classmty_1_1wick_1_1Vertex"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; std::shared_ptr&lt; Node &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/graph.h" line="107" column="1" bodyfile="src/marty/core/graph.h" bodystart="107" bodyend="260"/>
+    <listofallmembers>
+      <member refid="classmty_1_1wick_1_1Vertex_1a8adf89623beda59a0b8e8e1d75943ff1" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>containsExplicit</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1a82a4c35ab241ffcfaf5e64b804a883f6" prot="protected" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>external</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1a7bfafbb34ec576d7996b93e31a2fcf89" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>getContractibleNodes</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1a0c8c4129a1370962b0cbb22be2992963" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>getContractibleNodes</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1af62d68cf719f90d6592e5131ba37d638" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>getDegeneracy</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1aebc4a91da0718cc77eb02159463f4bb6" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>getFirstContractibleField</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1a8187f571dfb8553c9161d7f686cb0ec7" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>getFirstContractibleNode</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1a497d0b6e6b320c673a61fab75a361862" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>getFirstContractibleNode</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1ada589d69c6ad69de78c920735b89d688" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>getTotalDegeneracyFactor</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1a61b4d2f7ac647efe49ed9ff57846deb0" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>hasFreeNode</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1a8b103ce52002573284f3c1cc91b42349" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>hasFreeNode</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1aa328f00924e9f8636d4003b434375dd4" prot="protected" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>id</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1a3e12e853087cab2d3401949381b1d192" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>isDegenerateWith</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1a1e8740061f82ab57b3fa3a8e46cca069" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>isExternal</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1afa3bb366dc7cd1e2b1814b5d91954bc1" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>isFree</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1a374cab6c98282f24ab1df1c60a99b7e5" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>operator!=</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1a766b7767cee9b431e45dc86a8cd6b156" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1ac66e75a21c18c432b797d81525e4a892" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>operator=</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1af4d49a29529f4527db07c8831ad569f3" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>operator==</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1ad82ce111bfa46bf2672eebecfa2535e1" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>setExternal</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1ae771515f4f7af2a0e15250a37a35ea0b" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>Vertex</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1ab0b5406819b707deaa9d1a4b36ae8f97" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>Vertex</name></member>
+      <member refid="classmty_1_1wick_1_1Vertex_1ae715b32591a449cd76924f7cd5e2b7f9" prot="public" virt="non-virtual"><scope>mty::wick::Vertex</scope><name>Vertex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,734 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1Particle" kind="class" language="C++" prot="public">
+    <compoundname>mty::Particle</compoundname>
+    <basecompoundref refid="classstd_1_1shared__ptr" prot="public" virt="non-virtual">std::shared_ptr&lt; QuantumFieldParent &gt;</basecompoundref>
+    <includes refid="quantumField_8h" local="no">quantumField.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1Particle_1aeaddd6473d2f8f8f0fc707248af9bc4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Particle::operator()</definition>
+        <argsstring>(Args &amp;&amp;...args)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>mty::Particle::operator()</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Delegates the arguments to <ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref> of the managed object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic template parameters.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic function arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding instance of <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref>. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1325" column="22" bodyfile="src/marty/core/quantumField.h" bodystart="1325" bodyend="1328"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Particle_1a9beb451c7a9244c850f21e2e69678bd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Particle::operator()</definition>
+        <argsstring>(const csl::Index &amp;polar, const csl::Index &amp;index, Args &amp;&amp;...args)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>mty::Particle::operator()</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &amp;</type>
+          <declname>polar</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Delegates the arguments to <ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref> of the managed object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic template parameters.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>polar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Polarization index for the polarization tensor.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other index.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic function arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding instance of <ref refid="classmty_1_1PolarizationField" kindref="compound">PolarizationField</ref>. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1339" column="22" bodyfile="src/marty/core/quantumField.h" bodystart="1339" bodyend="1344"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Particle_1aee8ffc0b2bce43a4eb7251343d36f00c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Particle::operator()</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;indices, Args &amp;&amp;...args)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>mty::Particle::operator()</qualifiedname>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Delegates the arguments to <ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref> of the managed object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic template parameters.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indices as integer values.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic function arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding instance of <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref>. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1354" column="22" bodyfile="src/marty/core/quantumField.h" bodystart="1354" bodyend="1358"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Particle_1acfb55993883b3a743f2920bdc69954d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Particle::operator()</definition>
+        <argsstring>(std::initializer_list&lt; int &gt; indices, Args &amp;&amp;...args)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>mty::Particle::operator()</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; int &gt;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Delegates the arguments to <ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref> of the managed object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic template parameters.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indices as integer values.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic function arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding instance of <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref>. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1368" column="22" bodyfile="src/marty/core/quantumField.h" bodystart="1368" bodyend="1372"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Particle_1a8d72d086364edbf868aa3fa02d6e394b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Particle::operator()</definition>
+        <argsstring>(const csl::Index &amp;polar, const std::vector&lt; int &gt; &amp;indices, Args &amp;&amp;...args)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>mty::Particle::operator()</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &amp;</type>
+          <declname>polar</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Delegates the arguments to <ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref> of the managed object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic template parameters.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>polar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Polarization index for the polarization tensor.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rest of the indices, as integer values.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic function arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding instance of <ref refid="classmty_1_1PolarizationField" kindref="compound">PolarizationField</ref>. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1383" column="22" bodyfile="src/marty/core/quantumField.h" bodystart="1383" bodyend="1388"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Particle_1a3d58f1019ee4dd8a9ba6b4c51cbfdc40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Particle::operator()</definition>
+        <argsstring>(const csl::Index &amp;polar, const std::vector&lt; csl::Index &gt; &amp;indices, Args &amp;&amp;...args)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>mty::Particle::operator()</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &amp;</type>
+          <declname>polar</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Delegates the arguments to <ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref> of the managed object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic template parameters.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>polar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Polarization index for the polarization tensor.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rest of the indices.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic function arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding instance of <ref refid="classmty_1_1PolarizationField" kindref="compound">PolarizationField</ref>. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1399" column="22" bodyfile="src/marty/core/quantumField.h" bodystart="1399" bodyend="1404"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Particle_1ac798c56e0241daaf35d06bed05b47ad1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Particle::operator()</definition>
+        <argsstring>(const csl::Index &amp;polar, std::initializer_list&lt; int &gt; indices, Args &amp;&amp;...args)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>mty::Particle::operator()</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &amp;</type>
+          <declname>polar</declname>
+        </param>
+        <param>
+          <type>std::initializer_list&lt; int &gt;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Delegates the arguments to <ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref> of the managed object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic template parameters.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>polar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Polarization index for the polarization tensor.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rest of the indices, as integer values.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic function arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding instance of <ref refid="classmty_1_1PolarizationField" kindref="compound">PolarizationField</ref>. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1415" column="22" bodyfile="src/marty/core/quantumField.h" bodystart="1415" bodyend="1420"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Particle_1a0d950cefbd4576bd0fb460667f76c2ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Particle::operator()</definition>
+        <argsstring>(const csl::Index &amp;polar, std::initializer_list&lt; csl::Index &gt; indices, Args &amp;&amp;...args)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>mty::Particle::operator()</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &amp;</type>
+          <declname>polar</declname>
+        </param>
+        <param>
+          <type>std::initializer_list&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Delegates the arguments to <ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref> of the managed object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic template parameters.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>polar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Polarization index for the polarization tensor.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rest of the indices.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic function arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding instance of <ref refid="classmty_1_1PolarizationField" kindref="compound">PolarizationField</ref>. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1431" column="22" bodyfile="src/marty/core/quantumField.h" bodystart="1431" bodyend="1436"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Particle_1acf7436c9727bfcc8bfacbf18cd15063d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Particle::operator()</definition>
+        <argsstring>(const std::vector&lt; csl::Index &gt; &amp;indices, Args &amp;&amp;...args)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>mty::Particle::operator()</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Delegates the arguments to <ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref> of the managed object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic template parameters.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rest of the indices.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic function arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding instance of <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref>. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1446" column="22" bodyfile="src/marty/core/quantumField.h" bodystart="1446" bodyend="1450"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Particle_1ae9d1d346136bb6375b8566ba24e4421e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Particle::operator()</definition>
+        <argsstring>(std::initializer_list&lt; csl::Index &gt; indices, Args &amp;&amp;...args)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>mty::Particle::operator()</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Delegates the arguments to <ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref> of the managed object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic template parameters.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rest of the indices.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic function arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding instance of <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref>. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" kindref="member">QuantumFieldParent::operator()()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1460" column="22" bodyfile="src/marty/core/quantumField.h" bodystart="1460" bodyend="1464"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Particle_1a70df57b721be7c76e002f9b06dd2d2fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mty::Particle::operator csl::Expr</definition>
+        <argsstring>()</argsstring>
+        <name>operator csl::Expr</name>
+        <qualifiedname>mty::Particle::Expr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1466" column="5" bodyfile="src/marty/core/quantumField.h" bodystart="1466" bodyend="1469"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This class inherits from <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr&lt;QuantumFieldParent&gt;</ref> and should be used instead of direct <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> is the object to use to create particles and their instances. As for <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref>, the ownership of a <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref> is shared (in particular between the model and the user). One must then use a pointer, and in this case a shared pointer. These objects are created by built-in functions and may be used using &apos;-&gt;&apos; instead of &apos;.&apos;. For example, building a scalar boson, setting its mass and taking an instance gives: <programlisting><codeline><highlight class="normal">Tensor<sp/>X<sp/>=<sp/><ref refid="namespacemty_1a216515e6729f9a93a62c8ac41eed8d8e" kindref="member">MinkowskiVector</ref>(</highlight><highlight class="stringliteral">&quot;X&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">Particle<sp/>phi<sp/>=<sp/><ref refid="namespacemty_1af96db3ed4ec869df734026cfb5b3a79f" kindref="member">scalarboson_s</ref>(</highlight><highlight class="stringliteral">&quot;\\phi&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">phi-&gt;setMass(</highlight><highlight class="stringliteral">&quot;m&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>instance<sp/>=<sp/>phi(X);</highlight></codeline>
+</programlisting> The operator() are redefined in this class in order to use them directly on a particle (otherwise we would have to write <programlisting><codeline><highlight class="normal"><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/>instance<sp/>=</highlight></codeline>
+<codeline><highlight class="normal">(*phi)(X)<sp/></highlight></codeline>
+</programlisting> which is not very practical). <ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> is just managing tho ownership of a <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref> without building it (this is done by built-in functions as already said). <simplesect kind="see"><para><ref refid="namespacemty_1af96db3ed4ec869df734026cfb5b3a79f" kindref="member">scalarboson_s()</ref>, <ref refid="namespacemty_1a3a6542ba72a90a63428e46111a4e092c" kindref="member">weylfermion_s()</ref>, <ref refid="namespacemty_1ab6d427cacdd04f8dc91cde525668be5b" kindref="member">diracfermion_s()</ref>, <ref refid="namespacemty_1a89dc23bac8020020669e58ab198bb263" kindref="member">vectorboson_s()</ref>, <ref refid="namespacemty_1a45a8beef51af24931550df3de23f4bbc" kindref="member">gaugeboson_s()</ref>, <ref refid="namespacemty_1a7ebbde6bef8286f320df848552a61d72" kindref="member">goldstoneboson_s()</ref>, <ref refid="namespacemty_1a61e7a0a98f84421ec8abee304493115c" kindref="member">ghostboson_s()</ref>. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mty::Particle</label>
+        <link refid="classmty_1_1Particle"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::shared_ptr&lt; QuantumFieldParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mty::Particle</label>
+        <link refid="classmty_1_1Particle"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::shared_ptr&lt; QuantumFieldParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/quantumField.h" line="1313" column="1" bodyfile="src/marty/core/quantumField.h" bodystart="1313" bodyend="1470"/>
+    <listofallmembers>
+      <member refid="classmty_1_1Particle_1a70df57b721be7c76e002f9b06dd2d2fe" prot="public" virt="non-virtual"><scope>mty::Particle</scope><name>operator csl::Expr</name></member>
+      <member refid="classmty_1_1Particle_1aeaddd6473d2f8f8f0fc707248af9bc4c" prot="public" virt="non-virtual"><scope>mty::Particle</scope><name>operator()</name></member>
+      <member refid="classmty_1_1Particle_1a9beb451c7a9244c850f21e2e69678bd2" prot="public" virt="non-virtual"><scope>mty::Particle</scope><name>operator()</name></member>
+      <member refid="classmty_1_1Particle_1aee8ffc0b2bce43a4eb7251343d36f00c" prot="public" virt="non-virtual"><scope>mty::Particle</scope><name>operator()</name></member>
+      <member refid="classmty_1_1Particle_1acfb55993883b3a743f2920bdc69954d3" prot="public" virt="non-virtual"><scope>mty::Particle</scope><name>operator()</name></member>
+      <member refid="classmty_1_1Particle_1a8d72d086364edbf868aa3fa02d6e394b" prot="public" virt="non-virtual"><scope>mty::Particle</scope><name>operator()</name></member>
+      <member refid="classmty_1_1Particle_1a3d58f1019ee4dd8a9ba6b4c51cbfdc40" prot="public" virt="non-virtual"><scope>mty::Particle</scope><name>operator()</name></member>
+      <member refid="classmty_1_1Particle_1ac798c56e0241daaf35d06bed05b47ad1" prot="public" virt="non-virtual"><scope>mty::Particle</scope><name>operator()</name></member>
+      <member refid="classmty_1_1Particle_1a0d950cefbd4576bd0fb460667f76c2ab" prot="public" virt="non-virtual"><scope>mty::Particle</scope><name>operator()</name></member>
+      <member refid="classmty_1_1Particle_1acf7436c9727bfcc8bfacbf18cd15063d" prot="public" virt="non-virtual"><scope>mty::Particle</scope><name>operator()</name></member>
+      <member refid="classmty_1_1Particle_1ae9d1d346136bb6375b8566ba24e4421e" prot="public" virt="non-virtual"><scope>mty::Particle</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structmty_1_1experimental_1_1ufo_1_1ElectricChargeMessenger" kind="struct" language="C++" prot="public">
+    <compoundname>mty::experimental::ufo::ElectricChargeMessenger</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmty_1_1experimental_1_1ufo_1_1ElectricChargeMessenger_1a9b8780c4f37c93bb4b38e1164286ccb3" prot="public" static="no" mutable="no">
+        <type><ref refid="classmty_1_1QuantumFieldParent" kindref="compound">mty::QuantumFieldParent</ref> const  *</type>
+        <definition>mty::QuantumFieldParent const* mty::experimental::ufo::ElectricChargeMessenger::matterField</definition>
+        <argsstring></argsstring>
+        <name>matterField</name>
+        <qualifiedname>mty::experimental::ufo::ElectricChargeMessenger::matterField</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/electriccharge.h" line="19" column="39" bodyfile="src/marty/ufo/electriccharge.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1experimental_1_1ufo_1_1ElectricChargeMessenger_1a0567f598a6542e145f53fc1a1cfd9f3b" prot="public" static="no" mutable="no">
+        <type><ref refid="classmty_1_1QuantumFieldParent" kindref="compound">mty::QuantumFieldParent</ref> const  *</type>
+        <definition>mty::QuantumFieldParent const* mty::experimental::ufo::ElectricChargeMessenger::bosonField</definition>
+        <argsstring></argsstring>
+        <name>bosonField</name>
+        <qualifiedname>mty::experimental::ufo::ElectricChargeMessenger::bosonField</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/electriccharge.h" line="20" column="39" bodyfile="src/marty/ufo/electriccharge.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1experimental_1_1ufo_1_1ElectricChargeMessenger_1a632f21c21fa82db3ef0968923c05cf4a" prot="public" static="no" mutable="no">
+        <type><ref refid="classmty_1_1Model" kindref="compound">Model</ref> &amp;</type>
+        <definition>Model&amp; mty::experimental::ufo::ElectricChargeMessenger::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <qualifiedname>mty::experimental::ufo::ElectricChargeMessenger::model</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/electriccharge.h" line="21" column="39" bodyfile="src/marty/ufo/electriccharge.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1experimental_1_1ufo_1_1ElectricChargeMessenger_1aa8680c2242fb92790c980273a06b1a8b" prot="public" static="no" mutable="no">
+        <type><ref refid="structmty_1_1experimental_1_1ufo_1_1SMData" kindref="compound">SMData</ref> const  &amp;</type>
+        <definition>SMData const&amp; mty::experimental::ufo::ElectricChargeMessenger::smData</definition>
+        <argsstring></argsstring>
+        <name>smData</name>
+        <qualifiedname>mty::experimental::ufo::ElectricChargeMessenger::smData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/electriccharge.h" line="22" column="39" bodyfile="src/marty/ufo/electriccharge.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>csl::AbstractParent</label>
+        <link refid="classcsl_1_1AbstractParent"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>csl::Space</label>
+        <link refid="classcsl_1_1Space"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>symbolicDim</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>delta</edgelabel>
+          <edgelabel>epsilon</edgelabel>
+          <edgelabel>inverseMetric</edgelabel>
+          <edgelabel>metric</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>csl::Symmetry</label>
+        <link refid="classcsl_1_1Symmetry"/>
+      </node>
+      <node id="11">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>csl::TensorFieldParent</label>
+        <link refid="classcsl_1_1TensorFieldParent"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>spaceField</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>csl::TensorParent</label>
+        <link refid="classcsl_1_1TensorParent"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>symmetry</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>tensor</edgelabel>
+          <edgelabel>trace</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>mty::AlgebraState</label>
+        <link refid="classmty_1_1AlgebraState"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>mty::Flavor</label>
+        <link refid="classmty_1_1Flavor"/>
+      </node>
+      <node id="20">
+        <label>mty::FlavorIrrep</label>
+        <link refid="classmty_1_1FlavorIrrep"/>
+      </node>
+      <node id="17">
+        <label>mty::Gauge</label>
+        <link refid="classmty_1_1Gauge"/>
+      </node>
+      <node id="18">
+        <label>mty::GaugeIrrep</label>
+        <link refid="classmty_1_1GaugeIrrep"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>gauge</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>mty::Irrep</label>
+        <link refid="classmty_1_1Irrep"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>algebra</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>highestWeight</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>mty::Lagrangian</label>
+        <link refid="classmty_1_1Lagrangian"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>expression</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>mty::Model</label>
+        <link refid="classmty_1_1Model"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>current</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>mty::ModelBuilder</label>
+        <link refid="classmty_1_1ModelBuilder"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>mty::ModelData</label>
+        <link refid="classmty_1_1ModelData"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>defaultSpaceTime</edgelabel>
+          <edgelabel>spaceTime</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>L</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mty::QuantumFieldParent</label>
+        <link refid="classmty_1_1QuantumFieldParent"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mass</edgelabel>
+          <edgelabel>width</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>spin</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>gauge</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>irrep</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>flavor</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>flavorRep</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>mty::SemiSimpleAlgebra</label>
+        <link refid="classmty_1_1SemiSimpleAlgebra"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>inverseCartan</edgelabel>
+          <edgelabel>symbolicCartan</edgelabel>
+          <edgelabel>symbolicMetric</edgelabel>
+          <edgelabel>symbolicRho</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::experimental::ufo::ElectricChargeMessenger</label>
+        <link refid="structmty_1_1experimental_1_1ufo_1_1ElectricChargeMessenger"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>bosonField</edgelabel>
+          <edgelabel>matterField</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>model</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>smData</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>mty::experimental::ufo::SMData</label>
+        <link refid="structmty_1_1experimental_1_1ufo_1_1SMData"/>
+      </node>
+      <node id="6">
+        <label>std::enable_shared_from_this&lt; AbstractParent &gt;</label>
+      </node>
+      <node id="12">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="9">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="16">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/ufo/electriccharge.h" line="18" column="5" bodyfile="src/marty/ufo/electriccharge.h" bodystart="18" bodyend="23"/>
+    <listofallmembers>
+      <member refid="structmty_1_1experimental_1_1ufo_1_1ElectricChargeMessenger_1a0567f598a6542e145f53fc1a1cfd9f3b" prot="public" virt="non-virtual"><scope>mty::experimental::ufo::ElectricChargeMessenger</scope><name>bosonField</name></member>
+      <member refid="structmty_1_1experimental_1_1ufo_1_1ElectricChargeMessenger_1a9b8780c4f37c93bb4b38e1164286ccb3" prot="public" virt="non-virtual"><scope>mty::experimental::ufo::ElectricChargeMessenger</scope><name>matterField</name></member>
+      <member refid="structmty_1_1experimental_1_1ufo_1_1ElectricChargeMessenger_1a632f21c21fa82db3ef0968923c05cf4a" prot="public" virt="non-virtual"><scope>mty::experimental::ufo::ElectricChargeMessenger</scope><name>model</name></member>
+      <member refid="structmty_1_1experimental_1_1ufo_1_1ElectricChargeMessenger_1aa8680c2242fb92790c980273a06b1a8b" prot="public" virt="non-virtual"><scope>mty::experimental::ufo::ElectricChargeMessenger</scope><name>smData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

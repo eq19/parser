@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structmty_1_1WilsonSet" kind="struct" language="C++" prot="public">
+    <compoundname>mty::WilsonSet</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::vector&lt; Wilson &gt;</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmty_1_1WilsonSet_1afbf839a46e9f4488fe0e9dbbab54dfb4" prot="public" static="no" mutable="no">
+        <type><ref refid="classmty_1_1Kinematics" kindref="compound">Kinematics</ref></type>
+        <definition>Kinematics mty::WilsonSet::kinematics</definition>
+        <argsstring></argsstring>
+        <name>kinematics</name>
+        <qualifiedname>mty::WilsonSet::kinematics</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/wilson.h" line="140" column="47" bodyfile="src/marty/core/wilson.h" bodystart="140" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1WilsonSet_1ad2d7efb15b26fb0c0ab4db69e64eca97" prot="public" static="no" mutable="no">
+        <type><ref refid="classmty_1_1FeynOptions" kindref="compound">FeynOptions</ref></type>
+        <definition>FeynOptions mty::WilsonSet::options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <qualifiedname>mty::WilsonSet::options</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/wilson.h" line="141" column="47" bodyfile="src/marty/core/wilson.h" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1WilsonSet_1a2195613ef8a181538e33ed01905477ea" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">wick::Graph</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;wick::Graph&gt; &gt; mty::WilsonSet::graphs</definition>
+        <argsstring></argsstring>
+        <name>graphs</name>
+        <qualifiedname>mty::WilsonSet::graphs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/wilson.h" line="142" column="17" bodyfile="src/marty/core/wilson.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structmty_1_1WilsonSet_1aaafd9a464d06a87712475c221423d116" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::WilsonSet::WilsonSet</definition>
+        <argsstring>(WilsonSet const &amp;)=default</argsstring>
+        <name>WilsonSet</name>
+        <qualifiedname>mty::WilsonSet::WilsonSet</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1WilsonSet" kindref="compound">WilsonSet</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/wilson.h" line="121" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structmty_1_1WilsonSet_1a4ba6d0f81b9a75f7a0facb1b03295533" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::WilsonSet::WilsonSet</definition>
+        <argsstring>(WilsonSet &amp;&amp;)=default</argsstring>
+        <name>WilsonSet</name>
+        <qualifiedname>mty::WilsonSet::WilsonSet</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1WilsonSet" kindref="compound">WilsonSet</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/wilson.h" line="122" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structmty_1_1WilsonSet_1a9a4a97d39d5d023f717c4d72d5c8fdf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1WilsonSet" kindref="compound">WilsonSet</ref> &amp;</type>
+        <definition>WilsonSet &amp; mty::WilsonSet::operator=</definition>
+        <argsstring>(WilsonSet const &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>mty::WilsonSet::operator=</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1WilsonSet" kindref="compound">WilsonSet</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/wilson.h" line="123" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="structmty_1_1WilsonSet_1a6c530a8bc91511c9c0961a9632ce81f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1WilsonSet" kindref="compound">WilsonSet</ref> &amp;</type>
+        <definition>WilsonSet &amp; mty::WilsonSet::operator=</definition>
+        <argsstring>(WilsonSet &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>mty::WilsonSet::operator=</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1WilsonSet" kindref="compound">WilsonSet</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/wilson.h" line="124" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="structmty_1_1WilsonSet_1a0cecf5476650e7b0caff108edba38758" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>std::vector&lt; csl::Expr &gt; mty::WilsonSet::obtainExpressions</definition>
+        <argsstring>() const</argsstring>
+        <name>obtainExpressions</name>
+        <qualifiedname>mty::WilsonSet::obtainExpressions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/wilson.h" line="126" column="17" bodyfile="src/marty/core/wilson.h" bodystart="126" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="structmty_1_1WilsonSet_1adcbda5280a228d498e014b61a96ed2d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::WilsonSet::merge</definition>
+        <argsstring>(bool sorted=false)</argsstring>
+        <name>merge</name>
+        <qualifiedname>mty::WilsonSet::merge</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>sorted</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/wilson.h" line="135" column="17" bodyfile="src/marty/core/wilson.cpp" bodystart="155" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="structmty_1_1WilsonSet_1a034d400a7e656b047fc9a4cdb23aff39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::WilsonSet::sort</definition>
+        <argsstring>()</argsstring>
+        <name>sort</name>
+        <qualifiedname>mty::WilsonSet::sort</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/wilson.h" line="136" column="17" bodyfile="src/marty/core/wilson.cpp" bodystart="174" bodyend="177"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structmty_1_1WilsonSet_1a44ea1bdf6449e472a85b6c252069b3b2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::WilsonSet::sort</definition>
+        <argsstring>(std::vector&lt; Wilson &gt; &amp;wilsons)</argsstring>
+        <name>sort</name>
+        <qualifiedname>mty::WilsonSet::sort</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="structmty_1_1Wilson" kindref="compound">Wilson</ref> &gt; &amp;</type>
+          <declname>wilsons</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/wilson.h" line="137" column="17" bodyfile="src/marty/core/wilson.cpp" bodystart="179" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="structmty_1_1WilsonSet_1a1d96dba5f10a483e1c68d500374799fc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::WilsonSet::mergeSorted</definition>
+        <argsstring>(std::vector&lt; Wilson &gt; &amp;wilsons)</argsstring>
+        <name>mergeSorted</name>
+        <qualifiedname>mty::WilsonSet::mergeSorted</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="structmty_1_1Wilson" kindref="compound">Wilson</ref> &gt; &amp;</type>
+          <declname>wilsons</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/wilson.h" line="138" column="17" bodyfile="src/marty/core/wilson.cpp" bodystart="186" bodyend="216"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mty::WilsonSet</label>
+        <link refid="structmty_1_1WilsonSet"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; Wilson &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>mty::FeynOptions</label>
+        <link refid="classmty_1_1FeynOptions"/>
+      </node>
+      <node id="3">
+        <label>mty::Kinematics</label>
+        <link refid="classmty_1_1Kinematics"/>
+      </node>
+      <node id="1">
+        <label>mty::WilsonSet</label>
+        <link refid="structmty_1_1WilsonSet"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>kinematics</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>options</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; Wilson &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/wilson.h" line="117" column="1" bodyfile="src/marty/core/wilson.h" bodystart="117" bodyend="143"/>
+    <listofallmembers>
+      <member refid="structmty_1_1WilsonSet_1a2195613ef8a181538e33ed01905477ea" prot="public" virt="non-virtual"><scope>mty::WilsonSet</scope><name>graphs</name></member>
+      <member refid="structmty_1_1WilsonSet_1afbf839a46e9f4488fe0e9dbbab54dfb4" prot="public" virt="non-virtual"><scope>mty::WilsonSet</scope><name>kinematics</name></member>
+      <member refid="structmty_1_1WilsonSet_1adcbda5280a228d498e014b61a96ed2d9" prot="public" virt="non-virtual"><scope>mty::WilsonSet</scope><name>merge</name></member>
+      <member refid="structmty_1_1WilsonSet_1a1d96dba5f10a483e1c68d500374799fc" prot="public" virt="non-virtual"><scope>mty::WilsonSet</scope><name>mergeSorted</name></member>
+      <member refid="structmty_1_1WilsonSet_1a0cecf5476650e7b0caff108edba38758" prot="public" virt="non-virtual"><scope>mty::WilsonSet</scope><name>obtainExpressions</name></member>
+      <member refid="structmty_1_1WilsonSet_1a9a4a97d39d5d023f717c4d72d5c8fdf1" prot="public" virt="non-virtual"><scope>mty::WilsonSet</scope><name>operator=</name></member>
+      <member refid="structmty_1_1WilsonSet_1a6c530a8bc91511c9c0961a9632ce81f8" prot="public" virt="non-virtual"><scope>mty::WilsonSet</scope><name>operator=</name></member>
+      <member refid="structmty_1_1WilsonSet_1ad2d7efb15b26fb0c0ab4db69e64eca97" prot="public" virt="non-virtual"><scope>mty::WilsonSet</scope><name>options</name></member>
+      <member refid="structmty_1_1WilsonSet_1a034d400a7e656b047fc9a4cdb23aff39" prot="public" virt="non-virtual"><scope>mty::WilsonSet</scope><name>sort</name></member>
+      <member refid="structmty_1_1WilsonSet_1a44ea1bdf6449e472a85b6c252069b3b2" prot="public" virt="non-virtual"><scope>mty::WilsonSet</scope><name>sort</name></member>
+      <member refid="structmty_1_1WilsonSet_1aaafd9a464d06a87712475c221423d116" prot="public" virt="non-virtual"><scope>mty::WilsonSet</scope><name>WilsonSet</name></member>
+      <member refid="structmty_1_1WilsonSet_1a4ba6d0f81b9a75f7a0facb1b03295533" prot="public" virt="non-virtual"><scope>mty::WilsonSet</scope><name>WilsonSet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

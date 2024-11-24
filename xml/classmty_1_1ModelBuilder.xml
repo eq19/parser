@@ -1,0 +1,2986 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1ModelBuilder" kind="class" language="C++" prot="public">
+    <compoundname>mty::ModelBuilder</compoundname>
+    <basecompoundref refid="classmty_1_1ModelData" prot="public" virt="non-virtual">mty::ModelData</basecompoundref>
+    <derivedcompoundref refid="classmty_1_1Model" prot="public" virt="non-virtual">mty::Model</derivedcompoundref>
+    <includes refid="modelBuilder_8h" local="no">modelBuilder.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmty_1_1ModelBuilder_1a1829895da09ff3d634ab5fd135e43a9d" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmty_1_1Spectrum" kindref="compound">Spectrum</ref> &gt;</type>
+        <definition>std::vector&lt;Spectrum&gt; mty::ModelBuilder::spectra</definition>
+        <argsstring></argsstring>
+        <name>spectra</name>
+        <qualifiedname>mty::ModelBuilder::spectra</qualifiedname>
+        <briefdescription>
+<para>Vector of <ref refid="classmty_1_1Spectrum" kindref="compound">Spectrum</ref> objects, remembering symbolic diagonalizations to, later on, diagonalize numerically mass matrices and update mixing terms. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="514" column="17" bodyfile="src/marty/core/modelBuilder.h" bodystart="514" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1ModelBuilder_1afa513279a9bfa0259fe0953769548a14" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>std::vector&lt;csl::Expr&gt; mty::ModelBuilder::abbreviatedMassExpressions</definition>
+        <argsstring></argsstring>
+        <name>abbreviatedMassExpressions</name>
+        <qualifiedname>mty::ModelBuilder::abbreviatedMassExpressions</qualifiedname>
+        <briefdescription>
+<para>Vector of abbreviated masses in the model, determined by the ModelBuilder::gatherMasses() function and written to libraries by the mty::Library::generateSpectrum() function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="521" column="17" bodyfile="src/marty/core/modelBuilder.h" bodystart="521" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1ModelBuilder_1a87fbd607766686b3b9e931fcbafcbf47" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;mty::Particle&gt; &gt; mty::ModelBuilder::particleFamilies</definition>
+        <argsstring></argsstring>
+        <name>particleFamilies</name>
+        <qualifiedname>mty::ModelBuilder::particleFamilies</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="523" column="17" bodyfile="src/marty/core/modelBuilder.h" bodystart="523" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a1748ef28e15a85153e049bb36b044003" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>mty::ModelBuilder::ModelBuilder</definition>
+        <argsstring>(Args &amp;&amp;... args)</argsstring>
+        <name>ModelBuilder</name>
+        <qualifiedname>mty::ModelBuilder::ModelBuilder</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This constructor is a generic constructor that forwards any argument it gets (can have any number of arguments) to <ref refid="classmty_1_1ModelData" kindref="compound">ModelData</ref> constructors.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>...Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any argument types that <ref refid="classmty_1_1ModelData" kindref="compound">ModelData</ref> takes in constructors. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>...args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any arguments that <ref refid="classmty_1_1ModelData" kindref="compound">ModelData</ref> takes in constructors.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classmty_1_1ModelData" kindref="compound">ModelData</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="75" column="14" bodyfile="src/marty/core/modelBuilder.h" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a2dfe40f9395a1eed194203c19aa912f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mty::ModelBuilder::~ModelBuilder</definition>
+        <argsstring>() override</argsstring>
+        <name>~ModelBuilder</name>
+        <qualifiedname>mty::ModelBuilder::~ModelBuilder</qualifiedname>
+        <briefdescription>
+<para>Default destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="83" column="5" bodyfile="src/marty/core/modelBuilder.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a8e6386afa6a344b3c5b0cac2cbb8dca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::ModelBuilder::ModelBuilder</definition>
+        <argsstring>(ModelBuilder &amp;&amp;other)=default</argsstring>
+        <name>ModelBuilder</name>
+        <qualifiedname>mty::ModelBuilder::ModelBuilder</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1ModelBuilder" kindref="compound">ModelBuilder</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Default move constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="90" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a28d03f567297ec62743347c78ee1db64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1ModelBuilder" kindref="compound">ModelBuilder</ref> &amp;</type>
+        <definition>ModelBuilder &amp; mty::ModelBuilder::operator=</definition>
+        <argsstring>(ModelBuilder &amp;&amp;other)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>mty::ModelBuilder::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1ModelBuilder" kindref="compound">ModelBuilder</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Default move assignement operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="99" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a50ab7f48fbd4e6f5809f0ad1a86e0d62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::ModelBuilder::ModelBuilder</definition>
+        <argsstring>(ModelBuilder const &amp;other)=delete</argsstring>
+        <name>ModelBuilder</name>
+        <qualifiedname>mty::ModelBuilder::ModelBuilder</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1ModelBuilder" kindref="compound">ModelBuilder</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Defauly copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="106" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a68bc05025fbbd10ddb40079d193af350" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1ModelBuilder" kindref="compound">ModelBuilder</ref> &amp;</type>
+        <definition>ModelBuilder &amp; mty::ModelBuilder::operator=</definition>
+        <argsstring>(ModelBuilder const &amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>mty::ModelBuilder::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1ModelBuilder" kindref="compound">ModelBuilder</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Default copy assignement operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="115" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1aa03ec390ac5041423c055e3c16948bd2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; csl::Expr &gt; const  &amp; mty::ModelBuilder::getAbbreviatedMassExpressions</definition>
+        <argsstring>() const</argsstring>
+        <name>getAbbreviatedMassExpressions</name>
+        <qualifiedname>mty::ModelBuilder::getAbbreviatedMassExpressions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classmty_1_1ModelBuilder_1afa513279a9bfa0259fe0953769548a14" kindref="member">abbreviatedMassExpressions</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="120" column="23" bodyfile="src/marty/core/modelBuilder.h" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a97389c1d8a9cdf7d3e19dd70bb69a5db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::ModelBuilder::abbreviateMassExpression</definition>
+        <argsstring>(std::string const &amp;abbrevPrefix, mty::Particle const &amp;particle, csl::Expr const &amp;mass)</argsstring>
+        <name>abbreviateMassExpression</name>
+        <qualifiedname>mty::ModelBuilder::abbreviateMassExpression</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>abbrevPrefix</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>particle</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>mass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="125" column="15" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="62" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a55d95af874a8f056c5ad94fa6cc35a41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::ModelBuilder::abbreviateMassExpression</definition>
+        <argsstring>(std::string const &amp;abbrevPrefix, mty::QuantumFieldParent const *particle, csl::Expr const &amp;mass)</argsstring>
+        <name>abbreviateMassExpression</name>
+        <qualifiedname>mty::ModelBuilder::abbreviateMassExpression</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>abbrevPrefix</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1QuantumFieldParent" kindref="compound">mty::QuantumFieldParent</ref> const *</type>
+          <declname>particle</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>mass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="130" column="15" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="33" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1adf9b3246eaa47043532e765e57cd7c9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::replace</definition>
+        <argsstring>(csl::Expr const &amp;oldExpression, csl::Expr const &amp;newExpression)</argsstring>
+        <name>replace</name>
+        <qualifiedname>mty::ModelBuilder::replace</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>oldExpression</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>newExpression</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="140" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="71" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a1fa2df4c029fbe0d3fbd6796214e2647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::replace</definition>
+        <argsstring>(csl::Tensor &amp;oldExpression, csl::Expr const &amp;newExpression)</argsstring>
+        <name>replace</name>
+        <qualifiedname>mty::ModelBuilder::replace</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &amp;</type>
+          <declname>oldExpression</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>newExpression</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="143" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="122" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a245a887ce12dc7b75ac8d3d2ecbfe884" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::replace</definition>
+        <argsstring>(csl::Tensor &amp;oldExpression, csl::Tensor &amp;newExpression, std::function&lt; bool(csl::Expr const &amp;)&gt; condition=[](csl::Expr const &amp;) { return true;})</argsstring>
+        <name>replace</name>
+        <qualifiedname>mty::ModelBuilder::replace</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &amp;</type>
+          <declname>oldExpression</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &amp;</type>
+          <declname>newExpression</declname>
+        </param>
+        <param>
+          <type>std::function&lt; bool(<ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;)&gt;</type>
+          <declname>condition</declname>
+          <defval>[](<ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;) { return true;}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="145" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="138" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a7b71535fe847cb21c2fd99393e0601ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::replace</definition>
+        <argsstring>(mty::Particle const &amp;particle, csl::Expr newExpression, std::function&lt; bool(csl::Expr const &amp;)&gt; condition=[](csl::Expr const &amp;) { return true;})</argsstring>
+        <name>replace</name>
+        <qualifiedname>mty::ModelBuilder::replace</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>particle</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+          <declname>newExpression</declname>
+        </param>
+        <param>
+          <type>std::function&lt; bool(<ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;)&gt;</type>
+          <declname>condition</declname>
+          <defval>[](<ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;) { return true;}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="151" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="157" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1aa1539abf551fe2ae0b61c77ecc1f2b53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::rotateFields</definition>
+        <argsstring>(mty::Particle &amp;fields, csl::Tensor &amp;unitaryMatrix, std::function&lt; bool(csl::Expr const &amp;)&gt; condition=[](csl::Expr const &amp;) { return true;})</argsstring>
+        <name>rotateFields</name>
+        <qualifiedname>mty::ModelBuilder::rotateFields</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &amp;</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &amp;</type>
+          <declname>unitaryMatrix</declname>
+        </param>
+        <param>
+          <type>std::function&lt; bool(<ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;)&gt;</type>
+          <declname>condition</declname>
+          <defval>[](<ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;) { return true;}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="157" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="190" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1afb70d3aef78c475279412d85e3d68781" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::rotateFields</definition>
+        <argsstring>(std::string const &amp;fields, csl::Tensor &amp;unitaryMatrix, std::function&lt; bool(csl::Expr const &amp;)&gt; condition=[](csl::Expr const &amp;) { return true;})</argsstring>
+        <name>rotateFields</name>
+        <qualifiedname>mty::ModelBuilder::rotateFields</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &amp;</type>
+          <declname>unitaryMatrix</declname>
+        </param>
+        <param>
+          <type>std::function&lt; bool(<ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;)&gt;</type>
+          <declname>condition</declname>
+          <defval>[](<ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;) { return true;}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="163" column="10" bodyfile="src/marty/core/modelBuilder.h" bodystart="163" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a1784f49e7f07ae5f2a9aa513cf52c97f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::rotateFields</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;fields, std::vector&lt; mty::Particle &gt; const &amp;newFields, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;rotation, bool diagonalizeMasses=false, int nMassLessFields=0)</argsstring>
+        <name>rotateFields</name>
+        <qualifiedname>mty::ModelBuilder::rotateFields</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>newFields</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>diagonalizeMasses</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMassLessFields</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="173" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="506" bodyend="553"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a9fd33fe64989549dfd22d776d9271296" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::rotateFields</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;fields1, std::vector&lt; mty::Particle &gt; const &amp;newFields1, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;rotation1, std::vector&lt; mty::Particle &gt; const &amp;fields2, std::vector&lt; mty::Particle &gt; const &amp;newFields2, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;rotation2, int nMassLessFields=0)</argsstring>
+        <name>rotateFields</name>
+        <qualifiedname>mty::ModelBuilder::rotateFields</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>fields1</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>newFields1</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>rotation1</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>fields2</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>newFields2</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>rotation2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMassLessFields</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="179" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="555" bodyend="605"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ae7d0352bbbba2e167c97cd7d25062871" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::rotateFields</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;fields, bool diagonalizeMasses=false, int nMassLessFields=0)</argsstring>
+        <name>rotateFields</name>
+        <qualifiedname>mty::ModelBuilder::rotateFields</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>diagonalizeMasses</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMassLessFields</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="187" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="607" bodyend="647"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a3debb98a3d0abe77285ada708f8c6644" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::birotateFields</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;fields1, std::vector&lt; mty::Particle &gt; const &amp;fields2, int nMassLessFields=0)</argsstring>
+        <name>birotateFields</name>
+        <qualifiedname>mty::ModelBuilder::birotateFields</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>fields1</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>fields2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMassLessFields</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="191" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="649" bodyend="714"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a952bf371c6147b211725d3f6c781adff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::rotateFields</definition>
+        <argsstring>(std::vector&lt; std::string &gt; const &amp;fields, std::vector&lt; std::string &gt; const &amp;newFields, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;rotation, bool diagonalizeMasses=false, int nMassLessFields=0)</argsstring>
+        <name>rotateFields</name>
+        <qualifiedname>mty::ModelBuilder::rotateFields</qualifiedname>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>newFields</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>diagonalizeMasses</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMassLessFields</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="195" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="716" bodyend="736"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a8245b2e9c449800936f94d8047050e32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::rotateFields</definition>
+        <argsstring>(std::vector&lt; std::string &gt; const &amp;fields1, std::vector&lt; std::string &gt; const &amp;newFields1, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;rotation1, std::vector&lt; std::string &gt; const &amp;fields2, std::vector&lt; std::string &gt; const &amp;newFields2, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;rotation2, int nMassLessFields=0)</argsstring>
+        <name>rotateFields</name>
+        <qualifiedname>mty::ModelBuilder::rotateFields</qualifiedname>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>fields1</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>newFields1</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>rotation1</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>fields2</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>newFields2</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>rotation2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMassLessFields</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="201" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="738" bodyend="772"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ac75edc621a192c25cabbdf25fad55b31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::rotateFields</definition>
+        <argsstring>(std::initializer_list&lt; std::string &gt; const &amp;fields, std::initializer_list&lt; std::string &gt; const &amp;newFields, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;rotation, bool diagonalizeMasses=false, int nMassLessFields=0)</argsstring>
+        <name>rotateFields</name>
+        <qualifiedname>mty::ModelBuilder::rotateFields</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; std::string &gt; const &amp;</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type>std::initializer_list&lt; std::string &gt; const &amp;</type>
+          <declname>newFields</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>diagonalizeMasses</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMassLessFields</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="209" column="10" bodyfile="src/marty/core/modelBuilder.h" bodystart="209" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1af3f33030e822492b774cdc5164981c5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::rotateFields</definition>
+        <argsstring>(std::initializer_list&lt; std::string &gt; const &amp;fields1, std::initializer_list&lt; std::string &gt; const &amp;newFields1, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;rotation1, std::initializer_list&lt; std::string &gt; const &amp;fields2, std::initializer_list&lt; std::string &gt; const &amp;newFields2, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;rotation2, int nMassLessFields=0)</argsstring>
+        <name>rotateFields</name>
+        <qualifiedname>mty::ModelBuilder::rotateFields</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; std::string &gt; const &amp;</type>
+          <declname>fields1</declname>
+        </param>
+        <param>
+          <type>std::initializer_list&lt; std::string &gt; const &amp;</type>
+          <declname>newFields1</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>rotation1</declname>
+        </param>
+        <param>
+          <type>std::initializer_list&lt; std::string &gt; const &amp;</type>
+          <declname>fields2</declname>
+        </param>
+        <param>
+          <type>std::initializer_list&lt; std::string &gt; const &amp;</type>
+          <declname>newFields2</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>rotation2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMassLessFields</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="222" column="10" bodyfile="src/marty/core/modelBuilder.h" bodystart="222" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a67fd295f4c74d281af2f6384bdd87703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::rotateFields</definition>
+        <argsstring>(std::vector&lt; std::string &gt; const &amp;fields, bool diagonalizeMasses=false, int nMassLessFields=0)</argsstring>
+        <name>rotateFields</name>
+        <qualifiedname>mty::ModelBuilder::rotateFields</qualifiedname>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>diagonalizeMasses</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMassLessFields</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="239" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="774" bodyend="784"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a9bb9403ad33539c80822df1170b078f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::birotateFields</definition>
+        <argsstring>(std::vector&lt; std::string &gt; const &amp;fields1, std::vector&lt; std::string &gt; const &amp;fields2, int nMassLessFields=0)</argsstring>
+        <name>birotateFields</name>
+        <qualifiedname>mty::ModelBuilder::birotateFields</qualifiedname>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>fields1</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>fields2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMassLessFields</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="243" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="786" bodyend="801"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a8419af384f2907e8146b23368689cb04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::rotateFields</definition>
+        <argsstring>(std::initializer_list&lt; std::string &gt; const &amp;fields, bool diagonalizeMasses=false, int nMassLessFields=0)</argsstring>
+        <name>rotateFields</name>
+        <qualifiedname>mty::ModelBuilder::rotateFields</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; std::string &gt; const &amp;</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>diagonalizeMasses</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMassLessFields</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="247" column="10" bodyfile="src/marty/core/modelBuilder.h" bodystart="247" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1af3233f5560ebfdbca4595d34c6cf9f32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::birotateFields</definition>
+        <argsstring>(std::initializer_list&lt; std::string &gt; const &amp;fields1, std::initializer_list&lt; std::string &gt; const &amp;fields2, int nMassLessFields=0)</argsstring>
+        <name>birotateFields</name>
+        <qualifiedname>mty::ModelBuilder::birotateFields</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; std::string &gt; const &amp;</type>
+          <declname>fields1</declname>
+        </param>
+        <param>
+          <type>std::initializer_list&lt; std::string &gt; const &amp;</type>
+          <declname>fields2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMassLessFields</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="256" column="10" bodyfile="src/marty/core/modelBuilder.h" bodystart="256" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a4f2b8f2e3d9b0c31a06495c59f84e369" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::applyUnitaryCondition</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;unitary)</argsstring>
+        <name>applyUnitaryCondition</name>
+        <qualifiedname>mty::ModelBuilder::applyUnitaryCondition</qualifiedname>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>unitary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="266" column="5" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="803" bodyend="855"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a08b99c3cf8f0893a32801f60618ff117" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::saveModel</definition>
+        <argsstring>(std::ostream &amp;out, int indent=4) override</argsstring>
+        <name>saveModel</name>
+        <qualifiedname>mty::ModelBuilder::saveModel</qualifiedname>
+        <reimplements refid="classmty_1_1ModelData_1aa77a2942da37ead6d4fdba6268ddedf7">saveModel</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indent</declname>
+          <defval>4</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="268" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="896" bodyend="900"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1affaaada85c309e35fc21c790a9f8aa8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class GroupType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void mty::ModelBuilder::setGaugeChoice</definition>
+        <argsstring>(GroupType &amp;&amp;group, gauge::Type choice)</argsstring>
+        <name>setGaugeChoice</name>
+        <qualifiedname>mty::ModelBuilder::setGaugeChoice</qualifiedname>
+        <param>
+          <type>GroupType &amp;&amp;</type>
+          <declname>group</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacemty_1_1gauge_1a8fd05434cb655735bb18cda43a626a9f" kindref="member">gauge::Type</ref></type>
+          <declname>choice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="276" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a6a583d0a04a66385d44b8c3c1e446798" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FieldType1</type>
+          </param>
+          <param>
+            <type>class FieldType2</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void mty::ModelBuilder::promoteToGoldstone</definition>
+        <argsstring>(FieldType1 &amp;&amp;goldstone, FieldType2 &amp;&amp;gaugeBoson)</argsstring>
+        <name>promoteToGoldstone</name>
+        <qualifiedname>mty::ModelBuilder::promoteToGoldstone</qualifiedname>
+        <param>
+          <type>FieldType1 &amp;&amp;</type>
+          <declname>goldstone</declname>
+        </param>
+        <param>
+          <type>FieldType2 &amp;&amp;</type>
+          <declname>gaugeBoson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="279" column="10" bodyfile="src/marty/core/modelBuilder.h" bodystart="543" bodyend="565"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ae7feb297c3a604f72282c74d2eecf4fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FieldType1</type>
+          </param>
+          <param>
+            <type>class FieldType2</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void mty::ModelBuilder::promoteToGhost</definition>
+        <argsstring>(FieldType1 &amp;&amp;ghost, FieldType2 &amp;&amp;gaugeBoson)</argsstring>
+        <name>promoteToGhost</name>
+        <qualifiedname>mty::ModelBuilder::promoteToGhost</qualifiedname>
+        <param>
+          <type>FieldType1 &amp;&amp;</type>
+          <declname>ghost</declname>
+        </param>
+        <param>
+          <type>FieldType2 &amp;&amp;</type>
+          <declname>gaugeBoson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="282" column="10" bodyfile="src/marty/core/modelBuilder.h" bodystart="568" bodyend="589"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1af1cea58d99ed3b61fc030792596732b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FieldType</type>
+          </param>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void mty::ModelBuilder::promoteToMajorana</definition>
+        <argsstring>(FieldType &amp;&amp;weylFermion, Args &amp;&amp;... args)</argsstring>
+        <name>promoteToMajorana</name>
+        <qualifiedname>mty::ModelBuilder::promoteToMajorana</qualifiedname>
+        <param>
+          <type>FieldType &amp;&amp;</type>
+          <declname>weylFermion</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="285" column="10" bodyfile="src/marty/core/modelBuilder.h" bodystart="592" bodyend="604"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ad7936197223db9be44d1587c91f21f32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::integrateOutParticle</definition>
+        <argsstring>(mty::Particle const &amp;particle, std::vector&lt; csl::Expr &gt; newInteractions)</argsstring>
+        <name>integrateOutParticle</name>
+        <qualifiedname>mty::ModelBuilder::integrateOutParticle</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>particle</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+          <declname>newInteractions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="288" column="17" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1194" bodyend="1211"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a0d0d4f4d19c02e704d186ccc5d282560" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::diracFermionEmbedding</definition>
+        <argsstring>(std::string const &amp;leftName, std::string const &amp;rightName)</argsstring>
+        <name>diracFermionEmbedding</name>
+        <qualifiedname>mty::ModelBuilder::diracFermionEmbedding</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>leftName</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>rightName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="291" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1213" bodyend="1227"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a2a4a7455c834421cbeb994a2e372ea30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::diracFermionEmbedding</definition>
+        <argsstring>(std::shared_ptr&lt; mty::WeylFermion &gt; leftWeyl, std::shared_ptr&lt; mty::WeylFermion &gt; rightWeyl)</argsstring>
+        <name>diracFermionEmbedding</name>
+        <qualifiedname>mty::ModelBuilder::diracFermionEmbedding</qualifiedname>
+        <param>
+          <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1WeylFermion" kindref="compound">mty::WeylFermion</ref> &gt;</type>
+          <declname>leftWeyl</declname>
+        </param>
+        <param>
+          <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1WeylFermion" kindref="compound">mty::WeylFermion</ref> &gt;</type>
+          <declname>rightWeyl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="294" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1229" bodyend="1242"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a2949b5f1f27d4abb9a614157a1365df0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::applyDiracFermionEmbedding</definition>
+        <argsstring>(std::shared_ptr&lt; mty::DiracFermion &gt; const &amp;diracFermion, std::shared_ptr&lt; mty::WeylFermion &gt; leftWeyl, std::shared_ptr&lt; mty::WeylFermion &gt; rightWeyl, std::vector&lt; mty::Lagrangian::TermType &gt; &amp;interaction)</argsstring>
+        <name>applyDiracFermionEmbedding</name>
+        <qualifiedname>mty::ModelBuilder::applyDiracFermionEmbedding</qualifiedname>
+        <param>
+          <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1DiracFermion" kindref="compound">mty::DiracFermion</ref> &gt; const &amp;</type>
+          <declname>diracFermion</declname>
+        </param>
+        <param>
+          <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1WeylFermion" kindref="compound">mty::WeylFermion</ref> &gt;</type>
+          <declname>leftWeyl</declname>
+        </param>
+        <param>
+          <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1WeylFermion" kindref="compound">mty::WeylFermion</ref> &gt;</type>
+          <declname>rightWeyl</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">mty::Lagrangian::TermType</ref> &gt; &amp;</type>
+          <declname>interaction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="296" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1244" bodyend="1343"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a2330a520bdc61c784601a66b92fb4a13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::gatherMass</definition>
+        <argsstring>(mty::Particle const &amp;part)</argsstring>
+        <name>gatherMass</name>
+        <qualifiedname>mty::ModelBuilder::gatherMass</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>part</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="302" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1351" bodyend="1444"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1aef4ee26da435b38315535d9042d93d2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::gatherMass</definition>
+        <argsstring>(std::string const &amp;name)</argsstring>
+        <name>gatherMass</name>
+        <qualifiedname>mty::ModelBuilder::gatherMass</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="303" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1345" bodyend="1349"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1af1bdc9b72e7f77b660ae7758a71fa1b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::gatherMasses</definition>
+        <argsstring>()</argsstring>
+        <name>gatherMasses</name>
+        <qualifiedname>mty::ModelBuilder::gatherMasses</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="305" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1446" bodyend="1452"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1acf121f4bddb2f942e57830912541fef7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::refresh</definition>
+        <argsstring>()</argsstring>
+        <name>refresh</name>
+        <qualifiedname>mty::ModelBuilder::refresh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="307" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1454" bodyend="1486"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a18a82e5e66f04c8df2c9d8524971df66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::breakU1GaugeSymmetry</definition>
+        <argsstring>(std::string const &amp;groupName)</argsstring>
+        <name>breakU1GaugeSymmetry</name>
+        <qualifiedname>mty::ModelBuilder::breakU1GaugeSymmetry</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>groupName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="309" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1492" bodyend="1498"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1aeb34f05e805149485249ab0711b34199" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::breakGaugeSymmetry</definition>
+        <argsstring>(std::string const &amp;brokenGroup)</argsstring>
+        <name>breakGaugeSymmetry</name>
+        <qualifiedname>mty::ModelBuilder::breakGaugeSymmetry</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>brokenGroup</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="311" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1500" bodyend="1509"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a9d6565abaabd700c8204a6db8130f649" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::breakGaugeSymmetry</definition>
+        <argsstring>(std::string const &amp;brokenGroup, std::vector&lt; mty::Particle &gt; const &amp;brokenFields, std::vector&lt; std::vector&lt; std::string &gt; &gt; const &amp;newNames)</argsstring>
+        <name>breakGaugeSymmetry</name>
+        <qualifiedname>mty::ModelBuilder::breakGaugeSymmetry</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>brokenGroup</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>brokenFields</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; std::string &gt; &gt; const &amp;</type>
+          <declname>newNames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="314" column="5" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1552" bodyend="1558"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a9de439011cb5788a7a1ca62f06160bb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::breakGaugeSymmetry</definition>
+        <argsstring>(std::string const &amp;brokenGroup, std::vector&lt; std::string &gt; const &amp;brokenFields, std::vector&lt; std::vector&lt; std::string &gt; &gt; const &amp;newNames)</argsstring>
+        <name>breakGaugeSymmetry</name>
+        <qualifiedname>mty::ModelBuilder::breakGaugeSymmetry</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>brokenGroup</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>brokenFields</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; std::string &gt; &gt; const &amp;</type>
+          <declname>newNames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="319" column="5" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1511" bodyend="1522"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1aee384ed95cfbf209c4b1fd11d05e0a3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::breakGaugeSymmetry</definition>
+        <argsstring>(std::string const &amp;brokenGroup, std::vector&lt; std::string &gt; const &amp;brokenFields)</argsstring>
+        <name>breakGaugeSymmetry</name>
+        <qualifiedname>mty::ModelBuilder::breakGaugeSymmetry</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>brokenGroup</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>brokenFields</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="323" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1541" bodyend="1550"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a37110b53ea8df12798f16e7e0f8bbceb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::breakGaugeSymmetry</definition>
+        <argsstring>(std::string const &amp;brokenGroup, std::vector&lt; mty::Particle &gt; const &amp;brokenFields)</argsstring>
+        <name>breakGaugeSymmetry</name>
+        <qualifiedname>mty::ModelBuilder::breakGaugeSymmetry</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>brokenGroup</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>brokenFields</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="326" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1524" bodyend="1539"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a89865370c85b23d21b94aed2a4c35d82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::breakGaugeSymmetry</definition>
+        <argsstring>(Group *brokenGroup, std::vector&lt; mty::Particle &gt; const &amp;brokenFields, std::vector&lt; std::vector&lt; std::string &gt; &gt; const &amp;newNames)</argsstring>
+        <name>breakGaugeSymmetry</name>
+        <qualifiedname>mty::ModelBuilder::breakGaugeSymmetry</qualifiedname>
+        <param>
+          <type><ref refid="namespacemty_1a8db9f448b1559326430f115070d06b45" kindref="member">Group</ref> *</type>
+          <declname>brokenGroup</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>brokenFields</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; std::string &gt; &gt; const &amp;</type>
+          <declname>newNames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="330" column="5" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1560" bodyend="1592"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a65f8be8a9578b81a92f983770bcf3ffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::breakFlavorSymmetry</definition>
+        <argsstring>(std::string const &amp;nameGroup)</argsstring>
+        <name>breakFlavorSymmetry</name>
+        <qualifiedname>mty::ModelBuilder::breakFlavorSymmetry</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameGroup</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="334" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1594" bodyend="1614"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a3e53c4c43a390d601fd0a4737da5df09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::breakFlavorSymmetry</definition>
+        <argsstring>(std::string const &amp;flavorName, std::vector&lt; size_t &gt; const &amp;subGroups, std::vector&lt; std::string &gt; newFlavorNames=std::vector&lt; std::string &gt;())</argsstring>
+        <name>breakFlavorSymmetry</name>
+        <qualifiedname>mty::ModelBuilder::breakFlavorSymmetry</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>flavorName</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; size_t &gt; const &amp;</type>
+          <declname>subGroups</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>newFlavorNames</declname>
+          <defval>std::vector&lt; std::string &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="336" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1616" bodyend="1648"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1afca18a60b90fbc550632f8ec7496eb73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::breakFlavorSymmetry</definition>
+        <argsstring>(std::string const &amp;flavorName, std::vector&lt; mty::Particle &gt; const &amp;brokenFields, std::vector&lt; std::vector&lt; std::string &gt; &gt; const &amp;newNames)</argsstring>
+        <name>breakFlavorSymmetry</name>
+        <qualifiedname>mty::ModelBuilder::breakFlavorSymmetry</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>flavorName</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>brokenFields</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; std::string &gt; &gt; const &amp;</type>
+          <declname>newNames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="342" column="5" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1650" bodyend="1669"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a2bff2d21abcf757f2895d29d8a8d38e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::breakFlavorSymmetry</definition>
+        <argsstring>(std::string const &amp;flavorName, std::vector&lt; size_t &gt; const &amp;subGroups, std::vector&lt; mty::Particle &gt; const &amp;brokenFields, std::vector&lt; std::vector&lt; std::string &gt; &gt; const &amp;newNames, std::vector&lt; std::string &gt; const &amp;newFlavorNames)</argsstring>
+        <name>breakFlavorSymmetry</name>
+        <qualifiedname>mty::ModelBuilder::breakFlavorSymmetry</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>flavorName</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; size_t &gt; const &amp;</type>
+          <declname>subGroups</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>brokenFields</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; std::string &gt; &gt; const &amp;</type>
+          <declname>newNames</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>newFlavorNames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="347" column="5" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1671" bodyend="1737"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1aa3aad1e98867fc8a270e2b0328172eb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::diagonalizeMassMatrices</definition>
+        <argsstring>()</argsstring>
+        <name>diagonalizeMassMatrices</name>
+        <qualifiedname>mty::ModelBuilder::diagonalizeMassMatrices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="353" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="2062" bodyend="2092"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1adb85d7023caebe1ce56962f444f151fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FieldType</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool mty::ModelBuilder::diagonalizeSymbolically</definition>
+        <argsstring>(FieldType &amp;&amp;field, bool forceDetZero=false)</argsstring>
+        <name>diagonalizeSymbolically</name>
+        <qualifiedname>mty::ModelBuilder::diagonalizeSymbolically</qualifiedname>
+        <param>
+          <type>FieldType &amp;&amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>forceDetZero</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="356" column="10" bodyfile="src/marty/core/modelBuilder.h" bodystart="607" bodyend="618"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a5f19f46a7cb0f76baa66194674b1f185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::diagonalizeYukawa</definition>
+        <argsstring>(std::string const &amp;nameYukawa, std::vector&lt; std::string &gt; const &amp;nameMass, csl::Expr const &amp;globalFactor=CSL_1)</argsstring>
+        <name>diagonalizeYukawa</name>
+        <qualifiedname>mty::ModelBuilder::diagonalizeYukawa</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameYukawa</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>nameMass</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>globalFactor</declname>
+          <defval>CSL_1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="358" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="2094" bodyend="2104"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a6ce06aacc28dca65b5c217f501938291" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::diagonalizeYukawa</definition>
+        <argsstring>(std::string const &amp;nameYukawa, std::vector&lt; std::string &gt; const &amp;nameMass, csl::Expr const &amp;globalFactor, csl::Tensor &amp;mixing, std::vector&lt; mty::Particle &gt; mixed)</argsstring>
+        <name>diagonalizeYukawa</name>
+        <qualifiedname>mty::ModelBuilder::diagonalizeYukawa</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameYukawa</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>nameMass</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>globalFactor</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &amp;</type>
+          <declname>mixing</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt;</type>
+          <declname>mixed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="361" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="2105" bodyend="2116"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ac133cda7b4a28a7ccbfc885b655d9282" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::diagonalizeYukawa</definition>
+        <argsstring>(std::string const &amp;nameYukawa, std::vector&lt; csl::Expr &gt; const &amp;diagonal, csl::Tensor mixing, std::vector&lt; mty::Particle &gt; mixed)</argsstring>
+        <name>diagonalizeYukawa</name>
+        <qualifiedname>mty::ModelBuilder::diagonalizeYukawa</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameYukawa</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+          <declname>diagonal</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref></type>
+          <declname>mixing</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt;</type>
+          <declname>mixed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="366" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="2117" bodyend="2143"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ad1a6e9459410e1c1c4bfd6497b4f0c12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::addSpectrum</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;particles, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;mass, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;mix, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;mix2=std::vector&lt; std::vector&lt; csl::Expr &gt; &gt;())</argsstring>
+        <name>addSpectrum</name>
+        <qualifiedname>mty::ModelBuilder::addSpectrum</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>particles</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>mass</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>mix</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>mix2</declname>
+          <defval>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="371" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="2145" bodyend="2152"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a74b837e7fa4355fafae26b68b2076de7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::updateDiagonalizationData</definition>
+        <argsstring>()</argsstring>
+        <name>updateDiagonalizationData</name>
+        <qualifiedname>mty::ModelBuilder::updateDiagonalizationData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="377" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="2154" bodyend="2158"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1aa0ea7460def6380631679d00260cd132" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::applyDiagonalizationData</definition>
+        <argsstring>(csl::Expr &amp;expr) const</argsstring>
+        <name>applyDiagonalizationData</name>
+        <qualifiedname>mty::ModelBuilder::applyDiagonalizationData</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="379" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="2160" bodyend="2164"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1abccd47d222d9d898778e08fb953883ac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::applyDiagonalizationData</definition>
+        <argsstring>(std::vector&lt; csl::Expr &gt; &amp;expr) const</argsstring>
+        <name>applyDiagonalizationData</name>
+        <qualifiedname>mty::ModelBuilder::applyDiagonalizationData</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="380" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="2166" bodyend="2170"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ab3d8001271d5b120ca2dfd89473186ba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::applyDiagonalizationData</definition>
+        <argsstring>(csl::LibraryGenerator &amp;lib) const</argsstring>
+        <name>applyDiagonalizationData</name>
+        <qualifiedname>mty::ModelBuilder::applyDiagonalizationData</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1LibraryGenerator" kindref="compound">csl::LibraryGenerator</ref> &amp;</type>
+          <declname>lib</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="381" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="2172" bodyend="2175"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a83b569445171eee2a7478f25ca1bc368" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::applyDiagonalizationData</definition>
+        <argsstring>(csl::LibraryGenerator &amp;lib, mty::Amplitude const &amp;amplitudes) const</argsstring>
+        <name>applyDiagonalizationData</name>
+        <qualifiedname>mty::ModelBuilder::applyDiagonalizationData</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1LibraryGenerator" kindref="compound">csl::LibraryGenerator</ref> &amp;</type>
+          <declname>lib</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Amplitude" kindref="compound">mty::Amplitude</ref> const &amp;</type>
+          <declname>amplitudes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="382" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="2177" bodyend="2193"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a318ac8bc7ab4bbec411b4a628dca7cb1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::applyDiagonalizationData</definition>
+        <argsstring>(csl::LibraryGenerator &amp;lib, std::function&lt; bool(mty::Spectrum const &amp;)&gt; const &amp;condition) const</argsstring>
+        <name>applyDiagonalizationData</name>
+        <qualifiedname>mty::ModelBuilder::applyDiagonalizationData</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1LibraryGenerator" kindref="compound">csl::LibraryGenerator</ref> &amp;</type>
+          <declname>lib</declname>
+        </param>
+        <param>
+          <type>std::function&lt; bool(<ref refid="classmty_1_1Spectrum" kindref="compound">mty::Spectrum</ref> const &amp;)&gt; const &amp;</type>
+          <declname>condition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="384" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="2195" bodyend="2258"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a960fbcc534233c42f5ec5a3fb0503249" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::addMassAbbreviations</definition>
+        <argsstring>(csl::LibraryGenerator &amp;lib)</argsstring>
+        <name>addMassAbbreviations</name>
+        <qualifiedname>mty::ModelBuilder::addMassAbbreviations</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1LibraryGenerator" kindref="compound">csl::LibraryGenerator</ref> &amp;</type>
+          <declname>lib</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="387" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="2304" bodyend="2314"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a32dad3e5c4aff4611d57224f7a42efb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::abbreviateBigTerms</definition>
+        <argsstring>(size_t maxLeafs=30)</argsstring>
+        <name>abbreviateBigTerms</name>
+        <qualifiedname>mty::ModelBuilder::abbreviateBigTerms</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>maxLeafs</declname>
+          <defval>30</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="389" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="2339" bodyend="2368"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a9d7164b35480562cbd5ba0685ba726b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::checksRotation</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;fields, std::vector&lt; mty::Particle &gt; const &amp;newFields, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;rotation)</argsstring>
+        <name>checksRotation</name>
+        <qualifiedname>mty::ModelBuilder::checksRotation</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>newFields</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="391" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="215" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a03d5053b1c1c0da711b537b93356a316" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>std::vector&lt; csl::Expr &gt; mty::ModelBuilder::getRotationTerms</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;newFields, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;rotation) const</argsstring>
+        <name>getRotationTerms</name>
+        <qualifiedname>mty::ModelBuilder::getRotationTerms</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>newFields</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="395" column="17" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="268" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a5afd41e7732b805658763674b8fb0b49" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>std::vector&lt; csl::Expr &gt; mty::ModelBuilder::getFullMassMatrix</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;fields) const</argsstring>
+        <name>getFullMassMatrix</name>
+        <qualifiedname>mty::ModelBuilder::getFullMassMatrix</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>fields</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="400" column="5" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="289" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ac5deb7e5dd423687590927fa96573a77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::fillDependenciesForRotation</definition>
+        <argsstring>(std::vector&lt; csl::Expr &gt; &amp;kinetic, std::vector&lt; csl::Expr &gt; &amp;interaction, mty::Particle const &amp;field)</argsstring>
+        <name>fillDependenciesForRotation</name>
+        <qualifiedname>mty::ModelBuilder::fillDependenciesForRotation</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &amp;</type>
+          <declname>kinetic</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &amp;</type>
+          <declname>interaction</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="402" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="320" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a7765892a1d1341e13192fda47c8022ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::fillDependenciesForRotation</definition>
+        <argsstring>(std::vector&lt; csl::Expr &gt; &amp;kinetic, std::vector&lt; csl::Expr &gt; &amp;interaction, std::vector&lt; mty::Particle &gt; const &amp;fields)</argsstring>
+        <name>fillDependenciesForRotation</name>
+        <qualifiedname>mty::ModelBuilder::fillDependenciesForRotation</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &amp;</type>
+          <declname>kinetic</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &amp;</type>
+          <declname>interaction</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>fields</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="406" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="338" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1aee08724e1cd16ab4cab0d92775c9cd67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::applyRotation</definition>
+        <argsstring>(mty::Particle const &amp;field, mty::Particle const &amp;newField, csl::Expr const &amp;rotation)</argsstring>
+        <name>applyRotation</name>
+        <qualifiedname>mty::ModelBuilder::applyRotation</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>newField</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="410" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="357" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ac0d8b51a180e2df99ca90981dda413b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::applyRotation</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;fields, std::vector&lt; mty::Particle &gt; const &amp;newFields, std::vector&lt; csl::Expr &gt; const &amp;rotations)</argsstring>
+        <name>applyRotation</name>
+        <qualifiedname>mty::ModelBuilder::applyRotation</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>newFields</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+          <declname>rotations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="414" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="389" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ad87f0f9a0ff6445577364ea59a4259f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::diagonalizeWithSpectrum</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;fields, std::vector&lt; mty::Particle &gt; const &amp;newFields, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;mixing, std::vector&lt; csl::Expr &gt; const &amp;massMatrix)</argsstring>
+        <name>diagonalizeWithSpectrum</name>
+        <qualifiedname>mty::ModelBuilder::diagonalizeWithSpectrum</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>newFields</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>mixing</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+          <declname>massMatrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="419" column="5" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="427" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a9a209f0a1747445b1d61b4f6cd04c692" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::bidiagonalizeWithSpectrum</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;fields1, std::vector&lt; mty::Particle &gt; const &amp;newFields1, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;mixing1, std::vector&lt; mty::Particle &gt; const &amp;fields2, std::vector&lt; mty::Particle &gt; const &amp;newFields2, std::vector&lt; std::vector&lt; csl::Expr &gt; &gt; const &amp;mixing2, std::vector&lt; csl::Expr &gt; const &amp;massMatrix)</argsstring>
+        <name>bidiagonalizeWithSpectrum</name>
+        <qualifiedname>mty::ModelBuilder::bidiagonalizeWithSpectrum</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>fields1</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>newFields1</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>mixing1</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>fields2</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>newFields2</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &gt; const &amp;</type>
+          <declname>mixing2</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+          <declname>massMatrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="424" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="457" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a0696cd8bd5926834ce393f0e9a106004" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; &gt; const &amp;</type>
+        <definition>std::vector&lt; std::vector&lt; mty::Particle &gt; &gt; const  &amp; mty::ModelBuilder::getParticleFamilies</definition>
+        <argsstring>() const</argsstring>
+        <name>getParticleFamilies</name>
+        <qualifiedname>mty::ModelBuilder::getParticleFamilies</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="433" column="23" bodyfile="src/marty/core/modelBuilder.h" bodystart="433" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ae9022afeac57e3911b5d083a4c9c1ddc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::addParticleFamily</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;families)</argsstring>
+        <name>addParticleFamily</name>
+        <qualifiedname>mty::ModelBuilder::addParticleFamily</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>families</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="438" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="857" bodyend="870"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a944490d6e9fa6835ce0e925379f53fb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::removeParticleFamily</definition>
+        <argsstring>(mty::Particle const &amp;particle)</argsstring>
+        <name>removeParticleFamily</name>
+        <qualifiedname>mty::ModelBuilder::removeParticleFamily</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>particle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="439" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="880" bodyend="889"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a2beed8accc771f4a8813449c06a8bc07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::addParticleFamily</definition>
+        <argsstring>(std::vector&lt; std::string &gt; const &amp;familyNames)</argsstring>
+        <name>addParticleFamily</name>
+        <qualifiedname>mty::ModelBuilder::addParticleFamily</qualifiedname>
+        <param>
+          <type>std::vector&lt; std::string &gt; const &amp;</type>
+          <declname>familyNames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="441" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="872" bodyend="878"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1adcf09cb9d479da75fca90b55f1dfa3ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::removeParticleFamily</definition>
+        <argsstring>(std::string const &amp;particleName)</argsstring>
+        <name>removeParticleFamily</name>
+        <qualifiedname>mty::ModelBuilder::removeParticleFamily</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>particleName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="442" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="891" bodyend="894"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a1290d493d05f515a87063bd6ee93202f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FieldType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void mty::ModelBuilder::setGaugeChoice</definition>
+        <argsstring>(FieldType &amp;&amp;field, gauge::Type choice)</argsstring>
+        <name>setGaugeChoice</name>
+        <qualifiedname>mty::ModelBuilder::setGaugeChoice</qualifiedname>
+        <param>
+          <type>FieldType &amp;&amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacemty_1_1gauge_1a8fd05434cb655735bb18cda43a626a9f" kindref="member">gauge::Type</ref></type>
+          <declname>choice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="531" column="6" bodyfile="src/marty/core/modelBuilder.h" bodystart="531" bodyend="540"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a8d45fa29214cf1fc0453fc186704618e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::findAbreviation</definition>
+        <argsstring>(csl::Expr &amp;expr)</argsstring>
+        <name>findAbreviation</name>
+        <qualifiedname>mty::ModelBuilder::findAbreviation</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="287" column="17" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1156" bodyend="1192"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ab2e0fb9514db3ab1ad2837f78f78509c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::replaceTermInLagrangian</definition>
+        <argsstring>(std::vector&lt; Lagrangian::TermType &gt; &amp;lagrangian, size_t &amp;i, csl::vector_expr &amp;newTerms)</argsstring>
+        <name>replaceTermInLagrangian</name>
+        <qualifiedname>mty::ModelBuilder::replaceTermInLagrangian</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">Lagrangian::TermType</ref> &gt; &amp;</type>
+          <declname>lagrangian</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>csl::vector_expr &amp;</type>
+          <declname>newTerms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="445" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1739" bodyend="1757"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a41cde51b83619885bb314eb3ccaa480f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::fillDependencies</definition>
+        <argsstring>(std::vector&lt; csl::Expr &gt; &amp;kinetic, std::vector&lt; csl::Expr &gt; &amp;mass, std::vector&lt; csl::Expr &gt; &amp;interaction, std::function&lt; bool(Lagrangian::TermType const &amp;)&gt; dependencyFunc)</argsstring>
+        <name>fillDependencies</name>
+        <qualifiedname>mty::ModelBuilder::fillDependencies</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &amp;</type>
+          <declname>kinetic</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &amp;</type>
+          <declname>mass</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &amp;</type>
+          <declname>interaction</declname>
+        </param>
+        <param>
+          <type>std::function&lt; bool(<ref refid="classstd_1_1shared__ptr" kindref="compound">Lagrangian::TermType</ref> const &amp;)&gt;</type>
+          <declname>dependencyFunc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="449" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="257" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ad5670565c79dfbd865dff45b9b3126df" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>std::vector&lt; csl::Expr &gt; mty::ModelBuilder::clearDependencies</definition>
+        <argsstring>(std::function&lt; bool(Lagrangian::TermType const &amp;)&gt; dependencyFunc)</argsstring>
+        <name>clearDependencies</name>
+        <qualifiedname>mty::ModelBuilder::clearDependencies</qualifiedname>
+        <param>
+          <type>std::function&lt; bool(<ref refid="classstd_1_1shared__ptr" kindref="compound">Lagrangian::TermType</ref> const &amp;)&gt;</type>
+          <declname>dependencyFunc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="455" column="17" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="2374" bodyend="2399"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a813c69df706660ec8701212c8f395da2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>std::vector&lt; csl::Expr &gt; mty::ModelBuilder::clearDependencies</definition>
+        <argsstring>(std::vector&lt; Lagrangian::TermType &gt; &amp;terms, std::function&lt; bool(Lagrangian::TermType const &amp;)&gt; dependencyFunc)</argsstring>
+        <name>clearDependencies</name>
+        <qualifiedname>mty::ModelBuilder::clearDependencies</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">Lagrangian::TermType</ref> &gt; &amp;</type>
+          <declname>terms</declname>
+        </param>
+        <param>
+          <type>std::function&lt; bool(<ref refid="classstd_1_1shared__ptr" kindref="compound">Lagrangian::TermType</ref> const &amp;)&gt;</type>
+          <declname>dependencyFunc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="458" column="17" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="2401" bodyend="2415"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a3124832d9c38aa6926b6a7a7a9c210c0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::doSetGaugeChoice</definition>
+        <argsstring>(mty::Particle vectorBoson, gauge::Type choice)</argsstring>
+        <name>doSetGaugeChoice</name>
+        <qualifiedname>mty::ModelBuilder::doSetGaugeChoice</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref></type>
+          <declname>vectorBoson</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacemty_1_1gauge_1a8fd05434cb655735bb18cda43a626a9f" kindref="member">gauge::Type</ref></type>
+          <declname>choice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="462" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="906" bodyend="909"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ac10aefaf0853f7c4c73d96217113c0bf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::doPromoteToGoldstone</definition>
+        <argsstring>(mty::Particle &amp;goldstone, mty::Particle &amp;gaugeBoson)</argsstring>
+        <name>doPromoteToGoldstone</name>
+        <qualifiedname>mty::ModelBuilder::doPromoteToGoldstone</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &amp;</type>
+          <declname>goldstone</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &amp;</type>
+          <declname>gaugeBoson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="464" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="911" bodyend="968"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a8abb0f4ea72ec5d8edfbc589f1d87952" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::doPromoteToGhost</definition>
+        <argsstring>(mty::Particle &amp;ghost, mty::Particle &amp;gaugeBoson)</argsstring>
+        <name>doPromoteToGhost</name>
+        <qualifiedname>mty::ModelBuilder::doPromoteToGhost</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &amp;</type>
+          <declname>ghost</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &amp;</type>
+          <declname>gaugeBoson</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="467" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="970" bodyend="993"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a6253b33530eda9007aee8ba0783f7d42" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::clearProjectorsInMass</definition>
+        <argsstring>()</argsstring>
+        <name>clearProjectorsInMass</name>
+        <qualifiedname>mty::ModelBuilder::clearProjectorsInMass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="469" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1100" bodyend="1116"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ac29d0061ab1a60d9d7125ee73574ed33" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::doPromoteToMajorana</definition>
+        <argsstring>(mty::Particle &amp;weylFermion, std::string const &amp;newParticleName=&quot;&quot;)</argsstring>
+        <name>doPromoteToMajorana</name>
+        <qualifiedname>mty::ModelBuilder::doPromoteToMajorana</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &amp;</type>
+          <declname>weylFermion</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>newParticleName</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="471" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1118" bodyend="1154"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ad9d0ebf12a941e3156d586364bae37e6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::ModelBuilder::doDiagonalizeSymbolically</definition>
+        <argsstring>(mty::Particle const &amp;field, bool forceDetZero=false)</argsstring>
+        <name>doDiagonalizeSymbolically</name>
+        <qualifiedname>mty::ModelBuilder::doDiagonalizeSymbolically</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>forceDetZero</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="474" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="2037" bodyend="2060"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a386c9ee340178687aa411ee97da112d0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::breakLagrangian</definition>
+        <argsstring>(mty::Particle const &amp;init, csl::Space const *brokenSpace)</argsstring>
+        <name>breakLagrangian</name>
+        <qualifiedname>mty::ModelBuilder::breakLagrangian</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>init</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> const *</type>
+          <declname>brokenSpace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="477" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1759" bodyend="1766"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ab37a715fb4c4f0b941457c5a60f0c688" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::breakLagrangian</definition>
+        <argsstring>(mty::Particle const &amp;init, csl::Space const *brokenSpace, std::vector&lt; csl::Space const * &gt; const &amp;newSpace)</argsstring>
+        <name>breakLagrangian</name>
+        <qualifiedname>mty::ModelBuilder::breakLagrangian</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>init</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> const *</type>
+          <declname>brokenSpace</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> const * &gt; const &amp;</type>
+          <declname>newSpace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="479" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1788" bodyend="1813"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a0b54575b95ff87c153e560f5d039a770" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1MassBlock" kindref="compound">MassBlock</ref> &gt;</type>
+        <definition>std::vector&lt; MassBlock &gt; mty::ModelBuilder::getMassBlocks</definition>
+        <argsstring>() const</argsstring>
+        <name>getMassBlocks</name>
+        <qualifiedname>mty::ModelBuilder::getMassBlocks</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="494" column="17" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1859" bodyend="1905"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a26cab7d4dca673c724e9956f5f01007c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::ModelBuilder::diagonalizeExplicitely</definition>
+        <argsstring>(MassBlock const &amp;block, std::vector&lt; mty::Particle &gt; &amp;newFields, bool forceDetZero=false)</argsstring>
+        <name>diagonalizeExplicitely</name>
+        <qualifiedname>mty::ModelBuilder::diagonalizeExplicitely</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1MassBlock" kindref="compound">MassBlock</ref> const &amp;</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; &amp;</type>
+          <declname>newFields</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>forceDetZero</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="498" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1935" bodyend="2035"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a003426353a45e41c3db269a80e08693a" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::writeMatrix</definition>
+        <argsstring>(Spectrum::matrix&lt; csl::Expr &gt; const &amp;m, std::ostream &amp;out, std::string const &amp;indent) const</argsstring>
+        <name>writeMatrix</name>
+        <qualifiedname>mty::ModelBuilder::writeMatrix</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Spectrum_1a28f31be44a5779a3f557cf64d7619893" kindref="member">Spectrum::matrix</ref>&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>indent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="502" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="2260" bodyend="2275"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ac1cd5456a604bc9098c2b48199a6d863" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::ModelBuilder::writeSpectrum</definition>
+        <argsstring>(std::ostream &amp;out, int indentSize) const</argsstring>
+        <name>writeSpectrum</name>
+        <qualifiedname>mty::ModelBuilder::writeSpectrum</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indentSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="506" column="10" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="2277" bodyend="2302"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1af3311fb1f85b165d7cbe8086caa65562" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::ModelBuilder::isValidMassTerm</definition>
+        <argsstring>(mty::InteractionTerm const &amp;term)</argsstring>
+        <name>isValidMassTerm</name>
+        <qualifiedname>mty::ModelBuilder::isValidMassTerm</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1InteractionTerm" kindref="compound">mty::InteractionTerm</ref> const &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="483" column="17" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1819" bodyend="1828"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a59480cfd60dee3fdca9aa4d5c6d91ed9" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt;</type>
+        <definition>std::vector&lt; mty::Particle &gt; mty::ModelBuilder::uniqueContent</definition>
+        <argsstring>(mty::InteractionTerm const &amp;term)</argsstring>
+        <name>uniqueContent</name>
+        <qualifiedname>mty::ModelBuilder::uniqueContent</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1InteractionTerm" kindref="compound">mty::InteractionTerm</ref> const &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="486" column="5" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1831" bodyend="1841"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a3ab3948f29cb3774f5cc3e9def17270d" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt;::const_iterator</type>
+        <definition>std::vector&lt; mty::Particle &gt;::const_iterator mty::ModelBuilder::findInContent</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;content, mty::Particle const &amp;field)</argsstring>
+        <name>findInContent</name>
+        <qualifiedname>mty::ModelBuilder::findInContent</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="489" column="17" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1844" bodyend="1851"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1ab3ef5b136e42d6052490a71e5ac01215" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::ModelBuilder::fieldInContent</definition>
+        <argsstring>(std::vector&lt; mty::Particle &gt; const &amp;content, mty::Particle const &amp;field)</argsstring>
+        <name>fieldInContent</name>
+        <qualifiedname>mty::ModelBuilder::fieldInContent</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="491" column="17" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1853" bodyend="1857"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1ModelBuilder_1a13425e38899a734f8af4eae85d51ed9c" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::ModelBuilder::getMassMatrixOf</definition>
+        <argsstring>(MassBlock const &amp;block)</argsstring>
+        <name>getMassMatrixOf</name>
+        <qualifiedname>mty::ModelBuilder::getMassMatrixOf</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1MassBlock" kindref="compound">MassBlock</ref> const &amp;</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/modelBuilder.h" line="496" column="22" bodyfile="src/marty/core/modelBuilder.cpp" bodystart="1907" bodyend="1933"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class containing all model building features of MARTY. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class inherits <ref refid="classmty_1_1ModelData" kindref="compound">ModelData</ref> that can store all the data concerning a model. <ref refid="classmty_1_1ModelBuilder" kindref="compound">ModelBuilder</ref> implements all modifications capabilities of MARTY. <ref refid="classmty_1_1Gauge" kindref="compound">Gauge</ref> and flavor symmetry breaking, particle replacement / rotation, mass diagonalization, renaming etc. It is further inherited by the <ref refid="classmty_1_1Model" kindref="compound">Model</ref> class that implements all calculation features of MARTY.</para>
+<para><simplesect kind="see"><para><ref refid="classmty_1_1ModelData" kindref="compound">ModelData</ref>, <ref refid="classmty_1_1Model" kindref="compound">Model</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="13">
+        <label>mty::GTHDM_Model</label>
+        <link refid="classmty_1_1GTHDM__Model"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mty::MSSM_HEM</label>
+        <link refid="classmty_1_1MSSM__HEM"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mty::MSSM_Model</label>
+        <link refid="classmty_1_1MSSM__Model"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mty::Model</label>
+        <link refid="classmty_1_1Model"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::ModelBuilder</label>
+        <link refid="classmty_1_1ModelBuilder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mty::ModelData</label>
+        <link refid="classmty_1_1ModelData"/>
+      </node>
+      <node id="7">
+        <label>mty::NMFV_Model</label>
+        <link refid="classmty_1_1NMFV__Model"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mty::PMSSM_LEM</label>
+        <link refid="classmty_1_1PMSSM__LEM"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mty::PMSSM_Model</label>
+        <link refid="classmty_1_1PMSSM__Model"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mty::QCD_Model</label>
+        <link refid="classmty_1_1QCD__Model"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mty::QED_Model</label>
+        <link refid="classmty_1_1QED__Model"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mty::SM_Model</label>
+        <link refid="classmty_1_1SM__Model"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>mty::THDM_Model&lt; type &gt;</label>
+        <link refid="classmty_1_1THDM__Model"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mty::THDM_Model&lt; GTHDM_type &gt;</label>
+        <link refid="classmty_1_1THDM__Model"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>csl::Space</label>
+        <link refid="classcsl_1_1Space"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>symbolicDim</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>delta</edgelabel>
+          <edgelabel>epsilon</edgelabel>
+          <edgelabel>inverseMetric</edgelabel>
+          <edgelabel>metric</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mty::Lagrangian</label>
+        <link refid="classmty_1_1Lagrangian"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>expression</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::ModelBuilder</label>
+        <link refid="classmty_1_1ModelBuilder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mty::ModelData</label>
+        <link refid="classmty_1_1ModelData"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>defaultSpaceTime</edgelabel>
+          <edgelabel>spaceTime</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>L</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="5">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/modelBuilder.h" line="54" column="1" bodyfile="src/marty/core/modelBuilder.h" bodystart="54" bodyend="524"/>
+    <listofallmembers>
+      <member refid="classmty_1_1ModelBuilder_1a32dad3e5c4aff4611d57224f7a42efb0" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>abbreviateBigTerms</name></member>
+      <member refid="classmty_1_1ModelBuilder_1afa513279a9bfa0259fe0953769548a14" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>abbreviatedMassExpressions</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a97389c1d8a9cdf7d3e19dd70bb69a5db" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>abbreviateMassExpression</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a55d95af874a8f056c5ad94fa6cc35a41" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>abbreviateMassExpression</name></member>
+      <member refid="classmty_1_1ModelData_1a735b8c0ec06556dd29c4abf8e102a70e" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addBosonicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a3ded6dacae99d84a34bfa675743eacc9" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addBosonicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a37a73e7e437eae6e2fdc55cd9d7c8c9c" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a829014d5ceaa41972d7bafab5e15cf8a" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a00436871b30b35a347b906146d0d56a5" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a8a51a6ff2ec61d7f4bb454e253efec91" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a141ece1d3efee1b0e0a6e3b6bb613279" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addFlavorGroup</name></member>
+      <member refid="classmty_1_1ModelData_1aba0eb189ccb3a5d1e8b52ab51eaa86b2" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addFlavorGroup</name></member>
+      <member refid="classmty_1_1ModelData_1abd1763e959fc47c68d16234d42df78b0" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addGaugedGroup</name></member>
+      <member refid="classmty_1_1ModelData_1a55ca20dc39d8c7d58b8f78f45a450f33" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addGaugedGroup</name></member>
+      <member refid="classmty_1_1ModelData_1a00255feda9a2bc8ca1dcfd0cb17d474d" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addLagrangianTerm</name></member>
+      <member refid="classmty_1_1ModelData_1aea3dc9a2676c954f2403a278c2e41c8e" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addLagrangianTerm</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a960fbcc534233c42f5ec5a3fb0503249" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addMassAbbreviations</name></member>
+      <member refid="classmty_1_1ModelData_1a6fcec3f2efbbcb928b1addbed29ac953" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addParticle</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ae9022afeac57e3911b5d083a4c9c1ddc" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addParticleFamily</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a2beed8accc771f4a8813449c06a8bc07" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addParticleFamily</name></member>
+      <member refid="classmty_1_1ModelData_1a3ff5a51fa0a90f6d1d51c7ca7089afc6" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addParticles</name></member>
+      <member refid="classmty_1_1ModelData_1a560fd95f2a6a26c293c655c68431a71a" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addParticlesIn</name></member>
+      <member refid="classmty_1_1ModelData_1a8a951521cc75c351857c829883250432" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addScalarCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a3ff29e11d312b7c37c66666fb457ce76" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addScalarCoupling</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ad1a6e9459410e1c1c4bfd6497b4f0c12" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addSpectrum</name></member>
+      <member refid="classmty_1_1ModelData_1a94acca3e80227a8c25c325005777de5e" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>addTensorCoupling</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aa0ea7460def6380631679d00260cd132" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>applyDiagonalizationData</name></member>
+      <member refid="classmty_1_1ModelBuilder_1abccd47d222d9d898778e08fb953883ac" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>applyDiagonalizationData</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ab3d8001271d5b120ca2dfd89473186ba" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>applyDiagonalizationData</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a83b569445171eee2a7478f25ca1bc368" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>applyDiagonalizationData</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a318ac8bc7ab4bbec411b4a628dca7cb1" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>applyDiagonalizationData</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a2949b5f1f27d4abb9a614157a1365df0" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>applyDiracFermionEmbedding</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aee08724e1cd16ab4cab0d92775c9cd67" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>applyRotation</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac0d8b51a180e2df99ca90981dda413b5" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>applyRotation</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a4f2b8f2e3d9b0c31a06495c59f84e369" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>applyUnitaryCondition</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a9a209f0a1747445b1d61b4f6cd04c692" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>bidiagonalizeWithSpectrum</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a3debb98a3d0abe77285ada708f8c6644" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>birotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a9bb9403ad33539c80822df1170b078f8" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>birotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1af3233f5560ebfdbca4595d34c6cf9f32" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>birotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a65f8be8a9578b81a92f983770bcf3ffe" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>breakFlavorSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a3e53c4c43a390d601fd0a4737da5df09" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>breakFlavorSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1afca18a60b90fbc550632f8ec7496eb73" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>breakFlavorSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a2bff2d21abcf757f2895d29d8a8d38e6" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>breakFlavorSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aeb34f05e805149485249ab0711b34199" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>breakGaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a9d6565abaabd700c8204a6db8130f649" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>breakGaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a9de439011cb5788a7a1ca62f06160bb0" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>breakGaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aee384ed95cfbf209c4b1fd11d05e0a3c" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>breakGaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a37110b53ea8df12798f16e7e0f8bbceb" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>breakGaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a89865370c85b23d21b94aed2a4c35d82" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>breakGaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a386c9ee340178687aa411ee97da112d0" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>breakLagrangian</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ab37a715fb4c4f0b941457c5a60f0c688" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>breakLagrangian</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a18a82e5e66f04c8df2c9d8524971df66" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>breakU1GaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelData_1a0c48e931cd6b5d81377447f2c00aa50f" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>checkHermiticity</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a9d7164b35480562cbd5ba0685ba726b5" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>checksRotation</name></member>
+      <member refid="classmty_1_1ModelData_1ae32c0ea9f667dd69f4495a99ea12f8f8" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>checkValidity</name></member>
+      <member refid="classmty_1_1ModelData_1a688fc6395c0f782390bb69392accd0a0" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>checkValidity</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ad5670565c79dfbd865dff45b9b3126df" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>clearDependencies</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a813c69df706660ec8701212c8f395da2" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>clearDependencies</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a6253b33530eda9007aee8ba0783f7d42" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>clearProjectorsInMass</name></member>
+      <member refid="classmty_1_1ModelData_1a0c2b848cb5334d752fb94cf36f775037" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>defaultSpaceTime</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a26cab7d4dca673c724e9956f5f01007c" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>diagonalizeExplicitely</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aa3aad1e98867fc8a270e2b0328172eb6" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>diagonalizeMassMatrices</name></member>
+      <member refid="classmty_1_1ModelBuilder_1adb85d7023caebe1ce56962f444f151fe" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>diagonalizeSymbolically</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ad87f0f9a0ff6445577364ea59a4259f9" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>diagonalizeWithSpectrum</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a5f19f46a7cb0f76baa66194674b1f185" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>diagonalizeYukawa</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a6ce06aacc28dca65b5c217f501938291" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>diagonalizeYukawa</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac133cda7b4a28a7ccbfc885b655d9282" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>diagonalizeYukawa</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a0d0d4f4d19c02e704d186ccc5d282560" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>diracFermionEmbedding</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a2a4a7455c834421cbeb994a2e372ea30" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>diracFermionEmbedding</name></member>
+      <member refid="classmty_1_1ModelData_1ac4d923650a12c1c09a84029df16d358b" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doAddBosonicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a39d5a1cf3efe1c5962f06f2d241ca134" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doAddBosonicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a523989426179bac1d251c73881b1ba80" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doAddFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1ab4fc99c231534d418a2ef252db61f7ee" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doAddFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a43470a5465d906055dc1efc9ff0d8c2f" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doAddFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a250711d444eda40e7061613c5ce816e1" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doAddFermionicMass</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ad9d0ebf12a941e3156d586364bae37e6" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doDiagonalizeSymbolically</name></member>
+      <member refid="classmty_1_1ModelData_1a1c80d18c8b6e95e01448706a10bbcbe9" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doGenerateIndex</name></member>
+      <member refid="classmty_1_1ModelData_1a981867ca6196b6636e3b1e42e7974810" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doGenerateIndex</name></member>
+      <member refid="classmty_1_1ModelData_1ab9b86497cee717653102209820cbbd5b" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doGenerateIndex</name></member>
+      <member refid="classmty_1_1ModelData_1a0e0822ae0fb5c9f7eab940676e754606" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doGetCharge</name></member>
+      <member refid="classmty_1_1ModelData_1af546399ca6af2364c782cc8e5f21e952" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doGetFlavorIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1a911d6da7d89ca5d8bff041b421b0b2fb" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doGetFlavorIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1acae3d7143d8328e4609d83dd8c71846f" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doGetGaugeIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1ad06ea6d15f922117a7a1e95b444969bd" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doGetGenerator</name></member>
+      <member refid="classmty_1_1ModelData_1a016a87bc1b967b361728be7ebf0bb829" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doGetGroupIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1aa230fa5ecb255729fcc6632c375645ef" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doGetVectorSpace</name></member>
+      <member refid="classmty_1_1ModelData_1a321bf5399c6ae4f798483ebb777f5f19" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doGetVectorSpace</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a8abb0f4ea72ec5d8edfbc589f1d87952" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doPromoteToGhost</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac10aefaf0853f7c4c73d96217113c0bf" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doPromoteToGoldstone</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac29d0061ab1a60d9d7125ee73574ed33" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doPromoteToMajorana</name></member>
+      <member refid="classmty_1_1ModelData_1ad125c237e6e914da9721c1ad2f829cc9" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doRenameParticle</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a3124832d9c38aa6926b6a7a7a9c210c0" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>doSetGaugeChoice</name></member>
+      <member refid="classmty_1_1ModelData_1abe720a28b57178b178de3e4855d61e8d" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>enableChecks</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ab3ef5b136e42d6052490a71e5ac01215" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>fieldInContent</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a41cde51b83619885bb314eb3ccaa480f" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>fillDependencies</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac5deb7e5dd423687590927fa96573a77" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>fillDependenciesForRotation</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a7765892a1d1341e13192fda47c8022ee" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>fillDependenciesForRotation</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a8d45fa29214cf1fc0453fc186704618e" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>findAbreviation</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a3ab3948f29cb3774f5cc3e9def17270d" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>findInContent</name></member>
+      <member refid="classmty_1_1ModelData_1a17a67b688374a2e40d64f91ad6bda449" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>findParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a79c1ab7d9d90d32c08b8476c6db903f7" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>findParticle</name></member>
+      <member refid="classmty_1_1ModelData_1aa359b5f91dd305c1210f28d63a07e0c9" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>findParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a24872bf766f4ae39d8a4bcb29cc42a3c" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>findScalarCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a5b8aa549d956c6f4e589834236506ea8" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>findScalarCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1ad9e06ee155bd20ed3704e3b2a4f52de2" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>findTensorCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a6dc8a4ea047f83dc9515ae32b41cdf57" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>findTensorCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a3865ea0eb7512aeb3b4c9671dff2fa2d" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>findTensorCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1acd2a492afff864e92afce472a0f93521" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>flavor</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a2330a520bdc61c784601a66b92fb4a13" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>gatherMass</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aef4ee26da435b38315535d9042d93d2e" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>gatherMass</name></member>
+      <member refid="classmty_1_1ModelBuilder_1af1bdc9b72e7f77b660ae7758a71fa1b4" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>gatherMasses</name></member>
+      <member refid="classmty_1_1ModelData_1a4ccbd99905455d694e66450c9534d789" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>gauge</name></member>
+      <member refid="classmty_1_1ModelData_1a41a5df4205832ecea06029d8c5279b58" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>gaugeLocked</name></member>
+      <member refid="classmty_1_1ModelData_1a16349cd3276352508bafdd62e7d7a2ce" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>generateIndex</name></member>
+      <member refid="classmty_1_1ModelData_1a8ef303ba051cba21c0dc414c4f1ec24d" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>generateIndex</name></member>
+      <member refid="classmty_1_1ModelData_1a0b0bd73816c16ba006e78a48cae72221" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>generateIndex</name></member>
+      <member refid="classmty_1_1ModelData_1af4be49688cdb64ec8f30a6c08cd81200" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>generateIndices</name></member>
+      <member refid="classmty_1_1ModelData_1a0ceb4e381e41b3268114b581f3e0bcfa" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>generateIndices</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aa03ec390ac5041423c055e3c16948bd2" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getAbbreviatedMassExpressions</name></member>
+      <member refid="classmty_1_1ModelData_1a1dd379f5329b6f2fc9387027d722e177" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getCharge</name></member>
+      <member refid="classmty_1_1ModelData_1aae5cf459e02428a6af38eaf52e2afb1c" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getFlavor</name></member>
+      <member refid="classmty_1_1ModelData_1a45ab5f5b0d1c0cad683ca09f7c3464b9" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getFlavorGroup</name></member>
+      <member refid="classmty_1_1ModelData_1ad2a4a0a6f3a1f6ae5c9031e368752b32" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getFlavorGroup</name></member>
+      <member refid="classmty_1_1ModelData_1a63830e2ed2cfe83ca88ef543a72910ac" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getFlavorIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1aeaf76bf0b8ac08453be1c59668e03167" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getFlavorIrrep</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a5afd41e7732b805658763674b8fb0b49" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getFullMassMatrix</name></member>
+      <member refid="classmty_1_1ModelData_1a65b562936453b2e8b523c18038640c9d" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getGauge</name></member>
+      <member refid="classmty_1_1ModelData_1a21ba3b3aadc1bf88eb0ffeec0c682018" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getGaugedGroup</name></member>
+      <member refid="classmty_1_1ModelData_1a728963a7a75d3ed5873f4b0e2479f4e9" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getGaugedGroup</name></member>
+      <member refid="classmty_1_1ModelData_1af8628e14853768a183d1ad5e177ceb99" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getGaugeIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1a65c7386937937b39a4cc50163d8cd6d8" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getGenerator</name></member>
+      <member refid="classmty_1_1ModelData_1a93e89de6711cd85094ec66812b71b94d" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getGroup</name></member>
+      <member refid="classmty_1_1ModelData_1ae383ca2a22cbbf116003a1081703ecb3" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getGroup</name></member>
+      <member refid="classmty_1_1ModelData_1a92bf116fa335300b4e33788bc7b3ceb3" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getGroupIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1a9cd11de8be4b70e9272c77001b0ea659" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getLagrangian</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a0b54575b95ff87c153e560f5d039a770" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getMassBlocks</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a13425e38899a734f8af4eae85d51ed9c" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getMassMatrixOf</name></member>
+      <member refid="classmty_1_1ModelData_1ac517a59f16a2ffe7d88a598efa6aebfb" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a3e6e949b9e44059344c0e094258c8f96" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a4494ade1b345860d21fc07f28f1e4c56" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a6a4519ebfcf20b7c1fabad8e358f4a7c" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a831fb3bf2be374f46317f25b251a4983" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getParticle</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a0696cd8bd5926834ce393f0e9a106004" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getParticleFamilies</name></member>
+      <member refid="classmty_1_1ModelData_1aff328d53055a760ff21a7e11a9cd1d5d" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getParticles</name></member>
+      <member refid="classmty_1_1ModelData_1a890fa70daad0e3128119b9f01142aa2d" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getParticles</name></member>
+      <member refid="classmty_1_1ModelData_1a363bea1914658f3e61abba137fc7d1ba" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getPhysicalParticles</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a03d5053b1c1c0da711b537b93356a316" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getRotationTerms</name></member>
+      <member refid="classmty_1_1ModelData_1a14bf61ee3f7bb3c8f0fddee9bc591a2b" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getScalarCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a72bc59d5ec27b26cfbcabcef426d13df" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getScalarCouplings</name></member>
+      <member refid="classmty_1_1ModelData_1ada92944c6d73dc4fd77fb9d9de9a0d50" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getSpaceTime</name></member>
+      <member refid="classmty_1_1ModelData_1a8939724bcccf03c671b71dad3d6096c4" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getTensorCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a1b033d00ca5c430001e0867d4dc9a689" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getTensorCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a68555f34a2b4a5131fe1dfddc01f4235" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getTensorCouplings</name></member>
+      <member refid="classmty_1_1ModelData_1ad1b358620e5d67d99a3f80726351d43d" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getVectorSpace</name></member>
+      <member refid="classmty_1_1ModelData_1aa7dee85afb6c11b4d94dda09c72e2d06" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getVectorSpace</name></member>
+      <member refid="classmty_1_1ModelData_1aa7dee85afb6c11b4d94dda09c72e2d06" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getVectorSpace</name></member>
+      <member refid="classmty_1_1ModelData_1ad1b358620e5d67d99a3f80726351d43d" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>getVectorSpace</name></member>
+      <member refid="classmty_1_1ModelData_1a885ea54424b97937a71c63abd73c2f94" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>init</name></member>
+      <member refid="classmty_1_1ModelData_1a244e6e94e6b99e553d60662b1edd586c" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>initGaugedGroups</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ad7936197223db9be44d1587c91f21f32" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>integrateOutParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a51776a811cdfb712548bff4e855514fc" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>isEnableChecks</name></member>
+      <member refid="classmty_1_1ModelBuilder_1af3311fb1f85b165d7cbe8086caa65562" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>isValidMassTerm</name></member>
+      <member refid="classmty_1_1ModelData_1a5461496c1c46165da73c9e3694ea0fef" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>L</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a1748ef28e15a85153e049bb36b044003" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>ModelBuilder</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a8e6386afa6a344b3c5b0cac2cbb8dca1" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>ModelBuilder</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a50ab7f48fbd4e6f5809f0ad1a86e0d62" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>ModelBuilder</name></member>
+      <member refid="classmty_1_1ModelData_1a9279185550f1c347a64bfd2a9ebaee00" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>ModelData</name></member>
+      <member refid="classmty_1_1ModelData_1a9605a946ea704993e5381d77ad91e7e2" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>ModelData</name></member>
+      <member refid="classmty_1_1ModelData_1af46e5e818b74452ba01842e49b1b4e10" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>ModelData</name></member>
+      <member refid="classmty_1_1ModelData_1a99247ad3939f38c345c264bf95ae9fde" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>ModelData</name></member>
+      <member refid="classmty_1_1ModelData_1aaaa21f39c1b07bebfae1ec8587a77f96" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>ModelData</name></member>
+      <member refid="classmty_1_1ModelData_1a912f6cb9f24734d04f0233abe37dc472" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>ModelData</name></member>
+      <member refid="classmty_1_1ModelData_1a04d2554b2eb9fae6ac5f2ca285efd691" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>nMomentums</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a28d03f567297ec62743347c78ee1db64" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>operator=</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a68bc05025fbbd10ddb40079d193af350" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>operator=</name></member>
+      <member refid="classmty_1_1ModelData_1aee7a2e76bc89cf16f8fcb1da025eee90" prot="public" virt="non-virtual" ambiguityscope="mty::ModelData::"><scope>mty::ModelBuilder</scope><name>operator=</name></member>
+      <member refid="classmty_1_1ModelData_1ae3c6ca1496b911a1c3de257b3b7b9d29" prot="public" virt="non-virtual" ambiguityscope="mty::ModelData::"><scope>mty::ModelBuilder</scope><name>operator=</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a87fbd607766686b3b9e931fcbafcbf47" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>particleFamilies</name></member>
+      <member refid="classmty_1_1ModelData_1a06e20bc718bb77b006675355d05787a8" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>particles</name></member>
+      <member refid="classmty_1_1ModelData_1ac5cd6ae77d018b097251eb12f7c07935" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>printSubPart</name></member>
+      <member refid="classmty_1_1ModelData_1aba117d39831cd155a5eaff28e25831c1" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>printSubPart</name></member>
+      <member refid="classmty_1_1ModelData_1abaaaa2901d177aaa127bd09a157e78ba" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>printSubPart</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ae7feb297c3a604f72282c74d2eecf4fc" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>promoteToGhost</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a6a583d0a04a66385d44b8c3c1e446798" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>promoteToGoldstone</name></member>
+      <member refid="classmty_1_1ModelBuilder_1af1cea58d99ed3b61fc030792596732b3" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>promoteToMajorana</name></member>
+      <member refid="classmty_1_1ModelBuilder_1acf121f4bddb2f942e57830912541fef7" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>refresh</name></member>
+      <member refid="classmty_1_1ModelData_1a6e6d33a9c6c02c5cb39519967cf2eefd" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>removeParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a2358049f9daaa694928dd1d38d6b23ea" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>removeParticle</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a944490d6e9fa6835ce0e925379f53fb2" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>removeParticleFamily</name></member>
+      <member refid="classmty_1_1ModelBuilder_1adcf09cb9d479da75fca90b55f1dfa3ca" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>removeParticleFamily</name></member>
+      <member refid="classmty_1_1ModelData_1a4ddc41d1e8f7acca4cad7c974f3503f2" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>removeParticles</name></member>
+      <member refid="classmty_1_1ModelData_1a49eb25eba186c9a33c370b5b6e88f12a" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>removeParticles</name></member>
+      <member refid="classmty_1_1ModelData_1aaacc3eb8d783277aed06cfd6149948f5" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>renameCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1ae29923e3065a1c4e7570f636444b197b" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>renameParticle</name></member>
+      <member refid="classmty_1_1ModelBuilder_1adf9b3246eaa47043532e765e57cd7c9d" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>replace</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a1fa2df4c029fbe0d3fbd6796214e2647" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>replace</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a245a887ce12dc7b75ac8d3d2ecbfe884" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>replace</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a7b71535fe847cb21c2fd99393e0601ea" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>replace</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ab2e0fb9514db3ab1ad2837f78f78509c" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>replaceTermInLagrangian</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aa1539abf551fe2ae0b61c77ecc1f2b53" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1afb70d3aef78c475279412d85e3d68781" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a1784f49e7f07ae5f2a9aa513cf52c97f" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a9fd33fe64989549dfd22d776d9271296" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ae7d0352bbbba2e167c97cd7d25062871" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a952bf371c6147b211725d3f6c781adff" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a8245b2e9c449800936f94d8047050e32" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac75edc621a192c25cabbdf25fad55b31" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1af3f33030e822492b774cdc5164981c5a" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a67fd295f4c74d281af2f6384bdd87703" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a8419af384f2907e8146b23368689cb04" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a08b99c3cf8f0893a32801f60618ff117" prot="public" virt="virtual"><scope>mty::ModelBuilder</scope><name>saveModel</name></member>
+      <member refid="classmty_1_1ModelData_1a6d76f38990758e6b375db81a13bb09b8" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>saveModelFile</name></member>
+      <member refid="classmty_1_1ModelData_1a16f0fa1899f17a568d5fd4d9a2bf262e" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>saveModelFunction</name></member>
+      <member refid="classmty_1_1ModelData_1ab202ad13551a2d282403a3851b72acc7" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>saveModelFunctionWithRef</name></member>
+      <member refid="classmty_1_1ModelData_1ac9d4b0f26a093949ea711efe9cfe63a8" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>scalarCouplings</name></member>
+      <member refid="classmty_1_1ModelData_1a7d8c765d5c4a94f63d7ad3cab69f3d8b" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>setEnableChecks</name></member>
+      <member refid="classmty_1_1ModelData_1a42cbb420a4fe3f3577e928eb96268fc6" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>setFlavor</name></member>
+      <member refid="classmty_1_1ModelData_1ab71f9b6d40da88fef4f2615bfdc60b58" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>setGauge</name></member>
+      <member refid="classmty_1_1ModelBuilder_1affaaada85c309e35fc21c790a9f8aa8d" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>setGaugeChoice</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a1290d493d05f515a87063bd6ee93202f" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>setGaugeChoice</name></member>
+      <member refid="classmty_1_1ModelData_1a95fe10e0d9db993173ae43179d1cd72e" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>setSpaceTime</name></member>
+      <member refid="classmty_1_1ModelData_1a23fe2191603febad5a2fd095d1f7968c" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>spaceTime</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a1829895da09ff3d634ab5fd135e43a9d" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>spectra</name></member>
+      <member refid="classmty_1_1ModelData_1af2e3b4ab81d40335e0fa43c21df1cf85" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>tensorCouplings</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a59480cfd60dee3fdca9aa4d5c6d91ed9" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>uniqueContent</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a74b837e7fa4355fafae26b68b2076de7" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>updateDiagonalizationData</name></member>
+      <member refid="classmty_1_1ModelData_1a284d23de3d1c3a8c00e604853567e800" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>writeDependencies</name></member>
+      <member refid="classmty_1_1ModelData_1a3180ccda678296961fd16f5650e86bf2" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>writeFlavor</name></member>
+      <member refid="classmty_1_1ModelData_1a8ff38807ea2f31c2e8806a39a819a309" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>writeGauge</name></member>
+      <member refid="classmty_1_1ModelData_1a51e3c9853c44b2fb8548b53662de61d4" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>writeHeader</name></member>
+      <member refid="classmty_1_1ModelData_1a673ce7f31f5c9c8d03d762b4b7e3483c" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>writeLagrangian</name></member>
+      <member refid="classmty_1_1ModelData_1a580945f23a58ab30d9005a36576e5449" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>writeMassAndWidth</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a003426353a45e41c3db269a80e08693a" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>writeMatrix</name></member>
+      <member refid="classmty_1_1ModelData_1a12bc1c99466d35a232ab048e1abe600f" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>writeParticles</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac1cd5456a604bc9098c2b48199a6d863" prot="protected" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>writeSpectrum</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a2dfe40f9395a1eed194203c19aa912f2" prot="public" virt="non-virtual"><scope>mty::ModelBuilder</scope><name>~ModelBuilder</name></member>
+      <member refid="classmty_1_1ModelData_1a7a3b96a9566e7372990b792cef551025" prot="public" virt="virtual"><scope>mty::ModelBuilder</scope><name>~ModelData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

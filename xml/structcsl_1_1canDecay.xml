@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structcsl_1_1canDecay" kind="struct" language="C++" prot="public">
+    <compoundname>csl::canDecay</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+      <param>
+        <type>class U</type>
+      </param>
+      <param>
+        <type>class <ref refid="namespacecsl_1ace591865c69b6315c533a1a325777312" kindref="member">Type</ref></type>
+      </param>
+      <param>
+        <type>class Type2</type>
+        <defval><ref refid="namespacecsl_1ace591865c69b6315c533a1a325777312" kindref="member">Type</ref></defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structcsl_1_1canDecay_1a689e6f4cf7ba53ac4fdff9c11acf3040" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool csl::canDecay&lt; T, U, Type, Type2 &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>csl::canDecay::value</qualifiedname>
+        <initializer>= std::is_convertible_v&lt;
+              std::decay_t&lt;T&gt;,
+              <ref refid="namespacecsl_1ace591865c69b6315c533a1a325777312" kindref="member">Type</ref>&gt; &amp;&amp; std::is_convertible_v&lt;std::decay_t&lt;U&gt;, Type2&gt;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/replace.h" line="52" column="34" bodyfile="src/csl/replace.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/csl/replace.h" line="51" column="1" bodyfile="src/csl/replace.h" bodystart="51" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structcsl_1_1canDecay_1a689e6f4cf7ba53ac4fdff9c11acf3040" prot="public" virt="non-virtual"><scope>csl::canDecay</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

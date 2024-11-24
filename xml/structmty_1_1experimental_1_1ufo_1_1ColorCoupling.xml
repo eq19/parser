@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structmty_1_1experimental_1_1ufo_1_1ColorCoupling" kind="struct" language="C++" prot="public">
+    <compoundname>mty::experimental::ufo::ColorCoupling</compoundname>
+    <includes refid="colorcoupling_8h" local="no">colorcoupling.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmty_1_1experimental_1_1ufo_1_1ColorCoupling_1abc4bf94c6c3be9e5013919edf3454d72" prot="public" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::experimental::ufo::ColorCoupling::generators</definition>
+        <argsstring></argsstring>
+        <name>generators</name>
+        <qualifiedname>mty::experimental::ufo::ColorCoupling::generators</qualifiedname>
+        <briefdescription>
+<para>Expression containing the color coupling of the vertex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/colorcoupling.h" line="34" column="19" bodyfile="src/marty/ufo/colorcoupling.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Contains the color coupling for an interaction vertex. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The color is limited to <formula id="306">$ SU(3)_C $</formula>. It is expressed as a simple CSL expression as the UFO format takes symbolic color couplings. Examples of color couplings are:    <formula id="307">\[
+   T^A_{ij}, \\
+   f^{EAB}f^{ECD},
+\]</formula> with <formula id="308">$ T^A_{ij} $</formula> and <formula id="309">$ f^{ABC} $</formula> <formula id="306">$ SU(3)_C $</formula> generators.</para>
+<para><simplesect kind="see"><para><ref refid="structmty_1_1experimental_1_1ufo_1_1Vertex" kindref="compound">Vertex</ref>, <ref refid="structmty_1_1experimental_1_1ufo_1_1LorentzCoupling" kindref="compound">LorentzCoupling</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::experimental::ufo::ColorCoupling</label>
+        <link refid="structmty_1_1experimental_1_1ufo_1_1ColorCoupling"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>generators</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/ufo/colorcoupling.h" line="28" column="5" bodyfile="src/marty/ufo/colorcoupling.h" bodystart="29" bodyend="35"/>
+    <listofallmembers>
+      <member refid="structmty_1_1experimental_1_1ufo_1_1ColorCoupling_1abc4bf94c6c3be9e5013919edf3454d72" prot="public" virt="non-virtual"><scope>mty::experimental::ufo::ColorCoupling</scope><name>generators</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

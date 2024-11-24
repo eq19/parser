@@ -1,0 +1,793 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcolor_1_1ColorSpace" kind="class" language="C++" prot="public">
+    <compoundname>color::ColorSpace</compoundname>
+    <basecompoundref refid="classcsl_1_1Space" prot="public" virt="non-virtual">csl::Space</basecompoundref>
+    <includes refid="colorSpace_8h" local="no">colorSpace.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classcolor_1_1ColorSpace_1a20c01c735a911f03de634696cf4b451d" prot="public" static="no">
+        <type>std::function&lt; std::vector&lt; <ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> &gt;(<ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> const &amp;init)&gt;</type>
+        <definition>using color::ColorSpace::Modifier =  std::function&lt;std::vector&lt;TraceIndices&gt;(TraceIndices const &amp;init)&gt;</definition>
+        <argsstring></argsstring>
+        <name>Modifier</name>
+        <qualifiedname>color::ColorSpace::Modifier</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="116" column="5" bodyfile="src/marty/core/colorSpace.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcolor_1_1ColorSpace_1adb188f4363657ba51f7b1fe984133acd" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classmty_1_1SemiSimpleGroup" kindref="compound">mty::SemiSimpleGroup</ref> *</type>
+        <definition>const mty::SemiSimpleGroup* color::ColorSpace::group</definition>
+        <argsstring></argsstring>
+        <name>group</name>
+        <qualifiedname>color::ColorSpace::group</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="151" column="32" bodyfile="src/marty/core/colorSpace.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcolor_1_1ColorSpace_1a848b9d9468c20eb152299940f88172c6" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classmty_1_1SemiSimpleAlgebra" kindref="compound">mty::SemiSimpleAlgebra</ref> *</type>
+        <definition>const mty::SemiSimpleAlgebra* color::ColorSpace::algebra</definition>
+        <argsstring></argsstring>
+        <name>algebra</name>
+        <qualifiedname>color::ColorSpace::algebra</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="153" column="34" bodyfile="src/marty/core/colorSpace.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1a3bb755973437f1f5a49e233c4d87481f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>color::ColorSpace::ColorSpace</definition>
+        <argsstring>(const mty::SemiSimpleGroup *t_group, const std::string &amp;t_name, int t_dim, bool adjoint)</argsstring>
+        <name>ColorSpace</name>
+        <qualifiedname>color::ColorSpace::ColorSpace</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1SemiSimpleGroup" kindref="compound">mty::SemiSimpleGroup</ref> *</type>
+          <declname>t_group</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>t_dim</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>adjoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="59" column="5" bodyfile="src/marty/core/colorSpace.cpp" bodystart="65" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1a08f3b53e3c1375925eb3e6a68eb9a0b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void color::ColorSpace::printCode</definition>
+        <argsstring>(std::ostream &amp;out, int indentSize) const override</argsstring>
+        <name>printCode</name>
+        <qualifiedname>color::ColorSpace::printCode</qualifiedname>
+        <reimplements refid="classcsl_1_1Space_1a5b6d85a6ad9c156459a8f9a387e883fa">printCode</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indentSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="64" column="10" bodyfile="src/marty/core/colorSpace.cpp" bodystart="98" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1aa8079d5a40c3347e44288ade000c1d29" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void color::ColorSpace::printDefinition</definition>
+        <argsstring>(std::ostream &amp;out, int indentSize, bool header=false) const override</argsstring>
+        <name>printDefinition</name>
+        <qualifiedname>color::ColorSpace::printDefinition</qualifiedname>
+        <reimplements refid="classcsl_1_1Space_1aaf8d904aef388f27895262bbc38ea87e">printDefinition</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indentSize</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>header</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="66" column="10" bodyfile="src/marty/core/colorSpace.cpp" bodystart="104" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1a82e5727cfa16c88d8fb424d21ec5b5b0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string color::ColorSpace::getName</definition>
+        <argsstring>() const override</argsstring>
+        <name>getName</name>
+        <qualifiedname>color::ColorSpace::getName</qualifiedname>
+        <reimplements refid="classcsl_1_1Space_1a968b828ad5aa203d744a28eb742d957f">getName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The name of the Space. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="70" column="17" bodyfile="src/marty/core/colorSpace.cpp" bodystart="88" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1a48553ba6a07b3eab8d652aae9b8161ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool color::ColorSpace::hasSpecialTraceProperty</definition>
+        <argsstring>(const csl::vector_expr &amp;tensors) const override</argsstring>
+        <name>hasSpecialTraceProperty</name>
+        <qualifiedname>color::ColorSpace::hasSpecialTraceProperty</qualifiedname>
+        <reimplements refid="classcsl_1_1Space_1a1541a2a6235389129d368b13272853f8">hasSpecialTraceProperty</reimplements>
+        <param>
+          <type>const csl::vector_expr &amp;</type>
+          <declname>tensors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="73" column="5" bodyfile="src/marty/core/colorSpace.cpp" bodystart="145" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1ab61190805455138c617d76ff751c90de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr color::ColorSpace::calculateTrace</definition>
+        <argsstring>(csl::vector_expr tensors) const override</argsstring>
+        <name>calculateTrace</name>
+        <qualifiedname>color::ColorSpace::calculateTrace</qualifiedname>
+        <reimplements refid="classcsl_1_1Space_1a35cf0a3479e3d5efdb3d7000fecbf56b">calculateTrace</reimplements>
+        <param>
+          <type>csl::vector_expr</type>
+          <declname>tensors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="75" column="15" bodyfile="src/marty/core/colorSpace.cpp" bodystart="156" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1ac19b8cb0e252b19dfcc62d40bedf5b3d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmty_1_1SemiSimpleGroup" kindref="compound">mty::SemiSimpleGroup</ref> const *</type>
+        <definition>mty::SemiSimpleGroup const  * color::ColorSpace::getGroup</definition>
+        <argsstring>() const</argsstring>
+        <name>getGroup</name>
+        <qualifiedname>color::ColorSpace::getGroup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="77" column="32" bodyfile="src/marty/core/colorSpace.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1a4143c3238616bea522642a05a4d72980" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool color::ColorSpace::isInstance</definition>
+        <argsstring>(csl::Expr const &amp;tensor) const</argsstring>
+        <name>isInstance</name>
+        <qualifiedname>color::ColorSpace::isInstance</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>tensor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="82" column="10" bodyfile="src/marty/core/colorSpace.cpp" bodystart="547" bodyend="553"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1a22d41af6836cf7f691e04e36a73817e5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void color::ColorSpace::applyE</definition>
+        <argsstring>(size_t j, std::vector&lt; TraceIndices &gt; &amp;terms) const</argsstring>
+        <name>applyE</name>
+        <qualifiedname>color::ColorSpace::applyE</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> &gt; &amp;</type>
+          <declname>terms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="84" column="10" bodyfile="src/marty/core/colorSpace.cpp" bodystart="177" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1a9dfabd591091b7610d92e81c6d53ca46" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> &gt;</type>
+        <definition>std::vector&lt; TraceIndices &gt; color::ColorSpace::symmetrize</definition>
+        <argsstring>(TraceIndices const &amp;init) const</argsstring>
+        <name>symmetrize</name>
+        <qualifiedname>color::ColorSpace::symmetrize</qualifiedname>
+        <param>
+          <type><ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> const &amp;</type>
+          <declname>init</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="86" column="17" bodyfile="src/marty/core/colorSpace.cpp" bodystart="210" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1a0040374bf4327eafba36c442b4c045e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr color::ColorSpace::applySingleTraceIdentity</definition>
+        <argsstring>(TraceIndices const &amp;trace, mty::TraceIdentity const &amp;id) const</argsstring>
+        <name>applySingleTraceIdentity</name>
+        <qualifiedname>color::ColorSpace::applySingleTraceIdentity</qualifiedname>
+        <param>
+          <type><ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> const &amp;</type>
+          <declname>trace</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1TraceIdentity" kindref="compound">mty::TraceIdentity</ref> const &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="88" column="15" bodyfile="src/marty/core/colorSpace.cpp" bodystart="242" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1a1c824b90dd44813feefa2102dcbd0204" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr color::ColorSpace::applyTraceIdentity</definition>
+        <argsstring>(TraceIndices const &amp;trace, std::vector&lt; mty::TraceIdentity &gt; const &amp;identities) const</argsstring>
+        <name>applyTraceIdentity</name>
+        <qualifiedname>color::ColorSpace::applyTraceIdentity</qualifiedname>
+        <param>
+          <type><ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> const &amp;</type>
+          <declname>trace</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1TraceIdentity" kindref="compound">mty::TraceIdentity</ref> &gt; const &amp;</type>
+          <declname>identities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="91" column="15" bodyfile="src/marty/core/colorSpace.cpp" bodystart="263" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1a74e63dad09ec047a06bd5a0908ff7772" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr color::ColorSpace::symmetrizedTrace</definition>
+        <argsstring>(TraceIndices const &amp;trace) const</argsstring>
+        <name>symmetrizedTrace</name>
+        <qualifiedname>color::ColorSpace::symmetrizedTrace</qualifiedname>
+        <param>
+          <type><ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> const &amp;</type>
+          <declname>trace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="95" column="15" bodyfile="src/marty/core/colorSpace.cpp" bodystart="274" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1ad40c910be41b571d151558029d8ada18" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void color::ColorSpace::mergeTraces</definition>
+        <argsstring>(std::vector&lt; TraceIndices &gt; &amp;traces) const</argsstring>
+        <name>mergeTraces</name>
+        <qualifiedname>color::ColorSpace::mergeTraces</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> &gt; &amp;</type>
+          <declname>traces</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="97" column="10" bodyfile="src/marty/core/colorSpace.cpp" bodystart="322" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1aae50c7c8171f04e098b683419d2765da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool color::ColorSpace::contractCloseIndices</definition>
+        <argsstring>(TraceIndices &amp;indices, csl::Expr const &amp;CR, csl::Expr const &amp;CA) const</argsstring>
+        <name>contractCloseIndices</name>
+        <qualifiedname>color::ColorSpace::contractCloseIndices</qualifiedname>
+        <param>
+          <type><ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>CR</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>CA</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="99" column="10" bodyfile="src/marty/core/colorSpace.cpp" bodystart="333" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1a66c927d8a9f2e80dd88f19ecac1d57d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> &gt;</type>
+        <definition>std::vector&lt; TraceIndices &gt; color::ColorSpace::commuteTo</definition>
+        <argsstring>(TraceIndices const &amp;indices, size_t init, size_t targetPos) const</argsstring>
+        <name>commuteTo</name>
+        <qualifiedname>color::ColorSpace::commuteTo</qualifiedname>
+        <param>
+          <type><ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> const &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>init</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>targetPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="103" column="17" bodyfile="src/marty/core/colorSpace.cpp" bodystart="361" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1abf4551fc3f066dd9fbbf1f65b8ac9716" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> &gt;</type>
+        <definition>std::vector&lt; TraceIndices &gt; color::ColorSpace::contractFarIndices</definition>
+        <argsstring>(TraceIndices const &amp;indices, csl::Expr const &amp;CR, csl::Expr const &amp;CA) const</argsstring>
+        <name>contractFarIndices</name>
+        <qualifiedname>color::ColorSpace::contractFarIndices</qualifiedname>
+        <param>
+          <type><ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> const &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>CR</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>CA</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="107" column="17" bodyfile="src/marty/core/colorSpace.cpp" bodystart="420" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1aa70eda274a11d48b25a30216af8db8d2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> &gt;</type>
+        <definition>std::vector&lt; TraceIndices &gt; color::ColorSpace::contractStructureConstants</definition>
+        <argsstring>(TraceIndices const &amp;indices, csl::Expr const &amp;CR, csl::Expr const &amp;CA) const</argsstring>
+        <name>contractStructureConstants</name>
+        <qualifiedname>color::ColorSpace::contractStructureConstants</qualifiedname>
+        <param>
+          <type><ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> const &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>CR</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>CA</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="112" column="5" bodyfile="src/marty/core/colorSpace.cpp" bodystart="435" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1ab8bbfa14b99fb61aa9c057b4e8b1485c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool color::ColorSpace::applyModifier</definition>
+        <argsstring>(std::vector&lt; TraceIndices &gt; &amp;indices, Modifier const &amp;f) const</argsstring>
+        <name>applyModifier</name>
+        <qualifiedname>color::ColorSpace::applyModifier</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>Modifier const &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="118" column="10" bodyfile="src/marty/core/colorSpace.cpp" bodystart="392" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1a9bac07a3bfc278ccdbefa150ba6f4b42" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool color::ColorSpace::contractFarIndices</definition>
+        <argsstring>(std::vector&lt; TraceIndices &gt; &amp;indices, csl::Expr const &amp;CR, csl::Expr const &amp;CA) const</argsstring>
+        <name>contractFarIndices</name>
+        <qualifiedname>color::ColorSpace::contractFarIndices</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>CR</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>CA</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="121" column="10" bodyfile="src/marty/core/colorSpace.cpp" bodystart="506" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1a4d92cab3cf262ee510c3100186786ffd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool color::ColorSpace::contractStructureConstants</definition>
+        <argsstring>(std::vector&lt; TraceIndices &gt; &amp;indices, csl::Expr const &amp;CR, csl::Expr const &amp;CA) const</argsstring>
+        <name>contractStructureConstants</name>
+        <qualifiedname>color::ColorSpace::contractStructureConstants</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>CR</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>CA</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="125" column="10" bodyfile="src/marty/core/colorSpace.cpp" bodystart="515" bodyend="522"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1ab53b7c30fe5dd8c30eb82fec14526e0c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structcolor_1_1TraceIndices" kindref="compound">TraceIndices</ref> &gt;</type>
+        <definition>std::vector&lt; TraceIndices &gt; color::ColorSpace::contractIndices</definition>
+        <argsstring>(std::vector&lt; csl::Index &gt; const &amp;indices, mty::Irrep const &amp;irrep) const</argsstring>
+        <name>contractIndices</name>
+        <qualifiedname>color::ColorSpace::contractIndices</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt; const &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Irrep" kindref="compound">mty::Irrep</ref> const &amp;</type>
+          <declname>irrep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="130" column="5" bodyfile="src/marty/core/colorSpace.cpp" bodystart="525" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1a5e3537ed44007b19f49fa457638fe25b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref></type>
+        <definition>csl::Tensor color::ColorSpace::getF</definition>
+        <argsstring>() const</argsstring>
+        <name>getF</name>
+        <qualifiedname>color::ColorSpace::getF</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="133" column="17" bodyfile="src/marty/core/colorSpace.cpp" bodystart="121" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1a933a89111ff2f309b335acdea8a7c969" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref></type>
+        <definition>csl::Tensor color::ColorSpace::getD</definition>
+        <argsstring>(size_t p) const</argsstring>
+        <name>getD</name>
+        <qualifiedname>color::ColorSpace::getD</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="135" column="17" bodyfile="src/marty/core/colorSpace.cpp" bodystart="129" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1abe4afa94d49371692450637ab7f47543" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref></type>
+        <definition>csl::Tensor color::ColorSpace::getDTilde</definition>
+        <argsstring>() const</argsstring>
+        <name>getDTilde</name>
+        <qualifiedname>color::ColorSpace::getDTilde</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="137" column="17" bodyfile="src/marty/core/colorSpace.cpp" bodystart="137" bodyend="143"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1a7ec0dd10ea70cde51094212b394806ac" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt;</type>
+        <definition>std::vector&lt; csl::Index &gt; color::ColorSpace::exprToIndices</definition>
+        <argsstring>(std::vector&lt; csl::Expr &gt; const &amp;tensors) const</argsstring>
+        <name>exprToIndices</name>
+        <qualifiedname>color::ColorSpace::exprToIndices</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+          <declname>tensors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="141" column="5" bodyfile="src/marty/core/colorSpace.cpp" bodystart="556" bodyend="581"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1a24e1c85dc3bb4f1e209b09f47f29c00f" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::tuple&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref>, <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref>, int &gt;</type>
+        <definition>tuple&lt; csl::Index, csl::Index, int &gt; color::ColorSpace::getFreeIndices</definition>
+        <argsstring>(const csl::Expr &amp;tensorA, const csl::Expr &amp;tensorB) const</argsstring>
+        <name>getFreeIndices</name>
+        <qualifiedname>color::ColorSpace::getFreeIndices</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>tensorA</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>tensorB</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="144" column="5" bodyfile="src/marty/core/colorSpace.cpp" bodystart="584" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="classcolor_1_1ColorSpace_1a1bf98e24eb55cbeed9ad7e07dcc87f7a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::tuple&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref>, <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref>, int &gt;</type>
+        <definition>tuple&lt; csl::Index, csl::Index, int &gt; color::ColorSpace::getFreeIndicesAdjoint</definition>
+        <argsstring>(const csl::Expr &amp;tensorA, const csl::Expr &amp;tensorB) const</argsstring>
+        <name>getFreeIndicesAdjoint</name>
+        <qualifiedname>color::ColorSpace::getFreeIndicesAdjoint</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>tensorA</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>tensorB</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/colorSpace.h" line="147" column="5" bodyfile="src/marty/core/colorSpace.cpp" bodystart="610" bodyend="654"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class inherited from <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> that is used for vector spaces of group representations, in particular for generators. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>color::ColorSpace</label>
+        <link refid="classcolor_1_1ColorSpace"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>csl::Space</label>
+        <link refid="classcsl_1_1Space"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>color::ColorSpace</label>
+        <link refid="classcolor_1_1ColorSpace"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>csl::Space</label>
+        <link refid="classcsl_1_1Space"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>symbolicDim</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>delta</edgelabel>
+          <edgelabel>epsilon</edgelabel>
+          <edgelabel>inverseMetric</edgelabel>
+          <edgelabel>metric</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="4">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/colorSpace.h" line="56" column="1" bodyfile="src/marty/core/colorSpace.h" bodystart="56" bodyend="155"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1Space_1aeb8ce5559b38c8666a940f4197169a86" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>addIndexNames</name></member>
+      <member refid="classcsl_1_1Space_1adadeb704e8cf9399c71db5a4827891de" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>addIndexNames</name></member>
+      <member refid="classcsl_1_1Space_1a38fd8931aadb3be1c6f09f38c87ceb09" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>addVectorNames</name></member>
+      <member refid="classcsl_1_1Space_1a5a803d0b429bc88545cd645c8c7eb95a" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>addVectorNames</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a848b9d9468c20eb152299940f88172c6" prot="private" virt="non-virtual"><scope>color::ColorSpace</scope><name>algebra</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a22d41af6836cf7f691e04e36a73817e5" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>applyE</name></member>
+      <member refid="classcsl_1_1Space_1a09f62985fe3db824893d375783f6e552" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>applyMetric</name></member>
+      <member refid="classcsl_1_1Space_1ad645509baf26605ae86ff7ffdd3233aa" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>applyMetricOnTensor</name></member>
+      <member refid="classcolor_1_1ColorSpace_1ab8bbfa14b99fb61aa9c057b4e8b1485c" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>applyModifier</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a0040374bf4327eafba36c442b4c045e8" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>applySingleTraceIdentity</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a1c824b90dd44813feefa2102dcbd0204" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>applyTraceIdentity</name></member>
+      <member refid="classcsl_1_1Space_1a474dca7629f4655ad29e4b3ee6430f3a" prot="protected" virt="non-virtual"><scope>color::ColorSpace</scope><name>availableIndices</name></member>
+      <member refid="classcsl_1_1Space_1a368024ae81726c26c7af95f7837fab23" prot="protected" virt="non-virtual"><scope>color::ColorSpace</scope><name>availableVectors</name></member>
+      <member refid="classcolor_1_1ColorSpace_1ab61190805455138c617d76ff751c90de" prot="public" virt="virtual"><scope>color::ColorSpace</scope><name>calculateTrace</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a3bb755973437f1f5a49e233c4d87481f" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>ColorSpace</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a66c927d8a9f2e80dd88f19ecac1d57d5" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>commuteTo</name></member>
+      <member refid="classcolor_1_1ColorSpace_1aae50c7c8171f04e098b683419d2765da" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>contractCloseIndices</name></member>
+      <member refid="classcolor_1_1ColorSpace_1abf4551fc3f066dd9fbbf1f65b8ac9716" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>contractFarIndices</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a9bac07a3bfc278ccdbefa150ba6f4b42" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>contractFarIndices</name></member>
+      <member refid="classcolor_1_1ColorSpace_1ab53b7c30fe5dd8c30eb82fec14526e0c" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>contractIndices</name></member>
+      <member refid="classcolor_1_1ColorSpace_1aa70eda274a11d48b25a30216af8db8d2" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>contractStructureConstants</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a4d92cab3cf262ee510c3100186786ffd" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>contractStructureConstants</name></member>
+      <member refid="classcsl_1_1Space_1ad3e1d183de6994aae95c633205bca51a" prot="protected" virt="non-virtual"><scope>color::ColorSpace</scope><name>defaultIndexNames</name></member>
+      <member refid="classcsl_1_1Space_1a3b7ea855db886563c8d6e2bef902682d" prot="protected" virt="non-virtual"><scope>color::ColorSpace</scope><name>defaultName</name></member>
+      <member refid="classcsl_1_1Space_1a98c96a51dd8656972534f1890cdc7f88" prot="protected" virt="non-virtual"><scope>color::ColorSpace</scope><name>delta</name></member>
+      <member refid="classcsl_1_1Space_1a0bb4f39fe932f6028ba31f7072e94caa" prot="protected" virt="non-virtual"><scope>color::ColorSpace</scope><name>dim</name></member>
+      <member refid="classcsl_1_1Space_1a27f9b2bfce0a21ddbde0581e7b861daa" prot="protected" virt="non-virtual"><scope>color::ColorSpace</scope><name>epsilon</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a7ec0dd10ea70cde51094212b394806ac" prot="private" virt="non-virtual"><scope>color::ColorSpace</scope><name>exprToIndices</name></member>
+      <member refid="classcsl_1_1Space_1a3e22f45ad75d9f625ef0637cd777190f" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>generateIndex</name></member>
+      <member refid="classcsl_1_1Space_1a57e35dce20e198e9eabab3224061ab07" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>generateIndex</name></member>
+      <member refid="classcsl_1_1Space_1a2119016c4b1a6d231b97e3c20781b49a" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>generateIndices</name></member>
+      <member refid="classcsl_1_1Space_1a6961dd8b230baa432699ddcb5b85a875" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>generateIndices</name></member>
+      <member refid="classcsl_1_1Space_1a23ec526397be2dc363118a9efa8c6094" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>generateSimilar</name></member>
+      <member refid="classcsl_1_1Space_1a3a5473e7e5075c398bdd98c2029dfaac" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>generateVector</name></member>
+      <member refid="classcsl_1_1Space_1ad27b0e9a5e2b2c1c6639f0479f57c690" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>generateVectorName</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a933a89111ff2f309b335acdea8a7c969" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>getD</name></member>
+      <member refid="classcsl_1_1Space_1ae3995c3ed2af1656446ba77cee6dfe32" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>getDelta</name></member>
+      <member refid="classcsl_1_1Space_1ad5f5d81d0a1b9491809fc90f8b6a5545" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>getDim</name></member>
+      <member refid="classcolor_1_1ColorSpace_1abe4afa94d49371692450637ab7f47543" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>getDTilde</name></member>
+      <member refid="classcsl_1_1Space_1a048579060d6e892777e53a2dabf928c8" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>getEpsilon</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a5e3537ed44007b19f49fa457638fe25b" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>getF</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a24e1c85dc3bb4f1e209b09f47f29c00f" prot="private" virt="non-virtual"><scope>color::ColorSpace</scope><name>getFreeIndices</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a1bf98e24eb55cbeed9ad7e07dcc87f7a" prot="private" virt="non-virtual"><scope>color::ColorSpace</scope><name>getFreeIndicesAdjoint</name></member>
+      <member refid="classcolor_1_1ColorSpace_1ac19b8cb0e252b19dfcc62d40bedf5b3d" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>getGroup</name></member>
+      <member refid="classcsl_1_1Space_1ad88a09611615307c2706d41412f81ef2" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>getIndexName</name></member>
+      <member refid="classcsl_1_1Space_1a27f0c6e4fe30a5bd712c3f21511cc173" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>getIndexNameView</name></member>
+      <member refid="classcsl_1_1Space_1a07ba9b8414cbcd39afe2a632208f7294" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>getInverseMetric</name></member>
+      <member refid="classcsl_1_1Space_1a6d857ec120dc5dd45a1830f89a885f05" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>getMetric</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a82e5727cfa16c88d8fb424d21ec5b5b0" prot="public" virt="virtual"><scope>color::ColorSpace</scope><name>getName</name></member>
+      <member refid="classcsl_1_1Space_1a43ea5e810ae5b49ee6a2b92e3aab45b7" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>getNextIndexName</name></member>
+      <member refid="classcsl_1_1Space_1acc2dc003fec546913809f7ef3e9e03c9" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>getSignature</name></member>
+      <member refid="classcsl_1_1Space_1a6cec2c26132ef1bae61f2c6b012c16f3" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>getSignedIndex</name></member>
+      <member refid="classcsl_1_1Space_1ac113a6cf91e0cb3d399970afc62c7999" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>getSpecFromIndexName</name></member>
+      <member refid="classcsl_1_1Space_1ac0c47dede17d3902cf375f38950de656" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>getSymbolicDim</name></member>
+      <member refid="classcolor_1_1ColorSpace_1adb188f4363657ba51f7b1fe984133acd" prot="private" virt="non-virtual"><scope>color::ColorSpace</scope><name>group</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a48553ba6a07b3eab8d652aae9b8161ca" prot="public" virt="virtual"><scope>color::ColorSpace</scope><name>hasSpecialTraceProperty</name></member>
+      <member refid="classcsl_1_1Space_1ad74accb2e9c4c109246436a3afef2b6e" prot="protected" virt="non-virtual"><scope>color::ColorSpace</scope><name>inverseMetric</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a4143c3238616bea522642a05a4d72980" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>isInstance</name></member>
+      <member refid="classcsl_1_1Space_1a1133f351866aca2c4ccaf5440ae70457" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>keepCycles</name></member>
+      <member refid="classcolor_1_1ColorSpace_1ad40c910be41b571d151558029d8ada18" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>mergeTraces</name></member>
+      <member refid="classcsl_1_1Space_1adb37e6c8c611b83ce476a165b65bf978" prot="protected" virt="non-virtual"><scope>color::ColorSpace</scope><name>metric</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a20c01c735a911f03de634696cf4b451d" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>Modifier</name></member>
+      <member refid="classcsl_1_1Space_1a5492e168d367d61c45c685835a623244" prot="protected" virt="non-virtual"><scope>color::ColorSpace</scope><name>name</name></member>
+      <member refid="classcsl_1_1Space_1a770b7f272ce58a442a6d7eaa7583af78" prot="protected" virt="non-virtual"><scope>color::ColorSpace</scope><name>nameIndices</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a08f3b53e3c1375925eb3e6a68eb9a0b7" prot="public" virt="virtual"><scope>color::ColorSpace</scope><name>printCode</name></member>
+      <member refid="classcolor_1_1ColorSpace_1aa8079d5a40c3347e44288ade000c1d29" prot="public" virt="virtual"><scope>color::ColorSpace</scope><name>printDefinition</name></member>
+      <member refid="classcsl_1_1Space_1a191f9429fe6f855f8397c4e83d9f0f11" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>refreshIndexName</name></member>
+      <member refid="classcsl_1_1Space_1af2328a57416440f652efeed38b2c87e0" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>resetIndexNumber</name></member>
+      <member refid="classcsl_1_1Space_1ad73c369af3d12acd80df17f4143b9551" prot="protected" virt="non-virtual"><scope>color::ColorSpace</scope><name>signedIndex</name></member>
+      <member refid="classcsl_1_1Space_1ae2c19f01c2f4178429c9308204fc46c3" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>Space</name></member>
+      <member refid="classcsl_1_1Space_1ae9a8a760bba6985fd84bc3223056be36" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>Space</name></member>
+      <member refid="classcsl_1_1Space_1a76e7e8294faef61ec0257b9915b5c8d8" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>Space</name></member>
+      <member refid="classcsl_1_1Space_1a08d0b51a8c3a61963e12b442d49ef5dd" prot="protected" virt="non-virtual"><scope>color::ColorSpace</scope><name>specIndices</name></member>
+      <member refid="classcsl_1_1Space_1a66de99da8500ab5931ad5ae7366826b6" prot="protected" virt="non-virtual"><scope>color::ColorSpace</scope><name>symbolicDim</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a9dfabd591091b7610d92e81c6d53ca46" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>symmetrize</name></member>
+      <member refid="classcolor_1_1ColorSpace_1a74e63dad09ec047a06bd5a0908ff7772" prot="public" virt="non-virtual"><scope>color::ColorSpace</scope><name>symmetrizedTrace</name></member>
+      <member refid="classcsl_1_1Space_1a8f77196927553767c6ebf2e17afd0a69" prot="public" virt="virtual"><scope>color::ColorSpace</scope><name>~Space</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

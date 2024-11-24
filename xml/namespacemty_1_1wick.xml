@@ -1,0 +1,704 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespacemty_1_1wick" kind="namespace" language="C++">
+    <compoundname>mty::wick</compoundname>
+    <innerclass refid="classmty_1_1wick_1_1ConnectedComponent" prot="public">mty::wick::ConnectedComponent</innerclass>
+    <innerclass refid="classmty_1_1wick_1_1Graph" prot="public">mty::wick::Graph</innerclass>
+    <innerclass refid="classmty_1_1wick_1_1Node" prot="public">mty::wick::Node</innerclass>
+    <innerclass refid="classmty_1_1wick_1_1Vertex" prot="public">mty::wick::Vertex</innerclass>
+    <innerclass refid="classmty_1_1wick_1_1WickCalculator" prot="public">mty::wick::WickCalculator</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="graph_8cpp_1a92f51ac3aa18b3d0b0fe745ec25f0e39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream &amp; mty::wick::operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;fout, const Vertex &amp;v)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::wick::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.cpp" line="286" column="1" bodyfile="src/marty/core/graph.cpp" bodystart="286" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8cpp_1a539822d6f332015ec275409939f8ae6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream &amp; mty::wick::operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;fout, const ConnectedComponent &amp;c)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::wick::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1wick_1_1ConnectedComponent" kindref="compound">ConnectedComponent</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.cpp" line="433" column="1" bodyfile="src/marty/core/graph.cpp" bodystart="433" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8cpp_1a600a17cf56e56b968b94f31b0b8e8246" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream &amp; mty::wick::operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;fout, const wick::Graph &amp;g)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::wick::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">wick::Graph</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.cpp" line="1422" column="1" bodyfile="src/marty/core/graph.cpp" bodystart="1422" bodyend="1435"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8cpp_1ad872256dcb6be89f56263e387c0f0c08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::wick::applyConjugation</definition>
+        <argsstring>(std::vector&lt; Graph::Expr_type &gt; expressions, bool)</argsstring>
+        <name>applyConjugation</name>
+        <qualifiedname>mty::wick::applyConjugation</qualifiedname>
+        <param>
+          <type>std::vector&lt; Graph::Expr_type &gt;</type>
+          <declname>expressions</declname>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.cpp" line="1443" column="11" bodyfile="src/marty/core/graph.cpp" bodystart="1443" bodyend="1458"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8cpp_1a0484925338f6df2e81fdf41a52187362" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::wick::contractNodes</definition>
+        <argsstring>(const std::shared_ptr&lt; Node &gt; &amp;node1, const std::shared_ptr&lt; Node &gt; &amp;node2)</argsstring>
+        <name>contractNodes</name>
+        <qualifiedname>mty::wick::contractNodes</qualifiedname>
+        <param>
+          <type>const <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt; &amp;</type>
+          <declname>node1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt; &amp;</type>
+          <declname>node2</declname>
+        </param>
+        <briefdescription>
+<para>Contracts two <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> together, i.e. sets the partner of each node equal to a std::weak_ptr to the other. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref> to the first <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref> to the second <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.cpp" line="1782" column="6" bodyfile="src/marty/core/graph.cpp" bodystart="1782" bodyend="1787" declfile="src/marty/core/graph.h" declline="920" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8cpp_1acceb1a1f4dccd19e121530435321a22a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::wick::areDegenerate</definition>
+        <argsstring>(const mty::QuantumField &amp;f1, const mty::QuantumField &amp;f2)</argsstring>
+        <name>areDegenerate</name>
+        <qualifiedname>mty::wick::areDegenerate</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> &amp;</type>
+          <declname>f1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> &amp;</type>
+          <declname>f2</declname>
+        </param>
+        <briefdescription>
+<para>Tells if two <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> are degenerate, i.e. have the <bold>same value</bold> in the contraction sens. They must be the same <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> and have the same conjugation property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Example:  <formula id="94">$ \psi^*(X)_{\alpha}
+$</formula> and <formula id="95">$ \psi(Y)_{\beta} $</formula> are contractible together but not degenerate. <formula id="96">$ \psi^*(X)_{\alpha} $</formula> and <formula id="97">$ \psi^*(Y)_{\beta} $</formula> are not contractible together but are degenerate. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> to compare. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> to compare. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if <bold>f1</bold> and <bold>f2</bold> are degenerate. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.cpp" line="1789" column="6" bodyfile="src/marty/core/graph.cpp" bodystart="1789" bodyend="1797" declfile="src/marty/core/graph.h" declline="935" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8cpp_1ab6d5ec589d9d52a7aa2fa7823fb4c6c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::wick::areExactlyContractible</definition>
+        <argsstring>(const mty::QuantumField &amp;f1, const mty::QuantumField &amp;f2)</argsstring>
+        <name>areExactlyContractible</name>
+        <qualifiedname>mty::wick::areExactlyContractible</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> &amp;</type>
+          <declname>f1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> &amp;</type>
+          <declname>f2</declname>
+        </param>
+        <briefdescription>
+<para>Tells if the contraction of two <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> is non zero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> in the contraction. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> in the contraction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the contraction of <bold>f1</bold> and <bold>f2</bold> is non zero. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.cpp" line="1799" column="6" bodyfile="src/marty/core/graph.cpp" bodystart="1799" bodyend="1802" declfile="src/marty/core/graph.h" declline="944" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8cpp_1a6fdf79cab4e0a827f02e8fdbd90991af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream &amp; mty::wick::operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;fout, const shared_ptr&lt; Node &gt; &amp;n)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::wick::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classstd_1_1shared__ptr" kindref="compound">shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt; &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.cpp" line="1804" column="1" bodyfile="src/marty/core/graph.cpp" bodystart="1804" bodyend="1811"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8cpp_1ab6190d5f4ceeae79259762685cdc9c75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::wick::operator==</definition>
+        <argsstring>(const std::shared_ptr&lt; Node &gt; &amp;A, const std::shared_ptr&lt; Node &gt; &amp;B)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>mty::wick::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>Overload of operator== for sstd::shared_ptr&lt;<ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref>&gt;. Compares the values of the two pointers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref> to <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> to compare. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref> to <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> to compare. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the two pointers point to the same memory location. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.cpp" line="1813" column="6" bodyfile="src/marty/core/graph.cpp" bodystart="1813" bodyend="1816" declfile="src/marty/core/graph.h" declline="964" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8cpp_1a43b5fd5d18d9b841be07e703d9bbc482" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::wick::comparePriority</definition>
+        <argsstring>(const shared_ptr&lt; Node &gt; &amp;A, const shared_ptr&lt; Node &gt; &amp;B, const vector&lt; Tensor &gt; &amp;foundNodes)</argsstring>
+        <name>comparePriority</name>
+        <qualifiedname>mty::wick::comparePriority</qualifiedname>
+        <param>
+          <type>const <ref refid="classstd_1_1shared__ptr" kindref="compound">shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classstd_1_1shared__ptr" kindref="compound">shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>const vector&lt; <ref refid="classcsl_1_1Tensor" kindref="compound">Tensor</ref> &gt; &amp;</type>
+          <declname>foundNodes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.cpp" line="1818" column="6" bodyfile="src/marty/core/graph.cpp" bodystart="1818" bodyend="1827"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8cpp_1a2b539046dc5582b67e94d53add390ba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> &gt;</type>
+        <definition>std::vector&lt; mty::QuantumField &gt; mty::wick::convertExprToFields</definition>
+        <argsstring>(const csl::Expr &amp;expr)</argsstring>
+        <name>convertExprToFields</name>
+        <qualifiedname>mty::wick::convertExprToFields</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Converts a csl <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> that is <bold>just</bold> a product of field into a std::vector of <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> objects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function raises an error if it finds an object in the product that is neither a <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> nor a positive Integer power of <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref>. If a field appears in a power, it is put as many times in the vector as its integer power. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> product of quantum fields to convert. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A std::vector of <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> containing all fields in <bold>expr</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.cpp" line="1860" column="8" bodyfile="src/marty/core/graph.cpp" bodystart="1860" bodyend="1904" declfile="src/marty/core/graph.h" declline="985" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8cpp_1a26500c8a4320f839301a53899e92aa08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::wick::countFermions</definition>
+        <argsstring>(vector&lt; const QuantumField * &gt;::const_iterator begin, vector&lt; const QuantumField * &gt;::const_iterator end)</argsstring>
+        <name>countFermions</name>
+        <qualifiedname>mty::wick::countFermions</qualifiedname>
+        <param>
+          <type>std::vector&lt; const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> * &gt;::const_iterator</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> * &gt;::const_iterator</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Counts the number of fermions in a std::vector of <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Begin iterator of the std::vector of <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End iterator of the std::vector of <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of fermions in the vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.cpp" line="1906" column="5" bodyfile="src/marty/core/graph.cpp" bodystart="1906" bodyend="1914"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8cpp_1a9e735a56233d15ffe63fcb2eea11cd3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::wick::getCommutationSign</definition>
+        <argsstring>(const std::vector&lt; const mty::QuantumField * &gt; &amp;A, std::vector&lt; const mty::QuantumField * &gt; B)</argsstring>
+        <name>getCommutationSign</name>
+        <qualifiedname>mty::wick::getCommutationSign</qualifiedname>
+        <param>
+          <type>const std::vector&lt; const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> * &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> * &gt;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.cpp" line="1916" column="5" bodyfile="src/marty/core/graph.cpp" bodystart="1916" bodyend="1923" declfile="src/marty/core/graph.h" declline="1007" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8cpp_1ab734d05031ceb24671a549af1ee56488" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::wick::getCommutationSign</definition>
+        <argsstring>(const std::vector&lt; QuantumField &gt; &amp;A, std::vector&lt; const QuantumField * &gt; B)</argsstring>
+        <name>getCommutationSign</name>
+        <qualifiedname>mty::wick::getCommutationSign</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> * &gt;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>Computes and returns the sign cost of the commutation of two sets of <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref>. <formula id="98">$ sgn = (-1)^{N_c}$</formula>, with <formula id="99">$ N_c $</formula> the number of fermion permutations necessary to Transform <bold>A</bold> to <bold>B</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial order of fields.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Same field content as <bold>A</bold> but in a different order. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The sign cost of the permutation of <bold>B</bold> in order to Transform it into <bold>A</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.cpp" line="1925" column="5" bodyfile="src/marty/core/graph.cpp" bodystart="1925" bodyend="1953"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8cpp_1a63f5b1fd493a9c4dc69a086aa1029877" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>csl::vector_expr</type>
+        <definition>csl::vector_expr mty::wick::convertGraphsToCorrelators</definition>
+        <argsstring>(const std::vector&lt; std::shared_ptr&lt; Graph &gt; &gt; &amp;diagrams, std::vector&lt; mty::FeynruleMomentum &gt; &amp;witnessMapping, bool ruleMode)</argsstring>
+        <name>convertGraphsToCorrelators</name>
+        <qualifiedname>mty::wick::convertGraphsToCorrelators</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">Graph</ref> &gt; &gt; &amp;</type>
+          <declname>diagrams</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1FeynruleMomentum" kindref="compound">mty::FeynruleMomentum</ref> &gt; &amp;</type>
+          <declname>witnessMapping</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ruleMode</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Converts a std::vector of fully connected graphs into a std::vector of expressions (one expression per graph) via <ref refid="classmty_1_1wick_1_1Graph_1ab522495ccbe8e800402c53ca6d250756" kindref="member">Graph::getExpression()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>diagrams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fully connected graphs to convert. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The converted graphs into csl <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.cpp" line="1956" column="1" bodyfile="src/marty/core/graph.cpp" bodystart="1956" bodyend="1976"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8h_1a1f4d4b2e8596d5b8c46a0e4fb37b942d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; mty::wick::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;fout, const std::shared_ptr&lt; Node &gt; &amp;node)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::wick::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt; &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Overload of the operator&lt;&lt; for <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output flux. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> to display in a <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The modified flux. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="953" column="1" declfile="src/marty/core/graph.h" declline="953" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8h_1abe2b83469208a2166ba98bf3a08a50d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::wick::comparePriority</definition>
+        <argsstring>(const std::shared_ptr&lt; Node &gt; &amp;A, const std::shared_ptr&lt; Node &gt; &amp;B, const std::vector&lt; csl::Tensor &gt; &amp;foundNodes)</argsstring>
+        <name>comparePriority</name>
+        <qualifiedname>mty::wick::comparePriority</qualifiedname>
+        <param>
+          <type>const <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt; &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &gt; &amp;</type>
+          <declname>foundNodes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="967" column="6" bodyfile="src/marty/core/graph.cpp" bodystart="1818" bodyend="1827" declfile="src/marty/core/graph.h" declline="967" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8h_1a8f95ab4e8f6818c361b162aefc377d6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::wick::countFermions</definition>
+        <argsstring>(std::vector&lt; const mty::QuantumField * &gt;::const_iterator begin, std::vector&lt; const mty::QuantumField * &gt;::const_iterator end)</argsstring>
+        <name>countFermions</name>
+        <qualifiedname>mty::wick::countFermions</qualifiedname>
+        <param>
+          <type>std::vector&lt; const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> * &gt;::const_iterator</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> * &gt;::const_iterator</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Counts the number of fermions in a std::vector of <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Begin iterator of the std::vector of <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>End iterator of the std::vector of <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of fermions in the vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="993" column="5" bodyfile="src/marty/core/graph.cpp" bodystart="1906" bodyend="1914" declfile="src/marty/core/graph.h" declline="993" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8h_1a2943fc0e763d480014f46f24ca6c0e71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::wick::getCommutationSign</definition>
+        <argsstring>(const std::vector&lt; mty::QuantumField &gt; &amp;A, std::vector&lt; const mty::QuantumField * &gt; B)</argsstring>
+        <name>getCommutationSign</name>
+        <qualifiedname>mty::wick::getCommutationSign</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> * &gt;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>Computes and returns the sign cost of the commutation of two sets of <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref>. <formula id="98">$ sgn = (-1)^{N_c}$</formula>, with <formula id="99">$ N_c $</formula> the number of fermion permutations necessary to Transform <bold>A</bold> to <bold>B</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial order of fields.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Same field content as <bold>A</bold> but in a different order. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The sign cost of the permutation of <bold>B</bold> in order to Transform it into <bold>A</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="1004" column="5" bodyfile="src/marty/core/graph.cpp" bodystart="1925" bodyend="1953" declfile="src/marty/core/graph.h" declline="1004" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="graph_8h_1af7c185ea710cefd4845756ed53a93c3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>csl::vector_expr</type>
+        <definition>csl::vector_expr mty::wick::convertGraphsToCorrelators</definition>
+        <argsstring>(const std::vector&lt; std::shared_ptr&lt; Graph &gt; &gt; &amp;diagrams, std::vector&lt; mty::FeynruleMomentum &gt; &amp;witnessMapping, bool ruleMode=true)</argsstring>
+        <name>convertGraphsToCorrelators</name>
+        <qualifiedname>mty::wick::convertGraphsToCorrelators</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">Graph</ref> &gt; &gt; &amp;</type>
+          <declname>diagrams</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1FeynruleMomentum" kindref="compound">mty::FeynruleMomentum</ref> &gt; &amp;</type>
+          <declname>witnessMapping</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ruleMode</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Converts a std::vector of fully connected graphs into a std::vector of expressions (one expression per graph) via <ref refid="classmty_1_1wick_1_1Graph_1ab522495ccbe8e800402c53ca6d250756" kindref="member">Graph::getExpression()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>diagrams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fully connected graphs to convert. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The converted graphs into csl <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="1017" column="1" bodyfile="src/marty/core/graph.cpp" bodystart="1956" bodyend="1976" declfile="src/marty/core/graph.h" declline="1017" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/core/feynmanDiagram.h" line="31" column="1"/>
+  </compounddef>
+</doxygen>

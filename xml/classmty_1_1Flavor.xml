@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1Flavor" kind="class" language="C++" prot="public">
+    <compoundname>mty::Flavor</compoundname>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmty_1_1Flavor_1adb26dc07878a812cbd6276e5f7a6e403" prot="private" static="no">
+        <type>std::vector&lt; <ref refid="classmty_1_1FlavorGroup" kindref="compound">mty::FlavorGroup</ref> * &gt;</type>
+        <definition>std::vector&lt;mty::FlavorGroup *&gt; mty::Flavor::FlavList</definition>
+        <argsstring></argsstring>
+        <name>FlavList</name>
+        <qualifiedname>mty::Flavor::FlavList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="83" column="25" bodyfile="src/marty/core/flavor.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1Flavor_1a444234edee58daa5cff528270647f9ea" prot="private" static="no" mutable="no">
+        <type>FlavList</type>
+        <definition>FlavList mty::Flavor::flavors</definition>
+        <argsstring></argsstring>
+        <name>flavors</name>
+        <qualifiedname>mty::Flavor::flavors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="148" column="14" bodyfile="src/marty/core/flavor.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1Flavor_1a1ed6300571310b7d470b2a8f5a9293e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Flavor::~Flavor</definition>
+        <argsstring>()</argsstring>
+        <name>~Flavor</name>
+        <qualifiedname>mty::Flavor::~Flavor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="86" column="5" bodyfile="src/marty/core/flavor.cpp" bodystart="29" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Flavor_1a8e49e9ba809a1244e425f8acad100b1d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1FlavorIrrep" kindref="compound">FlavorIrrep</ref></type>
+        <definition>FlavorIrrep mty::Flavor::getTrivialRep</definition>
+        <argsstring>() const</argsstring>
+        <name>getTrivialRep</name>
+        <qualifiedname>mty::Flavor::getTrivialRep</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="88" column="17" bodyfile="src/marty/core/flavor.cpp" bodystart="102" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Flavor_1a1f0e50c949a2163adf6858204242695c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1FlavorIrrep" kindref="compound">FlavorIrrep</ref></type>
+        <definition>FlavorIrrep mty::Flavor::getFundamentalRep</definition>
+        <argsstring>() const</argsstring>
+        <name>getFundamentalRep</name>
+        <qualifiedname>mty::Flavor::getFundamentalRep</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="90" column="17" bodyfile="src/marty/core/flavor.cpp" bodystart="110" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Flavor_1ae9c382861d3dff945b09f16e28586dc2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::Flavor::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>mty::Flavor::empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="92" column="10" bodyfile="src/marty/core/flavor.h" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Flavor_1abb05c05774c843c1d605a1693677a5e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t mty::Flavor::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>mty::Flavor::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="97" column="12" bodyfile="src/marty/core/flavor.h" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Flavor_1a239287567a089f0dc8add5ac13661592" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FlavList::iterator</type>
+        <definition>FlavList::iterator mty::Flavor::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>mty::Flavor::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="102" column="24" bodyfile="src/marty/core/flavor.h" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Flavor_1a409290cf3c3b822601f890027259cd49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FlavList::iterator</type>
+        <definition>FlavList::iterator mty::Flavor::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>mty::Flavor::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="107" column="24" bodyfile="src/marty/core/flavor.h" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Flavor_1aede5bc998c2dbfb8e41ea9c4a08d5bc8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>FlavList::const_iterator</type>
+        <definition>FlavList::const_iterator mty::Flavor::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>mty::Flavor::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="112" column="30" bodyfile="src/marty/core/flavor.h" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Flavor_1a7aea3fab5f4b71d0f2036ffa8119fc4e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>FlavList::const_iterator</type>
+        <definition>FlavList::const_iterator mty::Flavor::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>mty::Flavor::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="117" column="30" bodyfile="src/marty/core/flavor.h" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Flavor_1a79a12d1f59f0f1d1196c18cef3def6af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Flavor::addGroup</definition>
+        <argsstring>(std::unique_ptr&lt; FlavorGroup &gt; &amp;newPtr)</argsstring>
+        <name>addGroup</name>
+        <qualifiedname>mty::Flavor::addGroup</qualifiedname>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="classmty_1_1FlavorGroup" kindref="compound">FlavorGroup</ref> &gt; &amp;</type>
+          <declname>newPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="122" column="10" bodyfile="src/marty/core/flavor.h" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Flavor_1ae71efce9dc4f946c425542ca99c76ac2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Flavor::addGroup</definition>
+        <argsstring>(std::unique_ptr&lt; FlavorGroup &gt; &amp;&amp;newPtr)</argsstring>
+        <name>addGroup</name>
+        <qualifiedname>mty::Flavor::addGroup</qualifiedname>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="classmty_1_1FlavorGroup" kindref="compound">FlavorGroup</ref> &gt; &amp;&amp;</type>
+          <declname>newPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="127" column="10" bodyfile="src/marty/core/flavor.h" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Flavor_1a5761e7aea98413b313abd93b4b1d927f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Flavor::push_back</definition>
+        <argsstring>(std::unique_ptr&lt; FlavorGroup &gt; &amp;newPtr)</argsstring>
+        <name>push_back</name>
+        <qualifiedname>mty::Flavor::push_back</qualifiedname>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="classmty_1_1FlavorGroup" kindref="compound">FlavorGroup</ref> &gt; &amp;</type>
+          <declname>newPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="132" column="10" bodyfile="src/marty/core/flavor.h" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Flavor_1a360eb29c853f9591b9d45f68184bd217" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Flavor::push_back</definition>
+        <argsstring>(std::unique_ptr&lt; FlavorGroup &gt; &amp;&amp;newPtr)</argsstring>
+        <name>push_back</name>
+        <qualifiedname>mty::Flavor::push_back</qualifiedname>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="classmty_1_1FlavorGroup" kindref="compound">FlavorGroup</ref> &gt; &amp;&amp;</type>
+          <declname>newPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="137" column="10" bodyfile="src/marty/core/flavor.h" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Flavor_1a8606ed28ccc0ca8265132fa8de33bb22" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmty_1_1FlavorGroup" kindref="compound">FlavorGroup</ref> *</type>
+        <definition>FlavorGroup * mty::Flavor::operator[]</definition>
+        <argsstring>(size_t i) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>mty::Flavor::operator[]</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/flavor.h" line="142" column="17" bodyfile="src/marty/core/flavor.h" bodystart="142" bodyend="145"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/core/flavor.h" line="81" column="1" bodyfile="src/marty/core/flavor.h" bodystart="81" bodyend="149"/>
+    <listofallmembers>
+      <member refid="classmty_1_1Flavor_1a79a12d1f59f0f1d1196c18cef3def6af" prot="public" virt="non-virtual"><scope>mty::Flavor</scope><name>addGroup</name></member>
+      <member refid="classmty_1_1Flavor_1ae71efce9dc4f946c425542ca99c76ac2" prot="public" virt="non-virtual"><scope>mty::Flavor</scope><name>addGroup</name></member>
+      <member refid="classmty_1_1Flavor_1a239287567a089f0dc8add5ac13661592" prot="public" virt="non-virtual"><scope>mty::Flavor</scope><name>begin</name></member>
+      <member refid="classmty_1_1Flavor_1aede5bc998c2dbfb8e41ea9c4a08d5bc8" prot="public" virt="non-virtual"><scope>mty::Flavor</scope><name>begin</name></member>
+      <member refid="classmty_1_1Flavor_1ae9c382861d3dff945b09f16e28586dc2" prot="public" virt="non-virtual"><scope>mty::Flavor</scope><name>empty</name></member>
+      <member refid="classmty_1_1Flavor_1a409290cf3c3b822601f890027259cd49" prot="public" virt="non-virtual"><scope>mty::Flavor</scope><name>end</name></member>
+      <member refid="classmty_1_1Flavor_1a7aea3fab5f4b71d0f2036ffa8119fc4e" prot="public" virt="non-virtual"><scope>mty::Flavor</scope><name>end</name></member>
+      <member refid="classmty_1_1Flavor_1adb26dc07878a812cbd6276e5f7a6e403" prot="private" virt="non-virtual"><scope>mty::Flavor</scope><name>FlavList</name></member>
+      <member refid="classmty_1_1Flavor_1a444234edee58daa5cff528270647f9ea" prot="private" virt="non-virtual"><scope>mty::Flavor</scope><name>flavors</name></member>
+      <member refid="classmty_1_1Flavor_1a1f0e50c949a2163adf6858204242695c" prot="public" virt="non-virtual"><scope>mty::Flavor</scope><name>getFundamentalRep</name></member>
+      <member refid="classmty_1_1Flavor_1a8e49e9ba809a1244e425f8acad100b1d" prot="public" virt="non-virtual"><scope>mty::Flavor</scope><name>getTrivialRep</name></member>
+      <member refid="classmty_1_1Flavor_1a8606ed28ccc0ca8265132fa8de33bb22" prot="public" virt="non-virtual"><scope>mty::Flavor</scope><name>operator[]</name></member>
+      <member refid="classmty_1_1Flavor_1a5761e7aea98413b313abd93b4b1d927f" prot="public" virt="non-virtual"><scope>mty::Flavor</scope><name>push_back</name></member>
+      <member refid="classmty_1_1Flavor_1a360eb29c853f9591b9d45f68184bd217" prot="public" virt="non-virtual"><scope>mty::Flavor</scope><name>push_back</name></member>
+      <member refid="classmty_1_1Flavor_1abb05c05774c843c1d605a1693677a5e9" prot="public" virt="non-virtual"><scope>mty::Flavor</scope><name>size</name></member>
+      <member refid="classmty_1_1Flavor_1a1ed6300571310b7d470b2a8f5a9293e8" prot="public" virt="non-virtual"><scope>mty::Flavor</scope><name>~Flavor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

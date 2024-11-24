@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structsgl_1_1TensorSet" kind="struct" language="C++" prot="public">
+    <compoundname>sgl::TensorSet</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsgl_1_1TensorSet_1a6edf6b0f23efc1a9afea3eedbf795018" prot="public" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref></type>
+        <definition>csl::Tensor sgl::TensorSet::gamma_chir</definition>
+        <argsstring></argsstring>
+        <name>gamma_chir</name>
+        <qualifiedname>sgl::TensorSet::gamma_chir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/tensorset.h" line="31" column="35" bodyfile="src/marty/sgl/tensorset.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsgl_1_1TensorSet_1afeaf245a963fef6477b72e129d26719e" prot="public" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref></type>
+        <definition>csl::Tensor sgl::TensorSet::C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <qualifiedname>sgl::TensorSet::C</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/tensorset.h" line="32" column="35" bodyfile="src/marty/sgl/tensorset.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsgl_1_1TensorSet_1ad6dbcbb9e53bcd218649e0b9d5243dd6" prot="public" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref></type>
+        <definition>csl::Tensor sgl::TensorSet::P_L</definition>
+        <argsstring></argsstring>
+        <name>P_L</name>
+        <qualifiedname>sgl::TensorSet::P_L</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/tensorset.h" line="33" column="35" bodyfile="src/marty/sgl/tensorset.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsgl_1_1TensorSet_1a04e1a3568ce1b00a63fbf00af68d3b89" prot="public" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref></type>
+        <definition>csl::Tensor sgl::TensorSet::P_R</definition>
+        <argsstring></argsstring>
+        <name>P_R</name>
+        <qualifiedname>sgl::TensorSet::P_R</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/tensorset.h" line="34" column="35" bodyfile="src/marty/sgl/tensorset.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsgl_1_1TensorSet_1abeb051378c011e6611d6b0fc19625398" prot="public" static="no" mutable="no">
+        <type>std::map&lt; size_t, <ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &gt;</type>
+        <definition>std::map&lt;size_t, csl::Tensor&gt; sgl::TensorSet::gamma</definition>
+        <argsstring></argsstring>
+        <name>gamma</name>
+        <qualifiedname>sgl::TensorSet::gamma</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/tensorset.h" line="35" column="14" bodyfile="src/marty/sgl/tensorset.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sgl::TensorSet</label>
+        <link refid="structsgl_1_1TensorSet"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>C</edgelabel>
+          <edgelabel>P_L</edgelabel>
+          <edgelabel>P_R</edgelabel>
+          <edgelabel>gamma_chir</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/sgl/tensorset.h" line="30" column="1" bodyfile="src/marty/sgl/tensorset.h" bodystart="30" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structsgl_1_1TensorSet_1afeaf245a963fef6477b72e129d26719e" prot="public" virt="non-virtual"><scope>sgl::TensorSet</scope><name>C</name></member>
+      <member refid="structsgl_1_1TensorSet_1abeb051378c011e6611d6b0fc19625398" prot="public" virt="non-virtual"><scope>sgl::TensorSet</scope><name>gamma</name></member>
+      <member refid="structsgl_1_1TensorSet_1a6edf6b0f23efc1a9afea3eedbf795018" prot="public" virt="non-virtual"><scope>sgl::TensorSet</scope><name>gamma_chir</name></member>
+      <member refid="structsgl_1_1TensorSet_1ad6dbcbb9e53bcd218649e0b9d5243dd6" prot="public" virt="non-virtual"><scope>sgl::TensorSet</scope><name>P_L</name></member>
+      <member refid="structsgl_1_1TensorSet_1a04e1a3568ce1b00a63fbf00af68d3b89" prot="public" virt="non-virtual"><scope>sgl::TensorSet</scope><name>P_R</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

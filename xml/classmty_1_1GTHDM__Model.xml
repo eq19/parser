@@ -1,0 +1,547 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1GTHDM__Model" kind="class" language="C++" prot="public">
+    <compoundname>mty::GTHDM_Model</compoundname>
+    <basecompoundref refid="classmty_1_1THDM__Model" prot="public" virt="non-virtual">mty::THDM_Model&lt; GTHDM_type &gt;</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmty_1_1GTHDM__Model_1a9e40d45a50bf5ba4890fe4f9620ad1e5" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>int</type>
+        <definition>int mty::GTHDM_Model::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>mty::GTHDM_Model::type</qualifiedname>
+        <initializer>= GTHDM_type</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/models/gthdm.h" line="13" column="26" bodyfile="src/marty/models/gthdm.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1GTHDM__Model_1a09d04b02f62359e7eae15f773d8f0265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::GTHDM_Model::GTHDM_Model</definition>
+        <argsstring>(bool initialize=true)</argsstring>
+        <name>GTHDM_Model</name>
+        <qualifiedname>mty::GTHDM_Model::GTHDM_Model</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>initialize</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/models/gthdm.h" line="15" column="5" bodyfile="src/marty/models/gthdm.cpp" bodystart="7" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmty_1_1GTHDM__Model_1a5103a4844ab1166db16a72d42317206c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::GTHDM_Model::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>mty::GTHDM_Model::init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/models/gthdm.h" line="18" column="10" bodyfile="src/marty/models/gthdm.cpp" bodystart="13" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GTHDM__Model_1a491984d1b16504b48f95452006f1efe5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::GTHDM_Model::replaceYukawas</definition>
+        <argsstring>()</argsstring>
+        <name>replaceYukawas</name>
+        <qualifiedname>mty::GTHDM_Model::replaceYukawas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/models/gthdm.h" line="19" column="10" bodyfile="src/marty/models/gthdm.cpp" bodystart="24" bodyend="144"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mty::GTHDM_Model</label>
+        <link refid="classmty_1_1GTHDM__Model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mty::Model</label>
+        <link refid="classmty_1_1Model"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mty::ModelBuilder</label>
+        <link refid="classmty_1_1ModelBuilder"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mty::ModelData</label>
+        <link refid="classmty_1_1ModelData"/>
+      </node>
+      <node id="3">
+        <label>mty::SM_Model</label>
+        <link refid="classmty_1_1SM__Model"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mty::THDM_Model&lt; GTHDM_type &gt;</label>
+        <link refid="classmty_1_1THDM__Model"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>csl::Space</label>
+        <link refid="classcsl_1_1Space"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>symbolicDim</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>delta</edgelabel>
+          <edgelabel>epsilon</edgelabel>
+          <edgelabel>inverseMetric</edgelabel>
+          <edgelabel>metric</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::GTHDM_Model</label>
+        <link refid="classmty_1_1GTHDM__Model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mty::Lagrangian</label>
+        <link refid="classmty_1_1Lagrangian"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>expression</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mty::Model</label>
+        <link refid="classmty_1_1Model"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>current</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mty::ModelBuilder</label>
+        <link refid="classmty_1_1ModelBuilder"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mty::ModelData</label>
+        <link refid="classmty_1_1ModelData"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>defaultSpaceTime</edgelabel>
+          <edgelabel>spaceTime</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>L</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mty::SM_Model</label>
+        <link refid="classmty_1_1SM__Model"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mty::THDM_Model&lt; GTHDM_type &gt;</label>
+        <link refid="classmty_1_1THDM__Model"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>alpha</edgelabel>
+          <edgelabel>beta</edgelabel>
+          <edgelabel>e</edgelabel>
+          <edgelabel>gL</edgelabel>
+          <edgelabel>gY</edgelabel>
+          <edgelabel>lambda1</edgelabel>
+          <edgelabel>lambda2</edgelabel>
+          <edgelabel>lambda3</edgelabel>
+          <edgelabel>lambda4</edgelabel>
+          <edgelabel>lambda5</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="9">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/models/gthdm.h" line="10" column="1" bodyfile="src/marty/models/gthdm.h" bodystart="10" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classmty_1_1ModelBuilder_1a32dad3e5c4aff4611d57224f7a42efb0" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>abbreviateBigTerms</name></member>
+      <member refid="classmty_1_1ModelBuilder_1afa513279a9bfa0259fe0953769548a14" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>abbreviatedMassExpressions</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a97389c1d8a9cdf7d3e19dd70bb69a5db" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>abbreviateMassExpression</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a55d95af874a8f056c5ad94fa6cc35a41" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>abbreviateMassExpression</name></member>
+      <member refid="classmty_1_1ModelData_1a735b8c0ec06556dd29c4abf8e102a70e" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addBosonicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a3ded6dacae99d84a34bfa675743eacc9" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addBosonicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a37a73e7e437eae6e2fdc55cd9d7c8c9c" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a829014d5ceaa41972d7bafab5e15cf8a" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a00436871b30b35a347b906146d0d56a5" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a8a51a6ff2ec61d7f4bb454e253efec91" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a141ece1d3efee1b0e0a6e3b6bb613279" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addFlavorGroup</name></member>
+      <member refid="classmty_1_1ModelData_1aba0eb189ccb3a5d1e8b52ab51eaa86b2" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addFlavorGroup</name></member>
+      <member refid="classmty_1_1ModelData_1abd1763e959fc47c68d16234d42df78b0" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addGaugedGroup</name></member>
+      <member refid="classmty_1_1ModelData_1a55ca20dc39d8c7d58b8f78f45a450f33" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addGaugedGroup</name></member>
+      <member refid="classmty_1_1SM__Model_1a5c9414d6cb43ec292c13fd81c19edc51" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addGaugeFixingTerms</name></member>
+      <member refid="classmty_1_1ModelData_1a00255feda9a2bc8ca1dcfd0cb17d474d" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addLagrangianTerm</name></member>
+      <member refid="classmty_1_1ModelData_1aea3dc9a2676c954f2403a278c2e41c8e" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addLagrangianTerm</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a960fbcc534233c42f5ec5a3fb0503249" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addMassAbbreviations</name></member>
+      <member refid="classmty_1_1ModelData_1a6fcec3f2efbbcb928b1addbed29ac953" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addParticle</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ae9022afeac57e3911b5d083a4c9c1ddc" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addParticleFamily</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a2beed8accc771f4a8813449c06a8bc07" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addParticleFamily</name></member>
+      <member refid="classmty_1_1ModelData_1a3ff5a51fa0a90f6d1d51c7ca7089afc6" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addParticles</name></member>
+      <member refid="classmty_1_1ModelData_1a560fd95f2a6a26c293c655c68431a71a" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addParticlesIn</name></member>
+      <member refid="classmty_1_1ModelData_1a8a951521cc75c351857c829883250432" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addScalarCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a3ff29e11d312b7c37c66666fb457ce76" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addScalarCoupling</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ad1a6e9459410e1c1c4bfd6497b4f0c12" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addSpectrum</name></member>
+      <member refid="classmty_1_1ModelData_1a94acca3e80227a8c25c325005777de5e" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>addTensorCoupling</name></member>
+      <member refid="classmty_1_1THDM__Model_1a022e13aa7cc257a18dfcedf0ff692e4d" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>adjust</name></member>
+      <member refid="classmty_1_1THDM__Model_1a6ac442f74610c1e5d11eccbdceb7c77f" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>alpha</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aa0ea7460def6380631679d00260cd132" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>applyDiagonalizationData</name></member>
+      <member refid="classmty_1_1ModelBuilder_1abccd47d222d9d898778e08fb953883ac" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>applyDiagonalizationData</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ab3d8001271d5b120ca2dfd89473186ba" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>applyDiagonalizationData</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a83b569445171eee2a7478f25ca1bc368" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>applyDiagonalizationData</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a318ac8bc7ab4bbec411b4a628dca7cb1" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>applyDiagonalizationData</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a2949b5f1f27d4abb9a614157a1365df0" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>applyDiracFermionEmbedding</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aee08724e1cd16ab4cab0d92775c9cd67" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>applyRotation</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac0d8b51a180e2df99ca90981dda413b5" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>applyRotation</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a4f2b8f2e3d9b0c31a06495c59f84e369" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>applyUnitaryCondition</name></member>
+      <member refid="classmty_1_1THDM__Model_1a498d2f03f99a37636dcbe9a1848a84dc" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>beta</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a9a209f0a1747445b1d61b4f6cd04c692" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>bidiagonalizeWithSpectrum</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a3debb98a3d0abe77285ada708f8c6644" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>birotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a9bb9403ad33539c80822df1170b078f8" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>birotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1af3233f5560ebfdbca4595d34c6cf9f32" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>birotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a65f8be8a9578b81a92f983770bcf3ffe" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>breakFlavorSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a3e53c4c43a390d601fd0a4737da5df09" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>breakFlavorSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1afca18a60b90fbc550632f8ec7496eb73" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>breakFlavorSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a2bff2d21abcf757f2895d29d8a8d38e6" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>breakFlavorSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aeb34f05e805149485249ab0711b34199" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>breakGaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a9d6565abaabd700c8204a6db8130f649" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>breakGaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a9de439011cb5788a7a1ca62f06160bb0" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>breakGaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aee384ed95cfbf209c4b1fd11d05e0a3c" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>breakGaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a37110b53ea8df12798f16e7e0f8bbceb" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>breakGaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a89865370c85b23d21b94aed2a4c35d82" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>breakGaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a386c9ee340178687aa411ee97da112d0" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>breakLagrangian</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ab37a715fb4c4f0b941457c5a60f0c688" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>breakLagrangian</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a18a82e5e66f04c8df2c9d8524971df66" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>breakU1GaugeSymmetry</name></member>
+      <member refid="classmty_1_1ModelData_1a0c48e931cd6b5d81377447f2c00aa50f" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>checkHermiticity</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a9d7164b35480562cbd5ba0685ba726b5" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>checksRotation</name></member>
+      <member refid="classmty_1_1ModelData_1ae32c0ea9f667dd69f4495a99ea12f8f8" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>checkValidity</name></member>
+      <member refid="classmty_1_1ModelData_1a688fc6395c0f782390bb69392accd0a0" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>checkValidity</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ad5670565c79dfbd865dff45b9b3126df" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>clearDependencies</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a813c69df706660ec8701212c8f395da2" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>clearDependencies</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a6253b33530eda9007aee8ba0783f7d42" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>clearProjectorsInMass</name></member>
+      <member refid="classmty_1_1Model_1a0ba3ed3e848095ba16e775fba1a83cef" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeAmplitude</name></member>
+      <member refid="classmty_1_1Model_1a422b4e047749c880898f79cd3fd55278" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeAmplitude</name></member>
+      <member refid="classmty_1_1Model_1a98029dc71ef1c1dd6d2674e568332601" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeAmplitude</name></member>
+      <member refid="classmty_1_1Model_1a300cf1418182c48db1bef365648c7e28" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeAmplitude</name></member>
+      <member refid="classmty_1_1Model_1a50d793bf1d0189626ed4aa932868bf8d" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeAmplitude</name></member>
+      <member refid="classmty_1_1Model_1adb572f1a1477d60c2d94da86edc0163f" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeAmplitude</name></member>
+      <member refid="classmty_1_1Model_1aa531ff600454e928cf35f686af6ada04" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeFeynmanRules</name></member>
+      <member refid="classmty_1_1Model_1a5c4a8c8111817a18bf9bb5e026ba540a" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeModelWidths</name></member>
+      <member refid="classmty_1_1Model_1a699cf5cdb0a189567d8e38619e363612" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeModelWidths</name></member>
+      <member refid="classmty_1_1Model_1a790a9a3538b2d5c31c5cb58d1d54e531" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeModelWidths</name></member>
+      <member refid="classmty_1_1Model_1a6becc26a8980043fb268b434aeece725" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeModelWidths</name></member>
+      <member refid="classmty_1_1Model_1a19b048dc21b8f370718ee25676d42ae6" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computePartialAmplitude</name></member>
+      <member refid="classmty_1_1Model_1aa4a4a7b79c55f77d62c0efce60120b0b" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computePartialAmplitude</name></member>
+      <member refid="classmty_1_1Model_1a22342484ee32ece39386e2ebdccf24d5" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeSingleWilsonPenguin_4Fermions</name></member>
+      <member refid="classmty_1_1Model_1ab32f0ac80caa7df32835a98778778fbf" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeSquaredAmplitude</name></member>
+      <member refid="classmty_1_1Model_1ab337cabc6b65502a1a1b92d8a4266b60" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeSquaredAmplitude</name></member>
+      <member refid="classmty_1_1Model_1a3ad835ff3db16aa5db37d7d7ecd2ebda" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeSquaredAmplitude</name></member>
+      <member refid="classmty_1_1Model_1a5792c48a1c72009531667cb2b5fe1328" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeSquaredAmplitude</name></member>
+      <member refid="classmty_1_1Model_1a426c615e7665921da5015888f7660c54" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeWidth</name></member>
+      <member refid="classmty_1_1Model_1af63c6eb63d42aa488a094303f09220b7" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeWidth</name></member>
+      <member refid="classmty_1_1Model_1a16953891d279262767478af9350f434a" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeWilsonBoxes_4Fermions</name></member>
+      <member refid="classmty_1_1Model_1a4e7acbea9efd978273958055210af145" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeWilsonCoefficients</name></member>
+      <member refid="classmty_1_1Model_1a914e3cc4d8e68f3241a39d58c3c5bca2" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeWilsonCoefficients_2Fermions_1Vector</name></member>
+      <member refid="classmty_1_1Model_1a29c03288619a20fe90cb40d4699bb90a" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeWilsonCoefficients_4Fermions</name></member>
+      <member refid="classmty_1_1Model_1a2bd8d0b774f0516f9cf94fcb92c0614b" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeWilsonCoefficients_default</name></member>
+      <member refid="classmty_1_1Model_1aabe352c6c1105912624bc8fd212d09c5" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>computeWilsonPenguins_4Fermions</name></member>
+      <member refid="classmty_1_1Model_1abbadd4c5e66efe9f5f5770949543f9bb" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>connectAmplitudes</name></member>
+      <member refid="classmty_1_1Model_1ab84c13ed9b364948742a1f50155de656" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>connectKinematics</name></member>
+      <member refid="classmty_1_1Model_1a0f32901201da3db0ac4e3483fe11924b" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>connectMediator</name></member>
+      <member refid="classmty_1_1Model_1ae58d346fff796aebb346ddf9b072b675" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>current</name></member>
+      <member refid="classmty_1_1ModelData_1a0c2b848cb5334d752fb94cf36f775037" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>defaultSpaceTime</name></member>
+      <member refid="classmty_1_1THDM__Model_1a10db39ef29d2a8e40a0fde13f12b606f" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>diagonalize2By2Matrices</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a26cab7d4dca673c724e9956f5f01007c" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>diagonalizeExplicitely</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aa3aad1e98867fc8a270e2b0328172eb6" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>diagonalizeMassMatrices</name></member>
+      <member refid="classmty_1_1SM__Model_1a4c5c87b0ce241e515bb082201bc6c5be" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>diagonalizeSMMassMatrices</name></member>
+      <member refid="classmty_1_1ModelBuilder_1adb85d7023caebe1ce56962f444f151fe" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>diagonalizeSymbolically</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ad87f0f9a0ff6445577364ea59a4259f9" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>diagonalizeWithSpectrum</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a5f19f46a7cb0f76baa66194674b1f185" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>diagonalizeYukawa</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a6ce06aacc28dca65b5c217f501938291" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>diagonalizeYukawa</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac133cda7b4a28a7ccbfc885b655d9282" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>diagonalizeYukawa</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a0d0d4f4d19c02e704d186ccc5d282560" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>diracFermionEmbedding</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a2a4a7455c834421cbeb994a2e372ea30" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>diracFermionEmbedding</name></member>
+      <member refid="classmty_1_1ModelData_1ac4d923650a12c1c09a84029df16d358b" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doAddBosonicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a39d5a1cf3efe1c5962f06f2d241ca134" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doAddBosonicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a523989426179bac1d251c73881b1ba80" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doAddFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1ab4fc99c231534d418a2ef252db61f7ee" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doAddFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a43470a5465d906055dc1efc9ff0d8c2f" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doAddFermionicMass</name></member>
+      <member refid="classmty_1_1ModelData_1a250711d444eda40e7061613c5ce816e1" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doAddFermionicMass</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ad9d0ebf12a941e3156d586364bae37e6" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doDiagonalizeSymbolically</name></member>
+      <member refid="classmty_1_1ModelData_1a1c80d18c8b6e95e01448706a10bbcbe9" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doGenerateIndex</name></member>
+      <member refid="classmty_1_1ModelData_1a981867ca6196b6636e3b1e42e7974810" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doGenerateIndex</name></member>
+      <member refid="classmty_1_1ModelData_1ab9b86497cee717653102209820cbbd5b" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doGenerateIndex</name></member>
+      <member refid="classmty_1_1ModelData_1a0e0822ae0fb5c9f7eab940676e754606" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doGetCharge</name></member>
+      <member refid="classmty_1_1ModelData_1af546399ca6af2364c782cc8e5f21e952" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doGetFlavorIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1a911d6da7d89ca5d8bff041b421b0b2fb" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doGetFlavorIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1acae3d7143d8328e4609d83dd8c71846f" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doGetGaugeIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1ad06ea6d15f922117a7a1e95b444969bd" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doGetGenerator</name></member>
+      <member refid="classmty_1_1ModelData_1a016a87bc1b967b361728be7ebf0bb829" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doGetGroupIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1aa230fa5ecb255729fcc6632c375645ef" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doGetVectorSpace</name></member>
+      <member refid="classmty_1_1ModelData_1a321bf5399c6ae4f798483ebb777f5f19" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doGetVectorSpace</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a8abb0f4ea72ec5d8edfbc589f1d87952" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doPromoteToGhost</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac10aefaf0853f7c4c73d96217113c0bf" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doPromoteToGoldstone</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac29d0061ab1a60d9d7125ee73574ed33" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doPromoteToMajorana</name></member>
+      <member refid="classmty_1_1ModelData_1ad125c237e6e914da9721c1ad2f829cc9" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doRenameParticle</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a3124832d9c38aa6926b6a7a7a9c210c0" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>doSetGaugeChoice</name></member>
+      <member refid="classmty_1_1THDM__Model_1a3404d563e495c3ed304237f0252d37db" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>e</name></member>
+      <member refid="classmty_1_1ModelData_1abe720a28b57178b178de3e4855d61e8d" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>enableChecks</name></member>
+      <member refid="classmty_1_1Model_1ae83580ebe5e9e7b86395b649564f7bab" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>feynmanRules</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ab3ef5b136e42d6052490a71e5ac01215" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>fieldInContent</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a41cde51b83619885bb314eb3ccaa480f" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>fillDependencies</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac5deb7e5dd423687590927fa96573a77" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>fillDependenciesForRotation</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a7765892a1d1341e13192fda47c8022ee" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>fillDependenciesForRotation</name></member>
+      <member refid="classmty_1_1Model_1a7d2c45c24cacfcbc9cd6d7eb21abc54f" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>filterFeynmanRules</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a8d45fa29214cf1fc0453fc186704618e" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>findAbreviation</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a3ab3948f29cb3774f5cc3e9def17270d" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>findInContent</name></member>
+      <member refid="classmty_1_1ModelData_1a17a67b688374a2e40d64f91ad6bda449" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>findParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a79c1ab7d9d90d32c08b8476c6db903f7" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>findParticle</name></member>
+      <member refid="classmty_1_1ModelData_1aa359b5f91dd305c1210f28d63a07e0c9" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>findParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a24872bf766f4ae39d8a4bcb29cc42a3c" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>findScalarCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a5b8aa549d956c6f4e589834236506ea8" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>findScalarCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1ad9e06ee155bd20ed3704e3b2a4f52de2" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>findTensorCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a6dc8a4ea047f83dc9515ae32b41cdf57" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>findTensorCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a3865ea0eb7512aeb3b4c9671dff2fa2d" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>findTensorCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1acd2a492afff864e92afce472a0f93521" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>flavor</name></member>
+      <member refid="classmty_1_1SM__Model_1a41087ac5451c5bb5b03483e808fc756b" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>flavorSymmetryBreaking</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a2330a520bdc61c784601a66b92fb4a13" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>gatherMass</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aef4ee26da435b38315535d9042d93d2e" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>gatherMass</name></member>
+      <member refid="classmty_1_1ModelBuilder_1af1bdc9b72e7f77b660ae7758a71fa1b4" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>gatherMasses</name></member>
+      <member refid="classmty_1_1ModelData_1a4ccbd99905455d694e66450c9534d789" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>gauge</name></member>
+      <member refid="classmty_1_1ModelData_1a41a5df4205832ecea06029d8c5279b58" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>gaugeLocked</name></member>
+      <member refid="classmty_1_1SM__Model_1a5da0a36677c9a9d1f960006e07c9e230" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>gaugeSymmetryBreaking</name></member>
+      <member refid="classmty_1_1ModelData_1a16349cd3276352508bafdd62e7d7a2ce" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>generateIndex</name></member>
+      <member refid="classmty_1_1ModelData_1a8ef303ba051cba21c0dc414c4f1ec24d" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>generateIndex</name></member>
+      <member refid="classmty_1_1ModelData_1a0b0bd73816c16ba006e78a48cae72221" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>generateIndex</name></member>
+      <member refid="classmty_1_1ModelData_1af4be49688cdb64ec8f30a6c08cd81200" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>generateIndices</name></member>
+      <member refid="classmty_1_1ModelData_1a0ceb4e381e41b3268114b581f3e0bcfa" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>generateIndices</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aa03ec390ac5041423c055e3c16948bd2" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getAbbreviatedMassExpressions</name></member>
+      <member refid="classmty_1_1ModelData_1a1dd379f5329b6f2fc9387027d722e177" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getCharge</name></member>
+      <member refid="classmty_1_1Model_1ab072502a1373dea0fba26613aee202a4" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getFeynmanRule</name></member>
+      <member refid="classmty_1_1Model_1aa1318c338d578b80bb8dc427eced1550" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getFeynmanRule</name></member>
+      <member refid="classmty_1_1Model_1a4d57d7fdbd5c9d115b0acdb5777ca5f8" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getFeynmanRules</name></member>
+      <member refid="classmty_1_1Model_1a81572f775f04af4e847c1af9119a68c2" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getFeynmanRulesNumber</name></member>
+      <member refid="classmty_1_1ModelData_1aae5cf459e02428a6af38eaf52e2afb1c" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getFlavor</name></member>
+      <member refid="classmty_1_1ModelData_1a45ab5f5b0d1c0cad683ca09f7c3464b9" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getFlavorGroup</name></member>
+      <member refid="classmty_1_1ModelData_1ad2a4a0a6f3a1f6ae5c9031e368752b32" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getFlavorGroup</name></member>
+      <member refid="classmty_1_1ModelData_1a63830e2ed2cfe83ca88ef543a72910ac" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getFlavorIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1aeaf76bf0b8ac08453be1c59668e03167" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getFlavorIrrep</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a5afd41e7732b805658763674b8fb0b49" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getFullMassMatrix</name></member>
+      <member refid="classmty_1_1ModelData_1a65b562936453b2e8b523c18038640c9d" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getGauge</name></member>
+      <member refid="classmty_1_1ModelData_1a21ba3b3aadc1bf88eb0ffeec0c682018" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getGaugedGroup</name></member>
+      <member refid="classmty_1_1ModelData_1a728963a7a75d3ed5873f4b0e2479f4e9" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getGaugedGroup</name></member>
+      <member refid="classmty_1_1ModelData_1af8628e14853768a183d1ad5e177ceb99" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getGaugeIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1a65c7386937937b39a4cc50163d8cd6d8" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getGenerator</name></member>
+      <member refid="classmty_1_1ModelData_1a93e89de6711cd85094ec66812b71b94d" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getGroup</name></member>
+      <member refid="classmty_1_1ModelData_1ae383ca2a22cbbf116003a1081703ecb3" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getGroup</name></member>
+      <member refid="classmty_1_1ModelData_1a92bf116fa335300b4e33788bc7b3ceb3" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getGroupIrrep</name></member>
+      <member refid="classmty_1_1ModelData_1a9cd11de8be4b70e9272c77001b0ea659" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getLagrangian</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a0b54575b95ff87c153e560f5d039a770" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getMassBlocks</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a13425e38899a734f8af4eae85d51ed9c" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getMassMatrixOf</name></member>
+      <member refid="classmty_1_1Model_1a2ecb4ad3fdda06ee97dfc1c3dedd89af" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getMomentumReplacement</name></member>
+      <member refid="classmty_1_1ModelData_1ac517a59f16a2ffe7d88a598efa6aebfb" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a3e6e949b9e44059344c0e094258c8f96" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a4494ade1b345860d21fc07f28f1e4c56" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a6a4519ebfcf20b7c1fabad8e358f4a7c" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a831fb3bf2be374f46317f25b251a4983" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getParticle</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a0696cd8bd5926834ce393f0e9a106004" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getParticleFamilies</name></member>
+      <member refid="classmty_1_1ModelData_1aff328d53055a760ff21a7e11a9cd1d5d" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getParticles</name></member>
+      <member refid="classmty_1_1ModelData_1a890fa70daad0e3128119b9f01142aa2d" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getParticles</name></member>
+      <member refid="classmty_1_1ModelData_1a363bea1914658f3e61abba137fc7d1ba" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getPhysicalParticles</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a03d5053b1c1c0da711b537b93356a316" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getRotationTerms</name></member>
+      <member refid="classmty_1_1ModelData_1a14bf61ee3f7bb3c8f0fddee9bc591a2b" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getScalarCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a72bc59d5ec27b26cfbcabcef426d13df" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getScalarCouplings</name></member>
+      <member refid="classmty_1_1ModelData_1ada92944c6d73dc4fd77fb9d9de9a0d50" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getSpaceTime</name></member>
+      <member refid="classmty_1_1ModelData_1a8939724bcccf03c671b71dad3d6096c4" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getTensorCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a1b033d00ca5c430001e0867d4dc9a689" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getTensorCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1a68555f34a2b4a5131fe1dfddc01f4235" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getTensorCouplings</name></member>
+      <member refid="classmty_1_1SM__Model_1af4a8804e4902ed62f0b8ba9691f8af59" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getToLowEnergyLagrangian</name></member>
+      <member refid="classmty_1_1ModelData_1ad1b358620e5d67d99a3f80726351d43d" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getVectorSpace</name></member>
+      <member refid="classmty_1_1ModelData_1aa7dee85afb6c11b4d94dda09c72e2d06" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getVectorSpace</name></member>
+      <member refid="classmty_1_1ModelData_1aa7dee85afb6c11b4d94dda09c72e2d06" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getVectorSpace</name></member>
+      <member refid="classmty_1_1ModelData_1ad1b358620e5d67d99a3f80726351d43d" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getVectorSpace</name></member>
+      <member refid="classmty_1_1Model_1a31f46836022c5060823aeef55daa89e7" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getWilsonCoefficients</name></member>
+      <member refid="classmty_1_1Model_1a9c7b384737c177390ce07cb99c862d64" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>getWilsonCoefficients</name></member>
+      <member refid="classmty_1_1THDM__Model_1aa23268130d0683d549211cc2cf1b14e8" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>gL</name></member>
+      <member refid="classmty_1_1GTHDM__Model_1a09d04b02f62359e7eae15f773d8f0265" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>GTHDM_Model</name></member>
+      <member refid="classmty_1_1THDM__Model_1a54db5a108a32175392ef037db32f6261" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>gY</name></member>
+      <member refid="classmty_1_1SM__Model_1acc18c9337c054abe95757dc0962600af" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>HiggsVEVExpansion</name></member>
+      <member refid="classmty_1_1GTHDM__Model_1a5103a4844ab1166db16a72d42317206c" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>init</name></member>
+      <member refid="classmty_1_1ModelData_1a885ea54424b97937a71c63abd73c2f94" prot="public" virt="non-virtual" ambiguityscope="mty::Model::"><scope>mty::GTHDM_Model</scope><name>init</name></member>
+      <member refid="classmty_1_1THDM__Model_1a9ae2d48a231b112a5bfef839bd1a7026" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>initContent</name></member>
+      <member refid="classmty_1_1SM__Model_1a7a6bdcf6e02874f72556f6836897e3f1" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>initFermions</name></member>
+      <member refid="classmty_1_1SM__Model_1a242751060f5acc3bb93fcf7d4e144eb6" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>initGauge</name></member>
+      <member refid="classmty_1_1ModelData_1a244e6e94e6b99e553d60662b1edd586c" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>initGaugedGroups</name></member>
+      <member refid="classmty_1_1SM__Model_1af2062e991187bc711964b5c2519223d2" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>initHiggsPotential</name></member>
+      <member refid="classmty_1_1THDM__Model_1a9dd00463826ac99bb8852372d3e3d15e" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>initHiggsSector</name></member>
+      <member refid="classmty_1_1THDM__Model_1a7ea34d6a5fc12a2324429f875aa8f834" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>initYukawas</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ad7936197223db9be44d1587c91f21f32" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>integrateOutParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a51776a811cdfb712548bff4e855514fc" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>isEnableChecks</name></member>
+      <member refid="classmty_1_1ModelBuilder_1af3311fb1f85b165d7cbe8086caa65562" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>isValidMassTerm</name></member>
+      <member refid="classmty_1_1ModelData_1a5461496c1c46165da73c9e3694ea0fef" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>L</name></member>
+      <member refid="classmty_1_1THDM__Model_1a5869750f3ae70f9a9d5545af7bdefe0c" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>lambda1</name></member>
+      <member refid="classmty_1_1THDM__Model_1ac7390fb84b4324a221569b286b511a0c" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>lambda2</name></member>
+      <member refid="classmty_1_1THDM__Model_1a00028f4dcf10fc5933af6b14ef4cbaee" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>lambda3</name></member>
+      <member refid="classmty_1_1THDM__Model_1a380488da4f2a168991afccea27a57a0b" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>lambda4</name></member>
+      <member refid="classmty_1_1THDM__Model_1aebcb3cdbe0cab713f0b3bfbf0fcd52d4" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>lambda5</name></member>
+      <member refid="classmty_1_1THDM__Model_1a155f1f385ed9db59d51f11bee2bfe56c" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>m11</name></member>
+      <member refid="classmty_1_1THDM__Model_1aef24a97a54996c2b15d046c8bfa3a891" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>m12</name></member>
+      <member refid="classmty_1_1THDM__Model_1abd09a8ad3f765d78e09cefce9a292b52" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>m22</name></member>
+      <member refid="classmty_1_1Model_1ae4fec8f3aa3bb71a1d8657f42bb8ccf5" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>mediatorToPropagator</name></member>
+      <member refid="classmty_1_1Model_1acd681a1c3cd8e412856ae9dc947238ca" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>Model</name></member>
+      <member refid="classmty_1_1Model_1a205f52139367be2e377a22179d42e54a" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>Model</name></member>
+      <member refid="classmty_1_1Model_1a561960933549ea76620e7f8541caa6fb" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>Model</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a1748ef28e15a85153e049bb36b044003" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>ModelBuilder</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a8e6386afa6a344b3c5b0cac2cbb8dca1" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>ModelBuilder</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a50ab7f48fbd4e6f5809f0ad1a86e0d62" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>ModelBuilder</name></member>
+      <member refid="classmty_1_1ModelData_1a9279185550f1c347a64bfd2a9ebaee00" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>ModelData</name></member>
+      <member refid="classmty_1_1ModelData_1a9605a946ea704993e5381d77ad91e7e2" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>ModelData</name></member>
+      <member refid="classmty_1_1ModelData_1af46e5e818b74452ba01842e49b1b4e10" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>ModelData</name></member>
+      <member refid="classmty_1_1ModelData_1a99247ad3939f38c345c264bf95ae9fde" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>ModelData</name></member>
+      <member refid="classmty_1_1ModelData_1aaaa21f39c1b07bebfae1ec8587a77f96" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>ModelData</name></member>
+      <member refid="classmty_1_1ModelData_1a912f6cb9f24734d04f0233abe37dc472" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>ModelData</name></member>
+      <member refid="classmty_1_1ModelData_1a04d2554b2eb9fae6ac5f2ca285efd691" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>nMomentums</name></member>
+      <member refid="classmty_1_1Model_1ac6be0d661339a6ae1a494e6fa5bece1b" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>operator=</name></member>
+      <member refid="classmty_1_1Model_1a86311122d3442760da90fdfe02d8984a" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>operator=</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a28d03f567297ec62743347c78ee1db64" prot="public" virt="non-virtual" ambiguityscope="mty::ModelBuilder::"><scope>mty::GTHDM_Model</scope><name>operator=</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a68bc05025fbbd10ddb40079d193af350" prot="public" virt="non-virtual" ambiguityscope="mty::ModelBuilder::"><scope>mty::GTHDM_Model</scope><name>operator=</name></member>
+      <member refid="classmty_1_1ModelData_1aee7a2e76bc89cf16f8fcb1da025eee90" prot="public" virt="non-virtual" ambiguityscope="mty::ModelData::"><scope>mty::GTHDM_Model</scope><name>operator=</name></member>
+      <member refid="classmty_1_1ModelData_1ae3c6ca1496b911a1c3de257b3b7b9d29" prot="public" virt="non-virtual" ambiguityscope="mty::ModelData::"><scope>mty::GTHDM_Model</scope><name>operator=</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a87fbd607766686b3b9e931fcbafcbf47" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>particleFamilies</name></member>
+      <member refid="classmty_1_1ModelData_1a06e20bc718bb77b006675355d05787a8" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>particles</name></member>
+      <member refid="classmty_1_1ModelData_1ac5cd6ae77d018b097251eb12f7c07935" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>printSubPart</name></member>
+      <member refid="classmty_1_1ModelData_1aba117d39831cd155a5eaff28e25831c1" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>printSubPart</name></member>
+      <member refid="classmty_1_1ModelData_1abaaaa2901d177aaa127bd09a157e78ba" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>printSubPart</name></member>
+      <member refid="classmty_1_1Model_1a611f7eb6ba8a6b1c19297356d34ae8d0" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>projectOnBasis</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ae7feb297c3a604f72282c74d2eecf4fc" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>promoteToGhost</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a6a583d0a04a66385d44b8c3c1e446798" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>promoteToGoldstone</name></member>
+      <member refid="classmty_1_1ModelBuilder_1af1cea58d99ed3b61fc030792596732b3" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>promoteToMajorana</name></member>
+      <member refid="classmty_1_1Model_1a61280f0fc498e9f786f5e894b476473e" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>recoverQuantumInsertions</name></member>
+      <member refid="classmty_1_1ModelBuilder_1acf121f4bddb2f942e57830912541fef7" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>refresh</name></member>
+      <member refid="classmty_1_1ModelData_1a6e6d33a9c6c02c5cb39519967cf2eefd" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>removeParticle</name></member>
+      <member refid="classmty_1_1ModelData_1a2358049f9daaa694928dd1d38d6b23ea" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>removeParticle</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a944490d6e9fa6835ce0e925379f53fb2" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>removeParticleFamily</name></member>
+      <member refid="classmty_1_1ModelBuilder_1adcf09cb9d479da75fca90b55f1dfa3ca" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>removeParticleFamily</name></member>
+      <member refid="classmty_1_1ModelData_1a4ddc41d1e8f7acca4cad7c974f3503f2" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>removeParticles</name></member>
+      <member refid="classmty_1_1ModelData_1a49eb25eba186c9a33c370b5b6e88f12a" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>removeParticles</name></member>
+      <member refid="classmty_1_1ModelData_1aaacc3eb8d783277aed06cfd6149948f5" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>renameCoupling</name></member>
+      <member refid="classmty_1_1ModelData_1ae29923e3065a1c4e7570f636444b197b" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>renameParticle</name></member>
+      <member refid="classmty_1_1ModelBuilder_1adf9b3246eaa47043532e765e57cd7c9d" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>replace</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a1fa2df4c029fbe0d3fbd6796214e2647" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>replace</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a245a887ce12dc7b75ac8d3d2ecbfe884" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>replace</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a7b71535fe847cb21c2fd99393e0601ea" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>replace</name></member>
+      <member refid="classmty_1_1SM__Model_1a6161711d4b15312b745b7fb56e5b7dfe" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>replaceDownYukawa</name></member>
+      <member refid="classmty_1_1THDM__Model_1a59660923c2627ffb6a055b2df529e7dd" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>replaceHiggs</name></member>
+      <member refid="classmty_1_1SM__Model_1a8395a00394e5f1c9b2b099a96cecd15d" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>replaceLeptonYukawa</name></member>
+      <member refid="classmty_1_1Model_1a60af411ec83ab79c5cc16696f1c02310" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>replaceMomentumForLink</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ab2e0fb9514db3ab1ad2837f78f78509c" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>replaceTermInLagrangian</name></member>
+      <member refid="classmty_1_1SM__Model_1a33489e9a50009f865dceef88eac13ea6" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>replaceUpYukawa</name></member>
+      <member refid="classmty_1_1GTHDM__Model_1a491984d1b16504b48f95452006f1efe5" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>replaceYukawas</name></member>
+      <member refid="classmty_1_1ModelBuilder_1aa1539abf551fe2ae0b61c77ecc1f2b53" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1afb70d3aef78c475279412d85e3d68781" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a1784f49e7f07ae5f2a9aa513cf52c97f" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a9fd33fe64989549dfd22d776d9271296" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ae7d0352bbbba2e167c97cd7d25062871" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a952bf371c6147b211725d3f6c781adff" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a8245b2e9c449800936f94d8047050e32" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac75edc621a192c25cabbdf25fad55b31" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1af3f33030e822492b774cdc5164981c5a" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a67fd295f4c74d281af2f6384bdd87703" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a8419af384f2907e8146b23368689cb04" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>rotateFields</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a08b99c3cf8f0893a32801f60618ff117" prot="public" virt="virtual"><scope>mty::GTHDM_Model</scope><name>saveModel</name></member>
+      <member refid="classmty_1_1ModelData_1a6d76f38990758e6b375db81a13bb09b8" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>saveModelFile</name></member>
+      <member refid="classmty_1_1ModelData_1a16f0fa1899f17a568d5fd4d9a2bf262e" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>saveModelFunction</name></member>
+      <member refid="classmty_1_1ModelData_1ab202ad13551a2d282403a3851b72acc7" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>saveModelFunctionWithRef</name></member>
+      <member refid="classmty_1_1ModelData_1ac9d4b0f26a093949ea711efe9cfe63a8" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>scalarCouplings</name></member>
+      <member refid="classmty_1_1ModelData_1a7d8c765d5c4a94f63d7ad3cab69f3d8b" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>setEnableChecks</name></member>
+      <member refid="classmty_1_1ModelData_1a42cbb420a4fe3f3577e928eb96268fc6" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>setFlavor</name></member>
+      <member refid="classmty_1_1ModelData_1ab71f9b6d40da88fef4f2615bfdc60b58" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>setGauge</name></member>
+      <member refid="classmty_1_1ModelBuilder_1affaaada85c309e35fc21c790a9f8aa8d" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>setGaugeChoice</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a1290d493d05f515a87063bd6ee93202f" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>setGaugeChoice</name></member>
+      <member refid="classmty_1_1ModelData_1a95fe10e0d9db993173ae43179d1cd72e" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>setSpaceTime</name></member>
+      <member refid="classmty_1_1SM__Model_1ad9465e2c6ccf2b85eb38275d3cb89462" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>SM_Model</name></member>
+      <member refid="classmty_1_1ModelData_1a23fe2191603febad5a2fd095d1f7968c" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>spaceTime</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a1829895da09ff3d634ab5fd135e43a9d" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>spectra</name></member>
+      <member refid="classmty_1_1Model_1aaf53377f344c4c5682888621ad5b1743" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>squaredAmplitudeToPartialWidth</name></member>
+      <member refid="classmty_1_1THDM__Model_1aaa4be6c34f7f4ae6dbe500e48b784eb1" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>tan_beta</name></member>
+      <member refid="classmty_1_1ModelData_1af2e3b4ab81d40335e0fa43c21df1cf85" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>tensorCouplings</name></member>
+      <member refid="classmty_1_1THDM__Model_1ac061b96bfa3b49be650d07fefad4b65a" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>THDM_Model</name></member>
+      <member refid="classmty_1_1THDM__Model_1ae6a54bbc40821e0a936e2e8eaf11467e" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>theta_Weinberg</name></member>
+      <member refid="classmty_1_1GTHDM__Model_1a9e40d45a50bf5ba4890fe4f9620ad1e5" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>type</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a59480cfd60dee3fdca9aa4d5c6d91ed9" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>uniqueContent</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a74b837e7fa4355fafae26b68b2076de7" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>updateDiagonalizationData</name></member>
+      <member refid="classmty_1_1THDM__Model_1a6f59c9e317be4b161ccf995ab1a8dbd4" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>v</name></member>
+      <member refid="classmty_1_1THDM__Model_1aeb00176aa2c82bebc4f8a5f25adbb57c" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>v1</name></member>
+      <member refid="classmty_1_1THDM__Model_1a9b9a23aa3484b93278297cc93197b5c6" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>v2</name></member>
+      <member refid="classmty_1_1ModelData_1a284d23de3d1c3a8c00e604853567e800" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>writeDependencies</name></member>
+      <member refid="classmty_1_1ModelData_1a3180ccda678296961fd16f5650e86bf2" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>writeFlavor</name></member>
+      <member refid="classmty_1_1ModelData_1a8ff38807ea2f31c2e8806a39a819a309" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>writeGauge</name></member>
+      <member refid="classmty_1_1ModelData_1a51e3c9853c44b2fb8548b53662de61d4" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>writeHeader</name></member>
+      <member refid="classmty_1_1ModelData_1a673ce7f31f5c9c8d03d762b4b7e3483c" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>writeLagrangian</name></member>
+      <member refid="classmty_1_1ModelData_1a580945f23a58ab30d9005a36576e5449" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>writeMassAndWidth</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a003426353a45e41c3db269a80e08693a" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>writeMatrix</name></member>
+      <member refid="classmty_1_1ModelData_1a12bc1c99466d35a232ab048e1abe600f" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>writeParticles</name></member>
+      <member refid="classmty_1_1ModelBuilder_1ac1cd5456a604bc9098c2b48199a6d863" prot="protected" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>writeSpectrum</name></member>
+      <member refid="classmty_1_1Model_1afe489bc615b9c998b64e4ea012f726e5" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>~Model</name></member>
+      <member refid="classmty_1_1ModelBuilder_1a2dfe40f9395a1eed194203c19aa912f2" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>~ModelBuilder</name></member>
+      <member refid="classmty_1_1ModelData_1a7a3b96a9566e7372990b792cef551025" prot="public" virt="virtual"><scope>mty::GTHDM_Model</scope><name>~ModelData</name></member>
+      <member refid="classmty_1_1THDM__Model_1adb67f171515c7c6d2feb9f29e2e935b9" prot="public" virt="non-virtual"><scope>mty::GTHDM_Model</scope><name>~THDM_Model</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

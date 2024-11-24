@@ -1,0 +1,2328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1QuantumField" kind="class" language="C++" prot="public">
+    <compoundname>mty::QuantumField</compoundname>
+    <basecompoundref refid="classcsl_1_1TensorFieldElement" prot="public" virt="non-virtual">csl::TensorFieldElement</basecompoundref>
+    <derivedcompoundref refid="classmty_1_1PolarizationField" prot="public" virt="non-virtual">mty::PolarizationField</derivedcompoundref>
+    <includes refid="quantumField_8h" local="no">quantumField.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmty_1_1QuantumField_1ae622a763289d8d602ad57554333759a6" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::particle</definition>
+        <argsstring></argsstring>
+        <name>particle</name>
+        <qualifiedname>mty::QuantumField::particle</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Tells if the <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref>, if external, is a particle or an anti-particle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As for the attribute <bold>incoming</bold>, this boolean will determine if the field must be complex conjugated or not. Depending on its spin, if it is an incoming particle, outgoing anti-particle... <simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1a4b7a79a4a33e65d3df042ff147bd42e0" kindref="member">isIncomingParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a124ef33aebd4e8fb4f7e00188fd561cc" kindref="member">isIncomingAntiParticle()</ref>, <ref refid="classmty_1_1QuantumField_1ace26a46ae061be8a84a89a52ebf7d54f" kindref="member">isOutgoingParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a7ea42cd3dbbb27f53e4775378c37d119" kindref="member">isOutgoingAntiParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a5f400ddc0fadd265c7ca911c1aee3f38" kindref="member">setIncoming()</ref>, <ref refid="classmty_1_1QuantumField_1ae955a8d822aeed51ecdfa208dcae8ee8" kindref="member">setExternal()</ref>, <ref refid="classmty_1_1QuantumField_1a65613314e594223433c4db3ed354274e" kindref="member">setParticle()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1501" column="10" bodyfile="src/marty/core/quantumField.h" bodystart="1501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1QuantumField_1a60ce66df96fc405f7e0b2d201a2d1223" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::external</definition>
+        <argsstring></argsstring>
+        <name>external</name>
+        <qualifiedname>mty::QuantumField::external</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Tells if the field is external (initial of final state in computations) or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1a577a68c2d15d87186e4b162040daf027" kindref="member">isExternal()</ref>, <ref refid="classmty_1_1QuantumField_1ae955a8d822aeed51ecdfa208dcae8ee8" kindref="member">setExternal()</ref>, <ref refid="classmty_1_1QuantumField_1a4b7a79a4a33e65d3df042ff147bd42e0" kindref="member">isIncomingParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a124ef33aebd4e8fb4f7e00188fd561cc" kindref="member">isIncomingAntiParticle()</ref>, <ref refid="classmty_1_1QuantumField_1ace26a46ae061be8a84a89a52ebf7d54f" kindref="member">isOutgoingParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a7ea42cd3dbbb27f53e4775378c37d119" kindref="member">isOutgoingAntiParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a5f400ddc0fadd265c7ca911c1aee3f38" kindref="member">setIncoming()</ref>, <ref refid="classmty_1_1QuantumField_1ae955a8d822aeed51ecdfa208dcae8ee8" kindref="member">setExternal()</ref>, <ref refid="classmty_1_1QuantumField_1a65613314e594223433c4db3ed354274e" kindref="member">setParticle()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1510" column="10" bodyfile="src/marty/core/quantumField.h" bodystart="1510" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1QuantumField_1a6830008b476268ef1bbfb00b6145394d" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::onShell</definition>
+        <argsstring></argsstring>
+        <name>onShell</name>
+        <qualifiedname>mty::QuantumField::onShell</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1512" column="10" bodyfile="src/marty/core/quantumField.h" bodystart="1512" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1QuantumField_1a3fc8050f57b6a4006fefd6bdece0f553" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::incoming</definition>
+        <argsstring></argsstring>
+        <name>incoming</name>
+        <qualifiedname>mty::QuantumField::incoming</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Tells if the <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref>, if external, is a incoming or outgoing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As for the attribute <bold>particle</bold>, this boolean will determine if the field must be complex conjugated or not. Depending on its spin, if it is an incoming particle, outgoing anti-particle... <simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1a4b7a79a4a33e65d3df042ff147bd42e0" kindref="member">isIncomingParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a124ef33aebd4e8fb4f7e00188fd561cc" kindref="member">isIncomingAntiParticle()</ref>, <ref refid="classmty_1_1QuantumField_1ace26a46ae061be8a84a89a52ebf7d54f" kindref="member">isOutgoingParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a7ea42cd3dbbb27f53e4775378c37d119" kindref="member">isOutgoingAntiParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a5f400ddc0fadd265c7ca911c1aee3f38" kindref="member">setIncoming()</ref>, <ref refid="classmty_1_1QuantumField_1ae955a8d822aeed51ecdfa208dcae8ee8" kindref="member">setExternal()</ref>, <ref refid="classmty_1_1QuantumField_1a65613314e594223433c4db3ed354274e" kindref="member">setParticle()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1522" column="10" bodyfile="src/marty/core/quantumField.h" bodystart="1522" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1QuantumField_1a50ef4383637b511e7d4c0d32c1342bc6" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1IndexStructure" kindref="compound">csl::IndexStructure</ref></type>
+        <definition>csl::IndexStructure mty::QuantumField::derivativeIndices</definition>
+        <argsstring></argsstring>
+        <name>derivativeIndices</name>
+        <qualifiedname>mty::QuantumField::derivativeIndices</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para><ref refid="classcsl_1_1IndexStructure" kindref="compound">csl::IndexStructure</ref> allowing to store derivative indices, to keep track of terms in <formula id="245">$ \partial _\mu $</formula> in computations while having only <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> objects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This member allows to have an internal representation of the following definition for a field  <formula id="246">$
+A_\mu ^I $</formula>: <formula id="247">\[ \partial _\mu A_\nu ^I \equiv A^I_{\nu,\mu}. \]</formula> The derivative disappear and indices are transfered in the structure of the field. <simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1a853a3079edcfa4e9836f9ae1ad37bab1" kindref="member">addDerivative()</ref>, <ref refid="classmty_1_1QuantumField_1a9e5d48cd3da8b054bb85f2a75616a99d" kindref="member">hasDerivative()</ref>, <ref refid="classmty_1_1QuantumField_1a1346984a0e216d985da914df4d8a7ecd" kindref="member">getDerivativeStructure()</ref>, <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">wick::Graph</ref>, <ref refid="classmty_1_1wick_1_1WickCalculator" kindref="compound">wick::WickCalculator</ref>, <ref refid="classmty_1_1Expander" kindref="compound">Expander</ref>, AmplitudeCalculator. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1534" column="25" bodyfile="src/marty/core/quantumField.h" bodystart="1534" bodyend="1534"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1QuantumField_1ace3bd17de0fd4f00c9da36ad8342ccb4" prot="protected" static="no" mutable="no">
+        <type><ref refid="structmty_1_1PartnerShip" kindref="compound">PartnerShip</ref></type>
+        <definition>PartnerShip mty::QuantumField::partnerShip</definition>
+        <argsstring></argsstring>
+        <name>partnerShip</name>
+        <qualifiedname>mty::QuantumField::partnerShip</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Wanted partner for fermion ordering in amplitude results, together with the number defining the fermion. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Fermion ordering is determined outside (possibly by the user) and the information is stored in the quantum field itself to know what fermions must be paired together during simplifications. If fermions are not paired accordingly to the defined order (if there is one), Fierz identities are applied to correct the amplitude, like in the following with external fermions notes as 1,2,3,4 and <formula id="248">$ \Gamma^A $</formula> are chains of <formula id="249">$ \gamma$</formula>-matrices:    <formula id="250">\[
+   \left(\Gamma^A\right)_{14}\left(\Gamma^B\right)_{32} = \sum _{C,D}
+   C^{AB}_{CD}\left(\Gamma^C\right)_{12}\left(\Gamma^D\right)_{34},
+\]</formula> where <formula id="251">$ C^{AB}_{CD} $</formula> are scalar coefficients determined by the generalized Fierz identities. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1554" column="17" bodyfile="src/marty/core/quantumField.h" bodystart="1554" bodyend="1554"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1QuantumField_1adfeffd50ff4bb800d2cd50b392cac8f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::QuantumField::QuantumField</definition>
+        <argsstring>(const csl::Tensor &amp;t_vector, const csl::Parent &amp;t_parent)</argsstring>
+        <name>QuantumField</name>
+        <qualifiedname>mty::QuantumField::QuantumField</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &amp;</type>
+          <declname>t_vector</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Parent" kindref="compound">csl::Parent</ref> &amp;</type>
+          <declname>t_parent</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with two parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This constructor takes no index and concerns then scalar fields.<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_vector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space_time point of the field.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent (must be derived from <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref>) of the field. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1563" column="5" bodyfile="src/marty/core/quantumField.cpp" bodystart="1126" bodyend="1134"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1aff12303981b530b17fc82f2a2997f1cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::QuantumField::QuantumField</definition>
+        <argsstring>(const csl::Tensor &amp;t_vector, const csl::Parent &amp;t_parent, const std::vector&lt; csl::Index &gt; &amp;indices)</argsstring>
+        <name>QuantumField</name>
+        <qualifiedname>mty::QuantumField::QuantumField</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &amp;</type>
+          <declname>t_vector</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Parent" kindref="compound">csl::Parent</ref> &amp;</type>
+          <declname>t_parent</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with three parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_vector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space_time point of the field. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent (must be derived from <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref>) of the field. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set of indices of the tensor. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1572" column="5" bodyfile="src/marty/core/quantumField.cpp" bodystart="1136" bodyend="1146"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a6029119efa5db72ffafb816e8a3ac2f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::QuantumField::QuantumField</definition>
+        <argsstring>(const csl::Tensor &amp;t_vector, const csl::Parent &amp;t_parent, const csl::IndexStructure &amp;indices)</argsstring>
+        <name>QuantumField</name>
+        <qualifiedname>mty::QuantumField::QuantumField</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &amp;</type>
+          <declname>t_vector</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Parent" kindref="compound">csl::Parent</ref> &amp;</type>
+          <declname>t_parent</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1IndexStructure" kindref="compound">csl::IndexStructure</ref> &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with three parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_vector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space_time point of the field. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent (must be derived from <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref>) of the field. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set of indices of the tensor. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1583" column="5" bodyfile="src/marty/core/quantumField.cpp" bodystart="1148" bodyend="1158"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1af81cb9cf5a98896b9c77d44c35ecf460" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::QuantumField::QuantumField</definition>
+        <argsstring>()</argsstring>
+        <name>QuantumField</name>
+        <qualifiedname>mty::QuantumField::QuantumField</qualifiedname>
+        <briefdescription>
+<para>Default constructor. Initializes no parent and no space-time point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>May be useful in some situations but keep in mind that a non initialized <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> is an invalid state and may cause problems. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1597" column="5" bodyfile="src/marty/core/quantumField.cpp" bodystart="1122" bodyend="1124"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a79dcee9876d3e7352aca38ce02352b73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::QuantumField::QuantumField</definition>
+        <argsstring>(QuantumField const &amp;)=default</argsstring>
+        <name>QuantumField</name>
+        <qualifiedname>mty::QuantumField::QuantumField</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+<para>Default Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1602" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1aadba5baeba0a576edadd4c909d2b3ad0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::QuantumField::QuantumField</definition>
+        <argsstring>(QuantumField &amp;&amp;)=default</argsstring>
+        <name>QuantumField</name>
+        <qualifiedname>mty::QuantumField::QuantumField</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Default Move constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1607" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1ae88a0d99d2d7cabec01e5e1c2fe9eb4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> &amp;</type>
+        <definition>QuantumField &amp; mty::QuantumField::operator=</definition>
+        <argsstring>(const QuantumField &amp;other)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>mty::QuantumField::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Default copy assignement operator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1612" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a5ad89d2f98e3a5c67ff1b2c617ba40da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> &amp;</type>
+        <definition>QuantumField &amp; mty::QuantumField::operator=</definition>
+        <argsstring>(QuantumField &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>mty::QuantumField::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+<para>Default move assignement operator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1617" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a21eb48c15f45c87f9da003c6f64e7485" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref> *</type>
+        <definition>QuantumFieldParent * mty::QuantumField::getQuantumParent</definition>
+        <argsstring>() const</argsstring>
+        <name>getQuantumParent</name>
+        <qualifiedname>mty::QuantumField::getQuantumParent</qualifiedname>
+        <briefdescription>
+<para>Returns a pointer to the <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref> of the field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> inherits from <ref refid="classcsl_1_1TensorFieldElement" kindref="compound">csl::TensorFieldElement</ref>, its parent is in the form of a <ref refid="classcsl_1_1Parent" kindref="compound">csl::Parent</ref>. This function then makes a conversion to a <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">mty::QuantumFieldParent</ref> before returning the pointer. <simplesect kind="return"><para>A pointer to the <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref> of the field. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1626" column="31" bodyfile="src/marty/core/quantumField.h" bodystart="1626" bodyend="1629"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a97ee5591a7305c8366eb459fc8b5cc1b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref></type>
+        <definition>Particle mty::QuantumField::getParticle</definition>
+        <argsstring>() const</argsstring>
+        <name>getParticle</name>
+        <qualifiedname>mty::QuantumField::getParticle</qualifiedname>
+        <briefdescription>
+<para>Returns a <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref>, pointer to the parent of the field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> inherits from <ref refid="classcsl_1_1TensorFieldElement" kindref="compound">csl::TensorFieldElement</ref>, its parent is in the form of a <ref refid="classcsl_1_1Parent" kindref="compound">csl::Parent</ref>. This function then makes a conversion to a <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> before returning the pointer. <simplesect kind="return"><para>A shared pointer to the <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref> (i.e. <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref>) of the field. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1639" column="21" bodyfile="src/marty/core/quantumField.h" bodystart="1639" bodyend="1642"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1afa8d4736af7b3d3140389738645a5d77" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::QuantumField::getGaugeIrrep</definition>
+        <argsstring>() const</argsstring>
+        <name>getGaugeIrrep</name>
+        <qualifiedname>mty::QuantumField::getGaugeIrrep</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1644" column="10" bodyfile="src/marty/core/quantumField.h" bodystart="1644" bodyend="1648"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1ab28de732066818badf7f4d4c977ad997" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::QuantumField::getFlavorIrrep</definition>
+        <argsstring>() const</argsstring>
+        <name>getFlavorIrrep</name>
+        <qualifiedname>mty::QuantumField::getFlavorIrrep</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1649" column="10" bodyfile="src/marty/core/quantumField.h" bodystart="1649" bodyend="1653"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1ab9bf1cef7ea07e686a353627afd262a2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class GroupType</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto mty::QuantumField::getGroupIrrep</definition>
+        <argsstring>(GroupType &amp;&amp;group) const</argsstring>
+        <name>getGroupIrrep</name>
+        <qualifiedname>mty::QuantumField::getGroupIrrep</qualifiedname>
+        <param>
+          <type>GroupType &amp;&amp;</type>
+          <declname>group</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1655" column="10" bodyfile="src/marty/core/quantumField.h" bodystart="1655" bodyend="1660"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a593b4762f5ee7fec2eef8b7d002653e4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class FlavorGroupType</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto mty::QuantumField::getFlavorIrrep</definition>
+        <argsstring>(FlavorGroupType &amp;&amp;group) const</argsstring>
+        <name>getFlavorIrrep</name>
+        <qualifiedname>mty::QuantumField::getFlavorIrrep</qualifiedname>
+        <param>
+          <type>FlavorGroupType &amp;&amp;</type>
+          <declname>group</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1662" column="10" bodyfile="src/marty/core/quantumField.h" bodystart="1662" bodyend="1667"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1ac6a97786c11bd86e37bbabfd2032e3e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::QuantumField::getSpinDimension</definition>
+        <argsstring>() const</argsstring>
+        <name>getSpinDimension</name>
+        <qualifiedname>mty::QuantumField::getSpinDimension</qualifiedname>
+        <briefdescription>
+<para>See <ref refid="classmty_1_1QuantumFieldParent_1ab381755980173b5e294972ecb80d210d" kindref="member">QuantumFieldParent::getSpinDimension()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Twice the spin of the particle. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1673" column="9" bodyfile="src/marty/core/quantumField.cpp" bodystart="1166" bodyend="1169"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1aec43964b67a65c79d7f35ee5c09c078b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::QuantumField::getEnergyDimension</definition>
+        <argsstring>() const</argsstring>
+        <name>getEnergyDimension</name>
+        <qualifiedname>mty::QuantumField::getEnergyDimension</qualifiedname>
+        <briefdescription>
+<para>See <ref refid="classmty_1_1QuantumFieldParent_1a364703981874763aede019317b4a6876" kindref="member">QuantumFieldParent::getEnergyDimension()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The energy dimension of the particle. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1679" column="15" bodyfile="src/marty/core/quantumField.cpp" bodystart="1171" bodyend="1174"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1abe737537e11e85aa0a21b5fc8189db17" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::QuantumField::getMass</definition>
+        <argsstring>() const</argsstring>
+        <name>getMass</name>
+        <qualifiedname>mty::QuantumField::getMass</qualifiedname>
+        <briefdescription>
+<para>See <ref refid="classmty_1_1QuantumFieldParent_1a0cb6c12ea299cd5411c5b5dd7bcdebb3" kindref="member">QuantumFieldParent::getMass()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The mass of the particle. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1685" column="15" bodyfile="src/marty/core/quantumField.cpp" bodystart="1176" bodyend="1179"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a023bd1e18cf2a76997c961c8f23a7bd6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::QuantumField::getWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>getWidth</name>
+        <qualifiedname>mty::QuantumField::getWidth</qualifiedname>
+        <briefdescription>
+<para>See <ref refid="classmty_1_1QuantumFieldParent_1ad65026224bc3b7b92ce6ab3cbfea5b4e" kindref="member">QuantumFieldParent::getWidth()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The width of the particle. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1691" column="15" bodyfile="src/marty/core/quantumField.cpp" bodystart="1181" bodyend="1184"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a17324cd1e14e6deff5baa236a2e95acc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structmty_1_1PartnerShip" kindref="compound">PartnerShip</ref></type>
+        <definition>PartnerShip mty::QuantumField::getPartnerShip</definition>
+        <argsstring>() const</argsstring>
+        <name>getPartnerShip</name>
+        <qualifiedname>mty::QuantumField::getPartnerShip</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1693" column="17" bodyfile="src/marty/core/quantumField.h" bodystart="1693" bodyend="1696"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a5b50091f56927c3704750bc6564b2c4f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isChiral</definition>
+        <argsstring>() const</argsstring>
+        <name>isChiral</name>
+        <qualifiedname>mty::QuantumField::isChiral</qualifiedname>
+        <briefdescription>
+<para>See <ref refid="classmty_1_1QuantumFieldParent_1a1807a29c886971807e2d4653eb633c00" kindref="member">QuantumFieldParent::isChiral()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the particle is chiral. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1703" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1186" bodyend="1189"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1aa8997664616188bcdd2f44199e9b5155" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacemty_1a1ad7d9911e71ba89b54481af0a475112" kindref="member">Chirality</ref></type>
+        <definition>Chirality mty::QuantumField::getChirality</definition>
+        <argsstring>() const</argsstring>
+        <name>getChirality</name>
+        <qualifiedname>mty::QuantumField::getChirality</qualifiedname>
+        <briefdescription>
+<para>See <ref refid="classmty_1_1QuantumFieldParent_1a397f9c7ea63814716d521be8786f1e57" kindref="member">QuantumFieldParent::getChirality()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The chirality of the particle. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1709" column="15" bodyfile="src/marty/core/quantumField.cpp" bodystart="1191" bodyend="1194"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a278dde0714428eb3785cf509151bf23b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::QuantumField::setChirality</definition>
+        <argsstring>(Chirality chirality)</argsstring>
+        <name>setChirality</name>
+        <qualifiedname>mty::QuantumField::setChirality</qualifiedname>
+        <param>
+          <type><ref refid="namespacemty_1a1ad7d9911e71ba89b54481af0a475112" kindref="member">Chirality</ref></type>
+          <declname>chirality</declname>
+        </param>
+        <briefdescription>
+<para>Sets the chirality of the particle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should be called wisely. If the chirality is not consistent, it will raise an error. In particular, it should be used only for fermions that are linked (one <ref refid="classmty_1_1DiracFermion" kindref="compound">DiracFermion</ref> and two <ref refid="classmty_1_1WeylFermion" kindref="compound">WeylFermion</ref>). In this case, setting the chirality of the particle is equivalent to change its parent. <bold>chirality</bold> may be left or right (a <ref refid="classmty_1_1WeylFermion" kindref="compound">WeylFermion</ref> takes the place of the parent) or none (a <ref refid="classmty_1_1DiracFermion" kindref="compound">DiracFermion</ref> takes the place of the parent).<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chirality</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New chirality of the particle. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumFieldParent_1aac4107a07bbd8e8ac4e41043f1307a74" kindref="member">QuantumFieldParent::getDiracParent()</ref>, <ref refid="classmty_1_1QuantumFieldParent_1a62ddd65ed57c10250cee9705d9009101" kindref="member">QuantumFieldParent::getWeylFermion()</ref>, <ref refid="classmty_1_1QuantumFieldParent_1a31b0551bf9e7385e3d6c7a7e552a84cd" kindref="member">QuantumFieldParent::getChiralityCounterPart()</ref>, <ref refid="classcsl_1_1AbstractElement_1af55db25120693bf64ed360105cb4357c" kindref="member">setParent()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1725" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1196" bodyend="1218"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a9ccc3f57dddcf23aa071aaec95e865ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isGaugeBoson</definition>
+        <argsstring>() const</argsstring>
+        <name>isGaugeBoson</name>
+        <qualifiedname>mty::QuantumField::isGaugeBoson</qualifiedname>
+        <briefdescription>
+<para>See <ref refid="classmty_1_1QuantumFieldParent_1ae64f76a58e690f825e88bddae58a8c46" kindref="member">QuantumFieldParent::isGaugeBoson()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the particle is a gauge boson. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1732" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1220" bodyend="1223"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1ab95fb894ccabb45cb98d53ecd39bb24d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::QuantumField::getXiGauge</definition>
+        <argsstring>() const</argsstring>
+        <name>getXiGauge</name>
+        <qualifiedname>mty::QuantumField::getXiGauge</qualifiedname>
+        <briefdescription>
+<para>See <ref refid="classmty_1_1QuantumFieldParent_1a65d784173a4e77ec4311c7537ae927f6" kindref="member">QuantumFieldParent::getXiGauge()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The expression of the <formula id="87">$ \xi $</formula> parameter of a gauge boson. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1738" column="15" bodyfile="src/marty/core/quantumField.cpp" bodystart="1225" bodyend="1228"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1acc9269fdde281a7d904476894e9db5d1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::QuantumField::getSquaredMass</definition>
+        <argsstring>() const</argsstring>
+        <name>getSquaredMass</name>
+        <qualifiedname>mty::QuantumField::getSquaredMass</qualifiedname>
+        <briefdescription>
+<para>Returns the mass squared of the field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Equivalent to pow_s(getMass(), 2). <simplesect kind="return"><para>The squared mass of the particle. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1745" column="15" bodyfile="src/marty/core/quantumField.cpp" bodystart="1230" bodyend="1233"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a96782145ac95e7a9ad82f9916412c861" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::getConjugated</definition>
+        <argsstring>() const</argsstring>
+        <name>getConjugated</name>
+        <qualifiedname>mty::QuantumField::getConjugated</qualifiedname>
+        <briefdescription>
+<para>Tells if the field is complex conjugated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the field is complex conjugated. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+<simplesect kind="see"><para>Complexified::conjugated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1753" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1235" bodyend="1238"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a577a68c2d15d87186e4b162040daf027" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isExternal</definition>
+        <argsstring>() const</argsstring>
+        <name>isExternal</name>
+        <qualifiedname>mty::QuantumField::isExternal</qualifiedname>
+        <briefdescription>
+<para>Tells if the field is an external field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the field is external. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1a60ce66df96fc405f7e0b2d201a2d1223" kindref="member">external</ref>, <ref refid="classmty_1_1QuantumField_1ae955a8d822aeed51ecdfa208dcae8ee8" kindref="member">setExternal()</ref>, <ref refid="classmty_1_1Insertion" kindref="compound">Insertion</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1761" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1240" bodyend="1243"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a66a165ed82e7d23f90eeeef8907ebc8d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isOnShell</definition>
+        <argsstring>() const</argsstring>
+        <name>isOnShell</name>
+        <qualifiedname>mty::QuantumField::isOnShell</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1763" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1245" bodyend="1248"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1aed70d11cf0ed685949f3839b6a76a579" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isBosonic</definition>
+        <argsstring>() const</argsstring>
+        <name>isBosonic</name>
+        <qualifiedname>mty::QuantumField::isBosonic</qualifiedname>
+        <briefdescription>
+<para>See <ref refid="classmty_1_1QuantumFieldParent_1af13d71075337a3f77b6d156c5c09463d" kindref="member">QuantumFieldParent::isBosonic()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the field is bosonic. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1770" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1250" bodyend="1253"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1ac9e5134f83efa15ca290fbfd783ceecd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isFermionic</definition>
+        <argsstring>() const</argsstring>
+        <name>isFermionic</name>
+        <qualifiedname>mty::QuantumField::isFermionic</qualifiedname>
+        <briefdescription>
+<para>See <ref refid="classmty_1_1QuantumFieldParent_1ad631001ecde4625d89797f67076b8b4b" kindref="member">QuantumFieldParent::isFermionic()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the field is fermionic. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1777" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1255" bodyend="1258"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a05d6a78309d01329628515dc52d7a47c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isAntiCommuting</definition>
+        <argsstring>() const</argsstring>
+        <name>isAntiCommuting</name>
+        <qualifiedname>mty::QuantumField::isAntiCommuting</qualifiedname>
+        <briefdescription>
+<para>See <ref refid="classmty_1_1QuantumFieldParent_1ad2fd32f767cedfc9fa9184012b223c86" kindref="member">QuantumFieldParent::isAntiCommuting()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the field is anti-commuting (fermion or ghost). </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1784" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1260" bodyend="1263"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a9dcbb04f7d097520e3400f38490be490" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isSelfConjugate</definition>
+        <argsstring>() const</argsstring>
+        <name>isSelfConjugate</name>
+        <qualifiedname>mty::QuantumField::isSelfConjugate</qualifiedname>
+        <briefdescription>
+<para>See <ref refid="classmty_1_1QuantumFieldParent_1ae6dc406d641ac0bdb37ac0312062ec67" kindref="member">QuantumFieldParent::isSelfConjugate()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the field is real. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1791" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1265" bodyend="1268"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a8fd0d9ad227900df5231b0912c6a7320" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isReal</definition>
+        <argsstring>() const override</argsstring>
+        <name>isReal</name>
+        <qualifiedname>mty::QuantumField::isReal</qualifiedname>
+        <reimplements refid="classcsl_1_1Complexified_1a4c69b308c3d305cfa532eb5c653072a0">isReal</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1793" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1270" bodyend="1273"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a89f12e2b66695abe68ccbea02f938481" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isPhysical</definition>
+        <argsstring>() const</argsstring>
+        <name>isPhysical</name>
+        <qualifiedname>mty::QuantumField::isPhysical</qualifiedname>
+        <briefdescription>
+<para>Tells if the field is physical, i.e. may appear in external legs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the field is not physical, it will be forbidden in external legs. In particular, the function <ref refid="classmty_1_1QuantumField_1ae955a8d822aeed51ecdfa208dcae8ee8" kindref="member">setExternal()</ref> will yield an error. For example, ghosts and goldstone bosons are not physical. <simplesect kind="see"><para>#physical, <ref refid="classmty_1_1QuantumField_1a577a68c2d15d87186e4b162040daf027" kindref="member">isExternal()</ref>, <ref refid="classmty_1_1QuantumField_1ae955a8d822aeed51ecdfa208dcae8ee8" kindref="member">setExternal()</ref>, setPhysical(), <ref refid="classmty_1_1Insertion" kindref="compound">Insertion</ref>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>True</bold> if the field is physical. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1804" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1275" bodyend="1278"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1aa77f6ef396dafe210ce39c313dbe1558" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isContractibleWith</definition>
+        <argsstring>(const QuantumField &amp;other) const</argsstring>
+        <name>isContractibleWith</name>
+        <qualifiedname>mty::QuantumField::isContractibleWith</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>See <ref refid="classmty_1_1QuantumFieldParent_1a60555bdb05193f4b1467c45ea137fdca" kindref="member">QuantumFieldParent::isContractibleWith()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Field to test if there is a contraction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the field is contractible with the other field. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1812" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1280" bodyend="1284"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a21bcc290b0a99b07fff257d1482aca0d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isExactlyContractiblewith</definition>
+        <argsstring>(const QuantumField &amp;other) const</argsstring>
+        <name>isExactlyContractiblewith</name>
+        <qualifiedname>mty::QuantumField::isExactlyContractiblewith</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Tests if the the field is exactly contractible with the other one. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The condition that does not appear in <ref refid="classmty_1_1QuantumField_1aa77f6ef396dafe210ce39c313dbe1558" kindref="member">isContractibleWith()</ref> is the complex conjugation of the field. In the first function, we test only that a propagator exists between the two abstract fields. Here, we test also if either the field is self-conjugate or one an only one of the two fields is complex conjugated. Other wise, even if a propagator exists, the contraction gives zero and this function returns false. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Field with which we test the contraction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the actual contraction of the two fields is not zero. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1826" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1286" bodyend="1291"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a853a3079edcfa4e9836f9ae1ad37bab1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::QuantumField::addDerivative</definition>
+        <argsstring>(const csl::Index &amp;index)</argsstring>
+        <name>addDerivative</name>
+        <qualifiedname>mty::QuantumField::addDerivative</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Adds a derivative index to the the field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Derivative index to add. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1a50ef4383637b511e7d4c0d32c1342bc6" kindref="member">derivativeIndices</ref>, <ref refid="classmty_1_1QuantumField_1a9e5d48cd3da8b054bb85f2a75616a99d" kindref="member">hasDerivative()</ref>, <ref refid="classmty_1_1QuantumField_1a1346984a0e216d985da914df4d8a7ecd" kindref="member">getDerivativeStructure()</ref>, <ref refid="classmty_1_1QuantumField_1a9b7f3b55bd7c6b8c5677e095fd0ca880" kindref="member">setDerivativeStructure()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1834" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1293" bodyend="1296"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a9e5d48cd3da8b054bb85f2a75616a99d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::hasDerivative</definition>
+        <argsstring>() const</argsstring>
+        <name>hasDerivative</name>
+        <qualifiedname>mty::QuantumField::hasDerivative</qualifiedname>
+        <briefdescription>
+<para>Tells if the field has derivative indices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the derivative structure <ref refid="classmty_1_1QuantumField_1a50ef4383637b511e7d4c0d32c1342bc6" kindref="member">derivativeIndices</ref> is not empty. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1a50ef4383637b511e7d4c0d32c1342bc6" kindref="member">derivativeIndices</ref>, <ref refid="classmty_1_1QuantumField_1a853a3079edcfa4e9836f9ae1ad37bab1" kindref="member">addDerivative()</ref>, <ref refid="classmty_1_1QuantumField_1a1346984a0e216d985da914df4d8a7ecd" kindref="member">getDerivativeStructure()</ref>, <ref refid="classmty_1_1QuantumField_1a9b7f3b55bd7c6b8c5677e095fd0ca880" kindref="member">setDerivativeStructure()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1844" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1298" bodyend="1303"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a1346984a0e216d985da914df4d8a7ecd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1IndexStructure" kindref="compound">csl::IndexStructure</ref></type>
+        <definition>csl::IndexStructure mty::QuantumField::getDerivativeStructure</definition>
+        <argsstring>() const</argsstring>
+        <name>getDerivativeStructure</name>
+        <qualifiedname>mty::QuantumField::getDerivativeStructure</qualifiedname>
+        <briefdescription>
+<para>Returns the derivative structure of the field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The derivative structure of the field. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1a50ef4383637b511e7d4c0d32c1342bc6" kindref="member">derivativeIndices</ref>, <ref refid="classmty_1_1QuantumField_1a853a3079edcfa4e9836f9ae1ad37bab1" kindref="member">addDerivative()</ref>, <ref refid="classmty_1_1QuantumField_1a9e5d48cd3da8b054bb85f2a75616a99d" kindref="member">hasDerivative()</ref>, <ref refid="classmty_1_1QuantumField_1a9b7f3b55bd7c6b8c5677e095fd0ca880" kindref="member">setDerivativeStructure()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1852" column="25" bodyfile="src/marty/core/quantumField.cpp" bodystart="1305" bodyend="1308"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1aa99e18f5bb2373f598632bf4437525b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::QuantumField::getPropagator</definition>
+        <argsstring>(const QuantumField &amp;other, csl::Tensor &amp;vertex) const</argsstring>
+        <name>getPropagator</name>
+        <qualifiedname>mty::QuantumField::getPropagator</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &amp;</type>
+          <declname>vertex</declname>
+        </param>
+        <briefdescription>
+<para>Returns the propagator with another <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function checks if the propagator is non null with <ref refid="classmty_1_1QuantumField_1a21bcc290b0a99b07fff257d1482aca0d" kindref="member">isExactlyContractiblewith()</ref>. Then, it ensure that if the field is not self-conjugate the conjugated field is on the right of the contraction (and adds a minus sign if the field is anti-commuting). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other field in the contraction. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vertex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Momentum integrated in the propagator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The expression of the propagator. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1a21bcc290b0a99b07fff257d1482aca0d" kindref="member">isExactlyContractiblewith()</ref>, <ref refid="classmty_1_1QuantumField_1a05d6a78309d01329628515dc52d7a47c" kindref="member">isAntiCommuting()</ref>, <ref refid="classmty_1_1QuantumField_1a9dcbb04f7d097520e3400f38490be490" kindref="member">isSelfConjugate()</ref>, <ref refid="classmty_1_1QuantumFieldParent_1a3ddaf2c0d83917607b5cc3e774f3bec7" kindref="member">QuantumFieldParent::getPropagator()</ref>, <ref refid="classmty_1_1QuantumFieldParent_1a71641abf3402e8b15ca420ee8c00c66e" kindref="member">QuantumFieldParent::getInvPropagator()</ref>, , <ref refid="classmty_1_1QuantumFieldParent_1aba9df2478df3b7be3621fa5f55c1fe8c" kindref="member">QuantumFieldParent::propagator</ref>, Propagator_func, <ref refid="quantumFieldTheory_8h" kindref="compound">quantumFieldTheory.h</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1869" column="15" bodyfile="src/marty/core/quantumField.cpp" bodystart="1310" bodyend="1327"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a2bb6b0c05f1b9d5b81c7823181d9d502" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::QuantumField::getLSZInsertion</definition>
+        <argsstring>(const csl::Tensor &amp;momentum, bool ruleMode=false, bool lock=false) const</argsstring>
+        <name>getLSZInsertion</name>
+        <qualifiedname>mty::QuantumField::getLSZInsertion</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &amp;</type>
+          <declname>momentum</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ruleMode</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>lock</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Returns the expression of the LSZ insertion corresponding to the field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>momentum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Momentum of the insertion. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ruleMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean that is true if we want to determine the feynman rule (in this case the insertion is not the same). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The expressoin of the LSZ insertion. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1880" column="15" bodyfile="src/marty/core/quantumField.cpp" bodystart="1330" bodyend="1335"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a122cc63aa922d8a8296d0159f0c96b4d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref></type>
+        <definition>QuantumField mty::QuantumField::getConjugatedField</definition>
+        <argsstring>() const</argsstring>
+        <name>getConjugatedField</name>
+        <qualifiedname>mty::QuantumField::getConjugatedField</qualifiedname>
+        <briefdescription>
+<para>Copies the field in a new new one and conjugates it before returning it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The conjugated field. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1aaed41060f2bebfdbf3ffc7699413c01f" kindref="member">conjugate()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1890" column="18" bodyfile="src/marty/core/quantumField.cpp" bodystart="1337" bodyend="1342"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a1983a5ae691c9e8bcf09aa3e6d948638" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::QuantumField::contraction</definition>
+        <argsstring>(csl::Expr_info other) const override</argsstring>
+        <name>contraction</name>
+        <qualifiedname>mty::QuantumField::contraction</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1ad874fc858295a737e6ce884530f1109b">contraction</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">csl::Expr_info</ref></type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>Applies a special contraction of indices. Before calling this function we must check that there is indeed a contraction by calling the function <ref refid="classmty_1_1QuantumField_1a36e3defd0cde58df005e9e8ebb64a135" kindref="member">hasContractionProperty()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression with which <bold>*this</bold> contracts. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the contraction. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1892" column="15" bodyfile="src/marty/core/quantumField.cpp" bodystart="1448" bodyend="1451"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a375b00daa42049a481d29f128ab1aa27" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::QuantumField::matrixChargeConjugation</definition>
+        <argsstring>(csl::Expr_info other) const</argsstring>
+        <name>matrixChargeConjugation</name>
+        <qualifiedname>mty::QuantumField::matrixChargeConjugation</qualifiedname>
+        <reimplementedby refid="classmty_1_1PolarizationField_1a7ed4933c7a1c1ed81f070dd17b095bd9">matrixChargeConjugation</reimplementedby>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">csl::Expr_info</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1894" column="23" bodyfile="src/marty/core/quantumField.cpp" bodystart="1574" bodyend="1590"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1ae5c5bb4225bf70153eb194af7bbf1dc2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>optional&lt; csl::Expr &gt; mty::QuantumField::getComplexConjugate</definition>
+        <argsstring>() const override</argsstring>
+        <name>getComplexConjugate</name>
+        <qualifiedname>mty::QuantumField::getComplexConjugate</qualifiedname>
+        <reimplements refid="classcsl_1_1Complexified_1a9d3fec789b00de1625df53232da4cf30">getComplexConjugate</reimplements>
+        <briefdescription>
+<para>Returns the complex conjugate expression of the field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The complex conjugate expression of the field. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1aaed41060f2bebfdbf3ffc7699413c01f" kindref="member">conjugate()</ref>, <ref refid="classmty_1_1QuantumField_1a122cc63aa922d8a8296d0159f0c96b4d" kindref="member">getConjugatedField()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1901" column="19" bodyfile="src/marty/core/quantumField.cpp" bodystart="1344" bodyend="1350"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1aaed41060f2bebfdbf3ffc7699413c01f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::QuantumField::conjugate</definition>
+        <argsstring>()</argsstring>
+        <name>conjugate</name>
+        <qualifiedname>mty::QuantumField::conjugate</qualifiedname>
+        <briefdescription>
+<para>Conjugates the field and changes its particle number. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For example, a particle <formula id="93">$ \phi (X) $</formula> as insertion is an outgoing particle (otherwise it would be complex conjugated). Conjugating the particle, we get <formula id="252">$ \phi ^*(X) $</formula> an outgoing antiparticle. <simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1ae622a763289d8d602ad57554333759a6" kindref="member">particle</ref>, <ref refid="classmty_1_1QuantumField_1a122cc63aa922d8a8296d0159f0c96b4d" kindref="member">getConjugatedField()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1910" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1352" bodyend="1358"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1ae955a8d822aeed51ecdfa208dcae8ee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::QuantumField::setExternal</definition>
+        <argsstring>(bool t_external)</argsstring>
+        <name>setExternal</name>
+        <qualifiedname>mty::QuantumField::setExternal</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>t_external</declname>
+        </param>
+        <briefdescription>
+<para>Sets the external property of the particle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_external</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Must be true if the field is an external leg, false otherwise. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1a60ce66df96fc405f7e0b2d201a2d1223" kindref="member">external</ref>, <ref refid="classmty_1_1QuantumField_1a577a68c2d15d87186e4b162040daf027" kindref="member">isExternal()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1918" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1360" bodyend="1368"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a6b9492f126bd927094349b7404cc4b3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::QuantumField::setOnShell</definition>
+        <argsstring>(bool t_onShell)</argsstring>
+        <name>setOnShell</name>
+        <qualifiedname>mty::QuantumField::setOnShell</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>t_onShell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1920" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1370" bodyend="1383"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a5f400ddc0fadd265c7ca911c1aee3f38" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mty::QuantumField::setIncoming</definition>
+        <argsstring>(bool t_incoming)</argsstring>
+        <name>setIncoming</name>
+        <qualifiedname>mty::QuantumField::setIncoming</qualifiedname>
+        <reimplementedby refid="classmty_1_1PolarizationField_1a59bb94aecc80d7e1315d779611d52424">setIncoming</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>t_incoming</declname>
+        </param>
+        <briefdescription>
+<para>Sets the incoming property of the particle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_incoming</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Must be true if the field is incoming, false otherwise. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1a3fc8050f57b6a4006fefd6bdece0f553" kindref="member">incoming</ref>, <ref refid="classmty_1_1QuantumField_1aaa14e7f910b9d982119b3e719927811d" kindref="member">isIncoming()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1928" column="18" bodyfile="src/marty/core/quantumField.cpp" bodystart="1385" bodyend="1389"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a65613314e594223433c4db3ed354274e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mty::QuantumField::setParticle</definition>
+        <argsstring>(bool t_particle)</argsstring>
+        <name>setParticle</name>
+        <qualifiedname>mty::QuantumField::setParticle</qualifiedname>
+        <reimplementedby refid="classmty_1_1PolarizationField_1a04fde4c6635d65781653459f29d9fa94">setParticle</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>t_particle</declname>
+        </param>
+        <briefdescription>
+<para>Sets the particle property of the particle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_particle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Must be true if the field is a particle, false otherwise. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1ae622a763289d8d602ad57554333759a6" kindref="member">particle</ref>, <ref refid="classmty_1_1QuantumField_1a1a62ae33943f0b891b8c6e026ed7414b" kindref="member">isParticle()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1936" column="18" bodyfile="src/marty/core/quantumField.cpp" bodystart="1391" bodyend="1397"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a6e76c0b9eefc827cf69e54ba90ca7236" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::QuantumField::setPartnerShip</definition>
+        <argsstring>(PartnerShip const &amp;t_partnerShip)</argsstring>
+        <name>setPartnerShip</name>
+        <qualifiedname>mty::QuantumField::setPartnerShip</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1PartnerShip" kindref="compound">PartnerShip</ref> const &amp;</type>
+          <declname>t_partnerShip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1938" column="10" bodyfile="src/marty/core/quantumField.h" bodystart="1938" bodyend="1941"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a9b7f3b55bd7c6b8c5677e095fd0ca880" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::QuantumField::setDerivativeStructure</definition>
+        <argsstring>(const csl::IndexStructure &amp;structure)</argsstring>
+        <name>setDerivativeStructure</name>
+        <qualifiedname>mty::QuantumField::setDerivativeStructure</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1IndexStructure" kindref="compound">csl::IndexStructure</ref> &amp;</type>
+          <declname>structure</declname>
+        </param>
+        <briefdescription>
+<para>Sets the derivative structure of the field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>structure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New derivative structure. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1a50ef4383637b511e7d4c0d32c1342bc6" kindref="member">derivativeIndices</ref>, <ref refid="classmty_1_1QuantumField_1a1346984a0e216d985da914df4d8a7ecd" kindref="member">getDerivativeStructure()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1948" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1399" bodyend="1402"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a043afe4327a0d3025e55f8ab34ce84fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::getCommutable</definition>
+        <argsstring>() const override</argsstring>
+        <name>getCommutable</name>
+        <qualifiedname>mty::QuantumField::getCommutable</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractElement_1ab3418bd6d3548316885c8bda0a7464b8">getCommutable</reimplements>
+        <briefdescription>
+<para>Tells if the field is a commutable object in products. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the field is not anti commuting. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+<simplesect kind="see"><para>#bosonic, <ref refid="classmty_1_1QuantumField_1aed70d11cf0ed685949f3839b6a76a579" kindref="member">isBosonic()</ref>, <ref refid="classmty_1_1QuantumField_1ac9e5134f83efa15ca290fbfd783ceecd" kindref="member">isFermionic()</ref>, <ref refid="classmty_1_1QuantumField_1a05d6a78309d01329628515dc52d7a47c" kindref="member">isAntiCommuting()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1956" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1410" bodyend="1413"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a00022859c6f9a262b82fde583c7b675e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::commutesWith</definition>
+        <argsstring>(csl::Expr_info other, int sign=-1) const override</argsstring>
+        <name>commutesWith</name>
+        <qualifiedname>mty::QuantumField::commutesWith</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractBuildingBlock_1add4dd8d4ed4ea0d8817fdd79abd744cc">commutesWith</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">csl::Expr_info</ref></type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sign</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Tells if the field commutes with another expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function assumes only that for two anti-commuting fields <formula id="253">$ \psi _1 $</formula> and <formula id="254">$ \psi _2 $</formula> we have  <formula id="255">$\{\psi _1, \psi
+_2\}=0$</formula>. This function returns in this case true iif <bold>sign</bold> = +1 (anticommutation). For all other cases, this function returns true if <bold>sign</bold> = -1. In particular, beware that anti-commuting fields embedded in more complicated expressions are not taken into account for now. This means that <formula id="256">$ \{\psi_ 1, \psi _2+\psi _3\}\neq 0 $</formula> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression with which we test the commutation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sign</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sign of the commutation. +1 means anticommutation, -1 (default) means commutation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the field commutes with <bold>other</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1973" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1415" bodyend="1436"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a36e3defd0cde58df005e9e8ebb64a135" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::hasContractionProperty</definition>
+        <argsstring>(csl::Expr_info expr) const override</argsstring>
+        <name>hasContractionProperty</name>
+        <qualifiedname>mty::QuantumField::hasContractionProperty</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aa31e08c251d96b8ea8ec8d385895c1ff">hasContractionProperty</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">csl::Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Tells if the field has an indicial contraction property with another expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This functoin overrides the one of <ref refid="classcsl_1_1TensorFieldElement" kindref="compound">csl::TensorFieldElement</ref> and make sure to return false each time.<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other expression. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>False</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1982" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1438" bodyend="1446"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a7e4429f566881e4a32e04f735af59766" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>csl::unique_Expr</type>
+        <definition>csl::unique_Expr mty::QuantumField::copy_unique</definition>
+        <argsstring>() const override</argsstring>
+        <name>copy_unique</name>
+        <qualifiedname>mty::QuantumField::copy_unique</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aaa996819710adc3b7529c74a628be623">copy_unique</reimplements>
+        <briefdescription>
+<para>Returns a copy of the field in a std::unique_ptr. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A std::unique_ptr&lt;Abstract&gt;, copy of the field. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1988" column="22" bodyfile="src/marty/core/quantumField.cpp" bodystart="1453" bodyend="1456"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1ac75fb08538ad65a86c3cd814de873e4c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isIndexed</definition>
+        <argsstring>() const override</argsstring>
+        <name>isIndexed</name>
+        <qualifiedname>mty::QuantumField::isIndexed</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a216b7bd3930fbf047e5bf8f69e9b964c">isIndexed</reimplements>
+        <briefdescription>
+<para>Tells if the field is indexed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the field has proper indices or derivative indices. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1995" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1458" bodyend="1461"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a45e66c19f29f1b8e3e6e0a8244a13772" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::operator==</definition>
+        <argsstring>(csl::Expr_info other) const override</argsstring>
+        <name>operator==</name>
+        <qualifiedname>mty::QuantumField::operator==</qualifiedname>
+        <reimplements refid="classcsl_1_1Complexified_1a10b02cb2da960264c19926a76a859488">operator==</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">csl::Expr_info</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Compares the field with another expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Uses TensorFieldElement::operator==() and takes care of comparing the derivative structures of two fields if the other expression is another field (otherwise this function returns false). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression to compare. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the other expression is the same field, with the same structure and space-time point. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+<simplesect kind="see"><para>TensorFieldElement::operator==(), <ref refid="classmty_1_1QuantumField_1a50ef4383637b511e7d4c0d32c1342bc6" kindref="member">derivativeIndices</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="2007" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1501" bodyend="1527"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a60fc0d4a50c72d78f81bd9c73329d4f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::compareWithDummy</definition>
+        <argsstring>(csl::Expr_info other, std::map&lt; csl::Index, csl::Index &gt; &amp;constraints, bool keepAllCosntraints=false) const override</argsstring>
+        <name>compareWithDummy</name>
+        <qualifiedname>mty::QuantumField::compareWithDummy</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a7caee12abb451168149779a668dfc59e">compareWithDummy</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">csl::Expr_info</ref></type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type>std::map&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref>, <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt; &amp;</type>
+          <declname>constraints</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>keepAllCosntraints</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Compares the field with another expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Uses TensorFieldElement::compareWithDummy() and takes care of comparing the derivative structures of two fields if the other expression is another field (otherwise this function returns false). Dummy indices may compare succesfully with each other with different names. Only the abstract index structure is compared. Free indices must match exactly.<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression to compare.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>constraints</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mapping constraints between already compared dummy indices.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keepAllCosntraints</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tell if constraints must be relaxed once pairs of indices are matched (default = false, the user should not need that). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the other expression is the same field, with the same structure (allowing different dummy indices) and space-time point. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+<simplesect kind="see"><para>TensorFieldElement::compareWithDummy(), <ref refid="classmty_1_1QuantumField_1a50ef4383637b511e7d4c0d32c1342bc6" kindref="member">derivativeIndices</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="2025" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1463" bodyend="1499"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a0865ee25ad907e14d1714b2b9a58bb50" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::operator&lt;</definition>
+        <argsstring>(const QuantumField &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>mty::QuantumField::operator&lt;</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Compares the simplicity of the field with another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other field. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the field is simpler than <bold>other</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+<simplesect kind="see"><para>TensorFieldElement::operator&lt;(). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="2036" column="5" bodyfile="src/marty/core/quantumField.cpp" bodystart="1529" bodyend="1532"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a4b59d5c82236938b43adb052458f6e86" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::operator==</definition>
+        <argsstring>(const QuantumField &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>mty::QuantumField::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Compares the field with another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other field. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the field is equal to <bold>other</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+<simplesect kind="see"><para>operator==(csl::Expr_info). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="2045" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1534" bodyend="1537"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1ae8393e21442455aa6c2201b424c331d1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::operator!=</definition>
+        <argsstring>(const QuantumField &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>mty::QuantumField::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Compares the field with another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other field. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the field is equal to <bold>other</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+<simplesect kind="see"><para>operator==(csl::Expr_info). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="2054" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1539" bodyend="1542"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a1a62ae33943f0b891b8c6e026ed7414b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isParticle</definition>
+        <argsstring>() const</argsstring>
+        <name>isParticle</name>
+        <qualifiedname>mty::QuantumField::isParticle</qualifiedname>
+        <briefdescription>
+<para>Tells if the (external) field is a particle or anti particle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the field is a particle. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1ae622a763289d8d602ad57554333759a6" kindref="member">particle</ref>, <ref refid="classmty_1_1QuantumField_1a65613314e594223433c4db3ed354274e" kindref="member">setParticle()</ref>, <ref refid="classmty_1_1QuantumField_1aaa14e7f910b9d982119b3e719927811d" kindref="member">isIncoming()</ref>, <ref refid="classmty_1_1QuantumField_1a4b7a79a4a33e65d3df042ff147bd42e0" kindref="member">isIncomingParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a124ef33aebd4e8fb4f7e00188fd561cc" kindref="member">isIncomingAntiParticle()</ref>, <ref refid="classmty_1_1QuantumField_1ace26a46ae061be8a84a89a52ebf7d54f" kindref="member">isOutgoingParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a7ea42cd3dbbb27f53e4775378c37d119" kindref="member">isOutgoingAntiParticle()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="2064" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1544" bodyend="1547"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1aaa14e7f910b9d982119b3e719927811d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isIncoming</definition>
+        <argsstring>() const</argsstring>
+        <name>isIncoming</name>
+        <qualifiedname>mty::QuantumField::isIncoming</qualifiedname>
+        <briefdescription>
+<para>Tells if the (external) field is incoming or outgoing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the field is incoming. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1a3fc8050f57b6a4006fefd6bdece0f553" kindref="member">incoming</ref>, <ref refid="classmty_1_1QuantumField_1a5f400ddc0fadd265c7ca911c1aee3f38" kindref="member">setIncoming()</ref>, <ref refid="classmty_1_1QuantumField_1aaa14e7f910b9d982119b3e719927811d" kindref="member">isIncoming()</ref>, <ref refid="classmty_1_1QuantumField_1a4b7a79a4a33e65d3df042ff147bd42e0" kindref="member">isIncomingParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a124ef33aebd4e8fb4f7e00188fd561cc" kindref="member">isIncomingAntiParticle()</ref>, <ref refid="classmty_1_1QuantumField_1ace26a46ae061be8a84a89a52ebf7d54f" kindref="member">isOutgoingParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a7ea42cd3dbbb27f53e4775378c37d119" kindref="member">isOutgoingAntiParticle()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="2074" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1549" bodyend="1552"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a4b7a79a4a33e65d3df042ff147bd42e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isIncomingParticle</definition>
+        <argsstring>() const</argsstring>
+        <name>isIncomingParticle</name>
+        <qualifiedname>mty::QuantumField::isIncomingParticle</qualifiedname>
+        <briefdescription>
+<para>Tells if the (external) field is an incoming particle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the field is incoming and is a particle. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1aaa14e7f910b9d982119b3e719927811d" kindref="member">isIncoming()</ref>, <ref refid="classmty_1_1QuantumField_1a1a62ae33943f0b891b8c6e026ed7414b" kindref="member">isParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a124ef33aebd4e8fb4f7e00188fd561cc" kindref="member">isIncomingAntiParticle()</ref>, <ref refid="classmty_1_1QuantumField_1ace26a46ae061be8a84a89a52ebf7d54f" kindref="member">isOutgoingParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a7ea42cd3dbbb27f53e4775378c37d119" kindref="member">isOutgoingAntiParticle()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="2083" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1554" bodyend="1557"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1ace26a46ae061be8a84a89a52ebf7d54f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isOutgoingParticle</definition>
+        <argsstring>() const</argsstring>
+        <name>isOutgoingParticle</name>
+        <qualifiedname>mty::QuantumField::isOutgoingParticle</qualifiedname>
+        <briefdescription>
+<para>Tells if the (external) field is an outgoing particle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the field is outgoing and is a particle. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1aaa14e7f910b9d982119b3e719927811d" kindref="member">isIncoming()</ref>, <ref refid="classmty_1_1QuantumField_1a1a62ae33943f0b891b8c6e026ed7414b" kindref="member">isParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a124ef33aebd4e8fb4f7e00188fd561cc" kindref="member">isIncomingAntiParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a4b7a79a4a33e65d3df042ff147bd42e0" kindref="member">isIncomingParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a7ea42cd3dbbb27f53e4775378c37d119" kindref="member">isOutgoingAntiParticle()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="2092" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1559" bodyend="1562"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a124ef33aebd4e8fb4f7e00188fd561cc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isIncomingAntiParticle</definition>
+        <argsstring>() const</argsstring>
+        <name>isIncomingAntiParticle</name>
+        <qualifiedname>mty::QuantumField::isIncomingAntiParticle</qualifiedname>
+        <briefdescription>
+<para>Tells if the (external) field is an incoming anti-particle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the field is incoming and is an anti-particle. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1aaa14e7f910b9d982119b3e719927811d" kindref="member">isIncoming()</ref>, <ref refid="classmty_1_1QuantumField_1a1a62ae33943f0b891b8c6e026ed7414b" kindref="member">isParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a4b7a79a4a33e65d3df042ff147bd42e0" kindref="member">isIncomingParticle()</ref>, <ref refid="classmty_1_1QuantumField_1ace26a46ae061be8a84a89a52ebf7d54f" kindref="member">isOutgoingParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a7ea42cd3dbbb27f53e4775378c37d119" kindref="member">isOutgoingAntiParticle()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="2101" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1564" bodyend="1567"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1QuantumField_1a7ea42cd3dbbb27f53e4775378c37d119" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::QuantumField::isOutgoingAntiParticle</definition>
+        <argsstring>() const</argsstring>
+        <name>isOutgoingAntiParticle</name>
+        <qualifiedname>mty::QuantumField::isOutgoingAntiParticle</qualifiedname>
+        <briefdescription>
+<para>Tells if the (external) field is an outgoing an anti-particle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the field is outgoing and is an anti-particle. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1aaa14e7f910b9d982119b3e719927811d" kindref="member">isIncoming()</ref>, <ref refid="classmty_1_1QuantumField_1a1a62ae33943f0b891b8c6e026ed7414b" kindref="member">isParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a124ef33aebd4e8fb4f7e00188fd561cc" kindref="member">isIncomingAntiParticle()</ref>, <ref refid="classmty_1_1QuantumField_1a4b7a79a4a33e65d3df042ff147bd42e0" kindref="member">isIncomingParticle()</ref>, <ref refid="classmty_1_1QuantumField_1ace26a46ae061be8a84a89a52ebf7d54f" kindref="member">isOutgoingParticle()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="2110" column="10" bodyfile="src/marty/core/quantumField.cpp" bodystart="1569" bodyend="1572"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmty_1_1QuantumField_1a982bb26341792dc39df621b9cc8ffd70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr quantumfield_s</definition>
+        <argsstring>(Args &amp;&amp;... args)</argsstring>
+        <name>quantumfield_s</name>
+        <qualifiedname>mty::QuantumField::quantumfield_s</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Creates and returns an expression corresponding to a <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic template parameters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variadic function parameters, may be anything. Forwarded to csl::make_shared(). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The expression of the field. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/quantumField.h" line="1589" column="22" bodyfile="src/marty/core/quantumField.h" bodystart="2135" bodyend="2140"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class deriving from <ref refid="classcsl_1_1TensorFieldElement" kindref="compound">csl::TensorFieldElement</ref>, may enter expressions. In contrary to <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref>, it is not a inherited from any class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Any quantum field (boson, fermion, gauge ...) will have <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> instances. This simplifies the use of a generic instance, <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref>, that will ask its parent to know its own properties (contractions, commutation, spin, mass, ...). All physical information is contained in <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref> and its derived classes, except the few attributes of <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> that are instance-specific. <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> objects will not be in general directly created by the user. Giving a <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref> or a <ref refid="classmty_1_1Particle" kindref="compound">Particle</ref>, one should used their operator()() to create a <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> instance, as an actual expression that may enter in mathematical expressions. <simplesect kind="see"><para><ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref>, <ref refid="classmty_1_1Particle" kindref="compound">Particle</ref>, <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref>, TensorFieldElement, <ref refid="classmty_1_1Particle_1aeaddd6473d2f8f8f0fc707248af9bc4c" kindref="member">Particle::operator()()</ref>. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>csl::Abstract</label>
+        <link refid="classcsl_1_1Abstract"/>
+      </node>
+      <node id="6">
+        <label>csl::AbstractBuildingBlock</label>
+        <link refid="classcsl_1_1AbstractBuildingBlock"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>csl::AbstractElement</label>
+        <link refid="classcsl_1_1AbstractElement"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>csl::Complexified</label>
+        <link refid="classcsl_1_1Complexified"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>csl::TensorElement</label>
+        <link refid="classcsl_1_1TensorElement"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>csl::TensorFieldElement</label>
+        <link refid="classcsl_1_1TensorFieldElement"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mty::PolarizationField</label>
+        <link refid="classmty_1_1PolarizationField"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::QuantumField</label>
+        <link refid="classmty_1_1QuantumField"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>csl::Abstract</label>
+        <link refid="classcsl_1_1Abstract"/>
+      </node>
+      <node id="6">
+        <label>csl::AbstractBuildingBlock</label>
+        <link refid="classcsl_1_1AbstractBuildingBlock"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>csl::AbstractElement</label>
+        <link refid="classcsl_1_1AbstractElement"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>csl::Complexified</label>
+        <link refid="classcsl_1_1Complexified"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>csl::IndexStructure</label>
+        <link refid="classcsl_1_1IndexStructure"/>
+      </node>
+      <node id="10">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>csl::TensorElement</label>
+        <link refid="classcsl_1_1TensorElement"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>index</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>csl::TensorFieldElement</label>
+        <link refid="classcsl_1_1TensorFieldElement"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>point</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mty::PartnerShip</label>
+        <link refid="structmty_1_1PartnerShip"/>
+      </node>
+      <node id="1">
+        <label>mty::QuantumField</label>
+        <link refid="classmty_1_1QuantumField"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>derivativeIndices</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>partnerShip</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="8">
+        <label>std::shared_ptr&lt; csl::AbstractParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/quantumField.h" line="1488" column="1" bodyfile="src/marty/core/quantumField.h" bodystart="1488" bodyend="2111"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1Abstract_1ad5fee68c1f3dcbda0e936926fed17616" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>Abstract</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1a64aaa989689a7e8c262e6d9fceaff10f" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>AbstractBuildingBlock</name></member>
+      <member refid="classcsl_1_1AbstractElement_1a12ebb2cd662c44ca2e60106d630dbc48" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>AbstractElement</name></member>
+      <member refid="classcsl_1_1AbstractElement_1a90b37b4752b24ab6cb0a29dc3329eea4" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>AbstractElement</name></member>
+      <member refid="classcsl_1_1Abstract_1a5549ac0c186b3c6febf332245a25a82c" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>addAntiSymmetry</name></member>
+      <member refid="classcsl_1_1Abstract_1abbab11282e5c6ac46b018642ff129f47" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>addDependency</name></member>
+      <member refid="classmty_1_1QuantumField_1a853a3079edcfa4e9836f9ae1ad37bab1" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>addDerivative</name></member>
+      <member refid="classcsl_1_1Abstract_1a101219973341a39cf15f07e5e1aa388f" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>addition_own</name></member>
+      <member refid="classcsl_1_1Abstract_1ad431770faa4291116a50175193a11a88" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>addSymmetry</name></member>
+      <member refid="classcsl_1_1TensorElement_1aa2605b68051617e35fc2a443c2b38a2c" prot="protected" virt="non-virtual"><scope>mty::QuantumField</scope><name>adjustMetricDeltaParent</name></member>
+      <member refid="classcsl_1_1Abstract_1acd972aed8326d4c13534594e061ee6da" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>antisymmetrise</name></member>
+      <member refid="classcsl_1_1TensorElement_1a02db643378663eb5f17011937c5c9557" prot="protected" virt="non-virtual"><scope>mty::QuantumField</scope><name>applyBrokenIndices</name></member>
+      <member refid="classcsl_1_1Complexified_1ac8174f246df45364467fffd925027808" prot="protected" virt="non-virtual"><scope>mty::QuantumField</scope><name>applyComplexPropertiesOn</name></member>
+      <member refid="classcsl_1_1Complexified_1a7b2b037721656af10cb29a077a567b30" prot="protected" virt="non-virtual"><scope>mty::QuantumField</scope><name>applyComplexPropertiesOn</name></member>
+      <member refid="classcsl_1_1Abstract_1a61d3ab932182226f4670a62bbb22af4e" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>applyDiracDelta</name></member>
+      <member refid="classcsl_1_1Abstract_1a316956fea77627a716500a2bbfc1f3b7" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>applyOperator</name></member>
+      <member refid="classcsl_1_1TensorElement_1ad6f100f8c15bee5c29d97d40549a6e18" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>applyPermutation</name></member>
+      <member refid="classcsl_1_1TensorElement_1afbfaf24db5ee68ab64a2378248fdf7e4" prot="protected" virt="virtual"><scope>mty::QuantumField</scope><name>applySelfStructureOn</name></member>
+      <member refid="classcsl_1_1TensorElement_1a6ec375934423dbb60f6d00ea13ec7f80" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>askTerm</name></member>
+      <member refid="classcsl_1_1Abstract_1aad54ed41b2ce9bad3364fe30ad1a0d71" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>begin</name></member>
+      <member refid="classcsl_1_1Abstract_1adff373df9477d4e38581d09cc6d2fee4" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>begin</name></member>
+      <member refid="classcsl_1_1TensorElement_1aafc27871bb78f0a07df8aa097d3d8a0e" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>breakSpace</name></member>
+      <member refid="classcsl_1_1Abstract_1aa4cba37520821432f37e212fefbc2534" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractElement::"><scope>mty::QuantumField</scope><name>breakSpace</name></member>
+      <member refid="classcsl_1_1TensorElement_1ad9d1474eb8d1c53835ffb3891e01b020" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>checkIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a1ebd84082bb93418408cc0babe2dffe2" prot="public" virt="virtual" ambiguityscope="csl::AbstractElement::"><scope>mty::QuantumField</scope><name>checkIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1ab3746f1d3667846824ea51b8a2e00d31" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>collect</name></member>
+      <member refid="classmty_1_1QuantumField_1a00022859c6f9a262b82fde583c7b675e" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>commutesWith</name></member>
+      <member refid="classcsl_1_1TensorElement_1ad78eb0b8122b22db79ea59b4af50f7c7" prot="protected" virt="non-virtual"><scope>mty::QuantumField</scope><name>comparePermutations</name></member>
+      <member refid="classmty_1_1QuantumField_1a60fc0d4a50c72d78f81bd9c73329d4f2" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>compareWithDummy</name></member>
+      <member refid="classcsl_1_1Abstract_1a0f16fda9fe72a89c61ece36101a11d95" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractElement::"><scope>mty::QuantumField</scope><name>compareWithDummy</name></member>
+      <member refid="classcsl_1_1Complexified_1a6333b0f548411b1712301806c21c2261" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>Complexified</name></member>
+      <member refid="classmty_1_1QuantumField_1aaed41060f2bebfdbf3ffc7699413c01f" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>conjugate</name></member>
+      <member refid="classcsl_1_1Complexified_1a785754f2eac5813fcf8aa87cc0b456bf" prot="protected" virt="non-virtual"><scope>mty::QuantumField</scope><name>conjugated</name></member>
+      <member refid="classcsl_1_1Abstract_1aed79d20a0821205e6430c80a474117d3" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>contractIndex</name></member>
+      <member refid="classmty_1_1QuantumField_1a1983a5ae691c9e8bcf09aa3e6d948638" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1Abstract_1abd35096982e92b669ea55d960c5f44be" prot="public" virt="virtual" ambiguityscope="csl::AbstractElement::"><scope>mty::QuantumField</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1Abstract_1af29c2898c5d3ba96de8018a0838c402c" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>copy</name></member>
+      <member refid="classmty_1_1QuantumField_1a7e4429f566881e4a32e04f735af59766" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>copy_unique</name></member>
+      <member refid="classcsl_1_1Abstract_1a09648782dcf2e81abb5b864f476cc410" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>deepCopy</name></member>
+      <member refid="classcsl_1_1TensorElement_1ad0dbe5ebe94a2c21e0a8a195730820c4" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>deepRefresh</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1a43644a7030777b98a28cbaa15f229bfa" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>dependsExplicitlyOn</name></member>
+      <member refid="classcsl_1_1Abstract_1a0b26ad7a44e497af296318287bac539a" prot="public" virt="virtual" ambiguityscope="csl::AbstractElement::"><scope>mty::QuantumField</scope><name>dependsExplicitlyOn</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1ab452e8d298be5e58e28e92aa6eca1c25" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>dependsOn</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1aeb70122164b2685fc291090258f59b9b" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>dependsOn</name></member>
+      <member refid="classmty_1_1QuantumField_1a50ef4383637b511e7d4c0d32c1342bc6" prot="protected" virt="non-virtual"><scope>mty::QuantumField</scope><name>derivativeIndices</name></member>
+      <member refid="classcsl_1_1TensorElement_1a7a1fc7737cce9da527d3796d2fd711d8" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>derive</name></member>
+      <member refid="classcsl_1_1Abstract_1aeb08811cf370616477a92075e4a218ee" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>determinant</name></member>
+      <member refid="classcsl_1_1Abstract_1a1578c74aee1050b806a67e7a81a67f5c" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>division_own</name></member>
+      <member refid="classcsl_1_1Abstract_1a4cc7a46deaa3eaa7593909d74e76d4af" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>dot</name></member>
+      <member refid="classcsl_1_1Abstract_1a0c3c3fe5010f24e8a8765ea06415c003" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>empty</name></member>
+      <member refid="classcsl_1_1Abstract_1a61e4e80d998a888a1a74d9ea3e10c0f1" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>end</name></member>
+      <member refid="classcsl_1_1Abstract_1ae2761d54f13310e13f5076d565edd7ef" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>end</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1a55ad56ca57e69bdcb5b77e6d0bf254c7" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>evaluate</name></member>
+      <member refid="classcsl_1_1Abstract_1a543d5a4f0432e166b492ad28a860a65f" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>evaluateScalar</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1a7cbbd2edd75a84057f1622826c1efd3a" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>expand</name></member>
+      <member refid="classcsl_1_1Abstract_1aeb48aaaa856582b6359037fe94d2419b" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>expand_if</name></member>
+      <member refid="classcsl_1_1Abstract_1aa2696a0feb43766ef54e1e3dd3d6d134" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>exponentiation_own</name></member>
+      <member refid="classmty_1_1QuantumField_1a60ce66df96fc405f7e0b2d201a2d1223" prot="protected" virt="non-virtual"><scope>mty::QuantumField</scope><name>external</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1a2f12cede626ece5382c9869d32c32146" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>factor</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1a447f940bf0a08d13297fde0b50b4cb84" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>factor</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1a4000d3f204c1957f5cffc0677dd754c0" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>findSubExpression</name></member>
+      <member refid="classcsl_1_1Abstract_1a021946e84d8c1a019908cac578b16fe8" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getAllDependencies</name></member>
+      <member refid="classcsl_1_1Abstract_1ac33a42309d629d47bfdbede4e152414e" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a06f542034e95744148f4fce5a4893e63" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a898d6cf2a7f348feacab189447bee1eb" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1aa689fb64eecb86edbde6c745d1ce756b" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1TensorElement_1ad6f8f7e5b89936e1fa39661b1975c3ce" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getCanonicalPermutation</name></member>
+      <member refid="classmty_1_1QuantumField_1aa8997664616188bcdd2f44199e9b5155" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getChirality</name></member>
+      <member refid="classmty_1_1QuantumField_1a043afe4327a0d3025e55f8ab34ce84fe" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getCommutable</name></member>
+      <member refid="classcsl_1_1Complexified_1ab70d880a6d5eaf52b7d365c9d0c29f86" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getComplexArgument</name></member>
+      <member refid="classmty_1_1QuantumField_1ae5c5bb4225bf70153eb194af7bbf1dc2" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getComplexConjugate</name></member>
+      <member refid="classcsl_1_1Complexified_1a05b65b2f6cdbc13a1d757a3f90ae7c0c" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getComplexModulus</name></member>
+      <member refid="classcsl_1_1AbstractElement_1a0b2c014c2c35cad27d9df5240bfb8548" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getComplexProperty</name></member>
+      <member refid="classmty_1_1QuantumField_1a96782145ac95e7a9ad82f9916412c861" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getConjugated</name></member>
+      <member refid="classmty_1_1QuantumField_1a122cc63aa922d8a8296d0159f0c96b4d" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getConjugatedField</name></member>
+      <member refid="classcsl_1_1Abstract_1af04c0e4426f0bf9df365afe0148d59df" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getContractedPair</name></member>
+      <member refid="classcsl_1_1TensorElement_1a5f1b1ae7f3655cccd70bf09a60075b7b" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getContractionProperties</name></member>
+      <member refid="classcsl_1_1Abstract_1aa22f0e4c9c91f43b5cd61cbb873869eb" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getDeltaMinus</name></member>
+      <member refid="classcsl_1_1Abstract_1a69a657baf1c35ed581e9db2c47a71c99" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getDeltaPlus</name></member>
+      <member refid="classcsl_1_1Abstract_1a9531d78d67c82e288c0130da5b1ba80b" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getDenom</name></member>
+      <member refid="classmty_1_1QuantumField_1a1346984a0e216d985da914df4d8a7ecd" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getDerivativeStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a5856c3d55a6d1406970f3656e61efe8e" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getDim</name></member>
+      <member refid="classcsl_1_1Abstract_1a77e067fc57c0c2e70d141079455fdbd7" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getElementary</name></member>
+      <member refid="classmty_1_1QuantumField_1aec43964b67a65c79d7f35ee5c09c078b" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getEnergyDimension</name></member>
+      <member refid="classcsl_1_1Abstract_1ac513c930caa9939c2b9557f36a34ee69" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getExponents</name></member>
+      <member refid="classcsl_1_1Abstract_1ac34c9c6f05e692faeed2f030514787ad" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getFactors</name></member>
+      <member refid="classmty_1_1QuantumField_1ab28de732066818badf7f4d4c977ad997" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getFlavorIrrep</name></member>
+      <member refid="classmty_1_1QuantumField_1a593b4762f5ee7fec2eef8b7d002653e4" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getFlavorIrrep</name></member>
+      <member refid="classcsl_1_1Abstract_1aa4136dc23f1fba4bf897b54c8592ccfc" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getFreeIndexStructure</name></member>
+      <member refid="classmty_1_1QuantumField_1afa8d4736af7b3d3140389738645a5d77" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getGaugeIrrep</name></member>
+      <member refid="classmty_1_1QuantumField_1ab9bf1cef7ea07e686a353627afd262a2" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getGroupIrrep</name></member>
+      <member refid="classcsl_1_1TensorElement_1ab38b54f3efd6b9950b6d3334a224caa1" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getHermitianConjugate</name></member>
+      <member refid="classcsl_1_1TensorElement_1ac1596174400a2ccd49d56b736fa8114a" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getHermitianConjugate</name></member>
+      <member refid="classcsl_1_1Complexified_1a11702661de0ea3b9c59b1f23af0ca0c0" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getImaginaryPart</name></member>
+      <member refid="classcsl_1_1TensorElement_1a029c4358822daed54f4f775032896790" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getIndex</name></member>
+      <member refid="classcsl_1_1TensorElement_1a3dc05ca45a03e8a7f8459812e07b85f6" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1ae6a9a9ef3efd6bb83b62c0a353742d25" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractElement::"><scope>mty::QuantumField</scope><name>getIndexStructure</name></member>
+      <member refid="classcsl_1_1TensorElement_1abe312de6a76204dfcdc98cf4711bf353" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getIndexStructureView</name></member>
+      <member refid="classcsl_1_1TensorElement_1a15b5b8ef2a249fda36f7491b634270fb" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getIndexStructureView</name></member>
+      <member refid="classcsl_1_1Abstract_1a3d6b1e294cf24dea17c3c4361226138b" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getInfBoundary</name></member>
+      <member refid="classcsl_1_1AbstractElement_1ad8d4ceaa06fb30861b1ce4336a465f54" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getLatexName</name></member>
+      <member refid="classcsl_1_1Abstract_1a652101e34b2efa43114150e9af3c79d5" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getLibDependency</name></member>
+      <member refid="classmty_1_1QuantumField_1a2bb6b0c05f1b9d5b81c7823181d9d502" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getLSZInsertion</name></member>
+      <member refid="classmty_1_1QuantumField_1abe737537e11e85aa0a21b5fc8189db17" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getMass</name></member>
+      <member refid="classcsl_1_1AbstractElement_1ae80699e259632a43c4f69a125b64ae30" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getName</name></member>
+      <member refid="classcsl_1_1Abstract_1aa034448201c9e7998bbbb5e409636b30" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getNArgs</name></member>
+      <member refid="classcsl_1_1Abstract_1a42125e9765a771c47819548d342b0b28" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getNContractedPairs</name></member>
+      <member refid="classcsl_1_1Abstract_1a204dbd37b63432cb08932b995f49d3f4" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getNFactor</name></member>
+      <member refid="classcsl_1_1TensorElement_1a5ddd03efb94ea0017def76cd6777f745" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getNIndices</name></member>
+      <member refid="classcsl_1_1Abstract_1a6aa6bcc7cb8ee1574f29dc6ab6c6f0ed" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getNum</name></member>
+      <member refid="classcsl_1_1Abstract_1aad25c117c8dfc4d9718ba41e8d3f33a6" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getNumericalFactor</name></member>
+      <member refid="classcsl_1_1Abstract_1a9c3ec3dfe1fbd8ead5c8d9aca421a863" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getOperand</name></member>
+      <member refid="classcsl_1_1Abstract_1a9500a21d75d03c695ec0c76493600b38" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getOrder</name></member>
+      <member refid="classcsl_1_1Abstract_1ae89eb7b1a9e0259a60154563f3315907" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getOrderOf</name></member>
+      <member refid="classcsl_1_1AbstractElement_1a9e50d48ea0ee472c5c07f3985cc6c641" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getParent</name></member>
+      <member refid="classcsl_1_1AbstractElement_1acde43ab4cab544c3c0aa0d695e67b4ad" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getParent_info</name></member>
+      <member refid="classcsl_1_1Abstract_1aea8459b3206eb3a2297eeea7688e9520" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getParity</name></member>
+      <member refid="classmty_1_1QuantumField_1a97ee5591a7305c8366eb459fc8b5cc1b" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getParticle</name></member>
+      <member refid="classmty_1_1QuantumField_1a17324cd1e14e6deff5baa236a2e95acc" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getPartnerShip</name></member>
+      <member refid="classcsl_1_1TensorElement_1aa0f1ab4f63aa28f3c759a666fb15636a" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getPermutations</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1ac80748b3601cff1ed0df3b721316b950" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getPoint</name></member>
+      <member refid="classcsl_1_1AbstractElement_1a028ecff66278c1e385280b761388b929" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getPolynomialTerm</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1aab050fd18460d4842d8972a990363b0c" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getPrimaryType</name></member>
+      <member refid="classcsl_1_1Abstract_1a07489d0569bc983718796d21c73f34b3" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getProduct</name></member>
+      <member refid="classmty_1_1QuantumField_1aa99e18f5bb2373f598632bf4437525b7" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getPropagator</name></member>
+      <member refid="classmty_1_1QuantumField_1a21eb48c15f45c87f9da003c6f64e7485" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getQuantumParent</name></member>
+      <member refid="classcsl_1_1Complexified_1a5de9b50162c5af5177a928e855e6b71b" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getRealPart</name></member>
+      <member refid="classcsl_1_1Abstract_1a5b77f008f4b95030641224877004f06c" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getRegularExpression</name></member>
+      <member refid="classcsl_1_1Abstract_1a625efe55a17b97a1c0f085bdbf3a962a" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getShape</name></member>
+      <member refid="classcsl_1_1Abstract_1aa83df1d9dc202457113e5b38bd694fae" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getSign</name></member>
+      <member refid="classmty_1_1QuantumField_1ac6a97786c11bd86e37bbabfd2032e3e8" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getSpinDimension</name></member>
+      <member refid="classmty_1_1QuantumField_1acc9269fdde281a7d904476894e9db5d1" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getSquaredMass</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1aa9049a79ee6b2dfd50dbfae7d48560c9" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getSubSymbols</name></member>
+      <member refid="classcsl_1_1Abstract_1a7dcdc11b64c8c515933882168d0792ef" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a413c50b2663f57d38c1d3ec3cfeaa3ce" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a26a0854bca4c47e84a1da36a3de8c49f" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a29261a946b3398b6129237620754a8b9" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a8a067b70756c4eef758aa88076a95162" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1aeaf8154e39ff211b12e6382e675ccaad" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getSum</name></member>
+      <member refid="classcsl_1_1Abstract_1a2fcc223dbf5d880e923c07df142df5c8" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getSupBoundary</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1a58c627e31c2a42adec4caf39030123aa" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getTerm</name></member>
+      <member refid="classcsl_1_1TensorElement_1ae47bc7e79e284964b2a8447bf917f48f" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getTransposed</name></member>
+      <member refid="classcsl_1_1TensorElement_1a7cc7fb9e1f39bcebc90170e8dd526d43" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getTransposed</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1ab78b88ff1b49707ee98aee3211214044" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getType</name></member>
+      <member refid="classcsl_1_1Abstract_1a78f98ba06476e464e3fd2fce0d1f8243" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getValue</name></member>
+      <member refid="classcsl_1_1Abstract_1a628563238145f3a9acc331f1a89ce32f" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getValued</name></member>
+      <member refid="classcsl_1_1Abstract_1ae85f810bbadbc792210c958e8f1b2ffb" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getVariable</name></member>
+      <member refid="classcsl_1_1Abstract_1ac83c44ae1e5315a38083bdb7acd8f3fa" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getVectorArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a0188b049736016c970a2513ed9f6931f" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>getVectorialModulus</name></member>
+      <member refid="classmty_1_1QuantumField_1a023bd1e18cf2a76997c961c8f23a7bd6" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getWidth</name></member>
+      <member refid="classmty_1_1QuantumField_1ab95fb894ccabb45cb98d53ecd39bb24d" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>getXiGauge</name></member>
+      <member refid="classcsl_1_1TensorElement_1acb6f22178e26a8cc694ae2ffc01c2075" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>hasChainContractionProperty</name></member>
+      <member refid="classmty_1_1QuantumField_1a36e3defd0cde58df005e9e8ebb64a135" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>hasContractionProperty</name></member>
+      <member refid="classmty_1_1QuantumField_1a9e5d48cd3da8b054bb85f2a75616a99d" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>hasDerivative</name></member>
+      <member refid="classcsl_1_1Abstract_1a8c42723e8bc6334c99f00898cc1d59d7" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>hermitian</name></member>
+      <member refid="classmty_1_1QuantumField_1a3fc8050f57b6a4006fefd6bdece0f553" prot="protected" virt="non-virtual"><scope>mty::QuantumField</scope><name>incoming</name></member>
+      <member refid="classcsl_1_1TensorElement_1a7f7b50e1bbd4157e8b2797740aa31b89" prot="protected" virt="non-virtual"><scope>mty::QuantumField</scope><name>index</name></member>
+      <member refid="classcsl_1_1Abstract_1a5437e7f685edf8549e6d3b34572343f8" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>insert</name></member>
+      <member refid="classcsl_1_1Abstract_1a1b68943aa7ecf60a63af0f2f368eef8f" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>inverseMatrix</name></member>
+      <member refid="classcsl_1_1Abstract_1a9347e75b0cd0b75e0f0a38db93b29d83" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>isAnOperator</name></member>
+      <member refid="classmty_1_1QuantumField_1a05d6a78309d01329628515dc52d7a47c" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>isAntiCommuting</name></member>
+      <member refid="classcsl_1_1Abstract_1ac09992d147b39388c8936b3bff648930" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>isArbitrary</name></member>
+      <member refid="classmty_1_1QuantumField_1aed70d11cf0ed685949f3839b6a76a579" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>isBosonic</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1aee083330a4490359012cf0e656758a44" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>isBuildingBlock</name></member>
+      <member refid="classmty_1_1QuantumField_1a5b50091f56927c3704750bc6564b2c4f" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>isChiral</name></member>
+      <member refid="classcsl_1_1Complexified_1a3f583f018b34b63b321976a8bcedf430" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>isComplexConjugate</name></member>
+      <member refid="classmty_1_1QuantumField_1aa77f6ef396dafe210ce39c313dbe1558" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>isContractibleWith</name></member>
+      <member refid="classcsl_1_1Abstract_1a464f4f0613db9b4b0a4efe26a3a03d60" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>isEmpty</name></member>
+      <member refid="classmty_1_1QuantumField_1a21bcc290b0a99b07fff257d1482aca0d" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>isExactlyContractiblewith</name></member>
+      <member refid="classmty_1_1QuantumField_1a577a68c2d15d87186e4b162040daf027" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>isExternal</name></member>
+      <member refid="classmty_1_1QuantumField_1ac9e5134f83efa15ca290fbfd783ceecd" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>isFermionic</name></member>
+      <member refid="classmty_1_1QuantumField_1a9ccc3f57dddcf23aa071aaec95e865ef" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>isGaugeBoson</name></member>
+      <member refid="classcsl_1_1Abstract_1af2ce38838e35c5785f92373a1d830668" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>isHermitianConjugate</name></member>
+      <member refid="classmty_1_1QuantumField_1aaa14e7f910b9d982119b3e719927811d" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>isIncoming</name></member>
+      <member refid="classmty_1_1QuantumField_1a124ef33aebd4e8fb4f7e00188fd561cc" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>isIncomingAntiParticle</name></member>
+      <member refid="classmty_1_1QuantumField_1a4b7a79a4a33e65d3df042ff147bd42e0" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>isIncomingParticle</name></member>
+      <member refid="classmty_1_1QuantumField_1ac75fb08538ad65a86c3cd814de873e4c" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>isIndexed</name></member>
+      <member refid="classcsl_1_1Abstract_1a9a014bfd266b5f8471f23580e271979b" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>isInteger</name></member>
+      <member refid="classmty_1_1QuantumField_1a66a165ed82e7d23f90eeeef8907ebc8d" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>isOnShell</name></member>
+      <member refid="classmty_1_1QuantumField_1a7ea42cd3dbbb27f53e4775378c37d119" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>isOutgoingAntiParticle</name></member>
+      <member refid="classmty_1_1QuantumField_1ace26a46ae061be8a84a89a52ebf7d54f" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>isOutgoingParticle</name></member>
+      <member refid="classmty_1_1QuantumField_1a1a62ae33943f0b891b8c6e026ed7414b" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>isParticle</name></member>
+      <member refid="classmty_1_1QuantumField_1a89f12e2b66695abe68ccbea02f938481" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>isPhysical</name></member>
+      <member refid="classcsl_1_1AbstractElement_1a9f3e30eeaace6c5c21cda6895daa2de9" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>isPolynomial</name></member>
+      <member refid="classcsl_1_1Complexified_1aa3de4cb73eb624830da28f07ef0fa4d4" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>isPurelyImaginary</name></member>
+      <member refid="classmty_1_1QuantumField_1a8fd0d9ad227900df5231b0912c6a7320" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>isReal</name></member>
+      <member refid="classmty_1_1QuantumField_1a9dcbb04f7d097520e3400f38490be490" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>isSelfConjugate</name></member>
+      <member refid="classcsl_1_1Abstract_1ab79c1d8df9e6b1a3eca66958f7dc489d" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>matchShape</name></member>
+      <member refid="classmty_1_1QuantumField_1a375b00daa42049a481d29f128ab1aa27" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>matrixChargeConjugation</name></member>
+      <member refid="classcsl_1_1TensorElement_1ae7a6d8fc44218dcade0332e215f4b653" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>memoryOverhead</name></member>
+      <member refid="classcsl_1_1Abstract_1a4f5ed458ba62f5b4cf61a9e1f8568af1" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>multiplication_own</name></member>
+      <member refid="classmty_1_1QuantumField_1a6830008b476268ef1bbfb00b6145394d" prot="protected" virt="non-virtual"><scope>mty::QuantumField</scope><name>onShell</name></member>
+      <member refid="classmty_1_1QuantumField_1ae8393e21442455aa6c2201b424c331d1" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1af5b62a6308638064c42da80e9cc2cb7e" prot="public" virt="virtual" ambiguityscope="csl::TensorFieldElement::"><scope>mty::QuantumField</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1af4fd1b57df371dac7ccfd5a909620e49" prot="public" virt="virtual" ambiguityscope="csl::TensorFieldElement::"><scope>mty::QuantumField</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a96de5935a58a96d4c5b1e47966488923" prot="public" virt="non-virtual" ambiguityscope="csl::TensorFieldElement::"><scope>mty::QuantumField</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1ac99a619abde7e4c58f39e14d4d20fcf5" prot="public" virt="non-virtual" ambiguityscope="csl::TensorFieldElement::"><scope>mty::QuantumField</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a45206de7c7773b3cb150451ee3eb379e" prot="public" virt="non-virtual" ambiguityscope="csl::TensorFieldElement::"><scope>mty::QuantumField</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a0d3495220202bd417c1b58249c923f39" prot="public" virt="non-virtual" ambiguityscope="csl::TensorFieldElement::"><scope>mty::QuantumField</scope><name>operator!=</name></member>
+      <member refid="classmty_1_1QuantumField_1a0865ee25ad907e14d1714b2b9a58bb50" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1a24e7fa91efa725e7f64891cb9ce3507a" prot="public" virt="non-virtual" ambiguityscope="csl::TensorFieldElement::"><scope>mty::QuantumField</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a5c1ba8dce7fbc19eb98807bd15a279c9" prot="public" virt="pure-virtual" ambiguityscope="csl::AbstractElement::"><scope>mty::QuantumField</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a6e19587260a07dba65cf2a985e05516b" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractElement::"><scope>mty::QuantumField</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a2a1660498f2638f5e490d6e512eb32f4" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>operator&lt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1afbcac6df2fd7ac11f336189cf215124b" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>operator&lt;=</name></member>
+      <member refid="classmty_1_1QuantumField_1ae88a0d99d2d7cabec01e5e1c2fe9eb4b" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>operator=</name></member>
+      <member refid="classmty_1_1QuantumField_1a5ad89d2f98e3a5c67ff1b2c617ba40da" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>operator=</name></member>
+      <member refid="classcsl_1_1Abstract_1a59ff2950fc8ca319f87a730450f14545" prot="public" virt="virtual" ambiguityscope="csl::TensorFieldElement::"><scope>mty::QuantumField</scope><name>operator=</name></member>
+      <member refid="classmty_1_1QuantumField_1a45e66c19f29f1b8e3e6e0a8244a13772" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>operator==</name></member>
+      <member refid="classmty_1_1QuantumField_1a4b59d5c82236938b43adb052458f6e86" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a8334e14cd5789168b037d3888ed60edd" prot="public" virt="virtual" ambiguityscope="csl::AbstractBuildingBlock::"><scope>mty::QuantumField</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a12d929e34039e817e464abc560bd4a9d" prot="public" virt="virtual" ambiguityscope="csl::AbstractBuildingBlock::"><scope>mty::QuantumField</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a1f78f0cce24c93def3050743bc5f2845" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractBuildingBlock::"><scope>mty::QuantumField</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1aed43debcac4a19e0da44986774c522bc" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractBuildingBlock::"><scope>mty::QuantumField</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a2376f08c0aa5ffe783090381d102d3ae" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractBuildingBlock::"><scope>mty::QuantumField</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a485c6f3e10db539a70416cd0766b117d" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>operator&gt;</name></member>
+      <member refid="classcsl_1_1Abstract_1ab305bdf49212f03781e7f98024faeb66" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>operator&gt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a4c8883df19d7538b68fa96aadac9dfa9" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>operator&gt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1a6b931f7b159d57bad26ca9c9ea729aa1" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>operator&gt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1aa8331053065d1be2da89e70c45d24863" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>operator[]</name></member>
+      <member refid="classcsl_1_1Abstract_1a560aa9993d506551c54a8c02d1445814" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>operator[]</name></member>
+      <member refid="classcsl_1_1Abstract_1a75d9abfa88d9d09a89d3a4becd9e6429" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>operatorAppliesOn</name></member>
+      <member refid="classcsl_1_1AbstractElement_1a5ad0a45c8a069be5e3e0ce21b784bb0b" prot="protected" virt="non-virtual"><scope>mty::QuantumField</scope><name>parent</name></member>
+      <member refid="classmty_1_1QuantumField_1ae622a763289d8d602ad57554333759a6" prot="protected" virt="non-virtual"><scope>mty::QuantumField</scope><name>particle</name></member>
+      <member refid="classmty_1_1QuantumField_1ace3bd17de0fd4f00c9da36ad8342ccb4" prot="protected" virt="non-virtual"><scope>mty::QuantumField</scope><name>partnerShip</name></member>
+      <member refid="classcsl_1_1Abstract_1abe9aceabbc0a99642e84c9025dbdc767" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>permut</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1afac4c3b974119ba3ecc7e093abcd28c2" prot="protected" virt="non-virtual"><scope>mty::QuantumField</scope><name>point</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1afac7a7dd245d9d1bc5f52700e2a6acb8" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>print</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1a6d2cb1f66c717a35f4c447952720817c" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>printCode</name></member>
+      <member refid="classcsl_1_1Abstract_1a89e45ffc7b65f92e77e592f76f70934c" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>printExplicit</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1ac36fad3d18e46c353b4d961867d257cf" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>printLaTeX</name></member>
+      <member refid="classcsl_1_1Complexified_1a42c425b2145c916331f881f217e14e4b" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>printProp</name></member>
+      <member refid="classmty_1_1QuantumField_1adfeffd50ff4bb800d2cd50b392cac8f2" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>QuantumField</name></member>
+      <member refid="classmty_1_1QuantumField_1aff12303981b530b17fc82f2a2997f1cd" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>QuantumField</name></member>
+      <member refid="classmty_1_1QuantumField_1a6029119efa5db72ffafb816e8a3ac2f3" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>QuantumField</name></member>
+      <member refid="classmty_1_1QuantumField_1af81cb9cf5a98896b9c77d44c35ecf460" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>QuantumField</name></member>
+      <member refid="classmty_1_1QuantumField_1a79dcee9876d3e7352aca38ce02352b73" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>QuantumField</name></member>
+      <member refid="classmty_1_1QuantumField_1aadba5baeba0a576edadd4c909d2b3ad0" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>QuantumField</name></member>
+      <member refid="classmty_1_1QuantumField_1a982bb26341792dc39df621b9cc8ffd70" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>quantumfield_s</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1a61c01a40bd7efdaa5d20e70a74efa215" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>refresh</name></member>
+      <member refid="classcsl_1_1Abstract_1a8aab87c41acafaf1b1837b922495560d" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>regularLiteral</name></member>
+      <member refid="classcsl_1_1Abstract_1a2fe749450d2e610199801b189dc3d0f8" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>regularLiteral</name></member>
+      <member refid="classcsl_1_1Abstract_1aba5ef083016b2f3d9e6271f864b9b063" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>regularName</name></member>
+      <member refid="classcsl_1_1Abstract_1a1a8421d402d5ba82257188b545e8d668" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>regularName</name></member>
+      <member refid="classcsl_1_1Abstract_1a0e778c682b6cb02642b90e8ec8765441" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>removeDependency</name></member>
+      <member refid="classcsl_1_1TensorElement_1a02fe69a766b8eade9d5de6cbea8054a6" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>replaceIndex</name></member>
+      <member refid="classcsl_1_1TensorElement_1a16558db6dbbfcf52c37b52f8a883b5a6" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>replaceIndexInPlace</name></member>
+      <member refid="classcsl_1_1TensorElement_1a9ad3c1eabb60fb445f9054699f9d949d" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>replaceIndices</name></member>
+      <member refid="classcsl_1_1TensorElement_1a1ca07618e533c2ca4b4cc3646195a64d" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>resetIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a5c796713828ebfb74a7d8787d7802a76" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>self</name></member>
+      <member refid="classcsl_1_1TensorElement_1a44cf39f1c6deadcb0191a78d32c3b441" prot="protected" virt="non-virtual"><scope>mty::QuantumField</scope><name>selfCheckAutoIndices</name></member>
+      <member refid="classcsl_1_1TensorElement_1ab0c7c1c3fb0105a70a1c73db895e0317" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>selfCheckIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1aa6a40ceb6eb1aa79711ca126d5bdda02" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setAllDependencies</name></member>
+      <member refid="classcsl_1_1Abstract_1aab2d2ac186b56d17d2cc0a105e145b11" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a45c3adb7ba4e2b8442247246a3792b44" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setArgument</name></member>
+      <member refid="classmty_1_1QuantumField_1a278dde0714428eb3785cf509151bf23b" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>setChirality</name></member>
+      <member refid="classcsl_1_1AbstractElement_1ab8f5f04326a3320b48a315ec5cee60d9" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setCommutable</name></member>
+      <member refid="classcsl_1_1AbstractElement_1a7d9bb4605dbd97ea98f721611adadd72" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setComplexProperty</name></member>
+      <member refid="classcsl_1_1Complexified_1a22b60556c965e51ab733e6eb5441783c" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setConjugated</name></member>
+      <member refid="classmty_1_1QuantumField_1a9b7f3b55bd7c6b8c5677e095fd0ca880" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>setDerivativeStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1aa6a04bb56578e7da143b3cd8d8fb7b26" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setElementary</name></member>
+      <member refid="classcsl_1_1Abstract_1afa50c743b8e7e76e637e98f165ad4e5d" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setEmpty</name></member>
+      <member refid="classmty_1_1QuantumField_1ae955a8d822aeed51ecdfa208dcae8ee8" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>setExternal</name></member>
+      <member refid="classcsl_1_1Abstract_1ac318016372d14b795893fe7e59199084" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setFullyAntiSymmetric</name></member>
+      <member refid="classcsl_1_1Abstract_1a4f90ebb7cf7c26782bd36bc2a67fc5d4" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setFullySymmetric</name></member>
+      <member refid="classmty_1_1QuantumField_1a5f400ddc0fadd265c7ca911c1aee3f38" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setIncoming</name></member>
+      <member refid="classcsl_1_1TensorElement_1a387f69126ae40d711755945ef023de92" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a5ecdb6ce7a2d9643da2f6161a06dfbbf" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setInfBoundary</name></member>
+      <member refid="classcsl_1_1AbstractElement_1aed5a0c9faec5b41fb1feb52764c4237f" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setName</name></member>
+      <member refid="classmty_1_1QuantumField_1a6b9492f126bd927094349b7404cc4b3a" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>setOnShell</name></member>
+      <member refid="classcsl_1_1Abstract_1a70df7be4486affa8dc891e3f25bf499f" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setOperand</name></member>
+      <member refid="classcsl_1_1Abstract_1ae7b8a14fc746ed72e4d5abd63373c5ba" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setOperandPrivate</name></member>
+      <member refid="classcsl_1_1AbstractElement_1af55db25120693bf64ed360105cb4357c" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setParent</name></member>
+      <member refid="classmty_1_1QuantumField_1a65613314e594223433c4db3ed354274e" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setParticle</name></member>
+      <member refid="classmty_1_1QuantumField_1a6e76c0b9eefc827cf69e54ba90ca7236" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>setPartnerShip</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1a7e1e7f28a0fcc04320d737dad3f59c21" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setPoint</name></member>
+      <member refid="classcsl_1_1Abstract_1aad7104a5b8855272a92a47c58f29e958" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setSupBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1aaf7f0692cb84ca861a5b3b641bea518b" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setValue</name></member>
+      <member refid="classcsl_1_1Abstract_1aa49c51bd285830e724f103e9fb61c464" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setValue</name></member>
+      <member refid="classcsl_1_1Abstract_1aa47ddab3aa047e86be34c70358d53548" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setVariable</name></member>
+      <member refid="classcsl_1_1Abstract_1a83fee8ed28079bcac107455d58be9d5d" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>setVectorArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a3794843945b8a39e2c1be073c9bacdf5" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>size</name></member>
+      <member refid="classcsl_1_1Abstract_1a4eeedaeaa39e75facf1060dce7c57a8f" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>suppressExponent</name></member>
+      <member refid="classcsl_1_1Abstract_1a43520e1d6d5fdad9b50f77c6e027f928" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>suppressTerm</name></member>
+      <member refid="classcsl_1_1Abstract_1a4faf1ffd8cb3b6c721e128980c0303d8" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>symmetrise</name></member>
+      <member refid="classcsl_1_1Abstract_1a7b83c6a13716688f45b02e6291d39aba" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>tensordot</name></member>
+      <member refid="classcsl_1_1TensorElement_1ae0b7c09c0acd3173ba66669d797192c0" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>TensorElement</name></member>
+      <member refid="classcsl_1_1TensorElement_1a1b29839ab99dd106e336ce900023d18a" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>TensorElement</name></member>
+      <member refid="classcsl_1_1TensorElement_1ac2169c4eabe165be2f0c455f658a0036" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>TensorElement</name></member>
+      <member refid="classcsl_1_1TensorElement_1a3bba3e8ce7e864a2921ad91e4019454c" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>TensorElement</name></member>
+      <member refid="classcsl_1_1TensorElement_1a4d45c8d308213ea65d46f9aeab883d9f" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>TensorElement</name></member>
+      <member refid="classcsl_1_1TensorElement_1a4f78788e311f00a646e933b102fe365c" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>TensorElement</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1a36078184224c07158d5eb1268128d670" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>TensorFieldElement</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1a9c35e9c1bae8f34130311b027fab9867" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>TensorFieldElement</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1a16cf2e827a2ee85322fea69b4e779827" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>TensorFieldElement</name></member>
+      <member refid="classcsl_1_1Abstract_1aee4fa41a5e014f067395467542ee8831" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>testDummy</name></member>
+      <member refid="classcsl_1_1Abstract_1a9a86d21f5c5f65eb7e524a8f8002c0e7" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>trace</name></member>
+      <member refid="classcsl_1_1Abstract_1aacab43e551e9259a39a79378373ce49c" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>trace</name></member>
+      <member refid="classcsl_1_1Abstract_1a1e97712696e5c40b28bc1e35987fea94" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>transpose</name></member>
+      <member refid="classcsl_1_1Abstract_1a40bdc4c76fdbbf3cbac3af4dce8286ed" prot="public" virt="virtual"><scope>mty::QuantumField</scope><name>~Abstract</name></member>
+      <member refid="classcsl_1_1AbstractElement_1a96ee7c198c82450d17ce0f08df2bef00" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>~AbstractElement</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1ab09e4e36b98ea53f96c817d7af2c9368" prot="public" virt="non-virtual"><scope>mty::QuantumField</scope><name>~TensorFieldElement</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

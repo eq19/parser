@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class____alloc__monitor" kind="class" language="C++" prot="public">
+    <compoundname>__alloc_monitor</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class____alloc__monitor_1afe75b1391ba8ff32800c96681b0e4ba4" prot="private" static="no" mutable="no">
+        <type>std::clock_t</type>
+        <definition>std::clock_t __alloc_monitor::__allocation_time</definition>
+        <argsstring></argsstring>
+        <name>__allocation_time</name>
+        <qualifiedname>__alloc_monitor::__allocation_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/alloc_monitor.h" line="70" column="18" bodyfile="src/csl/alloc_monitor.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class____alloc__monitor_1a191a68b11a2e537cfbc43ebddcbc9cc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>__alloc_monitor::__alloc_monitor</definition>
+        <argsstring>()</argsstring>
+        <name>__alloc_monitor</name>
+        <qualifiedname>__alloc_monitor::__alloc_monitor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/alloc_monitor.h" line="73" column="5" bodyfile="src/csl/alloc_monitor.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class____alloc__monitor_1a2476aecfe12747bdbee7146546977237" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void __alloc_monitor::__record_data_alloc</definition>
+        <argsstring>(int type)</argsstring>
+        <name>__record_data_alloc</name>
+        <qualifiedname>__alloc_monitor::__record_data_alloc</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/alloc_monitor.h" line="78" column="10" bodyfile="src/csl/alloc_monitor.h" bodystart="78" bodyend="81"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/csl/alloc_monitor.h" line="67" column="1" bodyfile="src/csl/alloc_monitor.h" bodystart="67" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class____alloc__monitor_1a191a68b11a2e537cfbc43ebddcbc9cc8" prot="public" virt="non-virtual"><scope>__alloc_monitor</scope><name>__alloc_monitor</name></member>
+      <member refid="class____alloc__monitor_1afe75b1391ba8ff32800c96681b0e4ba4" prot="private" virt="non-virtual"><scope>__alloc_monitor</scope><name>__allocation_time</name></member>
+      <member refid="class____alloc__monitor_1a2476aecfe12747bdbee7146546977237" prot="public" virt="non-virtual"><scope>__alloc_monitor</scope><name>__record_data_alloc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

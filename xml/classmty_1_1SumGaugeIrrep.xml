@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1SumGaugeIrrep" kind="class" language="C++" prot="public">
+    <compoundname>mty::SumGaugeIrrep</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::vector&lt; GaugeIrrep &gt;</basecompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmty_1_1SumGaugeIrrep_1ad8e4303776db7fa0c7de506aa67324c7" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmty_1_1Gauge" kindref="compound">Gauge</ref> *</type>
+        <definition>Gauge* mty::SumGaugeIrrep::gauge</definition>
+        <argsstring></argsstring>
+        <name>gauge</name>
+        <qualifiedname>mty::SumGaugeIrrep::gauge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gauge.h" line="165" column="11" bodyfile="src/marty/core/gauge.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1SumGaugeIrrep_1acc7fd15cf92d5646ca8327944cb19f10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::SumGaugeIrrep::SumGaugeIrrep</definition>
+        <argsstring>()</argsstring>
+        <name>SumGaugeIrrep</name>
+        <qualifiedname>mty::SumGaugeIrrep::SumGaugeIrrep</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gauge.h" line="168" column="5" bodyfile="src/marty/core/gauge.cpp" bodystart="366" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumGaugeIrrep_1ab99d739be830e2b82079dd769ae0c97f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::SumGaugeIrrep::SumGaugeIrrep</definition>
+        <argsstring>(Gauge *t_gauge, const std::vector&lt; std::vector&lt; Irrep &gt; &gt; &amp;irreps={})</argsstring>
+        <name>SumGaugeIrrep</name>
+        <qualifiedname>mty::SumGaugeIrrep::SumGaugeIrrep</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Gauge" kindref="compound">Gauge</ref> *</type>
+          <declname>t_gauge</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &gt; &gt; &amp;</type>
+          <declname>irreps</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gauge.h" line="169" column="14" bodyfile="src/marty/core/gauge.cpp" bodystart="382" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumGaugeIrrep_1a0dd2ca68c9e2ff42ae0e1bf03832f438" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::SumGaugeIrrep::SumGaugeIrrep</definition>
+        <argsstring>(const std::vector&lt; GaugeIrrep &gt; &amp;irreps)</argsstring>
+        <name>SumGaugeIrrep</name>
+        <qualifiedname>mty::SumGaugeIrrep::SumGaugeIrrep</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="classmty_1_1GaugeIrrep" kindref="compound">GaugeIrrep</ref> &gt; &amp;</type>
+          <declname>irreps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gauge.h" line="171" column="14" bodyfile="src/marty/core/gauge.cpp" bodystart="370" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumGaugeIrrep_1a60e328fd4b48594c6cb1fbc7e710b5ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::SumGaugeIrrep::SumGaugeIrrep</definition>
+        <argsstring>(const SumGaugeIrrep &amp;other)=default</argsstring>
+        <name>SumGaugeIrrep</name>
+        <qualifiedname>mty::SumGaugeIrrep::SumGaugeIrrep</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1SumGaugeIrrep" kindref="compound">SumGaugeIrrep</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gauge.h" line="172" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumGaugeIrrep_1a8de3c4f961d998699de9722bbe9c2c1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mty::SumGaugeIrrep::~SumGaugeIrrep</definition>
+        <argsstring>()</argsstring>
+        <name>~SumGaugeIrrep</name>
+        <qualifiedname>mty::SumGaugeIrrep::~SumGaugeIrrep</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gauge.h" line="173" column="5" bodyfile="src/marty/core/gauge.h" bodystart="173" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumGaugeIrrep_1abeb5a3859caf5525135424b8776dafb6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::SumGaugeIrrep::find</definition>
+        <argsstring>(const GaugeIrrep &amp;irrep) const</argsstring>
+        <name>find</name>
+        <qualifiedname>mty::SumGaugeIrrep::find</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1GaugeIrrep" kindref="compound">GaugeIrrep</ref> &amp;</type>
+          <declname>irrep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gauge.h" line="175" column="10" bodyfile="src/marty/core/gauge.cpp" bodystart="390" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumGaugeIrrep_1aa36d2d9d7b91bc83e99c1ecd239973f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::SumGaugeIrrep::containsTrivialRep</definition>
+        <argsstring>() const</argsstring>
+        <name>containsTrivialRep</name>
+        <qualifiedname>mty::SumGaugeIrrep::containsTrivialRep</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gauge.h" line="176" column="10" bodyfile="src/marty/core/gauge.cpp" bodystart="398" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumGaugeIrrep_1af09b6fff10a3f9b185d50ef7c8cebe5e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1SumGaugeIrrep" kindref="compound">SumGaugeIrrep</ref></type>
+        <definition>SumGaugeIrrep mty::SumGaugeIrrep::operator*</definition>
+        <argsstring>(const GaugeIrrep &amp;other) const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>mty::SumGaugeIrrep::operator*</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1GaugeIrrep" kindref="compound">GaugeIrrep</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gauge.h" line="178" column="19" bodyfile="src/marty/core/gauge.cpp" bodystart="403" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumGaugeIrrep_1a3db82ae5278e0541adfb8db2d98278a6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1SumGaugeIrrep" kindref="compound">SumGaugeIrrep</ref></type>
+        <definition>SumGaugeIrrep mty::SumGaugeIrrep::operator*</definition>
+        <argsstring>(const SumGaugeIrrep &amp;other) const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>mty::SumGaugeIrrep::operator*</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1SumGaugeIrrep" kindref="compound">SumGaugeIrrep</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gauge.h" line="179" column="19" bodyfile="src/marty/core/gauge.cpp" bodystart="412" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SumGaugeIrrep_1aa7ec071ace97368775b1393b856002f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1SumGaugeIrrep" kindref="compound">SumGaugeIrrep</ref></type>
+        <definition>SumGaugeIrrep mty::SumGaugeIrrep::operator+</definition>
+        <argsstring>(const SumGaugeIrrep &amp;other) const</argsstring>
+        <name>operator+</name>
+        <qualifiedname>mty::SumGaugeIrrep::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1SumGaugeIrrep" kindref="compound">SumGaugeIrrep</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gauge.h" line="180" column="19" bodyfile="src/marty/core/gauge.cpp" bodystart="422" bodyend="429"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmty_1_1SumGaugeIrrep_1a7e5159780733ceab350591de766fa473" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;fout, const SumGaugeIrrep &amp;irrep)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::SumGaugeIrrep::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1SumGaugeIrrep" kindref="compound">SumGaugeIrrep</ref> &amp;</type>
+          <declname>irrep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gauge.h" line="182" column="12" bodyfile="src/marty/core/gauge.cpp" bodystart="431" bodyend="439"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mty::SumGaugeIrrep</label>
+        <link refid="classmty_1_1SumGaugeIrrep"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; GaugeIrrep &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>mty::Gauge</label>
+        <link refid="classmty_1_1Gauge"/>
+      </node>
+      <node id="1">
+        <label>mty::SumGaugeIrrep</label>
+        <link refid="classmty_1_1SumGaugeIrrep"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>gauge</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; GaugeIrrep &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/gauge.h" line="162" column="1" bodyfile="src/marty/core/gauge.h" bodystart="162" bodyend="184"/>
+    <listofallmembers>
+      <member refid="classmty_1_1SumGaugeIrrep_1aa36d2d9d7b91bc83e99c1ecd239973f7" prot="public" virt="non-virtual"><scope>mty::SumGaugeIrrep</scope><name>containsTrivialRep</name></member>
+      <member refid="classmty_1_1SumGaugeIrrep_1abeb5a3859caf5525135424b8776dafb6" prot="public" virt="non-virtual"><scope>mty::SumGaugeIrrep</scope><name>find</name></member>
+      <member refid="classmty_1_1SumGaugeIrrep_1ad8e4303776db7fa0c7de506aa67324c7" prot="protected" virt="non-virtual"><scope>mty::SumGaugeIrrep</scope><name>gauge</name></member>
+      <member refid="classmty_1_1SumGaugeIrrep_1af09b6fff10a3f9b185d50ef7c8cebe5e" prot="public" virt="non-virtual"><scope>mty::SumGaugeIrrep</scope><name>operator*</name></member>
+      <member refid="classmty_1_1SumGaugeIrrep_1a3db82ae5278e0541adfb8db2d98278a6" prot="public" virt="non-virtual"><scope>mty::SumGaugeIrrep</scope><name>operator*</name></member>
+      <member refid="classmty_1_1SumGaugeIrrep_1aa7ec071ace97368775b1393b856002f0" prot="public" virt="non-virtual"><scope>mty::SumGaugeIrrep</scope><name>operator+</name></member>
+      <member refid="classmty_1_1SumGaugeIrrep_1a7e5159780733ceab350591de766fa473" prot="public" virt="non-virtual"><scope>mty::SumGaugeIrrep</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classmty_1_1SumGaugeIrrep_1acc7fd15cf92d5646ca8327944cb19f10" prot="public" virt="non-virtual"><scope>mty::SumGaugeIrrep</scope><name>SumGaugeIrrep</name></member>
+      <member refid="classmty_1_1SumGaugeIrrep_1ab99d739be830e2b82079dd769ae0c97f" prot="public" virt="non-virtual"><scope>mty::SumGaugeIrrep</scope><name>SumGaugeIrrep</name></member>
+      <member refid="classmty_1_1SumGaugeIrrep_1a0dd2ca68c9e2ff42ae0e1bf03832f438" prot="public" virt="non-virtual"><scope>mty::SumGaugeIrrep</scope><name>SumGaugeIrrep</name></member>
+      <member refid="classmty_1_1SumGaugeIrrep_1a60e328fd4b48594c6cb1fbc7e710b5ff" prot="public" virt="non-virtual"><scope>mty::SumGaugeIrrep</scope><name>SumGaugeIrrep</name></member>
+      <member refid="classmty_1_1SumGaugeIrrep_1a8de3c4f961d998699de9722bbe9c2c1c" prot="public" virt="non-virtual"><scope>mty::SumGaugeIrrep</scope><name>~SumGaugeIrrep</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

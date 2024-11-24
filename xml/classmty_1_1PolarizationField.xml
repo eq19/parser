@@ -1,0 +1,1072 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1PolarizationField" kind="class" language="C++" prot="public">
+    <compoundname>mty::PolarizationField</compoundname>
+    <basecompoundref refid="classmty_1_1QuantumField" prot="public" virt="non-virtual">mty::QuantumField</basecompoundref>
+    <includes refid="polarization_8h" local="no">polarization.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1PolarizationField_1a712e1695c84c85dda258c880675c6532" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::PolarizationField::lockConjugation</definition>
+        <argsstring></argsstring>
+        <name>lockConjugation</name>
+        <qualifiedname>mty::PolarizationField::lockConjugation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="120" column="10" bodyfile="src/marty/core/polarization.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1af90ace8ff64624351c9302175c880986" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::PolarizationField::test</definition>
+        <argsstring>(int)</argsstring>
+        <name>test</name>
+        <qualifiedname>mty::PolarizationField::test</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="40" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1ab26716039fc88e2c6cd3df18e76ecbfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::PolarizationField::PolarizationField</definition>
+        <argsstring>()</argsstring>
+        <name>PolarizationField</name>
+        <qualifiedname>mty::PolarizationField::PolarizationField</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="42" column="5" bodyfile="src/marty/core/polarization.cpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1a7be20c9b268f4c56eae6cdb02ed5b2d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::PolarizationField::PolarizationField</definition>
+        <argsstring>(csl::Tensor const &amp;impulsion, csl::Parent const &amp;t_parent)</argsstring>
+        <name>PolarizationField</name>
+        <qualifiedname>mty::PolarizationField::PolarizationField</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> const &amp;</type>
+          <declname>impulsion</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Parent" kindref="compound">csl::Parent</ref> const &amp;</type>
+          <declname>t_parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="44" column="5" bodyfile="src/marty/core/polarization.cpp" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1ac524ff401357f47b3c784fc094f72916" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::PolarizationField::PolarizationField</definition>
+        <argsstring>(csl::Tensor const &amp;impulsion, csl::Parent const &amp;t_parent, const std::vector&lt; csl::Index &gt; &amp;indices)</argsstring>
+        <name>PolarizationField</name>
+        <qualifiedname>mty::PolarizationField::PolarizationField</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> const &amp;</type>
+          <declname>impulsion</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Parent" kindref="compound">csl::Parent</ref> const &amp;</type>
+          <declname>t_parent</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="47" column="5" bodyfile="src/marty/core/polarization.cpp" bodystart="37" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1ac0a20a11f94b9f2647df4aaba4552aec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::PolarizationField::PolarizationField</definition>
+        <argsstring>(csl::Tensor const &amp;impulsion, csl::Parent const &amp;t_parent, const csl::IndexStructure &amp;indices)</argsstring>
+        <name>PolarizationField</name>
+        <qualifiedname>mty::PolarizationField::PolarizationField</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> const &amp;</type>
+          <declname>impulsion</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Parent" kindref="compound">csl::Parent</ref> const &amp;</type>
+          <declname>t_parent</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1IndexStructure" kindref="compound">csl::IndexStructure</ref> &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="51" column="5" bodyfile="src/marty/core/polarization.cpp" bodystart="46" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1a20b78dec08680f1a1a2dfbccfd1e6b2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::PolarizationField::PolarizationField</definition>
+        <argsstring>(PolarizationField const &amp;)=default</argsstring>
+        <name>PolarizationField</name>
+        <qualifiedname>mty::PolarizationField::PolarizationField</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1PolarizationField" kindref="compound">PolarizationField</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="55" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1ae00e91ffaedfd7cfcccb95b5628d8b0b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mty::PolarizationField::getCommutable</definition>
+        <argsstring>() const override</argsstring>
+        <name>getCommutable</name>
+        <qualifiedname>mty::PolarizationField::getCommutable</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractElement_1ab3418bd6d3548316885c8bda0a7464b8">getCommutable</reimplements>
+        <briefdescription>
+<para>Allows to know if the object commutes with all the others. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><emphasis>commutable</emphasis> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="57" column="10" bodyfile="src/marty/core/polarization.cpp" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1ae9b8986daf8008b813c91fec023287d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>optional&lt; csl::Expr &gt; mty::PolarizationField::getComplexConjugate</definition>
+        <argsstring>() const override</argsstring>
+        <name>getComplexConjugate</name>
+        <qualifiedname>mty::PolarizationField::getComplexConjugate</qualifiedname>
+        <reimplements refid="classcsl_1_1Complexified_1a9d3fec789b00de1625df53232da4cf30">getComplexConjugate</reimplements>
+        <briefdescription>
+<para>Calculates and returns the complex conjugate of the expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>\bar{*this}. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="59" column="19" bodyfile="src/marty/core/polarization.cpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1ade831a2a0692e924629fcf55e35858b0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mty::PolarizationField::hasContractionProperty</definition>
+        <argsstring>(csl::Expr_info other) const override</argsstring>
+        <name>hasContractionProperty</name>
+        <qualifiedname>mty::PolarizationField::hasContractionProperty</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aa31e08c251d96b8ea8ec8d385895c1ff">hasContractionProperty</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">csl::Expr_info</ref></type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>Tells (for an Indicial type) if there is a special contraction property with <bold>B</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression with which we test if there is a special contraction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if there is a contraction. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="61" column="10" bodyfile="src/marty/core/polarization.cpp" bodystart="87" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1a1a8b9b886fd8e7ab972815f7d309c61d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::PolarizationField::contraction</definition>
+        <argsstring>(csl::Expr_info other) const override</argsstring>
+        <name>contraction</name>
+        <qualifiedname>mty::PolarizationField::contraction</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1ad874fc858295a737e6ce884530f1109b">contraction</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">csl::Expr_info</ref></type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>Applies a special contraction of indices. Before calling this function we must check that there is indeed a contraction by calling the function <ref refid="classmty_1_1PolarizationField_1ade831a2a0692e924629fcf55e35858b0" kindref="member">hasContractionProperty()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression with which <bold>*this</bold> contracts. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the contraction. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="63" column="15" bodyfile="src/marty/core/polarization.cpp" bodystart="118" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1a49af3f0b5f7b003faab9ac47efeb0d9a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>csl::unique_Expr</type>
+        <definition>csl::unique_Expr mty::PolarizationField::copy_unique</definition>
+        <argsstring>() const override</argsstring>
+        <name>copy_unique</name>
+        <qualifiedname>mty::PolarizationField::copy_unique</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aaa996819710adc3b7529c74a628be623">copy_unique</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="65" column="22" bodyfile="src/marty/core/polarization.cpp" bodystart="308" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1a5d60e41b929bf0aa8fcf49b5de67becb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mty::PolarizationField::printCode</definition>
+        <argsstring>(int mode=0, std::ostream &amp;out=std::cout) const override</argsstring>
+        <name>printCode</name>
+        <qualifiedname>mty::PolarizationField::printCode</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a2910dd30d90915c11d48c01cab618dda">printCode</reimplements>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="67" column="10" bodyfile="src/marty/core/polarization.cpp" bodystart="313" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1a4592cceedf21f55a616df8d85d866bda" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mty::PolarizationField::printProp</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const override</argsstring>
+        <name>printProp</name>
+        <qualifiedname>mty::PolarizationField::printProp</qualifiedname>
+        <reimplements refid="classcsl_1_1Complexified_1a42c425b2145c916331f881f217e14e4b">printProp</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="69" column="10" bodyfile="src/marty/core/polarization.cpp" bodystart="320" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1a9ffd1e75a1e091c696ffae613bc823ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref></type>
+        <definition>Particle mty::PolarizationField::getParticle</definition>
+        <argsstring>() const</argsstring>
+        <name>getParticle</name>
+        <qualifiedname>mty::PolarizationField::getParticle</qualifiedname>
+        <briefdescription>
+<para>Returns a <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref>, pointer to the parent of the field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As <ref refid="classmty_1_1QuantumField" kindref="compound">QuantumField</ref> inherits from <ref refid="classcsl_1_1TensorFieldElement" kindref="compound">csl::TensorFieldElement</ref>, its parent is in the form of a <ref refid="classcsl_1_1Parent" kindref="compound">csl::Parent</ref>. This function then makes a conversion to a <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> before returning the pointer. <simplesect kind="return"><para>A shared pointer to the <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref> (i.e. <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref>) of the field. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="79" column="21" bodyfile="src/marty/core/polarization.h" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1aa899a03c5a6592966795199b0ce7d50b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::PolarizationField::isConjugationLocked</definition>
+        <argsstring>() const</argsstring>
+        <name>isConjugationLocked</name>
+        <qualifiedname>mty::PolarizationField::isConjugationLocked</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="84" column="10" bodyfile="src/marty/core/polarization.h" bodystart="84" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1a284db4042e645bdfd26456b578a1ed2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::PolarizationField::setConjugationLock</definition>
+        <argsstring>(bool t_lock)</argsstring>
+        <name>setConjugationLock</name>
+        <qualifiedname>mty::PolarizationField::setConjugationLock</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>t_lock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="89" column="10" bodyfile="src/marty/core/polarization.h" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1a04fde4c6635d65781653459f29d9fa94" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mty::PolarizationField::setParticle</definition>
+        <argsstring>(bool) override</argsstring>
+        <name>setParticle</name>
+        <qualifiedname>mty::PolarizationField::setParticle</qualifiedname>
+        <reimplements refid="classmty_1_1QuantumField_1a65613314e594223433c4db3ed354274e">setParticle</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>t_particle</declname>
+        </param>
+        <briefdescription>
+<para>Sets the particle property of the particle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_particle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Must be true if the field is a particle, false otherwise. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1ae622a763289d8d602ad57554333759a6" kindref="member">particle</ref>, <ref refid="classmty_1_1QuantumField_1a1a62ae33943f0b891b8c6e026ed7414b" kindref="member">isParticle()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="94" column="10" bodyfile="src/marty/core/polarization.cpp" bodystart="332" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1a59bb94aecc80d7e1315d779611d52424" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mty::PolarizationField::setIncoming</definition>
+        <argsstring>(bool) override</argsstring>
+        <name>setIncoming</name>
+        <qualifiedname>mty::PolarizationField::setIncoming</qualifiedname>
+        <reimplements refid="classmty_1_1QuantumField_1a5f400ddc0fadd265c7ca911c1aee3f38">setIncoming</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>t_incoming</declname>
+        </param>
+        <briefdescription>
+<para>Sets the incoming property of the particle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_incoming</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Must be true if the field is incoming, false otherwise. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classmty_1_1QuantumField_1a3fc8050f57b6a4006fefd6bdece0f553" kindref="member">incoming</ref>, <ref refid="classmty_1_1QuantumField_1aaa14e7f910b9d982119b3e719927811d" kindref="member">isIncoming()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="95" column="10" bodyfile="src/marty/core/polarization.cpp" bodystart="338" bodyend="342"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmty_1_1PolarizationField_1af5724f51b3c0b7b8bc53b173a4f843fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;fout, const PolarizationField &amp;pol)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::PolarizationField::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1PolarizationField" kindref="compound">PolarizationField</ref> &amp;</type>
+          <declname>pol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="97" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1a2d54b0c21413c6ed2bbf3e055de965b3" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1PolarizationField" kindref="compound">PolarizationField</ref></type>
+        <definition>PolarizationField mty::PolarizationField::complexConjugatedField</definition>
+        <argsstring>(bool keepFermionOrder=false) const</argsstring>
+        <name>complexConjugatedField</name>
+        <qualifiedname>mty::PolarizationField::complexConjugatedField</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>keepFermionOrder</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="101" column="23" bodyfile="src/marty/core/polarization.cpp" bodystart="66" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1ac15056d9be0d9dcbe34549fd3862a80e" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::PolarizationField::hasFieldChargeConjugation</definition>
+        <argsstring>(mty::PolarizationField const *other) const</argsstring>
+        <name>hasFieldChargeConjugation</name>
+        <qualifiedname>mty::PolarizationField::hasFieldChargeConjugation</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1PolarizationField" kindref="compound">mty::PolarizationField</ref> const *</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="104" column="10" bodyfile="src/marty/core/polarization.cpp" bodystart="172" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1abcf21831608584d1122cebe2912ff924" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::PolarizationField::spaceIndexContraction</definition>
+        <argsstring>(csl::Expr_info other) const</argsstring>
+        <name>spaceIndexContraction</name>
+        <qualifiedname>mty::PolarizationField::spaceIndexContraction</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">csl::Expr_info</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="106" column="10" bodyfile="src/marty/core/polarization.cpp" bodystart="76" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1ae5b98cfcbd89fc3dde9c05711d0d7728" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::PolarizationField::spinIndexContraction</definition>
+        <argsstring>(csl::Expr_info other) const</argsstring>
+        <name>spinIndexContraction</name>
+        <qualifiedname>mty::PolarizationField::spinIndexContraction</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">csl::Expr_info</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="107" column="10" bodyfile="src/marty/core/polarization.cpp" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1ad8b5c0d7edeb8346100fec86016a4475" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::PolarizationField::isContractibleWith</definition>
+        <argsstring>(csl::Expr_info otherPolar) const</argsstring>
+        <name>isContractibleWith</name>
+        <qualifiedname>mty::PolarizationField::isContractibleWith</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">csl::Expr_info</ref></type>
+          <declname>otherPolar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="109" column="10" bodyfile="src/marty/core/polarization.cpp" bodystart="107" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1a9100dd88bc68fc3fc5d3cf8968e9dc73" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::PolarizationField::sumPolarization</definition>
+        <argsstring>(csl::Expr_info other) const</argsstring>
+        <name>sumPolarization</name>
+        <qualifiedname>mty::PolarizationField::sumPolarization</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">csl::Expr_info</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="111" column="15" bodyfile="src/marty/core/polarization.cpp" bodystart="199" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1a7ed4933c7a1c1ed81f070dd17b095bd9" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::PolarizationField::matrixChargeConjugation</definition>
+        <argsstring>(csl::Expr_info other) const override</argsstring>
+        <name>matrixChargeConjugation</name>
+        <qualifiedname>mty::PolarizationField::matrixChargeConjugation</qualifiedname>
+        <reimplements refid="classmty_1_1QuantumField_1a375b00daa42049a481d29f128ab1aa27">matrixChargeConjugation</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">csl::Expr_info</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="113" column="15" bodyfile="src/marty/core/polarization.cpp" bodystart="147" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1aab051ada4e50bdf814b7db9f22235597" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::PolarizationField::fieldChargeConjugation</definition>
+        <argsstring>(mty::PolarizationField const *other) const</argsstring>
+        <name>fieldChargeConjugation</name>
+        <qualifiedname>mty::PolarizationField::fieldChargeConjugation</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1PolarizationField" kindref="compound">mty::PolarizationField</ref> const *</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="115" column="5" bodyfile="src/marty/core/polarization.cpp" bodystart="186" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1PolarizationField_1a009780ce76fe887b6b51485096259f14" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::PolarizationField::updateComplexConjugation</definition>
+        <argsstring>()</argsstring>
+        <name>updateComplexConjugation</name>
+        <qualifiedname>mty::PolarizationField::updateComplexConjugation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/polarization.h" line="117" column="10" bodyfile="src/marty/core/polarization.cpp" bodystart="344" bodyend="352"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Representing polarization vectors in equations. Allows to compute polarization sums in cross-sections. Is derived from TensorFieldElement: possess at least one <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> (polarization) and one &quot;space-time point&quot; that is the impulsion of the particle. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="8">
+        <label>csl::Abstract</label>
+        <link refid="classcsl_1_1Abstract"/>
+      </node>
+      <node id="7">
+        <label>csl::AbstractBuildingBlock</label>
+        <link refid="classcsl_1_1AbstractBuildingBlock"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>csl::AbstractElement</label>
+        <link refid="classcsl_1_1AbstractElement"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>csl::Complexified</label>
+        <link refid="classcsl_1_1Complexified"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>csl::TensorElement</label>
+        <link refid="classcsl_1_1TensorElement"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>csl::TensorFieldElement</label>
+        <link refid="classcsl_1_1TensorFieldElement"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::PolarizationField</label>
+        <link refid="classmty_1_1PolarizationField"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mty::QuantumField</label>
+        <link refid="classmty_1_1QuantumField"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>csl::Abstract</label>
+        <link refid="classcsl_1_1Abstract"/>
+      </node>
+      <node id="7">
+        <label>csl::AbstractBuildingBlock</label>
+        <link refid="classcsl_1_1AbstractBuildingBlock"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>csl::AbstractElement</label>
+        <link refid="classcsl_1_1AbstractElement"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>csl::Complexified</label>
+        <link refid="classcsl_1_1Complexified"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>csl::IndexStructure</label>
+        <link refid="classcsl_1_1IndexStructure"/>
+      </node>
+      <node id="11">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>csl::TensorElement</label>
+        <link refid="classcsl_1_1TensorElement"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>index</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>csl::TensorFieldElement</label>
+        <link refid="classcsl_1_1TensorFieldElement"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>point</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>mty::PartnerShip</label>
+        <link refid="structmty_1_1PartnerShip"/>
+      </node>
+      <node id="1">
+        <label>mty::PolarizationField</label>
+        <link refid="classmty_1_1PolarizationField"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mty::QuantumField</label>
+        <link refid="classmty_1_1QuantumField"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>derivativeIndices</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>partnerShip</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="9">
+        <label>std::shared_ptr&lt; csl::AbstractParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/polarization.h" line="37" column="1" bodyfile="src/marty/core/polarization.h" bodystart="37" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1Abstract_1ad5fee68c1f3dcbda0e936926fed17616" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>Abstract</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1a64aaa989689a7e8c262e6d9fceaff10f" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>AbstractBuildingBlock</name></member>
+      <member refid="classcsl_1_1AbstractElement_1a12ebb2cd662c44ca2e60106d630dbc48" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>AbstractElement</name></member>
+      <member refid="classcsl_1_1AbstractElement_1a90b37b4752b24ab6cb0a29dc3329eea4" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>AbstractElement</name></member>
+      <member refid="classcsl_1_1Abstract_1a5549ac0c186b3c6febf332245a25a82c" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>addAntiSymmetry</name></member>
+      <member refid="classcsl_1_1Abstract_1abbab11282e5c6ac46b018642ff129f47" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>addDependency</name></member>
+      <member refid="classmty_1_1QuantumField_1a853a3079edcfa4e9836f9ae1ad37bab1" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>addDerivative</name></member>
+      <member refid="classcsl_1_1Abstract_1a101219973341a39cf15f07e5e1aa388f" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>addition_own</name></member>
+      <member refid="classcsl_1_1Abstract_1ad431770faa4291116a50175193a11a88" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>addSymmetry</name></member>
+      <member refid="classcsl_1_1TensorElement_1aa2605b68051617e35fc2a443c2b38a2c" prot="protected" virt="non-virtual"><scope>mty::PolarizationField</scope><name>adjustMetricDeltaParent</name></member>
+      <member refid="classcsl_1_1Abstract_1acd972aed8326d4c13534594e061ee6da" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>antisymmetrise</name></member>
+      <member refid="classcsl_1_1TensorElement_1a02db643378663eb5f17011937c5c9557" prot="protected" virt="non-virtual"><scope>mty::PolarizationField</scope><name>applyBrokenIndices</name></member>
+      <member refid="classcsl_1_1Complexified_1ac8174f246df45364467fffd925027808" prot="protected" virt="non-virtual"><scope>mty::PolarizationField</scope><name>applyComplexPropertiesOn</name></member>
+      <member refid="classcsl_1_1Complexified_1a7b2b037721656af10cb29a077a567b30" prot="protected" virt="non-virtual"><scope>mty::PolarizationField</scope><name>applyComplexPropertiesOn</name></member>
+      <member refid="classcsl_1_1Abstract_1a61d3ab932182226f4670a62bbb22af4e" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>applyDiracDelta</name></member>
+      <member refid="classcsl_1_1Abstract_1a316956fea77627a716500a2bbfc1f3b7" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>applyOperator</name></member>
+      <member refid="classcsl_1_1TensorElement_1ad6f100f8c15bee5c29d97d40549a6e18" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>applyPermutation</name></member>
+      <member refid="classcsl_1_1TensorElement_1afbfaf24db5ee68ab64a2378248fdf7e4" prot="protected" virt="virtual"><scope>mty::PolarizationField</scope><name>applySelfStructureOn</name></member>
+      <member refid="classcsl_1_1TensorElement_1a6ec375934423dbb60f6d00ea13ec7f80" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>askTerm</name></member>
+      <member refid="classcsl_1_1Abstract_1aad54ed41b2ce9bad3364fe30ad1a0d71" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>begin</name></member>
+      <member refid="classcsl_1_1Abstract_1adff373df9477d4e38581d09cc6d2fee4" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>begin</name></member>
+      <member refid="classcsl_1_1TensorElement_1aafc27871bb78f0a07df8aa097d3d8a0e" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>breakSpace</name></member>
+      <member refid="classcsl_1_1Abstract_1aa4cba37520821432f37e212fefbc2534" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractElement::"><scope>mty::PolarizationField</scope><name>breakSpace</name></member>
+      <member refid="classcsl_1_1TensorElement_1ad9d1474eb8d1c53835ffb3891e01b020" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>checkIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a1ebd84082bb93418408cc0babe2dffe2" prot="public" virt="virtual" ambiguityscope="csl::AbstractElement::"><scope>mty::PolarizationField</scope><name>checkIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1ab3746f1d3667846824ea51b8a2e00d31" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>collect</name></member>
+      <member refid="classmty_1_1QuantumField_1a00022859c6f9a262b82fde583c7b675e" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>commutesWith</name></member>
+      <member refid="classcsl_1_1TensorElement_1ad78eb0b8122b22db79ea59b4af50f7c7" prot="protected" virt="non-virtual"><scope>mty::PolarizationField</scope><name>comparePermutations</name></member>
+      <member refid="classmty_1_1QuantumField_1a60fc0d4a50c72d78f81bd9c73329d4f2" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>compareWithDummy</name></member>
+      <member refid="classcsl_1_1Abstract_1a0f16fda9fe72a89c61ece36101a11d95" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractElement::"><scope>mty::PolarizationField</scope><name>compareWithDummy</name></member>
+      <member refid="classmty_1_1PolarizationField_1a2d54b0c21413c6ed2bbf3e055de965b3" prot="private" virt="non-virtual"><scope>mty::PolarizationField</scope><name>complexConjugatedField</name></member>
+      <member refid="classcsl_1_1Complexified_1a6333b0f548411b1712301806c21c2261" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>Complexified</name></member>
+      <member refid="classmty_1_1QuantumField_1aaed41060f2bebfdbf3ffc7699413c01f" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>conjugate</name></member>
+      <member refid="classcsl_1_1Complexified_1a785754f2eac5813fcf8aa87cc0b456bf" prot="protected" virt="non-virtual"><scope>mty::PolarizationField</scope><name>conjugated</name></member>
+      <member refid="classcsl_1_1Abstract_1aed79d20a0821205e6430c80a474117d3" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>contractIndex</name></member>
+      <member refid="classmty_1_1PolarizationField_1a1a8b9b886fd8e7ab972815f7d309c61d" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1Abstract_1abd35096982e92b669ea55d960c5f44be" prot="public" virt="virtual" ambiguityscope="csl::AbstractElement::"><scope>mty::PolarizationField</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1Abstract_1af29c2898c5d3ba96de8018a0838c402c" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>copy</name></member>
+      <member refid="classmty_1_1PolarizationField_1a49af3f0b5f7b003faab9ac47efeb0d9a" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>copy_unique</name></member>
+      <member refid="classcsl_1_1Abstract_1a09648782dcf2e81abb5b864f476cc410" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>deepCopy</name></member>
+      <member refid="classcsl_1_1TensorElement_1ad0dbe5ebe94a2c21e0a8a195730820c4" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>deepRefresh</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1a43644a7030777b98a28cbaa15f229bfa" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>dependsExplicitlyOn</name></member>
+      <member refid="classcsl_1_1Abstract_1a0b26ad7a44e497af296318287bac539a" prot="public" virt="virtual" ambiguityscope="csl::AbstractElement::"><scope>mty::PolarizationField</scope><name>dependsExplicitlyOn</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1ab452e8d298be5e58e28e92aa6eca1c25" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>dependsOn</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1aeb70122164b2685fc291090258f59b9b" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>dependsOn</name></member>
+      <member refid="classmty_1_1QuantumField_1a50ef4383637b511e7d4c0d32c1342bc6" prot="protected" virt="non-virtual"><scope>mty::PolarizationField</scope><name>derivativeIndices</name></member>
+      <member refid="classcsl_1_1TensorElement_1a7a1fc7737cce9da527d3796d2fd711d8" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>derive</name></member>
+      <member refid="classcsl_1_1Abstract_1aeb08811cf370616477a92075e4a218ee" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>determinant</name></member>
+      <member refid="classcsl_1_1Abstract_1a1578c74aee1050b806a67e7a81a67f5c" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>division_own</name></member>
+      <member refid="classcsl_1_1Abstract_1a4cc7a46deaa3eaa7593909d74e76d4af" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>dot</name></member>
+      <member refid="classcsl_1_1Abstract_1a0c3c3fe5010f24e8a8765ea06415c003" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>empty</name></member>
+      <member refid="classcsl_1_1Abstract_1a61e4e80d998a888a1a74d9ea3e10c0f1" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>end</name></member>
+      <member refid="classcsl_1_1Abstract_1ae2761d54f13310e13f5076d565edd7ef" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>end</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1a55ad56ca57e69bdcb5b77e6d0bf254c7" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>evaluate</name></member>
+      <member refid="classcsl_1_1Abstract_1a543d5a4f0432e166b492ad28a860a65f" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>evaluateScalar</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1a7cbbd2edd75a84057f1622826c1efd3a" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>expand</name></member>
+      <member refid="classcsl_1_1Abstract_1aeb48aaaa856582b6359037fe94d2419b" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>expand_if</name></member>
+      <member refid="classcsl_1_1Abstract_1aa2696a0feb43766ef54e1e3dd3d6d134" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>exponentiation_own</name></member>
+      <member refid="classmty_1_1QuantumField_1a60ce66df96fc405f7e0b2d201a2d1223" prot="protected" virt="non-virtual"><scope>mty::PolarizationField</scope><name>external</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1a2f12cede626ece5382c9869d32c32146" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>factor</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1a447f940bf0a08d13297fde0b50b4cb84" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>factor</name></member>
+      <member refid="classmty_1_1PolarizationField_1aab051ada4e50bdf814b7db9f22235597" prot="private" virt="non-virtual"><scope>mty::PolarizationField</scope><name>fieldChargeConjugation</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1a4000d3f204c1957f5cffc0677dd754c0" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>findSubExpression</name></member>
+      <member refid="classcsl_1_1Abstract_1a021946e84d8c1a019908cac578b16fe8" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getAllDependencies</name></member>
+      <member refid="classcsl_1_1Abstract_1ac33a42309d629d47bfdbede4e152414e" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a06f542034e95744148f4fce5a4893e63" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a898d6cf2a7f348feacab189447bee1eb" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1aa689fb64eecb86edbde6c745d1ce756b" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1TensorElement_1ad6f8f7e5b89936e1fa39661b1975c3ce" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getCanonicalPermutation</name></member>
+      <member refid="classmty_1_1QuantumField_1aa8997664616188bcdd2f44199e9b5155" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getChirality</name></member>
+      <member refid="classmty_1_1PolarizationField_1ae00e91ffaedfd7cfcccb95b5628d8b0b" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getCommutable</name></member>
+      <member refid="classcsl_1_1Complexified_1ab70d880a6d5eaf52b7d365c9d0c29f86" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getComplexArgument</name></member>
+      <member refid="classmty_1_1PolarizationField_1ae9b8986daf8008b813c91fec023287d0" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getComplexConjugate</name></member>
+      <member refid="classcsl_1_1Complexified_1a05b65b2f6cdbc13a1d757a3f90ae7c0c" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getComplexModulus</name></member>
+      <member refid="classcsl_1_1AbstractElement_1a0b2c014c2c35cad27d9df5240bfb8548" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getComplexProperty</name></member>
+      <member refid="classmty_1_1QuantumField_1a96782145ac95e7a9ad82f9916412c861" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getConjugated</name></member>
+      <member refid="classmty_1_1QuantumField_1a122cc63aa922d8a8296d0159f0c96b4d" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getConjugatedField</name></member>
+      <member refid="classcsl_1_1Abstract_1af04c0e4426f0bf9df365afe0148d59df" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getContractedPair</name></member>
+      <member refid="classcsl_1_1TensorElement_1a5f1b1ae7f3655cccd70bf09a60075b7b" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getContractionProperties</name></member>
+      <member refid="classcsl_1_1Abstract_1aa22f0e4c9c91f43b5cd61cbb873869eb" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getDeltaMinus</name></member>
+      <member refid="classcsl_1_1Abstract_1a69a657baf1c35ed581e9db2c47a71c99" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getDeltaPlus</name></member>
+      <member refid="classcsl_1_1Abstract_1a9531d78d67c82e288c0130da5b1ba80b" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getDenom</name></member>
+      <member refid="classmty_1_1QuantumField_1a1346984a0e216d985da914df4d8a7ecd" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getDerivativeStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a5856c3d55a6d1406970f3656e61efe8e" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getDim</name></member>
+      <member refid="classcsl_1_1Abstract_1a77e067fc57c0c2e70d141079455fdbd7" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getElementary</name></member>
+      <member refid="classmty_1_1QuantumField_1aec43964b67a65c79d7f35ee5c09c078b" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getEnergyDimension</name></member>
+      <member refid="classcsl_1_1Abstract_1ac513c930caa9939c2b9557f36a34ee69" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getExponents</name></member>
+      <member refid="classcsl_1_1Abstract_1ac34c9c6f05e692faeed2f030514787ad" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getFactors</name></member>
+      <member refid="classmty_1_1QuantumField_1ab28de732066818badf7f4d4c977ad997" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getFlavorIrrep</name></member>
+      <member refid="classmty_1_1QuantumField_1a593b4762f5ee7fec2eef8b7d002653e4" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getFlavorIrrep</name></member>
+      <member refid="classcsl_1_1Abstract_1aa4136dc23f1fba4bf897b54c8592ccfc" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getFreeIndexStructure</name></member>
+      <member refid="classmty_1_1QuantumField_1afa8d4736af7b3d3140389738645a5d77" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getGaugeIrrep</name></member>
+      <member refid="classmty_1_1QuantumField_1ab9bf1cef7ea07e686a353627afd262a2" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getGroupIrrep</name></member>
+      <member refid="classcsl_1_1TensorElement_1ab38b54f3efd6b9950b6d3334a224caa1" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getHermitianConjugate</name></member>
+      <member refid="classcsl_1_1TensorElement_1ac1596174400a2ccd49d56b736fa8114a" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getHermitianConjugate</name></member>
+      <member refid="classcsl_1_1Complexified_1a11702661de0ea3b9c59b1f23af0ca0c0" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getImaginaryPart</name></member>
+      <member refid="classcsl_1_1TensorElement_1a029c4358822daed54f4f775032896790" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getIndex</name></member>
+      <member refid="classcsl_1_1TensorElement_1a3dc05ca45a03e8a7f8459812e07b85f6" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1ae6a9a9ef3efd6bb83b62c0a353742d25" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractElement::"><scope>mty::PolarizationField</scope><name>getIndexStructure</name></member>
+      <member refid="classcsl_1_1TensorElement_1abe312de6a76204dfcdc98cf4711bf353" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getIndexStructureView</name></member>
+      <member refid="classcsl_1_1TensorElement_1a15b5b8ef2a249fda36f7491b634270fb" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getIndexStructureView</name></member>
+      <member refid="classcsl_1_1Abstract_1a3d6b1e294cf24dea17c3c4361226138b" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getInfBoundary</name></member>
+      <member refid="classcsl_1_1AbstractElement_1ad8d4ceaa06fb30861b1ce4336a465f54" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getLatexName</name></member>
+      <member refid="classcsl_1_1Abstract_1a652101e34b2efa43114150e9af3c79d5" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getLibDependency</name></member>
+      <member refid="classmty_1_1QuantumField_1a2bb6b0c05f1b9d5b81c7823181d9d502" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getLSZInsertion</name></member>
+      <member refid="classmty_1_1QuantumField_1abe737537e11e85aa0a21b5fc8189db17" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getMass</name></member>
+      <member refid="classcsl_1_1AbstractElement_1ae80699e259632a43c4f69a125b64ae30" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getName</name></member>
+      <member refid="classcsl_1_1Abstract_1aa034448201c9e7998bbbb5e409636b30" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getNArgs</name></member>
+      <member refid="classcsl_1_1Abstract_1a42125e9765a771c47819548d342b0b28" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getNContractedPairs</name></member>
+      <member refid="classcsl_1_1Abstract_1a204dbd37b63432cb08932b995f49d3f4" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getNFactor</name></member>
+      <member refid="classcsl_1_1TensorElement_1a5ddd03efb94ea0017def76cd6777f745" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getNIndices</name></member>
+      <member refid="classcsl_1_1Abstract_1a6aa6bcc7cb8ee1574f29dc6ab6c6f0ed" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getNum</name></member>
+      <member refid="classcsl_1_1Abstract_1aad25c117c8dfc4d9718ba41e8d3f33a6" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getNumericalFactor</name></member>
+      <member refid="classcsl_1_1Abstract_1a9c3ec3dfe1fbd8ead5c8d9aca421a863" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getOperand</name></member>
+      <member refid="classcsl_1_1Abstract_1a9500a21d75d03c695ec0c76493600b38" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getOrder</name></member>
+      <member refid="classcsl_1_1Abstract_1ae89eb7b1a9e0259a60154563f3315907" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getOrderOf</name></member>
+      <member refid="classcsl_1_1AbstractElement_1a9e50d48ea0ee472c5c07f3985cc6c641" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getParent</name></member>
+      <member refid="classcsl_1_1AbstractElement_1acde43ab4cab544c3c0aa0d695e67b4ad" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getParent_info</name></member>
+      <member refid="classcsl_1_1Abstract_1aea8459b3206eb3a2297eeea7688e9520" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getParity</name></member>
+      <member refid="classmty_1_1PolarizationField_1a9ffd1e75a1e091c696ffae613bc823ea" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getParticle</name></member>
+      <member refid="classmty_1_1QuantumField_1a17324cd1e14e6deff5baa236a2e95acc" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getPartnerShip</name></member>
+      <member refid="classcsl_1_1TensorElement_1aa0f1ab4f63aa28f3c759a666fb15636a" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getPermutations</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1ac80748b3601cff1ed0df3b721316b950" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getPoint</name></member>
+      <member refid="classcsl_1_1AbstractElement_1a028ecff66278c1e385280b761388b929" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getPolynomialTerm</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1aab050fd18460d4842d8972a990363b0c" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getPrimaryType</name></member>
+      <member refid="classcsl_1_1Abstract_1a07489d0569bc983718796d21c73f34b3" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getProduct</name></member>
+      <member refid="classmty_1_1QuantumField_1aa99e18f5bb2373f598632bf4437525b7" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getPropagator</name></member>
+      <member refid="classmty_1_1QuantumField_1a21eb48c15f45c87f9da003c6f64e7485" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getQuantumParent</name></member>
+      <member refid="classcsl_1_1Complexified_1a5de9b50162c5af5177a928e855e6b71b" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getRealPart</name></member>
+      <member refid="classcsl_1_1Abstract_1a5b77f008f4b95030641224877004f06c" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getRegularExpression</name></member>
+      <member refid="classcsl_1_1Abstract_1a625efe55a17b97a1c0f085bdbf3a962a" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getShape</name></member>
+      <member refid="classcsl_1_1Abstract_1aa83df1d9dc202457113e5b38bd694fae" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getSign</name></member>
+      <member refid="classmty_1_1QuantumField_1ac6a97786c11bd86e37bbabfd2032e3e8" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getSpinDimension</name></member>
+      <member refid="classmty_1_1QuantumField_1acc9269fdde281a7d904476894e9db5d1" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getSquaredMass</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1aa9049a79ee6b2dfd50dbfae7d48560c9" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getSubSymbols</name></member>
+      <member refid="classcsl_1_1Abstract_1a7dcdc11b64c8c515933882168d0792ef" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a413c50b2663f57d38c1d3ec3cfeaa3ce" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a26a0854bca4c47e84a1da36a3de8c49f" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a29261a946b3398b6129237620754a8b9" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a8a067b70756c4eef758aa88076a95162" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1aeaf8154e39ff211b12e6382e675ccaad" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getSum</name></member>
+      <member refid="classcsl_1_1Abstract_1a2fcc223dbf5d880e923c07df142df5c8" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getSupBoundary</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1a58c627e31c2a42adec4caf39030123aa" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getTerm</name></member>
+      <member refid="classcsl_1_1TensorElement_1ae47bc7e79e284964b2a8447bf917f48f" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getTransposed</name></member>
+      <member refid="classcsl_1_1TensorElement_1a7cc7fb9e1f39bcebc90170e8dd526d43" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getTransposed</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1ab78b88ff1b49707ee98aee3211214044" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getType</name></member>
+      <member refid="classcsl_1_1Abstract_1a78f98ba06476e464e3fd2fce0d1f8243" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getValue</name></member>
+      <member refid="classcsl_1_1Abstract_1a628563238145f3a9acc331f1a89ce32f" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getValued</name></member>
+      <member refid="classcsl_1_1Abstract_1ae85f810bbadbc792210c958e8f1b2ffb" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getVariable</name></member>
+      <member refid="classcsl_1_1Abstract_1ac83c44ae1e5315a38083bdb7acd8f3fa" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getVectorArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a0188b049736016c970a2513ed9f6931f" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>getVectorialModulus</name></member>
+      <member refid="classmty_1_1QuantumField_1a023bd1e18cf2a76997c961c8f23a7bd6" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getWidth</name></member>
+      <member refid="classmty_1_1QuantumField_1ab95fb894ccabb45cb98d53ecd39bb24d" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>getXiGauge</name></member>
+      <member refid="classcsl_1_1TensorElement_1acb6f22178e26a8cc694ae2ffc01c2075" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>hasChainContractionProperty</name></member>
+      <member refid="classmty_1_1PolarizationField_1ade831a2a0692e924629fcf55e35858b0" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>hasContractionProperty</name></member>
+      <member refid="classmty_1_1QuantumField_1a9e5d48cd3da8b054bb85f2a75616a99d" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>hasDerivative</name></member>
+      <member refid="classmty_1_1PolarizationField_1ac15056d9be0d9dcbe34549fd3862a80e" prot="private" virt="non-virtual"><scope>mty::PolarizationField</scope><name>hasFieldChargeConjugation</name></member>
+      <member refid="classcsl_1_1Abstract_1a8c42723e8bc6334c99f00898cc1d59d7" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>hermitian</name></member>
+      <member refid="classmty_1_1QuantumField_1a3fc8050f57b6a4006fefd6bdece0f553" prot="protected" virt="non-virtual"><scope>mty::PolarizationField</scope><name>incoming</name></member>
+      <member refid="classcsl_1_1TensorElement_1a7f7b50e1bbd4157e8b2797740aa31b89" prot="protected" virt="non-virtual"><scope>mty::PolarizationField</scope><name>index</name></member>
+      <member refid="classcsl_1_1Abstract_1a5437e7f685edf8549e6d3b34572343f8" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>insert</name></member>
+      <member refid="classcsl_1_1Abstract_1a1b68943aa7ecf60a63af0f2f368eef8f" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>inverseMatrix</name></member>
+      <member refid="classcsl_1_1Abstract_1a9347e75b0cd0b75e0f0a38db93b29d83" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>isAnOperator</name></member>
+      <member refid="classmty_1_1QuantumField_1a05d6a78309d01329628515dc52d7a47c" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>isAntiCommuting</name></member>
+      <member refid="classcsl_1_1Abstract_1ac09992d147b39388c8936b3bff648930" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>isArbitrary</name></member>
+      <member refid="classmty_1_1QuantumField_1aed70d11cf0ed685949f3839b6a76a579" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>isBosonic</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1aee083330a4490359012cf0e656758a44" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>isBuildingBlock</name></member>
+      <member refid="classmty_1_1QuantumField_1a5b50091f56927c3704750bc6564b2c4f" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>isChiral</name></member>
+      <member refid="classcsl_1_1Complexified_1a3f583f018b34b63b321976a8bcedf430" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>isComplexConjugate</name></member>
+      <member refid="classmty_1_1PolarizationField_1aa899a03c5a6592966795199b0ce7d50b" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>isConjugationLocked</name></member>
+      <member refid="classmty_1_1PolarizationField_1ad8b5c0d7edeb8346100fec86016a4475" prot="private" virt="non-virtual"><scope>mty::PolarizationField</scope><name>isContractibleWith</name></member>
+      <member refid="classmty_1_1QuantumField_1aa77f6ef396dafe210ce39c313dbe1558" prot="public" virt="non-virtual" ambiguityscope="mty::QuantumField::"><scope>mty::PolarizationField</scope><name>isContractibleWith</name></member>
+      <member refid="classcsl_1_1Abstract_1a464f4f0613db9b4b0a4efe26a3a03d60" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>isEmpty</name></member>
+      <member refid="classmty_1_1QuantumField_1a21bcc290b0a99b07fff257d1482aca0d" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>isExactlyContractiblewith</name></member>
+      <member refid="classmty_1_1QuantumField_1a577a68c2d15d87186e4b162040daf027" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>isExternal</name></member>
+      <member refid="classmty_1_1QuantumField_1ac9e5134f83efa15ca290fbfd783ceecd" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>isFermionic</name></member>
+      <member refid="classmty_1_1QuantumField_1a9ccc3f57dddcf23aa071aaec95e865ef" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>isGaugeBoson</name></member>
+      <member refid="classcsl_1_1Abstract_1af2ce38838e35c5785f92373a1d830668" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>isHermitianConjugate</name></member>
+      <member refid="classmty_1_1QuantumField_1aaa14e7f910b9d982119b3e719927811d" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>isIncoming</name></member>
+      <member refid="classmty_1_1QuantumField_1a124ef33aebd4e8fb4f7e00188fd561cc" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>isIncomingAntiParticle</name></member>
+      <member refid="classmty_1_1QuantumField_1a4b7a79a4a33e65d3df042ff147bd42e0" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>isIncomingParticle</name></member>
+      <member refid="classmty_1_1QuantumField_1ac75fb08538ad65a86c3cd814de873e4c" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>isIndexed</name></member>
+      <member refid="classcsl_1_1Abstract_1a9a014bfd266b5f8471f23580e271979b" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>isInteger</name></member>
+      <member refid="classmty_1_1QuantumField_1a66a165ed82e7d23f90eeeef8907ebc8d" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>isOnShell</name></member>
+      <member refid="classmty_1_1QuantumField_1a7ea42cd3dbbb27f53e4775378c37d119" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>isOutgoingAntiParticle</name></member>
+      <member refid="classmty_1_1QuantumField_1ace26a46ae061be8a84a89a52ebf7d54f" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>isOutgoingParticle</name></member>
+      <member refid="classmty_1_1QuantumField_1a1a62ae33943f0b891b8c6e026ed7414b" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>isParticle</name></member>
+      <member refid="classmty_1_1QuantumField_1a89f12e2b66695abe68ccbea02f938481" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>isPhysical</name></member>
+      <member refid="classcsl_1_1AbstractElement_1a9f3e30eeaace6c5c21cda6895daa2de9" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>isPolynomial</name></member>
+      <member refid="classcsl_1_1Complexified_1aa3de4cb73eb624830da28f07ef0fa4d4" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>isPurelyImaginary</name></member>
+      <member refid="classmty_1_1QuantumField_1a8fd0d9ad227900df5231b0912c6a7320" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>isReal</name></member>
+      <member refid="classmty_1_1QuantumField_1a9dcbb04f7d097520e3400f38490be490" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>isSelfConjugate</name></member>
+      <member refid="classmty_1_1PolarizationField_1a712e1695c84c85dda258c880675c6532" prot="private" virt="non-virtual"><scope>mty::PolarizationField</scope><name>lockConjugation</name></member>
+      <member refid="classcsl_1_1Abstract_1ab79c1d8df9e6b1a3eca66958f7dc489d" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>matchShape</name></member>
+      <member refid="classmty_1_1PolarizationField_1a7ed4933c7a1c1ed81f070dd17b095bd9" prot="private" virt="virtual"><scope>mty::PolarizationField</scope><name>matrixChargeConjugation</name></member>
+      <member refid="classcsl_1_1TensorElement_1ae7a6d8fc44218dcade0332e215f4b653" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>memoryOverhead</name></member>
+      <member refid="classcsl_1_1Abstract_1a4f5ed458ba62f5b4cf61a9e1f8568af1" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>multiplication_own</name></member>
+      <member refid="classmty_1_1QuantumField_1a6830008b476268ef1bbfb00b6145394d" prot="protected" virt="non-virtual"><scope>mty::PolarizationField</scope><name>onShell</name></member>
+      <member refid="classmty_1_1QuantumField_1ae8393e21442455aa6c2201b424c331d1" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1af5b62a6308638064c42da80e9cc2cb7e" prot="public" virt="virtual" ambiguityscope="csl::TensorFieldElement::"><scope>mty::PolarizationField</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1af4fd1b57df371dac7ccfd5a909620e49" prot="public" virt="virtual" ambiguityscope="csl::TensorFieldElement::"><scope>mty::PolarizationField</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a96de5935a58a96d4c5b1e47966488923" prot="public" virt="non-virtual" ambiguityscope="csl::TensorFieldElement::"><scope>mty::PolarizationField</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1ac99a619abde7e4c58f39e14d4d20fcf5" prot="public" virt="non-virtual" ambiguityscope="csl::TensorFieldElement::"><scope>mty::PolarizationField</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a45206de7c7773b3cb150451ee3eb379e" prot="public" virt="non-virtual" ambiguityscope="csl::TensorFieldElement::"><scope>mty::PolarizationField</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a0d3495220202bd417c1b58249c923f39" prot="public" virt="non-virtual" ambiguityscope="csl::TensorFieldElement::"><scope>mty::PolarizationField</scope><name>operator!=</name></member>
+      <member refid="classmty_1_1QuantumField_1a0865ee25ad907e14d1714b2b9a58bb50" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1a24e7fa91efa725e7f64891cb9ce3507a" prot="public" virt="non-virtual" ambiguityscope="csl::TensorFieldElement::"><scope>mty::PolarizationField</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a5c1ba8dce7fbc19eb98807bd15a279c9" prot="public" virt="pure-virtual" ambiguityscope="csl::AbstractElement::"><scope>mty::PolarizationField</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a6e19587260a07dba65cf2a985e05516b" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractElement::"><scope>mty::PolarizationField</scope><name>operator&lt;</name></member>
+      <member refid="classmty_1_1PolarizationField_1af5724f51b3c0b7b8bc53b173a4f843fd" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a2a1660498f2638f5e490d6e512eb32f4" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>operator&lt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1afbcac6df2fd7ac11f336189cf215124b" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>operator&lt;=</name></member>
+      <member refid="classmty_1_1QuantumField_1ae88a0d99d2d7cabec01e5e1c2fe9eb4b" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>operator=</name></member>
+      <member refid="classmty_1_1QuantumField_1a5ad89d2f98e3a5c67ff1b2c617ba40da" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>operator=</name></member>
+      <member refid="classcsl_1_1Abstract_1a59ff2950fc8ca319f87a730450f14545" prot="public" virt="virtual" ambiguityscope="csl::TensorFieldElement::"><scope>mty::PolarizationField</scope><name>operator=</name></member>
+      <member refid="classmty_1_1QuantumField_1a45e66c19f29f1b8e3e6e0a8244a13772" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>operator==</name></member>
+      <member refid="classmty_1_1QuantumField_1a4b59d5c82236938b43adb052458f6e86" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a8334e14cd5789168b037d3888ed60edd" prot="public" virt="virtual" ambiguityscope="csl::AbstractBuildingBlock::"><scope>mty::PolarizationField</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a12d929e34039e817e464abc560bd4a9d" prot="public" virt="virtual" ambiguityscope="csl::AbstractBuildingBlock::"><scope>mty::PolarizationField</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a1f78f0cce24c93def3050743bc5f2845" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractBuildingBlock::"><scope>mty::PolarizationField</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1aed43debcac4a19e0da44986774c522bc" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractBuildingBlock::"><scope>mty::PolarizationField</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a2376f08c0aa5ffe783090381d102d3ae" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractBuildingBlock::"><scope>mty::PolarizationField</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a485c6f3e10db539a70416cd0766b117d" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>operator&gt;</name></member>
+      <member refid="classcsl_1_1Abstract_1ab305bdf49212f03781e7f98024faeb66" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>operator&gt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a4c8883df19d7538b68fa96aadac9dfa9" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>operator&gt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1a6b931f7b159d57bad26ca9c9ea729aa1" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>operator&gt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1aa8331053065d1be2da89e70c45d24863" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>operator[]</name></member>
+      <member refid="classcsl_1_1Abstract_1a560aa9993d506551c54a8c02d1445814" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>operator[]</name></member>
+      <member refid="classcsl_1_1Abstract_1a75d9abfa88d9d09a89d3a4becd9e6429" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>operatorAppliesOn</name></member>
+      <member refid="classcsl_1_1AbstractElement_1a5ad0a45c8a069be5e3e0ce21b784bb0b" prot="protected" virt="non-virtual"><scope>mty::PolarizationField</scope><name>parent</name></member>
+      <member refid="classmty_1_1QuantumField_1ae622a763289d8d602ad57554333759a6" prot="protected" virt="non-virtual"><scope>mty::PolarizationField</scope><name>particle</name></member>
+      <member refid="classmty_1_1QuantumField_1ace3bd17de0fd4f00c9da36ad8342ccb4" prot="protected" virt="non-virtual"><scope>mty::PolarizationField</scope><name>partnerShip</name></member>
+      <member refid="classcsl_1_1Abstract_1abe9aceabbc0a99642e84c9025dbdc767" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>permut</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1afac4c3b974119ba3ecc7e093abcd28c2" prot="protected" virt="non-virtual"><scope>mty::PolarizationField</scope><name>point</name></member>
+      <member refid="classmty_1_1PolarizationField_1ab26716039fc88e2c6cd3df18e76ecbfe" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>PolarizationField</name></member>
+      <member refid="classmty_1_1PolarizationField_1a7be20c9b268f4c56eae6cdb02ed5b2d4" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>PolarizationField</name></member>
+      <member refid="classmty_1_1PolarizationField_1ac524ff401357f47b3c784fc094f72916" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>PolarizationField</name></member>
+      <member refid="classmty_1_1PolarizationField_1ac0a20a11f94b9f2647df4aaba4552aec" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>PolarizationField</name></member>
+      <member refid="classmty_1_1PolarizationField_1a20b78dec08680f1a1a2dfbccfd1e6b2c" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>PolarizationField</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1afac7a7dd245d9d1bc5f52700e2a6acb8" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>print</name></member>
+      <member refid="classmty_1_1PolarizationField_1a5d60e41b929bf0aa8fcf49b5de67becb" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>printCode</name></member>
+      <member refid="classcsl_1_1Abstract_1a89e45ffc7b65f92e77e592f76f70934c" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>printExplicit</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1ac36fad3d18e46c353b4d961867d257cf" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>printLaTeX</name></member>
+      <member refid="classmty_1_1PolarizationField_1a4592cceedf21f55a616df8d85d866bda" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>printProp</name></member>
+      <member refid="classmty_1_1QuantumField_1adfeffd50ff4bb800d2cd50b392cac8f2" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>QuantumField</name></member>
+      <member refid="classmty_1_1QuantumField_1aff12303981b530b17fc82f2a2997f1cd" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>QuantumField</name></member>
+      <member refid="classmty_1_1QuantumField_1a6029119efa5db72ffafb816e8a3ac2f3" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>QuantumField</name></member>
+      <member refid="classmty_1_1QuantumField_1af81cb9cf5a98896b9c77d44c35ecf460" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>QuantumField</name></member>
+      <member refid="classmty_1_1QuantumField_1a79dcee9876d3e7352aca38ce02352b73" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>QuantumField</name></member>
+      <member refid="classmty_1_1QuantumField_1aadba5baeba0a576edadd4c909d2b3ad0" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>QuantumField</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1a61c01a40bd7efdaa5d20e70a74efa215" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>refresh</name></member>
+      <member refid="classcsl_1_1Abstract_1a8aab87c41acafaf1b1837b922495560d" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>regularLiteral</name></member>
+      <member refid="classcsl_1_1Abstract_1a2fe749450d2e610199801b189dc3d0f8" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>regularLiteral</name></member>
+      <member refid="classcsl_1_1Abstract_1aba5ef083016b2f3d9e6271f864b9b063" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>regularName</name></member>
+      <member refid="classcsl_1_1Abstract_1a1a8421d402d5ba82257188b545e8d668" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>regularName</name></member>
+      <member refid="classcsl_1_1Abstract_1a0e778c682b6cb02642b90e8ec8765441" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>removeDependency</name></member>
+      <member refid="classcsl_1_1TensorElement_1a02fe69a766b8eade9d5de6cbea8054a6" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>replaceIndex</name></member>
+      <member refid="classcsl_1_1TensorElement_1a16558db6dbbfcf52c37b52f8a883b5a6" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>replaceIndexInPlace</name></member>
+      <member refid="classcsl_1_1TensorElement_1a9ad3c1eabb60fb445f9054699f9d949d" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>replaceIndices</name></member>
+      <member refid="classcsl_1_1TensorElement_1a1ca07618e533c2ca4b4cc3646195a64d" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>resetIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a5c796713828ebfb74a7d8787d7802a76" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>self</name></member>
+      <member refid="classcsl_1_1TensorElement_1a44cf39f1c6deadcb0191a78d32c3b441" prot="protected" virt="non-virtual"><scope>mty::PolarizationField</scope><name>selfCheckAutoIndices</name></member>
+      <member refid="classcsl_1_1TensorElement_1ab0c7c1c3fb0105a70a1c73db895e0317" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>selfCheckIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1aa6a40ceb6eb1aa79711ca126d5bdda02" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setAllDependencies</name></member>
+      <member refid="classcsl_1_1Abstract_1aab2d2ac186b56d17d2cc0a105e145b11" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a45c3adb7ba4e2b8442247246a3792b44" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setArgument</name></member>
+      <member refid="classmty_1_1QuantumField_1a278dde0714428eb3785cf509151bf23b" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>setChirality</name></member>
+      <member refid="classcsl_1_1AbstractElement_1ab8f5f04326a3320b48a315ec5cee60d9" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setCommutable</name></member>
+      <member refid="classcsl_1_1AbstractElement_1a7d9bb4605dbd97ea98f721611adadd72" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setComplexProperty</name></member>
+      <member refid="classcsl_1_1Complexified_1a22b60556c965e51ab733e6eb5441783c" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setConjugated</name></member>
+      <member refid="classmty_1_1PolarizationField_1a284db4042e645bdfd26456b578a1ed2e" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>setConjugationLock</name></member>
+      <member refid="classmty_1_1QuantumField_1a9b7f3b55bd7c6b8c5677e095fd0ca880" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>setDerivativeStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1aa6a04bb56578e7da143b3cd8d8fb7b26" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setElementary</name></member>
+      <member refid="classcsl_1_1Abstract_1afa50c743b8e7e76e637e98f165ad4e5d" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setEmpty</name></member>
+      <member refid="classmty_1_1QuantumField_1ae955a8d822aeed51ecdfa208dcae8ee8" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>setExternal</name></member>
+      <member refid="classcsl_1_1Abstract_1ac318016372d14b795893fe7e59199084" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setFullyAntiSymmetric</name></member>
+      <member refid="classcsl_1_1Abstract_1a4f90ebb7cf7c26782bd36bc2a67fc5d4" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setFullySymmetric</name></member>
+      <member refid="classmty_1_1PolarizationField_1a59bb94aecc80d7e1315d779611d52424" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setIncoming</name></member>
+      <member refid="classcsl_1_1TensorElement_1a387f69126ae40d711755945ef023de92" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a5ecdb6ce7a2d9643da2f6161a06dfbbf" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setInfBoundary</name></member>
+      <member refid="classcsl_1_1AbstractElement_1aed5a0c9faec5b41fb1feb52764c4237f" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setName</name></member>
+      <member refid="classmty_1_1QuantumField_1a6b9492f126bd927094349b7404cc4b3a" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>setOnShell</name></member>
+      <member refid="classcsl_1_1Abstract_1a70df7be4486affa8dc891e3f25bf499f" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setOperand</name></member>
+      <member refid="classcsl_1_1Abstract_1ae7b8a14fc746ed72e4d5abd63373c5ba" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setOperandPrivate</name></member>
+      <member refid="classcsl_1_1AbstractElement_1af55db25120693bf64ed360105cb4357c" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setParent</name></member>
+      <member refid="classmty_1_1PolarizationField_1a04fde4c6635d65781653459f29d9fa94" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setParticle</name></member>
+      <member refid="classmty_1_1QuantumField_1a6e76c0b9eefc827cf69e54ba90ca7236" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>setPartnerShip</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1a7e1e7f28a0fcc04320d737dad3f59c21" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setPoint</name></member>
+      <member refid="classcsl_1_1Abstract_1aad7104a5b8855272a92a47c58f29e958" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setSupBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1aaf7f0692cb84ca861a5b3b641bea518b" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setValue</name></member>
+      <member refid="classcsl_1_1Abstract_1aa49c51bd285830e724f103e9fb61c464" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setValue</name></member>
+      <member refid="classcsl_1_1Abstract_1aa47ddab3aa047e86be34c70358d53548" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setVariable</name></member>
+      <member refid="classcsl_1_1Abstract_1a83fee8ed28079bcac107455d58be9d5d" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>setVectorArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a3794843945b8a39e2c1be073c9bacdf5" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>size</name></member>
+      <member refid="classmty_1_1PolarizationField_1abcf21831608584d1122cebe2912ff924" prot="private" virt="non-virtual"><scope>mty::PolarizationField</scope><name>spaceIndexContraction</name></member>
+      <member refid="classmty_1_1PolarizationField_1ae5b98cfcbd89fc3dde9c05711d0d7728" prot="private" virt="non-virtual"><scope>mty::PolarizationField</scope><name>spinIndexContraction</name></member>
+      <member refid="classmty_1_1PolarizationField_1a9100dd88bc68fc3fc5d3cf8968e9dc73" prot="private" virt="non-virtual"><scope>mty::PolarizationField</scope><name>sumPolarization</name></member>
+      <member refid="classcsl_1_1Abstract_1a4eeedaeaa39e75facf1060dce7c57a8f" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>suppressExponent</name></member>
+      <member refid="classcsl_1_1Abstract_1a43520e1d6d5fdad9b50f77c6e027f928" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>suppressTerm</name></member>
+      <member refid="classcsl_1_1Abstract_1a4faf1ffd8cb3b6c721e128980c0303d8" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>symmetrise</name></member>
+      <member refid="classcsl_1_1Abstract_1a7b83c6a13716688f45b02e6291d39aba" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>tensordot</name></member>
+      <member refid="classcsl_1_1TensorElement_1ae0b7c09c0acd3173ba66669d797192c0" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>TensorElement</name></member>
+      <member refid="classcsl_1_1TensorElement_1a1b29839ab99dd106e336ce900023d18a" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>TensorElement</name></member>
+      <member refid="classcsl_1_1TensorElement_1ac2169c4eabe165be2f0c455f658a0036" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>TensorElement</name></member>
+      <member refid="classcsl_1_1TensorElement_1a3bba3e8ce7e864a2921ad91e4019454c" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>TensorElement</name></member>
+      <member refid="classcsl_1_1TensorElement_1a4d45c8d308213ea65d46f9aeab883d9f" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>TensorElement</name></member>
+      <member refid="classcsl_1_1TensorElement_1a4f78788e311f00a646e933b102fe365c" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>TensorElement</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1a36078184224c07158d5eb1268128d670" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>TensorFieldElement</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1a9c35e9c1bae8f34130311b027fab9867" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>TensorFieldElement</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1a16cf2e827a2ee85322fea69b4e779827" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>TensorFieldElement</name></member>
+      <member refid="classmty_1_1PolarizationField_1af90ace8ff64624351c9302175c880986" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>test</name></member>
+      <member refid="classcsl_1_1Abstract_1aee4fa41a5e014f067395467542ee8831" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>testDummy</name></member>
+      <member refid="classcsl_1_1Abstract_1a9a86d21f5c5f65eb7e524a8f8002c0e7" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>trace</name></member>
+      <member refid="classcsl_1_1Abstract_1aacab43e551e9259a39a79378373ce49c" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>trace</name></member>
+      <member refid="classcsl_1_1Abstract_1a1e97712696e5c40b28bc1e35987fea94" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>transpose</name></member>
+      <member refid="classmty_1_1PolarizationField_1a009780ce76fe887b6b51485096259f14" prot="private" virt="non-virtual"><scope>mty::PolarizationField</scope><name>updateComplexConjugation</name></member>
+      <member refid="classcsl_1_1Abstract_1a40bdc4c76fdbbf3cbac3af4dce8286ed" prot="public" virt="virtual"><scope>mty::PolarizationField</scope><name>~Abstract</name></member>
+      <member refid="classcsl_1_1AbstractElement_1a96ee7c198c82450d17ce0f08df2bef00" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>~AbstractElement</name></member>
+      <member refid="classcsl_1_1TensorFieldElement_1ab09e4e36b98ea53f96c817d7af2c9368" prot="public" virt="non-virtual"><scope>mty::PolarizationField</scope><name>~TensorFieldElement</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

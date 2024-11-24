@@ -1,0 +1,1461 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1FeynmanDiagram" kind="class" language="C++" prot="public">
+    <compoundname>mty::FeynmanDiagram</compoundname>
+    <includes refid="feynmanDiagram_8h" local="no">feynmanDiagram.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796" prot="public" static="no" strong="no">
+        <type></type>
+        <name>DiagramParticleType</name>
+        <qualifiedname>mty::FeynmanDiagram::DiagramParticleType</qualifiedname>
+        <enumvalue id="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796a80f0ef88d361ca9f533fe7edeabbc937" prot="public">
+          <name>External</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>External particles. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796a83098b1e27610ab4f153be0d88d2da01" prot="public">
+          <name>Mediator</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Internal particles outside loops. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796abddd3256e8c66593676800a817ac56be" prot="public">
+          <name>Loop</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Internal particles in loops. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796acc4e1e67dc7d39176aa90ae46984b65f" prot="public">
+          <name>Any</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Any type of particle. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Possible types of particles in a diagram. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="71" column="5" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="71" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmty_1_1FeynmanDiagram_1a24c070c4ff41843fe84ba51439241120" prot="public" static="no">
+        <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">mty::wick::Graph</ref> &gt;</type>
+        <definition>using mty::FeynmanDiagram::diagram_t =  std::shared_ptr&lt;mty::wick::Graph&gt;</definition>
+        <argsstring></argsstring>
+        <name>diagram_t</name>
+        <qualifiedname>mty::FeynmanDiagram::diagram_t</qualifiedname>
+        <briefdescription>
+<para>Type definition for the type used to store graphs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="56" column="5" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmty_1_1FeynmanDiagram_1acf4561fc85da53cf1d1fae21b8ffa777" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>typename std::enable_if_t&lt; !std::is_same_v&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref>, std::decay_t&lt; T &gt; &gt; &gt;</type>
+        <definition>using mty::FeynmanDiagram::isNotParticle_t =  typename std::enable_if_t&lt;
+        !std::is_same_v&lt;mty::Particle, std::decay_t&lt;T&gt;&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>isNotParticle_t</name>
+        <qualifiedname>mty::FeynmanDiagram::isNotParticle_t</qualifiedname>
+        <briefdescription>
+<para>Helper type definition ensuring that the type T is not a <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="65" column="5" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1FeynmanDiagram_1ab42cd3d9e3ecf5f78022c25fc9868f03" prot="private" static="no" mutable="no">
+        <type><ref refid="classmty_1_1Model" kindref="compound">Model</ref> const  *</type>
+        <definition>Model const* mty::FeynmanDiagram::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <qualifiedname>mty::FeynmanDiagram::model</qualifiedname>
+        <briefdescription>
+<para>Pointer to the model in which the calculation has been done. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="539" column="17" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="539" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynmanDiagram_1adc7b9621896affd8ee86d90e9a54a4f8" prot="private" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::FeynmanDiagram::expression</definition>
+        <argsstring></argsstring>
+        <name>expression</name>
+        <qualifiedname>mty::FeynmanDiagram::expression</qualifiedname>
+        <briefdescription>
+<para>Expression result of the calculation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="544" column="15" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="544" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynmanDiagram_1a365f970d72dccf3012ac9e2f1549ed4f" prot="private" static="no" mutable="no">
+        <type><ref refid="classmty_1_1FeynmanDiagram_1a24c070c4ff41843fe84ba51439241120" kindref="member">diagram_t</ref></type>
+        <definition>diagram_t mty::FeynmanDiagram::diagram</definition>
+        <argsstring></argsstring>
+        <name>diagram</name>
+        <qualifiedname>mty::FeynmanDiagram::diagram</qualifiedname>
+        <briefdescription>
+<para>Graph to forward to GRAFED to display it on screen. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="549" column="15" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynmanDiagram_1a39abfed8f3bf68bbb2c5f01cec39cfc3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mty::FeynmanDiagram::cycleLength</definition>
+        <argsstring></argsstring>
+        <name>cycleLength</name>
+        <qualifiedname>mty::FeynmanDiagram::cycleLength</qualifiedname>
+        <briefdescription>
+<para>Length of the cycle (momentum integral) if the calculation is at one-loop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="555" column="9" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynmanDiagram_1a3e5d4497b9eabda3ef766ddf3e127469" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::FeynmanDiagram::externalPropagatorLoop</definition>
+        <argsstring></argsstring>
+        <name>externalPropagatorLoop</name>
+        <qualifiedname>mty::FeynmanDiagram::externalPropagatorLoop</qualifiedname>
+        <briefdescription>
+<para>Tell if an external leg is loop-corrected in the diagram (useful to filter-out external leg correction diagrams in amplitudes). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="561" column="10" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="561" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynmanDiagram_1ad4cdf25b5e4673854a481fba3454bed5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mty::FeynmanDiagram::nLoops</definition>
+        <argsstring></argsstring>
+        <name>nLoops</name>
+        <qualifiedname>mty::FeynmanDiagram::nLoops</qualifiedname>
+        <briefdescription>
+<para>Number of loops in the diagram. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="566" column="9" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="566" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynmanDiagram_1a1abd665f00f717902fb955cae47a554b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt;</type>
+        <definition>std::vector&lt;mty::Particle&gt; mty::FeynmanDiagram::allParticles</definition>
+        <argsstring></argsstring>
+        <name>allParticles</name>
+        <qualifiedname>mty::FeynmanDiagram::allParticles</qualifiedname>
+        <briefdescription>
+<para>List of all particles in the process. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="571" column="17" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="571" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynmanDiagram_1a479ef5b2a6258a683f00817bfa5d61fd" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt;</type>
+        <definition>std::vector&lt;mty::Particle&gt; mty::FeynmanDiagram::externalParticles</definition>
+        <argsstring></argsstring>
+        <name>externalParticles</name>
+        <qualifiedname>mty::FeynmanDiagram::externalParticles</qualifiedname>
+        <briefdescription>
+<para>List of external particles in the process. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="576" column="17" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="576" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynmanDiagram_1a3b6e73311f7533460da575a438fe9caf" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt;</type>
+        <definition>std::vector&lt;mty::Particle&gt; mty::FeynmanDiagram::mediatorParticles</definition>
+        <argsstring></argsstring>
+        <name>mediatorParticles</name>
+        <qualifiedname>mty::FeynmanDiagram::mediatorParticles</qualifiedname>
+        <briefdescription>
+<para>List of mediator particles in the process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Mediator particles are defined here as internal particles that do not appear in loops. An internal particle is then either a mediator or a looped particle.</para>
+<para><simplesect kind="see"><para>loopParticles </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="587" column="17" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="587" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynmanDiagram_1a23286630274862f5b77ef6a197568a2e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt;</type>
+        <definition>std::vector&lt;mty::Particle&gt; mty::FeynmanDiagram::loopParticles</definition>
+        <argsstring></argsstring>
+        <name>loopParticles</name>
+        <qualifiedname>mty::FeynmanDiagram::loopParticles</qualifiedname>
+        <briefdescription>
+<para>List of particles in loops in the process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>mediatorParticles </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="594" column="17" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="594" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1ac97b874fb33eb4b14583f95131f3b2e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::FeynmanDiagram::FeynmanDiagram</definition>
+        <argsstring>(mty::Model const &amp;t_model)</argsstring>
+        <name>FeynmanDiagram</name>
+        <qualifiedname>mty::FeynmanDiagram::FeynmanDiagram</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref> const &amp;</type>
+          <declname>t_model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="79" column="5" bodyfile="src/marty/core/feynmanDiagram.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1a04888f4d85e91fdf08d8a2c9846eb48e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::FeynmanDiagram::FeynmanDiagram</definition>
+        <argsstring>(mty::Model const &amp;t_model, csl::Expr const &amp;t_expression, diagram_t const &amp;t_diagram)</argsstring>
+        <name>FeynmanDiagram</name>
+        <qualifiedname>mty::FeynmanDiagram::FeynmanDiagram</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref> const &amp;</type>
+          <declname>t_model</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>t_expression</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynmanDiagram_1a24c070c4ff41843fe84ba51439241120" kindref="member">diagram_t</ref> const &amp;</type>
+          <declname>t_diagram</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="81" column="5" bodyfile="src/marty/core/feynmanDiagram.cpp" bodystart="27" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1a21f3ecaf90fc2b2ee63d39f7eb908073" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::FeynmanDiagram::isZero</definition>
+        <argsstring>() const</argsstring>
+        <name>isZero</name>
+        <qualifiedname>mty::FeynmanDiagram::isZero</qualifiedname>
+        <briefdescription>
+<para>Tells if the diagram vanishes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>A bare output of MARTY should in principle not contain null diagrams.</para>
+</simplesect>
+<simplesect kind="return"><para><bold>True</bold> if the diagram&apos;s expression is equal to zero. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="94" column="10" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1a39ccaf036ae361ea264917fc39a58df8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+        <definition>csl::Expr const  &amp; mty::FeynmanDiagram::getExpression</definition>
+        <argsstring>() const</argsstring>
+        <name>getExpression</name>
+        <qualifiedname>mty::FeynmanDiagram::getExpression</qualifiedname>
+        <briefdescription>
+<para>Returns the diagrams&apos;s expression as a const reference. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="104" column="21" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1ab92711440469ce1f31f804405d19bc9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+        <definition>csl::Expr &amp; mty::FeynmanDiagram::getExpression</definition>
+        <argsstring>()</argsstring>
+        <name>getExpression</name>
+        <qualifiedname>mty::FeynmanDiagram::getExpression</qualifiedname>
+        <briefdescription>
+<para>Returns the diagrams&apos;s expression as a reference. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>expression </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="114" column="15" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1a4b37154bac2e56ebd1ad10bda87f7e68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynmanDiagram::setExpression</definition>
+        <argsstring>(csl::Expr const &amp;expr)</argsstring>
+        <name>setExpression</name>
+        <qualifiedname>mty::FeynmanDiagram::setExpression</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="119" column="10" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1a32bd1deb20e05aec087bdc24502fd1b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmty_1_1FeynmanDiagram_1a24c070c4ff41843fe84ba51439241120" kindref="member">diagram_t</ref> &amp;</type>
+        <definition>diagram_t &amp; mty::FeynmanDiagram::getDiagram</definition>
+        <argsstring>()</argsstring>
+        <name>getDiagram</name>
+        <qualifiedname>mty::FeynmanDiagram::getDiagram</qualifiedname>
+        <briefdescription>
+<para>Returns the diagram&apos;s graph as a reference. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>diagram </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="129" column="15" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1af9492eece0236aa22f2818053c6081ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmty_1_1FeynmanDiagram_1a24c070c4ff41843fe84ba51439241120" kindref="member">diagram_t</ref> const &amp;</type>
+        <definition>diagram_t const  &amp; mty::FeynmanDiagram::getDiagram</definition>
+        <argsstring>() const</argsstring>
+        <name>getDiagram</name>
+        <qualifiedname>mty::FeynmanDiagram::getDiagram</qualifiedname>
+        <briefdescription>
+<para>Returns the diagram&apos;s graph as a const reference. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>diagram </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="139" column="21" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1a538956172b93859b489cb0a29ca4c402" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynmanDiagram::setDiagram</definition>
+        <argsstring>(diagram_t const &amp;diag)</argsstring>
+        <name>setDiagram</name>
+        <qualifiedname>mty::FeynmanDiagram::setDiagram</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynmanDiagram_1a24c070c4ff41843fe84ba51439241120" kindref="member">diagram_t</ref> const &amp;</type>
+          <declname>diag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="144" column="10" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="144" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1a1135d4e0ff14a8a354b79d2adc4a4879" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; mty::Particle &gt; const  &amp; mty::FeynmanDiagram::getParticles</definition>
+        <argsstring>(DiagramParticleType type=Any) const</argsstring>
+        <name>getParticles</name>
+        <qualifiedname>mty::FeynmanDiagram::getParticles</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796" kindref="member">DiagramParticleType</ref></type>
+          <declname>type</declname>
+          <defval><ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796acc4e1e67dc7d39176aa90ae46984b65f" kindref="member">Any</ref></defval>
+        </param>
+        <briefdescription>
+<para>Returns the set of particles corresponding to a given type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the particle range to return. The default value is <ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796acc4e1e67dc7d39176aa90ae46984b65f" kindref="member">Any</ref>, meaning all the particles in the diagram.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>externalParticles if type is <ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796a80f0ef88d361ca9f533fe7edeabbc937" kindref="member">External</ref>. </para>
+</simplesect>
+<simplesect kind="return"><para>mediatorParticles if type is <ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796a83098b1e27610ab4f153be0d88d2da01" kindref="member">Mediator</ref>. </para>
+</simplesect>
+<simplesect kind="return"><para>loopParticles if type is <ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796abddd3256e8c66593676800a817ac56be" kindref="member">Loop</ref>. </para>
+</simplesect>
+<simplesect kind="return"><para>allParticles if type is <ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796acc4e1e67dc7d39176aa90ae46984b65f" kindref="member">Any</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="162" column="23" bodyfile="src/marty/core/feynmanDiagram.cpp" bodystart="39" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1ad1b4bd3b83182d96fca839e30fc2b291" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::FeynmanDiagram::contains</definition>
+        <argsstring>(mty::Particle const &amp;part, DiagramParticleType type=Any) const</argsstring>
+        <name>contains</name>
+        <qualifiedname>mty::FeynmanDiagram::contains</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796" kindref="member">DiagramParticleType</ref></type>
+          <declname>type</declname>
+          <defval><ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796acc4e1e67dc7d39176aa90ae46984b65f" kindref="member">Any</ref></defval>
+        </param>
+        <briefdescription>
+<para>Tells if one particle is contained in the diagram for a given type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is a general one, that is called by several specialization: <ref refid="classmty_1_1FeynmanDiagram_1aeca89959ee8113550b9d835ddaa998c7" kindref="member">isExternal()</ref>, <ref refid="classmty_1_1FeynmanDiagram_1adbddf2e4e94ba6b28646525257756e17" kindref="member">isMediator()</ref>, <ref refid="classmty_1_1FeynmanDiagram_1ae74e8b85b441576b591d8e0cd19ed930" kindref="member">isInLoop()</ref>, <ref refid="classmty_1_1FeynmanDiagram_1a99087329da7694c7f14a17aacf94cb33" kindref="member">isInternal()</ref>. Given a particle and a type (DiagramParticleType), this function returns true if the particle is found is the range of particles of the same type in the diagram. This function can take any type that can be forwarded to <ref refid="classmty_1_1ModelData_1ac517a59f16a2ffe7d88a598efa6aebfb" kindref="member">mty::Model::getParticle()</ref>. In particular, it may take char arrays as parameter knowing the name of the particle: <programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>containsZ<sp/>=<sp/>diagram.contains(</highlight><highlight class="stringliteral">&quot;Z&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>shortcut<sp/>for<sp/>the<sp/>other<sp/>overload<sp/>given<sp/>a<sp/>model<sp/>&quot;model&quot;:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>bool<sp/>containsZ<sp/>=<sp/>diagram.contains(model.getParticle(&quot;Z&quot;));</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that can be converted to a particle by a <ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Constraint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: T must not be a <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>part</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> to search in the diagram. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that the particle must be. The default is <ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796acc4e1e67dc7d39176aa90ae46984b65f" kindref="member">Any</ref> meaning that this function searches in the whole diagram (all particles, external and internal ones).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the particle has been found. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="194" column="10" bodyfile="src/marty/core/feynmanDiagram.cpp" bodystart="60" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1aeca89959ee8113550b9d835ddaa998c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::FeynmanDiagram::isExternal</definition>
+        <argsstring>(mty::Particle const &amp;particle) const</argsstring>
+        <name>isExternal</name>
+        <qualifiedname>mty::FeynmanDiagram::isExternal</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>particle</declname>
+        </param>
+        <briefdescription>
+<para>Tells if a particle is an external particle in the diagram. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> to test.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if one external leg corresponds to <bold>particle</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1FeynmanDiagram_1ad1b4bd3b83182d96fca839e30fc2b291" kindref="member">contains()</ref>, <ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796" kindref="member">DiagramParticleType</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="207" column="10" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="207" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1adbddf2e4e94ba6b28646525257756e17" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::FeynmanDiagram::isMediator</definition>
+        <argsstring>(mty::Particle const &amp;particle) const</argsstring>
+        <name>isMediator</name>
+        <qualifiedname>mty::FeynmanDiagram::isMediator</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>particle</declname>
+        </param>
+        <briefdescription>
+<para>Tells if a particle is a mediator particle in the diagram. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> to test.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if one mediator corresponds to <bold>particle</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1FeynmanDiagram_1ad1b4bd3b83182d96fca839e30fc2b291" kindref="member">contains()</ref>, <ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796" kindref="member">DiagramParticleType</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="221" column="10" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="221" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1ae74e8b85b441576b591d8e0cd19ed930" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::FeynmanDiagram::isInLoop</definition>
+        <argsstring>(mty::Particle const &amp;particle) const</argsstring>
+        <name>isInLoop</name>
+        <qualifiedname>mty::FeynmanDiagram::isInLoop</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>particle</declname>
+        </param>
+        <briefdescription>
+<para>Tells if a particle is a looped particle in the diagram. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> to test.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if one loop particle corresponds to <bold>particle</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1FeynmanDiagram_1ad1b4bd3b83182d96fca839e30fc2b291" kindref="member">contains()</ref>, <ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796" kindref="member">DiagramParticleType</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="235" column="10" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="235" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1a99087329da7694c7f14a17aacf94cb33" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::FeynmanDiagram::isInternal</definition>
+        <argsstring>(mty::Particle const &amp;particle) const</argsstring>
+        <name>isInternal</name>
+        <qualifiedname>mty::FeynmanDiagram::isInternal</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>particle</declname>
+        </param>
+        <briefdescription>
+<para>Tells if a particle is an internal particle in the diagram. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> to test.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if one mediator or looped particle corresponds to <bold>particle</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1FeynmanDiagram_1ad1b4bd3b83182d96fca839e30fc2b291" kindref="member">contains()</ref>, <ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796" kindref="member">DiagramParticleType</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="250" column="10" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="250" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1a438af33aae7f4758a96f912606f64988" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::FeynmanDiagram::isTreeLevel</definition>
+        <argsstring>() const</argsstring>
+        <name>isTreeLevel</name>
+        <qualifiedname>mty::FeynmanDiagram::isTreeLevel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the diagram is at the tree level. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="259" column="10" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="259" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1aa53f84f0ebb95cc2affa1fa5ae4798e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::FeynmanDiagram::isLoop</definition>
+        <argsstring>() const</argsstring>
+        <name>isLoop</name>
+        <qualifiedname>mty::FeynmanDiagram::isLoop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the diagram has at least one loop. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="268" column="10" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="268" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1afe1be6d1e3108053dd8c070813dbe362" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::FeynmanDiagram::getNLoops</definition>
+        <argsstring>() const</argsstring>
+        <name>getNLoops</name>
+        <qualifiedname>mty::FeynmanDiagram::getNLoops</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of loops of the diagram. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="276" column="9" bodyfile="src/marty/core/feynmanDiagram.cpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1aeed5cd77dcb45d433e1b566bd39723b0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::FeynmanDiagram::isTopology</definition>
+        <argsstring>(int topology) const</argsstring>
+        <name>isTopology</name>
+        <qualifiedname>mty::FeynmanDiagram::isTopology</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>topology</declname>
+        </param>
+        <briefdescription>
+<para>Tells if the diagram is of a given topology. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function takes as a parameter an integer, not a <ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ec" kindref="member">mty::Topology::Type</ref> object to allow combinations of topologies. A single <ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ec" kindref="member">mty::Topology::Type</ref> can also be given as it is implicitly convertible into an int. This interface allows then the following uses: <programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isTadpole<sp/>=<sp/>diagram.isTopology(<ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ecaefe9fa4dbe5b05a42326e7a59f7f5b98" kindref="member">mty::Topology::Tadpole</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isTriangleOrBox<sp/>=<sp/>diagram.isTopology(<ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ecaed8463d3120b4e5e3a839e9c21f290ab" kindref="member">mty::Topology::Triangle</ref><sp/>|</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558ecab3e5136e03484c2fb6d667d7ad54b007" kindref="member">mty::Topology::Box</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Finally,<sp/>in<sp/>the<sp/>limit<sp/>of<sp/>at<sp/>most<sp/>5<sp/>external<sp/>legs<sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>alwaysTrue<sp/>=<sp/>diagram.isTopology(<ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558eca1b380921409e937573e8977efefc6a45" kindref="member">mty::Topology::Any</ref>);</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>topology</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing one or several topologies.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the diagram&apos;s topology is included in <bold>topology</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="299" column="10" bodyfile="src/marty/core/feynmanDiagram.cpp" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1a5ca5aeafba46f8fc23afa1640b86446e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename</type>
+            <defval><ref refid="classmty_1_1FeynmanDiagram_1acf4561fc85da53cf1d1fae21b8ffa777" kindref="member">isNotParticle_t</ref>&lt;T&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool mty::FeynmanDiagram::contains</definition>
+        <argsstring>(T &amp;&amp;part, DiagramParticleType type=Any) const</argsstring>
+        <name>contains</name>
+        <qualifiedname>mty::FeynmanDiagram::contains</qualifiedname>
+        <param>
+          <type>T &amp;&amp;</type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796" kindref="member">DiagramParticleType</ref></type>
+          <declname>type</declname>
+          <defval><ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796acc4e1e67dc7d39176aa90ae46984b65f" kindref="member">Any</ref></defval>
+        </param>
+        <briefdescription>
+<para>Tells if one particle is contained in the diagram for a given type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is a general one, that is called by several specialization: <ref refid="classmty_1_1FeynmanDiagram_1aeca89959ee8113550b9d835ddaa998c7" kindref="member">isExternal()</ref>, <ref refid="classmty_1_1FeynmanDiagram_1adbddf2e4e94ba6b28646525257756e17" kindref="member">isMediator()</ref>, <ref refid="classmty_1_1FeynmanDiagram_1ae74e8b85b441576b591d8e0cd19ed930" kindref="member">isInLoop()</ref>, <ref refid="classmty_1_1FeynmanDiagram_1a99087329da7694c7f14a17aacf94cb33" kindref="member">isInternal()</ref>. Given a particle and a type (DiagramParticleType), this function returns true if the particle is found is the range of particles of the same type in the diagram.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>part</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> to search in the diagram. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that the particle must be. The default is <ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796acc4e1e67dc7d39176aa90ae46984b65f" kindref="member">Any</ref> meaning that this function searches in the whole diagram (all particles).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the particle has been found. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="320" column="10" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="320" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1a5d8ade0c1b42fd5e262135f44311ba41" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::FeynmanDiagram::hasExternalLegCorrections</definition>
+        <argsstring>() const</argsstring>
+        <name>hasExternalLegCorrections</name>
+        <qualifiedname>mty::FeynmanDiagram::hasExternalLegCorrections</qualifiedname>
+        <briefdescription>
+<para>Tells if at least one external leg is loop-corrected in the diagram. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true If an external leg receives a loop correction </para>
+</simplesect>
+<simplesect kind="return"><para>false Otherwise</para>
+</simplesect>
+<simplesect kind="see"><para>externalPropagatorLoop </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="334" column="10" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="334" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1af21a65042f3561621d20d1c52f9ca772" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename</type>
+            <defval><ref refid="classmty_1_1FeynmanDiagram_1acf4561fc85da53cf1d1fae21b8ffa777" kindref="member">isNotParticle_t</ref>&lt;T&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool mty::FeynmanDiagram::isExternal</definition>
+        <argsstring>(T &amp;&amp;particle) const</argsstring>
+        <name>isExternal</name>
+        <qualifiedname>mty::FeynmanDiagram::isExternal</qualifiedname>
+        <param>
+          <type>T &amp;&amp;</type>
+          <declname>particle</declname>
+        </param>
+        <briefdescription>
+<para>Tells if a particle is an external particle in the diagram. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function can take any type that can be forwarded to <ref refid="classmty_1_1ModelData_1ac517a59f16a2ffe7d88a598efa6aebfb" kindref="member">mty::Model::getParticle()</ref>. In particular, it may take char arrays as parameter knowing the name of the particle: <programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>containsZ<sp/>=<sp/>diagram.isExternal(</highlight><highlight class="stringliteral">&quot;Z&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>shortcut<sp/>for<sp/>the<sp/>other<sp/>overload<sp/>given<sp/>a<sp/>model<sp/>&quot;model&quot;:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>bool<sp/>containsZ<sp/>=<sp/>diagram.isExternal(model.getParticle(&quot;Z&quot;));</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that can be converted to a particle by a <ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Constraint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: T must not be a <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> to search for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if <bold>particle</bold> represents an external particle (mediator or looped particle) in the diagram. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1FeynmanDiagram_1ad1b4bd3b83182d96fca839e30fc2b291" kindref="member">contains()</ref>, <ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796" kindref="member">DiagramParticleType</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="362" column="10" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="362" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1ac18e6ffa0cb9a88f0295fc8580e363ae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename</type>
+            <defval><ref refid="classmty_1_1FeynmanDiagram_1acf4561fc85da53cf1d1fae21b8ffa777" kindref="member">isNotParticle_t</ref>&lt;T&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool mty::FeynmanDiagram::isMediator</definition>
+        <argsstring>(T &amp;&amp;particle) const</argsstring>
+        <name>isMediator</name>
+        <qualifiedname>mty::FeynmanDiagram::isMediator</qualifiedname>
+        <param>
+          <type>T &amp;&amp;</type>
+          <declname>particle</declname>
+        </param>
+        <briefdescription>
+<para>Tells if a particle is a mediator particle in the diagram. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function can take any type that can be forwarded to <ref refid="classmty_1_1ModelData_1ac517a59f16a2ffe7d88a598efa6aebfb" kindref="member">mty::Model::getParticle()</ref>. In particular, it may take char arrays as parameter knowing the name of the particle: <programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>containsZ<sp/>=<sp/>diagram.isMediator(</highlight><highlight class="stringliteral">&quot;Z&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>shortcut<sp/>for<sp/>the<sp/>other<sp/>overload<sp/>given<sp/>a<sp/>model<sp/>&quot;model&quot;:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>bool<sp/>containsZ<sp/>=<sp/>diagram.isMediator(model.getParticle(&quot;Z&quot;));</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that can be converted to a particle by a <ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Constraint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: T must not be a <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> to search for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if <bold>particle</bold> represents a mediator particle (mediator or looped particle) in the diagram. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1FeynmanDiagram_1ad1b4bd3b83182d96fca839e30fc2b291" kindref="member">contains()</ref>, <ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796" kindref="member">DiagramParticleType</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="389" column="10" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="389" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1abdfef6457da03dd016e46798886c581e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename</type>
+            <defval><ref refid="classmty_1_1FeynmanDiagram_1acf4561fc85da53cf1d1fae21b8ffa777" kindref="member">isNotParticle_t</ref>&lt;T&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool mty::FeynmanDiagram::isInLoop</definition>
+        <argsstring>(T &amp;&amp;particle) const</argsstring>
+        <name>isInLoop</name>
+        <qualifiedname>mty::FeynmanDiagram::isInLoop</qualifiedname>
+        <param>
+          <type>T &amp;&amp;</type>
+          <declname>particle</declname>
+        </param>
+        <briefdescription>
+<para>Tells if a particle is a looped particle in the diagram. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function can take any type that can be forwarded to <ref refid="classmty_1_1ModelData_1ac517a59f16a2ffe7d88a598efa6aebfb" kindref="member">mty::Model::getParticle()</ref>. In particular, it may take char arrays as parameter knowing the name of the particle: <programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>containsZ<sp/>=<sp/>diagram.isInLoop(</highlight><highlight class="stringliteral">&quot;Z&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>shortcut<sp/>for<sp/>the<sp/>other<sp/>overload<sp/>given<sp/>a<sp/>model<sp/>&quot;model&quot;:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>bool<sp/>containsZ<sp/>=<sp/>diagram.isInLoop(model.getParticle(&quot;Z&quot;));</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that can be converted to a particle by a <ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Constraint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: T must not be a <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> to search for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if <bold>particle</bold> represents a looped particle (mediator or looped particle) in the diagram. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1FeynmanDiagram_1ad1b4bd3b83182d96fca839e30fc2b291" kindref="member">contains()</ref>, <ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796" kindref="member">DiagramParticleType</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="416" column="10" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="416" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1a1a1d63fae7aeb4f9718477930233cd0e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename</type>
+            <defval><ref refid="classmty_1_1FeynmanDiagram_1acf4561fc85da53cf1d1fae21b8ffa777" kindref="member">isNotParticle_t</ref>&lt;T&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool mty::FeynmanDiagram::isInternal</definition>
+        <argsstring>(T &amp;&amp;particle) const</argsstring>
+        <name>isInternal</name>
+        <qualifiedname>mty::FeynmanDiagram::isInternal</qualifiedname>
+        <param>
+          <type>T &amp;&amp;</type>
+          <declname>particle</declname>
+        </param>
+        <briefdescription>
+<para>Tells if a particle is an internal particle in the diagram. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function can take any type that can be forwarded to <ref refid="classmty_1_1ModelData_1ac517a59f16a2ffe7d88a598efa6aebfb" kindref="member">mty::Model::getParticle()</ref>. In particular, it may take char arrays as parameter knowing the name of the particle: <programlisting><codeline><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>containsZ<sp/>=<sp/>diagram.isInternal(</highlight><highlight class="stringliteral">&quot;Z&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>shortcut<sp/>for<sp/>the<sp/>other<sp/>overload<sp/>given<sp/>a<sp/>model<sp/>&quot;model&quot;:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>bool<sp/>containsZ<sp/>=<sp/>diagram.isInternal(model.getParticle(&quot;Z&quot;));</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that can be converted to a particle by a <ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Constraint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: T must not be a <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> to search for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if <bold>particle</bold> represents an internal particle (mediator or looped particle) in the diagram. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classmty_1_1FeynmanDiagram_1ad1b4bd3b83182d96fca839e30fc2b291" kindref="member">contains()</ref>, <ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796" kindref="member">DiagramParticleType</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="443" column="10" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="443" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1ad66be94e795aa77b4497196fd80023a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1FeynmanDiagram" kindref="compound">FeynmanDiagram</ref></type>
+        <definition>FeynmanDiagram mty::FeynmanDiagram::copy</definition>
+        <argsstring>() const</argsstring>
+        <name>copy</name>
+        <qualifiedname>mty::FeynmanDiagram::copy</qualifiedname>
+        <briefdescription>
+<para>Returns a copy of the diagram. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method deep copies the expression and the graph to create a new diagram with no shared object with the initial one.</para>
+<para><simplesect kind="return"><para>The diagram copy. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="456" column="20" bodyfile="src/marty/core/feynmanDiagram.cpp" bodystart="150" bodyend="155"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1a7a040396d4b1511b75a1c85c29b9d641" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1FeynmanDiagram" kindref="compound">FeynmanDiagram</ref></type>
+        <definition>FeynmanDiagram mty::FeynmanDiagram::combine</definition>
+        <argsstring>(FeynmanDiagram const &amp;A, FeynmanDiagram const &amp;B, Particle const &amp;mediator)</argsstring>
+        <name>combine</name>
+        <qualifiedname>mty::FeynmanDiagram::combine</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynmanDiagram" kindref="compound">FeynmanDiagram</ref> const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynmanDiagram" kindref="compound">FeynmanDiagram</ref> const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> const &amp;</type>
+          <declname>mediator</declname>
+        </param>
+        <briefdescription>
+<para>Combines two Feynman diagrams, connecting them by one external leg. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First diagram. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second diagram. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mediator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>External particle in both diagram connecting the two.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The combined diagram. The expression is invalid and must be determined. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="469" column="27" bodyfile="src/marty/core/feynmanDiagram.cpp" bodystart="157" bodyend="198"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1a6b5233a536ecb6f5e61c24621d7afc16" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> &gt; &amp;</type>
+        <definition>std::vector&lt; mty::Particle &gt; &amp; mty::FeynmanDiagram::getParticles</definition>
+        <argsstring>(DiagramParticleType type=Any)</argsstring>
+        <name>getParticles</name>
+        <qualifiedname>mty::FeynmanDiagram::getParticles</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796" kindref="member">DiagramParticleType</ref></type>
+          <declname>type</declname>
+          <defval><ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796acc4e1e67dc7d39176aa90ae46984b65f" kindref="member">Any</ref></defval>
+        </param>
+        <briefdescription>
+<para>Private non-const overload for <ref refid="classmty_1_1FeynmanDiagram_1a1135d4e0ff14a8a354b79d2adc4a4879" kindref="member">getParticles()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the particles from which the range must be returned.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The range of particles of type <bold>type</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="482" column="17" bodyfile="src/marty/core/feynmanDiagram.cpp" bodystart="54" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1a4f44107c10e3ab89553775dbb5347704" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynmanDiagram::addParticle</definition>
+        <argsstring>(mty::Particle const &amp;part, DiagramParticleType type)</argsstring>
+        <name>addParticle</name>
+        <qualifiedname>mty::FeynmanDiagram::addParticle</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref> const &amp;</type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796" kindref="member">DiagramParticleType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Adds a particle to a given range (depending its type). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>part</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> to add to the diagram. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type determining the range in which the particle is inserted (externalParticles, loopParticles, mediatorParticles). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="491" column="10" bodyfile="src/marty/core/feynmanDiagram.cpp" bodystart="81" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1afade404b87da0d7d3b16739d265483d8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename</type>
+            <defval><ref refid="classmty_1_1FeynmanDiagram_1acf4561fc85da53cf1d1fae21b8ffa777" kindref="member">isNotParticle_t</ref>&lt;T&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void mty::FeynmanDiagram::addParticle</definition>
+        <argsstring>(T &amp;&amp;part, DiagramParticleType type)</argsstring>
+        <name>addParticle</name>
+        <qualifiedname>mty::FeynmanDiagram::addParticle</qualifiedname>
+        <param>
+          <type>T &amp;&amp;</type>
+          <declname>part</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796" kindref="member">DiagramParticleType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Template overload for non-mty::Particle objects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function can take any type that can be forwarded to <ref refid="classmty_1_1ModelData_1ac517a59f16a2ffe7d88a598efa6aebfb" kindref="member">mty::Model::getParticle()</ref>. In particular, it may take char arrays as parameter knowing the name of the particle: <programlisting><codeline><highlight class="normal">addParticle(</highlight><highlight class="stringliteral">&quot;Z&quot;</highlight><highlight class="normal">,<sp/>someType);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>shortcut<sp/>for<sp/>the<sp/>other<sp/>overload<sp/>given<sp/>a<sp/>model<sp/>&quot;model&quot;:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>addParticle(model.getParticle(&quot;Z&quot;),<sp/>someType);</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type that can be converted to a particle by a <ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Constraint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: T must not be a <ref refid="classmty_1_1Particle" kindref="compound">mty::Particle</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>part</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> to add to the diagram. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type determining the range in which the particle is </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="511" column="10" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="511" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1a6fb68207be55bc4d4ecd32575d0628e7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynmanDiagram::loadParticlesFromVertices</definition>
+        <argsstring>(std::vector&lt; mty::wick::Vertex &gt; const &amp;vertices)</argsstring>
+        <name>loadParticlesFromVertices</name>
+        <qualifiedname>mty::FeynmanDiagram::loadParticlesFromVertices</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">mty::wick::Vertex</ref> &gt; const &amp;</type>
+          <declname>vertices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="517" column="5" bodyfile="src/marty/core/feynmanDiagram.cpp" bodystart="89" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1a5ee0b8c129ff0b9d54644d23a442b60a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynmanDiagram::updateParticleData</definition>
+        <argsstring>()</argsstring>
+        <name>updateParticleData</name>
+        <qualifiedname>mty::FeynmanDiagram::updateParticleData</qualifiedname>
+        <briefdescription>
+<para>Gathers particles from the graph given in initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="522" column="10" bodyfile="src/marty/core/feynmanDiagram.cpp" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1ac45cafff0419d43c20ad9482d34e2fb6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynmanDiagram::updateParticleData</definition>
+        <argsstring>(std::vector&lt; mty::wick::Vertex &gt; const &amp;vertices)</argsstring>
+        <name>updateParticleData</name>
+        <qualifiedname>mty::FeynmanDiagram::updateParticleData</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">mty::wick::Vertex</ref> &gt; const &amp;</type>
+          <declname>vertices</declname>
+        </param>
+        <briefdescription>
+<para>Gathers particles from graph vertices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="527" column="10" bodyfile="src/marty/core/feynmanDiagram.cpp" bodystart="129" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynmanDiagram_1a7473d8067bf22f8c70ca1b68331cacd1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynmanDiagram::mergeParticles</definition>
+        <argsstring>()</argsstring>
+        <name>mergeParticles</name>
+        <qualifiedname>mty::FeynmanDiagram::mergeParticles</qualifiedname>
+        <briefdescription>
+<para>Merges all particles found by updateParticleData() in the member allParticles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynmanDiagram.h" line="533" column="10" bodyfile="src/marty/core/feynmanDiagram.cpp" bodystart="136" bodyend="148"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class containing a Feynman diagram, symbolic expression and graph included. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The purpose of this class is to provide a container for the result of a diagram calculation, and a simple interface to obtain relevant information about the process. When an amplitude calculation is performed, the result contains a range of Feynman diagrams, each one (an instance of this class) containing as said above the graph that can be displayed in GRAFED, and the fully simplified symbolic expression, main result of MARTY. </para>
+    </detaileddescription>
+    <location file="src/marty/core/feynmanDiagram.h" line="50" column="1" bodyfile="src/marty/core/feynmanDiagram.h" bodystart="50" bodyend="595"/>
+    <listofallmembers>
+      <member refid="classmty_1_1FeynmanDiagram_1a4f44107c10e3ab89553775dbb5347704" prot="private" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>addParticle</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1afade404b87da0d7d3b16739d265483d8" prot="private" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>addParticle</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a1abd665f00f717902fb955cae47a554b" prot="private" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>allParticles</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796acc4e1e67dc7d39176aa90ae46984b65f" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>Any</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a7a040396d4b1511b75a1c85c29b9d641" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>combine</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1ad1b4bd3b83182d96fca839e30fc2b291" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>contains</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a5ca5aeafba46f8fc23afa1640b86446e" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>contains</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1ad66be94e795aa77b4497196fd80023a8" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>copy</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a39abfed8f3bf68bbb2c5f01cec39cfc3" prot="private" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>cycleLength</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a365f970d72dccf3012ac9e2f1549ed4f" prot="private" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>diagram</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a24c070c4ff41843fe84ba51439241120" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>diagram_t</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>DiagramParticleType</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1adc7b9621896affd8ee86d90e9a54a4f8" prot="private" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>expression</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796a80f0ef88d361ca9f533fe7edeabbc937" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>External</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a479ef5b2a6258a683f00817bfa5d61fd" prot="private" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>externalParticles</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a3e5d4497b9eabda3ef766ddf3e127469" prot="private" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>externalPropagatorLoop</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1ac97b874fb33eb4b14583f95131f3b2e8" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>FeynmanDiagram</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a04888f4d85e91fdf08d8a2c9846eb48e" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>FeynmanDiagram</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a32bd1deb20e05aec087bdc24502fd1b1" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>getDiagram</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1af9492eece0236aa22f2818053c6081ab" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>getDiagram</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a39ccaf036ae361ea264917fc39a58df8" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>getExpression</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1ab92711440469ce1f31f804405d19bc9c" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>getExpression</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1afe1be6d1e3108053dd8c070813dbe362" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>getNLoops</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a1135d4e0ff14a8a354b79d2adc4a4879" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>getParticles</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a6b5233a536ecb6f5e61c24621d7afc16" prot="private" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>getParticles</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a5d8ade0c1b42fd5e262135f44311ba41" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>hasExternalLegCorrections</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1aeca89959ee8113550b9d835ddaa998c7" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>isExternal</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1af21a65042f3561621d20d1c52f9ca772" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>isExternal</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1ae74e8b85b441576b591d8e0cd19ed930" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>isInLoop</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1abdfef6457da03dd016e46798886c581e" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>isInLoop</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a99087329da7694c7f14a17aacf94cb33" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>isInternal</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a1a1d63fae7aeb4f9718477930233cd0e" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>isInternal</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1aa53f84f0ebb95cc2affa1fa5ae4798e1" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>isLoop</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1adbddf2e4e94ba6b28646525257756e17" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>isMediator</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1ac18e6ffa0cb9a88f0295fc8580e363ae" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>isMediator</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1acf4561fc85da53cf1d1fae21b8ffa777" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>isNotParticle_t</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1aeed5cd77dcb45d433e1b566bd39723b0" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>isTopology</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a438af33aae7f4758a96f912606f64988" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>isTreeLevel</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a21f3ecaf90fc2b2ee63d39f7eb908073" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>isZero</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a6fb68207be55bc4d4ecd32575d0628e7" prot="private" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>loadParticlesFromVertices</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796abddd3256e8c66593676800a817ac56be" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>Loop</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a23286630274862f5b77ef6a197568a2e" prot="private" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>loopParticles</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a711756e969858256e46d260427da9796a83098b1e27610ab4f153be0d88d2da01" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>Mediator</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a3b6e73311f7533460da575a438fe9caf" prot="private" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>mediatorParticles</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a7473d8067bf22f8c70ca1b68331cacd1" prot="private" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>mergeParticles</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1ab42cd3d9e3ecf5f78022c25fc9868f03" prot="private" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>model</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1ad4cdf25b5e4673854a481fba3454bed5" prot="private" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>nLoops</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a538956172b93859b489cb0a29ca4c402" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>setDiagram</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a4b37154bac2e56ebd1ad10bda87f7e68" prot="public" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>setExpression</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1a5ee0b8c129ff0b9d54644d23a442b60a" prot="private" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>updateParticleData</name></member>
+      <member refid="classmty_1_1FeynmanDiagram_1ac45cafff0419d43c20ad9482d34e2fb6" prot="private" virt="non-virtual"><scope>mty::FeynmanDiagram</scope><name>updateParticleData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

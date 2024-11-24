@@ -1,0 +1,1684 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="error_8h" kind="file" language="C++">
+    <compoundname>error.h</compoundname>
+    <includes refid="options_8h" local="yes">options.h</includes>
+    <includes local="no">csignal</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">string_view</includes>
+    <includedby refid="abstract_8h" local="yes">src/csl/abstract.h</includedby>
+    <includedby refid="booleanOperators_8cpp" local="yes">src/csl/booleanOperators.cpp</includedby>
+    <includedby refid="buildingBlock_8cpp" local="yes">src/csl/buildingBlock.cpp</includedby>
+    <includedby refid="cast_8h" local="yes">src/csl/cast.h</includedby>
+    <includedby refid="diagonalization_8cpp" local="yes">src/csl/diagonalization.cpp</includedby>
+    <includedby refid="error_8cpp" local="yes">src/csl/error.cpp</includedby>
+    <includedby refid="index_8cpp" local="yes">src/csl/index.cpp</includedby>
+    <includedby refid="index__new_8h" local="yes">src/csl/index_new.h</includedby>
+    <includedby refid="indicial_8cpp" local="yes">src/csl/indicial.cpp</includedby>
+    <includedby refid="libraryevaluator_8cpp" local="yes">src/csl/libraryevaluator.cpp</includedby>
+    <includedby refid="libraryfunction_8cpp" local="yes">src/csl/libraryfunction.cpp</includedby>
+    <includedby refid="librarygenerator_8cpp" local="yes">src/csl/librarygenerator.cpp</includedby>
+    <includedby refid="literal_8cpp" local="yes">src/csl/literal.cpp</includedby>
+    <includedby refid="numerical_8cpp" local="yes">src/csl/numerical.cpp</includedby>
+    <includedby refid="pseudoIntegral_8cpp" local="yes">src/csl/pseudoIntegral.cpp</includedby>
+    <includedby refid="replace_8cpp" local="yes">src/csl/replace.cpp</includedby>
+    <includedby refid="space_8cpp" local="yes">src/csl/space.cpp</includedby>
+    <includedby refid="symmetry_8cpp" local="yes">src/csl/symmetry.cpp</includedby>
+    <includedby refid="tensorField_8cpp" local="yes">src/csl/tensorField.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/csl/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>options.h</label>
+        <link refid="options_8h"/>
+      </node>
+      <node id="3">
+        <label>csignal</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>string_view</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>src/csl.h</label>
+        <link refid="csl_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/csl/abreviation.h</label>
+        <link refid="abreviation_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/csl/abstract.h</label>
+        <link refid="abstract_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>src/csl/algo.h</label>
+        <link refid="algo_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>src/csl/booleanOperators.h</label>
+        <link refid="booleanOperators_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>src/csl/buildingBlock.h</label>
+        <link refid="buildingBlock_8h"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>src/csl/cast.h</label>
+        <link refid="cast_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>src/csl/commutation.h</label>
+        <link refid="commutation_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>src/csl/comparison.h</label>
+        <link refid="comparison_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/csl/csl.h</label>
+        <link refid="csl_2csl_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>src/csl/cslcomplex.h</label>
+        <link refid="cslcomplex_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>src/csl/diagonalization.h</label>
+        <link refid="diagonalization_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>src/csl/element.h</label>
+        <link refid="element_8h"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/csl/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>src/csl/functional.h</label>
+        <link refid="functional_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>src/csl/index_new.h</label>
+        <link refid="index__new_8h"/>
+      </node>
+      <node id="109">
+        <label>src/csl/indicial.h</label>
+        <link refid="indicial_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>src/csl/interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>src/csl/interface_indicial.h</label>
+        <link refid="interface__indicial_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>src/csl/librarydependency.h</label>
+        <link refid="librarydependency_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>src/csl/libraryevaluator.h</label>
+        <link refid="libraryevaluator_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>src/csl/libraryfunction.h</label>
+        <link refid="libraryfunction_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>src/csl/librarygenerator.h</label>
+        <link refid="librarygenerator_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>src/csl/librarygroup.h</label>
+        <link refid="librarygroup_8h_source"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>src/csl/literal.h</label>
+        <link refid="literal_8h"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>src/csl/mathFunctions.h</label>
+        <link refid="mathFunctions_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>src/csl/numerical.h</label>
+        <link refid="numerical_8h"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>src/csl/operations.h</label>
+        <link refid="operations_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>src/csl/operator.h</label>
+        <link refid="operator_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>src/csl/parent.h</label>
+        <link refid="parent_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>src/csl/partialExpand.h</label>
+        <link refid="partialExpand_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>src/csl/patternMatch.h</label>
+        <link refid="patternMatch_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>src/csl/pseudoIntegral.h</label>
+        <link refid="pseudoIntegral_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>src/csl/replace.h</label>
+        <link refid="replace_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>src/csl/scalarFunc.h</label>
+        <link refid="scalarFunc_8h"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>src/csl/simplification.h</label>
+        <link refid="simplification_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>src/csl/sort.h</label>
+        <link refid="sort_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>src/csl/space.h</label>
+        <link refid="space_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>src/csl/symmetry.h</label>
+        <link refid="symmetry_8h"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>src/csl/tensorField.h</label>
+        <link refid="tensorField_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>src/csl/utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>src/csl/variableParent.h</label>
+        <link refid="variableParent_8h"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>src/csl/vector.h</label>
+        <link refid="vector_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>src/marty.h</label>
+        <link refid="marty_8h_source"/>
+      </node>
+      <node id="98">
+        <label>src/marty/core/algebra.h</label>
+        <link refid="algebra_8h"/>
+      </node>
+      <node id="55">
+        <label>src/marty/core/amplitude.h</label>
+        <link refid="amplitude_8h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>src/marty/core/amplitudeInitializer.h</label>
+        <link refid="amplitudeInitializer_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>src/marty/core/amplitudeSimplification.h</label>
+        <link refid="amplitudeSimplification_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>src/marty/core/bernoulli.h</label>
+        <link refid="bernoulli_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>src/marty/core/cache.h</label>
+        <link refid="cache_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>src/marty/core/ckm.h</label>
+        <link refid="ckm_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>src/marty/core/colorSimplification.h</label>
+        <link refid="colorSimplification_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>src/marty/core/colorSpace.h</label>
+        <link refid="colorSpace_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>src/marty/core/diracology.h</label>
+        <link refid="diracology_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>src/marty/core/drawer.h</label>
+        <link refid="drawer_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>src/marty/core/expander.h</label>
+        <link refid="expander_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>src/marty/core/fermionChain.h</label>
+        <link refid="fermionChain_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>src/marty/core/fermionFlow.h</label>
+        <link refid="fermionFlow_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>src/marty/core/fermionicField.h</label>
+        <link refid="fermionicField_8h"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>src/marty/core/feynOptions.h</label>
+        <link refid="feynOptions_8h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>src/marty/core/feynmanDiagram.h</label>
+        <link refid="feynmanDiagram_8h"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>src/marty/core/feynmanIntegral.h</label>
+        <link refid="feynmanIntegral_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>src/marty/core/feynmanRule.h</label>
+        <link refid="feynmanRule_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>src/marty/core/feynruleMomentum.h</label>
+        <link refid="feynruleMomentum_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>src/marty/core/filters.h</label>
+        <link refid="filters_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>src/marty/core/flavor.h</label>
+        <link refid="flavor_8h"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>src/marty/core/gauge.h</label>
+        <link refid="gauge_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>src/marty/core/gauged.h</label>
+        <link refid="gauged_8h"/>
+      </node>
+      <node id="70">
+        <label>src/marty/core/gaugedGroup.h</label>
+        <link refid="gaugedGroup_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>src/marty/core/generator.h</label>
+        <link refid="generator_8h"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>src/marty/core/ghostField.h</label>
+        <link refid="ghostField_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>src/marty/core/goldstoneField.h</label>
+        <link refid="goldstoneField_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>src/marty/core/graph.h</label>
+        <link refid="graph_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>src/marty/core/group.h</label>
+        <link refid="group_8h"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>src/marty/core/groupIndices.h</label>
+        <link refid="groupIndices_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>src/marty/core/insertion.h</label>
+        <link refid="insertion_8h"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>src/marty/core/interactionTerm.h</label>
+        <link refid="interactionTerm_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>src/marty/core/iterable.h</label>
+        <link refid="iterable_8h"/>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>src/marty/core/kinematics.h</label>
+        <link refid="kinematics_8h"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>src/marty/core/lagrangian.h</label>
+        <link refid="lagrangian_8h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>src/marty/core/lhaBuiltIn.h</label>
+        <link refid="lhaBuiltIn_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>src/marty/core/looptools_extension.h</label>
+        <link refid="looptools__extension_8h"/>
+      </node>
+      <node id="11">
+        <label>src/marty/core/marty.h</label>
+        <link refid="marty_2core_2marty_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>src/marty/core/model.h</label>
+        <link refid="model_8h"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>src/marty/core/modelBuilder.h</label>
+        <link refid="modelBuilder_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>src/marty/core/modelData.h</label>
+        <link refid="modelData_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>src/marty/core/momentumConservation.h</label>
+        <link refid="momentumConservation_8h"/>
+      </node>
+      <node id="58">
+        <label>src/marty/core/mrtInterface.h</label>
+        <link refid="mrtInterface_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>src/marty/core/mrtInterfaceCurrent.h</label>
+        <link refid="mrtInterfaceCurrent_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>src/marty/core/mrtUtils.h</label>
+        <link refid="mrtUtils_8h"/>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>src/marty/core/mtylibrary.h</label>
+        <link refid="mtylibrary_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>src/marty/core/polarization.h</label>
+        <link refid="polarization_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>src/marty/core/propagator.h</label>
+        <link refid="propagator_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>src/marty/core/quantumField.h</label>
+        <link refid="quantumField_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>src/marty/core/quantumFieldTheory.h</label>
+        <link refid="quantumFieldTheory_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>src/marty/core/representation.h</label>
+        <link refid="representation_8h"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>src/marty/core/scalarField.h</label>
+        <link refid="scalarField_8h"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>src/marty/core/semiSimpleAlgebra.h</label>
+        <link refid="semiSimpleAlgebra_8h"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/marty/core/sglconverter.h</label>
+        <link refid="sglconverter_8h_source"/>
+      </node>
+      <node id="8">
+        <label>src/marty/core/sglsimplify.h</label>
+        <link refid="sglsimplify_8h_source"/>
+      </node>
+      <node id="80">
+        <label>src/marty/core/spectrum.h</label>
+        <link refid="spectrum_8h"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>src/marty/core/su_n_algebra.h</label>
+        <link refid="su__n__algebra_8h"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>src/marty/core/traceIdentities.h</label>
+        <link refid="traceIdentities_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>src/marty/core/vectorField.h</label>
+        <link refid="vectorField_8h"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>src/marty/core/wick.h</label>
+        <link refid="wick_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>src/marty/core/wilson.h</label>
+        <link refid="wilson_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>src/marty/core/wilsonOperator.h</label>
+        <link refid="wilsonOperator_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>src/marty/models/gthdm.h</label>
+        <link refid="gthdm_8h_source"/>
+      </node>
+      <node id="60">
+        <label>src/marty/models/mssm.h</label>
+        <link refid="mssm_8h_source"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>src/marty/models/mssmData.h</label>
+        <link refid="mssmData_8h"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>src/marty/models/nmfv.h</label>
+        <link refid="nmfv_8h_source"/>
+      </node>
+      <node id="61">
+        <label>src/marty/models/pmssm.h</label>
+        <link refid="pmssm_8h"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>src/marty/models/pmssm_lem.h</label>
+        <link refid="pmssm__lem_8h_source"/>
+      </node>
+      <node id="13">
+        <label>src/marty/models/pmssm_lem/pmssm_data.h</label>
+        <link refid="pmssm__data_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>src/marty/models/pmssm_lem/pmssm_lem.h</label>
+        <link refid="pmssm__lem_2pmssm__lem_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>src/marty/models/qcd.h</label>
+        <link refid="qcd_8h_source"/>
+      </node>
+      <node id="64">
+        <label>src/marty/models/qed.h</label>
+        <link refid="qed_8h"/>
+      </node>
+      <node id="65">
+        <label>src/marty/models/sm.h</label>
+        <link refid="sm_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>src/marty/models/thdm.h</label>
+        <link refid="thdm_8h_source"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/marty/sgl/abstractgammasym.h</label>
+        <link refid="abstractgammasym_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>src/marty/sgl/contraction.h</label>
+        <link refid="contraction_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>src/marty/sgl/cslconverter.h</label>
+        <link refid="cslconverter_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>src/marty/sgl/cslexpr.h</label>
+        <link refid="cslexpr_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>src/marty/sgl/epsilonindex.h</label>
+        <link refid="epsilonindex_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>src/marty/sgl/gammaindex.h</label>
+        <link refid="gammaindex_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>src/marty/sgl/generalizedindex.h</label>
+        <link refid="generalizedindex_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>src/marty/sgl/indexchain.h</label>
+        <link refid="indexchain_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>src/marty/sgl/metricindex.h</label>
+        <link refid="metricindex_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>src/marty/sgl/momentumindex.h</label>
+        <link refid="momentumindex_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>src/marty/sgl/multifunction.h</label>
+        <link refid="multifunction_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>src/marty/sgl/ordering.h</label>
+        <link refid="ordering_8h"/>
+      </node>
+      <node id="10">
+        <label>src/marty/sgl/sgl.h</label>
+        <link refid="sgl_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>src/marty/sgl/sglalgo.h</label>
+        <link refid="sglalgo_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>src/marty/sgl/sglcommutation.h</label>
+        <link refid="sglcommutation_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>src/marty/sgl/sglfield.h</label>
+        <link refid="sglfield_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>src/marty/sgl/sglinterface.h</label>
+        <link refid="sglinterface_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>src/marty/sgl/sgloperations.h</label>
+        <link refid="sgloperations_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>src/marty/sgl/simplify.h</label>
+        <link refid="simplify_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>src/marty/sgl/tensorset.h</label>
+        <link refid="tensorset_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>src/marty/sgl/tracer.h</label>
+        <link refid="tracer_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>src/marty/sgl/typecast.h</label>
+        <link refid="typecast_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="error_8h_1af4a8d2f7d22c6c80e3edd3177c052d55" prot="public" static="no">
+        <name>CSL_ASSERT</name>
+        <param><defname>cond</defname></param>
+        <param><defname>error</defname></param>
+        <initializer>    if (not(cond)) {                                        \
+        CallErrorImpl(error, __func__, __FILE__, __LINE__); \
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/error.h" line="71" column="9" bodyfile="src/csl/error.h" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="define" id="error_8h_1a30e469f98aee9bbdbfa9f5ee30906079" prot="public" static="no">
+        <name>CSL_ASSERT_SPEC</name>
+        <param><defname>cond</defname></param>
+        <param><defname>error</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>    if (not(cond)) {                                                 \
+        CallErrorImpl(error, __func__, __FILE__, __LINE__, message); \
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/error.h" line="75" column="9" bodyfile="src/csl/error.h" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="define" id="error_8h_1aecb142b2c76374eb9c73af763ad0ae5f" prot="public" static="no">
+        <name>CALL_SMERROR</name>
+        <param><defname>error</defname></param>
+        <initializer>CallErrorImpl(error, __func__, __FILE__, __LINE__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/error.h" line="80" column="9" bodyfile="src/csl/error.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="error_8h_1a90e6634bfc02f1709b34ff4b0dc1773e" prot="public" static="no">
+        <name>CALL_SMERROR_SPEC</name>
+        <param><defname>error</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>    CallErrorImpl(error, __func__, __FILE__, __LINE__, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/error.h" line="82" column="9" bodyfile="src/csl/error.h" bodystart="82" bodyend="83"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="error_8h_1a63d2a53e8a8d71a88704a8e150fe5e99" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>CSLError</name>
+        <enumvalue id="error_8h_1a63d2a53e8a8d71a88704a8e150fe5e99ade47d5d9f917c74560a9ece6c102073e" prot="public">
+          <name>AbstractCallError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a63d2a53e8a8d71a88704a8e150fe5e99a463a9d7e20d6500e24a01336303502a0" prot="public">
+          <name>AttributeError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a63d2a53e8a8d71a88704a8e150fe5e99afe22dd7f16f3a9bbf4926de6607b5e10" prot="public">
+          <name>EOFError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a63d2a53e8a8d71a88704a8e150fe5e99a303ce151f2342c846298a4d13a6acc5e" prot="public">
+          <name>FloatingPointError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a63d2a53e8a8d71a88704a8e150fe5e99a1c278802f53894e7f7c0fc5d1c06e5cf" prot="public">
+          <name>GeneratorExit</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a63d2a53e8a8d71a88704a8e150fe5e99aeb6ff05a2e9b0485ea84cbe3809e36ed" prot="public">
+          <name>IndexError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a63d2a53e8a8d71a88704a8e150fe5e99a5206bd7472156351d2d9a99633ac9580" prot="public">
+          <name>IOError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a63d2a53e8a8d71a88704a8e150fe5e99ac84999914a408f8c02b4122a49df6e00" prot="public">
+          <name>KeyError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a63d2a53e8a8d71a88704a8e150fe5e99a7e54da32b66536801a78af345f308206" prot="public">
+          <name>MathError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a63d2a53e8a8d71a88704a8e150fe5e99a3074bf451b071f0534d97bcc22209233" prot="public">
+          <name>NameError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a63d2a53e8a8d71a88704a8e150fe5e99a690828c56588cbc0b71528e5e0389a96" prot="public">
+          <name>NotImplementedError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a63d2a53e8a8d71a88704a8e150fe5e99aa3026c917a1d69116ee8cd34e0d68c56" prot="public">
+          <name>OverflowError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a63d2a53e8a8d71a88704a8e150fe5e99aa334b8fdd25f8fb3e632228494604ee1" prot="public">
+          <name>RuntimeError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a63d2a53e8a8d71a88704a8e150fe5e99aece592fd242f4ba674cc9da539a625a7" prot="public">
+          <name>SyntaxError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a63d2a53e8a8d71a88704a8e150fe5e99a137bf8cff2d59f0883c600f9524b3eed" prot="public">
+          <name>TypeError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a63d2a53e8a8d71a88704a8e150fe5e99a5a2cfd89b7b171fd7b4794b08023d04f" prot="public">
+          <name>ValueError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="error_8h_1a63d2a53e8a8d71a88704a8e150fe5e99af640f11555bbb1a83c1302a574bb7f42" prot="public">
+          <name>ZeroDivisionError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/error.h" line="31" column="1" bodyfile="src/csl/error.h" bodystart="31" bodyend="56"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="error_8h_1a321fdb3433f97597974802423290ea97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;fout, CSLError error)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>CSLError</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/error.h" line="58" column="1" bodyfile="src/csl/error.cpp" bodystart="18" bodyend="74" declfile="src/csl/error.h" declline="58" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="error_8h_1a4187708e9bfcc559f10623c8b9f2c010" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CallErrorImpl</definition>
+        <argsstring>(CSLError error, std::string_view func, std::string_view file, int line)</argsstring>
+        <name>CallErrorImpl</name>
+        <param>
+          <type>CSLError</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>std::string_view</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>std::string_view</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/error.h" line="60" column="6" bodyfile="src/csl/error.cpp" bodystart="75" bodyend="83" declfile="src/csl/error.h" declline="60" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="error_8h_1abc220d36269f0b2a37ceef0bece50a37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CallErrorImpl</definition>
+        <argsstring>(CSLError error, std::string_view func, std::string_view file, int line, std::string_view message)</argsstring>
+        <name>CallErrorImpl</name>
+        <param>
+          <type>CSLError</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>std::string_view</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>std::string_view</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>std::string_view</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/error.h" line="65" column="6" bodyfile="src/csl/error.cpp" bodystart="85" bodyend="94" declfile="src/csl/error.h" declline="65" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>File containing functions that are called by the program when something wrong happened: determines the behaviour in unexpected cases. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Grégoire Uhlrich </para>
+</simplesect>
+<simplesect kind="version"><para>1.3 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>MARTY.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MARTY<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MARTY<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>along<sp/>with<sp/>MARTY.<sp/>If<sp/>not,<sp/>see<sp/>&lt;https://www.gnu.org/licenses/&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ERROR_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERROR_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="options_8h" kindref="compound">options.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;csignal&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string_view&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>CSLError<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>AbstractCallError,<sp/></highlight><highlight class="comment">//<sp/>Raised<sp/>when<sp/>an<sp/>abstract<sp/>(not<sp/>implemented)<sp/>fucntion<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>called.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>AttributeError,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Raised<sp/>when<sp/>attribute<sp/>assignment<sp/>or<sp/>reference<sp/>fails.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>EOFError,<sp/></highlight><highlight class="comment">//<sp/>Raised<sp/>when<sp/>the<sp/>input()<sp/>functions<sp/>hits<sp/>end-of-file<sp/>condition.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>FloatingPointError,<sp/></highlight><highlight class="comment">//<sp/>Raised<sp/>when<sp/>a<sp/>floating<sp/>point<sp/>operation<sp/>fails.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>GeneratorExit,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Raise<sp/>when<sp/>a<sp/>generator&apos;s<sp/>close()<sp/>method<sp/>is<sp/>called.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>IndexError,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Raised<sp/>when<sp/>index<sp/>of<sp/>a<sp/>sequence<sp/>is<sp/>out<sp/>of<sp/>range.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>IOError,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Raised<sp/>when<sp/>a<sp/>file<sp/>is<sp/>not<sp/>found.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>KeyError,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Raised<sp/>when<sp/>a<sp/>key<sp/>is<sp/>not<sp/>found<sp/>in<sp/>a<sp/>dictionary.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>MathError,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>NameError,<sp/></highlight><highlight class="comment">//<sp/>Raised<sp/>when<sp/>a<sp/>variable<sp/>is<sp/>not<sp/>found<sp/>in<sp/>local<sp/>or<sp/>global<sp/>scope.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>NotImplementedError,<sp/></highlight><highlight class="comment">//<sp/>Raised<sp/>by<sp/>abstract<sp/>methods.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>OverflowError,<sp/></highlight><highlight class="comment">//<sp/>Raised<sp/>when<sp/>result<sp/>of<sp/>an<sp/>arithmetic<sp/>operation<sp/>is<sp/>too</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>large<sp/>to<sp/>be<sp/>represented.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>RuntimeError,<sp/><sp/></highlight><highlight class="comment">//<sp/>Raised<sp/>when<sp/>an<sp/>error<sp/>does<sp/>not<sp/>fall<sp/>under<sp/>any<sp/>other</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>category.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>SyntaxError,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Raised<sp/>by<sp/>parser<sp/>when<sp/>syntax<sp/>error<sp/>is<sp/>encountered.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>TypeError,<sp/><sp/></highlight><highlight class="comment">//<sp/>Raised<sp/>when<sp/>a<sp/>function<sp/>or<sp/>operation<sp/>is<sp/>applied<sp/>to<sp/>an<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>of<sp/>incorrect<sp/>type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>ValueError,<sp/></highlight><highlight class="comment">//<sp/>Raised<sp/>when<sp/>a<sp/>function<sp/>gets<sp/>argument<sp/>of<sp/>correct<sp/>type<sp/>but</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>improper<sp/>value.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>ZeroDivisionError<sp/></highlight><highlight class="comment">//<sp/>Raised<sp/>when<sp/>second<sp/>operand<sp/>of<sp/>division<sp/>or<sp/>modulo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>operation<sp/>is<sp/>zero.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">std::ostream<sp/>&amp;operator&lt;&lt;(std::ostream<sp/>&amp;fout,<sp/>CSLError<sp/>error);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CallErrorImpl(CSLError<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string_view<sp/>func,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string_view<sp/>file,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>line);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CallErrorImpl(CSLError<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string_view<sp/>func,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string_view<sp/>file,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>line,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string_view<sp/>message);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CSL_ASSERT(cond,<sp/>error)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>(not(cond))<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CallErrorImpl(error,<sp/>__func__,<sp/>__FILE__,<sp/>__LINE__);<sp/>\</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CSL_ASSERT_SPEC(cond,<sp/>error,<sp/>message)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>(not(cond))<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CallErrorImpl(error,<sp/>__func__,<sp/>__FILE__,<sp/>__LINE__,<sp/>message);<sp/>\</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CALL_SMERROR(error)<sp/>CallErrorImpl(error,<sp/>__func__,<sp/>__FILE__,<sp/>__LINE__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CALL_SMERROR_SPEC(error,<sp/>message)<sp/>\</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>CallErrorImpl(error,<sp/>__func__,<sp/>__FILE__,<sp/>__LINE__,<sp/>message)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/csl/error.h"/>
+  </compounddef>
+</doxygen>

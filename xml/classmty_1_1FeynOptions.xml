@@ -1,0 +1,1245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1FeynOptions" kind="class" language="C++" prot="public">
+    <compoundname>mty::FeynOptions</compoundname>
+    <includes refid="feynOptions_8h" local="no">feynOptions.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmty_1_1FeynOptions_1a4b0441b267801313062a3fddcb1ac7db" prot="public" static="no">
+        <type>std::function&lt; bool(<ref refid="classmty_1_1InteractionTerm" kindref="compound">mty::InteractionTerm</ref> const &amp;)&gt;</type>
+        <definition>using mty::FeynOptions::LagrangianFilter =  std::function&lt;bool(mty::InteractionTerm const &amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>LagrangianFilter</name>
+        <qualifiedname>mty::FeynOptions::LagrangianFilter</qualifiedname>
+        <briefdescription>
+<para>Type definition for a <ref refid="classmty_1_1Lagrangian" kindref="compound">Lagrangian</ref> filter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A <ref refid="classmty_1_1Lagrangian" kindref="compound">Lagrangian</ref> filter is a boolean predicate (function, lambda, ...) taking a <ref refid="classmty_1_1InteractionTerm" kindref="compound">mty::InteractionTerm</ref> as parameter (const reference) and returning true if the vertex must be kept. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="54" column="5" bodyfile="src/marty/core/feynOptions.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" prot="public" static="no">
+        <type>std::function&lt; bool(<ref refid="classmty_1_1FeynmanDiagram" kindref="compound">mty::FeynmanDiagram</ref> const &amp;)&gt;</type>
+        <definition>using mty::FeynOptions::DiagramFilter =  std::function&lt;bool(mty::FeynmanDiagram const &amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>DiagramFilter</name>
+        <qualifiedname>mty::FeynOptions::DiagramFilter</qualifiedname>
+        <briefdescription>
+<para>Type definition for a Feynman diagram. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A Feynman diagram filter is a boolean predicate (function, lambda, ...) taking a <ref refid="classmty_1_1FeynmanDiagram" kindref="compound">mty::FeynmanDiagram</ref> as parameter (const reference) and returning true if the diagram must be kept. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="62" column="5" bodyfile="src/marty/core/feynOptions.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmty_1_1FeynOptions_1a1aafed6b9d18e5e8c04fbd37558f2708" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::FeynOptions::orderInsertions</definition>
+        <argsstring></argsstring>
+        <name>orderInsertions</name>
+        <qualifiedname>mty::FeynOptions::orderInsertions</qualifiedname>
+        <initializer>{mty::option::applyInsertionOrdering}</initializer>
+        <briefdescription>
+<para>This option (default = true) implies that fermionic insertions are ordered using a given rule. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This only affects the absolute signs of different diagrams in a process and is then physically irrelevant. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="408" column="10" bodyfile="src/marty/core/feynOptions.h" bodystart="408" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynOptions_1ace0f93a607e70f4b91779b777c13c84a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::FeynOptions::excludeExternalLegCorrections</definition>
+        <argsstring></argsstring>
+        <name>excludeExternalLegCorrections</name>
+        <qualifiedname>mty::FeynOptions::excludeExternalLegCorrections</qualifiedname>
+        <initializer>{
+        mty::option::excludeExternalLegsCorrections}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="410" column="10" bodyfile="src/marty/core/feynOptions.h" bodystart="410" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynOptions_1afcb4106a1a10fe9450334402df1ad60d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::FeynOptions::orderExternalFermions</definition>
+        <argsstring></argsstring>
+        <name>orderExternalFermions</name>
+        <qualifiedname>mty::FeynOptions::orderExternalFermions</qualifiedname>
+        <initializer>{mty::option::orderExternalFermions}</initializer>
+        <briefdescription>
+<para>Boolean telling if external fermions must be ordered in the result. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This option is false by default and should not be set to true except for <ref refid="structmty_1_1Wilson" kindref="compound">Wilson</ref> coefficient calculations because it requires more calculations and it not relevant when calculating a squared amplitude. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="422" column="10" bodyfile="src/marty/core/feynOptions.h" bodystart="422" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynOptions_1ac8633825f38428ed452cab6ec8c50ffe" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::FeynOptions::simplifyAmplitudes</definition>
+        <argsstring></argsstring>
+        <name>simplifyAmplitudes</name>
+        <qualifiedname>mty::FeynOptions::simplifyAmplitudes</qualifiedname>
+        <initializer>{mty::option::simplifyAmplitudes}</initializer>
+        <briefdescription>
+<para>Set this option to false if you want to disable all simplifications of amplitudes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Using this option, the result is then much closer to the bare use of Feynman rules and propagators. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="431" column="10" bodyfile="src/marty/core/feynOptions.h" bodystart="431" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynOptions_1a1e25315c372fe90d08511d90abb22bff" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::FeynOptions::discardLowerOrders</definition>
+        <argsstring></argsstring>
+        <name>discardLowerOrders</name>
+        <qualifiedname>mty::FeynOptions::discardLowerOrders</qualifiedname>
+        <initializer>{mty::option::discardLowerOrders}</initializer>
+        <briefdescription>
+<para>Set this option to false if you want the tree-level diagrams to appear in the same amplitude as the one-loop calculation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="437" column="10" bodyfile="src/marty/core/feynOptions.h" bodystart="437" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynOptions_1a09638d60267d79ee662b39ca91e40d2e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::FeynOptions::verboseAmplitude</definition>
+        <argsstring></argsstring>
+        <name>verboseAmplitude</name>
+        <qualifiedname>mty::FeynOptions::verboseAmplitude</qualifiedname>
+        <initializer>{mty::option::verboseAmplitude}</initializer>
+        <briefdescription>
+<para>Set this options to false to disable all prints during calculations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="443" column="10" bodyfile="src/marty/core/feynOptions.h" bodystart="443" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynOptions_1a614f4e22af986ef10edb90e34d66f657" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::FeynOptions::partialCalculation</definition>
+        <argsstring></argsstring>
+        <name>partialCalculation</name>
+        <qualifiedname>mty::FeynOptions::partialCalculation</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+<para>Set this option to true to disable the DiagramFilters if the calculation is only a part of the full calculation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="449" column="10" bodyfile="src/marty/core/feynOptions.h" bodystart="449" bodyend="449"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1FeynOptions_1a3699018f65d4a25f49ef3bd76e6e236e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mty::FeynOptions::feynRuleCalculation</definition>
+        <argsstring></argsstring>
+        <name>feynRuleCalculation</name>
+        <qualifiedname>mty::FeynOptions::feynRuleCalculation</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+<para>Mode of an amplitude calculation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <bold>true</bold>, the calculation is done to derive Feynman rules, false otherwise. The derivation of Feynman rules is a more involved calculation and is used only in that purpose. Otherwise, Feynman rules are used. This parameter is handled automatically by MARTY when calculating Feynman rules, it should not be set by the user a priori. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="461" column="10" bodyfile="src/marty/core/feynOptions.h" bodystart="461" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynOptions_1ada13b97e18b7eb1a4613b1571d33189b" prot="private" static="no" mutable="no">
+        <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; int &gt;</type>
+        <definition>std::shared_ptr&lt;int&gt; mty::FeynOptions::loopOrder</definition>
+        <argsstring></argsstring>
+        <name>loopOrder</name>
+        <qualifiedname>mty::FeynOptions::loopOrder</qualifiedname>
+        <briefdescription>
+<para>Loop order (0 for tree-level, 1 for one-loop). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This variable is stored in a shared pointer for a technical reason, but the interface (getter and setter functions) use a standard integer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="470" column="21" bodyfile="src/marty/core/feynOptions.h" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynOptions_1a418b74c0e927aad741817445666870a9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mty::FeynOptions::expansionOrder</definition>
+        <argsstring></argsstring>
+        <name>expansionOrder</name>
+        <qualifiedname>mty::FeynOptions::expansionOrder</qualifiedname>
+        <briefdescription>
+<para>Taylor expansion order for an amplitude calculation (expansion of the lagrangian exponential). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="476" column="9" bodyfile="src/marty/core/feynOptions.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynOptions_1aadc606553d278de5985489a9b2d44a32" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mty::FeynOptions::topology</definition>
+        <argsstring></argsstring>
+        <name>topology</name>
+        <qualifiedname>mty::FeynOptions::topology</qualifiedname>
+        <initializer>= <ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558eca1b380921409e937573e8977efefc6a45" kindref="member">mty::Topology::Any</ref></initializer>
+        <briefdescription>
+<para><ref refid="namespacemty_1_1Topology" kindref="compound">Topology</ref> allowed for the calculation. The default is <ref refid="namespacemty_1_1Topology_1acf48c6d7b19dc3b10274bd6283c558eca1b380921409e937573e8977efefc6a45" kindref="member">mty::Topology::Any</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="482" column="9" bodyfile="src/marty/core/feynOptions.h" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynOptions_1a8359104178c69e2e7dab91c6fdc510ce" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; mty::FeynOptions::fermionOrder</definition>
+        <argsstring></argsstring>
+        <name>fermionOrder</name>
+        <qualifiedname>mty::FeynOptions::fermionOrder</qualifiedname>
+        <briefdescription>
+<para>Order for fermions in bilinears. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The order of fermions in the result in fixed, useful for <ref refid="structmty_1_1Wilson" kindref="compound">Wilson</ref> coefficient extraction. For example, a process with for external fermions <formula id="63">$ \psi_0,\ \psi_1,\ \psi_2 $</formula> and <formula id="64">$ \psi_3 $</formula> can be expressed with the order <formula id="65">$ (0123) $</formula> with terms of the type    <formula id="66">\[
+    \left(\bar{\psi}_0\Gamma^A\psi_1\right)
+         \left(\bar{\psi}_1\Gamma^B\psi_2\right,
+\]</formula> while an order <formula id="67">$ (2013) $</formula> corresponds to something such as    <formula id="68">\[
+    \left(\bar{\psi}_2\Gamma^C\psi_0\right)
+         \left(\bar{\psi}_1\Gamma^D\psi_3\right,
+\]</formula> with <formula id="69">$ \Gamma^{A,B,C,D} $</formula> arbitrary <formula id="70">$ \gamma $</formula>-matrix combinations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="503" column="17" bodyfile="src/marty/core/feynOptions.h" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynOptions_1aa2ab37109fbec4ac11a7a4f2205d529f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmty_1_1FeynOptions_1a4b0441b267801313062a3fddcb1ac7db" kindref="member">LagrangianFilter</ref> &gt;</type>
+        <definition>std::vector&lt;LagrangianFilter&gt; mty::FeynOptions::lfilters</definition>
+        <argsstring></argsstring>
+        <name>lfilters</name>
+        <qualifiedname>mty::FeynOptions::lfilters</qualifiedname>
+        <briefdescription>
+<para>List of lagrangian filters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Those filters are applied by MARTY before any calculation is done by discarding unwanted interaction terms. This type of filter must be preferred to diagram filters if possible.</para>
+<para><simplesect kind="see"><para><ref refid="filters_8h" kindref="compound">filters.h</ref> for built-in filters </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="514" column="17" bodyfile="src/marty/core/feynOptions.h" bodystart="514" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynOptions_1acd084d362c32ffc7778382f58f550ece" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">DiagramFilter</ref> &gt;</type>
+        <definition>std::vector&lt;DiagramFilter&gt; mty::FeynOptions::dfilters</definition>
+        <argsstring></argsstring>
+        <name>dfilters</name>
+        <qualifiedname>mty::FeynOptions::dfilters</qualifiedname>
+        <briefdescription>
+<para>List of diagram filters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Those filters are applied by MARTY once the <ref refid="classmty_1_1Wick" kindref="compound">Wick</ref> theorem has been applied, i.e. that all possible diagrams have been found. They save less calculation than LagrangianFilter but are more general as one can filter diagrams on more complex conditions.</para>
+<para><simplesect kind="see"><para><ref refid="filters_8h" kindref="compound">filters.h</ref> for built-in filters </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="526" column="17" bodyfile="src/marty/core/feynOptions.h" bodystart="526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynOptions_1aaf7d4816639dee0f4201ace71039fca7" prot="private" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::FeynOptions::wilsonOperatorCoefficient</definition>
+        <argsstring></argsstring>
+        <name>wilsonOperatorCoefficient</name>
+        <qualifiedname>mty::FeynOptions::wilsonOperatorCoefficient</qualifiedname>
+        <initializer>{CSL_1}</initializer>
+        <briefdescription>
+<para>Prefactor used for <ref refid="structmty_1_1Wilson" kindref="compound">Wilson</ref> coefficients. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An amplitude is decomposed on pairs of <ref refid="structmty_1_1Wilson" kindref="compound">Wilson</ref> coefficients and operators the following way:   <formula id="71">\[
+     i\mathcal{M} \equiv -if\sum _i C_i \hat{\mathcal{O}}_i,
+\]</formula> with <formula id="72">$ C_i $</formula> the <ref refid="structmty_1_1Wilson" kindref="compound">Wilson</ref> coefficients, <formula id="73">$ \hat{\mathcal{O}}_i $</formula> the operators, and $f$ a convention-dependent factor. This member corresponds to the <formula id="74">$ f $</formula>used by MARTY when calculating the <formula id="72">$ C_i $</formula>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="541" column="15" bodyfile="src/marty/core/feynOptions.h" bodystart="541" bodyend="541"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynOptions_1a73d9b781f440fcaec980721d93368204" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacemty_1a3b8d44bbd788deaabcd8a279d26a9c84" kindref="member">OperatorBasis</ref></type>
+        <definition>OperatorBasis mty::FeynOptions::wilsonOperatorBasis</definition>
+        <argsstring></argsstring>
+        <name>wilsonOperatorBasis</name>
+        <qualifiedname>mty::FeynOptions::wilsonOperatorBasis</qualifiedname>
+        <initializer>= <ref refid="namespacemty_1a3b8d44bbd788deaabcd8a279d26a9c84ae096ece8248f211a75d1a3f845a99698" kindref="member">OperatorBasis::Chiral</ref></initializer>
+        <briefdescription>
+<para>Operator basis for <ref refid="structmty_1_1Wilson" kindref="compound">Wilson</ref> coefficients. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The chiral basis uses projectors <formula id="75">$ P_L,P_R $</formula> whereas the standard one uses <formula id="76">$ \1,\gamma^5 $</formula>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="549" column="19" bodyfile="src/marty/core/feynOptions.h" bodystart="549" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classmty_1_1FeynOptions_1aab93ed27f68d47cce30a805d46940781" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t mty::FeynOptions::nDefaultDiagramFilters</definition>
+        <argsstring></argsstring>
+        <name>nDefaultDiagramFilters</name>
+        <qualifiedname>mty::FeynOptions::nDefaultDiagramFilters</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="551" column="29" bodyfile="src/marty/core/feynOptions.h" bodystart="551" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1afb4b3855a96c076128471b81c47eed5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::FeynOptions::FeynOptions</definition>
+        <argsstring>()</argsstring>
+        <name>FeynOptions</name>
+        <qualifiedname>mty::FeynOptions::FeynOptions</qualifiedname>
+        <briefdescription>
+<para>Default constructor, only constructor of this class (expect copy and move). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This constructor initializes default <ref refid="classmty_1_1Lagrangian" kindref="compound">Lagrangian</ref> and Feynman diagram filters used in all calculations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="71" column="5" bodyfile="src/marty/core/feynOptions.cpp" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1a343cb5d8da6e8fd4108dfc3fd05d36bf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::FeynOptions::getFeynRuleCalculation</definition>
+        <argsstring>() const</argsstring>
+        <name>getFeynRuleCalculation</name>
+        <qualifiedname>mty::FeynOptions::getFeynRuleCalculation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>feynRuleCalculation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="76" column="10" bodyfile="src/marty/core/feynOptions.h" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1a9622837131e8106fc93b0b0247ce27a6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::FeynOptions::getLoopOrder</definition>
+        <argsstring>() const</argsstring>
+        <name>getLoopOrder</name>
+        <qualifiedname>mty::FeynOptions::getLoopOrder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The value pointed by loopOrder </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="84" column="9" bodyfile="src/marty/core/feynOptions.h" bodystart="84" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1a0feafe24207d26263374bb5a4d93d1fd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::FeynOptions::getExpansionOrder</definition>
+        <argsstring>() const</argsstring>
+        <name>getExpansionOrder</name>
+        <qualifiedname>mty::FeynOptions::getExpansionOrder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>expansionOrder </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="92" column="9" bodyfile="src/marty/core/feynOptions.h" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1a2490bdb2e49cf295e6d2cd245d68a1ce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::FeynOptions::getTopology</definition>
+        <argsstring>() const</argsstring>
+        <name>getTopology</name>
+        <qualifiedname>mty::FeynOptions::getTopology</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>topology </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="100" column="9" bodyfile="src/marty/core/feynOptions.h" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1afdc65962fb4f87c0b888b5f962adedc5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; int &gt; const &amp;</type>
+        <definition>std::vector&lt; int &gt; const  &amp; mty::FeynOptions::getFermionOrder</definition>
+        <argsstring>() const</argsstring>
+        <name>getFermionOrder</name>
+        <qualifiedname>mty::FeynOptions::getFermionOrder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>fermionOrder </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="108" column="23" bodyfile="src/marty/core/feynOptions.h" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1af33ed5b6d5836726a304f1cfb3d06006" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classmty_1_1FeynOptions_1a4b0441b267801313062a3fddcb1ac7db" kindref="member">LagrangianFilter</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; LagrangianFilter &gt; const  &amp; mty::FeynOptions::getLagrangianFilters</definition>
+        <argsstring>() const</argsstring>
+        <name>getLagrangianFilters</name>
+        <qualifiedname>mty::FeynOptions::getLagrangianFilters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>lfilters </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="116" column="23" bodyfile="src/marty/core/feynOptions.h" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1a77a8e7fc3be2f1ebcc6a2c7faeaa9af7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">DiagramFilter</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; DiagramFilter &gt; const  &amp; mty::FeynOptions::getDiagramFilters</definition>
+        <argsstring>() const</argsstring>
+        <name>getDiagramFilters</name>
+        <qualifiedname>mty::FeynOptions::getDiagramFilters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>dfilters </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="124" column="23" bodyfile="src/marty/core/feynOptions.h" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1ae32b6e13696dfe7bf8a9e25aedfe200a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::FeynOptions::getWilsonOperatorCoefficient</definition>
+        <argsstring>() const</argsstring>
+        <name>getWilsonOperatorCoefficient</name>
+        <qualifiedname>mty::FeynOptions::getWilsonOperatorCoefficient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>wilsonOperatorCoefficient </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="132" column="15" bodyfile="src/marty/core/feynOptions.h" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1a02a3030c1924f233a27496c2a6f32165" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacemty_1a3b8d44bbd788deaabcd8a279d26a9c84" kindref="member">OperatorBasis</ref></type>
+        <definition>OperatorBasis mty::FeynOptions::getWilsonOperatorBasis</definition>
+        <argsstring>() const</argsstring>
+        <name>getWilsonOperatorBasis</name>
+        <qualifiedname>mty::FeynOptions::getWilsonOperatorBasis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>wilsonOperatorBasis </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="140" column="19" bodyfile="src/marty/core/feynOptions.h" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1ac7245891a5785cacb622dbe66b5ca0fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynOptions::setFeynmanRuleMode</definition>
+        <argsstring>()</argsstring>
+        <name>setFeynmanRuleMode</name>
+        <qualifiedname>mty::FeynOptions::setFeynmanRuleMode</qualifiedname>
+        <briefdescription>
+<para>Sets the value of feynRuleCalculation to true (the default value of this member is false). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will probably not be useful for user-level manipulations. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="152" column="10" bodyfile="src/marty/core/feynOptions.cpp" bodystart="55" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1ad96d8502bdedec9012b21727d831c32f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynOptions::setLoopOrder</definition>
+        <argsstring>(int t_nLoops, int nExternalLegs)</argsstring>
+        <name>setLoopOrder</name>
+        <qualifiedname>mty::FeynOptions::setLoopOrder</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>t_nLoops</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nExternalLegs</declname>
+        </param>
+        <briefdescription>
+<para>Sets the number of loops for the calculation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function needs not only the loop order, but also the number of external legs in the process as it will determine, together with the number of loop, the Taylor expansion order of the <ref refid="classmty_1_1Lagrangian" kindref="compound">Lagrangian</ref> exponential.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_nLoops</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of loops wanted (basically 0 or 1). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nExternalLegs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of external legs of the process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="165" column="10" bodyfile="src/marty/core/feynOptions.cpp" bodystart="29" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1aa5766728aa610a70f6af1adb6202b25a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynOptions::setTopology</definition>
+        <argsstring>(int t_topology)</argsstring>
+        <name>setTopology</name>
+        <qualifiedname>mty::FeynOptions::setTopology</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>t_topology</declname>
+        </param>
+        <briefdescription>
+<para>Sets the topology for the calculation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_topology</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Topologies allowed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacemty_1_1Topology" kindref="compound">mty::Topology</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="174" column="10" bodyfile="src/marty/core/feynOptions.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1a99431db072cc7b8b1f85db27f937e63d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynOptions::setFermionOrder</definition>
+        <argsstring>(std::vector&lt; int &gt; const &amp;order)</argsstring>
+        <name>setFermionOrder</name>
+        <qualifiedname>mty::FeynOptions::setFermionOrder</qualifiedname>
+        <param>
+          <type>std::vector&lt; int &gt; const &amp;</type>
+          <declname>order</declname>
+        </param>
+        <briefdescription>
+<para>Sets the fermion order used to express the amplitude. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fermion order to apply, range of integers from <formula id="61">$ 0 $</formula> to <formula id="62">$ N-1 $</formula> for <formula id="41">$ N $</formula> external fermions in the process.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>fermionOrder </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="184" column="10" bodyfile="src/marty/core/feynOptions.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1a8135388249063684b71929c1593b17bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynOptions::setWilsonOperatorCoefficient</definition>
+        <argsstring>(csl::Expr const &amp;factor)</argsstring>
+        <name>setWilsonOperatorCoefficient</name>
+        <qualifiedname>mty::FeynOptions::setWilsonOperatorCoefficient</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+<para>Sets the <ref refid="structmty_1_1Wilson" kindref="compound">Wilson</ref> operator coefficient wilsonOperatorCoefficient. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Factor used in <ref refid="structmty_1_1Wilson" kindref="compound">Wilson</ref> coefficient decomposition. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="192" column="10" bodyfile="src/marty/core/feynOptions.cpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1a627bd4bded39189dca637d0b70adabf7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::FeynOptions::passFilters</definition>
+        <argsstring>(FeynmanDiagram const &amp;diagram) const</argsstring>
+        <name>passFilters</name>
+        <qualifiedname>mty::FeynOptions::passFilters</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynmanDiagram" kindref="compound">FeynmanDiagram</ref> const &amp;</type>
+          <declname>diagram</declname>
+        </param>
+        <briefdescription>
+<para>Tells if a diagram passes all diagram filters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>diagram</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="201" column="10" bodyfile="src/marty/core/feynOptions.cpp" bodystart="89" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1a4de6c6af406e3bb61b809ce01f5f16cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynOptions::applyFilters</definition>
+        <argsstring>(std::vector&lt; Lagrangian::TermType &gt; &amp;lagrangian) const</argsstring>
+        <name>applyFilters</name>
+        <qualifiedname>mty::FeynOptions::applyFilters</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">Lagrangian::TermType</ref> &gt; &amp;</type>
+          <declname>lagrangian</declname>
+        </param>
+        <briefdescription>
+<para>Applies the <ref refid="classmty_1_1Lagrangian" kindref="compound">Lagrangian</ref> filters on a vector of vertices. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The vector must contain mty::Lagrangian::TermType objects even if the filters themselves take <ref refid="classmty_1_1InteractionTerm" kindref="compound">mty::InteractionTerm</ref>. This function removes from the vector all interaction terms for which one of the filters returns false (filter out).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lagrangian</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1Lagrangian" kindref="compound">Lagrangian</ref> Set of interaction terms to filter.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>lfilters, <ref refid="classmty_1_1FeynOptions_1a7cc7552003cbf2a3283cd740df4fe13d" kindref="member">addFilter()</ref>, <ref refid="classmty_1_1FeynOptions_1a21ebbe50924489fcb60bbf074d938726" kindref="member">addFilters()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="215" column="10" bodyfile="src/marty/core/feynOptions.cpp" bodystart="78" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1a0ac90ecfad5502fabf8ae2ed1c0668b3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classmty_1_1FeynmanRule" kindref="compound">FeynmanRule</ref> const * &gt;</type>
+        <definition>std::vector&lt; FeynmanRule const * &gt; mty::FeynOptions::applyFilters</definition>
+        <argsstring>(std::vector&lt; FeynmanRule &gt; const &amp;lagrangian) const</argsstring>
+        <name>applyFilters</name>
+        <qualifiedname>mty::FeynOptions::applyFilters</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1FeynmanRule" kindref="compound">FeynmanRule</ref> &gt; const &amp;</type>
+          <declname>lagrangian</declname>
+        </param>
+        <briefdescription>
+<para>Filters a set a Feynman rules using the lagrangian filters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function uses the interaction term represented by the different rules and applies the <ref refid="classmty_1_1Lagrangian" kindref="compound">Lagrangian</ref> filters. Unlike the other filtering functions, this one does not remove the elements inside the initial vector but returns a newly constructed vector containing pointers to the rules that passed all filters (i.e. for which all filters returned true). This allows to avoid any copy of a <ref refid="classmty_1_1FeynmanRule" kindref="compound">FeynmanRule</ref> object that is a high cost operation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lagrangian</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set of Feynman rules (interpreted here as a lagrangian with respect to filters).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A vector containing all pointers to <ref refid="classmty_1_1FeynmanRule" kindref="compound">FeynmanRule</ref> objects that passed the filters.</para>
+</simplesect>
+<simplesect kind="see"><para>lfilters, <ref refid="classmty_1_1FeynOptions_1a7cc7552003cbf2a3283cd740df4fe13d" kindref="member">addFilter()</ref>, <ref refid="classmty_1_1FeynOptions_1a21ebbe50924489fcb60bbf074d938726" kindref="member">addFilters()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="237" column="5" bodyfile="src/marty/core/feynOptions.cpp" bodystart="64" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1aece9252fdf0685c0e316eb4f38829c5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynOptions::applyFilters</definition>
+        <argsstring>(std::vector&lt; FeynmanDiagram &gt; &amp;diagrams, bool forceFilters=false) const</argsstring>
+        <name>applyFilters</name>
+        <qualifiedname>mty::FeynOptions::applyFilters</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1FeynmanDiagram" kindref="compound">FeynmanDiagram</ref> &gt; &amp;</type>
+          <declname>diagrams</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>forceFilters</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Applies the diagram filters on a vector of Feynman diagrams. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function removes from the vector all diagrams for which one of the filters returns false (filter out).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>diagrams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set of diagrams to filter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>forceFilters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean that ensures (if true) that the filters are applied whatever are the other options (<ref refid="classmty_1_1FeynOptions_1a614f4e22af986ef10edb90e34d66f657" kindref="member">partialCalculation</ref> in particular).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>dfilters, <ref refid="classmty_1_1FeynOptions_1a7cc7552003cbf2a3283cd740df4fe13d" kindref="member">addFilter()</ref>, <ref refid="classmty_1_1FeynOptions_1a21ebbe50924489fcb60bbf074d938726" kindref="member">addFilters()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="252" column="10" bodyfile="src/marty/core/feynOptions.cpp" bodystart="98" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1a7cc7552003cbf2a3283cd740df4fe13d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Filter</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void mty::FeynOptions::addFilter</definition>
+        <argsstring>(Filter &amp;&amp;filter)</argsstring>
+        <name>addFilter</name>
+        <qualifiedname>mty::FeynOptions::addFilter</qualifiedname>
+        <param>
+          <type>Filter &amp;&amp;</type>
+          <declname>filter</declname>
+        </param>
+        <briefdescription>
+<para>Adds one filter (LagrangianFilter or DiagramFilter) to the options. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Depending on the type (deduced at compile-time) of the filter, this function delegates to <ref refid="classmty_1_1FeynOptions_1adbd17537f0137773966236b6a547b47d" kindref="member">addLagrangianFilter()</ref> or <ref refid="classmty_1_1FeynOptions_1ac758d592f07f7291d44fff7b43ffecba" kindref="member">addDiagramFilter()</ref>.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the filter given as parameter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User-defined predicate respecting the requirements of LagrangianFilter or DiagramFilter types.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classmty_1_1FeynOptions_1a21ebbe50924489fcb60bbf074d938726" kindref="member">addFilters()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="270" column="10" bodyfile="src/marty/core/feynOptions.h" bodystart="270" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1a21ebbe50924489fcb60bbf074d938726" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynOptions::addFilters</definition>
+        <argsstring>()</argsstring>
+        <name>addFilters</name>
+        <qualifiedname>mty::FeynOptions::addFilters</qualifiedname>
+        <briefdescription>
+<para>Overloads to add 0 filter (this function does nothing). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function represents the end-point of the compile-time recursion of the templated overload. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="286" column="10" bodyfile="src/marty/core/feynOptions.h" bodystart="286" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1a85e755231fbb8b747f1853675cd58d42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class First</type>
+          </param>
+          <param>
+            <type>class...</type>
+            <declname>Next</declname>
+            <defname>Next</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void mty::FeynOptions::addFilters</definition>
+        <argsstring>(First &amp;&amp;first, Next &amp;&amp;...next)</argsstring>
+        <name>addFilters</name>
+        <qualifiedname>mty::FeynOptions::addFilters</qualifiedname>
+        <param>
+          <type>First &amp;&amp;</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>Next &amp;&amp;...</type>
+          <declname>next</declname>
+        </param>
+        <briefdescription>
+<para>Adds an arbitrary number of filters (<ref refid="classmty_1_1Lagrangian" kindref="compound">Lagrangian</ref> or diagram filters) to the options. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function accepts an arbitrary number of arguments provided that each of them is either a LagrangianFilter or a DiagramFilter. The compiler deduces automatically the types and the function can be used as simply as <programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classmty_1_1FeynOptions_1afb4b3855a96c076128471b81c47eed5f" kindref="member">FeynOptions</ref><sp/>options;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>options.addFilter(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>diagram<sp/>filter:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mty::filters::forceParticle(</highlight><highlight class="stringliteral">&quot;t&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="comment">//<sp/>only<sp/>top<sp/>quark<sp/>contrib</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Lagrangian<sp/>filter:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mty::filters::disableParticle(</highlight><highlight class="stringliteral">&quot;Z&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="comment">//<sp/>no<sp/>Z<sp/>boson</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Another<sp/>diagram<sp/>filter:</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mty::filters::disableParticleCombination({</highlight><highlight class="stringliteral">&quot;e&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;mu&quot;</highlight><highlight class="normal">})<sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">Disables<sp/>combinations<sp/>of<sp/>e<sp/>and<sp/><ref refid="namespacemty_1_1mssm__input_1afe322514383dc8825d2e8fda25d3cda8" kindref="member">mu</ref><sp/>in<sp/>the<sp/>same<sp/>diagram</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>First</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the first filter given. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...Next</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Types of the next filters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First filter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...next</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Next filters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="317" column="10" bodyfile="src/marty/core/feynOptions.h" bodystart="317" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1aacb9cf0e1924c3f80dffda0b06c6ef54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynOptions::resetFilters</definition>
+        <argsstring>()</argsstring>
+        <name>resetFilters</name>
+        <qualifiedname>mty::FeynOptions::resetFilters</qualifiedname>
+        <briefdescription>
+<para>Resets the filters (for lagrangian and diagrams) to the default ones, i.e. removing all user-defined ones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="327" column="10" bodyfile="src/marty/core/feynOptions.cpp" bodystart="112" bodyend="117"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1adbd17537f0137773966236b6a547b47d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynOptions::addLagrangianFilter</definition>
+        <argsstring>(LagrangianFilter const &amp;filter)</argsstring>
+        <name>addLagrangianFilter</name>
+        <qualifiedname>mty::FeynOptions::addLagrangianFilter</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions_1a4b0441b267801313062a3fddcb1ac7db" kindref="member">LagrangianFilter</ref> const &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <briefdescription>
+<para>Adds one <ref refid="classmty_1_1Lagrangian" kindref="compound">Lagrangian</ref> filter to the options. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function delegates to the other overload that takes an arbitrary number of filters.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique filter to add. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="338" column="10" bodyfile="src/marty/core/feynOptions.h" bodystart="338" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1ac758d592f07f7291d44fff7b43ffecba" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynOptions::addDiagramFilter</definition>
+        <argsstring>(DiagramFilter const &amp;filter)</argsstring>
+        <name>addDiagramFilter</name>
+        <qualifiedname>mty::FeynOptions::addDiagramFilter</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">DiagramFilter</ref> const &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <briefdescription>
+<para>Adds one diagram filter to the options. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function delegates to the other overload that takes an arbitrary number of filters.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique filter to add. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="350" column="10" bodyfile="src/marty/core/feynOptions.h" bodystart="350" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1a5631ec0a7899bff259669d5c0ffa1223" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynOptions::addLagrangianFilters</definition>
+        <argsstring>(std::initializer_list&lt; LagrangianFilter &gt; filters)</argsstring>
+        <name>addLagrangianFilters</name>
+        <qualifiedname>mty::FeynOptions::addLagrangianFilters</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; <ref refid="classmty_1_1FeynOptions_1a4b0441b267801313062a3fddcb1ac7db" kindref="member">LagrangianFilter</ref> &gt;</type>
+          <declname>filters</declname>
+        </param>
+        <briefdescription>
+<para>Adds a list of <ref refid="classmty_1_1Lagrangian" kindref="compound">Lagrangian</ref> filters to the options. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of filters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="359" column="10" bodyfile="src/marty/core/feynOptions.cpp" bodystart="119" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1a64ff09b69a335a779ab09ca9e39b5f3e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynOptions::addDiagramFilters</definition>
+        <argsstring>(std::initializer_list&lt; DiagramFilter &gt; filters)</argsstring>
+        <name>addDiagramFilters</name>
+        <qualifiedname>mty::FeynOptions::addDiagramFilters</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; <ref refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" kindref="member">DiagramFilter</ref> &gt;</type>
+          <declname>filters</declname>
+        </param>
+        <briefdescription>
+<para>Adds a list of diagram filters to the options. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of filters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="365" column="10" bodyfile="src/marty/core/feynOptions.cpp" bodystart="127" bodyend="133"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1afc847f97fa741d2ff3e2d0494e4ed9de" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Container</type>
+          </param>
+          <param>
+            <type>class Predicate</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void mty::FeynOptions::applyFilters</definition>
+        <argsstring>(Container &amp;container, Predicate const &amp;predicate) const</argsstring>
+        <name>applyFilters</name>
+        <qualifiedname>mty::FeynOptions::applyFilters</qualifiedname>
+        <param>
+          <type>Container &amp;</type>
+          <declname>container</declname>
+        </param>
+        <param>
+          <type>Predicate const &amp;</type>
+          <declname>predicate</declname>
+        </param>
+        <briefdescription>
+<para>Helper private class applying a set of filters on a range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the container to filter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Predicate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Predicate type to apply. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container on which the filter is applied. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>predicate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Inversed filter, must return true if the object must be filtered out. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="378" column="10" bodyfile="src/marty/core/feynOptions.h" bodystart="378" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1a69ec0bf4810d6126955873e4f08d64ec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynOptions::initDefaultFilters</definition>
+        <argsstring>()</argsstring>
+        <name>initDefaultFilters</name>
+        <qualifiedname>mty::FeynOptions::initDefaultFilters</qualifiedname>
+        <briefdescription>
+<para>Initializes the default filters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="388" column="10" bodyfile="src/marty/core/feynOptions.cpp" bodystart="135" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynOptions_1ab132211ef0dbb469b2fa9cb401292cb9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynOptions::setWilsonOperatorBasis</definition>
+        <argsstring>(OperatorBasis basis)</argsstring>
+        <name>setWilsonOperatorBasis</name>
+        <qualifiedname>mty::FeynOptions::setWilsonOperatorBasis</qualifiedname>
+        <param>
+          <type><ref refid="namespacemty_1a3b8d44bbd788deaabcd8a279d26a9c84" kindref="member">OperatorBasis</ref></type>
+          <declname>basis</declname>
+        </param>
+        <briefdescription>
+<para>Sets the <ref refid="structmty_1_1Wilson" kindref="compound">Wilson</ref> operator basis wilsonOperatorBasis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This method is private because the operator basis is for now fixed to the standard basis, more suitable for identification.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>basis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Basis used in <ref refid="structmty_1_1Wilson" kindref="compound">Wilson</ref> coefficient decomposition. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynOptions.h" line="398" column="10" bodyfile="src/marty/core/feynOptions.cpp" bodystart="50" bodyend="53"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Instances of this class can be given to <ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref> when launching a calculation to customize the output. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/core/feynOptions.h" line="44" column="1" bodyfile="src/marty/core/feynOptions.h" bodystart="44" bodyend="552"/>
+    <listofallmembers>
+      <member refid="classmty_1_1FeynOptions_1ac758d592f07f7291d44fff7b43ffecba" prot="protected" virt="non-virtual"><scope>mty::FeynOptions</scope><name>addDiagramFilter</name></member>
+      <member refid="classmty_1_1FeynOptions_1a64ff09b69a335a779ab09ca9e39b5f3e" prot="protected" virt="non-virtual"><scope>mty::FeynOptions</scope><name>addDiagramFilters</name></member>
+      <member refid="classmty_1_1FeynOptions_1a7cc7552003cbf2a3283cd740df4fe13d" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>addFilter</name></member>
+      <member refid="classmty_1_1FeynOptions_1a21ebbe50924489fcb60bbf074d938726" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>addFilters</name></member>
+      <member refid="classmty_1_1FeynOptions_1a85e755231fbb8b747f1853675cd58d42" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>addFilters</name></member>
+      <member refid="classmty_1_1FeynOptions_1adbd17537f0137773966236b6a547b47d" prot="protected" virt="non-virtual"><scope>mty::FeynOptions</scope><name>addLagrangianFilter</name></member>
+      <member refid="classmty_1_1FeynOptions_1a5631ec0a7899bff259669d5c0ffa1223" prot="protected" virt="non-virtual"><scope>mty::FeynOptions</scope><name>addLagrangianFilters</name></member>
+      <member refid="classmty_1_1FeynOptions_1a4de6c6af406e3bb61b809ce01f5f16cf" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>applyFilters</name></member>
+      <member refid="classmty_1_1FeynOptions_1a0ac90ecfad5502fabf8ae2ed1c0668b3" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>applyFilters</name></member>
+      <member refid="classmty_1_1FeynOptions_1aece9252fdf0685c0e316eb4f38829c5c" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>applyFilters</name></member>
+      <member refid="classmty_1_1FeynOptions_1afc847f97fa741d2ff3e2d0494e4ed9de" prot="private" virt="non-virtual"><scope>mty::FeynOptions</scope><name>applyFilters</name></member>
+      <member refid="classmty_1_1FeynOptions_1acd084d362c32ffc7778382f58f550ece" prot="private" virt="non-virtual"><scope>mty::FeynOptions</scope><name>dfilters</name></member>
+      <member refid="classmty_1_1FeynOptions_1a61cc4c0aea5fba6f28a91ad4f8b80d87" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>DiagramFilter</name></member>
+      <member refid="classmty_1_1FeynOptions_1a1e25315c372fe90d08511d90abb22bff" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>discardLowerOrders</name></member>
+      <member refid="classmty_1_1FeynOptions_1ace0f93a607e70f4b91779b777c13c84a" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>excludeExternalLegCorrections</name></member>
+      <member refid="classmty_1_1FeynOptions_1a418b74c0e927aad741817445666870a9" prot="private" virt="non-virtual"><scope>mty::FeynOptions</scope><name>expansionOrder</name></member>
+      <member refid="classmty_1_1FeynOptions_1a8359104178c69e2e7dab91c6fdc510ce" prot="private" virt="non-virtual"><scope>mty::FeynOptions</scope><name>fermionOrder</name></member>
+      <member refid="classmty_1_1FeynOptions_1afb4b3855a96c076128471b81c47eed5f" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>FeynOptions</name></member>
+      <member refid="classmty_1_1FeynOptions_1a3699018f65d4a25f49ef3bd76e6e236e" prot="private" virt="non-virtual"><scope>mty::FeynOptions</scope><name>feynRuleCalculation</name></member>
+      <member refid="classmty_1_1FeynOptions_1a77a8e7fc3be2f1ebcc6a2c7faeaa9af7" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>getDiagramFilters</name></member>
+      <member refid="classmty_1_1FeynOptions_1a0feafe24207d26263374bb5a4d93d1fd" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>getExpansionOrder</name></member>
+      <member refid="classmty_1_1FeynOptions_1afdc65962fb4f87c0b888b5f962adedc5" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>getFermionOrder</name></member>
+      <member refid="classmty_1_1FeynOptions_1a343cb5d8da6e8fd4108dfc3fd05d36bf" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>getFeynRuleCalculation</name></member>
+      <member refid="classmty_1_1FeynOptions_1af33ed5b6d5836726a304f1cfb3d06006" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>getLagrangianFilters</name></member>
+      <member refid="classmty_1_1FeynOptions_1a9622837131e8106fc93b0b0247ce27a6" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>getLoopOrder</name></member>
+      <member refid="classmty_1_1FeynOptions_1a2490bdb2e49cf295e6d2cd245d68a1ce" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>getTopology</name></member>
+      <member refid="classmty_1_1FeynOptions_1a02a3030c1924f233a27496c2a6f32165" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>getWilsonOperatorBasis</name></member>
+      <member refid="classmty_1_1FeynOptions_1ae32b6e13696dfe7bf8a9e25aedfe200a" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>getWilsonOperatorCoefficient</name></member>
+      <member refid="classmty_1_1FeynOptions_1a69ec0bf4810d6126955873e4f08d64ec" prot="private" virt="non-virtual"><scope>mty::FeynOptions</scope><name>initDefaultFilters</name></member>
+      <member refid="classmty_1_1FeynOptions_1a4b0441b267801313062a3fddcb1ac7db" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>LagrangianFilter</name></member>
+      <member refid="classmty_1_1FeynOptions_1aa2ab37109fbec4ac11a7a4f2205d529f" prot="private" virt="non-virtual"><scope>mty::FeynOptions</scope><name>lfilters</name></member>
+      <member refid="classmty_1_1FeynOptions_1ada13b97e18b7eb1a4613b1571d33189b" prot="private" virt="non-virtual"><scope>mty::FeynOptions</scope><name>loopOrder</name></member>
+      <member refid="classmty_1_1FeynOptions_1aab93ed27f68d47cce30a805d46940781" prot="private" virt="non-virtual"><scope>mty::FeynOptions</scope><name>nDefaultDiagramFilters</name></member>
+      <member refid="classmty_1_1FeynOptions_1afcb4106a1a10fe9450334402df1ad60d" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>orderExternalFermions</name></member>
+      <member refid="classmty_1_1FeynOptions_1a1aafed6b9d18e5e8c04fbd37558f2708" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>orderInsertions</name></member>
+      <member refid="classmty_1_1FeynOptions_1a614f4e22af986ef10edb90e34d66f657" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>partialCalculation</name></member>
+      <member refid="classmty_1_1FeynOptions_1a627bd4bded39189dca637d0b70adabf7" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>passFilters</name></member>
+      <member refid="classmty_1_1FeynOptions_1aacb9cf0e1924c3f80dffda0b06c6ef54" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>resetFilters</name></member>
+      <member refid="classmty_1_1FeynOptions_1a99431db072cc7b8b1f85db27f937e63d" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>setFermionOrder</name></member>
+      <member refid="classmty_1_1FeynOptions_1ac7245891a5785cacb622dbe66b5ca0fd" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>setFeynmanRuleMode</name></member>
+      <member refid="classmty_1_1FeynOptions_1ad96d8502bdedec9012b21727d831c32f" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>setLoopOrder</name></member>
+      <member refid="classmty_1_1FeynOptions_1aa5766728aa610a70f6af1adb6202b25a" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>setTopology</name></member>
+      <member refid="classmty_1_1FeynOptions_1ab132211ef0dbb469b2fa9cb401292cb9" prot="private" virt="non-virtual"><scope>mty::FeynOptions</scope><name>setWilsonOperatorBasis</name></member>
+      <member refid="classmty_1_1FeynOptions_1a8135388249063684b71929c1593b17bd" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>setWilsonOperatorCoefficient</name></member>
+      <member refid="classmty_1_1FeynOptions_1ac8633825f38428ed452cab6ec8c50ffe" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>simplifyAmplitudes</name></member>
+      <member refid="classmty_1_1FeynOptions_1aadc606553d278de5985489a9b2d44a32" prot="private" virt="non-virtual"><scope>mty::FeynOptions</scope><name>topology</name></member>
+      <member refid="classmty_1_1FeynOptions_1a09638d60267d79ee662b39ca91e40d2e" prot="public" virt="non-virtual"><scope>mty::FeynOptions</scope><name>verboseAmplitude</name></member>
+      <member refid="classmty_1_1FeynOptions_1a73d9b781f440fcaec980721d93368204" prot="private" virt="non-virtual"><scope>mty::FeynOptions</scope><name>wilsonOperatorBasis</name></member>
+      <member refid="classmty_1_1FeynOptions_1aaf7d4816639dee0f4201ace71039fca7" prot="private" virt="non-virtual"><scope>mty::FeynOptions</scope><name>wilsonOperatorCoefficient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

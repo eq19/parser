@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classsgl_1_1MathError" kind="class" language="C++" prot="public">
+    <compoundname>sgl::MathError</compoundname>
+    <basecompoundref refid="classsgl_1_1Exception" prot="public" virt="non-virtual">sgl::Exception</basecompoundref>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsgl_1_1MathError_1a46d3ea70b9972315b8712c16ff99417c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sgl::Exception::Exception</definition>
+        <argsstring>()=default</argsstring>
+        <name>Exception</name>
+        <qualifiedname>sgl::MathError::Exception</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/exceptions.h" line="57" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1MathError_1a91129378f342287e4b759e084663ec64" prot="private" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>sgl::Exception::Exception</definition>
+        <argsstring>(Args &amp;&amp;...args)</argsstring>
+        <name>Exception</name>
+        <qualifiedname>sgl::MathError::Exception</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/exceptions.h" line="57" column="5" bodyfile="src/marty/sgl/exceptions.h" bodystart="37" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>sgl::Exception</label>
+        <link refid="classsgl_1_1Exception"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sgl::MathError</label>
+        <link refid="classsgl_1_1MathError"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>sgl::Exception</label>
+        <link refid="classsgl_1_1Exception"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sgl::MathError</label>
+        <link refid="classsgl_1_1MathError"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/sgl/exceptions.h" line="56" column="1" bodyfile="src/marty/sgl/exceptions.h" bodystart="56" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classsgl_1_1MathError_1a46d3ea70b9972315b8712c16ff99417c" prot="private" virt="non-virtual"><scope>sgl::MathError</scope><name>Exception</name></member>
+      <member refid="classsgl_1_1MathError_1a91129378f342287e4b759e084663ec64" prot="private" virt="non-virtual"><scope>sgl::MathError</scope><name>Exception</name></member>
+      <member refid="classsgl_1_1Exception_1a7bb05ead5013004ac691d5cbdfa5afc5" prot="public" virt="non-virtual"><scope>sgl::MathError</scope><name>what</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

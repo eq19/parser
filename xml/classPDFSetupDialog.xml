@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classPDFSetupDialog" kind="class" language="C++" prot="public">
+    <compoundname>PDFSetupDialog</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QDialog</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPDFSetupDialog_1aa8f1fbee434ec0cfdeae1f70fc88e5a7" prot="private" static="no" mutable="no">
+        <type><ref refid="classMainWidget" kindref="compound">MainWidget</ref> *</type>
+        <definition>MainWidget* PDFSetupDialog::mainWidget</definition>
+        <argsstring></argsstring>
+        <name>mainWidget</name>
+        <qualifiedname>PDFSetupDialog::mainWidget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="53" column="24" bodyfile="src/grafed/gui/pdfsetupdialog.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPDFSetupDialog_1a9409d6c33803fb4e16148f63774e11f4" prot="private" static="no" mutable="no">
+        <type>Ui::PDFSetupDialog *</type>
+        <definition>Ui::PDFSetupDialog* PDFSetupDialog::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <qualifiedname>PDFSetupDialog::ui</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="54" column="24" bodyfile="src/grafed/gui/pdfsetupdialog.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPDFSetupDialog_1a1526163c2d23a993b708db6c3c6f59ad" prot="private" static="no" mutable="no">
+        <type><ref refid="structPDFOption" kindref="compound">PDFOption</ref></type>
+        <definition>PDFOption PDFSetupDialog::options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <qualifiedname>PDFSetupDialog::options</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="55" column="25" bodyfile="src/grafed/gui/pdfsetupdialog.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPDFSetupDialog_1a4f54f806a9d370d5e76324dc9389f838" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString PDFSetupDialog::saveFile</definition>
+        <argsstring></argsstring>
+        <name>saveFile</name>
+        <qualifiedname>PDFSetupDialog::saveFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="56" column="25" bodyfile="src/grafed/gui/pdfsetupdialog.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPDFSetupDialog_1a587e8d414c484c1e85edf2e609ba3ac5" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PDFSetupDialog::PDFSetupDialog</definition>
+        <argsstring>(MainWidget *parent=nullptr)</argsstring>
+        <name>PDFSetupDialog</name>
+        <qualifiedname>PDFSetupDialog::PDFSetupDialog</qualifiedname>
+        <param>
+          <type><ref refid="classMainWidget" kindref="compound">MainWidget</ref> *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="16" column="14" bodyfile="src/grafed/gui/pdfsetupdialog.cpp" bodystart="7" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classPDFSetupDialog_1a301cd3eb92c5c733eeeb6510723708a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PDFSetupDialog::~PDFSetupDialog</definition>
+        <argsstring>()</argsstring>
+        <name>~PDFSetupDialog</name>
+        <qualifiedname>PDFSetupDialog::~PDFSetupDialog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="17" column="5" bodyfile="src/grafed/gui/pdfsetupdialog.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classPDFSetupDialog_1ac393fe5847ff7c5b37735717f96af6d7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structPDFOption" kindref="compound">PDFOption</ref></type>
+        <definition>PDFOption PDFSetupDialog::getOptions</definition>
+        <argsstring>() const</argsstring>
+        <name>getOptions</name>
+        <qualifiedname>PDFSetupDialog::getOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="19" column="15" bodyfile="src/grafed/gui/pdfsetupdialog.h" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classPDFSetupDialog_1a07735dfe1021fa7b2d67d75c1b429f17" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString PDFSetupDialog::getSaveFile</definition>
+        <argsstring>() const</argsstring>
+        <name>getSaveFile</name>
+        <qualifiedname>PDFSetupDialog::getSaveFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="24" column="13" bodyfile="src/grafed/gui/pdfsetupdialog.h" bodystart="24" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classPDFSetupDialog_1a643f04c01ba3046d7baf74da37c4077a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PDFSetupDialog::accept</definition>
+        <argsstring>() override</argsstring>
+        <name>accept</name>
+        <qualifiedname>PDFSetupDialog::accept</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="31" column="10" bodyfile="src/grafed/gui/pdfsetupdialog.cpp" bodystart="21" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="slot" id="classPDFSetupDialog_1a923dd6adbca12a144ecad1b4823828aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PDFSetupDialog::reject</definition>
+        <argsstring>() override</argsstring>
+        <name>reject</name>
+        <qualifiedname>PDFSetupDialog::reject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="32" column="10" bodyfile="src/grafed/gui/pdfsetupdialog.cpp" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="slot" id="classPDFSetupDialog_1a644c7476452fd962d7520626375b05d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PDFSetupDialog::renderPreview</definition>
+        <argsstring>()</argsstring>
+        <name>renderPreview</name>
+        <qualifiedname>PDFSetupDialog::renderPreview</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="34" column="10" bodyfile="src/grafed/gui/pdfsetupdialog.cpp" bodystart="35" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="slot" id="classPDFSetupDialog_1ad21acb5d203fb6a8c90b3ee45bc68e20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PDFSetupDialog::browsePath</definition>
+        <argsstring>()</argsstring>
+        <name>browsePath</name>
+        <qualifiedname>PDFSetupDialog::browsePath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="36" column="10" bodyfile="src/grafed/gui/pdfsetupdialog.cpp" bodystart="63" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="slot" id="classPDFSetupDialog_1a6cb168a6257a8a1937a5eb34a4452f27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PDFSetupDialog::setRowSize</definition>
+        <argsstring>(int)</argsstring>
+        <name>setRowSize</name>
+        <qualifiedname>PDFSetupDialog::setRowSize</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>size</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="38" column="10" bodyfile="src/grafed/gui/pdfsetupdialog.cpp" bodystart="83" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="slot" id="classPDFSetupDialog_1a3e2948a463e7e136b6cf4fc5c9a2d2e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PDFSetupDialog::setHMarginRatio</definition>
+        <argsstring>(int)</argsstring>
+        <name>setHMarginRatio</name>
+        <qualifiedname>PDFSetupDialog::setHMarginRatio</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>ratio</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="39" column="10" bodyfile="src/grafed/gui/pdfsetupdialog.cpp" bodystart="89" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="slot" id="classPDFSetupDialog_1ae6d005d1139e977258d777af073bd0a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PDFSetupDialog::setHSpacingRatio</definition>
+        <argsstring>(int)</argsstring>
+        <name>setHSpacingRatio</name>
+        <qualifiedname>PDFSetupDialog::setHSpacingRatio</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>ratio</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="40" column="10" bodyfile="src/grafed/gui/pdfsetupdialog.cpp" bodystart="95" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="slot" id="classPDFSetupDialog_1a26d1c97fba5ac1809dbc3bf31d64d083" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PDFSetupDialog::setVMarginRatio</definition>
+        <argsstring>(int)</argsstring>
+        <name>setVMarginRatio</name>
+        <qualifiedname>PDFSetupDialog::setVMarginRatio</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>ratio</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="41" column="10" bodyfile="src/grafed/gui/pdfsetupdialog.cpp" bodystart="101" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="slot" id="classPDFSetupDialog_1aedb1a023fcec575aff28a36e3fac7222" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PDFSetupDialog::setVSpacingRatio</definition>
+        <argsstring>(int)</argsstring>
+        <name>setVSpacingRatio</name>
+        <qualifiedname>PDFSetupDialog::setVSpacingRatio</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>ratio</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="42" column="10" bodyfile="src/grafed/gui/pdfsetupdialog.cpp" bodystart="107" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="slot" id="classPDFSetupDialog_1a3e2a50421e63bcb12bc24ff1a8ac5522" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PDFSetupDialog::enableNumbers</definition>
+        <argsstring>(bool)</argsstring>
+        <name>enableNumbers</name>
+        <qualifiedname>PDFSetupDialog::enableNumbers</qualifiedname>
+        <param>
+          <type>bool</type>
+          <defname>enable</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="44" column="10" bodyfile="src/grafed/gui/pdfsetupdialog.cpp" bodystart="113" bodyend="117"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classPDFSetupDialog_1aea55902042fb803f228854dea8fc873d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PDFSetupDialog::loadOptions</definition>
+        <argsstring>()</argsstring>
+        <name>loadOptions</name>
+        <qualifiedname>PDFSetupDialog::loadOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="47" column="10" bodyfile="src/grafed/gui/pdfsetupdialog.cpp" bodystart="49" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classPDFSetupDialog_1a8718ec068fdb67888a35ffc75a157cc8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PDFSetupDialog::fromRatio</definition>
+        <argsstring>(float ratio)</argsstring>
+        <name>fromRatio</name>
+        <qualifiedname>PDFSetupDialog::fromRatio</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>ratio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="49" column="10" bodyfile="src/grafed/gui/pdfsetupdialog.cpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classPDFSetupDialog_1a29da227a35bd1b602a37ec0bb92b92f3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PDFSetupDialog::setRatio</definition>
+        <argsstring>(int value, float &amp;target)</argsstring>
+        <name>setRatio</name>
+        <qualifiedname>PDFSetupDialog::setRatio</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/pdfsetupdialog.h" line="50" column="10" bodyfile="src/grafed/gui/pdfsetupdialog.cpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>PDFSetupDialog</label>
+        <link refid="classPDFSetupDialog"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>PDFSetupDialog</label>
+        <link refid="classPDFSetupDialog"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QDialog</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/grafed/gui/pdfsetupdialog.h" line="12" column="1" bodyfile="src/grafed/gui/pdfsetupdialog.h" bodystart="12" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classPDFSetupDialog_1a643f04c01ba3046d7baf74da37c4077a" prot="public" virt="non-virtual"><scope>PDFSetupDialog</scope><name>accept</name></member>
+      <member refid="classPDFSetupDialog_1ad21acb5d203fb6a8c90b3ee45bc68e20" prot="public" virt="non-virtual"><scope>PDFSetupDialog</scope><name>browsePath</name></member>
+      <member refid="classPDFSetupDialog_1a3e2a50421e63bcb12bc24ff1a8ac5522" prot="public" virt="non-virtual"><scope>PDFSetupDialog</scope><name>enableNumbers</name></member>
+      <member refid="classPDFSetupDialog_1a8718ec068fdb67888a35ffc75a157cc8" prot="protected" virt="non-virtual"><scope>PDFSetupDialog</scope><name>fromRatio</name></member>
+      <member refid="classPDFSetupDialog_1ac393fe5847ff7c5b37735717f96af6d7" prot="public" virt="non-virtual"><scope>PDFSetupDialog</scope><name>getOptions</name></member>
+      <member refid="classPDFSetupDialog_1a07735dfe1021fa7b2d67d75c1b429f17" prot="public" virt="non-virtual"><scope>PDFSetupDialog</scope><name>getSaveFile</name></member>
+      <member refid="classPDFSetupDialog_1aea55902042fb803f228854dea8fc873d" prot="protected" virt="non-virtual"><scope>PDFSetupDialog</scope><name>loadOptions</name></member>
+      <member refid="classPDFSetupDialog_1aa8f1fbee434ec0cfdeae1f70fc88e5a7" prot="private" virt="non-virtual"><scope>PDFSetupDialog</scope><name>mainWidget</name></member>
+      <member refid="classPDFSetupDialog_1a1526163c2d23a993b708db6c3c6f59ad" prot="private" virt="non-virtual"><scope>PDFSetupDialog</scope><name>options</name></member>
+      <member refid="classPDFSetupDialog_1a587e8d414c484c1e85edf2e609ba3ac5" prot="public" virt="non-virtual"><scope>PDFSetupDialog</scope><name>PDFSetupDialog</name></member>
+      <member refid="classPDFSetupDialog_1a923dd6adbca12a144ecad1b4823828aa" prot="public" virt="non-virtual"><scope>PDFSetupDialog</scope><name>reject</name></member>
+      <member refid="classPDFSetupDialog_1a644c7476452fd962d7520626375b05d9" prot="public" virt="non-virtual"><scope>PDFSetupDialog</scope><name>renderPreview</name></member>
+      <member refid="classPDFSetupDialog_1a4f54f806a9d370d5e76324dc9389f838" prot="private" virt="non-virtual"><scope>PDFSetupDialog</scope><name>saveFile</name></member>
+      <member refid="classPDFSetupDialog_1a3e2948a463e7e136b6cf4fc5c9a2d2e1" prot="public" virt="non-virtual"><scope>PDFSetupDialog</scope><name>setHMarginRatio</name></member>
+      <member refid="classPDFSetupDialog_1ae6d005d1139e977258d777af073bd0a0" prot="public" virt="non-virtual"><scope>PDFSetupDialog</scope><name>setHSpacingRatio</name></member>
+      <member refid="classPDFSetupDialog_1a29da227a35bd1b602a37ec0bb92b92f3" prot="protected" virt="non-virtual"><scope>PDFSetupDialog</scope><name>setRatio</name></member>
+      <member refid="classPDFSetupDialog_1a6cb168a6257a8a1937a5eb34a4452f27" prot="public" virt="non-virtual"><scope>PDFSetupDialog</scope><name>setRowSize</name></member>
+      <member refid="classPDFSetupDialog_1a26d1c97fba5ac1809dbc3bf31d64d083" prot="public" virt="non-virtual"><scope>PDFSetupDialog</scope><name>setVMarginRatio</name></member>
+      <member refid="classPDFSetupDialog_1aedb1a023fcec575aff28a36e3fac7222" prot="public" virt="non-virtual"><scope>PDFSetupDialog</scope><name>setVSpacingRatio</name></member>
+      <member refid="classPDFSetupDialog_1a9409d6c33803fb4e16148f63774e11f4" prot="private" virt="non-virtual"><scope>PDFSetupDialog</scope><name>ui</name></member>
+      <member refid="classPDFSetupDialog_1a301cd3eb92c5c733eeeb6510723708a6" prot="public" virt="non-virtual"><scope>PDFSetupDialog</scope><name>~PDFSetupDialog</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="lorentzcoupling_8h" kind="file" language="C++">
+    <compoundname>lorentzcoupling.h</compoundname>
+    <includes refid="diracmatrix_8h" local="yes">diracmatrix.h</includes>
+    <includes local="no">marty.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="vertexinfo_8h" local="yes">src/marty/ufo/vertexinfo.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>diracmatrix.h</label>
+        <link refid="diracmatrix_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/marty/ufo/lorentzcoupling.h</label>
+        <link refid="lorentzcoupling_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>marty.h</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>src/marty/ufo/lorentzcoupling.h</label>
+        <link refid="lorentzcoupling_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/marty/ufo/marty-ufo.h</label>
+        <link refid="marty-ufo_8h"/>
+      </node>
+      <node id="4">
+        <label>src/marty/ufo/simplifiedvertex.h</label>
+        <link refid="simplifiedvertex_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/marty/ufo/vertexinfo.h</label>
+        <link refid="vertexinfo_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structmty_1_1experimental_1_1ufo_1_1LorentzCoupling" prot="public">mty::experimental::ufo::LorentzCoupling</innerclass>
+    <innernamespace refid="namespacemty">mty</innernamespace>
+    <innernamespace refid="namespacemty_1_1experimental">mty::experimental</innernamespace>
+    <innernamespace refid="namespacemty_1_1experimental_1_1ufo">mty::experimental::ufo</innernamespace>
+    <briefdescription>
+<para>Contains the <ref refid="structmty_1_1experimental_1_1ufo_1_1LorentzCoupling" kindref="compound">mty::experimental::ufo::LorentzCoupling</ref> class to store Minkowski and Dirac tensors of vertices. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="diracmatrix_8h" kindref="compound">diracmatrix.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;marty.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemty_1_1experimental_1_1ufo" kindref="compound">mty::experimental::ufo</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="structmty_1_1experimental_1_1ufo_1_1LorentzCoupling" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmty_1_1experimental_1_1ufo_1_1LorentzCoupling" kindref="compound">LorentzCoupling</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="structmty_1_1experimental_1_1ufo_1_1LorentzCoupling_1a5602ecc642c879bcfeacb07abaf2e66f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;DiracMatrix&gt;<sp/><ref refid="structmty_1_1experimental_1_1ufo_1_1LorentzCoupling_1a5602ecc642c879bcfeacb07abaf2e66f" kindref="member">gammaMatrices</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="structmty_1_1experimental_1_1ufo_1_1LorentzCoupling_1af59b1dc196fb1b9287d4a81e86922d46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/><ref refid="structmty_1_1experimental_1_1ufo_1_1LorentzCoupling_1af59b1dc196fb1b9287d4a81e86922d46" kindref="member">lorentzFactor</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mty::experimental::ufo</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/marty/ufo/lorentzcoupling.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classsgl_1_1Sum" kind="class" language="C++" prot="public">
+    <compoundname>sgl::Sum</compoundname>
+    <basecompoundref refid="classsgl_1_1AbstractMultiFunction" prot="public" virt="non-virtual">sgl::AbstractMultiFunction</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsgl_1_1Sum_1aa3ab4e82ab37cc5d68027e39ea81c27f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool sgl::Sum::isZero</definition>
+        <argsstring>() const override</argsstring>
+        <name>isZero</name>
+        <qualifiedname>sgl::Sum::isZero</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1adfe9ff61706305c5c0eb268dd2653d0d">isZero</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/sgloperations.h" line="33" column="10" bodyfile="src/marty/sgl/sgloperations.cpp" bodystart="24" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1Sum_1a156a8d49d629665ffa50be3b2ae6d0f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref></type>
+        <definition>GExpr sgl::Sum::copy</definition>
+        <argsstring>() const override</argsstring>
+        <name>copy</name>
+        <qualifiedname>sgl::Sum::copy</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1af757efe5cd359a3d83f1ef642c4fec8b">copy</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/sgloperations.h" line="35" column="11" bodyfile="src/marty/sgl/sgloperations.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1Sum_1aea54234da62fce6bf27ea6bbc2e51f62" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref></type>
+        <definition>GExpr sgl::Sum::refresh</definition>
+        <argsstring>() const override</argsstring>
+        <name>refresh</name>
+        <qualifiedname>sgl::Sum::refresh</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1a13cc14a47f1ddf8fb51b0861e93c1d00">refresh</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/sgloperations.h" line="36" column="11" bodyfile="src/marty/sgl/sgloperations.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1Sum_1a49e9a6fb83f03b06a99a396031cbbb58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool sgl::Sum::contains</definition>
+        <argsstring>(csl::Index const &amp;index) const override</argsstring>
+        <name>contains</name>
+        <qualifiedname>sgl::Sum::contains</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractMultiFunction_1a9104b3ba49d10499b83c4b5a41035af4">contains</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/sgloperations.h" line="38" column="10" bodyfile="src/marty/sgl/sgloperations.cpp" bodystart="50" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1Sum_1a74492e0775612c6e52b95b852641997a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void sgl::Sum::replace</definition>
+        <argsstring>(csl::Index const &amp;i, csl::Index const &amp;j) override</argsstring>
+        <name>replace</name>
+        <qualifiedname>sgl::Sum::replace</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1a7e40a14116fc813571670c09065016d9">replace</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/sgloperations.h" line="39" column="10" bodyfile="src/marty/sgl/sgloperations.cpp" bodystart="57" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1Sum_1a8147993742f61eae11387e11bc08a2db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr sgl::Sum::toCSL</definition>
+        <argsstring>(TensorSet const &amp;) const override</argsstring>
+        <name>toCSL</name>
+        <qualifiedname>sgl::Sum::toCSL</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1a2c88557366387dab3a16a1e71aa192a6">toCSL</reimplements>
+        <param>
+          <type><ref refid="structsgl_1_1TensorSet" kindref="compound">TensorSet</ref> const &amp;</type>
+          <defname>tensors</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/sgloperations.h" line="41" column="15" bodyfile="src/marty/sgl/sgloperations.cpp" bodystart="41" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1Sum_1a6372f8fa5f8df14513746be29e63855e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sgl::Sum::merge</definition>
+        <argsstring>()</argsstring>
+        <name>merge</name>
+        <qualifiedname>sgl::Sum::merge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/sgloperations.h" line="43" column="10" bodyfile="src/marty/sgl/sgloperations.cpp" bodystart="65" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1Sum_1a0b2a114a54139a0f6d6d7d6f8a82c554" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void sgl::Sum::print</definition>
+        <argsstring>(std::ostream &amp;out) const override</argsstring>
+        <name>print</name>
+        <qualifiedname>sgl::Sum::print</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1a167b1ff6b236463f5c2cb2cff18b7109">print</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/sgloperations.h" line="44" column="10" bodyfile="src/marty/sgl/sgloperations.cpp" bodystart="95" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1Sum_1a6900b41811555752f05df7c2a6c99fbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sgl::AbstractMultiFunction::AbstractMultiFunction</definition>
+        <argsstring>()=default</argsstring>
+        <name>AbstractMultiFunction</name>
+        <qualifiedname>sgl::Sum::AbstractMultiFunction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/sgloperations.h" line="31" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1Sum_1aaaae5d2940ddd21a76d7eee7d9a4da60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sgl::AbstractMultiFunction::AbstractMultiFunction</definition>
+        <argsstring>(GExpr const &amp;arg)</argsstring>
+        <name>AbstractMultiFunction</name>
+        <qualifiedname>sgl::Sum::AbstractMultiFunction</qualifiedname>
+        <param>
+          <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref> const &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/sgloperations.h" line="31" column="5" bodyfile="src/marty/sgl/multifunction.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1Sum_1a5e2092f929145acc669d021386125c3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sgl::AbstractMultiFunction::AbstractMultiFunction</definition>
+        <argsstring>(std::vector&lt; GExpr &gt; const &amp;arg)</argsstring>
+        <name>AbstractMultiFunction</name>
+        <qualifiedname>sgl::Sum::AbstractMultiFunction</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref> &gt; const &amp;</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/sgloperations.h" line="31" column="5" bodyfile="src/marty/sgl/multifunction.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>sgl::AbstractGammaSym</label>
+        <link refid="classsgl_1_1AbstractGammaSym"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sgl::AbstractMultiFunction</label>
+        <link refid="classsgl_1_1AbstractMultiFunction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sgl::Sum</label>
+        <link refid="classsgl_1_1Sum"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::enable_shared_from_this&lt; AbstractGammaSym &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>sgl::AbstractGammaSym</label>
+        <link refid="classsgl_1_1AbstractGammaSym"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sgl::AbstractMultiFunction</label>
+        <link refid="classsgl_1_1AbstractMultiFunction"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sgl::Sum</label>
+        <link refid="classsgl_1_1Sum"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::enable_shared_from_this&lt; AbstractGammaSym &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/sgl/sgloperations.h" line="29" column="1" bodyfile="src/marty/sgl/sgloperations.h" bodystart="29" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classsgl_1_1Sum_1a6900b41811555752f05df7c2a6c99fbd" prot="public" virt="non-virtual"><scope>sgl::Sum</scope><name>AbstractMultiFunction</name></member>
+      <member refid="classsgl_1_1Sum_1aaaae5d2940ddd21a76d7eee7d9a4da60" prot="public" virt="non-virtual"><scope>sgl::Sum</scope><name>AbstractMultiFunction</name></member>
+      <member refid="classsgl_1_1Sum_1a5e2092f929145acc669d021386125c3e" prot="public" virt="non-virtual"><scope>sgl::Sum</scope><name>AbstractMultiFunction</name></member>
+      <member refid="classsgl_1_1AbstractMultiFunction_1a45c89eec7f7fb3af3a4f712000dacda2" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>argument</name></member>
+      <member refid="classsgl_1_1AbstractMultiFunction_1ad895db48f5411a5297a72afac43aab3a" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>argument</name></member>
+      <member refid="classsgl_1_1AbstractMultiFunction_1a1177adaf927786002416ed584e861127" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>begin</name></member>
+      <member refid="classsgl_1_1AbstractMultiFunction_1a6992e156c299b31cd2019789355a8c54" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>begin</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a84a8f29afaabbe187d15d13a9fac4059" prot="public" virt="non-virtual"><scope>sgl::Sum</scope><name>const_iterator</name></member>
+      <member refid="classsgl_1_1Sum_1a49e9a6fb83f03b06a99a396031cbbb58" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>contains</name></member>
+      <member refid="classsgl_1_1Sum_1a156a8d49d629665ffa50be3b2ae6d0f2" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>copy</name></member>
+      <member refid="classsgl_1_1AbstractMultiFunction_1a41b725be4768d92a4aa5e13a32539580" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>end</name></member>
+      <member refid="classsgl_1_1AbstractMultiFunction_1a1c4c4a1c0bdb062d05bfa95b20aed908" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>end</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1ac033f1bea41f9a1001abba5b9305ce3e" prot="public" virt="non-virtual"><scope>sgl::Sum</scope><name>errorPrint</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a62ed9a539963b9146ac05c0efafffd47" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>expr</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1acefd4f5cee624ddff586cb005ed2510a" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>expr</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a5e749ec71535aae944635a29bdb7eeba" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>getFactor</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a75034a33b0e554585206b38961960113" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>getTerm</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1ade647a5eec39ac5e5e6de2d612b8cdd3" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>hasPropertyWith</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a984f2acddc646a42a7ace28ffe96f1d3" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>indices</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a3e2d18fdc22a8012e1179e132c5cdaf3" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>indices</name></member>
+      <member refid="classsgl_1_1Sum_1aa3ab4e82ab37cc5d68027e39ea81c27f" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>isZero</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a7ecc40fa38a2c881f0e1b2af81e699f4" prot="public" virt="non-virtual"><scope>sgl::Sum</scope><name>iterator</name></member>
+      <member refid="classsgl_1_1AbstractMultiFunction_1a1ea4671715acc2891f5731393bbc3ebb" prot="protected" virt="non-virtual"><scope>sgl::Sum</scope><name>m_argument</name></member>
+      <member refid="classsgl_1_1Sum_1a6372f8fa5f8df14513746be29e63855e" prot="public" virt="non-virtual"><scope>sgl::Sum</scope><name>merge</name></member>
+      <member refid="classsgl_1_1Sum_1a0b2a114a54139a0f6d6d7d6f8a82c554" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>print</name></member>
+      <member refid="classsgl_1_1AbstractMultiFunction_1ac19d7269b4f2cabd74cfb5081adcfe0e" prot="public" virt="non-virtual"><scope>sgl::Sum</scope><name>printArgs</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1abdacec8b02e4d1b58b9b938ae9be8e98" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>propertyWith</name></member>
+      <member refid="classsgl_1_1Sum_1aea54234da62fce6bf27ea6bbc2e51f62" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>refresh</name></member>
+      <member refid="classsgl_1_1Sum_1a74492e0775612c6e52b95b852641997a" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>replace</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a37c54670ee0262b62a55279b23e7ce12" prot="public" virt="non-virtual"><scope>sgl::Sum</scope><name>self</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a2c8730e190c88413a50d6f7b6864a97b" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>simplify</name></member>
+      <member refid="classsgl_1_1AbstractMultiFunction_1abcb62c544c37d7bf9ae134f63c4bbd53" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>size</name></member>
+      <member refid="classsgl_1_1Sum_1a8147993742f61eae11387e11bc08a2db" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>toCSL</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a2be842099a79d1c07130664367ed9d91" prot="public" virt="virtual"><scope>sgl::Sum</scope><name>~AbstractGammaSym</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

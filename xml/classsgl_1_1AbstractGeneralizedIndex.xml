@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classsgl_1_1AbstractGeneralizedIndex" kind="class" language="C++" prot="public">
+    <compoundname>sgl::AbstractGeneralizedIndex</compoundname>
+    <basecompoundref refid="classsgl_1_1AbstractLiteral" prot="public" virt="non-virtual">sgl::AbstractLiteral</basecompoundref>
+    <derivedcompoundref refid="classsgl_1_1EpsilonIndex" prot="public" virt="non-virtual">sgl::EpsilonIndex</derivedcompoundref>
+    <derivedcompoundref refid="classsgl_1_1GammaIndex" prot="public" virt="non-virtual">sgl::GammaIndex</derivedcompoundref>
+    <derivedcompoundref refid="classsgl_1_1MetricIndex" prot="public" virt="non-virtual">sgl::MetricIndex</derivedcompoundref>
+    <derivedcompoundref refid="classsgl_1_1MomentumIndex" prot="public" virt="non-virtual">sgl::MomentumIndex</derivedcompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classsgl_1_1AbstractGeneralizedIndex_1a5e2818555935a472b1f3f09bd6c03874" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt;</type>
+        <definition>std::vector&lt;csl::Index&gt; sgl::AbstractGeneralizedIndex::m_indices</definition>
+        <argsstring></argsstring>
+        <name>m_indices</name>
+        <qualifiedname>sgl::AbstractGeneralizedIndex::m_indices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/generalizedindex.h" line="52" column="17" bodyfile="src/marty/sgl/generalizedindex.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsgl_1_1AbstractGeneralizedIndex_1a09bbfca288c73bce85c0d7ccdf69af3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sgl::AbstractGeneralizedIndex::AbstractGeneralizedIndex</definition>
+        <argsstring>()=default</argsstring>
+        <name>AbstractGeneralizedIndex</name>
+        <qualifiedname>sgl::AbstractGeneralizedIndex::AbstractGeneralizedIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/generalizedindex.h" line="32" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1AbstractGeneralizedIndex_1a4263879bbbd0b50ca72ed09ad97d2fe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sgl::AbstractGeneralizedIndex::AbstractGeneralizedIndex</definition>
+        <argsstring>(csl::Index const &amp;t_index)</argsstring>
+        <name>AbstractGeneralizedIndex</name>
+        <qualifiedname>sgl::AbstractGeneralizedIndex::AbstractGeneralizedIndex</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>t_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/generalizedindex.h" line="33" column="5" bodyfile="src/marty/sgl/generalizedindex.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1AbstractGeneralizedIndex_1a236a1b9f14963896b7ced69761c6abb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sgl::AbstractGeneralizedIndex::AbstractGeneralizedIndex</definition>
+        <argsstring>(std::vector&lt; csl::Index &gt; const &amp;t_indices)</argsstring>
+        <name>AbstractGeneralizedIndex</name>
+        <qualifiedname>sgl::AbstractGeneralizedIndex::AbstractGeneralizedIndex</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt; const &amp;</type>
+          <declname>t_indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/generalizedindex.h" line="34" column="5" bodyfile="src/marty/sgl/generalizedindex.cpp" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1AbstractGeneralizedIndex_1aa438a0225b780b24021721bf936af555" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sgl::AbstractGeneralizedIndex::hasSelfContraction</definition>
+        <argsstring>() const</argsstring>
+        <name>hasSelfContraction</name>
+        <qualifiedname>sgl::AbstractGeneralizedIndex::hasSelfContraction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/generalizedindex.h" line="36" column="10" bodyfile="src/marty/sgl/generalizedindex.cpp" bodystart="32" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1AbstractGeneralizedIndex_1a33095f4805b94fd9743c8483b6ddabd7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sgl::AbstractGeneralizedIndex::printIndices</definition>
+        <argsstring>(std::ostream &amp;out, char sep) const</argsstring>
+        <name>printIndices</name>
+        <qualifiedname>sgl::AbstractGeneralizedIndex::printIndices</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>sep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/generalizedindex.h" line="37" column="10" bodyfile="src/marty/sgl/generalizedindex.cpp" bodystart="41" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1AbstractGeneralizedIndex_1a3fa15a2b50f62c59def3c14e250c3f65" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; csl::Index &gt; const  &amp; sgl::AbstractGeneralizedIndex::indices</definition>
+        <argsstring>() const override</argsstring>
+        <name>indices</name>
+        <qualifiedname>sgl::AbstractGeneralizedIndex::indices</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1a984f2acddc646a42a7ace28ffe96f1d3">indices</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/generalizedindex.h" line="39" column="23" bodyfile="src/marty/sgl/generalizedindex.h" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1AbstractGeneralizedIndex_1a11554c9d6819d035a2069976fcccd53b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt; &amp;</type>
+        <definition>std::vector&lt; csl::Index &gt; &amp; sgl::AbstractGeneralizedIndex::indices</definition>
+        <argsstring>() override</argsstring>
+        <name>indices</name>
+        <qualifiedname>sgl::AbstractGeneralizedIndex::indices</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1a3e2d18fdc22a8012e1179e132c5cdaf3">indices</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/generalizedindex.h" line="43" column="17" bodyfile="src/marty/sgl/generalizedindex.h" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1AbstractGeneralizedIndex_1ac08a661c24e912af1c768198ac6b9489" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool sgl::AbstractGeneralizedIndex::contains</definition>
+        <argsstring>(csl::Index const &amp;index) const override</argsstring>
+        <name>contains</name>
+        <qualifiedname>sgl::AbstractGeneralizedIndex::contains</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1a6918d61d7d9639a578fed132b0eba9f0">contains</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/generalizedindex.h" line="48" column="10" bodyfile="src/marty/sgl/generalizedindex.cpp" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1AbstractGeneralizedIndex_1ae70dac34a52078fad33b542633671fe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void sgl::AbstractGeneralizedIndex::replace</definition>
+        <argsstring>(csl::Index const &amp;i, csl::Index const &amp;j) override</argsstring>
+        <name>replace</name>
+        <qualifiedname>sgl::AbstractGeneralizedIndex::replace</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1a7e40a14116fc813571670c09065016d9">replace</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/generalizedindex.h" line="49" column="10" bodyfile="src/marty/sgl/generalizedindex.cpp" bodystart="56" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>sgl::AbstractGammaSym</label>
+        <link refid="classsgl_1_1AbstractGammaSym"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sgl::AbstractGeneralizedIndex</label>
+        <link refid="classsgl_1_1AbstractGeneralizedIndex"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sgl::AbstractLiteral</label>
+        <link refid="classsgl_1_1AbstractLiteral"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sgl::EpsilonIndex</label>
+        <link refid="classsgl_1_1EpsilonIndex"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>sgl::GammaIndex</label>
+        <link refid="classsgl_1_1GammaIndex"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>sgl::MetricIndex</label>
+        <link refid="classsgl_1_1MetricIndex"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>sgl::MomentumIndex</label>
+        <link refid="classsgl_1_1MomentumIndex"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::enable_shared_from_this&lt; AbstractGammaSym &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>sgl::AbstractGammaSym</label>
+        <link refid="classsgl_1_1AbstractGammaSym"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sgl::AbstractGeneralizedIndex</label>
+        <link refid="classsgl_1_1AbstractGeneralizedIndex"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sgl::AbstractLiteral</label>
+        <link refid="classsgl_1_1AbstractLiteral"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::enable_shared_from_this&lt; AbstractGammaSym &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/sgl/generalizedindex.h" line="29" column="1" bodyfile="src/marty/sgl/generalizedindex.h" bodystart="29" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1a09bbfca288c73bce85c0d7ccdf69af3e" prot="public" virt="non-virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>AbstractGeneralizedIndex</name></member>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1a4263879bbbd0b50ca72ed09ad97d2fe2" prot="public" virt="non-virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>AbstractGeneralizedIndex</name></member>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1a236a1b9f14963896b7ced69761c6abb3" prot="public" virt="non-virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>AbstractGeneralizedIndex</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1a1c8f91c428236fd112084566ff9f798d" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>argument</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1a6de99d632158d0544e7536f141ab4d25" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>argument</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1a3bb5fe1156b3e85bc02536077626e95e" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>begin</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1ad9662a88c502549ea76e5cfc9fa76a0c" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>begin</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a84a8f29afaabbe187d15d13a9fac4059" prot="public" virt="non-virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>const_iterator</name></member>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1ac08a661c24e912af1c768198ac6b9489" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>contains</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1af757efe5cd359a3d83f1ef642c4fec8b" prot="public" virt="pure-virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>copy</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1ad063835e8cc5fe232c4f858fb100fbf3" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>end</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1a93c2311786e32222681acf8f5ba7a5b8" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>end</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1ac033f1bea41f9a1001abba5b9305ce3e" prot="public" virt="non-virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>errorPrint</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a62ed9a539963b9146ac05c0efafffd47" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>expr</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1acefd4f5cee624ddff586cb005ed2510a" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>expr</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a5e749ec71535aae944635a29bdb7eeba" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>getFactor</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a75034a33b0e554585206b38961960113" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>getTerm</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1ade647a5eec39ac5e5e6de2d612b8cdd3" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>hasPropertyWith</name></member>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1aa438a0225b780b24021721bf936af555" prot="public" virt="non-virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>hasSelfContraction</name></member>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1a3fa15a2b50f62c59def3c14e250c3f65" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>indices</name></member>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1a11554c9d6819d035a2069976fcccd53b" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>indices</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1adfe9ff61706305c5c0eb268dd2653d0d" prot="public" virt="pure-virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>isZero</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a7ecc40fa38a2c881f0e1b2af81e699f4" prot="public" virt="non-virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>iterator</name></member>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1a5e2818555935a472b1f3f09bd6c03874" prot="protected" virt="non-virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>m_indices</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a167b1ff6b236463f5c2cb2cff18b7109" prot="public" virt="pure-virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>print</name></member>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1a33095f4805b94fd9743c8483b6ddabd7" prot="public" virt="non-virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>printIndices</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1abdacec8b02e4d1b58b9b938ae9be8e98" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>propertyWith</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a13cc14a47f1ddf8fb51b0861e93c1d00" prot="public" virt="pure-virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>refresh</name></member>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1ae70dac34a52078fad33b542633671fe9" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>replace</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a37c54670ee0262b62a55279b23e7ce12" prot="public" virt="non-virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>self</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a2c8730e190c88413a50d6f7b6864a97b" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>simplify</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1a138e83d163d9978b52241cc4e3e30ceb" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>size</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a2c88557366387dab3a16a1e71aa192a6" prot="public" virt="pure-virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>toCSL</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a2be842099a79d1c07130664367ed9d91" prot="public" virt="virtual"><scope>sgl::AbstractGeneralizedIndex</scope><name>~AbstractGammaSym</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

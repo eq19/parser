@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcsl_1_1InitSanitizer" kind="class" language="C++" prot="public">
+    <compoundname>csl::InitSanitizer</compoundname>
+    <includes refid="initSanitizer_8h" local="no">initSanitizer.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcsl_1_1InitSanitizer_1a34cabe4e37c0938e0e1b123a0438acaa" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string csl::InitSanitizer&lt; T &gt;::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>csl::InitSanitizer::name</qualifiedname>
+        <initializer>=&quot;unnamed_var&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="153" column="17" bodyfile="src/csl/initSanitizer.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1InitSanitizer_1ac19c10fdb95233bb17c8974014c4dd8e" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T csl::InitSanitizer&lt; T &gt;::m_value</definition>
+        <argsstring></argsstring>
+        <name>m_value</name>
+        <qualifiedname>csl::InitSanitizer::m_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="154" column="10" bodyfile="src/csl/initSanitizer.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1InitSanitizer_1aa0055bbff2059e202bf94c9bd0ddb7ce" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool csl::InitSanitizer&lt; T &gt;::m_safe</definition>
+        <argsstring></argsstring>
+        <name>m_safe</name>
+        <qualifiedname>csl::InitSanitizer::m_safe</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="155" column="10" bodyfile="src/csl/initSanitizer.h" bodystart="155" bodyend="155"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcsl_1_1InitSanitizer_1aa990466dc26465947e81028b9186e92f" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>csl::InitSanitizer&lt; T &gt;::InitSanitizer</definition>
+        <argsstring>()</argsstring>
+        <name>InitSanitizer</name>
+        <qualifiedname>csl::InitSanitizer::InitSanitizer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="25" column="15" bodyfile="src/csl/initSanitizer.h" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1InitSanitizer_1adcaea7f21b8fd67e000e950ac646dedb" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>csl::InitSanitizer&lt; T &gt;::InitSanitizer</definition>
+        <argsstring>(const char *t_name)</argsstring>
+        <name>InitSanitizer</name>
+        <qualifiedname>csl::InitSanitizer::InitSanitizer</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>t_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="29" column="15" bodyfile="src/csl/initSanitizer.h" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1InitSanitizer_1a4ee54b8577ded495bf50c868b82b9447" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>csl::InitSanitizer&lt; T &gt;::InitSanitizer</definition>
+        <argsstring>(T const &amp;t)</argsstring>
+        <name>InitSanitizer</name>
+        <qualifiedname>csl::InitSanitizer::InitSanitizer</qualifiedname>
+        <param>
+          <type>T const &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="33" column="5" bodyfile="src/csl/initSanitizer.h" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1InitSanitizer_1a2c822577035b5e8965cd57f24d60ee2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>csl::InitSanitizer&lt; T &gt;::InitSanitizer</definition>
+        <argsstring>(const char *t_name, T const &amp;t)</argsstring>
+        <name>InitSanitizer</name>
+        <qualifiedname>csl::InitSanitizer::InitSanitizer</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>t_name</declname>
+        </param>
+        <param>
+          <type>T const &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="38" column="5" bodyfile="src/csl/initSanitizer.h" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1InitSanitizer_1a9660f3b4c2e40b2569cca39ce4b7819d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1InitSanitizer" kindref="compound">InitSanitizer</ref> &amp;</type>
+        <definition>InitSanitizer &amp; csl::InitSanitizer&lt; T &gt;::operator=</definition>
+        <argsstring>(T const &amp;t)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>csl::InitSanitizer::operator=</qualifiedname>
+        <param>
+          <type>T const &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="43" column="19" bodyfile="src/csl/initSanitizer.h" bodystart="43" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1InitSanitizer_1a23a0c6a1c38438670850023d13b7cab0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcsl_1_1InitSanitizer" kindref="compound">InitSanitizer</ref> &amp;</type>
+        <definition>InitSanitizer &amp; csl::InitSanitizer&lt; T &gt;::operator=</definition>
+        <argsstring>(const InitSanitizer&lt; T &gt; &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>csl::InitSanitizer::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1InitSanitizer" kindref="compound">InitSanitizer</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="69" column="19" bodyfile="src/csl/initSanitizer.h" bodystart="69" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1InitSanitizer_1a258b0896143de4f4342c788d662124d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>csl::InitSanitizer&lt; T &gt;::InitSanitizer</definition>
+        <argsstring>(InitSanitizer&lt; T &gt; const &amp;other)</argsstring>
+        <name>InitSanitizer</name>
+        <qualifiedname>csl::InitSanitizer::InitSanitizer</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1InitSanitizer" kindref="compound">InitSanitizer</ref>&lt; T &gt; const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="79" column="5" bodyfile="src/csl/initSanitizer.h" bodystart="79" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1InitSanitizer_1ab9a12912673577e0328047645df8067c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::InitSanitizer&lt; T &gt;::hasValue</definition>
+        <argsstring>() const</argsstring>
+        <name>hasValue</name>
+        <qualifiedname>csl::InitSanitizer::hasValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="86" column="10" bodyfile="src/csl/initSanitizer.h" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1InitSanitizer_1a784631f5244beb85bdca35280f69b1a4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T csl::InitSanitizer&lt; T &gt;::get</definition>
+        <argsstring>() const</argsstring>
+        <name>get</name>
+        <qualifiedname>csl::InitSanitizer::get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="91" column="7" bodyfile="src/csl/initSanitizer.h" bodystart="91" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1InitSanitizer_1aedb26fbc2e7b55a74e9738d9fffa9539" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::InitSanitizer&lt; T &gt;::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>csl::InitSanitizer::reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="105" column="10" bodyfile="src/csl/initSanitizer.h" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1InitSanitizer_1aed4f67aa05532ef9e310efa8124b86d7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::InitSanitizer&lt; T &gt;::operator==</definition>
+        <argsstring>(const InitSanitizer&lt; T &gt; &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>csl::InitSanitizer::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1InitSanitizer" kindref="compound">InitSanitizer</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="110" column="10" bodyfile="src/csl/initSanitizer.h" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1InitSanitizer_1abb2704cf46ea4035a2541e9ab6bb5272" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::InitSanitizer&lt; T &gt;::operator==</definition>
+        <argsstring>(const T &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>csl::InitSanitizer::operator==</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="115" column="10" bodyfile="src/csl/initSanitizer.h" bodystart="115" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1InitSanitizer_1ae85764bcf7155ce648c9ddeeac10a48d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::InitSanitizer&lt; T &gt;::operator!=</definition>
+        <argsstring>(InitSanitizer&lt; T &gt; &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>csl::InitSanitizer::operator!=</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1InitSanitizer" kindref="compound">InitSanitizer</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="121" column="10" bodyfile="src/csl/initSanitizer.h" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1InitSanitizer_1a781d1e6dcc4abb32cff67aadff9b699f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::InitSanitizer&lt; T &gt;::operator!=</definition>
+        <argsstring>(T &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>csl::InitSanitizer::operator!=</qualifiedname>
+        <param>
+          <type>T &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="126" column="10" bodyfile="src/csl/initSanitizer.h" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1InitSanitizer_1aace8dfea40ac127a0c9ed1cfa7eb8d66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>csl::InitSanitizer&lt; T &gt;::operator T</definition>
+        <argsstring>() const</argsstring>
+        <name>operator T</name>
+        <qualifiedname>csl::InitSanitizer::operator T</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="131" column="5" bodyfile="src/csl/initSanitizer.h" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1InitSanitizer_1a2fdab4873f059650dbb445f26498feaa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string csl::InitSanitizer&lt; T &gt;::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <qualifiedname>csl::InitSanitizer::getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="136" column="17" bodyfile="src/csl/initSanitizer.h" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1InitSanitizer_1a3aec8d8e871bbe7f67240decaf23e873" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::InitSanitizer&lt; T &gt;::setName</definition>
+        <argsstring>(const std::string &amp;newname)</argsstring>
+        <name>setName</name>
+        <qualifiedname>csl::InitSanitizer::setName</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>newname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="141" column="10" bodyfile="src/csl/initSanitizer.h" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1InitSanitizer_1adfd9b21ebaeb1108cc22b5887295684c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::InitSanitizer&lt; T &gt;::print</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const</argsstring>
+        <name>print</name>
+        <qualifiedname>csl::InitSanitizer::print</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/initSanitizer.h" line="146" column="10" bodyfile="src/csl/initSanitizer.h" bodystart="146" bodyend="150"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Encapsulates a value of a given to ensure that it initialized when used. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>An object of type InitSanitizer&lt;T&gt; can be used as a number for assignment and will be automatically converted to the encapsulated value when necessary. When assigned, the value becomes safe (initially not). When the encapsulated value is taken from the object, it checks that it is indeed initialized before returning it to ensure that there is no garbage result.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the encapsulated object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="src/csl/initSanitizer.h" line="22" column="1" bodyfile="src/csl/initSanitizer.h" bodystart="22" bodyend="156"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1InitSanitizer_1a784631f5244beb85bdca35280f69b1a4" prot="public" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>get</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1a2fdab4873f059650dbb445f26498feaa" prot="public" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>getName</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1ab9a12912673577e0328047645df8067c" prot="public" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>hasValue</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1aa990466dc26465947e81028b9186e92f" prot="public" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>InitSanitizer</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1adcaea7f21b8fd67e000e950ac646dedb" prot="public" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>InitSanitizer</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1a4ee54b8577ded495bf50c868b82b9447" prot="public" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>InitSanitizer</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1a2c822577035b5e8965cd57f24d60ee2e" prot="public" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>InitSanitizer</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1a258b0896143de4f4342c788d662124d5" prot="public" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>InitSanitizer</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1aa0055bbff2059e202bf94c9bd0ddb7ce" prot="private" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>m_safe</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1ac19c10fdb95233bb17c8974014c4dd8e" prot="private" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>m_value</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1a34cabe4e37c0938e0e1b123a0438acaa" prot="private" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>name</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1aace8dfea40ac127a0c9ed1cfa7eb8d66" prot="public" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>operator T</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1ae85764bcf7155ce648c9ddeeac10a48d" prot="public" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1a781d1e6dcc4abb32cff67aadff9b699f" prot="public" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1a9660f3b4c2e40b2569cca39ce4b7819d" prot="public" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>operator=</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1a23a0c6a1c38438670850023d13b7cab0" prot="public" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>operator=</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1aed4f67aa05532ef9e310efa8124b86d7" prot="public" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1abb2704cf46ea4035a2541e9ab6bb5272" prot="public" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1adfd9b21ebaeb1108cc22b5887295684c" prot="public" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>print</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1aedb26fbc2e7b55a74e9738d9fffa9539" prot="public" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>reset</name></member>
+      <member refid="classcsl_1_1InitSanitizer_1a3aec8d8e871bbe7f67240decaf23e873" prot="public" virt="non-virtual"><scope>csl::InitSanitizer</scope><name>setName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

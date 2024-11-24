@@ -1,0 +1,764 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespacemty_1_1experimental_1_1ufo" kind="namespace" language="C++">
+    <compoundname>mty::experimental::ufo</compoundname>
+    <innerclass refid="structmty_1_1experimental_1_1ufo_1_1Charge" prot="public">mty::experimental::ufo::Charge</innerclass>
+    <innerclass refid="structmty_1_1experimental_1_1ufo_1_1ColorCoupling" prot="public">mty::experimental::ufo::ColorCoupling</innerclass>
+    <innerclass refid="structmty_1_1experimental_1_1ufo_1_1DiracMatrix" prot="public">mty::experimental::ufo::DiracMatrix</innerclass>
+    <innerclass refid="structmty_1_1experimental_1_1ufo_1_1ElectricChargeError" prot="public">mty::experimental::ufo::ElectricChargeError</innerclass>
+    <innerclass refid="structmty_1_1experimental_1_1ufo_1_1ElectricChargeMessenger" prot="public">mty::experimental::ufo::ElectricChargeMessenger</innerclass>
+    <innerclass refid="structmty_1_1experimental_1_1ufo_1_1FactorDecomposition" prot="public">mty::experimental::ufo::FactorDecomposition</innerclass>
+    <innerclass refid="structmty_1_1experimental_1_1ufo_1_1Field" prot="public">mty::experimental::ufo::Field</innerclass>
+    <innerclass refid="structmty_1_1experimental_1_1ufo_1_1LorentzCoupling" prot="public">mty::experimental::ufo::LorentzCoupling</innerclass>
+    <innerclass refid="structmty_1_1experimental_1_1ufo_1_1SMData" prot="public">mty::experimental::ufo::SMData</innerclass>
+    <innerclass refid="structmty_1_1experimental_1_1ufo_1_1Vertex" prot="public">mty::experimental::ufo::Vertex</innerclass>
+    <innerclass refid="structmty_1_1experimental_1_1ufo_1_1VertexMessenger" prot="public">mty::experimental::ufo::VertexMessenger</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1ab016e96d27056646c912d4a23fa32c0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; mty::experimental::ufo::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, DiracMatrix::Type type)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::experimental::ufo::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1DiracMatrix_1adfef15b578999a8b86bdaa269f04ee93" kindref="member">DiracMatrix::Type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Prints a <ref refid="structmty_1_1experimental_1_1ufo_1_1DiracMatrix_1adfef15b578999a8b86bdaa269f04ee93" kindref="member">DiracMatrix::Type</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output stream where the type is printed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type to print.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The modified stream. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/diracmatrix.h" line="79" column="12" bodyfile="src/marty/ufo/diracmatrix.h" bodystart="79" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1a37fb314fec1e48a22658014a06295e45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="classmty_1_1FeynmanRule" kindref="compound">mty::FeynmanRule</ref> const * &gt;</type>
+        <definition>std::optional&lt; mty::FeynmanRule const * &gt; mty::experimental::ufo::electricChargeVertex</definition>
+        <argsstring>(ElectricChargeMessenger const &amp;messenger)</argsstring>
+        <name>electricChargeVertex</name>
+        <qualifiedname>mty::experimental::ufo::electricChargeVertex</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1ElectricChargeMessenger" kindref="compound">ElectricChargeMessenger</ref> const &amp;</type>
+          <declname>messenger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/electriccharge.cpp" line="7" column="19" bodyfile="src/marty/ufo/electriccharge.cpp" bodystart="7" bodyend="37" declfile="src/marty/ufo/electriccharge.h" declline="25" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1a6891cf941df3475a354370edf32906bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1experimental_1_1ufo_1_1Charge" kindref="compound">ufo::Charge</ref></type>
+        <definition>ufo::Charge mty::experimental::ufo::getElectricCharge</definition>
+        <argsstring>(ElectricChargeMessenger const &amp;messenger)</argsstring>
+        <name>getElectricCharge</name>
+        <qualifiedname>mty::experimental::ufo::getElectricCharge</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1ElectricChargeMessenger" kindref="compound">ElectricChargeMessenger</ref> const &amp;</type>
+          <declname>messenger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/electriccharge.cpp" line="39" column="17" bodyfile="src/marty/ufo/electriccharge.cpp" bodystart="39" bodyend="72" declfile="src/marty/ufo/electriccharge.h" declline="45" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1a2abb372b9e6361574839f37a2ac33a60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1experimental_1_1ufo_1_1Charge" kindref="compound">ufo::Charge</ref></type>
+        <definition>ufo::Charge mty::experimental::ufo::getScalarElectricCharge</definition>
+        <argsstring>(mty::FeynmanRule const &amp;vertexRule, ElectricChargeMessenger const &amp;messenger)</argsstring>
+        <name>getScalarElectricCharge</name>
+        <qualifiedname>mty::experimental::ufo::getScalarElectricCharge</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynmanRule" kindref="compound">mty::FeynmanRule</ref> const &amp;</type>
+          <declname>vertexRule</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1ElectricChargeMessenger" kindref="compound">ElectricChargeMessenger</ref> const &amp;</type>
+          <declname>messenger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/electriccharge.cpp" line="74" column="17" bodyfile="src/marty/ufo/electriccharge.cpp" bodystart="74" bodyend="101" declfile="src/marty/ufo/electriccharge.h" declline="29" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1aa29569e49f49125ca4e53b67c4749766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1experimental_1_1ufo_1_1Charge" kindref="compound">ufo::Charge</ref></type>
+        <definition>ufo::Charge mty::experimental::ufo::getFermionElectricCharge</definition>
+        <argsstring>(mty::FeynmanRule const &amp;vertexRule, ElectricChargeMessenger const &amp;messenger)</argsstring>
+        <name>getFermionElectricCharge</name>
+        <qualifiedname>mty::experimental::ufo::getFermionElectricCharge</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynmanRule" kindref="compound">mty::FeynmanRule</ref> const &amp;</type>
+          <declname>vertexRule</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1ElectricChargeMessenger" kindref="compound">ElectricChargeMessenger</ref> const &amp;</type>
+          <declname>messenger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/electriccharge.cpp" line="103" column="17" bodyfile="src/marty/ufo/electriccharge.cpp" bodystart="103" bodyend="118" declfile="src/marty/ufo/electriccharge.h" declline="33" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1a636766da789e802429030ae32f5d2d30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::experimental::ufo::getVectorElectricCharge</definition>
+        <argsstring>(csl::Expr const &amp;term, ElectricChargeMessenger const &amp;messenger)</argsstring>
+        <name>getVectorElectricCharge</name>
+        <qualifiedname>mty::experimental::ufo::getVectorElectricCharge</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>term</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1ElectricChargeMessenger" kindref="compound">ElectricChargeMessenger</ref> const &amp;</type>
+          <declname>messenger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/electriccharge.cpp" line="120" column="15" bodyfile="src/marty/ufo/electriccharge.cpp" bodystart="120" bodyend="159" declfile="src/marty/ufo/electriccharge.h" declline="37" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1a3cf417e5d4c286a64b1717fb6561b449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1experimental_1_1ufo_1_1Charge" kindref="compound">ufo::Charge</ref></type>
+        <definition>ufo::Charge mty::experimental::ufo::getVectorElectricCharge</definition>
+        <argsstring>(mty::FeynmanRule const &amp;vertexRule, ElectricChargeMessenger const &amp;messenger)</argsstring>
+        <name>getVectorElectricCharge</name>
+        <qualifiedname>mty::experimental::ufo::getVectorElectricCharge</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynmanRule" kindref="compound">mty::FeynmanRule</ref> const &amp;</type>
+          <declname>vertexRule</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1ElectricChargeMessenger" kindref="compound">ElectricChargeMessenger</ref> const &amp;</type>
+          <declname>messenger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/electriccharge.cpp" line="161" column="17" bodyfile="src/marty/ufo/electriccharge.cpp" bodystart="161" bodyend="179" declfile="src/marty/ufo/electriccharge.h" declline="41" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1aff503fd8129ab7eef8d00d1f65ed7e64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::experimental::ufo::getTerm</definition>
+        <argsstring>(mty::FeynmanRule const &amp;vertex, ElectricChargeMessenger const &amp;messenger)</argsstring>
+        <name>getTerm</name>
+        <qualifiedname>mty::experimental::ufo::getTerm</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynmanRule" kindref="compound">mty::FeynmanRule</ref> const &amp;</type>
+          <declname>vertex</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1ElectricChargeMessenger" kindref="compound">ElectricChargeMessenger</ref> const &amp;</type>
+          <declname>messenger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/electriccharge.cpp" line="181" column="15" bodyfile="src/marty/ufo/electriccharge.cpp" bodystart="181" bodyend="201" declfile="src/marty/ufo/electriccharge.h" declline="49" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1abcb6055ac9a1e16f8418cab2dffb4300" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1experimental_1_1ufo_1_1Charge" kindref="compound">ufo::Charge</ref></type>
+        <definition>ufo::Charge mty::experimental::ufo::exprToCharge</definition>
+        <argsstring>(csl::Expr charge)</argsstring>
+        <name>exprToCharge</name>
+        <qualifiedname>mty::experimental::ufo::exprToCharge</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+          <declname>charge</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/electriccharge.cpp" line="203" column="17" bodyfile="src/marty/ufo/electriccharge.cpp" bodystart="203" bodyend="221" declfile="src/marty/ufo/electriccharge.h" declline="54" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1a66d113e1a20e714f819935702cfd4e9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::experimental::ufo::raiseElectricChargeError</definition>
+        <argsstring>(ElectricChargeError const &amp;error)</argsstring>
+        <name>raiseElectricChargeError</name>
+        <qualifiedname>mty::experimental::ufo::raiseElectricChargeError</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1ElectricChargeError" kindref="compound">ElectricChargeError</ref> const &amp;</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/electriccharge.cpp" line="223" column="10" bodyfile="src/marty/ufo/electriccharge.cpp" bodystart="223" bodyend="233" declfile="src/marty/ufo/electriccharge.h" declline="61" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1ad8cbfda372c90f19a07d5fcc9b4866e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::experimental::ufo::getConstantFactor</definition>
+        <argsstring>(csl::Expr const &amp;prod)</argsstring>
+        <name>getConstantFactor</name>
+        <qualifiedname>mty::experimental::ufo::getConstantFactor</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>prod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/parsefactors.cpp" line="6" column="15" bodyfile="src/marty/ufo/parsefactors.cpp" bodystart="6" bodyend="24" declfile="src/marty/ufo/parsefactors.h" declline="22" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1a50d693a815b60e5723e9aeee77ab00ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::experimental::ufo::containsVectorSpace</definition>
+        <argsstring>(csl::Expr const &amp;expr, csl::Space const *space)</argsstring>
+        <name>containsVectorSpace</name>
+        <qualifiedname>mty::experimental::ufo::containsVectorSpace</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> const *</type>
+          <declname>space</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/parsefactors.cpp" line="26" column="10" bodyfile="src/marty/ufo/parsefactors.cpp" bodystart="26" bodyend="42" declfile="src/marty/ufo/parsefactors.h" declline="25" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1ae62fe4b1b69e2f94e046f54ea1224022" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::experimental::ufo::containsLorentzFactor</definition>
+        <argsstring>(csl::Expr const &amp;expr)</argsstring>
+        <name>containsLorentzFactor</name>
+        <qualifiedname>mty::experimental::ufo::containsLorentzFactor</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/parsefactors.cpp" line="44" column="10" bodyfile="src/marty/ufo/parsefactors.cpp" bodystart="44" bodyend="47" declfile="src/marty/ufo/parsefactors.h" declline="29" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1a98e60f21af6ea93da86425929e6e665f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::experimental::ufo::containsDiracFactor</definition>
+        <argsstring>(csl::Expr const &amp;expr)</argsstring>
+        <name>containsDiracFactor</name>
+        <qualifiedname>mty::experimental::ufo::containsDiracFactor</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/parsefactors.cpp" line="49" column="10" bodyfile="src/marty/ufo/parsefactors.cpp" bodystart="49" bodyend="52" declfile="src/marty/ufo/parsefactors.h" declline="31" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1a5ee8ad0ba1b83fb2cf91d35aff58714d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::experimental::ufo::containsColorFactor</definition>
+        <argsstring>(csl::Expr const &amp;expr, std::vector&lt; csl::Space const * &gt; const &amp;colorSpaces)</argsstring>
+        <name>containsColorFactor</name>
+        <qualifiedname>mty::experimental::ufo::containsColorFactor</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> const * &gt; const &amp;</type>
+          <declname>colorSpaces</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/parsefactors.cpp" line="54" column="10" bodyfile="src/marty/ufo/parsefactors.cpp" bodystart="54" bodyend="63" declfile="src/marty/ufo/parsefactors.h" declline="33" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1a4ada3069fb59ecfa4aec55f357bf4407" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1experimental_1_1ufo_1_1FactorDecomposition" kindref="compound">FactorDecomposition</ref></type>
+        <definition>FactorDecomposition mty::experimental::ufo::decomposeExpression</definition>
+        <argsstring>(csl::Expr const &amp;expr, std::vector&lt; csl::Space const * &gt; const &amp;colorSpaces)</argsstring>
+        <name>decomposeExpression</name>
+        <qualifiedname>mty::experimental::ufo::decomposeExpression</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> const * &gt; const &amp;</type>
+          <declname>colorSpaces</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/parsefactors.cpp" line="65" column="25" bodyfile="src/marty/ufo/parsefactors.cpp" bodystart="65" bodyend="113" declfile="src/marty/ufo/parsefactors.h" declline="45" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1a2e804ab0617b0f12d18cd9df382ca051" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1experimental_1_1ufo_1_1Vertex" kindref="compound">Vertex</ref> &gt;</type>
+        <definition>std::vector&lt; Vertex &gt; mty::experimental::ufo::convertFeynmanRule</definition>
+        <argsstring>(csl::Expr expr, VertexMessenger &amp;messenger)</argsstring>
+        <name>convertFeynmanRule</name>
+        <qualifiedname>mty::experimental::ufo::convertFeynmanRule</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1VertexMessenger" kindref="compound">VertexMessenger</ref> &amp;</type>
+          <declname>messenger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/simplifiedvertex.cpp" line="63" column="17" bodyfile="src/marty/ufo/simplifiedvertex.cpp" bodystart="63" bodyend="78" declfile="src/marty/ufo/simplifiedvertex.cpp" declline="14" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1ac8abcc924387f8c0a2212849551c9a94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1experimental_1_1ufo_1_1Vertex" kindref="compound">Vertex</ref> &gt;</type>
+        <definition>std::vector&lt; Vertex &gt; mty::experimental::ufo::expandAndConvertFeynmanRule</definition>
+        <argsstring>(csl::Expr expr, VertexMessenger &amp;messenger)</argsstring>
+        <name>expandAndConvertFeynmanRule</name>
+        <qualifiedname>mty::experimental::ufo::expandAndConvertFeynmanRule</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1VertexMessenger" kindref="compound">VertexMessenger</ref> &amp;</type>
+          <declname>messenger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/simplifiedvertex.cpp" line="210" column="17" bodyfile="src/marty/ufo/simplifiedvertex.cpp" bodystart="210" bodyend="236" declfile="src/marty/ufo/simplifiedvertex.cpp" declline="18" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1a6544cdf3ec270a8602c9a590ac8d145c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1experimental_1_1ufo_1_1Field" kindref="compound">mty::experimental::ufo::Field</ref></type>
+        <definition>Field mty::experimental::ufo::convertField</definition>
+        <argsstring>(mty::QuantumField const &amp;field, VertexMessenger const &amp;messenger)</argsstring>
+        <name>convertField</name>
+        <qualifiedname>mty::experimental::ufo::convertField</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> const &amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1VertexMessenger" kindref="compound">VertexMessenger</ref> const &amp;</type>
+          <declname>messenger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/simplifiedvertex.cpp" line="114" column="11" bodyfile="src/marty/ufo/simplifiedvertex.cpp" bodystart="114" bodyend="147" declfile="src/marty/ufo/simplifiedvertex.cpp" declline="22" declcolumn="35"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1a6c36fae22a8f2de441cc16acfc84f6c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::experimental::ufo::extractFields</definition>
+        <argsstring>(VertexMessenger &amp;messenger)</argsstring>
+        <name>extractFields</name>
+        <qualifiedname>mty::experimental::ufo::extractFields</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1VertexMessenger" kindref="compound">VertexMessenger</ref> &amp;</type>
+          <declname>messenger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/simplifiedvertex.cpp" line="149" column="10" bodyfile="src/marty/ufo/simplifiedvertex.cpp" bodystart="149" bodyend="158" declfile="src/marty/ufo/simplifiedvertex.cpp" declline="26" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1aeec834782743ecf6be590f9bb82fdced" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::experimental::ufo::extractColorSpaces</definition>
+        <argsstring>(VertexMessenger &amp;messenger)</argsstring>
+        <name>extractColorSpaces</name>
+        <qualifiedname>mty::experimental::ufo::extractColorSpaces</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1VertexMessenger" kindref="compound">VertexMessenger</ref> &amp;</type>
+          <declname>messenger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/simplifiedvertex.cpp" line="160" column="10" bodyfile="src/marty/ufo/simplifiedvertex.cpp" bodystart="160" bodyend="178" declfile="src/marty/ufo/simplifiedvertex.cpp" declline="29" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1adcc3b26813440073ad1c86cd390cd6ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::experimental::ufo::requiresExpansion</definition>
+        <argsstring>(csl::Expr const &amp;term, VertexMessenger const &amp;messenger)</argsstring>
+        <name>requiresExpansion</name>
+        <qualifiedname>mty::experimental::ufo::requiresExpansion</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>term</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1VertexMessenger" kindref="compound">VertexMessenger</ref> const &amp;</type>
+          <declname>messenger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/simplifiedvertex.cpp" line="180" column="10" bodyfile="src/marty/ufo/simplifiedvertex.cpp" bodystart="180" bodyend="208" declfile="src/marty/ufo/simplifiedvertex.cpp" declline="32" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1a15dff2235affab797a0228800dd25fe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::experimental::ufo::decomposeContribution</definition>
+        <argsstring>(csl::Expr term, VertexMessenger &amp;messenger)</argsstring>
+        <name>decomposeContribution</name>
+        <qualifiedname>mty::experimental::ufo::decomposeContribution</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+          <declname>term</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1VertexMessenger" kindref="compound">VertexMessenger</ref> &amp;</type>
+          <declname>messenger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/simplifiedvertex.cpp" line="238" column="10" bodyfile="src/marty/ufo/simplifiedvertex.cpp" bodystart="238" bodyend="248" declfile="src/marty/ufo/simplifiedvertex.cpp" declline="36" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1adc7eaf8c37312ccc7b0a122c2d57c828" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1experimental_1_1ufo_1_1DiracMatrix" kindref="compound">DiracMatrix</ref> &gt;</type>
+        <definition>std::vector&lt; DiracMatrix &gt; mty::experimental::ufo::decomposeDiracCoupling</definition>
+        <argsstring>(csl::Expr const &amp;diracCoupling)</argsstring>
+        <name>decomposeDiracCoupling</name>
+        <qualifiedname>mty::experimental::ufo::decomposeDiracCoupling</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>diracCoupling</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/simplifiedvertex.cpp" line="250" column="17" bodyfile="src/marty/ufo/simplifiedvertex.cpp" bodystart="250" bodyend="285" declfile="src/marty/ufo/simplifiedvertex.cpp" declline="40" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1a9eddb5cb1331fa3373e802ca7e8344b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1experimental_1_1ufo_1_1DiracMatrix_1adfef15b578999a8b86bdaa269f04ee93" kindref="member">DiracMatrix::Type</ref></type>
+        <definition>DiracMatrix::Type mty::experimental::ufo::getGammaMatrixType</definition>
+        <argsstring>(sgl::GExpr gammaMatrix)</argsstring>
+        <name>getGammaMatrixType</name>
+        <qualifiedname>mty::experimental::ufo::getGammaMatrixType</qualifiedname>
+        <param>
+          <type><ref refid="classsgl_1_1GExpr" kindref="compound">sgl::GExpr</ref></type>
+          <declname>gammaMatrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/simplifiedvertex.cpp" line="287" column="23" bodyfile="src/marty/ufo/simplifiedvertex.cpp" bodystart="287" bodyend="308" declfile="src/marty/ufo/simplifiedvertex.cpp" declline="43" declcolumn="23"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1addee067c2504d8db7fb54505a3617867" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1experimental_1_1ufo_1_1Vertex" kindref="compound">Vertex</ref> &gt;</type>
+        <definition>std::vector&lt; Vertex &gt; mty::experimental::ufo::convertFeynmanRule</definition>
+        <argsstring>(mty::FeynmanRule const &amp;rule, mty::Model &amp;model, SMData const &amp;smData)</argsstring>
+        <name>convertFeynmanRule</name>
+        <qualifiedname>mty::experimental::ufo::convertFeynmanRule</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynmanRule" kindref="compound">mty::FeynmanRule</ref> const &amp;</type>
+          <declname>rule</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref> &amp;</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1SMData" kindref="compound">SMData</ref> const &amp;</type>
+          <declname>smData</declname>
+        </param>
+        <briefdescription>
+<para>Similar to <ref refid="namespacemty_1_1experimental_1_1ufo_1a33c9fb37d659970060f4bad95bdb487d" kindref="member">obtainSimplifiedVertices()</ref> by giving only one Feynman rule to convert. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rule</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Single Feynman rule to convert to simplified vertices. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MARTY model for which simplified vertices must be created. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>smData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SM data containing in particular naming conventions for the color group, particle names, coupling names etc.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacemty_1_1experimental_1_1ufo_1a19b56a5c5904bef0d3bdf32f49696588" kindref="member">convertFeynmanRules()</ref>, <ref refid="namespacemty_1_1experimental_1_1ufo_1a33c9fb37d659970060f4bad95bdb487d" kindref="member">obtainSimplifiedVertices()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/simplifiedvertex.cpp" line="50" column="17" bodyfile="src/marty/ufo/simplifiedvertex.cpp" bodystart="50" bodyend="61" declfile="src/marty/ufo/simplifiedvertex.h" declline="108" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1a19b56a5c5904bef0d3bdf32f49696588" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1experimental_1_1ufo_1_1Vertex" kindref="compound">Vertex</ref> &gt;</type>
+        <definition>std::vector&lt; Vertex &gt; mty::experimental::ufo::convertFeynmanRules</definition>
+        <argsstring>(std::vector&lt; FeynmanRule &gt; const &amp;rules, mty::Model &amp;model, SMData const &amp;smData)</argsstring>
+        <name>convertFeynmanRules</name>
+        <qualifiedname>mty::experimental::ufo::convertFeynmanRules</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1FeynmanRule" kindref="compound">mty::FeynmanRule</ref> &gt; const &amp;</type>
+          <declname>rules</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref> &amp;</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1SMData" kindref="compound">SMData</ref> const &amp;</type>
+          <declname>smData</declname>
+        </param>
+        <briefdescription>
+<para>Similar to <ref refid="namespacemty_1_1experimental_1_1ufo_1a33c9fb37d659970060f4bad95bdb487d" kindref="member">obtainSimplifiedVertices()</ref> by giving only a (sub-)set of Feynman rules to convert. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set of Feynman rules to convert to simplified vertices. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MARTY model for which simplified vertices must be created. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>smData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SM data containing in particular naming conventions for the color group, particle names, coupling names etc.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>convertFeynmanRule(), <ref refid="namespacemty_1_1experimental_1_1ufo_1a33c9fb37d659970060f4bad95bdb487d" kindref="member">obtainSimplifiedVertices()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/simplifiedvertex.cpp" line="80" column="17" bodyfile="src/marty/ufo/simplifiedvertex.cpp" bodystart="80" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1a33c9fb37d659970060f4bad95bdb487d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1experimental_1_1ufo_1_1Vertex" kindref="compound">Vertex</ref> &gt;</type>
+        <definition>std::vector&lt; Vertex &gt; mty::experimental::ufo::obtainSimplifiedVertices</definition>
+        <argsstring>(mty::Model &amp;model, SMData const &amp;smData={})</argsstring>
+        <name>obtainSimplifiedVertices</name>
+        <qualifiedname>mty::experimental::ufo::obtainSimplifiedVertices</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref> &amp;</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1SMData" kindref="compound">SMData</ref> const &amp;</type>
+          <declname>smData</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Main interface function to obtain simplified vertices from a MARTY model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function parses the model&apos;s Feynman rules and generates the corresponding simplified vertices. The number of vertices is equal to or higher than the number of Feynman rules. The naming conventions for the particular model can be given in the <bold>smData</bold> parameter (optional). Otherwise, default conventions are used.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MARTY model for which simplified vertices must be created. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>smData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SM data containing in particular naming conventions for the color group, particle names, coupling names etc.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>There can be more output vertices than input ones when vertices mix Lorentz and color structures (such as the 4-gluon vertex). In this case, the vertex must be expanded and stored into several independent vertices such as what is done in UFO output.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="structmty_1_1experimental_1_1ufo_1_1Vertex" kindref="compound">Vertex</ref>, <ref refid="structmty_1_1experimental_1_1ufo_1_1SMData" kindref="compound">SMData</ref>, <ref refid="simplifiedvertex_8h" kindref="compound">simplifiedvertex.h</ref>, convertFeynmanRule(), <ref refid="namespacemty_1_1experimental_1_1ufo_1a19b56a5c5904bef0d3bdf32f49696588" kindref="member">convertFeynmanRules()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/simplifiedvertex.cpp" line="98" column="17" bodyfile="src/marty/ufo/simplifiedvertex.cpp" bodystart="98" bodyend="107" declfile="src/marty/ufo/simplifiedvertex.h" declline="93" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemty_1_1experimental_1_1ufo_1adeb16d515e48fd440215060b88be7489" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1experimental_1_1ufo_1_1Vertex" kindref="compound">Vertex</ref> &gt;</type>
+        <definition>std::vector&lt; Vertex &gt; mty::experimental::ufo::convertFeynmanRules</definition>
+        <argsstring>(std::vector&lt; mty::FeynmanRule &gt; const &amp;rules, mty::Model &amp;model, SMData const &amp;smData)</argsstring>
+        <name>convertFeynmanRules</name>
+        <qualifiedname>mty::experimental::ufo::convertFeynmanRules</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1FeynmanRule" kindref="compound">mty::FeynmanRule</ref> &gt; const &amp;</type>
+          <declname>rules</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1Model" kindref="compound">mty::Model</ref> &amp;</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1experimental_1_1ufo_1_1SMData" kindref="compound">SMData</ref> const &amp;</type>
+          <declname>smData</declname>
+        </param>
+        <briefdescription>
+<para>Similar to <ref refid="namespacemty_1_1experimental_1_1ufo_1a33c9fb37d659970060f4bad95bdb487d" kindref="member">obtainSimplifiedVertices()</ref> by giving only a (sub-)set of Feynman rules to convert. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rules</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set of Feynman rules to convert to simplified vertices. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MARTY model for which simplified vertices must be created. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>smData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SM data containing in particular naming conventions for the color group, particle names, coupling names etc.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>convertFeynmanRule(), <ref refid="namespacemty_1_1experimental_1_1ufo_1a33c9fb37d659970060f4bad95bdb487d" kindref="member">obtainSimplifiedVertices()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/ufo/simplifiedvertex.h" line="124" column="17" bodyfile="src/marty/ufo/simplifiedvertex.cpp" bodystart="80" bodyend="96" declfile="src/marty/ufo/simplifiedvertex.h" declline="124" declcolumn="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Contains all the MARTY-UFO package. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/ufo/charge.h" line="8" column="1"/>
+  </compounddef>
+</doxygen>

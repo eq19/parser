@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="vertexinfo_8h" kind="file" language="C++">
+    <compoundname>vertexinfo.h</compoundname>
+    <includes refid="charge_8h" local="yes">charge.h</includes>
+    <includes refid="colorcoupling_8h" local="yes">colorcoupling.h</includes>
+    <includes refid="diracmatrix_8h" local="yes">diracmatrix.h</includes>
+    <includes refid="field_8h" local="yes">field.h</includes>
+    <includes refid="lorentzcoupling_8h" local="yes">lorentzcoupling.h</includes>
+    <includes local="no">marty.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="marty-ufo_8h" local="yes">src/marty/ufo/marty-ufo.h</includedby>
+    <includedby refid="simplifiedvertex_8cpp" local="yes">src/marty/ufo/simplifiedvertex.cpp</includedby>
+    <includedby refid="simplifiedvertex_8h" local="yes">src/marty/ufo/simplifiedvertex.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>charge.h</label>
+        <link refid="charge_8h"/>
+      </node>
+      <node id="3">
+        <label>colorcoupling.h</label>
+        <link refid="colorcoupling_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>diracmatrix.h</label>
+        <link refid="diracmatrix_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>field.h</label>
+        <link refid="field_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lorentzcoupling.h</label>
+        <link refid="lorentzcoupling_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/marty/ufo/vertexinfo.h</label>
+        <link refid="vertexinfo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>marty.h</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/marty/ufo/marty-ufo.h</label>
+        <link refid="marty-ufo_8h"/>
+      </node>
+      <node id="3">
+        <label>src/marty/ufo/simplifiedvertex.h</label>
+        <link refid="simplifiedvertex_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/marty/ufo/vertexinfo.h</label>
+        <link refid="vertexinfo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structmty_1_1experimental_1_1ufo_1_1Vertex" prot="public">mty::experimental::ufo::Vertex</innerclass>
+    <innernamespace refid="namespacemty">mty</innernamespace>
+    <innernamespace refid="namespacemty_1_1experimental">mty::experimental</innernamespace>
+    <innernamespace refid="namespacemty_1_1experimental_1_1ufo">mty::experimental::ufo</innernamespace>
+    <briefdescription>
+<para>Contains the <ref refid="structmty_1_1experimental_1_1ufo_1_1Vertex" kindref="compound">mty::experimental::ufo::Vertex</ref> class, main data structure for MARTY-UFO vertices. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="charge_8h" kindref="compound">charge.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="colorcoupling_8h" kindref="compound">colorcoupling.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="diracmatrix_8h" kindref="compound">diracmatrix.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="field_8h" kindref="compound">field.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lorentzcoupling_8h" kindref="compound">lorentzcoupling.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;marty.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemty_1_1experimental_1_1ufo" kindref="compound">mty::experimental::ufo</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="structmty_1_1experimental_1_1ufo_1_1Vertex" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmty_1_1experimental_1_1ufo_1_1Vertex" kindref="compound">Vertex</ref></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="structmty_1_1experimental_1_1ufo_1_1Vertex_1a07c00b0b71b114b7dd0b26452f80c29c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;Field&gt;<sp/><ref refid="structmty_1_1experimental_1_1ufo_1_1Vertex_1a07c00b0b71b114b7dd0b26452f80c29c" kindref="member">fields</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="structmty_1_1experimental_1_1ufo_1_1Vertex_1a924cd1b3e21ad704384711a50a8aecca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref><sp/><ref refid="structmty_1_1experimental_1_1ufo_1_1Vertex_1a924cd1b3e21ad704384711a50a8aecca" kindref="member">coupling</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="structmty_1_1experimental_1_1ufo_1_1Vertex_1a6046d65f6ad7df21cc8db7ba691a52c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structmty_1_1experimental_1_1ufo_1_1LorentzCoupling" kindref="compound">LorentzCoupling</ref><sp/><ref refid="structmty_1_1experimental_1_1ufo_1_1Vertex_1a6046d65f6ad7df21cc8db7ba691a52c9" kindref="member">lorentz</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="structmty_1_1experimental_1_1ufo_1_1Vertex_1ad0b29d71f4d5aa25593bff372872192a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structmty_1_1experimental_1_1ufo_1_1ColorCoupling" kindref="compound">ColorCoupling</ref><sp/><ref refid="structmty_1_1experimental_1_1ufo_1_1Vertex_1ad0b29d71f4d5aa25593bff372872192a" kindref="member">color</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mty::experimental::ufo</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/marty/ufo/vertexinfo.h"/>
+  </compounddef>
+</doxygen>

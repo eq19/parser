@@ -1,0 +1,675 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespacemty_1_1gamma__api" kind="namespace" language="C++">
+    <compoundname>mty::gamma_api</compoundname>
+    <innerclass refid="classmty_1_1gamma__api_1_1IndexManager" prot="public">mty::gamma_api::IndexManager</innerclass>
+    <innerclass refid="structmty_1_1gamma__api_1_1LatexGenerationInfo" prot="public">mty::gamma_api::LatexGenerationInfo</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="gamma_8h_1a3f7069e96325bb88609259f8ae7440a4" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>FierzBasis</name>
+        <qualifiedname>mty::gamma_api::FierzBasis</qualifiedname>
+        <enumvalue id="gamma_8h_1a3f7069e96325bb88609259f8ae7440a4aeb6d8ae6f20283755b339c0dc273988b" prot="public">
+          <name>Standard</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="gamma_8h_1a3f7069e96325bb88609259f8ae7440a4ae096ece8248f211a75d1a3f845a99698" prot="public">
+          <name>Chiral</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.h" line="18" column="1" bodyfile="src/marty/api/gamma.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="gamma_8h_1a4fce09e908b21adf7c5adb95694fc90e" prot="public" static="no">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">sgl::GExpr</ref></type>
+        <definition>using mty::gamma_api::Expr =  sgl::GExpr</definition>
+        <argsstring></argsstring>
+        <name>Expr</name>
+        <qualifiedname>mty::gamma_api::Expr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.h" line="14" column="1" bodyfile="src/marty/api/gamma.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="gamma_8cpp_1a40e7dc48e33ae1b0eeb94af78e3e79ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+        <definition>Expr mty::gamma_api::DMinko</definition>
+        <argsstring>()</argsstring>
+        <name>DMinko</name>
+        <qualifiedname>mty::gamma_api::DMinko</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="34" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="34" bodyend="38" declfile="src/marty/api/gamma.h" declline="29" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1a76d20eea1980adc69159ea690db1c5e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+        <definition>Expr mty::gamma_api::imaginaryUnit</definition>
+        <argsstring>()</argsstring>
+        <name>imaginaryUnit</name>
+        <qualifiedname>mty::gamma_api::imaginaryUnit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="40" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="40" bodyend="44" declfile="src/marty/api/gamma.h" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1a71c2ff5fc32105446d8d28ea33ca4605" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::gamma_api::keepSymbolic4D</definition>
+        <argsstring>(bool symbolic)</argsstring>
+        <name>keepSymbolic4D</name>
+        <qualifiedname>mty::gamma_api::keepSymbolic4D</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>symbolic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="46" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="46" bodyend="49" declfile="src/marty/api/gamma.h" declline="16" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1a10809f85ce4705255284a3bb7b2c9f28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+        <definition>Expr mty::gamma_api::g</definition>
+        <argsstring>(int mu, int nu)</argsstring>
+        <name>g</name>
+        <qualifiedname>mty::gamma_api::g</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="51" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="51" bodyend="55" declfile="src/marty/api/gamma.h" declline="21" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1a278611f90bbf64ec8ba375705466c62c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+        <definition>Expr mty::gamma_api::eps</definition>
+        <argsstring>(int mu, int nu, int rho, int sig)</argsstring>
+        <name>eps</name>
+        <qualifiedname>mty::gamma_api::eps</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nu</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rho</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="57" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="57" bodyend="63" declfile="src/marty/api/gamma.h" declline="22" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1a483772d56dcf0ee93fe1f7a23c2eeb6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+        <definition>Expr mty::gamma_api::gamma</definition>
+        <argsstring>(int mu)</argsstring>
+        <name>gamma</name>
+        <qualifiedname>mty::gamma_api::gamma</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="65" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="65" bodyend="68" declfile="src/marty/api/gamma.h" declline="23" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1aa1f1c4dd703d55b7eda776bbacd1bf44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+        <definition>Expr mty::gamma_api::gamma</definition>
+        <argsstring>(int mu, int nu)</argsstring>
+        <name>gamma</name>
+        <qualifiedname>mty::gamma_api::gamma</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="70" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="70" bodyend="74" declfile="src/marty/api/gamma.h" declline="24" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1a31b2ca0dca33304cdc674a54d3c27f6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+        <definition>Expr mty::gamma_api::gamma5</definition>
+        <argsstring>()</argsstring>
+        <name>gamma5</name>
+        <qualifiedname>mty::gamma_api::gamma5</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="76" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="76" bodyend="79" declfile="src/marty/api/gamma.h" declline="25" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1a32518a892c7abf19aa1e5f37126943b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+        <definition>Expr mty::gamma_api::P_L</definition>
+        <argsstring>()</argsstring>
+        <name>P_L</name>
+        <qualifiedname>mty::gamma_api::P_L</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="81" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="81" bodyend="84" declfile="src/marty/api/gamma.h" declline="26" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1a5f105ced03f2e9f92c17d303f2dd423b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+        <definition>Expr mty::gamma_api::P_R</definition>
+        <argsstring>()</argsstring>
+        <name>P_R</name>
+        <qualifiedname>mty::gamma_api::P_R</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="86" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="86" bodyend="89" declfile="src/marty/api/gamma.h" declline="27" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1ac82ca96c7bfd6a131160ae06ade780f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+        <definition>Expr mty::gamma_api::C</definition>
+        <argsstring>()</argsstring>
+        <name>C</name>
+        <qualifiedname>mty::gamma_api::C</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="91" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="91" bodyend="94" declfile="src/marty/api/gamma.h" declline="28" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1a9ee283bc3a7caeac1ade011c12e2f999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+        <definition>Expr mty::gamma_api::current</definition>
+        <argsstring>(std::vector&lt; Expr &gt; const &amp;gammas, int iLeft, int iRight)</argsstring>
+        <name>current</name>
+        <qualifiedname>mty::gamma_api::current</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref> &gt; const &amp;</type>
+          <declname>gammas</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iLeft</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iRight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="96" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="96" bodyend="101" declfile="src/marty/api/gamma.h" declline="33" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1ac8c796072af1d855804f7c0fd8cae5d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+        <definition>Expr mty::gamma_api::trace</definition>
+        <argsstring>(std::vector&lt; Expr &gt; const &amp;gammas)</argsstring>
+        <name>trace</name>
+        <qualifiedname>mty::gamma_api::trace</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref> &gt; const &amp;</type>
+          <declname>gammas</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="103" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="103" bodyend="106" declfile="src/marty/api/gamma.h" declline="34" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1a87266f8e2a48ef0f04f4bed09d5fe141" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+        <definition>Expr mty::gamma_api::relative_chain_order</definition>
+        <argsstring>(Expr expr)</argsstring>
+        <name>relative_chain_order</name>
+        <qualifiedname>mty::gamma_api::relative_chain_order</qualifiedname>
+        <param>
+          <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="108" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="108" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1aa166ace99d38cf80890f7ddb0c6dd4ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+        <definition>Expr mty::gamma_api::simplified</definition>
+        <argsstring>(Expr const &amp;expr)</argsstring>
+        <name>simplified</name>
+        <qualifiedname>mty::gamma_api::simplified</qualifiedname>
+        <param>
+          <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="137" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="137" bodyend="144" declfile="src/marty/api/gamma.h" declline="37" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1ac3226d86a7bca32a808fbe47c5008547" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+        <definition>Expr mty::gamma_api::ordered</definition>
+        <argsstring>(Expr const &amp;expr)</argsstring>
+        <name>ordered</name>
+        <qualifiedname>mty::gamma_api::ordered</qualifiedname>
+        <param>
+          <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="146" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="146" bodyend="153" declfile="src/marty/api/gamma.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1a7dd34ba7b0d9aadac6edb48e0e9e6cfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+        <definition>Expr mty::gamma_api::project</definition>
+        <argsstring>(Expr const &amp;expr, FierzBasis basis)</argsstring>
+        <name>project</name>
+        <qualifiedname>mty::gamma_api::project</qualifiedname>
+        <param>
+          <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>FierzBasis</type>
+          <declname>basis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="155" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="155" bodyend="171" declfile="src/marty/api/gamma.h" declline="38" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1a9c8e8954ed1dd760a9b794714965930a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; <ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref>, <ref refid="classsgl_1_1IndexChain" kindref="compound">sgl::IndexChain</ref> const * &gt;</type>
+        <definition>std::pair&lt; Expr, sgl::IndexChain const * &gt; mty::gamma_api::getIndexChainAssert</definition>
+        <argsstring>(Expr const &amp;expr)</argsstring>
+        <name>getIndexChainAssert</name>
+        <qualifiedname>mty::gamma_api::getIndexChainAssert</qualifiedname>
+        <param>
+          <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="197" column="11" bodyfile="src/marty/api/gamma.cpp" bodystart="197" bodyend="225" declfile="src/marty/api/gamma.cpp" declline="173" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1a2fab1ef7fcb8d3a5f29de9fce7a877e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+        <definition>Expr mty::gamma_api::applySingleFierz</definition>
+        <argsstring>(Expr const &amp;chain1, Expr const &amp;chain2, FierzBasis basis)</argsstring>
+        <name>applySingleFierz</name>
+        <qualifiedname>mty::gamma_api::applySingleFierz</qualifiedname>
+        <param>
+          <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref> const &amp;</type>
+          <declname>chain1</declname>
+        </param>
+        <param>
+          <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref> const &amp;</type>
+          <declname>chain2</declname>
+        </param>
+        <param>
+          <type>FierzBasis</type>
+          <declname>basis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="175" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="175" bodyend="184" declfile="src/marty/api/gamma.h" declline="40" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1a7c948d7aae767e057ffbe7baae69829a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref></type>
+        <definition>Expr mty::gamma_api::applyDoubleFierz</definition>
+        <argsstring>(Expr const &amp;chain1, Expr const &amp;chain2, FierzBasis basis)</argsstring>
+        <name>applyDoubleFierz</name>
+        <qualifiedname>mty::gamma_api::applyDoubleFierz</qualifiedname>
+        <param>
+          <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref> const &amp;</type>
+          <declname>chain1</declname>
+        </param>
+        <param>
+          <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref> const &amp;</type>
+          <declname>chain2</declname>
+        </param>
+        <param>
+          <type>FierzBasis</type>
+          <declname>basis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="186" column="6" bodyfile="src/marty/api/gamma.cpp" bodystart="186" bodyend="195" declfile="src/marty/api/gamma.h" declline="44" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1ae1e1a81175da95dc01a46fba4754b8d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string mty::gamma_api::generateString</definition>
+        <argsstring>(Expr const &amp;expr)</argsstring>
+        <name>generateString</name>
+        <qualifiedname>mty::gamma_api::generateString</qualifiedname>
+        <param>
+          <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="231" column="13" bodyfile="src/marty/api/gamma.cpp" bodystart="231" bodyend="236" declfile="src/marty/api/gamma.h" declline="48" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1aa01c190e962e0d7e8704daa4cdebd4fb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string mty::gamma_api::generateLatexImpl</definition>
+        <argsstring>(Expr const &amp;expr, LatexGenerationInfo info)</argsstring>
+        <name>generateLatexImpl</name>
+        <qualifiedname>mty::gamma_api::generateLatexImpl</qualifiedname>
+        <param>
+          <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1gamma__api_1_1LatexGenerationInfo" kindref="compound">LatexGenerationInfo</ref></type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="379" column="20" bodyfile="src/marty/api/gamma.cpp" bodystart="379" bodyend="408" declfile="src/marty/api/gamma.cpp" declline="247" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1acc5c614f0a6316d0d3260b3cb1811452" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string mty::gamma_api::generateLatex</definition>
+        <argsstring>(csl::Expr const &amp;expr)</argsstring>
+        <name>generateLatex</name>
+        <qualifiedname>mty::gamma_api::generateLatex</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="250" column="20" bodyfile="src/marty/api/gamma.cpp" bodystart="250" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1a331d88df2f69eafbf221d5d9aedb1dc9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string mty::gamma_api::generateLatex</definition>
+        <argsstring>(sgl::Sum const *func, LatexGenerationInfo info)</argsstring>
+        <name>generateLatex</name>
+        <qualifiedname>mty::gamma_api::generateLatex</qualifiedname>
+        <param>
+          <type><ref refid="classsgl_1_1Sum" kindref="compound">sgl::Sum</ref> const *</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1gamma__api_1_1LatexGenerationInfo" kindref="compound">LatexGenerationInfo</ref></type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="255" column="20" bodyfile="src/marty/api/gamma.cpp" bodystart="255" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1a4d58097796bea6a9ebd35c6499736bee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string mty::gamma_api::generateLatex</definition>
+        <argsstring>(sgl::AbstractMultiFunction const *func, std::string const &amp;sep, LatexGenerationInfo info)</argsstring>
+        <name>generateLatex</name>
+        <qualifiedname>mty::gamma_api::generateLatex</qualifiedname>
+        <param>
+          <type><ref refid="classsgl_1_1AbstractMultiFunction" kindref="compound">sgl::AbstractMultiFunction</ref> const *</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>sep</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1gamma__api_1_1LatexGenerationInfo" kindref="compound">LatexGenerationInfo</ref></type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="293" column="20" bodyfile="src/marty/api/gamma.cpp" bodystart="293" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1a3a95515444a363d40af8077667cb2db6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string mty::gamma_api::generateLatex</definition>
+        <argsstring>(csl::Index const &amp;index)</argsstring>
+        <name>generateLatex</name>
+        <qualifiedname>mty::gamma_api::generateLatex</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="309" column="20" bodyfile="src/marty/api/gamma.cpp" bodystart="309" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1ac0b07d38f715e15117b6897d8549872d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string mty::gamma_api::generateLatex</definition>
+        <argsstring>(std::vector&lt; csl::Index &gt; const &amp;indices)</argsstring>
+        <name>generateLatex</name>
+        <qualifiedname>mty::gamma_api::generateLatex</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt; const &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="315" column="20" bodyfile="src/marty/api/gamma.cpp" bodystart="315" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1ae6626d079e57d8be4811ebccbf11fc80" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string mty::gamma_api::generateLatex</definition>
+        <argsstring>(sgl::GammaIndex const *index)</argsstring>
+        <name>generateLatex</name>
+        <qualifiedname>mty::gamma_api::generateLatex</qualifiedname>
+        <param>
+          <type><ref refid="classsgl_1_1GammaIndex" kindref="compound">sgl::GammaIndex</ref> const *</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="324" column="20" bodyfile="src/marty/api/gamma.cpp" bodystart="324" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1a48b6e1e06976ed9bbebd38c96f85f08b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string mty::gamma_api::generateLatex</definition>
+        <argsstring>(sgl::MetricIndex const *index)</argsstring>
+        <name>generateLatex</name>
+        <qualifiedname>mty::gamma_api::generateLatex</qualifiedname>
+        <param>
+          <type><ref refid="classsgl_1_1MetricIndex" kindref="compound">sgl::MetricIndex</ref> const *</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="351" column="20" bodyfile="src/marty/api/gamma.cpp" bodystart="351" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1af8ceaa238a43d0f9783fddd3a2e87d79" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string mty::gamma_api::generateLatex</definition>
+        <argsstring>(sgl::EpsilonIndex const *index)</argsstring>
+        <name>generateLatex</name>
+        <qualifiedname>mty::gamma_api::generateLatex</qualifiedname>
+        <param>
+          <type><ref refid="classsgl_1_1EpsilonIndex" kindref="compound">sgl::EpsilonIndex</ref> const *</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="356" column="20" bodyfile="src/marty/api/gamma.cpp" bodystart="356" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1adbf8d77d686c14c72b7a0f5705c1fadc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string mty::gamma_api::generateLatex</definition>
+        <argsstring>(sgl::IndexChain const *current)</argsstring>
+        <name>generateLatex</name>
+        <qualifiedname>mty::gamma_api::generateLatex</qualifiedname>
+        <param>
+          <type><ref refid="classsgl_1_1IndexChain" kindref="compound">sgl::IndexChain</ref> const *</type>
+          <declname>current</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="361" column="20" bodyfile="src/marty/api/gamma.cpp" bodystart="361" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="gamma_8cpp_1aa9d27943c5b3ee39e6408056a0bdc6c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string mty::gamma_api::generateLatex</definition>
+        <argsstring>(Expr const &amp;expr)</argsstring>
+        <name>generateLatex</name>
+        <qualifiedname>mty::gamma_api::generateLatex</qualifiedname>
+        <param>
+          <type><ref refid="classsgl_1_1GExpr" kindref="compound">Expr</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma.cpp" line="410" column="13" bodyfile="src/marty/api/gamma.cpp" bodystart="410" bodyend="414" declfile="src/marty/api/gamma.h" declline="49" declcolumn="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/api/gamma.cpp" line="9" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structmty_1_1lha_1_1LHAElement" kind="struct" language="C++" prot="public">
+    <compoundname>mty::lha::LHAElement</compoundname>
+    <includes refid="lhaData_8h" local="no">lhaData.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmty_1_1lha_1_1LHAElement_1a633ecc9b7732569dd277ecc0ab36afde" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t mty::lha::LHAElement::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>mty::lha::LHAElement::id</qualifiedname>
+        <briefdescription>
+<para>Id of the element in the block, or row position for a matrix element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="73" column="12" bodyfile="src/marty/lha/lhaData.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1lha_1_1LHAElement_1aa1d7bb33ab8019b743ff34c400805941" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t mty::lha::LHAElement::id_sup</definition>
+        <argsstring></argsstring>
+        <name>id_sup</name>
+        <qualifiedname>mty::lha::LHAElement::id_sup</qualifiedname>
+        <briefdescription>
+<para>Column position for a matrix element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="77" column="12" bodyfile="src/marty/lha/lhaData.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1lha_1_1LHAElement_1ac0b7846419271c7ba030d3b3a7e5a0f5" prot="public" static="no" mutable="no">
+        <type><ref refid="lhaData_8h_1ae7d1f281bbc4f3a4db0f26feef9808bd" kindref="member">FloatType</ref></type>
+        <definition>FloatType mty::lha::LHAElement::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>mty::lha::LHAElement::value</qualifiedname>
+        <briefdescription>
+<para>Value of the element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="81" column="15" bodyfile="src/marty/lha/lhaData.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Corresponds to a line of a .lha file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains an id, a value, and eventually some additional integers corresponding typically to matrix positions.</para>
+<para><simplesect kind="see"><para><ref refid="classmty_1_1lha_1_1LHABlock" kindref="compound">LHABlock</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="src/marty/lha/lhaData.h" line="67" column="1" bodyfile="src/marty/lha/lhaData.h" bodystart="67" bodyend="82"/>
+    <listofallmembers>
+      <member refid="structmty_1_1lha_1_1LHAElement_1a633ecc9b7732569dd277ecc0ab36afde" prot="public" virt="non-virtual"><scope>mty::lha::LHAElement</scope><name>id</name></member>
+      <member refid="structmty_1_1lha_1_1LHAElement_1aa1d7bb33ab8019b743ff34c400805941" prot="public" virt="non-virtual"><scope>mty::lha::LHAElement</scope><name>id_sup</name></member>
+      <member refid="structmty_1_1lha_1_1LHAElement_1ac0b7846419271c7ba030d3b3a7e5a0f5" prot="public" virt="non-virtual"><scope>mty::lha::LHAElement</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1iterable__view" kind="class" language="C++" prot="public">
+    <compoundname>mty::iterable_view</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Value_Type</type>
+      </param>
+      <param>
+        <type>class Containor</type>
+        <defval>std::vector&lt;Value_Type&gt;</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmty_1_1iterable__view_1a886579210c9e5db93b4d46f7512fc9ef" prot="private" static="no">
+        <type>Containor::const_iterator</type>
+        <definition>Containor::const_iterator mty::iterable_view&lt; Value_Type, Containor &gt;::c_iter</definition>
+        <argsstring></argsstring>
+        <name>c_iter</name>
+        <qualifiedname>mty::iterable_view::c_iter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/iterable.h" line="36" column="56" bodyfile="src/marty/core/iterable.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmty_1_1iterable__view_1a37a7abef47953eb00efa0c475216c23c" prot="private" static="no">
+        <type>Containor::const_reverse_iterator</type>
+        <definition>Containor::const_reverse_iterator mty::iterable_view&lt; Value_Type, Containor &gt;::c_riter</definition>
+        <argsstring></argsstring>
+        <name>c_riter</name>
+        <qualifiedname>mty::iterable_view::c_riter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/iterable.h" line="37" column="56" bodyfile="src/marty/core/iterable.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1iterable__view_1a0a396cf4dbfe68442c2b292dbfc6eb06" prot="private" static="no" mutable="no">
+        <type>const Containor &amp;</type>
+        <definition>const Containor&amp; mty::iterable_view&lt; Value_Type, Containor &gt;::iterable</definition>
+        <argsstring></argsstring>
+        <name>iterable</name>
+        <qualifiedname>mty::iterable_view::iterable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/iterable.h" line="40" column="21" bodyfile="src/marty/core/iterable.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1iterable__view_1a42c1ec8f9ef21294fb678037515aed0f" prot="private" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t mty::iterable_view&lt; Value_Type, Containor &gt;::custom_begin</definition>
+        <argsstring></argsstring>
+        <name>custom_begin</name>
+        <qualifiedname>mty::iterable_view::custom_begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/iterable.h" line="42" column="18" bodyfile="src/marty/core/iterable.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1iterable__view_1ab44291250db712b3c705a962ec4c91e4" prot="private" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t mty::iterable_view&lt; Value_Type, Containor &gt;::custom_end</definition>
+        <argsstring></argsstring>
+        <name>custom_end</name>
+        <qualifiedname>mty::iterable_view::custom_end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/iterable.h" line="43" column="18" bodyfile="src/marty/core/iterable.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1iterable__view_1a5822e41affaf2572d0248652b99e0fcf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mty::iterable_view&lt; Value_Type, Containor &gt;::iterable_view</definition>
+        <argsstring>(const Containor &amp;t_iterable)</argsstring>
+        <name>iterable_view</name>
+        <qualifiedname>mty::iterable_view::iterable_view</qualifiedname>
+        <param>
+          <type>const Containor &amp;</type>
+          <declname>t_iterable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/iterable.h" line="46" column="5" bodyfile="src/marty/core/iterable.h" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1iterable__view_1af5d826cf875146897d74a31b5b7a87de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mty::iterable_view&lt; Value_Type, Containor &gt;::iterable_view</definition>
+        <argsstring>(const Containor &amp;t_iterable, size_t b, size_t e)</argsstring>
+        <name>iterable_view</name>
+        <qualifiedname>mty::iterable_view::iterable_view</qualifiedname>
+        <param>
+          <type>const Containor &amp;</type>
+          <declname>t_iterable</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/iterable.h" line="51" column="5" bodyfile="src/marty/core/iterable.h" bodystart="51" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1iterable__view_1a9e6f6c268dc585b7c67d998408c20866" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::iterable_view&lt; Value_Type, Containor &gt;::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>mty::iterable_view::empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/iterable.h" line="63" column="10" bodyfile="src/marty/core/iterable.h" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1iterable__view_1a73b673ebe1e574c4e4ff861958eb8139" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t mty::iterable_view&lt; Value_Type, Containor &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>mty::iterable_view::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/iterable.h" line="68" column="12" bodyfile="src/marty/core/iterable.h" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1iterable__view_1afd00a9314f465e2390370deba827039f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>c_iter</type>
+        <definition>c_iter mty::iterable_view&lt; Value_Type, Containor &gt;::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>mty::iterable_view::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/iterable.h" line="73" column="12" bodyfile="src/marty/core/iterable.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1iterable__view_1aae93303170320149e1f63c407f9f8291" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>c_iter</type>
+        <definition>c_iter mty::iterable_view&lt; Value_Type, Containor &gt;::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>mty::iterable_view::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/iterable.h" line="78" column="12" bodyfile="src/marty/core/iterable.h" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1iterable__view_1a45f538fbad02ec9fa8e74683164023dc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>c_riter</type>
+        <definition>c_riter mty::iterable_view&lt; Value_Type, Containor &gt;::rbegin</definition>
+        <argsstring>() const</argsstring>
+        <name>rbegin</name>
+        <qualifiedname>mty::iterable_view::rbegin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/iterable.h" line="83" column="13" bodyfile="src/marty/core/iterable.h" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1iterable__view_1a13546c33a7c378b88cac14f76fcb2ea4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>c_riter</type>
+        <definition>c_riter mty::iterable_view&lt; Value_Type, Containor &gt;::rend</definition>
+        <argsstring>() const</argsstring>
+        <name>rend</name>
+        <qualifiedname>mty::iterable_view::rend</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/iterable.h" line="88" column="13" bodyfile="src/marty/core/iterable.h" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1iterable__view_1a5c3e6e007cfb5a63f3edf23536e6b426" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Value_Type</type>
+        <definition>Value_Type mty::iterable_view&lt; Value_Type, Containor &gt;::operator[]</definition>
+        <argsstring>(size_t i) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>mty::iterable_view::operator[]</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/iterable.h" line="93" column="16" bodyfile="src/marty/core/iterable.h" bodystart="93" bodyend="96"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/core/iterable.h" line="34" column="1" bodyfile="src/marty/core/iterable.h" bodystart="34" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classmty_1_1iterable__view_1afd00a9314f465e2390370deba827039f" prot="public" virt="non-virtual"><scope>mty::iterable_view</scope><name>begin</name></member>
+      <member refid="classmty_1_1iterable__view_1a886579210c9e5db93b4d46f7512fc9ef" prot="private" virt="non-virtual"><scope>mty::iterable_view</scope><name>c_iter</name></member>
+      <member refid="classmty_1_1iterable__view_1a37a7abef47953eb00efa0c475216c23c" prot="private" virt="non-virtual"><scope>mty::iterable_view</scope><name>c_riter</name></member>
+      <member refid="classmty_1_1iterable__view_1a42c1ec8f9ef21294fb678037515aed0f" prot="private" virt="non-virtual"><scope>mty::iterable_view</scope><name>custom_begin</name></member>
+      <member refid="classmty_1_1iterable__view_1ab44291250db712b3c705a962ec4c91e4" prot="private" virt="non-virtual"><scope>mty::iterable_view</scope><name>custom_end</name></member>
+      <member refid="classmty_1_1iterable__view_1a9e6f6c268dc585b7c67d998408c20866" prot="public" virt="non-virtual"><scope>mty::iterable_view</scope><name>empty</name></member>
+      <member refid="classmty_1_1iterable__view_1aae93303170320149e1f63c407f9f8291" prot="public" virt="non-virtual"><scope>mty::iterable_view</scope><name>end</name></member>
+      <member refid="classmty_1_1iterable__view_1a0a396cf4dbfe68442c2b292dbfc6eb06" prot="private" virt="non-virtual"><scope>mty::iterable_view</scope><name>iterable</name></member>
+      <member refid="classmty_1_1iterable__view_1a5822e41affaf2572d0248652b99e0fcf" prot="public" virt="non-virtual"><scope>mty::iterable_view</scope><name>iterable_view</name></member>
+      <member refid="classmty_1_1iterable__view_1af5d826cf875146897d74a31b5b7a87de" prot="public" virt="non-virtual"><scope>mty::iterable_view</scope><name>iterable_view</name></member>
+      <member refid="classmty_1_1iterable__view_1a5c3e6e007cfb5a63f3edf23536e6b426" prot="public" virt="non-virtual"><scope>mty::iterable_view</scope><name>operator[]</name></member>
+      <member refid="classmty_1_1iterable__view_1a45f538fbad02ec9fa8e74683164023dc" prot="public" virt="non-virtual"><scope>mty::iterable_view</scope><name>rbegin</name></member>
+      <member refid="classmty_1_1iterable__view_1a13546c33a7c378b88cac14f76fcb2ea4" prot="public" virt="non-virtual"><scope>mty::iterable_view</scope><name>rend</name></member>
+      <member refid="classmty_1_1iterable__view_1a73b673ebe1e574c4e4ff861958eb8139" prot="public" virt="non-virtual"><scope>mty::iterable_view</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

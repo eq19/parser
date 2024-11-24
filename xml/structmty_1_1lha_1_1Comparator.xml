@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structmty_1_1lha_1_1Comparator" kind="struct" language="C++" prot="public">
+    <compoundname>mty::lha::Comparator</compoundname>
+    <includes refid="lhaData_8h" local="no">lhaData.h</includes>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structmty_1_1lha_1_1Comparator_1ad8ab47ddd27039da0fe551a6e560319e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool mty::lha::Comparator::compare</definition>
+        <argsstring>(std::vector&lt; size_t &gt; const &amp;pos1, std::vector&lt; size_t &gt; const &amp;pos2)</argsstring>
+        <name>compare</name>
+        <qualifiedname>mty::lha::Comparator::compare</qualifiedname>
+        <param>
+          <type>std::vector&lt; size_t &gt; const &amp;</type>
+          <declname>pos1</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; size_t &gt; const &amp;</type>
+          <declname>pos2</declname>
+        </param>
+        <briefdescription>
+<para>Compares two vectors of positions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <bold>pos1</bold> and <bold>pos2</bold> have different sizes, this function returns <programlisting><codeline><highlight class="normal">pos1.size()<sp/>&lt;<sp/>pos2.size();</highlight></codeline>
+</programlisting> Otherwise, the alphabetical order is used. This allows to sort matrix elements row by row, column by column (00 - 01 - 10 - 11 for example).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First position. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second position.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if <bold>pos1</bold> &lt; <bold>pos2</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="106" column="17" bodyfile="src/marty/lha/lhaData.h" bodystart="106" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="structmty_1_1lha_1_1Comparator_1aca42eee05e3636cad9695f2303c036ae" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool mty::lha::Comparator::compare</definition>
+        <argsstring>(LHAElement const &amp;A, LHAElement const &amp;B)</argsstring>
+        <name>compare</name>
+        <qualifiedname>mty::lha::Comparator::compare</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref> const &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref> const &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>Compares two <ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>First compares the id. Returns the simpler if they are different and compares the positions else.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First <ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second <ref refid="structmty_1_1lha_1_1LHAElement" kindref="compound">LHAElement</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if <bold>A</bold> &lt; <bold>B</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/lha/lhaData.h" line="136" column="17" bodyfile="src/marty/lha/lhaData.h" bodystart="136" bodyend="141"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Helper class to define a comparison function for positions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/lha/lhaData.h" line="87" column="1" bodyfile="src/marty/lha/lhaData.h" bodystart="87" bodyend="142"/>
+    <listofallmembers>
+      <member refid="structmty_1_1lha_1_1Comparator_1ad8ab47ddd27039da0fe551a6e560319e" prot="public" virt="non-virtual"><scope>mty::lha::Comparator</scope><name>compare</name></member>
+      <member refid="structmty_1_1lha_1_1Comparator_1aca42eee05e3636cad9695f2303c036ae" prot="public" virt="non-virtual"><scope>mty::lha::Comparator</scope><name>compare</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classProxy" kind="class" language="C++" prot="public">
+    <compoundname>Proxy</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QGraphicsProxyWidget</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classProxy_1aa4d00fad6e27a978394944b073c26635" prot="public" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString Proxy::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>Proxy::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="249" column="20" bodyfile="src/grafed/gui/diagram.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProxy_1aaf7cc84e0cda24d7dd1f4d3f5a039ce3" prot="public" static="no" mutable="no">
+        <type><ref refid="classDiagramWidget" kindref="compound">DiagramWidget</ref> *</type>
+        <definition>DiagramWidget* Proxy::widget</definition>
+        <argsstring></argsstring>
+        <name>widget</name>
+        <qualifiedname>Proxy::widget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="250" column="19" bodyfile="src/grafed/gui/diagram.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classProxy_1a29caee1b4f735257e7a431e698423b91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Proxy::Proxy</definition>
+        <argsstring>(DiagramWidget *t_widget)</argsstring>
+        <name>Proxy</name>
+        <qualifiedname>Proxy::Proxy</qualifiedname>
+        <param>
+          <type><ref refid="classDiagramWidget" kindref="compound">DiagramWidget</ref> *</type>
+          <declname>t_widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="214" column="5" bodyfile="src/grafed/gui/diagram.h" bodystart="214" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classProxy_1a0b4552d1fe940d1d8fc67dd8bd72affe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Proxy::~Proxy</definition>
+        <argsstring>() override</argsstring>
+        <name>~Proxy</name>
+        <qualifiedname>Proxy::~Proxy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="218" column="5" bodyfile="src/grafed/gui/diagram.h" bodystart="218" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classProxy_1ab5440f90d926f204f5623a3cb8fc50b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Proxy::mouseMoveEvent</definition>
+        <argsstring>(QGraphicsSceneMouseEvent *event) override</argsstring>
+        <name>mouseMoveEvent</name>
+        <qualifiedname>Proxy::mouseMoveEvent</qualifiedname>
+        <param>
+          <type>QGraphicsSceneMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="222" column="10" bodyfile="src/grafed/gui/diagram.h" bodystart="222" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classProxy_1ad1df42f271f7f301c0f7f19a79d0c64f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Proxy::mousePressEvent</definition>
+        <argsstring>(QGraphicsSceneMouseEvent *event) override</argsstring>
+        <name>mousePressEvent</name>
+        <qualifiedname>Proxy::mousePressEvent</qualifiedname>
+        <param>
+          <type>QGraphicsSceneMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="227" column="10" bodyfile="src/grafed/gui/diagram.h" bodystart="227" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classProxy_1abb408510b232a250f72b66e31a139b30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Proxy::mouseReleaseEvent</definition>
+        <argsstring>(QGraphicsSceneMouseEvent *event) override</argsstring>
+        <name>mouseReleaseEvent</name>
+        <qualifiedname>Proxy::mouseReleaseEvent</qualifiedname>
+        <param>
+          <type>QGraphicsSceneMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="232" column="10" bodyfile="src/grafed/gui/diagram.h" bodystart="232" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classProxy_1a0cff2a6db2c634cad084349555b48fd6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Proxy::dropEvent</definition>
+        <argsstring>(QGraphicsSceneDragDropEvent *event) override</argsstring>
+        <name>dropEvent</name>
+        <qualifiedname>Proxy::dropEvent</qualifiedname>
+        <param>
+          <type>QGraphicsSceneDragDropEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="237" column="10" bodyfile="src/grafed/gui/diagram.h" bodystart="237" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classProxy_1a795ccf637c7de0c34f6122a5b7f75b76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Proxy::mouseDoubleClickEvent</definition>
+        <argsstring>(QGraphicsSceneMouseEvent *event) override</argsstring>
+        <name>mouseDoubleClickEvent</name>
+        <qualifiedname>Proxy::mouseDoubleClickEvent</qualifiedname>
+        <param>
+          <type>QGraphicsSceneMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="242" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="1057" bodyend="1060"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="classProxy_1a649906ee0e50a5e5371566dd9d46dbdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Proxy::doubleClicked</definition>
+        <argsstring>(Proxy *)</argsstring>
+        <name>doubleClicked</name>
+        <qualifiedname>Proxy::doubleClicked</qualifiedname>
+        <param>
+          <type><ref refid="classProxy" kindref="compound">Proxy</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="246" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Proxy</label>
+        <link refid="classProxy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QGraphicsProxyWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>DiagramWidget</label>
+        <link refid="classDiagramWidget"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Proxy</label>
+        <link refid="classProxy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>widget</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QGraphicsProxyWidget</label>
+      </node>
+      <node id="4">
+        <label>QGraphicsView</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/grafed/gui/diagram.h" line="209" column="1" bodyfile="src/grafed/gui/diagram.h" bodystart="209" bodyend="251"/>
+    <listofallmembers>
+      <member refid="classProxy_1aa4d00fad6e27a978394944b073c26635" prot="public" virt="non-virtual"><scope>Proxy</scope><name>data</name></member>
+      <member refid="classProxy_1a649906ee0e50a5e5371566dd9d46dbdc" prot="public" virt="non-virtual"><scope>Proxy</scope><name>doubleClicked</name></member>
+      <member refid="classProxy_1a0cff2a6db2c634cad084349555b48fd6" prot="public" virt="non-virtual"><scope>Proxy</scope><name>dropEvent</name></member>
+      <member refid="classProxy_1a795ccf637c7de0c34f6122a5b7f75b76" prot="public" virt="non-virtual"><scope>Proxy</scope><name>mouseDoubleClickEvent</name></member>
+      <member refid="classProxy_1ab5440f90d926f204f5623a3cb8fc50b4" prot="public" virt="non-virtual"><scope>Proxy</scope><name>mouseMoveEvent</name></member>
+      <member refid="classProxy_1ad1df42f271f7f301c0f7f19a79d0c64f" prot="public" virt="non-virtual"><scope>Proxy</scope><name>mousePressEvent</name></member>
+      <member refid="classProxy_1abb408510b232a250f72b66e31a139b30" prot="public" virt="non-virtual"><scope>Proxy</scope><name>mouseReleaseEvent</name></member>
+      <member refid="classProxy_1a29caee1b4f735257e7a431e698423b91" prot="public" virt="non-virtual"><scope>Proxy</scope><name>Proxy</name></member>
+      <member refid="classProxy_1aaf7cc84e0cda24d7dd1f4d3f5a039ce3" prot="public" virt="non-virtual"><scope>Proxy</scope><name>widget</name></member>
+      <member refid="classProxy_1a0b4552d1fe940d1d8fc67dd8bd72affe" prot="public" virt="non-virtual"><scope>Proxy</scope><name>~Proxy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

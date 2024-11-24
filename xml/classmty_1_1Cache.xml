@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1Cache" kind="class" language="C++" prot="public">
+    <compoundname>mty::Cache</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+      <param>
+        <type>class U</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmty_1_1Cache_1ac1a695a8e963e57dbe60a88083391e5c" prot="public" static="no">
+        <type>std::pair&lt; T, U &gt;</type>
+        <definition>using mty::Cache&lt; T, U &gt;::CachedData =  std::pair&lt;T, U&gt;</definition>
+        <argsstring></argsstring>
+        <name>CachedData</name>
+        <qualifiedname>mty::Cache::CachedData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/cache.h" line="12" column="5" bodyfile="src/marty/core/cache.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmty_1_1Cache_1af14b36943ba46cc48c10ad178a26a553" prot="public" static="no">
+        <type>std::function&lt; bool(T const &amp;, T const &amp;)&gt;</type>
+        <definition>using mty::Cache&lt; T, U &gt;::Comparator =  std::function&lt;bool(T const &amp;, T const &amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>Comparator</name>
+        <qualifiedname>mty::Cache::Comparator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/cache.h" line="13" column="5" bodyfile="src/marty/core/cache.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmty_1_1Cache_1a22644a888f667d4997d33cc14e481484" prot="public" static="no">
+        <type>std::function&lt; U(U const &amp;)&gt;</type>
+        <definition>using mty::Cache&lt; T, U &gt;::Releaser =  std::function&lt;U(U const &amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>Releaser</name>
+        <qualifiedname>mty::Cache::Releaser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/cache.h" line="14" column="5" bodyfile="src/marty/core/cache.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1Cache_1a69605fc592b30217191604794bae8374" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; CachedData &gt;</type>
+        <definition>std::vector&lt;CachedData&gt; mty::Cache&lt; T, U &gt;::cached</definition>
+        <argsstring></argsstring>
+        <name>cached</name>
+        <qualifiedname>mty::Cache::cached</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/cache.h" line="64" column="17" bodyfile="src/marty/core/cache.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Cache_1a15ba51bc1fb31976ce554b9db06a4993" prot="private" static="no" mutable="no">
+        <type>Comparator</type>
+        <definition>Comparator mty::Cache&lt; T, U &gt;::comparator</definition>
+        <argsstring></argsstring>
+        <name>comparator</name>
+        <qualifiedname>mty::Cache::comparator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/cache.h" line="65" column="29" bodyfile="src/marty/core/cache.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Cache_1aa5be23b6fcdeffed0fca494a997f295c" prot="private" static="no" mutable="no">
+        <type>Releaser</type>
+        <definition>Releaser mty::Cache&lt; T, U &gt;::releaser</definition>
+        <argsstring></argsstring>
+        <name>releaser</name>
+        <qualifiedname>mty::Cache::releaser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/cache.h" line="66" column="29" bodyfile="src/marty/core/cache.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1Cache_1ae90b2e3695d73083d6bddc05502f2300" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mty::Cache&lt; T, U &gt;::Cache</definition>
+        <argsstring>(Comparator &amp;&amp;t_comparator=[](T const &amp;a, T const &amp;b) { return a==b;}, Releaser &amp;&amp;t_releaser=[](U const &amp;res) { return res;})</argsstring>
+        <name>Cache</name>
+        <qualifiedname>mty::Cache::Cache</qualifiedname>
+        <param>
+          <type>Comparator &amp;&amp;</type>
+          <declname>t_comparator</declname>
+          <defval>[](T const &amp;a, T const &amp;b) { return a==b;}</defval>
+        </param>
+        <param>
+          <type>Releaser &amp;&amp;</type>
+          <declname>t_releaser</declname>
+          <defval>[](U const &amp;res) { return res;}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/cache.h" line="17" column="14" bodyfile="src/marty/core/cache.h" bodystart="17" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Cache_1ab4fc4e9bda729be5f4e860cde4f63dfd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Calculator</type>
+          </param>
+        </templateparamlist>
+        <type>U</type>
+        <definition>U mty::Cache&lt; T, U &gt;::calculate</definition>
+        <argsstring>(T const &amp;input, Calculator &amp;&amp;calc)</argsstring>
+        <name>calculate</name>
+        <qualifiedname>mty::Cache::calculate</qualifiedname>
+        <param>
+          <type>T const &amp;</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>Calculator &amp;&amp;</type>
+          <declname>calc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/cache.h" line="27" column="7" bodyfile="src/marty/core/cache.h" bodystart="27" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Cache_1a5f7ab5ff73df0fd07434dc68da34a2c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::Cache&lt; T, U &gt;::find</definition>
+        <argsstring>(T const &amp;key)</argsstring>
+        <name>find</name>
+        <qualifiedname>mty::Cache::find</qualifiedname>
+        <param>
+          <type>T const &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/cache.h" line="35" column="10" bodyfile="src/marty/core/cache.h" bodystart="35" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Cache_1a5ad1b6de1f698cebd30be65b3aeeb2c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto mty::Cache&lt; T, U &gt;::find</definition>
+        <argsstring>(T const &amp;key) const</argsstring>
+        <name>find</name>
+        <qualifiedname>mty::Cache::find</qualifiedname>
+        <param>
+          <type>T const &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/cache.h" line="43" column="10" bodyfile="src/marty/core/cache.h" bodystart="43" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmty_1_1Cache_1ac0395ec89e120d14701f440e63c63918" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>U const &amp;</type>
+        <definition>U const  &amp; mty::Cache&lt; T, U &gt;::add</definition>
+        <argsstring>(T const &amp;key, U const &amp;value)</argsstring>
+        <name>add</name>
+        <qualifiedname>mty::Cache::add</qualifiedname>
+        <param>
+          <type>T const &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>U const &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/cache.h" line="52" column="13" bodyfile="src/marty/core/cache.h" bodystart="52" bodyend="61"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/core/cache.h" line="9" column="1" bodyfile="src/marty/core/cache.h" bodystart="9" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classmty_1_1Cache_1ac0395ec89e120d14701f440e63c63918" prot="private" virt="non-virtual"><scope>mty::Cache</scope><name>add</name></member>
+      <member refid="classmty_1_1Cache_1ae90b2e3695d73083d6bddc05502f2300" prot="public" virt="non-virtual"><scope>mty::Cache</scope><name>Cache</name></member>
+      <member refid="classmty_1_1Cache_1a69605fc592b30217191604794bae8374" prot="private" virt="non-virtual"><scope>mty::Cache</scope><name>cached</name></member>
+      <member refid="classmty_1_1Cache_1ac1a695a8e963e57dbe60a88083391e5c" prot="public" virt="non-virtual"><scope>mty::Cache</scope><name>CachedData</name></member>
+      <member refid="classmty_1_1Cache_1ab4fc4e9bda729be5f4e860cde4f63dfd" prot="public" virt="non-virtual"><scope>mty::Cache</scope><name>calculate</name></member>
+      <member refid="classmty_1_1Cache_1af14b36943ba46cc48c10ad178a26a553" prot="public" virt="non-virtual"><scope>mty::Cache</scope><name>Comparator</name></member>
+      <member refid="classmty_1_1Cache_1a15ba51bc1fb31976ce554b9db06a4993" prot="private" virt="non-virtual"><scope>mty::Cache</scope><name>comparator</name></member>
+      <member refid="classmty_1_1Cache_1a5f7ab5ff73df0fd07434dc68da34a2c9" prot="public" virt="non-virtual"><scope>mty::Cache</scope><name>find</name></member>
+      <member refid="classmty_1_1Cache_1a5ad1b6de1f698cebd30be65b3aeeb2c4" prot="public" virt="non-virtual"><scope>mty::Cache</scope><name>find</name></member>
+      <member refid="classmty_1_1Cache_1a22644a888f667d4997d33cc14e481484" prot="public" virt="non-virtual"><scope>mty::Cache</scope><name>Releaser</name></member>
+      <member refid="classmty_1_1Cache_1aa5be23b6fcdeffed0fca494a997f295c" prot="private" virt="non-virtual"><scope>mty::Cache</scope><name>releaser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

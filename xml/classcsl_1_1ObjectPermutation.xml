@@ -1,0 +1,613 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcsl_1_1ObjectPermutation" kind="class" language="C++" prot="public">
+    <compoundname>csl::ObjectPermutation</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcsl_1_1ObjectPermutation_1af02c87dd512d708d37630d3125acd517" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool csl::ObjectPermutation&lt; T &gt;::rightForm</definition>
+        <argsstring></argsstring>
+        <name>rightForm</name>
+        <qualifiedname>csl::ObjectPermutation::rightForm</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="142" column="10" bodyfile="src/csl/objectSymmetry.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1ObjectPermutation_1a6b475f9b470ce7d922357387ce8dfc48" prot="private" static="no" mutable="no">
+        <type>std::map&lt; T, T &gt;</type>
+        <definition>std::map&lt;T, T&gt; csl::ObjectPermutation&lt; T &gt;::permutation</definition>
+        <argsstring></argsstring>
+        <name>permutation</name>
+        <qualifiedname>csl::ObjectPermutation::permutation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="144" column="14" bodyfile="src/csl/objectSymmetry.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcsl_1_1ObjectPermutation_1ab5b5f755077513186ed8e2e6da9f78d9" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool csl::ObjectPermutation&lt; T &gt;::displayMode</definition>
+        <argsstring></argsstring>
+        <name>displayMode</name>
+        <qualifiedname>csl::ObjectPermutation::displayMode</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="146" column="17" bodyfile="src/csl/objectSymmetry.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1aa880c61e2a0fc6304f216f8bb8ea8e6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::ObjectPermutation&lt; T &gt;::ObjectPermutation</definition>
+        <argsstring>()</argsstring>
+        <name>ObjectPermutation</name>
+        <qualifiedname>csl::ObjectPermutation::ObjectPermutation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="50" column="5" bodyfile="src/csl/objectSymmetry.h" bodystart="209" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1af158b1f4e16e4fc0b8cb13a27257fd9e" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::ObjectPermutation&lt; T &gt;::ObjectPermutation</definition>
+        <argsstring>(const std::map&lt; T, T &gt; &amp;otherMap)</argsstring>
+        <name>ObjectPermutation</name>
+        <qualifiedname>csl::ObjectPermutation::ObjectPermutation</qualifiedname>
+        <param>
+          <type>const std::map&lt; T, T &gt; &amp;</type>
+          <declname>otherMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="52" column="14" bodyfile="src/csl/objectSymmetry.h" bodystart="222" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1adea4de01c32bd482de60d2a58ddd6135" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::ObjectPermutation&lt; T &gt;::ObjectPermutation</definition>
+        <argsstring>(std::map&lt; T, T &gt; &amp;&amp;otherMap)</argsstring>
+        <name>ObjectPermutation</name>
+        <qualifiedname>csl::ObjectPermutation::ObjectPermutation</qualifiedname>
+        <param>
+          <type>std::map&lt; T, T &gt; &amp;&amp;</type>
+          <declname>otherMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="54" column="14" bodyfile="src/csl/objectSymmetry.h" bodystart="229" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1af0fbe0fa22e589479bbab07fb776be5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::ObjectPermutation&lt; T &gt;::ObjectPermutation</definition>
+        <argsstring>(T a, T b, bool symmetric=true)</argsstring>
+        <name>ObjectPermutation</name>
+        <qualifiedname>csl::ObjectPermutation::ObjectPermutation</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>symmetric</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="56" column="5" bodyfile="src/csl/objectSymmetry.h" bodystart="214" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1ac334eaaacafe8d0abf89a467d31d017f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::ObjectPermutation&lt; T &gt;::ObjectPermutation</definition>
+        <argsstring>(const ObjectPermutation&lt; T &gt; &amp;other)=default</argsstring>
+        <name>ObjectPermutation</name>
+        <qualifiedname>csl::ObjectPermutation::ObjectPermutation</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1ObjectPermutation" kindref="compound">ObjectPermutation</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="58" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1ad0da16a73ba610dfe998f7117c53a015" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::ObjectPermutation&lt; T &gt;::ObjectPermutation</definition>
+        <argsstring>(ObjectPermutation&lt; T &gt; &amp;&amp;other)=default</argsstring>
+        <name>ObjectPermutation</name>
+        <qualifiedname>csl::ObjectPermutation::ObjectPermutation</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1ObjectPermutation" kindref="compound">ObjectPermutation</ref>&lt; T &gt; &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="60" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1a0a1ec1d91599ebec691d95d74e2cfda8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1ObjectPermutation" kindref="compound">ObjectPermutation</ref> &amp;</type>
+        <definition>ObjectPermutation &amp; csl::ObjectPermutation&lt; T &gt;::operator=</definition>
+        <argsstring>(const ObjectPermutation&lt; T &gt; &amp;other)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>csl::ObjectPermutation::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1ObjectPermutation" kindref="compound">ObjectPermutation</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="62" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1a28b04808750db71280bfabdd7e1598a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1ObjectPermutation" kindref="compound">ObjectPermutation</ref> &amp;</type>
+        <definition>ObjectPermutation &amp; csl::ObjectPermutation&lt; T &gt;::operator=</definition>
+        <argsstring>(ObjectPermutation&lt; T &gt; &amp;&amp;other)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>csl::ObjectPermutation::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1ObjectPermutation" kindref="compound">ObjectPermutation</ref>&lt; T &gt; &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="64" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1a691e34f7db60e24d810bb5728a4fcdc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::ObjectPermutation&lt; T &gt;::~ObjectPermutation</definition>
+        <argsstring>()</argsstring>
+        <name>~ObjectPermutation</name>
+        <qualifiedname>csl::ObjectPermutation::~ObjectPermutation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="66" column="5" bodyfile="src/csl/objectSymmetry.h" bodystart="236" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1afada63cf428e784ad95f41d08c67e2ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t csl::ObjectPermutation&lt; T &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>csl::ObjectPermutation::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="68" column="12" bodyfile="src/csl/objectSymmetry.h" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1ac816d9a688106b1490a92fa60dd635c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::ObjectPermutation&lt; T &gt;::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>csl::ObjectPermutation::empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="73" column="10" bodyfile="src/csl/objectSymmetry.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1afb5a7b284f7012a5321ac072537d841f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::map&lt; T, T &gt;::iterator</type>
+        <definition>std::map&lt; T, T &gt;::iterator csl::ObjectPermutation&lt; T &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>csl::ObjectPermutation::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="78" column="34" bodyfile="src/csl/objectSymmetry.h" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1aee8eaadd39bd4ab88fe8517846ee2fa8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::map&lt; T, T &gt;::iterator</type>
+        <definition>std::map&lt; T, T &gt;::iterator csl::ObjectPermutation&lt; T &gt;::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>csl::ObjectPermutation::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="83" column="34" bodyfile="src/csl/objectSymmetry.h" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1aab9465a26ed2246f42354f9a26dd4afc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::map&lt; T, T &gt;::const_iterator</type>
+        <definition>std::map&lt; T, T &gt;::const_iterator csl::ObjectPermutation&lt; T &gt;::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>csl::ObjectPermutation::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="88" column="40" bodyfile="src/csl/objectSymmetry.h" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1a2d674f128337f76699311269f999129c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::map&lt; T, T &gt;::const_iterator</type>
+        <definition>std::map&lt; T, T &gt;::const_iterator csl::ObjectPermutation&lt; T &gt;::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>csl::ObjectPermutation::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="93" column="40" bodyfile="src/csl/objectSymmetry.h" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1a3d2ec3181631792a6a026bc270d61dbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::ObjectPermutation&lt; T &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>csl::ObjectPermutation::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="98" column="10" bodyfile="src/csl/objectSymmetry.h" bodystart="98" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1ad4b5ded999ed4ab44de13d73ed121cc1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::ObjectPermutation&lt; T &gt;::getRightForm</definition>
+        <argsstring>() const</argsstring>
+        <name>getRightForm</name>
+        <qualifiedname>csl::ObjectPermutation::getRightForm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="104" column="10" bodyfile="src/csl/objectSymmetry.h" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1aa964c00236ba7c641135949b08cf3881" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::map&lt; T, T &gt;</type>
+        <definition>std::map&lt; T, T &gt; csl::ObjectPermutation&lt; T &gt;::getPermutation</definition>
+        <argsstring>() const</argsstring>
+        <name>getPermutation</name>
+        <qualifiedname>csl::ObjectPermutation::getPermutation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="109" column="14" bodyfile="src/csl/objectSymmetry.h" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1a15bee5c5b72cceb66fb7e528441467b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::ObjectPermutation&lt; T &gt;::add</definition>
+        <argsstring>(T a, T b)</argsstring>
+        <name>add</name>
+        <qualifiedname>csl::ObjectPermutation::add</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="114" column="10" bodyfile="src/csl/objectSymmetry.h" bodystart="252" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1af09faa75ebf36a28bcf723ad681a2a1c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::ObjectPermutation&lt; T &gt;::operator==</definition>
+        <argsstring>(const ObjectPermutation&lt; T &gt; &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>csl::ObjectPermutation::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1ObjectPermutation" kindref="compound">ObjectPermutation</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="116" column="10" bodyfile="src/csl/objectSymmetry.h" bodystart="259" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1aed9970e42fc78bd8bd3ce11cd3e79af9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1ObjectSymmetry" kindref="compound">ObjectSymmetry</ref>&lt; T &gt;</type>
+        <definition>ObjectSymmetry&lt; T &gt; csl::ObjectPermutation&lt; T &gt;::operator+</definition>
+        <argsstring>(const ObjectPermutation&lt; T &gt; &amp;other) const</argsstring>
+        <name>operator+</name>
+        <qualifiedname>csl::ObjectPermutation::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1ObjectPermutation" kindref="compound">ObjectPermutation</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="118" column="20" bodyfile="src/csl/objectSymmetry.h" bodystart="266" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1a681cf942b9cbf456acda72a138b699e5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1ObjectSymmetry" kindref="compound">ObjectSymmetry</ref>&lt; T &gt;</type>
+        <definition>ObjectSymmetry&lt; T &gt; csl::ObjectPermutation&lt; T &gt;::operator+</definition>
+        <argsstring>(const ObjectSymmetry&lt; T &gt; &amp;other) const</argsstring>
+        <name>operator+</name>
+        <qualifiedname>csl::ObjectPermutation::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1ObjectSymmetry" kindref="compound">ObjectSymmetry</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="120" column="20" bodyfile="src/csl/objectSymmetry.h" bodystart="273" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1a2285207f477ddd0b8ab38608fb485a5f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1ObjectPermutation" kindref="compound">ObjectPermutation</ref>&lt; T &gt;</type>
+        <definition>ObjectPermutation&lt; T &gt; csl::ObjectPermutation&lt; T &gt;::operator*</definition>
+        <argsstring>(const ObjectPermutation&lt; T &gt; &amp;other) const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>csl::ObjectPermutation::operator*</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1ObjectPermutation" kindref="compound">ObjectPermutation</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="122" column="23" bodyfile="src/csl/objectSymmetry.h" bodystart="280" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1a619488f694aa3f6caa3abe287065027a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1ObjectSymmetry" kindref="compound">ObjectSymmetry</ref>&lt; T &gt;</type>
+        <definition>ObjectSymmetry&lt; T &gt; csl::ObjectPermutation&lt; T &gt;::operator*</definition>
+        <argsstring>(const ObjectSymmetry&lt; T &gt; &amp;other) const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>csl::ObjectPermutation::operator*</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1ObjectSymmetry" kindref="compound">ObjectSymmetry</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="124" column="20" bodyfile="src/csl/objectSymmetry.h" bodystart="294" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1a46011a2cd0d3205bc5d80ad249a95f9f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1ObjectPermutation" kindref="compound">ObjectPermutation</ref>&lt; T &gt;</type>
+        <definition>ObjectPermutation&lt; T &gt; csl::ObjectPermutation&lt; T &gt;::inverse</definition>
+        <argsstring>() const</argsstring>
+        <name>inverse</name>
+        <qualifiedname>csl::ObjectPermutation::inverse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="126" column="23" bodyfile="src/csl/objectSymmetry.h" bodystart="302" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1a3b91013d8d8e666654754873f9c15c90" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T csl::ObjectPermutation&lt; T &gt;::operator[]</definition>
+        <argsstring>(const T &amp;key) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>csl::ObjectPermutation::operator[]</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="128" column="7" bodyfile="src/csl/objectSymmetry.h" bodystart="312" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1a54bd87331901f6fbae401c4f130b3ecb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt; T &gt; csl::ObjectPermutation&lt; T &gt;::operator[]</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;keys) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>csl::ObjectPermutation::operator[]</qualifiedname>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>keys</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="130" column="17" bodyfile="src/csl/objectSymmetry.h" bodystart="322" bodyend="331"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1a382a1f784f958f9b11ec87096f4fee56" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::ObjectPermutation&lt; T &gt;::toggleDisplayMode</definition>
+        <argsstring>()</argsstring>
+        <name>toggleDisplayMode</name>
+        <qualifiedname>csl::ObjectPermutation::toggleDisplayMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="132" column="17" bodyfile="src/csl/objectSymmetry.h" bodystart="334" bodyend="337"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classcsl_1_1ObjectPermutation_1a874b3c9cbb9bdff1471ee1bb70ef0e13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;fout, const ObjectPermutation&lt; U &gt; &amp;perm)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>csl::ObjectPermutation::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1ObjectPermutation" kindref="compound">ObjectPermutation</ref>&lt; U &gt; &amp;</type>
+          <declname>perm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="135" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcsl_1_1ObjectPermutation_1ababbbf6bcde6a128e7bb58074102d92d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::ObjectPermutation&lt; T &gt;::checkRightForm</definition>
+        <argsstring>()</argsstring>
+        <name>checkRightForm</name>
+        <qualifiedname>csl::ObjectPermutation::checkRightForm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/objectSymmetry.h" line="139" column="10" bodyfile="src/csl/objectSymmetry.h" bodystart="241" bodyend="249"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/csl/objectSymmetry.h" line="47" column="1" bodyfile="src/csl/objectSymmetry.h" bodystart="47" bodyend="147"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1ObjectPermutation_1a15bee5c5b72cceb66fb7e528441467b9" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>add</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1afb5a7b284f7012a5321ac072537d841f" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>begin</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1aab9465a26ed2246f42354f9a26dd4afc" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>begin</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1ababbbf6bcde6a128e7bb58074102d92d" prot="private" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>checkRightForm</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1a3d2ec3181631792a6a026bc270d61dbb" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>clear</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1ab5b5f755077513186ed8e2e6da9f78d9" prot="private" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>displayMode</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1ac816d9a688106b1490a92fa60dd635c8" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>empty</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1aee8eaadd39bd4ab88fe8517846ee2fa8" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>end</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1a2d674f128337f76699311269f999129c" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>end</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1aa964c00236ba7c641135949b08cf3881" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>getPermutation</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1ad4b5ded999ed4ab44de13d73ed121cc1" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>getRightForm</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1a46011a2cd0d3205bc5d80ad249a95f9f" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>inverse</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1aa880c61e2a0fc6304f216f8bb8ea8e6c" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>ObjectPermutation</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1af158b1f4e16e4fc0b8cb13a27257fd9e" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>ObjectPermutation</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1adea4de01c32bd482de60d2a58ddd6135" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>ObjectPermutation</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1af0fbe0fa22e589479bbab07fb776be5b" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>ObjectPermutation</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1ac334eaaacafe8d0abf89a467d31d017f" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>ObjectPermutation</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1ad0da16a73ba610dfe998f7117c53a015" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>ObjectPermutation</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1a2285207f477ddd0b8ab38608fb485a5f" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>operator*</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1a619488f694aa3f6caa3abe287065027a" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>operator*</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1aed9970e42fc78bd8bd3ce11cd3e79af9" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>operator+</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1a681cf942b9cbf456acda72a138b699e5" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>operator+</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1a874b3c9cbb9bdff1471ee1bb70ef0e13" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1a0a1ec1d91599ebec691d95d74e2cfda8" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>operator=</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1a28b04808750db71280bfabdd7e1598a2" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>operator=</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1af09faa75ebf36a28bcf723ad681a2a1c" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1a3b91013d8d8e666654754873f9c15c90" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>operator[]</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1a54bd87331901f6fbae401c4f130b3ecb" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>operator[]</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1a6b475f9b470ce7d922357387ce8dfc48" prot="private" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>permutation</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1af02c87dd512d708d37630d3125acd517" prot="private" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>rightForm</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1afada63cf428e784ad95f41d08c67e2ad" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>size</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1a382a1f784f958f9b11ec87096f4fee56" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>toggleDisplayMode</name></member>
+      <member refid="classcsl_1_1ObjectPermutation_1a691e34f7db60e24d810bb5728a4fcdc9" prot="public" virt="non-virtual"><scope>csl::ObjectPermutation</scope><name>~ObjectPermutation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classJSON_1_1AbstractLeaf" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>JSON::AbstractLeaf</compoundname>
+    <basecompoundref refid="classJSON_1_1Object" prot="public" virt="non-virtual">JSON::Object</basecompoundref>
+    <basecompoundref refid="classJSON_1_1Object" prot="public" virt="non-virtual">JSON::Object</basecompoundref>
+    <derivedcompoundref refid="classJSON_1_1Leaf" prot="public" virt="non-virtual">JSON::Leaf&lt; Type &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classJSON_1_1Leaf" prot="public" virt="non-virtual">JSON::Leaf&lt; Type &gt;</derivedcompoundref>
+    <includes refid="gui_2jsonObject_8h" local="no">jsonObject.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classJSON_1_1AbstractLeaf_1a4f70a0de0369eb37356c075bdd9af1bd" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JSON::AbstractLeaf::AbstractLeaf</definition>
+        <argsstring>(std::string const &amp;specifier)</argsstring>
+        <name>AbstractLeaf</name>
+        <qualifiedname>JSON::AbstractLeaf::AbstractLeaf</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>specifier</declname>
+        </param>
+        <briefdescription>
+<para>Construtor with one paramter that initializes <bold>specifier</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_specifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the <ref refid="classJSON_1_1Leaf" kindref="compound">Leaf</ref>&apos;s specifier. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/jsonObject.h" line="332" column="14" bodyfile="src/grafed/gui/jsonObject.h" bodystart="332" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="classJSON_1_1AbstractLeaf_1a1c34586e3ac3102b14e051492be424c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string JSON::AbstractLeaf::getArgument</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getArgument</name>
+        <qualifiedname>JSON::AbstractLeaf::getArgument</qualifiedname>
+        <reimplementedby refid="classJSON_1_1Leaf_1aa33003be8a94d34e18c01a510396d63a">getArgument</reimplementedby>
+        <reimplementedby refid="classJSON_1_1Leaf_1aa33003be8a94d34e18c01a510396d63a">getArgument</reimplementedby>
+        <briefdescription>
+<para>Returns a std::string representing the argument of the <ref refid="classJSON_1_1Leaf" kindref="compound">Leaf</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The std::string corresponding to the argument. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/jsonObject.h" line="340" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classJSON_1_1AbstractLeaf_1a4f70a0de0369eb37356c075bdd9af1bd" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>JSON::AbstractLeaf::AbstractLeaf</definition>
+        <argsstring>(std::string const &amp;specifier)</argsstring>
+        <name>AbstractLeaf</name>
+        <qualifiedname>JSON::AbstractLeaf::AbstractLeaf</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>specifier</declname>
+        </param>
+        <briefdescription>
+<para>Construtor with one paramter that initializes <bold>specifier</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_specifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the <ref refid="classJSON_1_1Leaf" kindref="compound">Leaf</ref>&apos;s specifier. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/jsonparser/jsonObject.h" line="332" column="14" bodyfile="src/grafed/jsonparser/jsonObject.h" bodystart="332" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="classJSON_1_1AbstractLeaf_1a1c34586e3ac3102b14e051492be424c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string JSON::AbstractLeaf::getArgument</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getArgument</name>
+        <qualifiedname>JSON::AbstractLeaf::getArgument</qualifiedname>
+        <reimplementedby refid="classJSON_1_1Leaf_1aa33003be8a94d34e18c01a510396d63a">getArgument</reimplementedby>
+        <reimplementedby refid="classJSON_1_1Leaf_1aa33003be8a94d34e18c01a510396d63a">getArgument</reimplementedby>
+        <briefdescription>
+<para>Returns a std::string representing the argument of the <ref refid="classJSON_1_1Leaf" kindref="compound">Leaf</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The std::string corresponding to the argument. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/jsonparser/jsonObject.h" line="340" column="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Abstract class inherited from <ref refid="classJSON_1_1Object" kindref="compound">Object</ref>, from which all leafs will derive. This class only contains a pure virtual fucntion, that can then be called for a <ref refid="classJSON_1_1Leaf" kindref="compound">Leaf</ref> without knowing its exact type. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>JSON::AbstractLeaf</label>
+        <link refid="classJSON_1_1AbstractLeaf"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>JSON::Leaf&lt; Type &gt;</label>
+        <link refid="classJSON_1_1Leaf"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JSON::Object</label>
+        <link refid="classJSON_1_1Object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>JSON::AbstractLeaf</label>
+        <link refid="classJSON_1_1AbstractLeaf"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JSON::Object</label>
+        <link refid="classJSON_1_1Object"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/grafed/gui/jsonObject.h" line="326" column="1" bodyfile="src/grafed/jsonparser/jsonObject.h" bodystart="326" bodyend="341"/>
+    <listofallmembers>
+      <member refid="classJSON_1_1AbstractLeaf_1a4f70a0de0369eb37356c075bdd9af1bd" prot="public" virt="non-virtual"><scope>JSON::AbstractLeaf</scope><name>AbstractLeaf</name></member>
+      <member refid="classJSON_1_1AbstractLeaf_1a4f70a0de0369eb37356c075bdd9af1bd" prot="public" virt="non-virtual"><scope>JSON::AbstractLeaf</scope><name>AbstractLeaf</name></member>
+      <member refid="classJSON_1_1AbstractLeaf_1a1c34586e3ac3102b14e051492be424c5" prot="public" virt="pure-virtual"><scope>JSON::AbstractLeaf</scope><name>getArgument</name></member>
+      <member refid="classJSON_1_1AbstractLeaf_1a1c34586e3ac3102b14e051492be424c5" prot="public" virt="pure-virtual"><scope>JSON::AbstractLeaf</scope><name>getArgument</name></member>
+      <member refid="classJSON_1_1Object_1ae3c04b4483cfe3b2879e9b5a1e79a5e3" prot="public" virt="non-virtual"><scope>JSON::AbstractLeaf</scope><name>getSpecifier</name></member>
+      <member refid="classJSON_1_1Object_1ae3c04b4483cfe3b2879e9b5a1e79a5e3" prot="public" virt="non-virtual"><scope>JSON::AbstractLeaf</scope><name>getSpecifier</name></member>
+      <member refid="classJSON_1_1Object_1a941a79c1ca10023f8e8e77e60b23e3f8" prot="public" virt="virtual"><scope>JSON::AbstractLeaf</scope><name>isNode</name></member>
+      <member refid="classJSON_1_1Object_1a941a79c1ca10023f8e8e77e60b23e3f8" prot="public" virt="virtual"><scope>JSON::AbstractLeaf</scope><name>isNode</name></member>
+      <member refid="classJSON_1_1Object_1a534b719c1190ea30c0a9ab9d12f8f619" prot="public" virt="non-virtual"><scope>JSON::AbstractLeaf</scope><name>Object</name></member>
+      <member refid="classJSON_1_1Object_1a534b719c1190ea30c0a9ab9d12f8f619" prot="public" virt="non-virtual"><scope>JSON::AbstractLeaf</scope><name>Object</name></member>
+      <member refid="classJSON_1_1Object_1a496b17f83c592bbb92720e5288abd172" prot="protected" virt="non-virtual"><scope>JSON::AbstractLeaf</scope><name>specifier</name></member>
+      <member refid="classJSON_1_1Object_1a6611414d3cba6dc3028378f88847bb9a" prot="public" virt="virtual"><scope>JSON::AbstractLeaf</scope><name>~Object</name></member>
+      <member refid="classJSON_1_1Object_1a6611414d3cba6dc3028378f88847bb9a" prot="public" virt="virtual"><scope>JSON::AbstractLeaf</scope><name>~Object</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

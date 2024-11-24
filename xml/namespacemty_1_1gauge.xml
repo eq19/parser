@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespacemty_1_1gauge" kind="namespace" language="C++">
+    <compoundname>mty::gauge</compoundname>
+    <innerclass refid="classmty_1_1gauge_1_1Choice" prot="public">mty::gauge::Choice</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacemty_1_1gauge_1a9fd8b3a5006248abaf16b454beff49a6" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>GroupType</name>
+        <qualifiedname>mty::gauge::GroupType</qualifiedname>
+        <enumvalue id="namespacemty_1_1gauge_1a9fd8b3a5006248abaf16b454beff49a6af89412c11bdc0ab44f99f92d5e9a3c5e" prot="public">
+          <name>U1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemty_1_1gauge_1a9fd8b3a5006248abaf16b454beff49a6af7adf0ba18d705092fa0a1e2f2c0bafb" prot="public">
+          <name>SU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemty_1_1gauge_1a9fd8b3a5006248abaf16b454beff49a6a98d0360b392de5f1d53acdd6489b6e88" prot="public">
+          <name>SO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemty_1_1gauge_1a9fd8b3a5006248abaf16b454beff49a6ae68483b702d4be05c6d7bf1ecc7889f8" prot="public">
+          <name>Sp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemty_1_1gauge_1a9fd8b3a5006248abaf16b454beff49a6a247116319466c7be96c6ac3ab87984cb" prot="public">
+          <name>E6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemty_1_1gauge_1a9fd8b3a5006248abaf16b454beff49a6a4b110604865b013dd13d9ce3f66046f2" prot="public">
+          <name>E7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemty_1_1gauge_1a9fd8b3a5006248abaf16b454beff49a6ab1a82c958451a0a4f0f7373dad43ca67" prot="public">
+          <name>E8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemty_1_1gauge_1a9fd8b3a5006248abaf16b454beff49a6ae7e0e72401a9f2718ed0f39f2861d702" prot="public">
+          <name>F4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemty_1_1gauge_1a9fd8b3a5006248abaf16b454beff49a6ad24bade136bc8cd77e37395ea94226eb" prot="public">
+          <name>G2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="34" column="1" bodyfile="src/marty/core/gaugedGroup.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacemty_1_1gauge_1a8fd05434cb655735bb18cda43a626a9f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Type</name>
+        <qualifiedname>mty::gauge::Type</qualifiedname>
+        <enumvalue id="namespacemty_1_1gauge_1a8fd05434cb655735bb18cda43a626a9fae9f904b2efc7d819b817a116f66dec72" prot="public">
+          <name>NotDefined</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><formula id="88">$\xi $</formula> is not fixed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemty_1_1gauge_1a8fd05434cb655735bb18cda43a626a9fa14a3ee356d6bf12832f7ead652dd7d9e" prot="public">
+          <name>Lorenz</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><formula id="89">$\xi = 0$</formula>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemty_1_1gauge_1a8fd05434cb655735bb18cda43a626a9fae294d416e761830537f13c38c7e5ae0b" prot="public">
+          <name>Feynman</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><formula id="90">$\xi = 1$</formula>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemty_1_1gauge_1a8fd05434cb655735bb18cda43a626a9fa47d480ed91c7c0ac6237408a7496a864" prot="public">
+          <name>Unitary</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><formula id="91">$\xi = \infty$</formula>. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Different types of gauge ficing parameter for gauge boson propagators. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The propagator of a gauge boson is   <formula id="77">\[
+     -i\frac{g_{\mu\nu} - (1-\xi) \frac{p_\mu p_\nu}{p^2 - \xi
+M^2}}{p^2-M^2}, \]</formula>@_fakenlwith <formula id="78">$ M $</formula> the mass of the particle, and  <formula id="79">$ p^\mu
+$</formula> its momentum. The Lorenz gauge corresponds to <formula id="80">$ \xi=0$</formula>, the propagator then reads  <formula id="81">\[ -i\frac{g_{\mu\nu} - \frac{p_\mu
+p_\nu}{p^2}}{p^2-M^2}. \]</formula> The Feynman gauge corresponds to <formula id="82">$ \xi=1$</formula>, the propagator then reads <formula id="83">\[ -i\frac{g_{\mu\nu}}{p^2-M^2}. \]</formula> The Unitary gauge corresponds to <formula id="84">$ \xi=\infty$</formula>, the propagator then reads   <formula id="85">\[
+     -i\frac{g_{\mu\nu} - \frac{p_\mu p_\nu}{M^2}}{p^2-M^2}.
+\]</formula> Finally, the <formula id="86">$ \mathcal{R}_\xi $</formula> gauge does not fix <formula id="87">$ \xi $</formula>, this corresponds to the choice NotDefined. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.h" line="70" column="1" bodyfile="src/marty/core/gaugedGroup.h" bodystart="70" bodyend="76"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemty_1_1gauge_1a6bb38e993e01e5fcbbd80b52f256a376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; mty::gauge::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;fout, mty::gauge::GroupType type)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::gauge::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>mty::gauge::GroupType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/gaugedGroup.cpp" line="29" column="1" bodyfile="src/marty/core/gaugedGroup.cpp" bodystart="29" bodyend="65" declfile="src/marty/core/gaugedGroup.h" declline="36" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Namespace containing features concerning gauged groups and gauge choices. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/core/gaugedGroup.cpp" line="27" column="1"/>
+  </compounddef>
+</doxygen>

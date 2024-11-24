@@ -1,0 +1,1195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classEdge" kind="class" language="C++" prot="public">
+    <compoundname>Edge</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QGraphicsObject</basecompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classEdge_1a1076c24a9c10f5e019ee362060200329" prot="public" static="no" strong="no">
+        <type></type>
+        <name></name>
+        <qualifiedname>Edge</qualifiedname>
+        <enumvalue id="classEdge_1a1076c24a9c10f5e019ee362060200329a59a3ef5ffd963601ffda52bb7bf42b3c" prot="public">
+          <name>Type</name>
+          <initializer>= static_cast&lt;int&gt;(UserType) + 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="105" column="5" bodyfile="src/grafed/gui/edge.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classEdge_1a23cd627fd79ddf26c485e74034495944" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class DiagramWidget</definition>
+        <argsstring></argsstring>
+        <name>DiagramWidget</name>
+        <qualifiedname>Edge::DiagramWidget</qualifiedname>
+        <param>
+          <type><ref refid="classDiagramWidget" kindref="compound">DiagramWidget</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="43" column="18" bodyfile="src/grafed/gui/edge.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classEdge_1a6b5837ee158aa8d450b9e559d49b3e54" prot="public" static="no" mutable="no">
+        <type><ref refid="classProxy" kindref="compound">Proxy</ref> *</type>
+        <definition>Proxy* Edge::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <qualifiedname>Edge::label</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="146" column="11" bodyfile="src/grafed/gui/edge.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classEdge_1a976da8c9bb04dc0c4f3aa280d1ad7261" prot="private" static="no" mutable="no">
+        <type><ref refid="classDiagram" kindref="compound">Diagram</ref> *</type>
+        <definition>Diagram* Edge::graph</definition>
+        <argsstring></argsstring>
+        <name>graph</name>
+        <qualifiedname>Edge::graph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="149" column="19" bodyfile="src/grafed/gui/edge.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEdge_1af2100567ea792c1c1830d45d0fdd21ae" prot="private" static="no" mutable="no">
+        <type><ref refid="classDiagramWidget" kindref="compound">DiagramWidget</ref> *</type>
+        <definition>DiagramWidget* Edge::widget</definition>
+        <argsstring></argsstring>
+        <name>widget</name>
+        <qualifiedname>Edge::widget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="150" column="19" bodyfile="src/grafed/gui/edge.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEdge_1aaecf2a526d18d282f39399144a24f3df" prot="private" static="no" mutable="no">
+        <type><ref refid="classNode" kindref="compound">Node</ref> *</type>
+        <definition>Node* Edge::first</definition>
+        <argsstring></argsstring>
+        <name>first</name>
+        <qualifiedname>Edge::first</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="151" column="19" bodyfile="src/grafed/gui/edge.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEdge_1aae6d5b164913ca688417f423602aca7e" prot="private" static="no" mutable="no">
+        <type><ref refid="classNode" kindref="compound">Node</ref> *</type>
+        <definition>Node* Edge::second</definition>
+        <argsstring></argsstring>
+        <name>second</name>
+        <qualifiedname>Edge::second</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="152" column="19" bodyfile="src/grafed/gui/edge.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEdge_1ab7c7bb35bca6b88c92ef9bce1a5a9aba" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Edge::flippedLabel</definition>
+        <argsstring></argsstring>
+        <name>flippedLabel</name>
+        <qualifiedname>Edge::flippedLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="153" column="20" bodyfile="src/grafed/gui/edge.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEdge_1a1b53cdaef4dd6d71dbce517fcedca661" prot="private" static="no" mutable="no">
+        <type>QColor</type>
+        <definition>QColor Edge::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>Edge::color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="154" column="20" bodyfile="src/grafed/gui/edge.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEdge_1a4337930895e9b265dbddf7e3d917fcd7" prot="private" static="no" mutable="yes">
+        <type>int</type>
+        <definition>int Edge::signCurvature</definition>
+        <argsstring></argsstring>
+        <name>signCurvature</name>
+        <qualifiedname>Edge::signCurvature</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="155" column="20" bodyfile="src/grafed/gui/edge.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEdge_1a69a951445fbfd8cd47a63ebb1a5e6cbf" prot="private" static="no" mutable="yes">
+        <type>qreal</type>
+        <definition>qreal Edge::curvature</definition>
+        <argsstring></argsstring>
+        <name>curvature</name>
+        <qualifiedname>Edge::curvature</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="156" column="20" bodyfile="src/grafed/gui/edge.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEdge_1a3438572275d2d6aeade5f79f99297330" prot="private" static="no" mutable="no">
+        <type>qint32</type>
+        <definition>qint32 Edge::lineWidth</definition>
+        <argsstring></argsstring>
+        <name>lineWidth</name>
+        <qualifiedname>Edge::lineWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="157" column="20" bodyfile="src/grafed/gui/edge.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEdge_1ad15221dc4d70dc7c0d49b058dd07ec75" prot="private" static="no" mutable="no">
+        <type>qint32</type>
+        <definition>qint32 Edge::amplitude</definition>
+        <argsstring></argsstring>
+        <name>amplitude</name>
+        <qualifiedname>Edge::amplitude</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="158" column="20" bodyfile="src/grafed/gui/edge.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEdge_1a0a1e48da03628573a04c863a965aa528" prot="private" static="no" mutable="no">
+        <type>qint32</type>
+        <definition>qint32 Edge::particleType</definition>
+        <argsstring></argsstring>
+        <name>particleType</name>
+        <qualifiedname>Edge::particleType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="159" column="20" bodyfile="src/grafed/gui/edge.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classEdge_1a3af6d278c4ddcb2589e1aa66e52f4efb" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Edge::selected</definition>
+        <argsstring></argsstring>
+        <name>selected</name>
+        <qualifiedname>Edge::selected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="160" column="20" bodyfile="src/grafed/gui/edge.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEdge_1a0b8050ada8bf637b0650d18dd988c8ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Edge::Edge</definition>
+        <argsstring>(Diagram *DiagramWidget)</argsstring>
+        <name>Edge</name>
+        <qualifiedname>Edge::Edge</qualifiedname>
+        <param>
+          <type><ref refid="classDiagram" kindref="compound">Diagram</ref> *</type>
+          <declname>DiagramWidget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="46" column="5" bodyfile="src/grafed/gui/edge.cpp" bodystart="33" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1aaa9ec4257594473ecc6109bbae428bce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Edge::Edge</definition>
+        <argsstring>(Diagram *DiagramWidget, Node *t_first, Node *t_second)</argsstring>
+        <name>Edge</name>
+        <qualifiedname>Edge::Edge</qualifiedname>
+        <param>
+          <type><ref refid="classDiagram" kindref="compound">Diagram</ref> *</type>
+          <declname>DiagramWidget</declname>
+        </param>
+        <param>
+          <type><ref refid="classNode" kindref="compound">Node</ref> *</type>
+          <declname>t_first</declname>
+        </param>
+        <param>
+          <type><ref refid="classNode" kindref="compound">Node</ref> *</type>
+          <declname>t_second</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="48" column="5" bodyfile="src/grafed/gui/edge.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1aa141304ca871f9922f71c714c217b105" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Edge::~Edge</definition>
+        <argsstring>() override</argsstring>
+        <name>~Edge</name>
+        <qualifiedname>Edge::~Edge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="50" column="13" bodyfile="src/grafed/gui/edge.cpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a4365e3ed28081a8c396d95069b570e7d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString Edge::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <qualifiedname>Edge::getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="52" column="13" bodyfile="src/grafed/gui/edge.cpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a74dab3dceb9037d0ac8236d36331c153" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>qint32</type>
+        <definition>qint32 Edge::getLineWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>getLineWidth</name>
+        <qualifiedname>Edge::getLineWidth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="53" column="13" bodyfile="src/grafed/gui/edge.h" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1ad5bbe1f7fe876f24b1b4fa8718a965fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classNode" kindref="compound">Node</ref> *</type>
+        <definition>const Node * Edge::getFirst</definition>
+        <argsstring>() const</argsstring>
+        <name>getFirst</name>
+        <qualifiedname>Edge::getFirst</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="58" column="16" bodyfile="src/grafed/gui/edge.cpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a4a2f1134585078ad0aaf84ab61af70cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classNode" kindref="compound">Node</ref> *</type>
+        <definition>const Node * Edge::getSecond</definition>
+        <argsstring>() const</argsstring>
+        <name>getSecond</name>
+        <qualifiedname>Edge::getSecond</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="59" column="16" bodyfile="src/grafed/gui/edge.cpp" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a40adb207b792316be61bed6a18680570" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNode" kindref="compound">Node</ref> *</type>
+        <definition>Node * Edge::getFirst</definition>
+        <argsstring>()</argsstring>
+        <name>getFirst</name>
+        <qualifiedname>Edge::getFirst</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="60" column="16" bodyfile="src/grafed/gui/edge.cpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1ad7c4782632220c46723fc825949b8bf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNode" kindref="compound">Node</ref> *</type>
+        <definition>Node * Edge::getSecond</definition>
+        <argsstring>()</argsstring>
+        <name>getSecond</name>
+        <qualifiedname>Edge::getSecond</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="61" column="16" bodyfile="src/grafed/gui/edge.cpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a8b1bbf216b9cd16a71ccd992a8f7708d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Edge::isConnectedTo</definition>
+        <argsstring>(Node const *node) const</argsstring>
+        <name>isConnectedTo</name>
+        <qualifiedname>Edge::isConnectedTo</qualifiedname>
+        <param>
+          <type><ref refid="classNode" kindref="compound">Node</ref> const *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="63" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1adaf49eb6808e7f3ec16a0e1d76f1d884" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Edge::isFlipped</definition>
+        <argsstring>() const</argsstring>
+        <name>isFlipped</name>
+        <qualifiedname>Edge::isFlipped</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="64" column="10" bodyfile="src/grafed/gui/edge.h" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a96ad641e71e926aa63a77d22fa8d8900" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Edge::hasFocusInGraph</definition>
+        <argsstring>() const</argsstring>
+        <name>hasFocusInGraph</name>
+        <qualifiedname>Edge::hasFocusInGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="68" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a4d60ad85fa7b87b3fff817ce61c84afb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::focusInGraph</definition>
+        <argsstring>()</argsstring>
+        <name>focusInGraph</name>
+        <qualifiedname>Edge::focusInGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="69" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="100" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1ae9fdc33cd2e0884b23f91589d4ed0794" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::unFocusInGraph</definition>
+        <argsstring>()</argsstring>
+        <name>unFocusInGraph</name>
+        <qualifiedname>Edge::unFocusInGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="70" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="106" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1ae6dde0ed485e4046543f0d1c4a71ab68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::wheelEventCustom</definition>
+        <argsstring>(int delta)</argsstring>
+        <name>wheelEventCustom</name>
+        <qualifiedname>Edge::wheelEventCustom</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="71" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="667" bodyend="676"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a051014d44e975f43f3829ee7b3d08e63" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Edge::getSign</definition>
+        <argsstring>() const</argsstring>
+        <name>getSign</name>
+        <qualifiedname>Edge::getSign</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="73" column="10" bodyfile="src/grafed/gui/edge.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1ac1323f878d064d734b728493d997ef7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>qint32</type>
+        <definition>qint32 Edge::getParticleType</definition>
+        <argsstring>()</argsstring>
+        <name>getParticleType</name>
+        <qualifiedname>Edge::getParticleType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="77" column="12" bodyfile="src/grafed/gui/edge.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1ad2fc6d2f520bdb3cf2a61eed16382423" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QColor</type>
+        <definition>QColor Edge::getColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getColor</name>
+        <qualifiedname>Edge::getColor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="81" column="12" bodyfile="src/grafed/gui/edge.cpp" bodystart="414" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a97becbff2634d03653f72f72469fbb91" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QColor</type>
+        <definition>QColor Edge::getPaintColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getPaintColor</name>
+        <qualifiedname>Edge::getPaintColor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="82" column="12" bodyfile="src/grafed/gui/edge.cpp" bodystart="419" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a4738184a26cfdda1e68329768714dbb3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal Edge::length</definition>
+        <argsstring>() const</argsstring>
+        <name>length</name>
+        <qualifiedname>Edge::length</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="83" column="12" bodyfile="src/grafed/gui/edge.cpp" bodystart="112" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1ab84fb6e95cbf5c05817f75c55c813eec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Edge::getCurve</definition>
+        <argsstring>() const</argsstring>
+        <name>getCurve</name>
+        <qualifiedname>Edge::getCurve</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="84" column="12" bodyfile="src/grafed/gui/edge.cpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1afa29a7029260495ddf8497df5ca503c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::setCurve</definition>
+        <argsstring>(double t_curve)</argsstring>
+        <name>setCurve</name>
+        <qualifiedname>Edge::setCurve</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>t_curve</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="85" column="12" bodyfile="src/grafed/gui/edge.cpp" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1afa3974bd64e05b7932b8a767430129c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>qreal</type>
+        <definition>qreal Edge::getCurvature</definition>
+        <argsstring>() const</argsstring>
+        <name>getCurvature</name>
+        <qualifiedname>Edge::getCurvature</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="86" column="12" bodyfile="src/grafed/gui/edge.cpp" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a2e460bcc9c4b739a83f9b4b0c9b3b05d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::setCurvature</definition>
+        <argsstring>(double curvature)</argsstring>
+        <name>setCurvature</name>
+        <qualifiedname>Edge::setCurvature</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>curvature</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="87" column="12" bodyfile="src/grafed/gui/edge.cpp" bodystart="124" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a7945d15cc2dd7cbfaf91a0a4ebb4f703" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::setDiagramWidget</definition>
+        <argsstring>(DiagramWidget *t_widget)</argsstring>
+        <name>setDiagramWidget</name>
+        <qualifiedname>Edge::setDiagramWidget</qualifiedname>
+        <param>
+          <type><ref refid="classDiagramWidget" kindref="compound">DiagramWidget</ref> *</type>
+          <declname>t_widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="89" column="10" bodyfile="src/grafed/gui/edge.h" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a9b6fa2272f5847c782d48a488d32fd33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::setSides</definition>
+        <argsstring>(Node *t_first, Node *t_second)</argsstring>
+        <name>setSides</name>
+        <qualifiedname>Edge::setSides</qualifiedname>
+        <param>
+          <type><ref refid="classNode" kindref="compound">Node</ref> *</type>
+          <declname>t_first</declname>
+        </param>
+        <param>
+          <type><ref refid="classNode" kindref="compound">Node</ref> *</type>
+          <declname>t_second</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="93" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="141" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a72c482551991901550234521e24a2276" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::flipLabel</definition>
+        <argsstring>()</argsstring>
+        <name>flipLabel</name>
+        <qualifiedname>Edge::flipLabel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="94" column="10" bodyfile="src/grafed/gui/edge.h" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1ae71b791438ee1fa61a49d192e7a323de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::setColor</definition>
+        <argsstring>(QColor t_color)</argsstring>
+        <name>setColor</name>
+        <qualifiedname>Edge::setColor</qualifiedname>
+        <param>
+          <type>QColor</type>
+          <declname>t_color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="98" column="10" bodyfile="src/grafed/gui/edge.h" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a1352303ef6cf83a6c2bc83082b725da8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::setParticleType</definition>
+        <argsstring>(qint32 t_type)</argsstring>
+        <name>setParticleType</name>
+        <qualifiedname>Edge::setParticleType</qualifiedname>
+        <param>
+          <type>qint32</type>
+          <declname>t_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="103" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="160" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a9ae46eb35e91e2253434274458aaec55" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Edge::type</definition>
+        <argsstring>() const override</argsstring>
+        <name>type</name>
+        <qualifiedname>Edge::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="106" column="9" bodyfile="src/grafed/gui/edge.h" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a414eb7f63b639f571e71f1e42198a795" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QRectF</type>
+        <definition>QRectF Edge::boundingRect</definition>
+        <argsstring>() const override</argsstring>
+        <name>boundingRect</name>
+        <qualifiedname>Edge::boundingRect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="111" column="18" bodyfile="src/grafed/gui/edge.cpp" bodystart="327" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a67c741058cb49b3c6cc5b126f71ad6c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QPainterPath</type>
+        <definition>QPainterPath Edge::shape</definition>
+        <argsstring>() const override</argsstring>
+        <name>shape</name>
+        <qualifiedname>Edge::shape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="112" column="18" bodyfile="src/grafed/gui/edge.cpp" bodystart="346" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a8b79a1a2d01ac8e14b34cf1fe050850f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::paint</definition>
+        <argsstring>(QPainter *painter, QStyleOptionGraphicsItem const *option, QWidget *widget) override</argsstring>
+        <name>paint</name>
+        <qualifiedname>Edge::paint</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <param>
+          <type>QStyleOptionGraphicsItem const *</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="113" column="18" bodyfile="src/grafed/gui/edge.cpp" bodystart="363" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1ab6d51186c95fddedca30589893eaaf3b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::paintLine</definition>
+        <argsstring>(QPainter *painter) const</argsstring>
+        <name>paintLine</name>
+        <qualifiedname>Edge::paintLine</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="117" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="424" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a5235292ea1d843cda8a1af15771600d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::paintDashedLine</definition>
+        <argsstring>(QPainter *painter) const</argsstring>
+        <name>paintDashedLine</name>
+        <qualifiedname>Edge::paintDashedLine</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="118" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="453" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a4e25ded09f7dc6b7610e73d15b59f268" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::paintDotLine</definition>
+        <argsstring>(QPainter *painter) const</argsstring>
+        <name>paintDotLine</name>
+        <qualifiedname>Edge::paintDotLine</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="119" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="487" bodyend="522"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a420f88ee647db0e93080a663c8dc14d7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::paintSinusoid</definition>
+        <argsstring>(QPainter *painter) const</argsstring>
+        <name>paintSinusoid</name>
+        <qualifiedname>Edge::paintSinusoid</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="120" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="524" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a5568ec6ce4128dfa3c22c3aa7c57a23d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::paintCycloid</definition>
+        <argsstring>(QPainter *painter) const</argsstring>
+        <name>paintCycloid</name>
+        <qualifiedname>Edge::paintCycloid</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="121" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="545" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1ad919dc83ae4026404c41c999cf8eb386" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::paintArrow</definition>
+        <argsstring>(QPainter *painter) const</argsstring>
+        <name>paintArrow</name>
+        <qualifiedname>Edge::paintArrow</qualifiedname>
+        <param>
+          <type>QPainter *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="122" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="579" bodyend="607"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classEdge_1a034dfecc80b5324ef38f76e41d0cb1ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::changeColor</definition>
+        <argsstring>()</argsstring>
+        <name>changeColor</name>
+        <qualifiedname>Edge::changeColor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="126" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="317" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="slot" id="classEdge_1a8e4bc5c5b970b23fc42797ee26b393c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::changeName</definition>
+        <argsstring>()</argsstring>
+        <name>changeName</name>
+        <qualifiedname>Edge::changeName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="127" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="301" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="slot" id="classEdge_1a65895f0ee64db05a08e05ff26acaacec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::setName</definition>
+        <argsstring>(QString const &amp;t_name)</argsstring>
+        <name>setName</name>
+        <qualifiedname>Edge::setName</qualifiedname>
+        <param>
+          <type>QString const &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="128" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="184" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="slot" id="classEdge_1afdee8f224351936510c08f5e1baa8687" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::setLineWidth</definition>
+        <argsstring>(qint32 t_lineWidth)</argsstring>
+        <name>setLineWidth</name>
+        <qualifiedname>Edge::setLineWidth</qualifiedname>
+        <param>
+          <type>qint32</type>
+          <declname>t_lineWidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="129" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="195" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="slot" id="classEdge_1a6a44f11d9e238353547b061facd471b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::setFlipped</definition>
+        <argsstring>(bool t_flipped)</argsstring>
+        <name>setFlipped</name>
+        <qualifiedname>Edge::setFlipped</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>t_flipped</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="130" column="10" bodyfile="src/grafed/gui/edge.h" bodystart="130" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="slot" id="classEdge_1acdfa6bb437cd6e6a95715a0dccc253b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::release</definition>
+        <argsstring>()</argsstring>
+        <name>release</name>
+        <qualifiedname>Edge::release</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="135" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="202" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="slot" id="classEdge_1a0832fb8b27732b5b3e0a2f677ce96351" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::nodeMoved</definition>
+        <argsstring>()</argsstring>
+        <name>nodeMoved</name>
+        <qualifiedname>Edge::nodeMoved</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="136" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="208" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="slot" id="classEdge_1a30db5fef065e2c0644abbdae14812555" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::changeEdgeType</definition>
+        <argsstring>(QAction *action)</argsstring>
+        <name>changeEdgeType</name>
+        <qualifiedname>Edge::changeEdgeType</qualifiedname>
+        <param>
+          <type>QAction *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="137" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="224" bodyend="299"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classEdge_1ae5869434b5ee5d382a9a157c9791f523" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::mousePressEvent</definition>
+        <argsstring>(QGraphicsSceneMouseEvent *event) override</argsstring>
+        <name>mousePressEvent</name>
+        <qualifiedname>Edge::mousePressEvent</qualifiedname>
+        <param>
+          <type>QGraphicsSceneMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="140" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="609" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a78384f9baeb7fee48c90948fc88a9be7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::mouseDoubleClickEvent</definition>
+        <argsstring>(QGraphicsSceneMouseEvent *event) override</argsstring>
+        <name>mouseDoubleClickEvent</name>
+        <qualifiedname>Edge::mouseDoubleClickEvent</qualifiedname>
+        <param>
+          <type>QGraphicsSceneMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="141" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="661" bodyend="665"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a16532035fec60c0f8757e7dfd387d494" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::mouseReleaseEvent</definition>
+        <argsstring>(QGraphicsSceneMouseEvent *event) override</argsstring>
+        <name>mouseReleaseEvent</name>
+        <qualifiedname>Edge::mouseReleaseEvent</qualifiedname>
+        <param>
+          <type>QGraphicsSceneMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="142" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="655" bodyend="659"/>
+      </memberdef>
+      <memberdef kind="function" id="classEdge_1a3eac68fd25ee216076cb0eb811238e7f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::keyPressEvent</definition>
+        <argsstring>(QKeyEvent *event) override</argsstring>
+        <name>keyPressEvent</name>
+        <qualifiedname>Edge::keyPressEvent</qualifiedname>
+        <param>
+          <type>QKeyEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/edge.h" line="143" column="10" bodyfile="src/grafed/gui/edge.cpp" bodystart="408" bodyend="412"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Edge</label>
+        <link refid="classEdge"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QGraphicsObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>DiagramWidget</label>
+        <link refid="classDiagramWidget"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Edge</label>
+        <link refid="classEdge"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>label</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Proxy</label>
+        <link refid="classProxy"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>widget</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QGraphicsObject</label>
+      </node>
+      <node id="4">
+        <label>QGraphicsProxyWidget</label>
+      </node>
+      <node id="6">
+        <label>QGraphicsView</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/grafed/gui/edge.h" line="40" column="1" bodyfile="src/grafed/gui/edge.h" bodystart="40" bodyend="161"/>
+    <listofallmembers>
+      <member refid="classEdge_1ad15221dc4d70dc7c0d49b058dd07ec75" prot="private" virt="non-virtual"><scope>Edge</scope><name>amplitude</name></member>
+      <member refid="classEdge_1a414eb7f63b639f571e71f1e42198a795" prot="public" virt="non-virtual"><scope>Edge</scope><name>boundingRect</name></member>
+      <member refid="classEdge_1a034dfecc80b5324ef38f76e41d0cb1ee" prot="public" virt="non-virtual"><scope>Edge</scope><name>changeColor</name></member>
+      <member refid="classEdge_1a30db5fef065e2c0644abbdae14812555" prot="public" virt="non-virtual"><scope>Edge</scope><name>changeEdgeType</name></member>
+      <member refid="classEdge_1a8e4bc5c5b970b23fc42797ee26b393c1" prot="public" virt="non-virtual"><scope>Edge</scope><name>changeName</name></member>
+      <member refid="classEdge_1a1b53cdaef4dd6d71dbce517fcedca661" prot="private" virt="non-virtual"><scope>Edge</scope><name>color</name></member>
+      <member refid="classEdge_1a69a951445fbfd8cd47a63ebb1a5e6cbf" prot="private" virt="non-virtual"><scope>Edge</scope><name>curvature</name></member>
+      <member refid="classEdge_1a23cd627fd79ddf26c485e74034495944" prot="private" virt="non-virtual"><scope>Edge</scope><name>DiagramWidget</name></member>
+      <member refid="classEdge_1a0b8050ada8bf637b0650d18dd988c8ff" prot="public" virt="non-virtual"><scope>Edge</scope><name>Edge</name></member>
+      <member refid="classEdge_1aaa9ec4257594473ecc6109bbae428bce" prot="public" virt="non-virtual"><scope>Edge</scope><name>Edge</name></member>
+      <member refid="classEdge_1aaecf2a526d18d282f39399144a24f3df" prot="private" virt="non-virtual"><scope>Edge</scope><name>first</name></member>
+      <member refid="classEdge_1a72c482551991901550234521e24a2276" prot="public" virt="non-virtual"><scope>Edge</scope><name>flipLabel</name></member>
+      <member refid="classEdge_1ab7c7bb35bca6b88c92ef9bce1a5a9aba" prot="private" virt="non-virtual"><scope>Edge</scope><name>flippedLabel</name></member>
+      <member refid="classEdge_1a4d60ad85fa7b87b3fff817ce61c84afb" prot="public" virt="non-virtual"><scope>Edge</scope><name>focusInGraph</name></member>
+      <member refid="classEdge_1ad2fc6d2f520bdb3cf2a61eed16382423" prot="public" virt="non-virtual"><scope>Edge</scope><name>getColor</name></member>
+      <member refid="classEdge_1afa3974bd64e05b7932b8a767430129c8" prot="public" virt="non-virtual"><scope>Edge</scope><name>getCurvature</name></member>
+      <member refid="classEdge_1ab84fb6e95cbf5c05817f75c55c813eec" prot="public" virt="non-virtual"><scope>Edge</scope><name>getCurve</name></member>
+      <member refid="classEdge_1ad5bbe1f7fe876f24b1b4fa8718a965fa" prot="public" virt="non-virtual"><scope>Edge</scope><name>getFirst</name></member>
+      <member refid="classEdge_1a40adb207b792316be61bed6a18680570" prot="public" virt="non-virtual"><scope>Edge</scope><name>getFirst</name></member>
+      <member refid="classEdge_1a74dab3dceb9037d0ac8236d36331c153" prot="public" virt="non-virtual"><scope>Edge</scope><name>getLineWidth</name></member>
+      <member refid="classEdge_1a4365e3ed28081a8c396d95069b570e7d" prot="public" virt="non-virtual"><scope>Edge</scope><name>getName</name></member>
+      <member refid="classEdge_1a97becbff2634d03653f72f72469fbb91" prot="public" virt="non-virtual"><scope>Edge</scope><name>getPaintColor</name></member>
+      <member refid="classEdge_1ac1323f878d064d734b728493d997ef7a" prot="public" virt="non-virtual"><scope>Edge</scope><name>getParticleType</name></member>
+      <member refid="classEdge_1a4a2f1134585078ad0aaf84ab61af70cb" prot="public" virt="non-virtual"><scope>Edge</scope><name>getSecond</name></member>
+      <member refid="classEdge_1ad7c4782632220c46723fc825949b8bf9" prot="public" virt="non-virtual"><scope>Edge</scope><name>getSecond</name></member>
+      <member refid="classEdge_1a051014d44e975f43f3829ee7b3d08e63" prot="public" virt="non-virtual"><scope>Edge</scope><name>getSign</name></member>
+      <member refid="classEdge_1a976da8c9bb04dc0c4f3aa280d1ad7261" prot="private" virt="non-virtual"><scope>Edge</scope><name>graph</name></member>
+      <member refid="classEdge_1a96ad641e71e926aa63a77d22fa8d8900" prot="public" virt="non-virtual"><scope>Edge</scope><name>hasFocusInGraph</name></member>
+      <member refid="classEdge_1a8b1bbf216b9cd16a71ccd992a8f7708d" prot="public" virt="non-virtual"><scope>Edge</scope><name>isConnectedTo</name></member>
+      <member refid="classEdge_1adaf49eb6808e7f3ec16a0e1d76f1d884" prot="public" virt="non-virtual"><scope>Edge</scope><name>isFlipped</name></member>
+      <member refid="classEdge_1a3eac68fd25ee216076cb0eb811238e7f" prot="protected" virt="non-virtual"><scope>Edge</scope><name>keyPressEvent</name></member>
+      <member refid="classEdge_1a6b5837ee158aa8d450b9e559d49b3e54" prot="public" virt="non-virtual"><scope>Edge</scope><name>label</name></member>
+      <member refid="classEdge_1a4738184a26cfdda1e68329768714dbb3" prot="public" virt="non-virtual"><scope>Edge</scope><name>length</name></member>
+      <member refid="classEdge_1a3438572275d2d6aeade5f79f99297330" prot="private" virt="non-virtual"><scope>Edge</scope><name>lineWidth</name></member>
+      <member refid="classEdge_1a78384f9baeb7fee48c90948fc88a9be7" prot="protected" virt="non-virtual"><scope>Edge</scope><name>mouseDoubleClickEvent</name></member>
+      <member refid="classEdge_1ae5869434b5ee5d382a9a157c9791f523" prot="protected" virt="non-virtual"><scope>Edge</scope><name>mousePressEvent</name></member>
+      <member refid="classEdge_1a16532035fec60c0f8757e7dfd387d494" prot="protected" virt="non-virtual"><scope>Edge</scope><name>mouseReleaseEvent</name></member>
+      <member refid="classEdge_1a0832fb8b27732b5b3e0a2f677ce96351" prot="public" virt="non-virtual"><scope>Edge</scope><name>nodeMoved</name></member>
+      <member refid="classEdge_1a8b79a1a2d01ac8e14b34cf1fe050850f" prot="public" virt="non-virtual"><scope>Edge</scope><name>paint</name></member>
+      <member refid="classEdge_1ad919dc83ae4026404c41c999cf8eb386" prot="public" virt="non-virtual"><scope>Edge</scope><name>paintArrow</name></member>
+      <member refid="classEdge_1a5568ec6ce4128dfa3c22c3aa7c57a23d" prot="public" virt="non-virtual"><scope>Edge</scope><name>paintCycloid</name></member>
+      <member refid="classEdge_1a5235292ea1d843cda8a1af15771600d5" prot="public" virt="non-virtual"><scope>Edge</scope><name>paintDashedLine</name></member>
+      <member refid="classEdge_1a4e25ded09f7dc6b7610e73d15b59f268" prot="public" virt="non-virtual"><scope>Edge</scope><name>paintDotLine</name></member>
+      <member refid="classEdge_1ab6d51186c95fddedca30589893eaaf3b" prot="public" virt="non-virtual"><scope>Edge</scope><name>paintLine</name></member>
+      <member refid="classEdge_1a420f88ee647db0e93080a663c8dc14d7" prot="public" virt="non-virtual"><scope>Edge</scope><name>paintSinusoid</name></member>
+      <member refid="classEdge_1a0a1e48da03628573a04c863a965aa528" prot="private" virt="non-virtual"><scope>Edge</scope><name>particleType</name></member>
+      <member refid="classEdge_1acdfa6bb437cd6e6a95715a0dccc253b7" prot="public" virt="non-virtual"><scope>Edge</scope><name>release</name></member>
+      <member refid="classEdge_1aae6d5b164913ca688417f423602aca7e" prot="private" virt="non-virtual"><scope>Edge</scope><name>second</name></member>
+      <member refid="classEdge_1a3af6d278c4ddcb2589e1aa66e52f4efb" prot="private" virt="non-virtual"><scope>Edge</scope><name>selected</name></member>
+      <member refid="classEdge_1ae71b791438ee1fa61a49d192e7a323de" prot="public" virt="non-virtual"><scope>Edge</scope><name>setColor</name></member>
+      <member refid="classEdge_1a2e460bcc9c4b739a83f9b4b0c9b3b05d" prot="public" virt="non-virtual"><scope>Edge</scope><name>setCurvature</name></member>
+      <member refid="classEdge_1afa29a7029260495ddf8497df5ca503c8" prot="public" virt="non-virtual"><scope>Edge</scope><name>setCurve</name></member>
+      <member refid="classEdge_1a7945d15cc2dd7cbfaf91a0a4ebb4f703" prot="public" virt="non-virtual"><scope>Edge</scope><name>setDiagramWidget</name></member>
+      <member refid="classEdge_1a6a44f11d9e238353547b061facd471b0" prot="public" virt="non-virtual"><scope>Edge</scope><name>setFlipped</name></member>
+      <member refid="classEdge_1afdee8f224351936510c08f5e1baa8687" prot="public" virt="non-virtual"><scope>Edge</scope><name>setLineWidth</name></member>
+      <member refid="classEdge_1a65895f0ee64db05a08e05ff26acaacec" prot="public" virt="non-virtual"><scope>Edge</scope><name>setName</name></member>
+      <member refid="classEdge_1a1352303ef6cf83a6c2bc83082b725da8" prot="public" virt="non-virtual"><scope>Edge</scope><name>setParticleType</name></member>
+      <member refid="classEdge_1a9b6fa2272f5847c782d48a488d32fd33" prot="public" virt="non-virtual"><scope>Edge</scope><name>setSides</name></member>
+      <member refid="classEdge_1a67c741058cb49b3c6cc5b126f71ad6c5" prot="public" virt="non-virtual"><scope>Edge</scope><name>shape</name></member>
+      <member refid="classEdge_1a4337930895e9b265dbddf7e3d917fcd7" prot="private" virt="non-virtual"><scope>Edge</scope><name>signCurvature</name></member>
+      <member refid="classEdge_1a1076c24a9c10f5e019ee362060200329a59a3ef5ffd963601ffda52bb7bf42b3c" prot="public" virt="non-virtual"><scope>Edge</scope><name>Type</name></member>
+      <member refid="classEdge_1a9ae46eb35e91e2253434274458aaec55" prot="public" virt="non-virtual"><scope>Edge</scope><name>type</name></member>
+      <member refid="classEdge_1ae9fdc33cd2e0884b23f91589d4ed0794" prot="public" virt="non-virtual"><scope>Edge</scope><name>unFocusInGraph</name></member>
+      <member refid="classEdge_1ae6dde0ed485e4046543f0d1c4a71ab68" prot="public" virt="non-virtual"><scope>Edge</scope><name>wheelEventCustom</name></member>
+      <member refid="classEdge_1af2100567ea792c1c1830d45d0fdd21ae" prot="private" virt="non-virtual"><scope>Edge</scope><name>widget</name></member>
+      <member refid="classEdge_1aa141304ca871f9922f71c714c217b105" prot="public" virt="virtual"><scope>Edge</scope><name>~Edge</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

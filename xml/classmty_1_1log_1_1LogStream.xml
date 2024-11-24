@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1log_1_1LogStream" kind="class" language="C++" prot="public">
+    <compoundname>mty::log::LogStream</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1log_1_1LogStream_1ac0a7b92878c8f3ba6ecbca8213ad94b5" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream mty::log::LogStream::out</definition>
+        <argsstring></argsstring>
+        <name>out</name>
+        <qualifiedname>mty::log::LogStream::out</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/mrtlog.h" line="63" column="19" bodyfile="src/marty/core/mrtlog.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1log_1_1LogStream_1a615b9e9ba407eaeb4d7e8ba78012f7fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mty::log::LogStream::LogStream</definition>
+        <argsstring>(std::string const &amp;fileName)</argsstring>
+        <name>LogStream</name>
+        <qualifiedname>mty::log::LogStream::LogStream</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/mrtlog.h" line="31" column="5" bodyfile="src/marty/core/mrtlog.h" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1log_1_1LogStream_1a03fe42afb2a31e606b72bd010130f5e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::log::LogStream::setLogFile</definition>
+        <argsstring>(std::string const &amp;fileName)</argsstring>
+        <name>setLogFile</name>
+        <qualifiedname>mty::log::LogStream::setLogFile</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/mrtlog.h" line="35" column="10" bodyfile="src/marty/core/mrtlog.h" bodystart="35" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1log_1_1LogStream_1a019c917c8177ae477ed6e931077c401b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual mty::log::LogStream::~LogStream</definition>
+        <argsstring>()</argsstring>
+        <name>~LogStream</name>
+        <qualifiedname>mty::log::LogStream::~LogStream</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/mrtlog.h" line="42" column="13" bodyfile="src/marty/core/mrtlog.h" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1log_1_1LogStream_1a4411032cfbe73806ee235cbe87cd4b67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Printable</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classmty_1_1log_1_1LogStream" kindref="compound">LogStream</ref> &amp;</type>
+        <definition>LogStream &amp; mty::log::LogStream::operator&lt;&lt;</definition>
+        <argsstring>(Printable var)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::log::LogStream::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>Printable</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/mrtlog.h" line="49" column="5" bodyfile="src/marty/core/mrtlog.h" bodystart="49" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1log_1_1LogStream_1a5877c502246f53503852bab9b4200636" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmty_1_1log_1_1LogStream" kindref="compound">LogStream</ref> &amp;</type>
+        <definition>LogStream &amp; mty::log::LogStream::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;(*f)(std::ostream &amp;))</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::log::LogStream::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;(*)(std::ostream &amp;)</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/mrtlog.h" line="56" column="5" bodyfile="src/marty/core/mrtlog.h" bodystart="56" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/core/mrtlog.h" line="28" column="1" bodyfile="src/marty/core/mrtlog.h" bodystart="28" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classmty_1_1log_1_1LogStream_1a615b9e9ba407eaeb4d7e8ba78012f7fc" prot="public" virt="non-virtual"><scope>mty::log::LogStream</scope><name>LogStream</name></member>
+      <member refid="classmty_1_1log_1_1LogStream_1a4411032cfbe73806ee235cbe87cd4b67" prot="public" virt="non-virtual"><scope>mty::log::LogStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classmty_1_1log_1_1LogStream_1a5877c502246f53503852bab9b4200636" prot="public" virt="non-virtual"><scope>mty::log::LogStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classmty_1_1log_1_1LogStream_1ac0a7b92878c8f3ba6ecbca8213ad94b5" prot="private" virt="non-virtual"><scope>mty::log::LogStream</scope><name>out</name></member>
+      <member refid="classmty_1_1log_1_1LogStream_1a03fe42afb2a31e606b72bd010130f5e3" prot="public" virt="non-virtual"><scope>mty::log::LogStream</scope><name>setLogFile</name></member>
+      <member refid="classmty_1_1log_1_1LogStream_1a019c917c8177ae477ed6e931077c401b" prot="public" virt="virtual"><scope>mty::log::LogStream</scope><name>~LogStream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

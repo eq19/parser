@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classboost_1_1numeric_1_1ublas_1_1matrix" kind="class" language="C++" prot="public">
+    <compoundname>boost::numeric::ublas::matrix</compoundname>
+    <derivedcompoundref refid="classboost_1_1numeric_1_1ublas_1_1identity__matrix" prot="public" virt="non-virtual">boost::numeric::ublas::identity_matrix&lt; T &gt;</derivedcompoundref>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classboost_1_1numeric_1_1ublas_1_1matrix_1a09d8ee316370ee62f93555cc57ec3c2e" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t boost::numeric::ublas::matrix&lt; T &gt;::m_size1</definition>
+        <argsstring></argsstring>
+        <name>m_size1</name>
+        <qualifiedname>boost::numeric::ublas::matrix::m_size1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/matrix.h" line="83" column="20" bodyfile="src/marty/core/matrix.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classboost_1_1numeric_1_1ublas_1_1matrix_1a2c9bbff4445dd0a337ef87f2923d3481" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t boost::numeric::ublas::matrix&lt; T &gt;::m_size2</definition>
+        <argsstring></argsstring>
+        <name>m_size2</name>
+        <qualifiedname>boost::numeric::ublas::matrix::m_size2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/matrix.h" line="84" column="20" bodyfile="src/marty/core/matrix.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classboost_1_1numeric_1_1ublas_1_1matrix_1a750056c726158ad0922defc90a274ea2" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt;T&gt; boost::numeric::ublas::matrix&lt; T &gt;::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>boost::numeric::ublas::matrix::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/matrix.h" line="85" column="17" bodyfile="src/marty/core/matrix.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classboost_1_1numeric_1_1ublas_1_1matrix_1ae4c1164777c174f683faab71eab2e635" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::numeric::ublas::matrix&lt; T &gt;::matrix</definition>
+        <argsstring>()</argsstring>
+        <name>matrix</name>
+        <qualifiedname>boost::numeric::ublas::matrix::matrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/matrix.h" line="39" column="5" bodyfile="src/marty/core/matrix.h" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1numeric_1_1ublas_1_1matrix_1a6c0595578f52f093ecd1f27b13a1355e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::numeric::ublas::matrix&lt; T &gt;::matrix</definition>
+        <argsstring>(size_t s1, size_t s2)</argsstring>
+        <name>matrix</name>
+        <qualifiedname>boost::numeric::ublas::matrix::matrix</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/matrix.h" line="43" column="5" bodyfile="src/marty/core/matrix.h" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1numeric_1_1ublas_1_1matrix_1ab85926fb87c275593d0e1b61e024016f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>boost::numeric::ublas::matrix&lt; T &gt;::matrix</definition>
+        <argsstring>(matrix const &amp;)=default</argsstring>
+        <name>matrix</name>
+        <qualifiedname>boost::numeric::ublas::matrix::matrix</qualifiedname>
+        <param>
+          <type><ref refid="classboost_1_1numeric_1_1ublas_1_1matrix" kindref="compound">matrix</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/matrix.h" line="48" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1numeric_1_1ublas_1_1matrix_1a448b2e28869ccfe3802f87fcff7451e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>boost::numeric::ublas::matrix&lt; T &gt;::matrix</definition>
+        <argsstring>(matrix &amp;&amp;)=default</argsstring>
+        <name>matrix</name>
+        <qualifiedname>boost::numeric::ublas::matrix::matrix</qualifiedname>
+        <param>
+          <type><ref refid="classboost_1_1numeric_1_1ublas_1_1matrix" kindref="compound">matrix</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/matrix.h" line="49" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1numeric_1_1ublas_1_1matrix_1a0f459911b0a994a5b5704d8b9b4c4eb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classboost_1_1numeric_1_1ublas_1_1matrix" kindref="compound">matrix</ref> &amp;</type>
+        <definition>matrix &amp; boost::numeric::ublas::matrix&lt; T &gt;::operator=</definition>
+        <argsstring>(matrix const &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>boost::numeric::ublas::matrix::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classboost_1_1numeric_1_1ublas_1_1matrix" kindref="compound">matrix</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/matrix.h" line="50" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1numeric_1_1ublas_1_1matrix_1a64bed9c09efbf5693c63acd64944b130" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classboost_1_1numeric_1_1ublas_1_1matrix" kindref="compound">matrix</ref> &amp;</type>
+        <definition>matrix &amp; boost::numeric::ublas::matrix&lt; T &gt;::operator=</definition>
+        <argsstring>(matrix &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>boost::numeric::ublas::matrix::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classboost_1_1numeric_1_1ublas_1_1matrix" kindref="compound">matrix</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/matrix.h" line="51" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1numeric_1_1ublas_1_1matrix_1a2ed861473e36539b64043e5d2408b1a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::numeric::ublas::matrix&lt; T &gt;::~matrix</definition>
+        <argsstring>()</argsstring>
+        <name>~matrix</name>
+        <qualifiedname>boost::numeric::ublas::matrix::~matrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/matrix.h" line="53" column="5" bodyfile="src/marty/core/matrix.h" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1numeric_1_1ublas_1_1matrix_1a34b35ec1baa7c36334a5536fa09a63f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void boost::numeric::ublas::matrix&lt; T &gt;::resize</definition>
+        <argsstring>(size_t s1, size_t s2)</argsstring>
+        <name>resize</name>
+        <qualifiedname>boost::numeric::ublas::matrix::resize</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/matrix.h" line="57" column="10" bodyfile="src/marty/core/matrix.h" bodystart="57" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1numeric_1_1ublas_1_1matrix_1a0d32c7fb5af5d636748b1e84e72eda3e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t boost::numeric::ublas::matrix&lt; T &gt;::size1</definition>
+        <argsstring>() const</argsstring>
+        <name>size1</name>
+        <qualifiedname>boost::numeric::ublas::matrix::size1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/matrix.h" line="64" column="12" bodyfile="src/marty/core/matrix.h" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1numeric_1_1ublas_1_1matrix_1a70c5554403cc2c30fb4d146e2e2a263e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t boost::numeric::ublas::matrix&lt; T &gt;::size2</definition>
+        <argsstring>() const</argsstring>
+        <name>size2</name>
+        <qualifiedname>boost::numeric::ublas::matrix::size2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/matrix.h" line="68" column="12" bodyfile="src/marty/core/matrix.h" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1numeric_1_1ublas_1_1matrix_1ab3fad90d1b87789c802ba3d13a77f5e2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T const &amp;</type>
+        <definition>T const  &amp; boost::numeric::ublas::matrix&lt; T &gt;::operator()</definition>
+        <argsstring>(size_t i, size_t j) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>boost::numeric::ublas::matrix::operator()</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/matrix.h" line="73" column="13" bodyfile="src/marty/core/matrix.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1numeric_1_1ublas_1_1matrix_1ac68d46a3962e98e59e0bb431e4b67e4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; boost::numeric::ublas::matrix&lt; T &gt;::operator()</definition>
+        <argsstring>(size_t i, size_t j)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>boost::numeric::ublas::matrix::operator()</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/matrix.h" line="77" column="7" bodyfile="src/marty/core/matrix.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>boost::numeric::ublas::identity_matrix&lt; T &gt;</label>
+        <link refid="classboost_1_1numeric_1_1ublas_1_1identity__matrix"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>boost::numeric::ublas::matrix&lt; T &gt;</label>
+        <link refid="classboost_1_1numeric_1_1ublas_1_1matrix"/>
+      </node>
+    </inheritancegraph>
+    <location file="src/marty/core/matrix.h" line="36" column="1" bodyfile="src/marty/core/matrix.h" bodystart="36" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classboost_1_1numeric_1_1ublas_1_1matrix_1a750056c726158ad0922defc90a274ea2" prot="protected" virt="non-virtual"><scope>boost::numeric::ublas::matrix</scope><name>data</name></member>
+      <member refid="classboost_1_1numeric_1_1ublas_1_1matrix_1a09d8ee316370ee62f93555cc57ec3c2e" prot="protected" virt="non-virtual"><scope>boost::numeric::ublas::matrix</scope><name>m_size1</name></member>
+      <member refid="classboost_1_1numeric_1_1ublas_1_1matrix_1a2c9bbff4445dd0a337ef87f2923d3481" prot="protected" virt="non-virtual"><scope>boost::numeric::ublas::matrix</scope><name>m_size2</name></member>
+      <member refid="classboost_1_1numeric_1_1ublas_1_1matrix_1ae4c1164777c174f683faab71eab2e635" prot="public" virt="non-virtual"><scope>boost::numeric::ublas::matrix</scope><name>matrix</name></member>
+      <member refid="classboost_1_1numeric_1_1ublas_1_1matrix_1a6c0595578f52f093ecd1f27b13a1355e" prot="public" virt="non-virtual"><scope>boost::numeric::ublas::matrix</scope><name>matrix</name></member>
+      <member refid="classboost_1_1numeric_1_1ublas_1_1matrix_1ab85926fb87c275593d0e1b61e024016f" prot="public" virt="non-virtual"><scope>boost::numeric::ublas::matrix</scope><name>matrix</name></member>
+      <member refid="classboost_1_1numeric_1_1ublas_1_1matrix_1a448b2e28869ccfe3802f87fcff7451e7" prot="public" virt="non-virtual"><scope>boost::numeric::ublas::matrix</scope><name>matrix</name></member>
+      <member refid="classboost_1_1numeric_1_1ublas_1_1matrix_1ab3fad90d1b87789c802ba3d13a77f5e2" prot="public" virt="non-virtual"><scope>boost::numeric::ublas::matrix</scope><name>operator()</name></member>
+      <member refid="classboost_1_1numeric_1_1ublas_1_1matrix_1ac68d46a3962e98e59e0bb431e4b67e4f" prot="public" virt="non-virtual"><scope>boost::numeric::ublas::matrix</scope><name>operator()</name></member>
+      <member refid="classboost_1_1numeric_1_1ublas_1_1matrix_1a0f459911b0a994a5b5704d8b9b4c4eb0" prot="public" virt="non-virtual"><scope>boost::numeric::ublas::matrix</scope><name>operator=</name></member>
+      <member refid="classboost_1_1numeric_1_1ublas_1_1matrix_1a64bed9c09efbf5693c63acd64944b130" prot="public" virt="non-virtual"><scope>boost::numeric::ublas::matrix</scope><name>operator=</name></member>
+      <member refid="classboost_1_1numeric_1_1ublas_1_1matrix_1a34b35ec1baa7c36334a5536fa09a63f2" prot="public" virt="non-virtual"><scope>boost::numeric::ublas::matrix</scope><name>resize</name></member>
+      <member refid="classboost_1_1numeric_1_1ublas_1_1matrix_1a0d32c7fb5af5d636748b1e84e72eda3e" prot="public" virt="non-virtual"><scope>boost::numeric::ublas::matrix</scope><name>size1</name></member>
+      <member refid="classboost_1_1numeric_1_1ublas_1_1matrix_1a70c5554403cc2c30fb4d146e2e2a263e" prot="public" virt="non-virtual"><scope>boost::numeric::ublas::matrix</scope><name>size2</name></member>
+      <member refid="classboost_1_1numeric_1_1ublas_1_1matrix_1a2ed861473e36539b64043e5d2408b1a9" prot="public" virt="non-virtual"><scope>boost::numeric::ublas::matrix</scope><name>~matrix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classsgl_1_1EpsilonIndex" kind="class" language="C++" prot="public">
+    <compoundname>sgl::EpsilonIndex</compoundname>
+    <basecompoundref refid="classsgl_1_1AbstractGeneralizedIndex" prot="public" virt="non-virtual">sgl::AbstractGeneralizedIndex</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsgl_1_1EpsilonIndex_1a221598cd5d5c1afeedde301bd99b13a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sgl::EpsilonIndex::EpsilonIndex</definition>
+        <argsstring>(csl::Index const &amp;mu, csl::Index const &amp;nu, csl::Index const &amp;rho, csl::Index const &amp;sigma)</argsstring>
+        <name>EpsilonIndex</name>
+        <qualifiedname>sgl::EpsilonIndex::EpsilonIndex</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>nu</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>rho</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>sigma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/epsilonindex.h" line="32" column="5" bodyfile="src/marty/sgl/epsilonindex.cpp" bodystart="29" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1EpsilonIndex_1a06bfedce453c7b9e76b881e6d0cf2c5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool sgl::EpsilonIndex::isZero</definition>
+        <argsstring>() const override</argsstring>
+        <name>isZero</name>
+        <qualifiedname>sgl::EpsilonIndex::isZero</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1adfe9ff61706305c5c0eb268dd2653d0d">isZero</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/epsilonindex.h" line="37" column="10" bodyfile="src/marty/sgl/epsilonindex.cpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1EpsilonIndex_1a0b3c0821e052feeec665a1d2c8e01503" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref></type>
+        <definition>GExpr sgl::EpsilonIndex::copy</definition>
+        <argsstring>() const override</argsstring>
+        <name>copy</name>
+        <qualifiedname>sgl::EpsilonIndex::copy</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1af757efe5cd359a3d83f1ef642c4fec8b">copy</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/epsilonindex.h" line="39" column="11" bodyfile="src/marty/sgl/epsilonindex.cpp" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1EpsilonIndex_1a475dffcac71c7b282765436644208f9e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref></type>
+        <definition>GExpr sgl::EpsilonIndex::refresh</definition>
+        <argsstring>() const override</argsstring>
+        <name>refresh</name>
+        <qualifiedname>sgl::EpsilonIndex::refresh</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1a13cc14a47f1ddf8fb51b0861e93c1d00">refresh</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/epsilonindex.h" line="40" column="11" bodyfile="src/marty/sgl/epsilonindex.cpp" bodystart="48" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1EpsilonIndex_1ade70268901bef893eb0fde744b36ad88" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr sgl::EpsilonIndex::getFactor</definition>
+        <argsstring>() const override</argsstring>
+        <name>getFactor</name>
+        <qualifiedname>sgl::EpsilonIndex::getFactor</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1a5e749ec71535aae944635a29bdb7eeba">getFactor</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/epsilonindex.h" line="42" column="15" bodyfile="src/marty/sgl/epsilonindex.cpp" bodystart="71" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1EpsilonIndex_1ac9eb67ed1d6f6811fe70b165b1a464c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref></type>
+        <definition>GExpr sgl::EpsilonIndex::getTerm</definition>
+        <argsstring>() const override</argsstring>
+        <name>getTerm</name>
+        <qualifiedname>sgl::EpsilonIndex::getTerm</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1a75034a33b0e554585206b38961960113">getTerm</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/epsilonindex.h" line="43" column="15" bodyfile="src/marty/sgl/epsilonindex.cpp" bodystart="82" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1EpsilonIndex_1a6db28b9324c305ac98000262a3b6f309" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr sgl::EpsilonIndex::toCSL</definition>
+        <argsstring>(TensorSet const &amp;) const override</argsstring>
+        <name>toCSL</name>
+        <qualifiedname>sgl::EpsilonIndex::toCSL</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1a2c88557366387dab3a16a1e71aa192a6">toCSL</reimplements>
+        <param>
+          <type><ref refid="structsgl_1_1TensorSet" kindref="compound">TensorSet</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/epsilonindex.h" line="45" column="15" bodyfile="src/marty/sgl/epsilonindex.cpp" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1EpsilonIndex_1a96d5de22665d9b6d8e669255f2448884" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool sgl::EpsilonIndex::hasPropertyWith</definition>
+        <argsstring>(GExpr const &amp;other) const override</argsstring>
+        <name>hasPropertyWith</name>
+        <qualifiedname>sgl::EpsilonIndex::hasPropertyWith</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1ade647a5eec39ac5e5e6de2d612b8cdd3">hasPropertyWith</reimplements>
+        <param>
+          <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/epsilonindex.h" line="47" column="11" bodyfile="src/marty/sgl/epsilonindex.cpp" bodystart="99" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1EpsilonIndex_1ad39dfd8fb59dc3d186a05702506b0ed2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref></type>
+        <definition>GExpr sgl::EpsilonIndex::propertyWith</definition>
+        <argsstring>(GExpr const &amp;other) const override</argsstring>
+        <name>propertyWith</name>
+        <qualifiedname>sgl::EpsilonIndex::propertyWith</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1abdacec8b02e4d1b58b9b938ae9be8e98">propertyWith</reimplements>
+        <param>
+          <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/epsilonindex.h" line="48" column="11" bodyfile="src/marty/sgl/epsilonindex.cpp" bodystart="255" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1EpsilonIndex_1a0fafdd8e62f7b590727b857ea6377935" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref></type>
+        <definition>GExpr sgl::EpsilonIndex::chisholmIdentity1</definition>
+        <argsstring>(csl::Index const &amp;mu, csl::Index const &amp;a, csl::Index const &amp;b) const</argsstring>
+        <name>chisholmIdentity1</name>
+        <qualifiedname>sgl::EpsilonIndex::chisholmIdentity1</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/epsilonindex.h" line="50" column="11" bodyfile="src/marty/sgl/epsilonindex.cpp" bodystart="109" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1EpsilonIndex_1a2e6747712104fc41392bcee6cbe566f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref></type>
+        <definition>GExpr sgl::EpsilonIndex::chisholmIdentity2</definition>
+        <argsstring>(csl::Index const &amp;mu, csl::Index const &amp;nu, csl::Index const &amp;a, csl::Index const &amp;b) const</argsstring>
+        <name>chisholmIdentity2</name>
+        <qualifiedname>sgl::EpsilonIndex::chisholmIdentity2</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>nu</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/epsilonindex.h" line="53" column="11" bodyfile="src/marty/sgl/epsilonindex.cpp" bodystart="158" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1EpsilonIndex_1a44ada5c032a8329692b64ff2ce42c910" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref></type>
+        <definition>GExpr sgl::EpsilonIndex::chisholmIdentity2A</definition>
+        <argsstring>(std::vector&lt; csl::Index &gt; const &amp;rho, csl::Index const &amp;a, csl::Index const &amp;b) const</argsstring>
+        <name>chisholmIdentity2A</name>
+        <qualifiedname>sgl::EpsilonIndex::chisholmIdentity2A</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt; const &amp;</type>
+          <declname>rho</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/epsilonindex.h" line="57" column="11" bodyfile="src/marty/sgl/epsilonindex.cpp" bodystart="207" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1EpsilonIndex_1ae8086d37e46f6516ad7f603a203324ed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref></type>
+        <definition>GExpr sgl::EpsilonIndex::chisholmIdentity2B</definition>
+        <argsstring>(std::vector&lt; csl::Index &gt; const &amp;rho, csl::Index const &amp;nu, csl::Index const &amp;a, csl::Index const &amp;b) const</argsstring>
+        <name>chisholmIdentity2B</name>
+        <qualifiedname>sgl::EpsilonIndex::chisholmIdentity2B</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt; const &amp;</type>
+          <declname>rho</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>nu</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> const &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/epsilonindex.h" line="60" column="11" bodyfile="src/marty/sgl/epsilonindex.cpp" bodystart="224" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1EpsilonIndex_1a39b7a154c5ac5ae6e27726f28cc61061" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void sgl::EpsilonIndex::print</definition>
+        <argsstring>(std::ostream &amp;out=std::cout) const override</argsstring>
+        <name>print</name>
+        <qualifiedname>sgl::EpsilonIndex::print</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1a167b1ff6b236463f5c2cb2cff18b7109">print</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/epsilonindex.h" line="65" column="10" bodyfile="src/marty/sgl/epsilonindex.cpp" bodystart="280" bodyend="286"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>sgl::AbstractGammaSym</label>
+        <link refid="classsgl_1_1AbstractGammaSym"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sgl::AbstractGeneralizedIndex</label>
+        <link refid="classsgl_1_1AbstractGeneralizedIndex"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sgl::AbstractLiteral</label>
+        <link refid="classsgl_1_1AbstractLiteral"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sgl::EpsilonIndex</label>
+        <link refid="classsgl_1_1EpsilonIndex"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::enable_shared_from_this&lt; AbstractGammaSym &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>sgl::AbstractGammaSym</label>
+        <link refid="classsgl_1_1AbstractGammaSym"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sgl::AbstractGeneralizedIndex</label>
+        <link refid="classsgl_1_1AbstractGeneralizedIndex"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sgl::AbstractLiteral</label>
+        <link refid="classsgl_1_1AbstractLiteral"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sgl::EpsilonIndex</label>
+        <link refid="classsgl_1_1EpsilonIndex"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::enable_shared_from_this&lt; AbstractGammaSym &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/sgl/epsilonindex.h" line="29" column="1" bodyfile="src/marty/sgl/epsilonindex.h" bodystart="29" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1a09bbfca288c73bce85c0d7ccdf69af3e" prot="public" virt="non-virtual"><scope>sgl::EpsilonIndex</scope><name>AbstractGeneralizedIndex</name></member>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1a4263879bbbd0b50ca72ed09ad97d2fe2" prot="public" virt="non-virtual"><scope>sgl::EpsilonIndex</scope><name>AbstractGeneralizedIndex</name></member>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1a236a1b9f14963896b7ced69761c6abb3" prot="public" virt="non-virtual"><scope>sgl::EpsilonIndex</scope><name>AbstractGeneralizedIndex</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1a1c8f91c428236fd112084566ff9f798d" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>argument</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1a6de99d632158d0544e7536f141ab4d25" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>argument</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1a3bb5fe1156b3e85bc02536077626e95e" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>begin</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1ad9662a88c502549ea76e5cfc9fa76a0c" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>begin</name></member>
+      <member refid="classsgl_1_1EpsilonIndex_1a0fafdd8e62f7b590727b857ea6377935" prot="public" virt="non-virtual"><scope>sgl::EpsilonIndex</scope><name>chisholmIdentity1</name></member>
+      <member refid="classsgl_1_1EpsilonIndex_1a2e6747712104fc41392bcee6cbe566f3" prot="public" virt="non-virtual"><scope>sgl::EpsilonIndex</scope><name>chisholmIdentity2</name></member>
+      <member refid="classsgl_1_1EpsilonIndex_1a44ada5c032a8329692b64ff2ce42c910" prot="public" virt="non-virtual"><scope>sgl::EpsilonIndex</scope><name>chisholmIdentity2A</name></member>
+      <member refid="classsgl_1_1EpsilonIndex_1ae8086d37e46f6516ad7f603a203324ed" prot="public" virt="non-virtual"><scope>sgl::EpsilonIndex</scope><name>chisholmIdentity2B</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a84a8f29afaabbe187d15d13a9fac4059" prot="public" virt="non-virtual"><scope>sgl::EpsilonIndex</scope><name>const_iterator</name></member>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1ac08a661c24e912af1c768198ac6b9489" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>contains</name></member>
+      <member refid="classsgl_1_1EpsilonIndex_1a0b3c0821e052feeec665a1d2c8e01503" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>copy</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1ad063835e8cc5fe232c4f858fb100fbf3" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>end</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1a93c2311786e32222681acf8f5ba7a5b8" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>end</name></member>
+      <member refid="classsgl_1_1EpsilonIndex_1a221598cd5d5c1afeedde301bd99b13a7" prot="public" virt="non-virtual"><scope>sgl::EpsilonIndex</scope><name>EpsilonIndex</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1ac033f1bea41f9a1001abba5b9305ce3e" prot="public" virt="non-virtual"><scope>sgl::EpsilonIndex</scope><name>errorPrint</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a62ed9a539963b9146ac05c0efafffd47" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>expr</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1acefd4f5cee624ddff586cb005ed2510a" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>expr</name></member>
+      <member refid="classsgl_1_1EpsilonIndex_1ade70268901bef893eb0fde744b36ad88" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>getFactor</name></member>
+      <member refid="classsgl_1_1EpsilonIndex_1ac9eb67ed1d6f6811fe70b165b1a464c7" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>getTerm</name></member>
+      <member refid="classsgl_1_1EpsilonIndex_1a96d5de22665d9b6d8e669255f2448884" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>hasPropertyWith</name></member>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1aa438a0225b780b24021721bf936af555" prot="public" virt="non-virtual"><scope>sgl::EpsilonIndex</scope><name>hasSelfContraction</name></member>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1a3fa15a2b50f62c59def3c14e250c3f65" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>indices</name></member>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1a11554c9d6819d035a2069976fcccd53b" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>indices</name></member>
+      <member refid="classsgl_1_1EpsilonIndex_1a06bfedce453c7b9e76b881e6d0cf2c5c" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>isZero</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a7ecc40fa38a2c881f0e1b2af81e699f4" prot="public" virt="non-virtual"><scope>sgl::EpsilonIndex</scope><name>iterator</name></member>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1a5e2818555935a472b1f3f09bd6c03874" prot="protected" virt="non-virtual"><scope>sgl::EpsilonIndex</scope><name>m_indices</name></member>
+      <member refid="classsgl_1_1EpsilonIndex_1a39b7a154c5ac5ae6e27726f28cc61061" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>print</name></member>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1a33095f4805b94fd9743c8483b6ddabd7" prot="public" virt="non-virtual"><scope>sgl::EpsilonIndex</scope><name>printIndices</name></member>
+      <member refid="classsgl_1_1EpsilonIndex_1ad39dfd8fb59dc3d186a05702506b0ed2" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>propertyWith</name></member>
+      <member refid="classsgl_1_1EpsilonIndex_1a475dffcac71c7b282765436644208f9e" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>refresh</name></member>
+      <member refid="classsgl_1_1AbstractGeneralizedIndex_1ae70dac34a52078fad33b542633671fe9" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>replace</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a37c54670ee0262b62a55279b23e7ce12" prot="public" virt="non-virtual"><scope>sgl::EpsilonIndex</scope><name>self</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a2c8730e190c88413a50d6f7b6864a97b" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>simplify</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1a138e83d163d9978b52241cc4e3e30ceb" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>size</name></member>
+      <member refid="classsgl_1_1EpsilonIndex_1a6db28b9324c305ac98000262a3b6f309" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>toCSL</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a2be842099a79d1c07130664367ed9d91" prot="public" virt="virtual"><scope>sgl::EpsilonIndex</scope><name>~AbstractGammaSym</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

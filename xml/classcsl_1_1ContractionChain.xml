@@ -1,0 +1,619 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcsl_1_1ContractionChain" kind="class" language="C++" prot="public">
+    <compoundname>csl::ContractionChain</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcsl_1_1ContractionChain_1aeb408a28acb2bbeb6f0a1450b2691b23" prot="private" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::ContractionChain::scalarFactor</definition>
+        <argsstring></argsstring>
+        <name>scalarFactor</name>
+        <qualifiedname>csl::ContractionChain::scalarFactor</qualifiedname>
+        <initializer>= CSL_1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="204" column="10" bodyfile="src/csl/indicial.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1ContractionChain_1a9cfee7ea0e3343a64fb9490add9c5a6f" prot="private" static="no" mutable="no">
+        <type>csl::vector_expr</type>
+        <definition>csl::vector_expr csl::ContractionChain::contractedTensors</definition>
+        <argsstring></argsstring>
+        <name>contractedTensors</name>
+        <qualifiedname>csl::ContractionChain::contractedTensors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="206" column="22" bodyfile="src/csl/indicial.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1ContractionChain_1a8fdc04d5f10c742240e1b1aa4a6a47a6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classcsl_1_1IndexStructure" kindref="compound">IndexStructure</ref> &gt;</type>
+        <definition>std::vector&lt;IndexStructure&gt; csl::ContractionChain::structures</definition>
+        <argsstring></argsstring>
+        <name>structures</name>
+        <qualifiedname>csl::ContractionChain::structures</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="208" column="17" bodyfile="src/csl/indicial.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1ContractionChain_1adf26414e39ef3ca13cb7288b1e944054" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::array&lt; int, 4 &gt; &gt;</type>
+        <definition>std::vector&lt;std::array&lt;int, 4&gt; &gt; csl::ContractionChain::contraction</definition>
+        <argsstring></argsstring>
+        <name>contraction</name>
+        <qualifiedname>csl::ContractionChain::contraction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="210" column="17" bodyfile="src/csl/indicial.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1ContractionChain_1a2d5130348d4f39ee8ee4bd744d1e67ed" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool csl::ContractionChain::specialContraction</definition>
+        <argsstring></argsstring>
+        <name>specialContraction</name>
+        <qualifiedname>csl::ContractionChain::specialContraction</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="212" column="10" bodyfile="src/csl/indicial.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1ContractionChain_1a78ee4f9323b359909368ea112951bf56" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool csl::ContractionChain::cycleTrace</definition>
+        <argsstring></argsstring>
+        <name>cycleTrace</name>
+        <qualifiedname>csl::ContractionChain::cycleTrace</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="214" column="10" bodyfile="src/csl/indicial.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1ContractionChain_1ad70aa41a264c599c61b86412ff11119e" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *</type>
+        <definition>const Space* csl::ContractionChain::traceSpace</definition>
+        <argsstring></argsstring>
+        <name>traceSpace</name>
+        <qualifiedname>csl::ContractionChain::traceSpace</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="216" column="17" bodyfile="src/csl/indicial.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1ContractionChain_1af97859e99feb50bc5eb5624b6a526373" prot="private" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::ContractionChain::resultOfContraction</definition>
+        <argsstring></argsstring>
+        <name>resultOfContraction</name>
+        <qualifiedname>csl::ContractionChain::resultOfContraction</qualifiedname>
+        <initializer>= <ref refid="literal_8h_1a65960e7645699e5eeed663bab0d2309b" kindref="member">CSL_UNDEF</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="218" column="10" bodyfile="src/csl/indicial.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1ab0f44a13843d5522786b81bafd5f230f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::ContractionChain::ContractionChain</definition>
+        <argsstring>()</argsstring>
+        <name>ContractionChain</name>
+        <qualifiedname>csl::ContractionChain::ContractionChain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="144" column="5" bodyfile="src/csl/indicial.cpp" bodystart="372" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1afeccdb62ce413dde2e19a8e9b8d9c776" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::ContractionChain::ContractionChain</definition>
+        <argsstring>(csl::vector_expr &amp;t_contractedTensors, std::vector&lt; IndexStructure &gt; &amp;t_structures, std::vector&lt; std::array&lt; int, 4 &gt; &gt; &amp;t_contraction)</argsstring>
+        <name>ContractionChain</name>
+        <qualifiedname>csl::ContractionChain::ContractionChain</qualifiedname>
+        <param>
+          <type>csl::vector_expr &amp;</type>
+          <declname>t_contractedTensors</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1IndexStructure" kindref="compound">IndexStructure</ref> &gt; &amp;</type>
+          <declname>t_structures</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::array&lt; int, 4 &gt; &gt; &amp;</type>
+          <declname>t_contraction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="146" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1afe5c9227d0eab63fbd7d91c3d28e1448" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::ContractionChain::ContractionChain</definition>
+        <argsstring>(const csl::vector_expr &amp;args, const Expr &amp;res=CSL_UNDEF)</argsstring>
+        <name>ContractionChain</name>
+        <qualifiedname>csl::ContractionChain::ContractionChain</qualifiedname>
+        <param>
+          <type>const csl::vector_expr &amp;</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>res</declname>
+          <defval><ref refid="literal_8h_1a65960e7645699e5eeed663bab0d2309b" kindref="member">CSL_UNDEF</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="150" column="14" bodyfile="src/csl/indicial.cpp" bodystart="386" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1aac71522ecbe2c00f9322ed551cbcdb5a" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::ContractionChain::ContractionChain</definition>
+        <argsstring>(const Expr &amp;expr, const Expr &amp;res=CSL_UNDEF)</argsstring>
+        <name>ContractionChain</name>
+        <qualifiedname>csl::ContractionChain::ContractionChain</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>res</declname>
+          <defval><ref refid="literal_8h_1a65960e7645699e5eeed663bab0d2309b" kindref="member">CSL_UNDEF</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="153" column="14" bodyfile="src/csl/indicial.cpp" bodystart="403" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1a9f1a3a877951274e2f2786cbbd968662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::ContractionChain::ContractionChain</definition>
+        <argsstring>(const ContractionChain &amp;other)=default</argsstring>
+        <name>ContractionChain</name>
+        <qualifiedname>csl::ContractionChain::ContractionChain</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1ContractionChain" kindref="compound">ContractionChain</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="156" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1af54d4b8481f8465ae51c5e87b0b5434b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1ContractionChain" kindref="compound">ContractionChain</ref> &amp;</type>
+        <definition>ContractionChain &amp; csl::ContractionChain::operator=</definition>
+        <argsstring>(const ContractionChain &amp;other)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>csl::ContractionChain::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1ContractionChain" kindref="compound">ContractionChain</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="158" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1a8a30633e8132c8d4b9fa6f0bc6c38d17" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1ContractionChain" kindref="compound">ContractionChain</ref> &gt;</type>
+        <definition>optional&lt; ContractionChain &gt; csl::ContractionChain::splitAndEvaluate</definition>
+        <argsstring>() const</argsstring>
+        <name>splitAndEvaluate</name>
+        <qualifiedname>csl::ContractionChain::splitAndEvaluate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="160" column="19" bodyfile="src/csl/indicial.cpp" bodystart="543" bodyend="572"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1ae4b172b81bbd96bba5a60039d671c682" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::ContractionChain::contains</definition>
+        <argsstring>(const Expr &amp;tensor) const</argsstring>
+        <name>contains</name>
+        <qualifiedname>csl::ContractionChain::contains</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>tensor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="162" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1ae976d8d0705954fe802c665d89ad5d91" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::ContractionChain::getResult</definition>
+        <argsstring>() const</argsstring>
+        <name>getResult</name>
+        <qualifiedname>csl::ContractionChain::getResult</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="164" column="10" bodyfile="src/csl/indicial.cpp" bodystart="418" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1ad2605b9627170b986dc86f90985fa317" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>optional&lt; vector&lt; int &gt; &gt; csl::ContractionChain::comparison</definition>
+        <argsstring>(const ContractionChain &amp;other, Expr &amp;remnant) const</argsstring>
+        <name>comparison</name>
+        <qualifiedname>csl::ContractionChain::comparison</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1ContractionChain" kindref="compound">ContractionChain</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>remnant</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="166" column="19" bodyfile="src/csl/indicial.cpp" bodystart="584" bodyend="630"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1a2ae73bd4668801aada4f4cae8af956ed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::ContractionChain::operator==</definition>
+        <argsstring>(const ContractionChain &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>csl::ContractionChain::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1ContractionChain" kindref="compound">ContractionChain</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="169" column="10" bodyfile="src/csl/indicial.cpp" bodystart="632" bodyend="637"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1a1bd8f385bdec792e07bc86b54846b70a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::ContractionChain::operator&lt;</definition>
+        <argsstring>(ContractionChain const &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>csl::ContractionChain::operator&lt;</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1ContractionChain" kindref="compound">ContractionChain</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="171" column="5" bodyfile="src/csl/indicial.cpp" bodystart="639" bodyend="642"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classcsl_1_1ContractionChain_1a71f5717d5e7784d1b57f117c9211aafd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;fout, const ContractionChain &amp;c)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>csl::ContractionChain::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1ContractionChain" kindref="compound">ContractionChain</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="173" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1ac12458a2acc82f5840c8e7bd84639024" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::ContractionChain::gatherContractions</definition>
+        <argsstring>()</argsstring>
+        <name>gatherContractions</name>
+        <qualifiedname>csl::ContractionChain::gatherContractions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="177" column="10" bodyfile="src/csl/indicial.cpp" bodystart="428" bodyend="448"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1a130c77fafee2d04dfd898bce2fca9720" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>vector&lt; vector&lt; int &gt; &gt; csl::ContractionChain::getPermutations</definition>
+        <argsstring>(const ContractionChain &amp;other) const</argsstring>
+        <name>getPermutations</name>
+        <qualifiedname>csl::ContractionChain::getPermutations</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1ContractionChain" kindref="compound">ContractionChain</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="180" column="5" bodyfile="src/csl/indicial.cpp" bodystart="451" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1a0090a158ce275e20d03ae15e9ae07eb9" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1ContractionChain" kindref="compound">ContractionChain</ref> &gt;</type>
+        <definition>optional&lt; ContractionChain &gt; csl::ContractionChain::createChain</definition>
+        <argsstring>(int nChains, const std::vector&lt; int &gt; &amp;chainNumber) const</argsstring>
+        <name>createChain</name>
+        <qualifiedname>csl::ContractionChain::createChain</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>nChains</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>chainNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="183" column="5" bodyfile="src/csl/indicial.cpp" bodystart="482" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1a3ae5495ac486e09bd818f81cf86dd2fb" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::ContractionChain::compareContractions</definition>
+        <argsstring>(const std::array&lt; int, 4 &gt; &amp;c1, const std::array&lt; int, 4 &gt; &amp;c2) const</argsstring>
+        <name>compareContractions</name>
+        <qualifiedname>csl::ContractionChain::compareContractions</qualifiedname>
+        <param>
+          <type>const std::array&lt; int, 4 &gt; &amp;</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>const std::array&lt; int, 4 &gt; &amp;</type>
+          <declname>c2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="188" column="10" bodyfile="src/csl/indicial.cpp" bodystart="574" bodyend="581"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1a5e3ce22d2abac389a922867dd8d5b962" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::ContractionChain::detectSpecialContraction</definition>
+        <argsstring>()</argsstring>
+        <name>detectSpecialContraction</name>
+        <qualifiedname>csl::ContractionChain::detectSpecialContraction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="191" column="10" bodyfile="src/csl/indicial.cpp" bodystart="644" bodyend="707"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1a39d7fdd5b1354fa615e8dd911577e270" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::ContractionChain::detectCycle</definition>
+        <argsstring>(const Space *space)</argsstring>
+        <name>detectCycle</name>
+        <qualifiedname>csl::ContractionChain::detectCycle</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *</type>
+          <declname>space</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="193" column="10" bodyfile="src/csl/indicial.cpp" bodystart="720" bodyend="766"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1a33469f5664ebb43074ca6c70bb2b80e4" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::ContractionChain::isGoodIndex</definition>
+        <argsstring>(csl::Space const *space, size_t iTensor, size_t iIndex) const</argsstring>
+        <name>isGoodIndex</name>
+        <qualifiedname>csl::ContractionChain::isGoodIndex</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> const *</type>
+          <declname>space</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>iTensor</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>iIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="196" column="5" bodyfile="src/csl/indicial.cpp" bodystart="768" bodyend="774"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1abba7ccaee7579d5e1412f663b9df9567" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref>, <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> &gt;</type>
+        <definition>std::pair&lt; csl::Index, csl::Index &gt; csl::ContractionChain::getContractedIndices</definition>
+        <argsstring>(csl::Space const *space, size_t iTensor) const</argsstring>
+        <name>getContractedIndices</name>
+        <qualifiedname>csl::ContractionChain::getContractedIndices</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> const *</type>
+          <declname>space</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>iTensor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="199" column="5" bodyfile="src/csl/indicial.cpp" bodystart="777" bodyend="794"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1a1f78327896813a27af6804e13a26d445" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; size_t &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt; size_t &gt; &gt; csl::ContractionChain::getCycles</definition>
+        <argsstring>(const Space *space)</argsstring>
+        <name>getCycles</name>
+        <qualifiedname>csl::ContractionChain::getCycles</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Space" kindref="compound">Space</ref> *</type>
+          <declname>space</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="201" column="17" bodyfile="src/csl/indicial.cpp" bodystart="797" bodyend="842"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcsl_1_1ContractionChain_1a4e4e5e3e8e2787cbcf0f5ba2664dbe54" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::ContractionChain::mergeChains</definition>
+        <argsstring>(std::vector&lt; int &gt; &amp;chainNumber, int chain1, int chain2)</argsstring>
+        <name>mergeChains</name>
+        <qualifiedname>csl::ContractionChain::mergeChains</qualifiedname>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>chainNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>chain1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>chain2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/indicial.h" line="186" column="5" bodyfile="src/csl/indicial.cpp" bodystart="530" bodyend="541"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/csl/indicial.h" line="141" column="1" bodyfile="src/csl/indicial.h" bodystart="141" bodyend="219"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1ContractionChain_1a3ae5495ac486e09bd818f81cf86dd2fb" prot="private" virt="non-virtual"><scope>csl::ContractionChain</scope><name>compareContractions</name></member>
+      <member refid="classcsl_1_1ContractionChain_1ad2605b9627170b986dc86f90985fa317" prot="public" virt="non-virtual"><scope>csl::ContractionChain</scope><name>comparison</name></member>
+      <member refid="classcsl_1_1ContractionChain_1ae4b172b81bbd96bba5a60039d671c682" prot="public" virt="non-virtual"><scope>csl::ContractionChain</scope><name>contains</name></member>
+      <member refid="classcsl_1_1ContractionChain_1a9cfee7ea0e3343a64fb9490add9c5a6f" prot="private" virt="non-virtual"><scope>csl::ContractionChain</scope><name>contractedTensors</name></member>
+      <member refid="classcsl_1_1ContractionChain_1adf26414e39ef3ca13cb7288b1e944054" prot="private" virt="non-virtual"><scope>csl::ContractionChain</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1ContractionChain_1ab0f44a13843d5522786b81bafd5f230f" prot="public" virt="non-virtual"><scope>csl::ContractionChain</scope><name>ContractionChain</name></member>
+      <member refid="classcsl_1_1ContractionChain_1afeccdb62ce413dde2e19a8e9b8d9c776" prot="public" virt="non-virtual"><scope>csl::ContractionChain</scope><name>ContractionChain</name></member>
+      <member refid="classcsl_1_1ContractionChain_1afe5c9227d0eab63fbd7d91c3d28e1448" prot="public" virt="non-virtual"><scope>csl::ContractionChain</scope><name>ContractionChain</name></member>
+      <member refid="classcsl_1_1ContractionChain_1aac71522ecbe2c00f9322ed551cbcdb5a" prot="public" virt="non-virtual"><scope>csl::ContractionChain</scope><name>ContractionChain</name></member>
+      <member refid="classcsl_1_1ContractionChain_1a9f1a3a877951274e2f2786cbbd968662" prot="public" virt="non-virtual"><scope>csl::ContractionChain</scope><name>ContractionChain</name></member>
+      <member refid="classcsl_1_1ContractionChain_1a0090a158ce275e20d03ae15e9ae07eb9" prot="private" virt="non-virtual"><scope>csl::ContractionChain</scope><name>createChain</name></member>
+      <member refid="classcsl_1_1ContractionChain_1a78ee4f9323b359909368ea112951bf56" prot="private" virt="non-virtual"><scope>csl::ContractionChain</scope><name>cycleTrace</name></member>
+      <member refid="classcsl_1_1ContractionChain_1a39d7fdd5b1354fa615e8dd911577e270" prot="private" virt="non-virtual"><scope>csl::ContractionChain</scope><name>detectCycle</name></member>
+      <member refid="classcsl_1_1ContractionChain_1a5e3ce22d2abac389a922867dd8d5b962" prot="private" virt="non-virtual"><scope>csl::ContractionChain</scope><name>detectSpecialContraction</name></member>
+      <member refid="classcsl_1_1ContractionChain_1ac12458a2acc82f5840c8e7bd84639024" prot="private" virt="non-virtual"><scope>csl::ContractionChain</scope><name>gatherContractions</name></member>
+      <member refid="classcsl_1_1ContractionChain_1abba7ccaee7579d5e1412f663b9df9567" prot="private" virt="non-virtual"><scope>csl::ContractionChain</scope><name>getContractedIndices</name></member>
+      <member refid="classcsl_1_1ContractionChain_1a1f78327896813a27af6804e13a26d445" prot="private" virt="non-virtual"><scope>csl::ContractionChain</scope><name>getCycles</name></member>
+      <member refid="classcsl_1_1ContractionChain_1a130c77fafee2d04dfd898bce2fca9720" prot="private" virt="non-virtual"><scope>csl::ContractionChain</scope><name>getPermutations</name></member>
+      <member refid="classcsl_1_1ContractionChain_1ae976d8d0705954fe802c665d89ad5d91" prot="public" virt="non-virtual"><scope>csl::ContractionChain</scope><name>getResult</name></member>
+      <member refid="classcsl_1_1ContractionChain_1a33469f5664ebb43074ca6c70bb2b80e4" prot="private" virt="non-virtual"><scope>csl::ContractionChain</scope><name>isGoodIndex</name></member>
+      <member refid="classcsl_1_1ContractionChain_1a4e4e5e3e8e2787cbcf0f5ba2664dbe54" prot="private" virt="non-virtual"><scope>csl::ContractionChain</scope><name>mergeChains</name></member>
+      <member refid="classcsl_1_1ContractionChain_1a1bd8f385bdec792e07bc86b54846b70a" prot="public" virt="non-virtual"><scope>csl::ContractionChain</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1ContractionChain_1a71f5717d5e7784d1b57f117c9211aafd" prot="public" virt="non-virtual"><scope>csl::ContractionChain</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classcsl_1_1ContractionChain_1af54d4b8481f8465ae51c5e87b0b5434b" prot="public" virt="non-virtual"><scope>csl::ContractionChain</scope><name>operator=</name></member>
+      <member refid="classcsl_1_1ContractionChain_1a2ae73bd4668801aada4f4cae8af956ed" prot="public" virt="non-virtual"><scope>csl::ContractionChain</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1ContractionChain_1af97859e99feb50bc5eb5624b6a526373" prot="private" virt="non-virtual"><scope>csl::ContractionChain</scope><name>resultOfContraction</name></member>
+      <member refid="classcsl_1_1ContractionChain_1aeb408a28acb2bbeb6f0a1450b2691b23" prot="private" virt="non-virtual"><scope>csl::ContractionChain</scope><name>scalarFactor</name></member>
+      <member refid="classcsl_1_1ContractionChain_1a2d5130348d4f39ee8ee4bd744d1e67ed" prot="private" virt="non-virtual"><scope>csl::ContractionChain</scope><name>specialContraction</name></member>
+      <member refid="classcsl_1_1ContractionChain_1a8a30633e8132c8d4b9fa6f0bc6c38d17" prot="public" virt="non-virtual"><scope>csl::ContractionChain</scope><name>splitAndEvaluate</name></member>
+      <member refid="classcsl_1_1ContractionChain_1a8fdc04d5f10c742240e1b1aa4a6a47a6" prot="private" virt="non-virtual"><scope>csl::ContractionChain</scope><name>structures</name></member>
+      <member refid="classcsl_1_1ContractionChain_1ad70aa41a264c599c61b86412ff11119e" prot="private" virt="non-virtual"><scope>csl::ContractionChain</scope><name>traceSpace</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,636 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcsl_1_1Permutation" kind="class" language="C++" prot="public">
+    <compoundname>csl::Permutation</compoundname>
+    <includes refid="symmetry_8h" local="no">symmetry.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcsl_1_1Permutation_1acabb09e95241782aa19e07ee6a97e9f7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int csl::Permutation::order</definition>
+        <argsstring></argsstring>
+        <name>order</name>
+        <qualifiedname>csl::Permutation::order</qualifiedname>
+        <briefdescription>
+<para>Order of the <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref>, i.e. the number of times one needs to compose it with itself to recover the identity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="47" column="9" bodyfile="src/csl/symmetry.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1Permutation_1ac6cbc30f8dffabf986cf7e135eb68587" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int csl::Permutation::sign</definition>
+        <argsstring></argsstring>
+        <name>sign</name>
+        <qualifiedname>csl::Permutation::sign</qualifiedname>
+        <briefdescription>
+<para>Sign of the permutation, i.e. its distance to the identity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="52" column="9" bodyfile="src/csl/symmetry.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1Permutation_1a5bcf8c479a213bfc6e6f46ba0de1cb4d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int csl::Permutation::symmetry</definition>
+        <argsstring></argsstring>
+        <name>symmetry</name>
+        <qualifiedname>csl::Permutation::symmetry</qualifiedname>
+        <briefdescription>
+<para><ref refid="classcsl_1_1Symmetry" kindref="compound">Symmetry</ref> corresponding to the permutation, depending on the symmetry of the underlying <ref refid="classcsl_1_1TensorElement" kindref="compound">TensorElement</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="58" column="9" bodyfile="src/csl/symmetry.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1Permutation_1abe650cef79146824c64c191ffb8413ac" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; csl::Permutation::permutation</definition>
+        <argsstring></argsstring>
+        <name>permutation</name>
+        <qualifiedname>csl::Permutation::permutation</qualifiedname>
+        <briefdescription>
+<para>std::vector of integers representing the permutation. Each integers between 0 and <bold>size</bold> - 1 are represented, vector of size <bold>size</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="65" column="17" bodyfile="src/csl/symmetry.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcsl_1_1Permutation_1a9bad0619514f9d3387cf03e887e87a10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::Permutation::Permutation</definition>
+        <argsstring>()</argsstring>
+        <name>Permutation</name>
+        <qualifiedname>csl::Permutation::Permutation</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="71" column="5" bodyfile="src/csl/symmetry.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Permutation_1a566c7fe4c897cd8cca70f11c22e4bfd2" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::Permutation::Permutation</definition>
+        <argsstring>(int n)</argsstring>
+        <name>Permutation</name>
+        <qualifiedname>csl::Permutation::Permutation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the identity permutation of <bold>n</bold> elements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of elements of the permutation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="78" column="14" bodyfile="src/csl/symmetry.cpp" bodystart="38" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Permutation_1a68d93318b33dbcf56c07f02b683fa937" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::Permutation::Permutation</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;t_permutation)</argsstring>
+        <name>Permutation</name>
+        <qualifiedname>csl::Permutation::Permutation</qualifiedname>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>t_permutation</declname>
+        </param>
+        <briefdescription>
+<para>constructor that takes a vector of integers corresponding to the permutation. All integers between 0 and the size of <bold>t_permutation-1</bold> must be represented. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_permutation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The complete permutation in the form of a std::vector&lt;int&gt;. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="88" column="14" bodyfile="src/csl/symmetry.cpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Permutation_1aea047cac52ceef3ae36da245a81d50af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::Permutation::Permutation</definition>
+        <argsstring>(int n, const std::vector&lt; int &gt; &amp;list)</argsstring>
+        <name>Permutation</name>
+        <qualifiedname>csl::Permutation::Permutation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>Constructor that initializes the size of the <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> to <bold>n</bold>, and takes one cycle (that concerns possibly only few elements) as initialization. For example, <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref>(5,{1,0,2}) intializes the permutation to (2,0,1,3,4). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total size of the permutation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Only cycle in the permutation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="99" column="5" bodyfile="src/csl/symmetry.cpp" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Permutation_1a371054d1755265dafd43b9977365171c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::Permutation::Permutation</definition>
+        <argsstring>(int n, const std::vector&lt; int &gt; &amp;list, int sym)</argsstring>
+        <name>Permutation</name>
+        <qualifiedname>csl::Permutation::Permutation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="101" column="5" bodyfile="src/csl/symmetry.cpp" bodystart="55" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Permutation_1a8d20bf3e5bc7253815e260425668d9c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::Permutation::Permutation</definition>
+        <argsstring>(int n, const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;list)</argsstring>
+        <name>Permutation</name>
+        <qualifiedname>csl::Permutation::Permutation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>Constructor that initializes the size of the <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> to <bold>n</bold>, and takes several cycles (that concerns possibly only few elements) as initialization. For example <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref>(10,{{6,7},{1,0,2}}) initializes the permutation to (2,0,1,3,4,5,7,6,8,9). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total size of the permutation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cycles in the permutation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Here just test of validity of the cycle</para>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="111" column="5" bodyfile="src/csl/symmetry.cpp" bodystart="61" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Permutation_1a4dfe13e034abb2f0c07d7b5740fbdb52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::Permutation::Permutation</definition>
+        <argsstring>(const Permutation &amp;permutation)=default</argsstring>
+        <name>Permutation</name>
+        <qualifiedname>csl::Permutation::Permutation</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> &amp;</type>
+          <declname>permutation</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>permutation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> to copy. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="118" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Permutation_1ae8acae791e3e62bc9fa03880caa625ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>csl::Permutation::~Permutation</definition>
+        <argsstring>()</argsstring>
+        <name>~Permutation</name>
+        <qualifiedname>csl::Permutation::~Permutation</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="123" column="5" bodyfile="src/csl/symmetry.h" bodystart="123" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Permutation_1a784ea8228496eb95cfee1b154706f22f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int csl::Permutation::getOrder</definition>
+        <argsstring>()</argsstring>
+        <name>getOrder</name>
+        <qualifiedname>csl::Permutation::getOrder</qualifiedname>
+        <briefdescription>
+<para>This function calculates the order of the permutation the first time, or just return it if it has already been calculated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The order of the permutation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="133" column="9" bodyfile="src/csl/symmetry.cpp" bodystart="94" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Permutation_1addbb3b81b418b82e7ffd117481f20076" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int csl::Permutation::getSign</definition>
+        <argsstring>()</argsstring>
+        <name>getSign</name>
+        <qualifiedname>csl::Permutation::getSign</qualifiedname>
+        <briefdescription>
+<para>This function calculates the sign of the permutation the first time, or just return it if it has already been calculated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The sign of the permutation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="141" column="9" bodyfile="src/csl/symmetry.cpp" bodystart="109" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Permutation_1aab98401f8dcf633564c05febc2d558fc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int csl::Permutation::getSymmetry</definition>
+        <argsstring>() const</argsstring>
+        <name>getSymmetry</name>
+        <qualifiedname>csl::Permutation::getSymmetry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The symmetry factor the user associated with the permutation, (1 if symmetric -1 if antisymmetric). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="147" column="9" bodyfile="src/csl/symmetry.cpp" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Permutation_1a31b6397f8a71074a3aa3caad9ba4bab2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>vector&lt; int &gt; csl::Permutation::getPermutation</definition>
+        <argsstring>() const</argsstring>
+        <name>getPermutation</name>
+        <qualifiedname>csl::Permutation::getPermutation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The vector of integers defining the permutation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="152" column="17" bodyfile="src/csl/symmetry.cpp" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Permutation_1a04828f5c5f1c09113c36fc7e4046004f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::Permutation::setSymmetry</definition>
+        <argsstring>(int t_symmetry)</argsstring>
+        <name>setSymmetry</name>
+        <qualifiedname>csl::Permutation::setSymmetry</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>t_symmetry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_symmetry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New symmetry factor, =1 if symmetric, =-1 if antisymmetric. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="158" column="10" bodyfile="src/csl/symmetry.cpp" bodystart="135" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Permutation_1aa89dd54127c01a60e0cf23ff61275f7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::Permutation::adjustToSize</definition>
+        <argsstring>(size_t newSize)</argsstring>
+        <name>adjustToSize</name>
+        <qualifiedname>csl::Permutation::adjustToSize</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>newSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="160" column="10" bodyfile="src/csl/symmetry.cpp" bodystart="142" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Permutation_1af70fa77ad25b494806f111fe3f1c3d1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::Permutation::applyRedefinition</definition>
+        <argsstring>(const std::vector&lt; size_t &gt; &amp;redefinition)</argsstring>
+        <name>applyRedefinition</name>
+        <qualifiedname>csl::Permutation::applyRedefinition</qualifiedname>
+        <param>
+          <type>const std::vector&lt; size_t &gt; &amp;</type>
+          <declname>redefinition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="162" column="10" bodyfile="src/csl/symmetry.cpp" bodystart="150" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Permutation_1a8ee98fa41c2bacc20741cc26fdf36648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> &amp;</type>
+        <definition>Permutation &amp; csl::Permutation::operator=</definition>
+        <argsstring>(const Permutation &amp;t_permutation)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>csl::Permutation::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> &amp;</type>
+          <declname>t_permutation</declname>
+        </param>
+        <briefdescription>
+<para>Assignement operator. Copies <bold>t_permutation</bold> and returns a reference to *this. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_permutation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> to copy.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the modified object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="172" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Permutation_1a9bfd2d0273205d283c56b76a9ad73e2a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref></type>
+        <definition>Permutation csl::Permutation::operator*</definition>
+        <argsstring>(const Permutation &amp;t_permutation) const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>csl::Permutation::operator*</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> &amp;</type>
+          <declname>t_permutation</declname>
+        </param>
+        <briefdescription>
+<para>operator*, Compose two <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> objects and returns the result in a new <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_permutation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> to multiply to *this.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> that is the product of *this and <bold>t_permutation</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="182" column="17" bodyfile="src/csl/symmetry.cpp" bodystart="196" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Permutation_1ad536ca2c88b4455cca2cc47c631707de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::Permutation::operator==</definition>
+        <argsstring>(const Permutation &amp;t_permutation) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>csl::Permutation::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> &amp;</type>
+          <declname>t_permutation</declname>
+        </param>
+        <briefdescription>
+<para>operator==, tells if two <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> objects are equal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_permutation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> to compare to *this.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the two <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> objects are equal. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="192" column="10" bodyfile="src/csl/symmetry.cpp" bodystart="180" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Permutation_1aa6130ce3964f0e341334bfb864b1c842" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::Permutation::operator!=</definition>
+        <argsstring>(const Permutation &amp;t_permuation) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>csl::Permutation::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> &amp;</type>
+          <declname>t_permuation</declname>
+        </param>
+        <briefdescription>
+<para>operator!=, tells if two <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> objects are not equal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_permutation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> to compare to *this.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>False</bold> if the two <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> objects are equal. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>True</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="202" column="10" bodyfile="src/csl/symmetry.cpp" bodystart="191" bodyend="194"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classcsl_1_1Permutation_1a5243ee495ca9d0ac7709b4ed7eefc686" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;fout, const Permutation &amp;permutation)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>csl::Permutation::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> &amp;</type>
+          <declname>permutation</declname>
+        </param>
+        <briefdescription>
+<para>operator&lt;&lt;, displays the <ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> <bold>t_permutation</bold> in the output <bold>fout</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output flux. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>permutation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Permutation" kindref="compound">Permutation</ref> to diplay.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the modified flux <bold>fout</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/symmetry.h" line="213" column="12" bodyfile="src/csl/symmetry.cpp" bodystart="220" bodyend="227"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Handles a std::vector of integers that represents the permutation of n indices, with a possible symmetry of an <ref refid="classcsl_1_1IndexStructure" kindref="compound">IndexStructure</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/csl/symmetry.h" line="38" column="1" bodyfile="src/csl/symmetry.h" bodystart="38" bodyend="215"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1Permutation_1aa89dd54127c01a60e0cf23ff61275f7c" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>adjustToSize</name></member>
+      <member refid="classcsl_1_1Permutation_1af70fa77ad25b494806f111fe3f1c3d1b" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>applyRedefinition</name></member>
+      <member refid="classcsl_1_1Permutation_1a784ea8228496eb95cfee1b154706f22f" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>getOrder</name></member>
+      <member refid="classcsl_1_1Permutation_1a31b6397f8a71074a3aa3caad9ba4bab2" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>getPermutation</name></member>
+      <member refid="classcsl_1_1Permutation_1addbb3b81b418b82e7ffd117481f20076" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>getSign</name></member>
+      <member refid="classcsl_1_1Permutation_1aab98401f8dcf633564c05febc2d558fc" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>getSymmetry</name></member>
+      <member refid="classcsl_1_1Permutation_1aa6130ce3964f0e341334bfb864b1c842" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Permutation_1a9bfd2d0273205d283c56b76a9ad73e2a" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>operator*</name></member>
+      <member refid="classcsl_1_1Permutation_1a5243ee495ca9d0ac7709b4ed7eefc686" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classcsl_1_1Permutation_1a8ee98fa41c2bacc20741cc26fdf36648" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>operator=</name></member>
+      <member refid="classcsl_1_1Permutation_1ad536ca2c88b4455cca2cc47c631707de" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Permutation_1acabb09e95241782aa19e07ee6a97e9f7" prot="private" virt="non-virtual"><scope>csl::Permutation</scope><name>order</name></member>
+      <member refid="classcsl_1_1Permutation_1a9bad0619514f9d3387cf03e887e87a10" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>Permutation</name></member>
+      <member refid="classcsl_1_1Permutation_1a566c7fe4c897cd8cca70f11c22e4bfd2" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>Permutation</name></member>
+      <member refid="classcsl_1_1Permutation_1a68d93318b33dbcf56c07f02b683fa937" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>Permutation</name></member>
+      <member refid="classcsl_1_1Permutation_1aea047cac52ceef3ae36da245a81d50af" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>Permutation</name></member>
+      <member refid="classcsl_1_1Permutation_1a371054d1755265dafd43b9977365171c" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>Permutation</name></member>
+      <member refid="classcsl_1_1Permutation_1a8d20bf3e5bc7253815e260425668d9c3" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>Permutation</name></member>
+      <member refid="classcsl_1_1Permutation_1a4dfe13e034abb2f0c07d7b5740fbdb52" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>Permutation</name></member>
+      <member refid="classcsl_1_1Permutation_1abe650cef79146824c64c191ffb8413ac" prot="private" virt="non-virtual"><scope>csl::Permutation</scope><name>permutation</name></member>
+      <member refid="classcsl_1_1Permutation_1a04828f5c5f1c09113c36fc7e4046004f" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>setSymmetry</name></member>
+      <member refid="classcsl_1_1Permutation_1ac6cbc30f8dffabf986cf7e135eb68587" prot="private" virt="non-virtual"><scope>csl::Permutation</scope><name>sign</name></member>
+      <member refid="classcsl_1_1Permutation_1a5bcf8c479a213bfc6e6f46ba0de1cb4d" prot="private" virt="non-virtual"><scope>csl::Permutation</scope><name>symmetry</name></member>
+      <member refid="classcsl_1_1Permutation_1ae8acae791e3e62bc9fa03880caa625ab" prot="public" virt="non-virtual"><scope>csl::Permutation</scope><name>~Permutation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

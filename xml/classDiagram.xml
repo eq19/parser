@@ -1,0 +1,1960 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classDiagram" kind="class" language="C++" prot="public">
+    <compoundname>Diagram</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classDiagram_1af9db4b672c4d3104f5541893e08e1809" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class MainWindow</definition>
+        <argsstring></argsstring>
+        <name>MainWindow</name>
+        <qualifiedname>Diagram::MainWindow</qualifiedname>
+        <param>
+          <type><ref refid="classMainWindow" kindref="compound">MainWindow</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="56" column="18" bodyfile="src/grafed/gui/diagram.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classDiagram_1a6222eecbfa5851ca01ae02121d655b6a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class MainWidget</definition>
+        <argsstring></argsstring>
+        <name>MainWidget</name>
+        <qualifiedname>Diagram::MainWidget</qualifiedname>
+        <param>
+          <type><ref refid="classMainWidget" kindref="compound">MainWidget</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="57" column="18" bodyfile="src/grafed/gui/diagram.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classDiagram_1a9d2c129b5dafe80c01a5bd6f510dbe29" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class DiagramRenderer</definition>
+        <argsstring></argsstring>
+        <name>DiagramRenderer</name>
+        <qualifiedname>Diagram::DiagramRenderer</qualifiedname>
+        <param>
+          <type><ref refid="classDiagramRenderer" kindref="compound">DiagramRenderer</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="58" column="18" bodyfile="src/grafed/gui/diagram.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classDiagram_1a23cd627fd79ddf26c485e74034495944" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class DiagramWidget</definition>
+        <argsstring></argsstring>
+        <name>DiagramWidget</name>
+        <qualifiedname>Diagram::DiagramWidget</qualifiedname>
+        <param>
+          <type><ref refid="classDiagramWidget" kindref="compound">DiagramWidget</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="59" column="18" bodyfile="src/grafed/gui/diagram.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classDiagram_1ad2c8ba04c9d9989ccbf3c5aba267a3d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Edge</definition>
+        <argsstring></argsstring>
+        <name>Edge</name>
+        <qualifiedname>Diagram::Edge</qualifiedname>
+        <param>
+          <type><ref refid="classEdge" kindref="compound">Edge</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="60" column="18" bodyfile="src/grafed/gui/diagram.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classDiagram_1a6db9d28bd448a131448276ee03de1e6d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Node</definition>
+        <argsstring></argsstring>
+        <name>Node</name>
+        <qualifiedname>Diagram::Node</qualifiedname>
+        <param>
+          <type><ref refid="classNode" kindref="compound">Node</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="61" column="18" bodyfile="src/grafed/gui/diagram.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classDiagram_1a6e68c9b4bbdf05fe1346174680c8b322" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>qreal</type>
+        <definition>qreal Diagram::scaleForGraph</definition>
+        <argsstring></argsstring>
+        <name>scaleForGraph</name>
+        <qualifiedname>Diagram::scaleForGraph</qualifiedname>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="176" column="28" bodyfile="src/grafed/gui/diagram.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classDiagram_1abbf16b5824a3ac4743b5f101cc5fe922" prot="private" static="yes" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string Diagram::defaultFileName</definition>
+        <argsstring></argsstring>
+        <name>defaultFileName</name>
+        <qualifiedname>Diagram::defaultFileName</qualifiedname>
+        <initializer>= &quot;None&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="179" column="37" bodyfile="src/grafed/gui/diagram.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classDiagram_1ab2df9f5038fab924d7dfda7f4d8ee7a4" prot="private" static="no" mutable="no">
+        <type><ref refid="classDiagramRenderer" kindref="compound">DiagramRenderer</ref> *</type>
+        <definition>DiagramRenderer* Diagram::renderer</definition>
+        <argsstring></argsstring>
+        <name>renderer</name>
+        <qualifiedname>Diagram::renderer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="181" column="32" bodyfile="src/grafed/gui/diagram.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1af9a562feb00faed35e8d2fc3eb047008" prot="private" static="no" mutable="no">
+        <type><ref refid="classDiagramWidget" kindref="compound">DiagramWidget</ref> *</type>
+        <definition>DiagramWidget* Diagram::widget</definition>
+        <argsstring></argsstring>
+        <name>widget</name>
+        <qualifiedname>Diagram::widget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="182" column="32" bodyfile="src/grafed/gui/diagram.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1a7bf60ec6c088af7dc363bfe7b206721c" prot="private" static="no" mutable="no">
+        <type><ref refid="classdrawer_1_1Graph" kindref="compound">drawer::Graph</ref></type>
+        <definition>drawer::Graph Diagram::graph</definition>
+        <argsstring></argsstring>
+        <name>graph</name>
+        <qualifiedname>Diagram::graph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="183" column="33" bodyfile="src/grafed/gui/diagram.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1a7378a11b4a0c8cbcfe973050c21836bc" prot="private" static="no" mutable="yes">
+        <type><ref refid="classlatexcompiler" kindref="compound">latexcompiler</ref> *</type>
+        <definition>latexcompiler* Diagram::latexComp</definition>
+        <argsstring></argsstring>
+        <name>latexComp</name>
+        <qualifiedname>Diagram::latexComp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="184" column="32" bodyfile="src/grafed/gui/diagram.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1aae2123ecd384c6cef5f965eb180ad340" prot="private" static="no" mutable="yes">
+        <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">drawer::LatexLinker</ref></type>
+        <definition>drawer::LatexLinker Diagram::link</definition>
+        <argsstring></argsstring>
+        <name>link</name>
+        <qualifiedname>Diagram::link</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="185" column="33" bodyfile="src/grafed/gui/diagram.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1a6b53fd2c1c53d5d1c0cb4034f3570958" prot="private" static="no" mutable="no">
+        <type><ref refid="classNode" kindref="compound">Node</ref> *</type>
+        <definition>Node* Diagram::cursor</definition>
+        <argsstring></argsstring>
+        <name>cursor</name>
+        <qualifiedname>Diagram::cursor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="186" column="32" bodyfile="src/grafed/gui/diagram.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1adbb6f05faf7aa2b4a14b3450861f7d9f" prot="private" static="no" mutable="no">
+        <type><ref refid="classEdge" kindref="compound">Edge</ref> *</type>
+        <definition>Edge* Diagram::draggedEdge</definition>
+        <argsstring></argsstring>
+        <name>draggedEdge</name>
+        <qualifiedname>Diagram::draggedEdge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="187" column="32" bodyfile="src/grafed/gui/diagram.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1a5bf52bc49d67aa3af0325e4ea9ed9997" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classNode" kindref="compound">Node</ref> * &gt;</type>
+        <definition>std::vector&lt;Node *&gt; Diagram::nodes</definition>
+        <argsstring></argsstring>
+        <name>nodes</name>
+        <qualifiedname>Diagram::nodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="188" column="25" bodyfile="src/grafed/gui/diagram.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1a53e713e5be34c850a46a3ab4b4996863" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classEdge" kindref="compound">Edge</ref> * &gt;</type>
+        <definition>std::vector&lt;Edge *&gt; Diagram::edges</definition>
+        <argsstring></argsstring>
+        <name>edges</name>
+        <qualifiedname>Diagram::edges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="189" column="25" bodyfile="src/grafed/gui/diagram.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1a358c251b57d7b1a88842d61709ea98d5" prot="private" static="no" mutable="no">
+        <type>QGraphicsScene *</type>
+        <definition>QGraphicsScene* Diagram::scene</definition>
+        <argsstring></argsstring>
+        <name>scene</name>
+        <qualifiedname>Diagram::scene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="190" column="32" bodyfile="src/grafed/gui/diagram.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1a37938c4c40e9d4aca227833dfa8f0481" prot="private" static="no" mutable="no">
+        <type>qint32</type>
+        <definition>qint32 Diagram::X0</definition>
+        <argsstring></argsstring>
+        <name>X0</name>
+        <qualifiedname>Diagram::X0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="191" column="33" bodyfile="src/grafed/gui/diagram.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1a4a0dbf2386db7fe496fbf22492dfefb6" prot="private" static="no" mutable="no">
+        <type>qint32</type>
+        <definition>qint32 Diagram::Y0</definition>
+        <argsstring></argsstring>
+        <name>Y0</name>
+        <qualifiedname>Diagram::Y0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="192" column="33" bodyfile="src/grafed/gui/diagram.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1adb873754b5ac61272c8ba746be0ff663" prot="private" static="no" mutable="no">
+        <type>qint32</type>
+        <definition>qint32 Diagram::LX</definition>
+        <argsstring></argsstring>
+        <name>LX</name>
+        <qualifiedname>Diagram::LX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="193" column="33" bodyfile="src/grafed/gui/diagram.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1a5617a4a18f02c47872c042de2da5e889" prot="private" static="no" mutable="no">
+        <type>qint32</type>
+        <definition>qint32 Diagram::LY</definition>
+        <argsstring></argsstring>
+        <name>LY</name>
+        <qualifiedname>Diagram::LY</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="194" column="33" bodyfile="src/grafed/gui/diagram.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1a621b3021368acc28104d57083d440816" prot="private" static="no" mutable="no">
+        <type>qint32</type>
+        <definition>qint32 Diagram::rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <qualifiedname>Diagram::rotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="195" column="33" bodyfile="src/grafed/gui/diagram.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1a74959defacc67be178f960bfd00b9af7" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString Diagram::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>Diagram::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="197" column="17" bodyfile="src/grafed/gui/diagram.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1a9cd56d00e793d316d16589f2d1f294fd" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Diagram::outputPath</definition>
+        <argsstring></argsstring>
+        <name>outputPath</name>
+        <qualifiedname>Diagram::outputPath</qualifiedname>
+        <initializer>= &quot;.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="198" column="17" bodyfile="src/grafed/gui/diagram.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1abc8fcde6e08647c047ece036e1810525" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Diagram::saveFile</definition>
+        <argsstring></argsstring>
+        <name>saveFile</name>
+        <qualifiedname>Diagram::saveFile</qualifiedname>
+        <initializer>= defaultFileName</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="199" column="17" bodyfile="src/grafed/gui/diagram.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1a9af7fc973a6c16cd1fc0e7c044cb1136" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Diagram::exportFile</definition>
+        <argsstring></argsstring>
+        <name>exportFile</name>
+        <qualifiedname>Diagram::exportFile</qualifiedname>
+        <initializer>= defaultFileName</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="200" column="17" bodyfile="src/grafed/gui/diagram.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1a3d54bb7edeef5c1f03f8984efbf078ab" prot="private" static="no" mutable="no">
+        <type>InteractiveMode</type>
+        <definition>InteractiveMode Diagram::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <qualifiedname>Diagram::mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="202" column="21" bodyfile="src/grafed/gui/diagram.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1a9c549116e47ae3d080d6b49fc48447f9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Diagram::gridSize</definition>
+        <argsstring></argsstring>
+        <name>gridSize</name>
+        <qualifiedname>Diagram::gridSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="203" column="21" bodyfile="src/grafed/gui/diagram.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1a7b53d9287c844fde60c711ccfb606661" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Diagram::nodesOnGrid</definition>
+        <argsstring></argsstring>
+        <name>nodesOnGrid</name>
+        <qualifiedname>Diagram::nodesOnGrid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="204" column="21" bodyfile="src/grafed/gui/diagram.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1a54fbd18cb549661e5bd43a4963aeb335" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Diagram::focusNode</definition>
+        <argsstring></argsstring>
+        <name>focusNode</name>
+        <qualifiedname>Diagram::focusNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="205" column="21" bodyfile="src/grafed/gui/diagram.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDiagram_1a8cf790a62c808c122f9695df3d84cf78" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Diagram::updatingGraph</definition>
+        <argsstring></argsstring>
+        <name>updatingGraph</name>
+        <qualifiedname>Diagram::updatingGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="206" column="21" bodyfile="src/grafed/gui/diagram.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDiagram_1ab123e4212caa1a1e67a0c99aede69a15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Diagram::Diagram</definition>
+        <argsstring>(QGraphicsScene *t_scene, qint32 t_X0, qint32 t_Y0, DiagramRenderer *t_renderer)</argsstring>
+        <name>Diagram</name>
+        <qualifiedname>Diagram::Diagram</qualifiedname>
+        <param>
+          <type>QGraphicsScene *</type>
+          <declname>t_scene</declname>
+        </param>
+        <param>
+          <type>qint32</type>
+          <declname>t_X0</declname>
+        </param>
+        <param>
+          <type>qint32</type>
+          <declname>t_Y0</declname>
+        </param>
+        <param>
+          <type><ref refid="classDiagramRenderer" kindref="compound">DiagramRenderer</ref> *</type>
+          <declname>t_renderer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="64" column="5" bodyfile="src/grafed/gui/diagram.cpp" bodystart="57" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1af3844176b56309e7589562b28ceca6dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Diagram::~Diagram</definition>
+        <argsstring>() override</argsstring>
+        <name>~Diagram</name>
+        <qualifiedname>Diagram::~Diagram</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="69" column="5" bodyfile="src/grafed/gui/diagram.cpp" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a07a310e52ea7d6d9c65c71e3344d0374" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString Diagram::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <qualifiedname>Diagram::getName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="71" column="13" bodyfile="src/grafed/gui/diagram.h" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1ae544131b4b45d506d825c3553b9f06fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::setActiveWidget</definition>
+        <argsstring>(DiagramWidget *t_widget)</argsstring>
+        <name>setActiveWidget</name>
+        <qualifiedname>Diagram::setActiveWidget</qualifiedname>
+        <param>
+          <type><ref refid="classDiagramWidget" kindref="compound">DiagramWidget</ref> *</type>
+          <declname>t_widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="76" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="104" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a4bb2619191c30ded7100058aaca92203" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>InteractiveMode</type>
+        <definition>InteractiveMode Diagram::getInteractiveMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getInteractiveMode</name>
+        <qualifiedname>Diagram::getInteractiveMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="78" column="21" bodyfile="src/grafed/gui/diagram.cpp" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a90f40887f0a173a4d79b9be1d28200e5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::save</definition>
+        <argsstring>(std::string const &amp;fileName) const</argsstring>
+        <name>save</name>
+        <qualifiedname>Diagram::save</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="79" column="21" bodyfile="src/grafed/gui/diagram.cpp" bodystart="344" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1abdabc7eb63e2e5bdf843b0e9598223d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::exportSelfPNG</definition>
+        <argsstring>(QString const &amp;fileName)</argsstring>
+        <name>exportSelfPNG</name>
+        <qualifiedname>Diagram::exportSelfPNG</qualifiedname>
+        <param>
+          <type>QString const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="80" column="21" bodyfile="src/grafed/gui/diagram.cpp" bodystart="366" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a5cb30a62897fddce86427c59998dde14" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::exportPNG</definition>
+        <argsstring>(std::string const &amp;fileName) const</argsstring>
+        <name>exportPNG</name>
+        <qualifiedname>Diagram::exportPNG</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="81" column="21" bodyfile="src/grafed/gui/diagram.cpp" bodystart="385" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a013ab18bf38a7eba608814b4dd50cc6a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::exportPDF</definition>
+        <argsstring>(std::string const &amp;fileName) const</argsstring>
+        <name>exportPDF</name>
+        <qualifiedname>Diagram::exportPDF</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="82" column="21" bodyfile="src/grafed/gui/diagram.cpp" bodystart="391" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a33d8ce08a1ab3d8a51d571494bb76eba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Diagram::getLatexSource</definition>
+        <argsstring>() const</argsstring>
+        <name>getLatexSource</name>
+        <qualifiedname>Diagram::getLatexSource</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="83" column="21" bodyfile="src/grafed/gui/diagram.cpp" bodystart="397" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1af438b9f1661719a3545ac2206ddf2267" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::loadGraph</definition>
+        <argsstring>(drawer::Graph const &amp;t_graph)</argsstring>
+        <name>loadGraph</name>
+        <qualifiedname>Diagram::loadGraph</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1Graph" kindref="compound">drawer::Graph</ref> const &amp;</type>
+          <declname>t_graph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="85" column="12" bodyfile="src/grafed/gui/diagram.cpp" bodystart="118" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a5ae7e866fd6820694285a4dde0d080b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::loadLinker</definition>
+        <argsstring>(drawer::LatexLinker const &amp;t_link)</argsstring>
+        <name>loadLinker</name>
+        <qualifiedname>Diagram::loadLinker</qualifiedname>
+        <param>
+          <type><ref refid="classdrawer_1_1LatexLinker" kindref="compound">drawer::LatexLinker</ref> const &amp;</type>
+          <declname>t_link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="86" column="12" bodyfile="src/grafed/gui/diagram.cpp" bodystart="262" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1acc00f3df9c3da5efee1ad68e2d945509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::itemMoved</definition>
+        <argsstring>()</argsstring>
+        <name>itemMoved</name>
+        <qualifiedname>Diagram::itemMoved</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="87" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1abd10d00702a062abaa285d2c81fa43d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>Diagram::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="88" column="12" bodyfile="src/grafed/gui/diagram.cpp" bodystart="307" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a19b16da2c1d7b2dfa924ec6d8f7d3a96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::setOutputPath</definition>
+        <argsstring>(std::string const &amp;path)</argsstring>
+        <name>setOutputPath</name>
+        <qualifiedname>Diagram::setOutputPath</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="89" column="12" bodyfile="src/grafed/gui/diagram.cpp" bodystart="324" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a37464ed8d9fe50770e9dd3282233b9a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::setFile</definition>
+        <argsstring>(std::string const &amp;t_fileName)</argsstring>
+        <name>setFile</name>
+        <qualifiedname>Diagram::setFile</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="90" column="12" bodyfile="src/grafed/gui/diagram.cpp" bodystart="329" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a76ea0af2d47e8e0659306e8158c780f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::setExportFile</definition>
+        <argsstring>(std::string const &amp;t_fileName)</argsstring>
+        <name>setExportFile</name>
+        <qualifiedname>Diagram::setExportFile</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="91" column="12" bodyfile="src/grafed/gui/diagram.cpp" bodystart="334" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a17716c6f28cb7cb72f8b108c2d451553" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::forceNodeOnGrid</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>forceNodeOnGrid</name>
+        <qualifiedname>Diagram::forceNodeOnGrid</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="92" column="12" bodyfile="src/grafed/gui/diagram.cpp" bodystart="339" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a591a82e579fc2454fbd2772654929d0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::testRoundValues</definition>
+        <argsstring>(qreal &amp;x, qreal &amp;y)</argsstring>
+        <name>testRoundValues</name>
+        <qualifiedname>Diagram::testRoundValues</qualifiedname>
+        <param>
+          <type>qreal &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>qreal &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="93" column="12" bodyfile="src/grafed/gui/diagram.cpp" bodystart="495" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a21ac58dfb032321a996d8968e35b290e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QRectF</type>
+        <definition>QRectF Diagram::getBounds</definition>
+        <argsstring>() const</argsstring>
+        <name>getBounds</name>
+        <qualifiedname>Diagram::getBounds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="94" column="12" bodyfile="src/grafed/gui/diagram.cpp" bodystart="349" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a2262e3944265ef61ad37a05dde64e334" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::insertionMode</definition>
+        <argsstring>()</argsstring>
+        <name>insertionMode</name>
+        <qualifiedname>Diagram::insertionMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="96" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="405" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1ae30ae416808b5688d69730f7e9788f0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::normalMode</definition>
+        <argsstring>()</argsstring>
+        <name>normalMode</name>
+        <qualifiedname>Diagram::normalMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="97" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="414" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1af7f169e0029c73b9d437ba04e80f0671" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::selectionMode</definition>
+        <argsstring>()</argsstring>
+        <name>selectionMode</name>
+        <qualifiedname>Diagram::selectionMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="98" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="423" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1ab1a2e2fae723c7d6c8f48de7d3dc4287" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::modificationDone</definition>
+        <argsstring>()</argsstring>
+        <name>modificationDone</name>
+        <qualifiedname>Diagram::modificationDone</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="100" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="94" bodyend="97"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classDiagram_1a264b9b3cdf8530cc6e70c529896de54c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::setName</definition>
+        <argsstring>(QString const &amp;t_name)</argsstring>
+        <name>setName</name>
+        <qualifiedname>Diagram::setName</qualifiedname>
+        <param>
+          <type>QString const &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="104" column="10" bodyfile="src/grafed/gui/diagram.h" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a25b787cd9a987941fa5f7e7defc54f92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::setGridSize</definition>
+        <argsstring>(qint32 t_gridSize)</argsstring>
+        <name>setGridSize</name>
+        <qualifiedname>Diagram::setGridSize</qualifiedname>
+        <param>
+          <type>qint32</type>
+          <declname>t_gridSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="108" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a46b83a07466719057c20a7aa2c230095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::showNodes</definition>
+        <argsstring>(bool)</argsstring>
+        <name>showNodes</name>
+        <qualifiedname>Diagram::showNodes</qualifiedname>
+        <param>
+          <type>bool</type>
+          <defname>show</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="109" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="933" bodyend="943"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a8867da23dbd62e1737a52301a26d695a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::reinitGraph</definition>
+        <argsstring>()</argsstring>
+        <name>reinitGraph</name>
+        <qualifiedname>Diagram::reinitGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="110" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="945" bodyend="953"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a72842cdee6f258843258f0a7d10ecc48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::updateGraph</definition>
+        <argsstring>()</argsstring>
+        <name>updateGraph</name>
+        <qualifiedname>Diagram::updateGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="111" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="955" bodyend="961"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1abc59ddc3389c280c2da2380b0f4e2f54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::nodeMoved</definition>
+        <argsstring>()</argsstring>
+        <name>nodeMoved</name>
+        <qualifiedname>Diagram::nodeMoved</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="112" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="963" bodyend="971"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a3f508a3db28d97febe88eca8f6c7d615" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::setFocus</definition>
+        <argsstring>(Node const *focused)</argsstring>
+        <name>setFocus</name>
+        <qualifiedname>Diagram::setFocus</qualifiedname>
+        <param>
+          <type><ref refid="classNode" kindref="compound">Node</ref> const *</type>
+          <declname>focused</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="113" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="1001" bodyend="1008"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a1937e0445651c9754dd4adfd7f010e1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::resetFocus</definition>
+        <argsstring>()</argsstring>
+        <name>resetFocus</name>
+        <qualifiedname>Diagram::resetFocus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="114" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="486" bodyend="493"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1ad37a68ecb06c4910cc7b4ab9bc2b1b85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::center</definition>
+        <argsstring>()</argsstring>
+        <name>center</name>
+        <qualifiedname>Diagram::center</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="116" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="973" bodyend="980"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1addc91634feeec2cacdb5f1691dbc98e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::rotateTo</definition>
+        <argsstring>(int angle)</argsstring>
+        <name>rotateTo</name>
+        <qualifiedname>Diagram::rotateTo</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="117" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="982" bodyend="990"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1ad208e5e1d29ce6fac9e5c9e27268bccf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::moveTo</definition>
+        <argsstring>(qint32 X0_new, qint32 Y0_new)</argsstring>
+        <name>moveTo</name>
+        <qualifiedname>Diagram::moveTo</qualifiedname>
+        <param>
+          <type>qint32</type>
+          <declname>X0_new</declname>
+        </param>
+        <param>
+          <type>qint32</type>
+          <declname>Y0_new</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="118" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="992" bodyend="999"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a9a77e040895f4f7c75f6af04eb50cfe9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Diagram::getPosNode</definition>
+        <argsstring>(Node const *node) const</argsstring>
+        <name>getPosNode</name>
+        <qualifiedname>Diagram::getPosNode</qualifiedname>
+        <param>
+          <type><ref refid="classNode" kindref="compound">Node</ref> const *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="120" column="31" bodyfile="src/grafed/gui/diagram.cpp" bodystart="733" bodyend="740"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1aaae7893311157aac77ade6c1487cf810" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; size_t, size_t &gt;</type>
+        <definition>std::pair&lt; size_t, size_t &gt; Diagram::getPosEdge</definition>
+        <argsstring>(Edge const *edge) const</argsstring>
+        <name>getPosEdge</name>
+        <qualifiedname>Diagram::getPosEdge</qualifiedname>
+        <param>
+          <type><ref refid="classEdge" kindref="compound">Edge</ref> const *</type>
+          <declname>edge</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="121" column="15" bodyfile="src/grafed/gui/diagram.cpp" bodystart="742" bodyend="760"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a8f56630a89743ee4aa26316953b525b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::addNode</definition>
+        <argsstring>(qreal x=0, qreal y=0)</argsstring>
+        <name>addNode</name>
+        <qualifiedname>Diagram::addNode</qualifiedname>
+        <param>
+          <type>qreal</type>
+          <declname>x</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>qreal</type>
+          <declname>y</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="123" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="503" bodyend="512"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a75de010b1dc0bc94c2826e3ed3f5c8dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::addNode</definition>
+        <argsstring>(QPointF point)</argsstring>
+        <name>addNode</name>
+        <qualifiedname>Diagram::addNode</qualifiedname>
+        <param>
+          <type>QPointF</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="124" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="514" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a12df33479037d74a6e2ce9eba1306343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::addEdge</definition>
+        <argsstring>(size_t i, size_t j)</argsstring>
+        <name>addEdge</name>
+        <qualifiedname>Diagram::addEdge</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="125" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="519" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a6b84d964d340167dbe15fbd5e166189b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::addEdge</definition>
+        <argsstring>(Node *A, Node *B)</argsstring>
+        <name>addEdge</name>
+        <qualifiedname>Diagram::addEdge</qualifiedname>
+        <param>
+          <type><ref refid="classNode" kindref="compound">Node</ref> *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classNode" kindref="compound">Node</ref> *</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="126" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="534" bodyend="552"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1afed32ff63ab6a86a195daf65012107e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classProxy" kindref="compound">Proxy</ref> *</type>
+        <definition>Proxy * Diagram::generateLabel</definition>
+        <argsstring>(QString const &amp;text) const</argsstring>
+        <name>generateLabel</name>
+        <qualifiedname>Diagram::generateLabel</qualifiedname>
+        <param>
+          <type>QString const &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="128" column="11" bodyfile="src/grafed/gui/diagram.cpp" bodystart="583" bodyend="619"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1aafd6a1f53d301309fb865f3d4bf869d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::addLabel</definition>
+        <argsstring>(Proxy *label, QPointF const &amp;pos)</argsstring>
+        <name>addLabel</name>
+        <qualifiedname>Diagram::addLabel</qualifiedname>
+        <param>
+          <type><ref refid="classProxy" kindref="compound">Proxy</ref> *</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>QPointF const &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="129" column="12" bodyfile="src/grafed/gui/diagram.cpp" bodystart="621" bodyend="627"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a10f83054272218dd9a6fe7501969a5fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::addNodeLabel</definition>
+        <argsstring>(Node *node, QString const &amp;text)</argsstring>
+        <name>addNodeLabel</name>
+        <qualifiedname>Diagram::addNodeLabel</qualifiedname>
+        <param>
+          <type><ref refid="classNode" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>QString const &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="130" column="12" bodyfile="src/grafed/gui/diagram.cpp" bodystart="629" bodyend="658"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a718d763ccbed2e57e2bf2258e94a8d4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::addEdgeLabel</definition>
+        <argsstring>(Edge *edge, drawer::LatexLinker::Edge const &amp;lEdge, QString const &amp;text)</argsstring>
+        <name>addEdgeLabel</name>
+        <qualifiedname>Diagram::addEdgeLabel</qualifiedname>
+        <param>
+          <type><ref refid="classEdge" kindref="compound">Edge</ref> *</type>
+          <declname>edge</declname>
+        </param>
+        <param>
+          <type><ref refid="structdrawer_1_1LatexLinker_1_1Edge" kindref="compound">drawer::LatexLinker::Edge</ref> const &amp;</type>
+          <declname>lEdge</declname>
+        </param>
+        <param>
+          <type>QString const &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="131" column="12" bodyfile="src/grafed/gui/diagram.cpp" bodystart="660" bodyend="692"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1ad1df4884a31bbd807897748caf51ee4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::proxyDoubleClicked</definition>
+        <argsstring>(Proxy *)</argsstring>
+        <name>proxyDoubleClicked</name>
+        <qualifiedname>Diagram::proxyDoubleClicked</qualifiedname>
+        <param>
+          <type><ref refid="classProxy" kindref="compound">Proxy</ref> *</type>
+          <defname>proxy</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="134" column="12" bodyfile="src/grafed/gui/diagram.cpp" bodystart="694" bodyend="706"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a9447cccdfda10f3de092798790dfbde6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::removeEdge</definition>
+        <argsstring>(Edge *edge)</argsstring>
+        <name>removeEdge</name>
+        <qualifiedname>Diagram::removeEdge</qualifiedname>
+        <param>
+          <type><ref refid="classEdge" kindref="compound">Edge</ref> *</type>
+          <declname>edge</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="136" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="723" bodyend="731"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1ab4730632d0d6b87d97e2b3e2c184f409" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::removeNode</definition>
+        <argsstring>(size_t i)</argsstring>
+        <name>removeNode</name>
+        <qualifiedname>Diagram::removeNode</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="137" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="708" bodyend="721"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a7035c2c7a646876cda641b4ddbaa1b91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::removeSelected</definition>
+        <argsstring>()</argsstring>
+        <name>removeSelected</name>
+        <qualifiedname>Diagram::removeSelected</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="138" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="762" bodyend="766"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1add3fc84f79effb4ad829995b57006579" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::removeSelectedNodes</definition>
+        <argsstring>()</argsstring>
+        <name>removeSelectedNodes</name>
+        <qualifiedname>Diagram::removeSelectedNodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="139" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="768" bodyend="777"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a3bca49f996beeeb42547e1339d30d5e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::removeSelectedEdges</definition>
+        <argsstring>()</argsstring>
+        <name>removeSelectedEdges</name>
+        <qualifiedname>Diagram::removeSelectedEdges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="140" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="779" bodyend="788"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a95996e1e5d91dc9a5b294f94afbc9dc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::setEdgeName</definition>
+        <argsstring>(Edge const *edge, QString const &amp;name)</argsstring>
+        <name>setEdgeName</name>
+        <qualifiedname>Diagram::setEdgeName</qualifiedname>
+        <param>
+          <type><ref refid="classEdge" kindref="compound">Edge</ref> const *</type>
+          <declname>edge</declname>
+        </param>
+        <param>
+          <type>QString const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="142" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="797" bodyend="801"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a46ebfdd1c88949ee26f414d87113e18d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::setNodeName</definition>
+        <argsstring>(Node const *node, QString const &amp;name)</argsstring>
+        <name>setNodeName</name>
+        <qualifiedname>Diagram::setNodeName</qualifiedname>
+        <param>
+          <type><ref refid="classNode" kindref="compound">Node</ref> const *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>QString const &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="143" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="790" bodyend="795"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a4857cf9f6e2244d1e0c46c7bba3db8d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::setEdgeType</definition>
+        <argsstring>(Edge const *edge, drawer::ParticleType type, bool sign=true)</argsstring>
+        <name>setEdgeType</name>
+        <qualifiedname>Diagram::setEdgeType</qualifiedname>
+        <param>
+          <type><ref refid="classEdge" kindref="compound">Edge</ref> const *</type>
+          <declname>edge</declname>
+        </param>
+        <param>
+          <type>drawer::ParticleType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sign</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="145" column="5" bodyfile="src/grafed/gui/diagram.cpp" bodystart="803" bodyend="810"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1ab759fd13a3ce77c09b490553abf00d10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::refreshLinker</definition>
+        <argsstring>()</argsstring>
+        <name>refreshLinker</name>
+        <qualifiedname>Diagram::refreshLinker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="147" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="1010" bodyend="1041"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a98bd269f49ad75d3077c0d411623cc24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::refresh</definition>
+        <argsstring>()</argsstring>
+        <name>refresh</name>
+        <qualifiedname>Diagram::refresh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="148" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="1043" bodyend="1055"/>
+      </memberdef>
+      <memberdef kind="slot" id="classDiagram_1a0a47bca654d4bff0f228a5e567b1dcc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::labelReady</definition>
+        <argsstring>(std::string const &amp;)</argsstring>
+        <name>labelReady</name>
+        <qualifiedname>Diagram::labelReady</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <defname>label</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="150" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="578" bodyend="581"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classDiagram_1af7ade5f3e189f9b5056802bd306431dc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classNode" kindref="compound">Node</ref> *</type>
+        <definition>Node * Diagram::buildNode</definition>
+        <argsstring>(qreal x=0, qreal y=0)</argsstring>
+        <name>buildNode</name>
+        <qualifiedname>Diagram::buildNode</qualifiedname>
+        <param>
+          <type>qreal</type>
+          <declname>x</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>qreal</type>
+          <declname>y</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="153" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="432" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a4fd4b996f7a21f3a40eb303dd8577c0f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classEdge" kindref="compound">Edge</ref> *</type>
+        <definition>Edge * Diagram::buildEdge</definition>
+        <argsstring>(Node *first, Node *second)</argsstring>
+        <name>buildEdge</name>
+        <qualifiedname>Diagram::buildEdge</qualifiedname>
+        <param>
+          <type><ref refid="classNode" kindref="compound">Node</ref> *</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type><ref refid="classNode" kindref="compound">Node</ref> *</type>
+          <declname>second</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="154" column="10" bodyfile="src/grafed/gui/diagram.cpp" bodystart="443" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a7427fa6448a6bed3c8151dfc34f9d9f7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::deleteNode</definition>
+        <argsstring>(Node *&amp;node)</argsstring>
+        <name>deleteNode</name>
+        <qualifiedname>Diagram::deleteNode</qualifiedname>
+        <param>
+          <type><ref refid="classNode" kindref="compound">Node</ref> *&amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="155" column="11" bodyfile="src/grafed/gui/diagram.cpp" bodystart="452" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1aded1e5694ece85b3cf7c8c91d23183fc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::deleteEdge</definition>
+        <argsstring>(Edge *&amp;edge)</argsstring>
+        <name>deleteEdge</name>
+        <qualifiedname>Diagram::deleteEdge</qualifiedname>
+        <param>
+          <type><ref refid="classEdge" kindref="compound">Edge</ref> *&amp;</type>
+          <declname>edge</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="156" column="11" bodyfile="src/grafed/gui/diagram.cpp" bodystart="462" bodyend="468"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a1e100f463329f26a46ca0e687108f37e" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QPointF</type>
+        <definition>QPointF Diagram::getNodeLabelPos</definition>
+        <argsstring>(Node const *node, Proxy const *label) const</argsstring>
+        <name>getNodeLabelPos</name>
+        <qualifiedname>Diagram::getNodeLabelPos</qualifiedname>
+        <param>
+          <type><ref refid="classNode" kindref="compound">Node</ref> const *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="classProxy" kindref="compound">Proxy</ref> const *</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="158" column="13" bodyfile="src/grafed/gui/diagram.cpp" bodystart="140" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1ac178eed474cbf3972c303926506ffab0" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QPointF</type>
+        <definition>QPointF Diagram::getEdgeLabelPos</definition>
+        <argsstring>(Edge const *edge, drawer::LatexLinker::Edge const &amp;lEdge, Proxy const *label) const</argsstring>
+        <name>getEdgeLabelPos</name>
+        <qualifiedname>Diagram::getEdgeLabelPos</qualifiedname>
+        <param>
+          <type><ref refid="classEdge" kindref="compound">Edge</ref> const *</type>
+          <declname>edge</declname>
+        </param>
+        <param>
+          <type><ref refid="structdrawer_1_1LatexLinker_1_1Edge" kindref="compound">drawer::LatexLinker::Edge</ref> const &amp;</type>
+          <declname>lEdge</declname>
+        </param>
+        <param>
+          <type><ref refid="classProxy" kindref="compound">Proxy</ref> const *</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="159" column="13" bodyfile="src/grafed/gui/diagram.cpp" bodystart="195" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1abad625b0deab3982a20bb0492df93ca5" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdrawer_1_1Graph" kindref="compound">drawer::Graph</ref></type>
+        <definition>drawer::Graph Diagram::getScaledGraph</definition>
+        <argsstring>() const</argsstring>
+        <name>getScaledGraph</name>
+        <qualifiedname>Diagram::getScaledGraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="163" column="19" bodyfile="src/grafed/gui/diagram.cpp" bodystart="470" bodyend="476"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a0b08cba734ebe431b3990021df0b7b80" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::setFocusOn</definition>
+        <argsstring>(size_t pos)</argsstring>
+        <name>setFocusOn</name>
+        <qualifiedname>Diagram::setFocusOn</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="164" column="19" bodyfile="src/grafed/gui/diagram.cpp" bodystart="478" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a9a4b66d0436245262cf80f2cba93b0b4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::move</definition>
+        <argsstring>(qreal x, qreal y)</argsstring>
+        <name>move</name>
+        <qualifiedname>Diagram::move</qualifiedname>
+        <param>
+          <type>qreal</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>qreal</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="165" column="19" bodyfile="src/grafed/gui/diagram.cpp" bodystart="812" bodyend="827"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1aacbc96c7b61703869431d332ae6e51ff" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::keyPressEvent</definition>
+        <argsstring>(QKeyEvent *event)</argsstring>
+        <name>keyPressEvent</name>
+        <qualifiedname>Diagram::keyPressEvent</qualifiedname>
+        <param>
+          <type>QKeyEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="166" column="19" bodyfile="src/grafed/gui/diagram.cpp" bodystart="829" bodyend="858"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a74aa262900df5826a26c8ef995632a61" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::keyReleaseEvent</definition>
+        <argsstring>(QKeyEvent *event)</argsstring>
+        <name>keyReleaseEvent</name>
+        <qualifiedname>Diagram::keyReleaseEvent</qualifiedname>
+        <param>
+          <type>QKeyEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="167" column="19" bodyfile="src/grafed/gui/diagram.cpp" bodystart="860" bodyend="862"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a21253a210b1d0298ecb47269fedda369" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QPointF</type>
+        <definition>QPointF Diagram::getCursorPos</definition>
+        <argsstring>() const</argsstring>
+        <name>getCursorPos</name>
+        <qualifiedname>Diagram::getCursorPos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="168" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1ad442cb653ce6dcb996256808f460ec3d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::mouseMoveEvent</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mouseMoveEvent</name>
+        <qualifiedname>Diagram::mouseMoveEvent</qualifiedname>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="169" column="19" bodyfile="src/grafed/gui/diagram.cpp" bodystart="864" bodyend="870"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a35bf0dd9a76ef0bd87c96f808c1852a9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::mousePressEvent</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mousePressEvent</name>
+        <qualifiedname>Diagram::mousePressEvent</qualifiedname>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="170" column="19" bodyfile="src/grafed/gui/diagram.cpp" bodystart="872" bodyend="895"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1a6cce7f110081495b16ad6070fc7c59dc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::mouseReleaseEvent</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mouseReleaseEvent</name>
+        <qualifiedname>Diagram::mouseReleaseEvent</qualifiedname>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="171" column="19" bodyfile="src/grafed/gui/diagram.cpp" bodystart="897" bodyend="916"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1aaa1a7e1007fba8ba2234553d3d1a9b3c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::mouseDoubleClickEvent</definition>
+        <argsstring>(QMouseEvent *event)</argsstring>
+        <name>mouseDoubleClickEvent</name>
+        <qualifiedname>Diagram::mouseDoubleClickEvent</qualifiedname>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="172" column="19" bodyfile="src/grafed/gui/diagram.cpp" bodystart="918" bodyend="920"/>
+      </memberdef>
+      <memberdef kind="function" id="classDiagram_1ad3606a64f434cb3d688d231bbe569bf2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Diagram::wheelEvent</definition>
+        <argsstring>(QWheelEvent *event)</argsstring>
+        <name>wheelEvent</name>
+        <qualifiedname>Diagram::wheelEvent</qualifiedname>
+        <param>
+          <type>QWheelEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/diagram.h" line="173" column="19" bodyfile="src/grafed/gui/diagram.cpp" bodystart="922" bodyend="931"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Diagram</label>
+        <link refid="classDiagram"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Diagram</label>
+        <link refid="classDiagram"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/grafed/gui/diagram.h" line="52" column="1" bodyfile="src/grafed/gui/diagram.h" bodystart="52" bodyend="207"/>
+    <listofallmembers>
+      <member refid="classDiagram_1a12df33479037d74a6e2ce9eba1306343" prot="public" virt="non-virtual"><scope>Diagram</scope><name>addEdge</name></member>
+      <member refid="classDiagram_1a6b84d964d340167dbe15fbd5e166189b" prot="public" virt="non-virtual"><scope>Diagram</scope><name>addEdge</name></member>
+      <member refid="classDiagram_1a718d763ccbed2e57e2bf2258e94a8d4c" prot="public" virt="non-virtual"><scope>Diagram</scope><name>addEdgeLabel</name></member>
+      <member refid="classDiagram_1aafd6a1f53d301309fb865f3d4bf869d7" prot="public" virt="non-virtual"><scope>Diagram</scope><name>addLabel</name></member>
+      <member refid="classDiagram_1a8f56630a89743ee4aa26316953b525b0" prot="public" virt="non-virtual"><scope>Diagram</scope><name>addNode</name></member>
+      <member refid="classDiagram_1a75de010b1dc0bc94c2826e3ed3f5c8dc" prot="public" virt="non-virtual"><scope>Diagram</scope><name>addNode</name></member>
+      <member refid="classDiagram_1a10f83054272218dd9a6fe7501969a5fd" prot="public" virt="non-virtual"><scope>Diagram</scope><name>addNodeLabel</name></member>
+      <member refid="classDiagram_1a4fd4b996f7a21f3a40eb303dd8577c0f" prot="protected" virt="non-virtual"><scope>Diagram</scope><name>buildEdge</name></member>
+      <member refid="classDiagram_1af7ade5f3e189f9b5056802bd306431dc" prot="protected" virt="non-virtual"><scope>Diagram</scope><name>buildNode</name></member>
+      <member refid="classDiagram_1ad37a68ecb06c4910cc7b4ab9bc2b1b85" prot="public" virt="non-virtual"><scope>Diagram</scope><name>center</name></member>
+      <member refid="classDiagram_1abd10d00702a062abaa285d2c81fa43d0" prot="public" virt="non-virtual"><scope>Diagram</scope><name>clear</name></member>
+      <member refid="classDiagram_1a6b53fd2c1c53d5d1c0cb4034f3570958" prot="private" virt="non-virtual"><scope>Diagram</scope><name>cursor</name></member>
+      <member refid="classDiagram_1abbf16b5824a3ac4743b5f101cc5fe922" prot="private" virt="non-virtual"><scope>Diagram</scope><name>defaultFileName</name></member>
+      <member refid="classDiagram_1aded1e5694ece85b3cf7c8c91d23183fc" prot="protected" virt="non-virtual"><scope>Diagram</scope><name>deleteEdge</name></member>
+      <member refid="classDiagram_1a7427fa6448a6bed3c8151dfc34f9d9f7" prot="protected" virt="non-virtual"><scope>Diagram</scope><name>deleteNode</name></member>
+      <member refid="classDiagram_1ab123e4212caa1a1e67a0c99aede69a15" prot="public" virt="non-virtual"><scope>Diagram</scope><name>Diagram</name></member>
+      <member refid="classDiagram_1a9d2c129b5dafe80c01a5bd6f510dbe29" prot="private" virt="non-virtual"><scope>Diagram</scope><name>DiagramRenderer</name></member>
+      <member refid="classDiagram_1a23cd627fd79ddf26c485e74034495944" prot="private" virt="non-virtual"><scope>Diagram</scope><name>DiagramWidget</name></member>
+      <member refid="classDiagram_1adbb6f05faf7aa2b4a14b3450861f7d9f" prot="private" virt="non-virtual"><scope>Diagram</scope><name>draggedEdge</name></member>
+      <member refid="classDiagram_1ad2c8ba04c9d9989ccbf3c5aba267a3d7" prot="private" virt="non-virtual"><scope>Diagram</scope><name>Edge</name></member>
+      <member refid="classDiagram_1a53e713e5be34c850a46a3ab4b4996863" prot="private" virt="non-virtual"><scope>Diagram</scope><name>edges</name></member>
+      <member refid="classDiagram_1a9af7fc973a6c16cd1fc0e7c044cb1136" prot="private" virt="non-virtual"><scope>Diagram</scope><name>exportFile</name></member>
+      <member refid="classDiagram_1a013ab18bf38a7eba608814b4dd50cc6a" prot="public" virt="non-virtual"><scope>Diagram</scope><name>exportPDF</name></member>
+      <member refid="classDiagram_1a5cb30a62897fddce86427c59998dde14" prot="public" virt="non-virtual"><scope>Diagram</scope><name>exportPNG</name></member>
+      <member refid="classDiagram_1abdabc7eb63e2e5bdf843b0e9598223d7" prot="public" virt="non-virtual"><scope>Diagram</scope><name>exportSelfPNG</name></member>
+      <member refid="classDiagram_1a54fbd18cb549661e5bd43a4963aeb335" prot="private" virt="non-virtual"><scope>Diagram</scope><name>focusNode</name></member>
+      <member refid="classDiagram_1a17716c6f28cb7cb72f8b108c2d451553" prot="public" virt="non-virtual"><scope>Diagram</scope><name>forceNodeOnGrid</name></member>
+      <member refid="classDiagram_1afed32ff63ab6a86a195daf65012107e0" prot="public" virt="non-virtual"><scope>Diagram</scope><name>generateLabel</name></member>
+      <member refid="classDiagram_1a21ac58dfb032321a996d8968e35b290e" prot="public" virt="non-virtual"><scope>Diagram</scope><name>getBounds</name></member>
+      <member refid="classDiagram_1a21253a210b1d0298ecb47269fedda369" prot="protected" virt="non-virtual"><scope>Diagram</scope><name>getCursorPos</name></member>
+      <member refid="classDiagram_1ac178eed474cbf3972c303926506ffab0" prot="protected" virt="non-virtual"><scope>Diagram</scope><name>getEdgeLabelPos</name></member>
+      <member refid="classDiagram_1a4bb2619191c30ded7100058aaca92203" prot="public" virt="non-virtual"><scope>Diagram</scope><name>getInteractiveMode</name></member>
+      <member refid="classDiagram_1a33d8ce08a1ab3d8a51d571494bb76eba" prot="public" virt="non-virtual"><scope>Diagram</scope><name>getLatexSource</name></member>
+      <member refid="classDiagram_1a07a310e52ea7d6d9c65c71e3344d0374" prot="public" virt="non-virtual"><scope>Diagram</scope><name>getName</name></member>
+      <member refid="classDiagram_1a1e100f463329f26a46ca0e687108f37e" prot="protected" virt="non-virtual"><scope>Diagram</scope><name>getNodeLabelPos</name></member>
+      <member refid="classDiagram_1aaae7893311157aac77ade6c1487cf810" prot="public" virt="non-virtual"><scope>Diagram</scope><name>getPosEdge</name></member>
+      <member refid="classDiagram_1a9a77e040895f4f7c75f6af04eb50cfe9" prot="public" virt="non-virtual"><scope>Diagram</scope><name>getPosNode</name></member>
+      <member refid="classDiagram_1abad625b0deab3982a20bb0492df93ca5" prot="protected" virt="non-virtual"><scope>Diagram</scope><name>getScaledGraph</name></member>
+      <member refid="classDiagram_1a7bf60ec6c088af7dc363bfe7b206721c" prot="private" virt="non-virtual"><scope>Diagram</scope><name>graph</name></member>
+      <member refid="classDiagram_1a9c549116e47ae3d080d6b49fc48447f9" prot="private" virt="non-virtual"><scope>Diagram</scope><name>gridSize</name></member>
+      <member refid="classDiagram_1a2262e3944265ef61ad37a05dde64e334" prot="public" virt="non-virtual"><scope>Diagram</scope><name>insertionMode</name></member>
+      <member refid="classDiagram_1acc00f3df9c3da5efee1ad68e2d945509" prot="public" virt="non-virtual"><scope>Diagram</scope><name>itemMoved</name></member>
+      <member refid="classDiagram_1aacbc96c7b61703869431d332ae6e51ff" prot="protected" virt="non-virtual"><scope>Diagram</scope><name>keyPressEvent</name></member>
+      <member refid="classDiagram_1a74aa262900df5826a26c8ef995632a61" prot="protected" virt="non-virtual"><scope>Diagram</scope><name>keyReleaseEvent</name></member>
+      <member refid="classDiagram_1a0a47bca654d4bff0f228a5e567b1dcc8" prot="public" virt="non-virtual"><scope>Diagram</scope><name>labelReady</name></member>
+      <member refid="classDiagram_1a7378a11b4a0c8cbcfe973050c21836bc" prot="private" virt="non-virtual"><scope>Diagram</scope><name>latexComp</name></member>
+      <member refid="classDiagram_1aae2123ecd384c6cef5f965eb180ad340" prot="private" virt="non-virtual"><scope>Diagram</scope><name>link</name></member>
+      <member refid="classDiagram_1af438b9f1661719a3545ac2206ddf2267" prot="public" virt="non-virtual"><scope>Diagram</scope><name>loadGraph</name></member>
+      <member refid="classDiagram_1a5ae7e866fd6820694285a4dde0d080b0" prot="public" virt="non-virtual"><scope>Diagram</scope><name>loadLinker</name></member>
+      <member refid="classDiagram_1adb873754b5ac61272c8ba746be0ff663" prot="private" virt="non-virtual"><scope>Diagram</scope><name>LX</name></member>
+      <member refid="classDiagram_1a5617a4a18f02c47872c042de2da5e889" prot="private" virt="non-virtual"><scope>Diagram</scope><name>LY</name></member>
+      <member refid="classDiagram_1a6222eecbfa5851ca01ae02121d655b6a" prot="private" virt="non-virtual"><scope>Diagram</scope><name>MainWidget</name></member>
+      <member refid="classDiagram_1af9db4b672c4d3104f5541893e08e1809" prot="private" virt="non-virtual"><scope>Diagram</scope><name>MainWindow</name></member>
+      <member refid="classDiagram_1a3d54bb7edeef5c1f03f8984efbf078ab" prot="private" virt="non-virtual"><scope>Diagram</scope><name>mode</name></member>
+      <member refid="classDiagram_1ab1a2e2fae723c7d6c8f48de7d3dc4287" prot="public" virt="non-virtual"><scope>Diagram</scope><name>modificationDone</name></member>
+      <member refid="classDiagram_1aaa1a7e1007fba8ba2234553d3d1a9b3c" prot="protected" virt="non-virtual"><scope>Diagram</scope><name>mouseDoubleClickEvent</name></member>
+      <member refid="classDiagram_1ad442cb653ce6dcb996256808f460ec3d" prot="protected" virt="non-virtual"><scope>Diagram</scope><name>mouseMoveEvent</name></member>
+      <member refid="classDiagram_1a35bf0dd9a76ef0bd87c96f808c1852a9" prot="protected" virt="non-virtual"><scope>Diagram</scope><name>mousePressEvent</name></member>
+      <member refid="classDiagram_1a6cce7f110081495b16ad6070fc7c59dc" prot="protected" virt="non-virtual"><scope>Diagram</scope><name>mouseReleaseEvent</name></member>
+      <member refid="classDiagram_1a9a4b66d0436245262cf80f2cba93b0b4" prot="protected" virt="non-virtual"><scope>Diagram</scope><name>move</name></member>
+      <member refid="classDiagram_1ad208e5e1d29ce6fac9e5c9e27268bccf" prot="public" virt="non-virtual"><scope>Diagram</scope><name>moveTo</name></member>
+      <member refid="classDiagram_1a74959defacc67be178f960bfd00b9af7" prot="private" virt="non-virtual"><scope>Diagram</scope><name>name</name></member>
+      <member refid="classDiagram_1a6db9d28bd448a131448276ee03de1e6d" prot="private" virt="non-virtual"><scope>Diagram</scope><name>Node</name></member>
+      <member refid="classDiagram_1abc59ddc3389c280c2da2380b0f4e2f54" prot="public" virt="non-virtual"><scope>Diagram</scope><name>nodeMoved</name></member>
+      <member refid="classDiagram_1a5bf52bc49d67aa3af0325e4ea9ed9997" prot="private" virt="non-virtual"><scope>Diagram</scope><name>nodes</name></member>
+      <member refid="classDiagram_1a7b53d9287c844fde60c711ccfb606661" prot="private" virt="non-virtual"><scope>Diagram</scope><name>nodesOnGrid</name></member>
+      <member refid="classDiagram_1ae30ae416808b5688d69730f7e9788f0a" prot="public" virt="non-virtual"><scope>Diagram</scope><name>normalMode</name></member>
+      <member refid="classDiagram_1a9cd56d00e793d316d16589f2d1f294fd" prot="private" virt="non-virtual"><scope>Diagram</scope><name>outputPath</name></member>
+      <member refid="classDiagram_1ad1df4884a31bbd807897748caf51ee4c" prot="public" virt="non-virtual"><scope>Diagram</scope><name>proxyDoubleClicked</name></member>
+      <member refid="classDiagram_1a98bd269f49ad75d3077c0d411623cc24" prot="public" virt="non-virtual"><scope>Diagram</scope><name>refresh</name></member>
+      <member refid="classDiagram_1ab759fd13a3ce77c09b490553abf00d10" prot="public" virt="non-virtual"><scope>Diagram</scope><name>refreshLinker</name></member>
+      <member refid="classDiagram_1a8867da23dbd62e1737a52301a26d695a" prot="public" virt="non-virtual"><scope>Diagram</scope><name>reinitGraph</name></member>
+      <member refid="classDiagram_1a9447cccdfda10f3de092798790dfbde6" prot="public" virt="non-virtual"><scope>Diagram</scope><name>removeEdge</name></member>
+      <member refid="classDiagram_1ab4730632d0d6b87d97e2b3e2c184f409" prot="public" virt="non-virtual"><scope>Diagram</scope><name>removeNode</name></member>
+      <member refid="classDiagram_1a7035c2c7a646876cda641b4ddbaa1b91" prot="public" virt="non-virtual"><scope>Diagram</scope><name>removeSelected</name></member>
+      <member refid="classDiagram_1a3bca49f996beeeb42547e1339d30d5e6" prot="public" virt="non-virtual"><scope>Diagram</scope><name>removeSelectedEdges</name></member>
+      <member refid="classDiagram_1add3fc84f79effb4ad829995b57006579" prot="public" virt="non-virtual"><scope>Diagram</scope><name>removeSelectedNodes</name></member>
+      <member refid="classDiagram_1ab2df9f5038fab924d7dfda7f4d8ee7a4" prot="private" virt="non-virtual"><scope>Diagram</scope><name>renderer</name></member>
+      <member refid="classDiagram_1a1937e0445651c9754dd4adfd7f010e1f" prot="public" virt="non-virtual"><scope>Diagram</scope><name>resetFocus</name></member>
+      <member refid="classDiagram_1addc91634feeec2cacdb5f1691dbc98e2" prot="public" virt="non-virtual"><scope>Diagram</scope><name>rotateTo</name></member>
+      <member refid="classDiagram_1a621b3021368acc28104d57083d440816" prot="private" virt="non-virtual"><scope>Diagram</scope><name>rotation</name></member>
+      <member refid="classDiagram_1a90f40887f0a173a4d79b9be1d28200e5" prot="public" virt="non-virtual"><scope>Diagram</scope><name>save</name></member>
+      <member refid="classDiagram_1abc8fcde6e08647c047ece036e1810525" prot="private" virt="non-virtual"><scope>Diagram</scope><name>saveFile</name></member>
+      <member refid="classDiagram_1a6e68c9b4bbdf05fe1346174680c8b322" prot="public" virt="non-virtual"><scope>Diagram</scope><name>scaleForGraph</name></member>
+      <member refid="classDiagram_1a358c251b57d7b1a88842d61709ea98d5" prot="private" virt="non-virtual"><scope>Diagram</scope><name>scene</name></member>
+      <member refid="classDiagram_1af7f169e0029c73b9d437ba04e80f0671" prot="public" virt="non-virtual"><scope>Diagram</scope><name>selectionMode</name></member>
+      <member refid="classDiagram_1ae544131b4b45d506d825c3553b9f06fd" prot="public" virt="non-virtual"><scope>Diagram</scope><name>setActiveWidget</name></member>
+      <member refid="classDiagram_1a95996e1e5d91dc9a5b294f94afbc9dc3" prot="public" virt="non-virtual"><scope>Diagram</scope><name>setEdgeName</name></member>
+      <member refid="classDiagram_1a4857cf9f6e2244d1e0c46c7bba3db8d1" prot="public" virt="non-virtual"><scope>Diagram</scope><name>setEdgeType</name></member>
+      <member refid="classDiagram_1a76ea0af2d47e8e0659306e8158c780f1" prot="public" virt="non-virtual"><scope>Diagram</scope><name>setExportFile</name></member>
+      <member refid="classDiagram_1a37464ed8d9fe50770e9dd3282233b9a0" prot="public" virt="non-virtual"><scope>Diagram</scope><name>setFile</name></member>
+      <member refid="classDiagram_1a3f508a3db28d97febe88eca8f6c7d615" prot="public" virt="non-virtual"><scope>Diagram</scope><name>setFocus</name></member>
+      <member refid="classDiagram_1a0b08cba734ebe431b3990021df0b7b80" prot="protected" virt="non-virtual"><scope>Diagram</scope><name>setFocusOn</name></member>
+      <member refid="classDiagram_1a25b787cd9a987941fa5f7e7defc54f92" prot="public" virt="non-virtual"><scope>Diagram</scope><name>setGridSize</name></member>
+      <member refid="classDiagram_1a264b9b3cdf8530cc6e70c529896de54c" prot="public" virt="non-virtual"><scope>Diagram</scope><name>setName</name></member>
+      <member refid="classDiagram_1a46ebfdd1c88949ee26f414d87113e18d" prot="public" virt="non-virtual"><scope>Diagram</scope><name>setNodeName</name></member>
+      <member refid="classDiagram_1a19b16da2c1d7b2dfa924ec6d8f7d3a96" prot="public" virt="non-virtual"><scope>Diagram</scope><name>setOutputPath</name></member>
+      <member refid="classDiagram_1a46b83a07466719057c20a7aa2c230095" prot="public" virt="non-virtual"><scope>Diagram</scope><name>showNodes</name></member>
+      <member refid="classDiagram_1a591a82e579fc2454fbd2772654929d0f" prot="public" virt="non-virtual"><scope>Diagram</scope><name>testRoundValues</name></member>
+      <member refid="classDiagram_1a72842cdee6f258843258f0a7d10ecc48" prot="public" virt="non-virtual"><scope>Diagram</scope><name>updateGraph</name></member>
+      <member refid="classDiagram_1a8cf790a62c808c122f9695df3d84cf78" prot="private" virt="non-virtual"><scope>Diagram</scope><name>updatingGraph</name></member>
+      <member refid="classDiagram_1ad3606a64f434cb3d688d231bbe569bf2" prot="protected" virt="non-virtual"><scope>Diagram</scope><name>wheelEvent</name></member>
+      <member refid="classDiagram_1af9a562feb00faed35e8d2fc3eb047008" prot="private" virt="non-virtual"><scope>Diagram</scope><name>widget</name></member>
+      <member refid="classDiagram_1a37938c4c40e9d4aca227833dfa8f0481" prot="private" virt="non-virtual"><scope>Diagram</scope><name>X0</name></member>
+      <member refid="classDiagram_1a4a0dbf2386db7fe496fbf22492dfefb6" prot="private" virt="non-virtual"><scope>Diagram</scope><name>Y0</name></member>
+      <member refid="classDiagram_1af3844176b56309e7589562b28ceca6dc" prot="public" virt="non-virtual"><scope>Diagram</scope><name>~Diagram</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,558 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1lib_1_1ParticleData" kind="class" language="C++" prot="public">
+    <compoundname>mty::lib::ParticleData</compoundname>
+    <includes refid="libjsondata_8h" local="no">libjsondata.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1lib_1_1ParticleData_1a1f7e927bc235809b8b837cfe2f84ed93" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; mty::lib::ParticleData::particleNames</definition>
+        <argsstring></argsstring>
+        <name>particleNames</name>
+        <qualifiedname>mty::lib::ParticleData::particleNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of the particles names in the library. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="305" column="21" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1lib_1_1ParticleData_1a1d4d424f82c3f37a27ed1ca7e4e1c292" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structmty_1_1lib_1_1QuantumNumber" kindref="compound">QuantumNumber</ref> &gt;</type>
+        <definition>std::vector&lt;QuantumNumber&gt; mty::lib::ParticleData::qNumbers</definition>
+        <argsstring></argsstring>
+        <name>qNumbers</name>
+        <qualifiedname>mty::lib::ParticleData::qNumbers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of the quantum numbers in the library. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="308" column="21" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1lib_1_1ParticleData_1a62ad2336ba72a032f3b0ffd2f1a1a8f6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structmty_1_1lib_1_1Process" kindref="compound">Process</ref> &gt;</type>
+        <definition>std::vector&lt;Process&gt; mty::lib::ParticleData::processes</definition>
+        <argsstring></argsstring>
+        <name>processes</name>
+        <qualifiedname>mty::lib::ParticleData::processes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of the processes in the library. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="311" column="21" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1lib_1_1ParticleData_1acaf8b2a775e6b54a731ec6907e7c6424" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt; const &amp;</type>
+        <definition>std::vector&lt; std::string &gt; const  &amp; mty::lib::ParticleData::getParticleNames</definition>
+        <argsstring>() const</argsstring>
+        <name>getParticleNames</name>
+        <qualifiedname>mty::lib::ParticleData::getParticleNames</qualifiedname>
+        <briefdescription>
+<para>Returns the list of particle names in the library. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="160" column="27" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.h" bodystart="160" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lib_1_1ParticleData_1a02a6868af70b8d70fd5a169c1d51c0c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1lib_1_1QuantumNumber" kindref="compound">QuantumNumber</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; QuantumNumber &gt; const  &amp; mty::lib::ParticleData::getQuantumNumbers</definition>
+        <argsstring>() const</argsstring>
+        <name>getQuantumNumbers</name>
+        <qualifiedname>mty::lib::ParticleData::getQuantumNumbers</qualifiedname>
+        <briefdescription>
+<para>Returns the list of quantum numbers in the library. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="167" column="27" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.h" bodystart="167" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lib_1_1ParticleData_1a71e76c3d213545a596c2578090c44821" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1lib_1_1Rational" kindref="compound">Rational</ref></type>
+        <definition>Rational mty::lib::ParticleData::getQuantumNumberValue</definition>
+        <argsstring>(std::string const &amp;quantumNumber, std::string const &amp;particleName, bool isParticle=true)</argsstring>
+        <name>getQuantumNumberValue</name>
+        <qualifiedname>mty::lib::ParticleData::getQuantumNumberValue</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>quantumNumber</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>particleName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isParticle</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Returns the quantum number of a <ref refid="structmty_1_1lib_1_1Particle" kindref="compound">Particle</ref>, taking into account its conjugation (minus sign for anti-particles). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>quantumNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Quantum number name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particleName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structmty_1_1lib_1_1Particle" kindref="compound">Particle</ref> name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isParticle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean (optional, default=true) telling if the particle is <bold>not</bold> an anti-particle.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value of the <bold>particle</bold> for the quantum number. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="182" column="18" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.cpp" bodystart="23" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lib_1_1ParticleData_1a39a066ea5c63f8d379d15572bfe0388b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmty_1_1lib_1_1Rational" kindref="compound">Rational</ref></type>
+        <definition>Rational mty::lib::ParticleData::getQuantumNumberValue</definition>
+        <argsstring>(std::string const &amp;quantumNumber, Particle const &amp;particle)</argsstring>
+        <name>getQuantumNumberValue</name>
+        <qualifiedname>mty::lib::ParticleData::getQuantumNumberValue</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>quantumNumber</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1lib_1_1Particle" kindref="compound">Particle</ref> const &amp;</type>
+          <declname>particle</declname>
+        </param>
+        <briefdescription>
+<para>Returns the quantum number of a <ref refid="structmty_1_1lib_1_1Particle" kindref="compound">Particle</ref>, taking into account its conjugation (minus sign for anti-particles). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>quantumNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Quantum number name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>particle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structmty_1_1lib_1_1Particle" kindref="compound">Particle</ref> object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value of the <bold>particle</bold> for the quantum number. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="197" column="18" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.cpp" bodystart="34" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lib_1_1ParticleData_1a7bca1fb6e9a709ee470b936aba7cd680" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1lib_1_1Process" kindref="compound">Process</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; Process &gt; const  &amp; mty::lib::ParticleData::getProcesses</definition>
+        <argsstring>() const</argsstring>
+        <name>getProcesses</name>
+        <qualifiedname>mty::lib::ParticleData::getProcesses</qualifiedname>
+        <briefdescription>
+<para>Returns the full process list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="205" column="27" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.h" bodystart="205" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lib_1_1ParticleData_1ab47cd9e1dc965b71338a526fecd7b4de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1lib_1_1Process" kindref="compound">Process</ref> &gt;</type>
+        <definition>std::vector&lt; Process &gt; mty::lib::ParticleData::getProcesses</definition>
+        <argsstring>(std::function&lt; bool(Process const &amp;)&gt; selection) const</argsstring>
+        <name>getProcesses</name>
+        <qualifiedname>mty::lib::ParticleData::getProcesses</qualifiedname>
+        <param>
+          <type>std::function&lt; bool(<ref refid="structmty_1_1lib_1_1Process" kindref="compound">Process</ref> const &amp;)&gt;</type>
+          <declname>selection</declname>
+        </param>
+        <briefdescription>
+<para>Returns the list of processes respecting a given condition. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>selection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Functional object (function, lambda, etc) returning true if the process (given as parameter) must be selected i.e. included in the list.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The list of processes passing the selection. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="218" column="21" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.cpp" bodystart="70" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lib_1_1ParticleData_1abe792763dc28fa96db2aa361c3d950b5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1lib_1_1Process" kindref="compound">Process</ref> &gt;</type>
+        <definition>std::vector&lt; Process &gt; mty::lib::ParticleData::getProcessesFromIncoming</definition>
+        <argsstring>(std::string const &amp;p1, std::string const &amp;p2=&quot;&quot;) const</argsstring>
+        <name>getProcessesFromIncoming</name>
+        <qualifiedname>mty::lib::ParticleData::getProcessesFromIncoming</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>p2</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Returns the list of processes that have one (or two) particles as incoming particles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First particle name, all selected processes should have this particle as incoming. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional second particle, same behabior as <bold>p1</bold> if given, ignored otherwise (default).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The list of processes with <bold>p1</bold> (and <bold>p2</bold> if given) as incoming particles. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="234" column="21" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.cpp" bodystart="82" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lib_1_1ParticleData_1a165c39dd283a6b416ab6b056827d5809" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1lib_1_1Process" kindref="compound">Process</ref> &gt;</type>
+        <definition>std::vector&lt; Process &gt; mty::lib::ParticleData::getProcessesFromQNumberConservation</definition>
+        <argsstring>(std::string const &amp;qNumber) const</argsstring>
+        <name>getProcessesFromQNumberConservation</name>
+        <qualifiedname>mty::lib::ParticleData::getProcessesFromQNumberConservation</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>qNumber</declname>
+        </param>
+        <briefdescription>
+<para>Returns the processes conserving a given quantum number. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>qNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Quantum number to test.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>All processes that conserve <bold>qNumber</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="246" column="21" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.cpp" bodystart="103" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lib_1_1ParticleData_1a38eab5f1b7793403145dff2633a6cb7e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1lib_1_1Process" kindref="compound">Process</ref> &gt;</type>
+        <definition>std::vector&lt; Process &gt; mty::lib::ParticleData::getProcessesFromQNumberViolation</definition>
+        <argsstring>(std::string const &amp;qNumber) const</argsstring>
+        <name>getProcessesFromQNumberViolation</name>
+        <qualifiedname>mty::lib::ParticleData::getProcessesFromQNumberViolation</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>qNumber</declname>
+        </param>
+        <briefdescription>
+<para>Returns the processes violating a given quantum number. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>qNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Quantum number to test.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>All processes that violate <bold>qNumber</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="257" column="21" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.cpp" bodystart="113" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lib_1_1ParticleData_1a2a82c60b7500332ab6d28072d796f4ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::lib::ParticleData::loadFile</definition>
+        <argsstring>(std::string const &amp;nameFile)</argsstring>
+        <name>loadFile</name>
+        <qualifiedname>mty::lib::ParticleData::loadFile</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>nameFile</declname>
+        </param>
+        <briefdescription>
+<para>Loads <ref refid="namespaceJSON" kindref="compound">JSON</ref> data from a file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nameFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the <ref refid="namespaceJSON" kindref="compound">JSON</ref> file.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Usage: <programlisting><codeline><highlight class="normal"><ref refid="classmty_1_1lib_1_1ParticleData" kindref="compound">mty::lib::ParticleData</ref><sp/>data;</highlight></codeline>
+<codeline><highlight class="normal">data.load(</highlight><highlight class="stringliteral">&quot;file.json&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">std::cout<sp/>&lt;&lt;<sp/>data<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="273" column="14" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.cpp" bodystart="56" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lib_1_1ParticleData_1abfe6822c00600a63e8af0e9ddf4d6808" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::lib::ParticleData::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>mty::lib::ParticleData::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="275" column="14" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.cpp" bodystart="63" bodyend="68"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmty_1_1lib_1_1ParticleData_1a795edc4d079afa55d6b82cd9ab6a6c80" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::lib::ParticleData::load</definition>
+        <argsstring>(std::unique_ptr&lt; JSON::Node &gt; const &amp;tree)</argsstring>
+        <name>load</name>
+        <qualifiedname>mty::lib::ParticleData::load</qualifiedname>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="classJSON_1_1Node" kindref="compound">JSON::Node</ref> &gt; const &amp;</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="279" column="14" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.cpp" bodystart="123" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lib_1_1ParticleData_1a477326ab04603821153cb4cdf3b9ecc2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::lib::ParticleData::loadQNumberNode</definition>
+        <argsstring>(JSON::Node const *node)</argsstring>
+        <name>loadQNumberNode</name>
+        <qualifiedname>mty::lib::ParticleData::loadQNumberNode</qualifiedname>
+        <param>
+          <type><ref refid="classJSON_1_1Node" kindref="compound">JSON::Node</ref> const *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="281" column="14" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.cpp" bodystart="131" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lib_1_1ParticleData_1a459f7ab5e75a58476be19dfd52f9b629" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::lib::ParticleData::loadProcessNode</definition>
+        <argsstring>(JSON::Node const *node)</argsstring>
+        <name>loadProcessNode</name>
+        <qualifiedname>mty::lib::ParticleData::loadProcessNode</qualifiedname>
+        <param>
+          <type><ref refid="classJSON_1_1Node" kindref="compound">JSON::Node</ref> const *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="283" column="14" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.cpp" bodystart="154" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lib_1_1ParticleData_1a0cfe15bc01d5c7d52a3cb6142bcf656b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1lib_1_1Particle" kindref="compound">Particle</ref> &gt;</type>
+        <definition>std::vector&lt; Particle &gt; mty::lib::ParticleData::loadParticles</definition>
+        <argsstring>(JSON::Node const *node) const</argsstring>
+        <name>loadParticles</name>
+        <qualifiedname>mty::lib::ParticleData::loadParticles</qualifiedname>
+        <param>
+          <type><ref refid="classJSON_1_1Node" kindref="compound">JSON::Node</ref> const *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="285" column="21" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.cpp" bodystart="189" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lib_1_1ParticleData_1ab20b9896dff6b53a3ac2243d4d5f366e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::lib::ParticleData::addParticles</definition>
+        <argsstring>(std::vector&lt; Particle &gt; const &amp;particles)</argsstring>
+        <name>addParticles</name>
+        <qualifiedname>mty::lib::ParticleData::addParticles</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="structmty_1_1lib_1_1Particle" kindref="compound">Particle</ref> &gt; const &amp;</type>
+          <declname>particles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="287" column="14" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.cpp" bodystart="200" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1lib_1_1ParticleData_1a5943d77b47958d967d5e0e9bef9f490d" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::lib::ParticleData::loadProcessQNumber</definition>
+        <argsstring>(JSON::Node const *node, Process &amp;process) const</argsstring>
+        <name>loadProcessQNumber</name>
+        <qualifiedname>mty::lib::ParticleData::loadProcessQNumber</qualifiedname>
+        <param>
+          <type><ref refid="classJSON_1_1Node" kindref="compound">JSON::Node</ref> const *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1lib_1_1Process" kindref="compound">Process</ref> &amp;</type>
+          <declname>process</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="289" column="14" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.cpp" bodystart="175" bodyend="187"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmty_1_1lib_1_1ParticleData_1a6101129da6468f526e3da9d09844c04a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, ParticleData const &amp;data)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::lib::ParticleData::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1lib_1_1ParticleData" kindref="compound">ParticleData</ref> const &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="297" column="13" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.cpp" bodystart="247" bodyend="266"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Main container for <ref refid="namespaceJSON" kindref="compound">JSON</ref> data. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains the particle list, quantum number list, process list and the interface to retrieve this data. Any process name can be used to get the corresponding MARTY function. Usage: <programlisting><codeline><highlight class="normal"><ref refid="classmty_1_1lib_1_1ParticleData" kindref="compound">mty::lib::ParticleData</ref><sp/>data;</highlight></codeline>
+<codeline><highlight class="normal">data.load(</highlight><highlight class="stringliteral">&quot;data.json&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structmty_1_1lib_1_1Process" kindref="compound">mty::lib::Process</ref><sp/>process<sp/>=<sp/>data.<ref refid="classmty_1_1lib_1_1ParticleData_1a7bca1fb6e9a709ee470b936aba7cd680" kindref="member">getProcesses</ref>()[0];<sp/></highlight><highlight class="comment">//<sp/>First<sp/>process</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>f<sp/>=<sp/>f_G[process.<ref refid="structmty_1_1lib_1_1Process_1af155219d4c39bd5db13caf844ddba4e6" kindref="member">name</ref>];<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>function<sp/>from<sp/>its<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">param_t<sp/>params;<sp/></highlight><highlight class="comment">//<sp/>Create<sp/>and<sp/>fill<sp/>the<sp/>param_t<sp/>struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">std::cout<sp/>&lt;&lt;<sp/>f(params).real()<sp/>&lt;&lt;<sp/>std::endl;<sp/></highlight><highlight class="comment">//<sp/>Use<sp/>the<sp/>function</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="src/marty-plugins/boltzmann-solver/libjsondata.h" line="153" column="5" bodyfile="src/marty-plugins/boltzmann-solver/libjsondata.h" bodystart="153" bodyend="312"/>
+    <listofallmembers>
+      <member refid="classmty_1_1lib_1_1ParticleData_1ab20b9896dff6b53a3ac2243d4d5f366e" prot="private" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>addParticles</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1abfe6822c00600a63e8af0e9ddf4d6808" prot="public" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>clear</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1acaf8b2a775e6b54a731ec6907e7c6424" prot="public" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>getParticleNames</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1a7bca1fb6e9a709ee470b936aba7cd680" prot="public" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>getProcesses</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1ab47cd9e1dc965b71338a526fecd7b4de" prot="public" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>getProcesses</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1abe792763dc28fa96db2aa361c3d950b5" prot="public" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>getProcessesFromIncoming</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1a165c39dd283a6b416ab6b056827d5809" prot="public" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>getProcessesFromQNumberConservation</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1a38eab5f1b7793403145dff2633a6cb7e" prot="public" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>getProcessesFromQNumberViolation</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1a02a6868af70b8d70fd5a169c1d51c0c8" prot="public" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>getQuantumNumbers</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1a71e76c3d213545a596c2578090c44821" prot="public" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>getQuantumNumberValue</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1a39a066ea5c63f8d379d15572bfe0388b" prot="public" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>getQuantumNumberValue</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1a795edc4d079afa55d6b82cd9ab6a6c80" prot="private" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>load</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1a2a82c60b7500332ab6d28072d796f4ae" prot="public" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>loadFile</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1a0cfe15bc01d5c7d52a3cb6142bcf656b" prot="private" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>loadParticles</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1a459f7ab5e75a58476be19dfd52f9b629" prot="private" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>loadProcessNode</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1a5943d77b47958d967d5e0e9bef9f490d" prot="private" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>loadProcessQNumber</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1a477326ab04603821153cb4cdf3b9ecc2" prot="private" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>loadQNumberNode</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1a6101129da6468f526e3da9d09844c04a" prot="public" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1a1f7e927bc235809b8b837cfe2f84ed93" prot="private" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>particleNames</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1a62ad2336ba72a032f3b0ffd2f1a1a8f6" prot="private" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>processes</name></member>
+      <member refid="classmty_1_1lib_1_1ParticleData_1a1d4d424f82c3f37a27ed1ca7e4e1c292" prot="private" virt="non-virtual"><scope>mty::lib::ParticleData</scope><name>qNumbers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

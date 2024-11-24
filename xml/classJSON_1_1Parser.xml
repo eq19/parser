@@ -1,0 +1,707 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classJSON_1_1Parser" kind="class" language="C++" prot="public">
+    <compoundname>JSON::Parser</compoundname>
+    <includes refid="gui_2jsonLoader_8h" local="no">jsonLoader.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classJSON_1_1Parser_1a4068815a9af8e2010f2b0f9cb63e0e44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JSON::Parser::Parser</definition>
+        <argsstring>()=delete</argsstring>
+        <name>Parser</name>
+        <qualifiedname>JSON::Parser::Parser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/jsonLoader.h" line="245" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classJSON_1_1Parser_1a4068815a9af8e2010f2b0f9cb63e0e44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JSON::Parser::Parser</definition>
+        <argsstring>()=delete</argsstring>
+        <name>Parser</name>
+        <qualifiedname>JSON::Parser::Parser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/jsonparser/jsonLoader.h" line="245" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classJSON_1_1Parser_1a8366c6b715d586d43efe062b44fc70de" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Targ</type>
+          </param>
+        </templateparamlist>
+        <type>std::optional&lt; Targ &gt;</type>
+        <definition>static std::optional&lt; Targ &gt; JSON::Parser::parseArgument</definition>
+        <argsstring>(Node *node, std::string const &amp;specifier, bool mandatory=false)</argsstring>
+        <name>parseArgument</name>
+        <qualifiedname>JSON::Parser::parseArgument</qualifiedname>
+        <param>
+          <type><ref refid="classJSON_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>specifier</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mandatory</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Allows to get arguments of a node, given the specifier and the type of the desired object. This function is not recursive: We search in children only, not grand-children. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Targ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the considered <ref refid="classJSON_1_1Leaf" kindref="compound">Leaf</ref> (int, double, string, ...). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="classJSON_1_1Node" kindref="compound">Node</ref> in which we search the <ref refid="classJSON_1_1Leaf" kindref="compound">Leaf</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>specifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifier to search. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mandatory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tells if the presence of the argument is mandatory. If true and not found, this function raises an error. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A std::optional&lt;Targ&gt; contaning the argument if found. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>nullopt</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/jsonLoader.h" line="261" column="26" bodyfile="src/grafed/gui/jsonLoader.h" bodystart="261" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classJSON_1_1Parser_1ae373a85e782f1ee3771d1ca5abf126f6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Targ</type>
+          </param>
+        </templateparamlist>
+        <type>std::optional&lt; Targ &gt;</type>
+        <definition>static std::optional&lt; Targ &gt; JSON::Parser::parseArgument</definition>
+        <argsstring>(std::unique_ptr&lt; Object &gt; const &amp;object, std::string const &amp;specifier, bool mandatory=false)</argsstring>
+        <name>parseArgument</name>
+        <qualifiedname>JSON::Parser::parseArgument</qualifiedname>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="classJSON_1_1Object" kindref="compound">Object</ref> &gt; const &amp;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>specifier</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mandatory</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Allows to get arguments of a node, given the specifier and the type of the desired object. This function is not recursive: We search in children only, not grand-children. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Targ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the considered <ref refid="classJSON_1_1Leaf" kindref="compound">Leaf</ref> (int, double, string, ...). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unique_ptr to the <ref refid="classJSON_1_1Object" kindref="compound">Object</ref> in which we search the <ref refid="classJSON_1_1Leaf" kindref="compound">Leaf</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>specifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifier to search. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mandatory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tells if the presence of the argument is mandatory. If true and not found, this function raises an error. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A std::optional&lt;Targ&gt; contaning the argument if found. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>nullopt</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/jsonLoader.h" line="292" column="5" bodyfile="src/grafed/gui/jsonLoader.h" bodystart="292" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classJSON_1_1Parser_1a16e3791a9d377f696c17efc39f50c8a2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classJSON_1_1Node" kindref="compound">Node</ref> *</type>
+        <definition>Node * JSON::Parser::parseNode</definition>
+        <argsstring>(Node *parent, std::string const &amp;specifier, bool mandatory=false)</argsstring>
+        <name>parseNode</name>
+        <qualifiedname>JSON::Parser::parseNode</qualifiedname>
+        <param>
+          <type><ref refid="classJSON_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>specifier</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mandatory</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Allows to get a subNode of a node, given the specifier. This function is not recursive: We search in children only, not grand-children. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="classJSON_1_1Node" kindref="compound">Node</ref> in which we search the sub-Node. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>specifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifier to search. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mandatory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tells if the presence of the sub-Node is mandatory. If true and not found, this function raises an error. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the sub-Node if found. </para>
+</simplesect>
+<simplesect kind="return"><para>nullptr else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/jsonLoader.h" line="310" column="17" bodyfile="src/grafed/gui/jsonLoader.cpp" bodystart="354" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classJSON_1_1Parser_1a81235ebb7a39686eb3c8082d85669c31" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classJSON_1_1Node" kindref="compound">Node</ref> *</type>
+        <definition>static Node * JSON::Parser::parseNode</definition>
+        <argsstring>(std::unique_ptr&lt; Object &gt; const &amp;parent, std::string const &amp;specifier, bool mandatory=false)</argsstring>
+        <name>parseNode</name>
+        <qualifiedname>JSON::Parser::parseNode</qualifiedname>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="classJSON_1_1Object" kindref="compound">Object</ref> &gt; const &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>specifier</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mandatory</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Allows to get a subNode of a node, given the specifier. This function is not recursive: We search in children only, not grand-children. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unique_ptr to the <ref refid="classJSON_1_1Object" kindref="compound">Object</ref> in which we search the sub-Node.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>specifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifier to search.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mandatory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tells if the presence of the sub-Node is mandatory. If true and not found, this function raises an error. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the sub-Node if found. </para>
+</simplesect>
+<simplesect kind="return"><para>nullptr else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/jsonLoader.h" line="324" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classJSON_1_1Parser_1acdd6851e96f2f9303f1fa0862d27817b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Targ</type>
+          </param>
+        </templateparamlist>
+        <type>Targ</type>
+        <definition>static Targ JSON::Parser::interpretObject</definition>
+        <argsstring>(Object *object)</argsstring>
+        <name>interpretObject</name>
+        <qualifiedname>JSON::Parser::interpretObject</qualifiedname>
+        <param>
+          <type><ref refid="classJSON_1_1Object" kindref="compound">Object</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>Returns the argument with the correct type from an <ref refid="classJSON_1_1Object" kindref="compound">Object</ref> that must be a <ref refid="classJSON_1_1Leaf" kindref="compound">Leaf</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Targ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the argument to get (int, double, string, ...). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unique_ptr to the <ref refid="classJSON_1_1Object" kindref="compound">Object</ref>. Must be a <ref refid="classJSON_1_1Leaf" kindref="compound">Leaf</ref> a type <bold>Targ</bold>, else this function raises an error. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The argument of the correct type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/jsonLoader.h" line="337" column="17" bodyfile="src/grafed/gui/jsonLoader.h" bodystart="337" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classJSON_1_1Parser_1a9509bac1cfe35b7daf1b3324e9496b7d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classJSON_1_1Node" kindref="compound">Node</ref> *</type>
+        <definition>Node * JSON::Parser::convert</definition>
+        <argsstring>(const std::unique_ptr&lt; Object &gt; &amp;node)</argsstring>
+        <name>convert</name>
+        <qualifiedname>JSON::Parser::convert</qualifiedname>
+        <param>
+          <type>const std::unique_ptr&lt; <ref refid="classJSON_1_1Object" kindref="compound">Object</ref> &gt; &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/jsonLoader.h" line="348" column="17" bodyfile="src/grafed/gui/jsonLoader.cpp" bodystart="376" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="classJSON_1_1Parser_1a8366c6b715d586d43efe062b44fc70de" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Targ</type>
+          </param>
+        </templateparamlist>
+        <type>std::optional&lt; Targ &gt;</type>
+        <definition>static std::optional&lt; Targ &gt; JSON::Parser::parseArgument</definition>
+        <argsstring>(Node *node, std::string const &amp;specifier, bool mandatory=false)</argsstring>
+        <name>parseArgument</name>
+        <qualifiedname>JSON::Parser::parseArgument</qualifiedname>
+        <param>
+          <type><ref refid="classJSON_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>specifier</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mandatory</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Allows to get arguments of a node, given the specifier and the type of the desired object. This function is not recursive: We search in children only, not grand-children. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Targ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the considered <ref refid="classJSON_1_1Leaf" kindref="compound">Leaf</ref> (int, double, string, ...). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="classJSON_1_1Node" kindref="compound">Node</ref> in which we search the <ref refid="classJSON_1_1Leaf" kindref="compound">Leaf</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>specifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifier to search. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mandatory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tells if the presence of the argument is mandatory. If true and not found, this function raises an error. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A std::optional&lt;Targ&gt; contaning the argument if found. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>nullopt</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/jsonparser/jsonLoader.h" line="261" column="26" bodyfile="src/grafed/jsonparser/jsonLoader.h" bodystart="261" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classJSON_1_1Parser_1ae373a85e782f1ee3771d1ca5abf126f6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Targ</type>
+          </param>
+        </templateparamlist>
+        <type>std::optional&lt; Targ &gt;</type>
+        <definition>static std::optional&lt; Targ &gt; JSON::Parser::parseArgument</definition>
+        <argsstring>(std::unique_ptr&lt; Object &gt; const &amp;object, std::string const &amp;specifier, bool mandatory=false)</argsstring>
+        <name>parseArgument</name>
+        <qualifiedname>JSON::Parser::parseArgument</qualifiedname>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="classJSON_1_1Object" kindref="compound">Object</ref> &gt; const &amp;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>specifier</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mandatory</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Allows to get arguments of a node, given the specifier and the type of the desired object. This function is not recursive: We search in children only, not grand-children. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Targ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the considered <ref refid="classJSON_1_1Leaf" kindref="compound">Leaf</ref> (int, double, string, ...). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unique_ptr to the <ref refid="classJSON_1_1Object" kindref="compound">Object</ref> in which we search the <ref refid="classJSON_1_1Leaf" kindref="compound">Leaf</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>specifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifier to search. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mandatory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tells if the presence of the argument is mandatory. If true and not found, this function raises an error. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A std::optional&lt;Targ&gt; contaning the argument if found. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>nullopt</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/jsonparser/jsonLoader.h" line="292" column="5" bodyfile="src/grafed/jsonparser/jsonLoader.h" bodystart="292" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classJSON_1_1Parser_1a3125bbf595ed28994b40da2d106cc95e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classJSON_1_1Node" kindref="compound">Node</ref> *</type>
+        <definition>static Node * JSON::Parser::parseNode</definition>
+        <argsstring>(Node *parent, std::string const &amp;specifier, bool mandatory=false)</argsstring>
+        <name>parseNode</name>
+        <qualifiedname>JSON::Parser::parseNode</qualifiedname>
+        <param>
+          <type><ref refid="classJSON_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>specifier</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mandatory</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Allows to get a subNode of a node, given the specifier. This function is not recursive: We search in children only, not grand-children. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="classJSON_1_1Node" kindref="compound">Node</ref> in which we search the sub-Node. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>specifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifier to search. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mandatory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tells if the presence of the sub-Node is mandatory. If true and not found, this function raises an error. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the sub-Node if found. </para>
+</simplesect>
+<simplesect kind="return"><para>nullptr else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/jsonparser/jsonLoader.h" line="310" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classJSON_1_1Parser_1a81235ebb7a39686eb3c8082d85669c31" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classJSON_1_1Node" kindref="compound">Node</ref> *</type>
+        <definition>static Node * JSON::Parser::parseNode</definition>
+        <argsstring>(std::unique_ptr&lt; Object &gt; const &amp;parent, std::string const &amp;specifier, bool mandatory=false)</argsstring>
+        <name>parseNode</name>
+        <qualifiedname>JSON::Parser::parseNode</qualifiedname>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="classJSON_1_1Object" kindref="compound">Object</ref> &gt; const &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>specifier</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mandatory</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Allows to get a subNode of a node, given the specifier. This function is not recursive: We search in children only, not grand-children. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unique_ptr to the <ref refid="classJSON_1_1Object" kindref="compound">Object</ref> in which we search the sub-Node.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>specifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifier to search.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mandatory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tells if the presence of the sub-Node is mandatory. If true and not found, this function raises an error. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the sub-Node if found. </para>
+</simplesect>
+<simplesect kind="return"><para>nullptr else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/jsonparser/jsonLoader.h" line="324" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classJSON_1_1Parser_1acdd6851e96f2f9303f1fa0862d27817b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Targ</type>
+          </param>
+        </templateparamlist>
+        <type>Targ</type>
+        <definition>static Targ JSON::Parser::interpretObject</definition>
+        <argsstring>(Object *object)</argsstring>
+        <name>interpretObject</name>
+        <qualifiedname>JSON::Parser::interpretObject</qualifiedname>
+        <param>
+          <type><ref refid="classJSON_1_1Object" kindref="compound">Object</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>Returns the argument with the correct type from an <ref refid="classJSON_1_1Object" kindref="compound">Object</ref> that must be a <ref refid="classJSON_1_1Leaf" kindref="compound">Leaf</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Targ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the argument to get (int, double, string, ...). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unique_ptr to the <ref refid="classJSON_1_1Object" kindref="compound">Object</ref>. Must be a <ref refid="classJSON_1_1Leaf" kindref="compound">Leaf</ref> a type <bold>Targ</bold>, else this function raises an error. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The argument of the correct type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/jsonparser/jsonLoader.h" line="337" column="17" bodyfile="src/grafed/jsonparser/jsonLoader.h" bodystart="337" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classJSON_1_1Parser_1a0de4c8c879c90fd581eebf214b7f544d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classJSON_1_1Node" kindref="compound">Node</ref> *</type>
+        <definition>static Node * JSON::Parser::convert</definition>
+        <argsstring>(const std::unique_ptr&lt; Object &gt; &amp;node)</argsstring>
+        <name>convert</name>
+        <qualifiedname>JSON::Parser::convert</qualifiedname>
+        <param>
+          <type>const std::unique_ptr&lt; <ref refid="classJSON_1_1Object" kindref="compound">Object</ref> &gt; &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/jsonparser/jsonLoader.h" line="348" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class for static purpose only (i.e. not constructible) that gather data from a tree (<ref refid="classJSON_1_1Node" kindref="compound">JSON::Node</ref> object) read by <ref refid="classJSON_1_1Reader" kindref="compound">JSON::Reader</ref> in a .json file. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/grafed/gui/jsonLoader.h" line="242" column="1" bodyfile="src/grafed/jsonparser/jsonLoader.h" bodystart="242" bodyend="349"/>
+    <listofallmembers>
+      <member refid="classJSON_1_1Parser_1a9509bac1cfe35b7daf1b3324e9496b7d" prot="public" virt="non-virtual"><scope>JSON::Parser</scope><name>convert</name></member>
+      <member refid="classJSON_1_1Parser_1a0de4c8c879c90fd581eebf214b7f544d" prot="public" virt="non-virtual"><scope>JSON::Parser</scope><name>convert</name></member>
+      <member refid="classJSON_1_1Parser_1acdd6851e96f2f9303f1fa0862d27817b" prot="public" virt="non-virtual"><scope>JSON::Parser</scope><name>interpretObject</name></member>
+      <member refid="classJSON_1_1Parser_1acdd6851e96f2f9303f1fa0862d27817b" prot="public" virt="non-virtual"><scope>JSON::Parser</scope><name>interpretObject</name></member>
+      <member refid="classJSON_1_1Parser_1a8366c6b715d586d43efe062b44fc70de" prot="public" virt="non-virtual"><scope>JSON::Parser</scope><name>parseArgument</name></member>
+      <member refid="classJSON_1_1Parser_1ae373a85e782f1ee3771d1ca5abf126f6" prot="public" virt="non-virtual"><scope>JSON::Parser</scope><name>parseArgument</name></member>
+      <member refid="classJSON_1_1Parser_1a8366c6b715d586d43efe062b44fc70de" prot="public" virt="non-virtual"><scope>JSON::Parser</scope><name>parseArgument</name></member>
+      <member refid="classJSON_1_1Parser_1ae373a85e782f1ee3771d1ca5abf126f6" prot="public" virt="non-virtual"><scope>JSON::Parser</scope><name>parseArgument</name></member>
+      <member refid="classJSON_1_1Parser_1a16e3791a9d377f696c17efc39f50c8a2" prot="public" virt="non-virtual"><scope>JSON::Parser</scope><name>parseNode</name></member>
+      <member refid="classJSON_1_1Parser_1a81235ebb7a39686eb3c8082d85669c31" prot="public" virt="non-virtual"><scope>JSON::Parser</scope><name>parseNode</name></member>
+      <member refid="classJSON_1_1Parser_1a3125bbf595ed28994b40da2d106cc95e" prot="public" virt="non-virtual"><scope>JSON::Parser</scope><name>parseNode</name></member>
+      <member refid="classJSON_1_1Parser_1a81235ebb7a39686eb3c8082d85669c31" prot="public" virt="non-virtual"><scope>JSON::Parser</scope><name>parseNode</name></member>
+      <member refid="classJSON_1_1Parser_1a4068815a9af8e2010f2b0f9cb63e0e44" prot="public" virt="non-virtual"><scope>JSON::Parser</scope><name>Parser</name></member>
+      <member refid="classJSON_1_1Parser_1a4068815a9af8e2010f2b0f9cb63e0e44" prot="public" virt="non-virtual"><scope>JSON::Parser</scope><name>Parser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

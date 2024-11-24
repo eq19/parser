@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classGammaAPIError" kind="class" language="C++" prot="public">
+    <compoundname>GammaAPIError</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::exception</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGammaAPIError_1ae19cb042a13b055d5bc39ca44398bacc" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string GammaAPIError::msg</definition>
+        <argsstring></argsstring>
+        <name>msg</name>
+        <qualifiedname>GammaAPIError::msg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma_api_error.h" line="17" column="17" bodyfile="src/marty/api/gamma_api_error.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGammaAPIError_1a6e236228260a6a1c7ff8d1d33a06e06e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>GammaAPIError::GammaAPIError</definition>
+        <argsstring>(Args &amp;&amp;...args)</argsstring>
+        <name>GammaAPIError</name>
+        <qualifiedname>GammaAPIError::GammaAPIError</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma_api_error.h" line="9" column="5" bodyfile="src/marty/api/gamma_api_error.h" bodystart="21" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classGammaAPIError_1a28e5e599174aaf0e08741d31a8b250ba" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>char const *</type>
+        <definition>char const  * GammaAPIError::what</definition>
+        <argsstring>() const noexcept override</argsstring>
+        <name>what</name>
+        <qualifiedname>GammaAPIError::what</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/api/gamma_api_error.h" line="11" column="16" bodyfile="src/marty/api/gamma_api_error.h" bodystart="11" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>GammaAPIError</label>
+        <link refid="classGammaAPIError"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>GammaAPIError</label>
+        <link refid="classGammaAPIError"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/api/gamma_api_error.h" line="6" column="1" bodyfile="src/marty/api/gamma_api_error.h" bodystart="6" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classGammaAPIError_1a6e236228260a6a1c7ff8d1d33a06e06e" prot="public" virt="non-virtual"><scope>GammaAPIError</scope><name>GammaAPIError</name></member>
+      <member refid="classGammaAPIError_1ae19cb042a13b055d5bc39ca44398bacc" prot="private" virt="non-virtual"><scope>GammaAPIError</scope><name>msg</name></member>
+      <member refid="classGammaAPIError_1a28e5e599174aaf0e08741d31a8b250ba" prot="public" virt="non-virtual"><scope>GammaAPIError</scope><name>what</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

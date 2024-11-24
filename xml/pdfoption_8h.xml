@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="pdfoption_8h" kind="file" language="C++">
+    <compoundname>pdfoption.h</compoundname>
+    <includes local="no">QPdfWriter</includes>
+    <includedby refid="mainwidget_8h" local="yes">src/grafed/gui/mainwidget.h</includedby>
+    <includedby refid="pdfsetupdialog_8h" local="yes">src/grafed/gui/pdfsetupdialog.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/grafed/gui/pdfoption.h</label>
+        <link refid="pdfoption_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QPdfWriter</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/grafed/gui/mainwidget.h</label>
+        <link refid="mainwidget_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/grafed/gui/mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+      </node>
+      <node id="1">
+        <label>src/grafed/gui/pdfoption.h</label>
+        <link refid="pdfoption_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/grafed/gui/pdfsetupdialog.h</label>
+        <link refid="pdfsetupdialog_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structPDFOption" prot="public">PDFOption</innerclass>
+    <briefdescription>
+<para>Contains the <ref refid="structPDFOption" kindref="compound">PDFOption</ref> struct for GRAFED PDF output. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PDFOPTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PDFOPTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPdfWriter&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="structPDFOption" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structPDFOption" kindref="compound">PDFOption</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="structPDFOption_1a52ecc12c72168ec9ddb9a23c3196132c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structPDFOption_1a52ecc12c72168ec9ddb9a23c3196132c" kindref="member">imageRatio</ref><sp/>=<sp/>1.;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="structPDFOption_1a0fc752e252b350d24f26b00d9f2e66f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structPDFOption_1a0fc752e252b350d24f26b00d9f2e66f2" kindref="member">rowSize</ref><sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="structPDFOption_1a24faf2cb378647dfe49e0bcbacd9077e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structPDFOption_1a24faf2cb378647dfe49e0bcbacd9077e" kindref="member">horizontalMarginRatio</ref><sp/>=<sp/>0.05;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="structPDFOption_1a2b508a329298ef24c56a0366e7c1155e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structPDFOption_1a2b508a329298ef24c56a0366e7c1155e" kindref="member">verticalMarginRatio</ref><sp/>=<sp/>0.05;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="structPDFOption_1a3735cecb1c50800ca8a2e276da705f99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structPDFOption_1a3735cecb1c50800ca8a2e276da705f99" kindref="member">horizontalSpacingRatio</ref><sp/>=<sp/>0.05;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="structPDFOption_1adb15387065e60ec3137c485465b787c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structPDFOption_1adb15387065e60ec3137c485465b787c1" kindref="member">verticalSpacingRatio</ref><sp/>=<sp/>0.05;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="structPDFOption_1ae979844cc57325284bde578c8d116a0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structPDFOption_1ae979844cc57325284bde578c8d116a0f" kindref="member">width</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="structPDFOption_1a682978442ad54ec43fd60e2c802accdf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structPDFOption_1a682978442ad54ec43fd60e2c802accdf" kindref="member">height</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="structPDFOption_1ae710483d2578b3673df45ddf145d1d22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structPDFOption_1ae710483d2578b3673df45ddf145d1d22" kindref="member">showNumbers</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="structPDFOption_1a750d76d861b8bd714e0bada4fa8fddce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPdfWriter<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*<ref refid="structPDFOption_1a750d76d861b8bd714e0bada4fa8fddce" kindref="member">getPDFWriter</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="46"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>writer;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="structPDFOption_1a5664c7c926853f4397487057f278c0b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPdfWriter<sp/>*<ref refid="structPDFOption_1a5664c7c926853f4397487057f278c0b4" kindref="member">getPDFWriter</ref>()</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>writer;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="structPDFOption_1a422bea3ec71a51f029b48acd33468eae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structPDFOption_1a422bea3ec71a51f029b48acd33468eae" kindref="member">setPDFWriter</ref>(QPdfWriter<sp/>*printer)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer<sp/>=<sp/>printer;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(writer)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPDFOption_1ae979844cc57325284bde578c8d116a0f" kindref="member">width</ref><sp/><sp/>=<sp/>writer-&gt;width();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPDFOption_1a682978442ad54ec43fd60e2c802accdf" kindref="member">height</ref><sp/>=<sp/>writer-&gt;height();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>QPdfWriter<sp/>*writer<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PDFOPTION_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/grafed/gui/pdfoption.h"/>
+  </compounddef>
+</doxygen>

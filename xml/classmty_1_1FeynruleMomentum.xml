@@ -1,0 +1,507 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1FeynruleMomentum" kind="class" language="C++" prot="public">
+    <compoundname>mty::FeynruleMomentum</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1FeynruleMomentum_1a83080c99ddd520342d3ed1986d914a38" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structmty_1_1FeynruleKey" kindref="compound">FeynruleKey</ref> &gt;</type>
+        <definition>std::vector&lt;FeynruleKey&gt; mty::FeynruleMomentum::keys</definition>
+        <argsstring></argsstring>
+        <name>keys</name>
+        <qualifiedname>mty::FeynruleMomentum::keys</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="127" column="17" bodyfile="src/marty/core/feynruleMomentum.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynruleMomentum_1a5acff57bd55845b014789a8c033279e2" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structmty_1_1FeynruleTarget" kindref="compound">FeynruleTarget</ref> &gt;</type>
+        <definition>std::vector&lt;FeynruleTarget&gt; mty::FeynruleMomentum::targets</definition>
+        <argsstring></argsstring>
+        <name>targets</name>
+        <qualifiedname>mty::FeynruleMomentum::targets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="129" column="17" bodyfile="src/marty/core/feynruleMomentum.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1FeynruleMomentum_1a110667b52a7cd8f114c53f05cf63aca7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; mty::FeynruleMomentum::mapping</definition>
+        <argsstring></argsstring>
+        <name>mapping</name>
+        <qualifiedname>mty::FeynruleMomentum::mapping</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="131" column="17" bodyfile="src/marty/core/feynruleMomentum.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1a50f7231beb81629303a445d390701202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::FeynruleMomentum::FeynruleMomentum</definition>
+        <argsstring>(std::vector&lt; mty::FeynmanRule &gt; const &amp;rules, std::vector&lt; csl::Tensor &gt; const &amp;vertices)</argsstring>
+        <name>FeynruleMomentum</name>
+        <qualifiedname>mty::FeynruleMomentum::FeynruleMomentum</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1FeynmanRule" kindref="compound">mty::FeynmanRule</ref> &gt; const &amp;</type>
+          <declname>rules</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &gt; const &amp;</type>
+          <declname>vertices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="81" column="5" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="21" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1a8875226bdeb7fb7504d00662c2ee350f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::FeynruleMomentum::FeynruleMomentum</definition>
+        <argsstring>()=default</argsstring>
+        <name>FeynruleMomentum</name>
+        <qualifiedname>mty::FeynruleMomentum::FeynruleMomentum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="84" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1aa5f9767318a66e41e2d6266d4027c64a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::FeynruleMomentum::FeynruleMomentum</definition>
+        <argsstring>(FeynruleMomentum const &amp;other)=default</argsstring>
+        <name>FeynruleMomentum</name>
+        <qualifiedname>mty::FeynruleMomentum::FeynruleMomentum</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynruleMomentum" kindref="compound">FeynruleMomentum</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="85" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1abdb446e41e880b011edfebd50cc3fade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::FeynruleMomentum::FeynruleMomentum</definition>
+        <argsstring>(FeynruleMomentum &amp;&amp;other)=default</argsstring>
+        <name>FeynruleMomentum</name>
+        <qualifiedname>mty::FeynruleMomentum::FeynruleMomentum</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynruleMomentum" kindref="compound">FeynruleMomentum</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="86" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1ac54318f2db451825c30e2f9de9fb4c51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1FeynruleMomentum" kindref="compound">FeynruleMomentum</ref> &amp;</type>
+        <definition>FeynruleMomentum &amp; mty::FeynruleMomentum::operator=</definition>
+        <argsstring>(FeynruleMomentum const &amp;other)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>mty::FeynruleMomentum::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynruleMomentum" kindref="compound">FeynruleMomentum</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="87" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1acd17eac85c7a212897ebe8329a25f241" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1FeynruleMomentum" kindref="compound">FeynruleMomentum</ref> &amp;</type>
+        <definition>FeynruleMomentum &amp; mty::FeynruleMomentum::operator=</definition>
+        <argsstring>(FeynruleMomentum &amp;&amp;other)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>mty::FeynruleMomentum::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1FeynruleMomentum" kindref="compound">FeynruleMomentum</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="88" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1a789d66108d9df2a1175e32795be13024" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::FeynruleMomentum::~FeynruleMomentum</definition>
+        <argsstring>()=default</argsstring>
+        <name>~FeynruleMomentum</name>
+        <qualifiedname>mty::FeynruleMomentum::~FeynruleMomentum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="89" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1a4e17d72f70d3d83b5fc044b1b9d43bf3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::FeynruleMomentum::isEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>isEmpty</name>
+        <qualifiedname>mty::FeynruleMomentum::isEmpty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="91" column="12" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1a71a9565de0c1f6bdd04a0059e6d4f459" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t mty::FeynruleMomentum::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <qualifiedname>mty::FeynruleMomentum::getSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="92" column="12" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1a89236b3f2eaeb708b74329eed1330830" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynruleMomentum::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>mty::FeynruleMomentum::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="93" column="12" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="57" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1a0945a51f3d646de685f4e5c7ac7f74ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1FeynruleKey" kindref="compound">FeynruleKey</ref> &gt; &amp;</type>
+        <definition>std::vector&lt; FeynruleKey &gt; &amp; mty::FeynruleMomentum::getKeys</definition>
+        <argsstring>()</argsstring>
+        <name>getKeys</name>
+        <qualifiedname>mty::FeynruleMomentum::getKeys</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="95" column="23" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1a4c5c6b492b0cfb3b0b549344183970bf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1FeynruleKey" kindref="compound">FeynruleKey</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; FeynruleKey &gt; const  &amp; mty::FeynruleMomentum::getKeys</definition>
+        <argsstring>() const</argsstring>
+        <name>getKeys</name>
+        <qualifiedname>mty::FeynruleMomentum::getKeys</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="96" column="23" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1aa20862c4eff544e57a2814e047967994" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1FeynruleTarget" kindref="compound">FeynruleTarget</ref> &gt; &amp;</type>
+        <definition>std::vector&lt; FeynruleTarget &gt; &amp; mty::FeynruleMomentum::getTargets</definition>
+        <argsstring>()</argsstring>
+        <name>getTargets</name>
+        <qualifiedname>mty::FeynruleMomentum::getTargets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="98" column="23" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1ae7f94af60edad9808677d0ca94c9e6a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1FeynruleTarget" kindref="compound">FeynruleTarget</ref> &gt; const &amp;</type>
+        <definition>std::vector&lt; FeynruleTarget &gt; const  &amp; mty::FeynruleMomentum::getTargets</definition>
+        <argsstring>() const</argsstring>
+        <name>getTargets</name>
+        <qualifiedname>mty::FeynruleMomentum::getTargets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="99" column="23" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1a039d4e67e35bde63c99ca5e6d4ee2a8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt; &amp;</type>
+        <definition>std::vector&lt; int &gt; &amp; mty::FeynruleMomentum::getMomentumMapping</definition>
+        <argsstring>()</argsstring>
+        <name>getMomentumMapping</name>
+        <qualifiedname>mty::FeynruleMomentum::getMomentumMapping</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="101" column="23" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="84" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1af9e524cdc502c7c2193bf85a4e207efc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt; const &amp;</type>
+        <definition>std::vector&lt; int &gt; const  &amp; mty::FeynruleMomentum::getMomentumMapping</definition>
+        <argsstring>() const</argsstring>
+        <name>getMomentumMapping</name>
+        <qualifiedname>mty::FeynruleMomentum::getMomentumMapping</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="102" column="23" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1a719c2e43c40dab6c37d42201f1336917" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1FeynruleKey" kindref="compound">FeynruleKey</ref> &gt;::iterator</type>
+        <definition>std::vector&lt; FeynruleKey &gt;::iterator mty::FeynruleMomentum::find</definition>
+        <argsstring>(mty::QuantumField const &amp;field)</argsstring>
+        <name>find</name>
+        <qualifiedname>mty::FeynruleMomentum::find</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> const &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="104" column="28" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="124" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1aea05a7864a7d5828b194b9080958393f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1FeynruleKey" kindref="compound">FeynruleKey</ref> &gt;::const_iterator</type>
+        <definition>std::vector&lt; FeynruleKey &gt;::const_iterator mty::FeynruleMomentum::find</definition>
+        <argsstring>(mty::QuantumField const &amp;field) const</argsstring>
+        <name>find</name>
+        <qualifiedname>mty::FeynruleMomentum::find</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> const &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="107" column="5" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="112" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1a31d903cf24bab5179c436dea72beae21" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1FeynruleTarget" kindref="compound">FeynruleTarget</ref> &gt;::const_iterator</type>
+        <definition>std::vector&lt; FeynruleTarget &gt;::const_iterator mty::FeynruleMomentum::find</definition>
+        <argsstring>(FeynruleKey const &amp;key) const</argsstring>
+        <name>find</name>
+        <qualifiedname>mty::FeynruleMomentum::find</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1FeynruleKey" kindref="compound">FeynruleKey</ref> const &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="110" column="5" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="136" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1ac13f35e2f34e6ca2782597b74c3cc9ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1FeynruleTarget" kindref="compound">FeynruleTarget</ref> &gt;::iterator</type>
+        <definition>std::vector&lt; FeynruleTarget &gt;::iterator mty::FeynruleMomentum::find</definition>
+        <argsstring>(FeynruleKey const &amp;key)</argsstring>
+        <name>find</name>
+        <qualifiedname>mty::FeynruleMomentum::find</qualifiedname>
+        <param>
+          <type><ref refid="structmty_1_1FeynruleKey" kindref="compound">FeynruleKey</ref> const &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="112" column="28" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="152" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1a2d54184bc66efd86e8e012967aa1fb0e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1FeynruleTarget" kindref="compound">FeynruleTarget</ref> &gt;::const_iterator</type>
+        <definition>std::vector&lt; FeynruleTarget &gt;::const_iterator mty::FeynruleMomentum::find</definition>
+        <argsstring>(csl::Tensor const &amp;momentum) const</argsstring>
+        <name>find</name>
+        <qualifiedname>mty::FeynruleMomentum::find</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> const &amp;</type>
+          <declname>momentum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="115" column="5" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="168" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1a12d4ca089a18a44e02a532dcbdf8100d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structmty_1_1FeynruleTarget" kindref="compound">FeynruleTarget</ref> &gt;::iterator</type>
+        <definition>std::vector&lt; FeynruleTarget &gt;::iterator mty::FeynruleMomentum::find</definition>
+        <argsstring>(csl::Tensor const &amp;momentum)</argsstring>
+        <name>find</name>
+        <qualifiedname>mty::FeynruleMomentum::find</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> const &amp;</type>
+          <declname>momentum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="117" column="28" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="184" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1a9a28eb18c4be4625dfdc87f561f3128f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::FeynruleMomentum::push</definition>
+        <argsstring>(mty::QuantumField const &amp;field, FeynruleTarget const &amp;target)</argsstring>
+        <name>push</name>
+        <qualifiedname>mty::FeynruleMomentum::push</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> const &amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type><ref refid="structmty_1_1FeynruleTarget" kindref="compound">FeynruleTarget</ref> const &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="119" column="10" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="199" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1FeynruleMomentum_1a41cfc8200eaa434230c91a5bd89ca4b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="structmty_1_1FeynruleTarget" kindref="compound">FeynruleTarget</ref> &gt;</type>
+        <definition>std::optional&lt; FeynruleTarget &gt; mty::FeynruleMomentum::pop</definition>
+        <argsstring>(csl::Tensor momentum)</argsstring>
+        <name>pop</name>
+        <qualifiedname>mty::FeynruleMomentum::pop</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref></type>
+          <declname>momentum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="121" column="19" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="215" bodyend="232"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmty_1_1FeynruleMomentum_1a94cbeca4552b70802f2caf7670e76746" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, FeynruleMomentum const &amp;mom)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::FeynruleMomentum::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1FeynruleMomentum" kindref="compound">FeynruleMomentum</ref> const &amp;</type>
+          <declname>mom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/feynruleMomentum.h" line="123" column="12" bodyfile="src/marty/core/feynruleMomentum.cpp" bodystart="234" bodyend="254"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/core/feynruleMomentum.h" line="78" column="1" bodyfile="src/marty/core/feynruleMomentum.h" bodystart="78" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classmty_1_1FeynruleMomentum_1a89236b3f2eaeb708b74329eed1330830" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>clear</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1a50f7231beb81629303a445d390701202" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>FeynruleMomentum</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1a8875226bdeb7fb7504d00662c2ee350f" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>FeynruleMomentum</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1aa5f9767318a66e41e2d6266d4027c64a" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>FeynruleMomentum</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1abdb446e41e880b011edfebd50cc3fade" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>FeynruleMomentum</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1a719c2e43c40dab6c37d42201f1336917" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>find</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1aea05a7864a7d5828b194b9080958393f" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>find</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1a31d903cf24bab5179c436dea72beae21" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>find</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1ac13f35e2f34e6ca2782597b74c3cc9ff" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>find</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1a2d54184bc66efd86e8e012967aa1fb0e" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>find</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1a12d4ca089a18a44e02a532dcbdf8100d" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>find</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1a0945a51f3d646de685f4e5c7ac7f74ea" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>getKeys</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1a4c5c6b492b0cfb3b0b549344183970bf" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>getKeys</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1a039d4e67e35bde63c99ca5e6d4ee2a8a" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>getMomentumMapping</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1af9e524cdc502c7c2193bf85a4e207efc" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>getMomentumMapping</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1a71a9565de0c1f6bdd04a0059e6d4f459" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>getSize</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1aa20862c4eff544e57a2814e047967994" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>getTargets</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1ae7f94af60edad9808677d0ca94c9e6a5" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>getTargets</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1a4e17d72f70d3d83b5fc044b1b9d43bf3" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>isEmpty</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1a83080c99ddd520342d3ed1986d914a38" prot="private" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>keys</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1a110667b52a7cd8f114c53f05cf63aca7" prot="private" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>mapping</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1a94cbeca4552b70802f2caf7670e76746" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1ac54318f2db451825c30e2f9de9fb4c51" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>operator=</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1acd17eac85c7a212897ebe8329a25f241" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>operator=</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1a41cfc8200eaa434230c91a5bd89ca4b3" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>pop</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1a9a28eb18c4be4625dfdc87f561f3128f" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>push</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1a5acff57bd55845b014789a8c033279e2" prot="private" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>targets</name></member>
+      <member refid="classmty_1_1FeynruleMomentum_1a789d66108d9df2a1175e32795be13024" prot="public" virt="non-virtual"><scope>mty::FeynruleMomentum</scope><name>~FeynruleMomentum</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

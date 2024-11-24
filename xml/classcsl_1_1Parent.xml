@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcsl_1_1Parent" kind="class" language="C++" prot="public">
+    <compoundname>csl::Parent</compoundname>
+    <basecompoundref refid="classstd_1_1shared__ptr" prot="public" virt="non-virtual">std::shared_ptr&lt; AbstractParent &gt;</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcsl_1_1Parent_1a82550556f1f8c4e75bcbf173270b438c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::Parent::operator()</definition>
+        <argsstring>(Args &amp;&amp;...args)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>csl::Parent::operator()</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/parent.h" line="396" column="17" bodyfile="src/csl/parent.h" bodystart="396" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Parent_1aef5caa357002a44d884aba2440df3ffa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::Parent::operator()</definition>
+        <argsstring>(std::vector&lt; Index &gt; indices, Args &amp;&amp;...args)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>csl::Parent::operator()</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Index" kindref="compound">Index</ref> &gt;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/parent.h" line="402" column="17" bodyfile="src/csl/parent.h" bodystart="402" bodyend="405"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>csl::Parent</label>
+        <link refid="classcsl_1_1Parent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::shared_ptr&lt; AbstractParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>csl::Parent</label>
+        <link refid="classcsl_1_1Parent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::shared_ptr&lt; AbstractParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/csl/parent.h" line="390" column="1" bodyfile="src/csl/parent.h" bodystart="390" bodyend="406"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1Parent_1a82550556f1f8c4e75bcbf173270b438c" prot="public" virt="non-virtual"><scope>csl::Parent</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1Parent_1aef5caa357002a44d884aba2440df3ffa" prot="public" virt="non-virtual"><scope>csl::Parent</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

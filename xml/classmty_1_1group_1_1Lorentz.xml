@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1group_1_1Lorentz" kind="class" language="C++" prot="public">
+    <compoundname>mty::group::Lorentz</compoundname>
+    <basecompoundref refid="classmty_1_1SemiSimpleGroup" prot="public" virt="non-virtual">mty::SemiSimpleGroup</basecompoundref>
+    <includes refid="group_8h" local="no">group.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1group_1_1Lorentz_1a3dcab6cae87a922245f5284970e16814" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::group::Lorentz::Lorentz</definition>
+        <argsstring>()</argsstring>
+        <name>Lorentz</name>
+        <qualifiedname>mty::group::Lorentz::Lorentz</qualifiedname>
+        <briefdescription>
+<para>Default Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="713" column="5" bodyfile="src/marty/core/group.cpp" bodystart="524" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1group_1_1Lorentz_1ae6464015cfb0889f281b1137a19cd522" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mty::group::Lorentz::~Lorentz</definition>
+        <argsstring>()</argsstring>
+        <name>~Lorentz</name>
+        <qualifiedname>mty::group::Lorentz::~Lorentz</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="718" column="5" bodyfile="src/marty/core/group.h" bodystart="718" bodyend="720"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1group_1_1Lorentz_1addadd0d1ab598965c61e190f1025a81c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacemty_1_1group_1ab52e292a5e57ca7d8f7c28277435ecb9" kindref="member">mty::group::Type</ref></type>
+        <definition>mty::group::Type mty::group::Lorentz::getType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getType</name>
+        <qualifiedname>mty::group::Lorentz::getType</qualifiedname>
+        <reimplements refid="classmty_1_1AbstractGroup_1a3bd2daf2393fab718e2cea21392ed52b">getType</reimplements>
+        <briefdescription>
+<para>Returns the type of the group. See <ref refid="namespacemty_1_1group_1ab52e292a5e57ca7d8f7c28277435ecb9" kindref="member">mty::group::Type</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="namespacemty_1_1group_1ab52e292a5e57ca7d8f7c28277435ecb9a328c1a0e6bbe8e6539323d4ee0eae585" kindref="member">group::Type::Lorentz</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="726" column="22" bodyfile="src/marty/core/group.cpp" bodystart="536" bodyend="539"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="classmty_1_1group_1_1Lorentz" kindref="compound">Lorentz</ref> group. Algebra of <ref refid="classmty_1_1group_1_1Lorentz" kindref="compound">Lorentz</ref>: <formula id="123">$ D_2=A_1\oplus A_1 $</formula>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>mty::AbstractGroup</label>
+        <link refid="classmty_1_1AbstractGroup"/>
+      </node>
+      <node id="2">
+        <label>mty::SemiSimpleGroup</label>
+        <link refid="classmty_1_1SemiSimpleGroup"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::group::Lorentz</label>
+        <link refid="classmty_1_1group_1_1Lorentz"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>csl::Space</label>
+        <link refid="classcsl_1_1Space"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>symbolicDim</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>delta</edgelabel>
+          <edgelabel>epsilon</edgelabel>
+          <edgelabel>inverseMetric</edgelabel>
+          <edgelabel>metric</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mty::AbstractGroup</label>
+        <link refid="classmty_1_1AbstractGroup"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>gauged</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mty::Gauge</label>
+        <link refid="classmty_1_1Gauge"/>
+      </node>
+      <node id="4">
+        <label>mty::GaugedGroup</label>
+        <link refid="classmty_1_1GaugedGroup"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>gauge</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>group</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>coupling</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>adjointSpace</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>f</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>generator</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>boson</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>ghost</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mty::Generator</label>
+        <link refid="classmty_1_1Generator"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>mty::IrrepMap&lt; mty::Generator &gt;</label>
+        <link refid="classmty_1_1IrrepMap"/>
+      </node>
+      <node id="2">
+        <label>mty::SemiSimpleGroup</label>
+        <link refid="classmty_1_1SemiSimpleGroup"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::group::Lorentz</label>
+        <link refid="classmty_1_1group_1_1Lorentz"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>std::shared_ptr&lt; GeneratorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="10">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="7">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="14">
+        <label>std::shared_ptr&lt; mty::GaugeBoson &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="15">
+        <label>std::shared_ptr&lt; mty::GhostBoson &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/group.h" line="707" column="1" bodyfile="src/marty/core/group.h" bodystart="707" bodyend="727"/>
+    <listofallmembers>
+      <member refid="classmty_1_1AbstractGroup_1adcfa90e344e550ef4eb31bef2b9cf0a5" prot="public" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>AbstractGroup</name></member>
+      <member refid="classmty_1_1AbstractGroup_1afbb9c29efba97aacd880bd6389d66012" prot="public" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>AbstractGroup</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a3f1605da17191cd78631157d0b0df29d" prot="protected" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>algebra</name></member>
+      <member refid="classmty_1_1AbstractGroup_1aefbcfa83804f7acbd0b3b93694dcabba" prot="protected" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>dim</name></member>
+      <member refid="classmty_1_1AbstractGroup_1ad67e79474a67e9434a87ba91ef4d86d3" prot="protected" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>gauged</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a592bd77bd23ccbfc4dfe15ad299cc4f3" prot="public" virt="virtual"><scope>mty::group::Lorentz</scope><name>getAdjointRep</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a1af257679905aedc7feed434f5a1ace1" prot="public" virt="virtual"><scope>mty::group::Lorentz</scope><name>getAlgebra</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a0a07acf25f62aea2cd8ba477fe978b0a" prot="public" virt="virtual"><scope>mty::group::Lorentz</scope><name>getAllVectorSpace</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a39acccde07239d0b2ab74116f0b1c6a2" prot="public" virt="virtual"><scope>mty::group::Lorentz</scope><name>getCorrespondingIndex</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a206ee8aff297cfb526fb99553cf28ea2" prot="public" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>getDim</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a622e80d80a7339161515ca1f0c2357a5" prot="public" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>getGaugedGroup</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a95a05472197b6785212540fda811c98d" prot="public" virt="virtual"><scope>mty::group::Lorentz</scope><name>getHighestWeight</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a8cd596873edd138759f02d10d5fa4577" prot="public" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>getName</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a9242e469fb0e3d3c86f7897ba03adcb7" prot="public" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>getQuadraticCasimir</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1ae1e98e95d351ed86c20df592bddf2c24" prot="public" virt="virtual"><scope>mty::group::Lorentz</scope><name>getTrivialRep</name></member>
+      <member refid="classmty_1_1group_1_1Lorentz_1addadd0d1ab598965c61e190f1025a81c" prot="public" virt="virtual"><scope>mty::group::Lorentz</scope><name>getType</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1af549263e0d55350d636fa82edd9acec5" prot="public" virt="virtual"><scope>mty::group::Lorentz</scope><name>getVectorSpace</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a23925dcfec01c5bf963ccf504829415d" prot="public" virt="virtual"><scope>mty::group::Lorentz</scope><name>highestWeightRep</name></member>
+      <member refid="classmty_1_1group_1_1Lorentz_1a3dcab6cae87a922245f5284970e16814" prot="public" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>Lorentz</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a859fa1942e9564d1d6f023de9c251a09" prot="protected" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>name</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1aa7de545c51c494c8f80eba695c269569" prot="protected" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>quadraticCasimir</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a6b4b186b68f71a5e6940c616f7c20f58" prot="public" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>SemiSimpleGroup</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1aab95fc4e4ebb7276086217daba5b6873" prot="public" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>SemiSimpleGroup</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a051277e572c8b6c06152e20cc7e52108" prot="public" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>setAlgebra</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a2ddd145c12dec58837f59112eb7272d5" prot="public" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>setGaugedGroup</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a44f258072322ed3c76d2ad5740effb2a" prot="public" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>tensorProduct</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1ac4656a1e2ecd13fc2bcf4a8b14e8db96" prot="public" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>tensorProduct</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a3c706805c999baa5d4b1caed344d005f" prot="protected" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>vectorSpaces</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a606b55ecff6e3a9be9e8090ff87fb7cd" prot="public" virt="virtual"><scope>mty::group::Lorentz</scope><name>~AbstractGroup</name></member>
+      <member refid="classmty_1_1group_1_1Lorentz_1ae6464015cfb0889f281b1137a19cd522" prot="public" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>~Lorentz</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1ae4d983be8e2f9760255a9ae7534fed8b" prot="public" virt="non-virtual"><scope>mty::group::Lorentz</scope><name>~SemiSimpleGroup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

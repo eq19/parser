@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1wick_1_1Node" kind="class" language="C++" prot="public">
+    <compoundname>mty::wick::Node</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::enable_shared_from_this&lt; Node &gt;</basecompoundref>
+    <includes refid="graph_8h" local="no">graph.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmty_1_1wick_1_1Node_1a11fae4a923171fe290531eb677ea6e61" prot="public" static="no" mutable="no">
+        <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> *</type>
+        <definition>const mty::QuantumField* mty::wick::Node::field</definition>
+        <argsstring></argsstring>
+        <name>field</name>
+        <qualifiedname>mty::wick::Node::field</qualifiedname>
+        <briefdescription>
+<para><ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> represented by the node in the graph. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="90" column="29" bodyfile="src/marty/core/graph.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1wick_1_1Node_1a17206a37cf319ea8aab2692c9af2fe13" prot="public" static="no" mutable="no">
+        <type>std::weak_ptr&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt;</type>
+        <definition>std::weak_ptr&lt;Node&gt; mty::wick::Node::partner</definition>
+        <argsstring></argsstring>
+        <name>partner</name>
+        <qualifiedname>mty::wick::Node::partner</qualifiedname>
+        <briefdescription>
+<para>std::weak_ptr to the <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> with which it is contracted, if it is. Else the value is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="96" column="19" bodyfile="src/marty/core/graph.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1wick_1_1Node_1a98292b4750e3b5c866396b43e6f81518" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mty::wick::Node::Node</definition>
+        <argsstring>(const mty::QuantumField *t_field)</argsstring>
+        <name>Node</name>
+        <qualifiedname>mty::wick::Node::Node</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> *</type>
+          <declname>t_field</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with one parameter. Initializes a NULL partner. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> represented by the node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="61" column="14" bodyfile="src/marty/core/graph.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Node_1a747bcaf0be3ed65984d7d8436b6165d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::wick::Node::Node</definition>
+        <argsstring>(const Node &amp;node)=default</argsstring>
+        <name>Node</name>
+        <qualifiedname>mty::wick::Node::Node</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor = C++ default. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="66" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Node_1a79f317addc3f0801633f0eeb5f550e46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::wick::Node::Node</definition>
+        <argsstring>(Node &amp;&amp;node)=default</argsstring>
+        <name>Node</name>
+        <qualifiedname>mty::wick::Node::Node</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &amp;&amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor = C++ default. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="71" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1Node_1a28c00e0ab3ff1c0c62c6af87fcd0b9a9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::wick::Node::isFree</definition>
+        <argsstring>() const</argsstring>
+        <name>isFree</name>
+        <qualifiedname>mty::wick::Node::isFree</qualifiedname>
+        <briefdescription>
+<para>Tells if the <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> is free or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> if the <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> has no partner. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> if the <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> has a non NULL partner, i.e. is contracted. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="78" column="10" bodyfile="src/marty/core/graph.h" bodystart="78" bodyend="81"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmty_1_1wick_1_1Node_1a588064d32ce261c268921349823a86e3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::shared_ptr&lt; Node &gt; &gt; Node::copyGraph</definition>
+        <argsstring>(std::vector&lt; std::shared_ptr&lt; Node &gt; &gt; const &amp;init)</argsstring>
+        <name>copyGraph</name>
+        <qualifiedname>mty::wick::Node::copyGraph</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt; &gt; const &amp;</type>
+          <declname>init</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="84" column="5" bodyfile="src/marty/core/graph.cpp" bodystart="40" bodyend="59"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents a contractible <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> in the context of <ref refid="classmty_1_1Wick" kindref="compound">Wick</ref> contraction. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A node is by definition a single power of <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref>. It means that a vertex with non trivial powers of a field will be divided in several nodes, one for each power. For example, <formula id="92">$ \frac{\lambda}{3}\phi (X)^3 $</formula> is divided in 3 nodes, each <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> being for the field <formula id="93">$ \phi (X) $</formula>. A node can be contracted with another and posess a pointer to its partner in this case. Only <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref> to <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> are used in the program (<ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> objects that are already contracted are shared by several graphs) and the pointer to the partner is then a std::weak::ptr to avoid a circular owning pattern. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mty::wick::Node</label>
+        <link refid="classmty_1_1wick_1_1Node"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::enable_shared_from_this&lt; Node &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>csl::Abstract</label>
+        <link refid="classcsl_1_1Abstract"/>
+      </node>
+      <node id="8">
+        <label>csl::AbstractBuildingBlock</label>
+        <link refid="classcsl_1_1AbstractBuildingBlock"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>csl::AbstractElement</label>
+        <link refid="classcsl_1_1AbstractElement"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>csl::Complexified</label>
+        <link refid="classcsl_1_1Complexified"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>csl::IndexStructure</label>
+        <link refid="classcsl_1_1IndexStructure"/>
+      </node>
+      <node id="12">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>csl::TensorElement</label>
+        <link refid="classcsl_1_1TensorElement"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>index</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>csl::TensorFieldElement</label>
+        <link refid="classcsl_1_1TensorFieldElement"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>point</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>mty::PartnerShip</label>
+        <link refid="structmty_1_1PartnerShip"/>
+      </node>
+      <node id="3">
+        <label>mty::QuantumField</label>
+        <link refid="classmty_1_1QuantumField"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>derivativeIndices</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>partnerShip</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::wick::Node</label>
+        <link refid="classmty_1_1wick_1_1Node"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>field</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::enable_shared_from_this&lt; Node &gt;</label>
+      </node>
+      <node id="13">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="10">
+        <label>std::shared_ptr&lt; csl::AbstractParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/graph.h" line="54" column="1" bodyfile="src/marty/core/graph.h" bodystart="54" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classmty_1_1wick_1_1Node_1a588064d32ce261c268921349823a86e3" prot="public" virt="non-virtual"><scope>mty::wick::Node</scope><name>copyGraph</name></member>
+      <member refid="classmty_1_1wick_1_1Node_1a11fae4a923171fe290531eb677ea6e61" prot="public" virt="non-virtual"><scope>mty::wick::Node</scope><name>field</name></member>
+      <member refid="classmty_1_1wick_1_1Node_1a28c00e0ab3ff1c0c62c6af87fcd0b9a9" prot="public" virt="non-virtual"><scope>mty::wick::Node</scope><name>isFree</name></member>
+      <member refid="classmty_1_1wick_1_1Node_1a98292b4750e3b5c866396b43e6f81518" prot="public" virt="non-virtual"><scope>mty::wick::Node</scope><name>Node</name></member>
+      <member refid="classmty_1_1wick_1_1Node_1a747bcaf0be3ed65984d7d8436b6165d0" prot="public" virt="non-virtual"><scope>mty::wick::Node</scope><name>Node</name></member>
+      <member refid="classmty_1_1wick_1_1Node_1a79f317addc3f0801633f0eeb5f550e46" prot="public" virt="non-virtual"><scope>mty::wick::Node</scope><name>Node</name></member>
+      <member refid="classmty_1_1wick_1_1Node_1a17206a37cf319ea8aab2692c9af2fe13" prot="public" virt="non-virtual"><scope>mty::wick::Node</scope><name>partner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

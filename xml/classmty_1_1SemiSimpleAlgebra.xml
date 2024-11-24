@@ -1,0 +1,1882 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1SemiSimpleAlgebra" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mty::SemiSimpleAlgebra</compoundname>
+    <derivedcompoundref refid="classmty_1_1algebra_1_1A" prot="public" virt="non-virtual">mty::algebra::A</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1algebra_1_1B" prot="public" virt="non-virtual">mty::algebra::B</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1algebra_1_1C" prot="public" virt="non-virtual">mty::algebra::C</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1algebra_1_1D" prot="public" virt="non-virtual">mty::algebra::D</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1algebra_1_1E6" prot="public" virt="non-virtual">mty::algebra::E6</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1algebra_1_1E7" prot="public" virt="non-virtual">mty::algebra::E7</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1algebra_1_1E8" prot="public" virt="non-virtual">mty::algebra::E8</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1algebra_1_1F4" prot="public" virt="non-virtual">mty::algebra::F4</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1algebra_1_1G2" prot="public" virt="non-virtual">mty::algebra::G2</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1algebra_1_1R" prot="public" virt="non-virtual">mty::algebra::R</derivedcompoundref>
+    <includes refid="semiSimpleAlgebra_8h" local="no">semiSimpleAlgebra.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmty_1_1SemiSimpleAlgebra_1a05112dc753491ad590f22e6aec5a1612" prot="protected" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int mty::SemiSimpleAlgebra::l</definition>
+        <argsstring></argsstring>
+        <name>l</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::l</qualifiedname>
+        <briefdescription>
+<para>Order of the semi-simple algebra, i.e. number of simple roots. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="504" column="15" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1SemiSimpleAlgebra_1a8f7ba151cd190383663b1ab77b2d445b" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; mty::SemiSimpleAlgebra::rho</definition>
+        <argsstring></argsstring>
+        <name>rho</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::rho</qualifiedname>
+        <briefdescription>
+<para>std::vector of size <bold>l</bold>. Particular root (half-sum of simple roots) useful in calculations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In order to be able to store it in a simple std::vector of integers, the 1/2 factor is discarded in this member, it corresponds then strictly to 2*rho in standard conventions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="513" column="17" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="513" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1SemiSimpleAlgebra_1a1613618ad6be9ea31643922f1cedff6c" prot="protected" static="no" mutable="no">
+        <type>csl::vector_expr</type>
+        <definition>csl::vector_expr mty::SemiSimpleAlgebra::absoluteNorms</definition>
+        <argsstring></argsstring>
+        <name>absoluteNorms</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::absoluteNorms</qualifiedname>
+        <briefdescription>
+<para>Absolute norms of simple roots used in the computation of the quadratic Casimir operator. See <ref refid="classmty_1_1SemiSimpleAlgebra_1a08445d84837a3ee0818e999a8e3afa84" kindref="member">SemiSimpleAlgebra::getQuadraticCasimir()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="520" column="22" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="520" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1SemiSimpleAlgebra_1a4fd98963d6d3c5a536267529a4a2c60c" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; mty::SemiSimpleAlgebra::squaredNorm</definition>
+        <argsstring></argsstring>
+        <name>squaredNorm</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::squaredNorm</qualifiedname>
+        <briefdescription>
+<para>std::vector of integers of size <bold>l</bold>. Contains squared norms of all simple roots. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="526" column="17" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1SemiSimpleAlgebra_1a9ca8e06e270dbb72139e494cde8a5dbe" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; mty::SemiSimpleAlgebra::positiveRoots</definition>
+        <argsstring></argsstring>
+        <name>positiveRoots</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::positiveRoots</qualifiedname>
+        <briefdescription>
+<para>Contains all positive roots in a std::vector. Each positive root is a std::vector of integers of size <bold>l:</bold> dinkin labels in co-root space. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="533" column="17" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="533" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1SemiSimpleAlgebra_1aacb7df0522ee6aea21d3e540d25e457a" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; mty::SemiSimpleAlgebra::cartanMatrix</definition>
+        <argsstring></argsstring>
+        <name>cartanMatrix</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::cartanMatrix</qualifiedname>
+        <briefdescription>
+<para>Cartan matrix of the algebra. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="538" column="17" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="538" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1SemiSimpleAlgebra_1a41f221731862eaae617f45cb219c8530" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int&gt; &gt; mty::SemiSimpleAlgebra::rootMetric</definition>
+        <argsstring></argsstring>
+        <name>rootMetric</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::rootMetric</qualifiedname>
+        <briefdescription>
+<para>Metric for roots in co-root space, i.e. metrix to apply in order to compute scalar dot between roots expressed with their dinkin labels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="544" column="17" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="544" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1SemiSimpleAlgebra_1a3cf01c47b378082944e6d98b166d870c" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::SemiSimpleAlgebra::symbolicRho</definition>
+        <argsstring></argsstring>
+        <name>symbolicRho</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::symbolicRho</qualifiedname>
+        <briefdescription>
+<para>Symbolic version of the half-sum of simple roots (see <bold>positiveRoots</bold>). Contains the factor 1/2 that positiveRoots does not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="550" column="15" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="550" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1SemiSimpleAlgebra_1a3fb05c4a72c9d16ed16994057e7b7983" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::SemiSimpleAlgebra::symbolicCartan</definition>
+        <argsstring></argsstring>
+        <name>symbolicCartan</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::symbolicCartan</qualifiedname>
+        <briefdescription>
+<para>Symbolic version of the cartan matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="555" column="15" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1SemiSimpleAlgebra_1af98c68e1832512d74e3f67c5199c6312" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::SemiSimpleAlgebra::inverseCartan</definition>
+        <argsstring></argsstring>
+        <name>inverseCartan</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::inverseCartan</qualifiedname>
+        <briefdescription>
+<para>Inverse cartan matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="560" column="15" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="560" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1SemiSimpleAlgebra_1ac165b358e852e5adfacba2be3b7d468d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::SemiSimpleAlgebra::symbolicMetric</definition>
+        <argsstring></argsstring>
+        <name>symbolicMetric</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::symbolicMetric</qualifiedname>
+        <briefdescription>
+<para>Symbolic metric in root space. i.e. different from <bold>rootMetric</bold> that is the metric in co-root space. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="566" column="15" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="566" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1SemiSimpleAlgebra_1a57b9e8d3082b2ea00601ae26c59e4d4b" prot="protected" static="no" mutable="no">
+        <type>csl::vector_expr</type>
+        <definition>csl::vector_expr mty::SemiSimpleAlgebra::symbolicRoots</definition>
+        <argsstring></argsstring>
+        <name>symbolicRoots</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::symbolicRoots</qualifiedname>
+        <briefdescription>
+<para>Symbolic version of <bold>positiveRoots</bold>, each root is a <ref refid="classcsl_1_1Vector" kindref="compound">csl::Vector</ref> of <ref refid="classcsl_1_1Integer" kindref="compound">csl::Integer</ref> in co-root space (dinkin labels). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="572" column="22" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="572" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1SemiSimpleAlgebra_1a47413b0fc354145adf28b42753899a08" prot="protected" static="no" mutable="no">
+        <type>csl::vector_expr</type>
+        <definition>csl::vector_expr mty::SemiSimpleAlgebra::symbolicSquaredNorms</definition>
+        <argsstring></argsstring>
+        <name>symbolicSquaredNorms</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::symbolicSquaredNorms</qualifiedname>
+        <briefdescription>
+<para>Symbolic version of <bold>squaredNorm</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="577" column="22" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="577" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1SemiSimpleAlgebra_1a49c92eb6d42fdfd7fb14a202aa9d50e1" prot="protected" static="no" mutable="yes">
+        <type>std::vector&lt; std::pair&lt; <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref>, <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;AlgebraState, Irrep&gt; &gt; mty::SemiSimpleAlgebra::irreps</definition>
+        <argsstring></argsstring>
+        <name>irreps</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::irreps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="579" column="25" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1SemiSimpleAlgebra_1a67899733c277cad4a381f9e77a64cf05" prot="protected" static="no" mutable="yes">
+        <type>std::vector&lt; <ref refid="structmty_1_1IndexData" kindref="compound">IndexData</ref> &gt;</type>
+        <definition>std::vector&lt;IndexData&gt; mty::SemiSimpleAlgebra::indices</definition>
+        <argsstring></argsstring>
+        <name>indices</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::indices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="581" column="25" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="581" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a08429df3b2869d35ef2f5399a679c520" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::SemiSimpleAlgebra::SemiSimpleAlgebra</definition>
+        <argsstring>(int t_l)</argsstring>
+        <name>SemiSimpleAlgebra</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::SemiSimpleAlgebra</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>t_l</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with one parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of simple roots, or rank, of the algebra. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="101" column="14" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="58" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a528476431b2a6c2db45667be258d4de4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual mty::SemiSimpleAlgebra::~SemiSimpleAlgebra</definition>
+        <argsstring>()</argsstring>
+        <name>~SemiSimpleAlgebra</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::~SemiSimpleAlgebra</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="106" column="13" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a08445d84837a3ee0818e999a8e3afa84" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::SemiSimpleAlgebra::getQuadraticCasimir</definition>
+        <argsstring>(const AlgebraState &amp;irrep) const</argsstring>
+        <name>getQuadraticCasimir</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::getQuadraticCasimir</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>irrep</declname>
+        </param>
+        <briefdescription>
+<para>Returns the expression (symbolic, rational number) of the quadratic Casimir operator for a representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> <bold>irrep</bold> must be the highest-weight state of the representation from which we want to compute the Casimir. The quadratic Casimir is defined from the generators of the representation <formula id="284">$ T^A(\mathcal{R}) $</formula> by    <formula id="285">\[
+    \mbox{Tr}(T(\mathcal{R})^AT(\mathcal{R})^B) \equiv C_2(\mathcal{R})
+    \delta ^{AB}.
+\]</formula> Its expression in terms of the highest weight is   <formula id="286">\[
+    C_2 = \sum _{i, j}\mathcal{N}_i\cdot (a_i+2)G_{ij}a_j,
+\]</formula> with <formula id="287">$ a_i $</formula> dynkin labels of the highest weight state, <formula id="288">$ G_{ij} $</formula> the inverse Cartan matrix, and <formula id="289">$ \mathcal{N}_i $</formula> a normalization factor coming from the absolute norm of the simple root <formula id="142">$ i $</formula>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>irrep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Highest weight state of the representation from which we want the Casimir. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The symbolic expression of the Casimir, a rational number. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="131" column="15" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="79" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a6e39ef348b8e127f4021efb0c9ab1fd5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::SemiSimpleAlgebra::getIndex</definition>
+        <argsstring>(const Irrep &amp;irrep, size_t n) const</argsstring>
+        <name>getIndex</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::getIndex</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &amp;</type>
+          <declname>irrep</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="133" column="23" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="97" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a88a9a01df2e34c751d96a8d7ed448606" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref></type>
+        <definition>mty::Irrep mty::SemiSimpleAlgebra::highestWeightRep</definition>
+        <argsstring>(const AlgebraState &amp;highestWeight, bool mult=true) const</argsstring>
+        <name>highestWeightRep</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::highestWeightRep</qualifiedname>
+        <reimplementedby refid="classmty_1_1algebra_1_1R_1ab2195fccaa79ebf1988a4a7be7050d15">highestWeightRep</reimplementedby>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>highestWeight</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mult</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Calculates and returns the highest weight representation. Determines all states with their multiplicities and returns the corresponding <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> object. Overriden in R algebra. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>highestWeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> highest weight of the representation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> of highest weight <bold>highestWeight</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="142" column="19" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="632" bodyend="667"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1ae2c838647f859770f69d7a1ebc3f4b25" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref></type>
+        <definition>mty::Irrep mty::SemiSimpleAlgebra::highestWeightRep</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;highestWeight, bool mult=true) const</argsstring>
+        <name>highestWeightRep</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::highestWeightRep</qualifiedname>
+        <reimplementedby refid="classmty_1_1algebra_1_1R_1aa163053f165fb067e31fadc33360152a">highestWeightRep</reimplementedby>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>highestWeight</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mult</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Calculates and returns the highest weight representation. Determines all states with their multiplicities and returns the corresponding <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> object. Overriden in R algebra. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>highestWeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::vector of integers, labels of the representation&apos;s highest weight. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> of highest weight <bold>highestWeight</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="153" column="19" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="668" bodyend="674"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a49fd976502d861fc07ea61739c154e99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref></type>
+        <definition>mty::Irrep mty::SemiSimpleAlgebra::getTrivialRep</definition>
+        <argsstring>() const</argsstring>
+        <name>getTrivialRep</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::getTrivialRep</qualifiedname>
+        <reimplementedby refid="classmty_1_1algebra_1_1R_1a2d1733767a6bc7549161a2941d42e8e4">getTrivialRep</reimplementedby>
+        <briefdescription>
+<para>Returns the trivial representation of the algebra. Overriden in R algebra. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref>, trivial representation (dimension 1). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="161" column="19" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="676" bodyend="679"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a24200a3ce37c7de85685afe1d8f43f6a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref></type>
+        <definition>mty::Irrep mty::SemiSimpleAlgebra::getDefiningRep</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefiningRep</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::getDefiningRep</qualifiedname>
+        <reimplementedby refid="classmty_1_1algebra_1_1A_1a1603bf3053f51fa1dea25c31dec75759">getDefiningRep</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1B_1a47a7acecfc32135c2c1293b655c7ab42">getDefiningRep</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1C_1a69f1e74acb77c44c73dfe413189c0001">getDefiningRep</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1D_1a6607a951b985c24dc27573c82d61e0db">getDefiningRep</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1E6_1a11a4ec4b39532c14799d6b8739e68d6d">getDefiningRep</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1E7_1a812904554862ee3b6cbec40133ab8c0c">getDefiningRep</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1E8_1a730a7d76a5fcb3775d82f17445ea2635">getDefiningRep</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1F4_1abf6cb45d7553c425a7f535be6198f5f8">getDefiningRep</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1G2_1a1c4690a2ae31aa0b0b6cd0446291a7d8">getDefiningRep</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="163" column="19" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="681" bodyend="685"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a6b115c5f8711fd19ec740f3b72cc2535" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref></type>
+        <definition>mty::SumIrrep mty::SemiSimpleAlgebra::tensorProduct</definition>
+        <argsstring>(const Irrep &amp;A, const Irrep &amp;B, bool mult=true) const</argsstring>
+        <name>tensorProduct</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::tensorProduct</qualifiedname>
+        <reimplementedby refid="classmty_1_1algebra_1_1R_1a7c5e4dae32aa1f93d750f979085e8151">tensorProduct</reimplementedby>
+        <param>
+          <type>const <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mult</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Calculates and returns the product of two <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> in the algebra. The result is decomposed in a sum of irreducible representations, stored in a <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref>. Overriden in the R algebra. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First representation in the product. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second representation in the product. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref>, sum of irreducible representations result of the product. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="175" column="5" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="715" bodyend="775"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1ac020594ec47ad8ec26a4ab7d639f1202" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref></type>
+        <definition>mty::SumIrrep mty::SemiSimpleAlgebra::tensorProduct</definition>
+        <argsstring>(const SumIrrep &amp;A, const Irrep &amp;B, bool mult=true) const</argsstring>
+        <name>tensorProduct</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::tensorProduct</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mult</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="177" column="5" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="687" bodyend="695"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a41b26f9216bb204ba7858546e049ea88" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref></type>
+        <definition>mty::SumIrrep mty::SemiSimpleAlgebra::tensorProduct</definition>
+        <argsstring>(const Irrep &amp;A, const SumIrrep &amp;B, bool mult=true) const</argsstring>
+        <name>tensorProduct</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::tensorProduct</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mult</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="179" column="14" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="697" bodyend="702"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a6fbd8240dfad0eb04aff4cc288db2dc1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref></type>
+        <definition>mty::SumIrrep mty::SemiSimpleAlgebra::tensorProduct</definition>
+        <argsstring>(const SumIrrep &amp;A, const SumIrrep &amp;B, bool mult=true) const</argsstring>
+        <name>tensorProduct</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::tensorProduct</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mult</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="180" column="14" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="704" bodyend="713"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a4f57c0b5a49af2a8474fdef58da9538c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mty::SemiSimpleAlgebra::sortRep</definition>
+        <argsstring>(std::vector&lt; AlgebraState &gt; &amp;rep, std::vector&lt; int &gt; &amp;mult) const</argsstring>
+        <name>sortRep</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::sortRep</qualifiedname>
+        <reimplementedby refid="classmty_1_1algebra_1_1R_1a5818785411f48f0c4ba102f6622d3080">sortRep</reimplementedby>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &gt; &amp;</type>
+          <declname>rep</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>mult</declname>
+        </param>
+        <briefdescription>
+<para>Sorts by modifing input paramaters a set of <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> with their multiplicities. One state is considered &quot;bigger&quot; than another if the sum of its dinkin labels is bigger. Overriden in the R algebra. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::vector of <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> to sort, modified during the run.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mult</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>multiplicities of the states, sorted at the same time to keep the one to one correspondance between states and multiplicities. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="192" column="18" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="346" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a5c9236993d9c52d7d8814401436d9d02" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::SemiSimpleAlgebra::getOrderL</definition>
+        <argsstring>() const</argsstring>
+        <name>getOrderL</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::getOrderL</qualifiedname>
+        <briefdescription>
+<para>Returns the order of the algebra, i.e. the number of simple roots <bold>l</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>l</bold> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="200" column="9" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="118" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a576f5c44114980964d3688ec710e54f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespacemty_1_1algebra_1a6a408a40adf4bdcbb2de53ae0917062a" kindref="member">algebra::Type</ref></type>
+        <definition>virtual algebra::Type mty::SemiSimpleAlgebra::getType</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getType</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::getType</qualifiedname>
+        <reimplementedby refid="classmty_1_1algebra_1_1A_1adbd5e004524619ff2d0f2fd5c3f60aa7">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1B_1ad8f1a12874ff5bcab60e57076686e993">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1C_1a0b43ab4ab15929cdde844d56d068ab54">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1D_1a0c872ad597fba8edbd79fcff0bdefd88">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1E6_1a913f345b3e17f8a505561bae1dc6311f">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1E7_1ae90749b7cc0cd53a6e15d0fe1432d9a0">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1E8_1a7f86ff2a6077ea1f8e7b9614c5733cda">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1F4_1a609d1fa96cb4a37074b5b20be0ea8d1b">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1G2_1a42cd038a1844e100f5b5ec974b9b769e">getType</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1R_1ac427eaa24ff0852402b68f2dae79a8ab">getType</reimplementedby>
+        <briefdescription>
+<para>Pure virtual function overriden in derived classes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The type of the algebra, see the enum <ref refid="namespacemty_1_1algebra_1a6a408a40adf4bdcbb2de53ae0917062a" kindref="member">algebra::Type</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="206" column="27"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a6ca6c984a49944b59b0b949ca245551c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::SemiSimpleAlgebra::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::init</qualifiedname>
+        <briefdescription>
+<para>Initialization function called in derived classes to initialize the cartan matrix, the Weyl group and the norms of simple roots. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="213" column="10" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="123" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a5ca87a7cb7f2dc2b7d534cad69d42774" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mty::SemiSimpleAlgebra::setCartanMatrix</definition>
+        <argsstring>()=0</argsstring>
+        <name>setCartanMatrix</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::setCartanMatrix</qualifiedname>
+        <reimplementedby refid="classmty_1_1algebra_1_1A_1a89c8569bb5862cb4c8ee1912aa3be39d">setCartanMatrix</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1B_1afd2e38f7fe39d71b9ff033488e0c4b31">setCartanMatrix</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1C_1a1d6ae58e4ce3cb45917ae7d00c4983fa">setCartanMatrix</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1D_1ab1c996a40bec42101c0cac19d2e064e2">setCartanMatrix</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1E6_1a445d60b46e592523594054dd13e5b8a2">setCartanMatrix</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1E7_1aacc3b3072310b6ab925251db0d8e8b8f">setCartanMatrix</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1E8_1a74d0f1b1c6072d4aca633546f98155cb">setCartanMatrix</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1F4_1a3cfcc04d212310291cdfaa25ae158d71">setCartanMatrix</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1G2_1abb4c3ab64353f31f9e30c0f2b5717866">setCartanMatrix</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1R_1a554434ba4bcb60bc72ca2efb0204541e">setCartanMatrix</reimplementedby>
+        <briefdescription>
+<para>Pure virtual function overriden in derived classes. Initializes the Cartan matrix specifically to the given semi-simple Lie algebra. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="219" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a1e65a608faddab538f9ec73a69692cfc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mty::SemiSimpleAlgebra::setSquaredNorm</definition>
+        <argsstring>()=0</argsstring>
+        <name>setSquaredNorm</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::setSquaredNorm</qualifiedname>
+        <reimplementedby refid="classmty_1_1algebra_1_1A_1a4deb50c37f804f99b637f2c9bc648c33">setSquaredNorm</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1B_1aac9c16f18819f7cede06941cfbd38e37">setSquaredNorm</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1C_1a91f0dce240dabe4bb738fa980ba43015">setSquaredNorm</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1D_1afb8637649840e17100338d83680cdd34">setSquaredNorm</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1E6_1a73ae4c8df144c00d5649898fccf17032">setSquaredNorm</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1E7_1a5e91ac60670b30df8cf115fafe31b055">setSquaredNorm</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1E8_1a442ff45fcd551b02962d5d333510ccee">setSquaredNorm</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1F4_1a42a9ad4dfd313bc42f33c27fdd6de994">setSquaredNorm</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1G2_1a16157d781330248558e4e1b7efaeeedc">setSquaredNorm</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1R_1a45fe98fc5cc006d3349d91c651daa9fe">setSquaredNorm</reimplementedby>
+        <briefdescription>
+<para>Pure virtual function overriden in derived classes. Initializes norms of simple roots specifically to the given semi-simple Lie algebra. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="225" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a0ed5474daa7b7292c97499a2a276b0dc" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>virtual csl::Expr mty::SemiSimpleAlgebra::getEta</definition>
+        <argsstring>() const</argsstring>
+        <name>getEta</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::getEta</qualifiedname>
+        <reimplementedby refid="classmty_1_1algebra_1_1A_1a9a35fd9c7c89f3cf690a7e2dc277ae58">getEta</reimplementedby>
+        <reimplementedby refid="classmty_1_1algebra_1_1R_1a63342990e7490a59c1dde67e633cb125">getEta</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="227" column="23" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="227" bodyend="230"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1aae4d1dfd5a4b28cbc9cadb14038ce4b5" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::SemiSimpleAlgebra::isPositiveRoot</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;root)</argsstring>
+        <name>isPositiveRoot</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::isPositiveRoot</qualifiedname>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a given root is a positive root (i.e. only positive dinkin labels). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>root</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root from which we test the positivity. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the root is positive. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="240" column="17" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="149" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a102b64632d6e55ca7e384e72520687fd" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::SemiSimpleAlgebra::isPositiveWeight</definition>
+        <argsstring>(const AlgebraState &amp;state)</argsstring>
+        <name>isPositiveWeight</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::isPositiveWeight</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a given state is a positive state (i.e. only positive dinkin labels). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State from which we test the positivity. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the state is positive. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="249" column="17" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="157" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a011954e6430884bd64347d1c110b7a37" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref></type>
+        <definition>AlgebraState mty::SemiSimpleAlgebra::addWeights</definition>
+        <argsstring>(const AlgebraState &amp;A, const AlgebraState &amp;B)</argsstring>
+        <name>addWeights</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::addWeights</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>Adds the dinkin labels of two states and returns the resulting state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> in the sum. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> in the sum. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The sum of <bold>A</bold> and <bold>B</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="258" column="25" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="166" bodyend="170"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a9b9baf0bf3d8b79436ccd56b1b7d2676" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::SemiSimpleAlgebra::isOnWall</definition>
+        <argsstring>(const AlgebraState &amp;state) const</argsstring>
+        <name>isOnWall</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::isOnWall</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a state is on a wall of the root lattice, i.e. if one of the coefficients if the simple roots basis (one of the dinkin labels) is zero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if <bold>state</bold> is on a wall. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="269" column="10" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="172" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a8bb228e4a5fdd3b08e23b8c81dc98742" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref></type>
+        <definition>AlgebraState mty::SemiSimpleAlgebra::toDominantWeylChamber</definition>
+        <argsstring>(const AlgebraState &amp;state, int &amp;sign) const</argsstring>
+        <name>toDominantWeylChamber</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::toDominantWeylChamber</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>sign</declname>
+        </param>
+        <briefdescription>
+<para>Reflects a given state in the dominant Weyl chamber. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The dominant Weyl chamber is the space where all states are positive states (see isPositiveWeight()). This function returns the (only) state in the dominant Weyl chamber that is equivalent to <bold>state</bold> to a Weyl reflection, i.e. to the application of an element of the Weyl group. If the state is positive, it is itself, else the function operates a series of Weyl reflections until it finds the corresponding positive state. The sign of the Transformation is one if the number of reflections linking the two states is even, -1 else. The sign is stored in <bold>sign</bold> during the run of the function.<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref>.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sign</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer modified during the run, stores the sign of the Transformation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref>, reflection of <bold>state</bold> in the dominant Weyl chamber. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="286" column="18" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="182" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1afdcd304629a2f6445da72ca29cc3219d" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>vector&lt; int &gt; mty::SemiSimpleAlgebra::weylReflection</definition>
+        <argsstring>(int simpleRoot, const std::vector&lt; int &gt; &amp;root) const</argsstring>
+        <name>weylReflection</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::weylReflection</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>simpleRoot</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+<para>Reflects a root with respect to one simple root. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>simpleRoot</parametername>
+<parametername>an</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>integer specifying the number of the simple root. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>root</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root to reflect, a std::vector of integers labels of the root. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The reflected root, also a std::vector of integers. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="296" column="17" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="225" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1ac5b50c98c6d5651542a867169644ea48" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref></type>
+        <definition>AlgebraState mty::SemiSimpleAlgebra::weylReflection</definition>
+        <argsstring>(int simpleRoot, const AlgebraState &amp;state) const</argsstring>
+        <name>weylReflection</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::weylReflection</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>simpleRoot</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Reflects a state with respect to one simple root. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>simpleRoot</parametername>
+<parametername>an</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>integer specifying the number of the simple root. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> to reflect. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The reflected state, also an <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="305" column="18" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="208" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1af86ace73b55c129b67b5a0227aff3f6b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>vector&lt; int &gt; mty::SemiSimpleAlgebra::weylReflection</definition>
+        <argsstring>(int simpleRoot1, int simpleRoot2) const</argsstring>
+        <name>weylReflection</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::weylReflection</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>simpleRoot1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>simpleRoot2</declname>
+        </param>
+        <briefdescription>
+<para>Reflects a simple root with respect to another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reflector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Simple root (integer) wrt which the reflexion is done. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reflected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Simple root (integer) reflected. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The reflected root, in the form of a std::vector of integers. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="314" column="17" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="235" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1ad13d03bd035103b4dbe3bb067399502f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::SemiSimpleAlgebra::invertCartanMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>invertCartanMatrix</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::invertCartanMatrix</qualifiedname>
+        <briefdescription>
+<para>Inverts the Cartan matrix using csl&apos;s matrix inversion and stores it in the member \b inverseCartan. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function actually initializes also other csl <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> member variables. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="322" column="10" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="245" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1aac33d15d20f0d4b1987d2206884b270c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::SemiSimpleAlgebra::generateWeylGroup</definition>
+        <argsstring>()</argsstring>
+        <name>generateWeylGroup</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::generateWeylGroup</qualifiedname>
+        <briefdescription>
+<para>Generates the Weyl group of reflection from the simple roots. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The weyl group is stored by keeping all positive roots in memory in the member <bold>positiveRoots</bold>. Any weyl reflection (composition of weyl reflections for simple roots) is the weyl reflection wrt one single positive root. Having all positive roots is then equivalent to have all weyl reflections. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="332" column="10" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="276" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1aa86d766a1920af5bd048f8d5cf05f131" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::SemiSimpleAlgebra::convertState</definition>
+        <argsstring>(const AlgebraState &amp;state) const</argsstring>
+        <name>convertState</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::convertState</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Converts a state in co-root space (<ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> with dinkin labels) into an expression (csl <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref>), Vector of coefficients in root space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function actually converts the std::vector of integers into a <ref refid="classcsl_1_1Vector" kindref="compound">csl::Vector</ref> of <ref refid="classcsl_1_1Integer" kindref="compound">csl::Integer</ref>, and apply the inverse cartan matrix in order to go from co-root space to root space. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> to convert. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classcsl_1_1Vector" kindref="compound">csl::Vector</ref> expression of the root space-equivalent of <bold>state</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="345" column="15" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="316" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a31653fa80eacf51cde61805b6efe371d" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::SemiSimpleAlgebra::comparatorHighest</definition>
+        <argsstring>(const AlgebraState &amp;A, const AlgebraState &amp;B) const</argsstring>
+        <name>comparatorHighest</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::comparatorHighest</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>Compares two <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>One <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> is considered greater than another if the sum of its labels is greater. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> to compare. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> to compare. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if A is greater than or equal to B. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="356" column="10" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="326" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a132aed8295ce39c26ec3c12a1a297031" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::SemiSimpleAlgebra::computeScalarDot</definition>
+        <argsstring>(const csl::Expr &amp;rootA, const csl::Expr &amp;rootB) const</argsstring>
+        <name>computeScalarDot</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::computeScalarDot</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>rootA</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>rootB</declname>
+        </param>
+        <briefdescription>
+<para>Computes the scalar dot of two roots in root-space. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The scalar dot depends on the Cartan matrix and norms of simple roots. <bold>rootA</bold> and <bold>rootB</bold> must be <ref refid="classcsl_1_1Vector" kindref="compound">csl::Vector</ref> of csl::Integers, coordinates of the roots in root space (not in co-root space i.e. dinkin labels). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rootA</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First root in the scalar dot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rootB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second root in the scalar dot. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The geometrical scalar dot between <bold>rootA</bold> and <bold>rootB</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="368" column="15" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="335" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1af7a08f33456db7b57556d4823bab1b8d" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::SemiSimpleAlgebra::computeSquaredNorm</definition>
+        <argsstring>(const csl::Expr &amp;root) const</argsstring>
+        <name>computeSquaredNorm</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::computeSquaredNorm</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+<para>Computes the squared norm of a root, see computeScalarDot(). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>root</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root in the form of a <ref refid="classcsl_1_1Vector" kindref="compound">csl::Vector</ref> of <ref refid="classcsl_1_1Integer" kindref="compound">csl::Integer</ref>, labels in root space (not co-root space i.e. dinkin labels). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The squared norm of <bold>root</bold> in a csl Expr. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="377" column="15" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="341" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1ab67cd31edab8d99343267c7699307867" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref></type>
+        <definition>AlgebraState mty::SemiSimpleAlgebra::applyAnnihilationOperator</definition>
+        <argsstring>(int annihilator, const AlgebraState &amp;state) const</argsstring>
+        <name>applyAnnihilationOperator</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::applyAnnihilationOperator</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>annihilator</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Applies the annihilation operator of a simple root on an <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> and returns the resulting <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>annihilator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer number of the simple root. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State on which the annihilation operator is applied. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The resulting <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="386" column="18" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="362" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1ad54df2613b7db7c598b804ee8d862abc" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref></type>
+        <definition>AlgebraState mty::SemiSimpleAlgebra::applyAnnihilationOperator</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;root, const AlgebraState &amp;state) const</argsstring>
+        <name>applyAnnihilationOperator</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::applyAnnihilationOperator</qualifiedname>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Applies the annihilation operator of a root on an <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> and returns the resulting <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>root</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root from which we take the annihilation operator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State on which the annihilation operator is applied. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The resulting <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="396" column="18" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="373" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a8e8150f6739dbe7eae58aaa33038e782" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref></type>
+        <definition>AlgebraState mty::SemiSimpleAlgebra::applyCreationOperator</definition>
+        <argsstring>(int creator, const AlgebraState &amp;state) const</argsstring>
+        <name>applyCreationOperator</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::applyCreationOperator</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Applies the creation operator of a simple root on an <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> and returns the resulting <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer number of the simple root. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State on which the creation operator is applied. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The resulting <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="406" column="18" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="388" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a6ad5a0d6cb86750149d06b72f7c1c21a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref></type>
+        <definition>AlgebraState mty::SemiSimpleAlgebra::applyCreationOperator</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;root, const AlgebraState &amp;state) const</argsstring>
+        <name>applyCreationOperator</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::applyCreationOperator</qualifiedname>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Applies the creation operator of a root on an <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> and returns the resulting <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>root</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root from which we take the creation operator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State on which the creation operator is applied. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The resulting <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="416" column="18" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="399" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a8e55621f6710d8810ccee0e7c3bf3a4b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &gt;</type>
+        <definition>std::vector&lt; AlgebraState &gt; mty::SemiSimpleAlgebra::getSingleChain</definition>
+        <argsstring>(const AlgebraState &amp;state, int direction) const</argsstring>
+        <name>getSingleChain</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::getSingleChain</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the root chain starting from <bold>states</bold> and applying annihilation operator of the simple root number <linebreak/>
+ direction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the eigenvalue of <bold>state</bold> wrt the simple root number <bold>direction</bold> is E, we apply the annihilation until we get a state of eigenvalue -E. We have then set of states of eigenvalues (for a sl(2,C) module): { E, E-2, E-4, ..., -E }. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial state (highest weight) of the chain. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the simple root applied in chain. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The set of generated <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> in the chain in a std::vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="430" column="17" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="414" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a7b49a2e9bec9181e5a88634740f24a8b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::SemiSimpleAlgebra::getSingleChainExperimental</definition>
+        <argsstring>(const AlgebraState &amp;state, std::vector&lt; AlgebraState &gt; &amp;states, std::vector&lt; std::vector&lt; bool &gt; &gt; &amp;directionExplored, int direction) const</argsstring>
+        <name>getSingleChainExperimental</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::getSingleChainExperimental</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &gt; &amp;</type>
+          <declname>states</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; bool &gt; &gt; &amp;</type>
+          <declname>directionExplored</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="433" column="10" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="433" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1ac08b41d39e4deb84c1e252e7d95710b1" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &gt;</type>
+        <definition>std::vector&lt; AlgebraState &gt; mty::SemiSimpleAlgebra::getRootChain</definition>
+        <argsstring>(const AlgebraState &amp;highestWeightState, std::vector&lt; AlgebraState &gt; states=std::vector&lt; AlgebraState &gt;(0), std::vector&lt; std::vector&lt; bool &gt; &gt; directions=std::vector&lt; std::vector&lt; bool &gt; &gt;(0)) const</argsstring>
+        <name>getRootChain</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::getRootChain</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>highestWeightState</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &gt;</type>
+          <declname>states</declname>
+          <defval>std::vector&lt; <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &gt;(0)</defval>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; bool &gt; &gt;</type>
+          <declname>directions</declname>
+          <defval>std::vector&lt; std::vector&lt; bool &gt; &gt;(0)</defval>
+        </param>
+        <briefdescription>
+<para>Computes the complete root chain (with all simple roots) starting from a highest weight <bold>highestWeightState</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Some directions (simple roots) are not computed because they already have been explored. This function is recursive and calls itself again for all new states. If a state has been found along the direction d, then this direction will not be explored again getting the root chains recursively for this state. The new states are added in the std::vector <bold>states</bold> (copied at the beginning of the function), and this std::vector is returned.<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>highestWeightState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial state of the root chains.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current set of stated found in the irrep.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>directions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set of already explored directions (along simple roots) for the state <bold>highestWeightState</bold>, that we do not compute again. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A modified copy of <bold>states</bold>, where new states have been added. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="456" column="5" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="457" bodyend="522"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1aa57469135b5120e58f9f3f48c6fbbf6c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::SemiSimpleAlgebra::getRootChainExperimental</definition>
+        <argsstring>(const AlgebraState &amp;highestWeightState, std::vector&lt; AlgebraState &gt; &amp;states, std::vector&lt; std::vector&lt; bool &gt; &gt; &amp;directions) const</argsstring>
+        <name>getRootChainExperimental</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::getRootChainExperimental</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>highestWeightState</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &gt; &amp;</type>
+          <declname>states</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; bool &gt; &gt; &amp;</type>
+          <declname>directions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="463" column="5" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="524" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a271ad4635ef21500976847a2820fdee2" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::SemiSimpleAlgebra::computeMultiplicity</definition>
+        <argsstring>(std::vector&lt; int &gt; &amp;multiplicities, const std::vector&lt; AlgebraState &gt; &amp;rep, const AlgebraState &amp;state) const</argsstring>
+        <name>computeMultiplicity</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::computeMultiplicity</qualifiedname>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>multiplicities</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &gt; &amp;</type>
+          <declname>rep</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Computes the multiplicity of the state <bold>state</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The multiplicity of the state depends on those of highest weight states. This function is then recursive and calculates on the go the multiplicities it needs if they have not been alreadt calculated. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>multiplicities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::vector of integers containing multiplicities. It is modified during the run, replacing the default -1 by the computed multiplicities. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set of all <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> in the representation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> of which we compute the multiplicity. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="478" column="10" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="568" bodyend="610"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleAlgebra_1a3dabc2ca62085ee19c9a75797bccd250" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; mty::SemiSimpleAlgebra::multiplicities</definition>
+        <argsstring>(std::vector&lt; AlgebraState &gt; &amp;rep) const</argsstring>
+        <name>multiplicities</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::multiplicities</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &gt; &amp;</type>
+          <declname>rep</declname>
+        </param>
+        <briefdescription>
+<para>Compute the multiplicities of the states in <bold>rep</bold>, where <bold>rep</bold> is a complete set of <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set of all the states in the representation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The multiplicities for each states in a std::vector of integers. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="488" column="17" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="615" bodyend="629"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmty_1_1SemiSimpleAlgebra_1afbf8098ab9b569a40e2740cbcd25ebc0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;fout, const SemiSimpleAlgebra &amp;algebra)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::SemiSimpleAlgebra::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1SemiSimpleAlgebra" kindref="compound">SemiSimpleAlgebra</ref> &amp;</type>
+          <declname>algebra</declname>
+        </param>
+        <briefdescription>
+<para>Overload of operator&lt;&lt; for <ref refid="classmty_1_1SemiSimpleAlgebra" kindref="compound">SemiSimpleAlgebra</ref>. Displays exhaustively members of the object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output flux. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>algebra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1SemiSimpleAlgebra" kindref="compound">SemiSimpleAlgebra</ref> to display. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The modified output flux. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="497" column="12" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="777" bodyend="826"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Abstract base class for all semi-simple Lie algebras. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class implements almost all calculations (getting representation from highest weight, product of representations...) except the initialization of the cartan matrix and the norms of simple roots, that is overriden in derived classes, specializations of semi simple Lie algebras. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mty::SemiSimpleAlgebra</label>
+        <link refid="classmty_1_1SemiSimpleAlgebra"/>
+      </node>
+      <node id="2">
+        <label>mty::algebra::A</label>
+        <link refid="classmty_1_1algebra_1_1A"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mty::algebra::B</label>
+        <link refid="classmty_1_1algebra_1_1B"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mty::algebra::C</label>
+        <link refid="classmty_1_1algebra_1_1C"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mty::algebra::D</label>
+        <link refid="classmty_1_1algebra_1_1D"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mty::algebra::E6</label>
+        <link refid="classmty_1_1algebra_1_1E6"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mty::algebra::E7</label>
+        <link refid="classmty_1_1algebra_1_1E7"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mty::algebra::E8</label>
+        <link refid="classmty_1_1algebra_1_1E8"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mty::algebra::F4</label>
+        <link refid="classmty_1_1algebra_1_1F4"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mty::algebra::G2</label>
+        <link refid="classmty_1_1algebra_1_1G2"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mty::algebra::R</label>
+        <link refid="classmty_1_1algebra_1_1R"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::SemiSimpleAlgebra</label>
+        <link refid="classmty_1_1SemiSimpleAlgebra"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>inverseCartan</edgelabel>
+          <edgelabel>symbolicCartan</edgelabel>
+          <edgelabel>symbolicMetric</edgelabel>
+          <edgelabel>symbolicRho</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/semiSimpleAlgebra.h" line="94" column="1" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="94" bodyend="582"/>
+    <listofallmembers>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a1613618ad6be9ea31643922f1cedff6c" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>absoluteNorms</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a011954e6430884bd64347d1c110b7a37" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>addWeights</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1ab67cd31edab8d99343267c7699307867" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>applyAnnihilationOperator</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1ad54df2613b7db7c598b804ee8d862abc" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>applyAnnihilationOperator</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a8e8150f6739dbe7eae58aaa33038e782" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>applyCreationOperator</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a6ad5a0d6cb86750149d06b72f7c1c21a" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>applyCreationOperator</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1aacb7df0522ee6aea21d3e540d25e457a" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>cartanMatrix</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a31653fa80eacf51cde61805b6efe371d" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>comparatorHighest</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a271ad4635ef21500976847a2820fdee2" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>computeMultiplicity</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a132aed8295ce39c26ec3c12a1a297031" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>computeScalarDot</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1af7a08f33456db7b57556d4823bab1b8d" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>computeSquaredNorm</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1aa86d766a1920af5bd048f8d5cf05f131" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>convertState</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1aac33d15d20f0d4b1987d2206884b270c" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>generateWeylGroup</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a24200a3ce37c7de85685afe1d8f43f6a" prot="public" virt="virtual"><scope>mty::SemiSimpleAlgebra</scope><name>getDefiningRep</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a0ed5474daa7b7292c97499a2a276b0dc" prot="protected" virt="virtual"><scope>mty::SemiSimpleAlgebra</scope><name>getEta</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a6e39ef348b8e127f4021efb0c9ab1fd5" prot="public" virt="virtual"><scope>mty::SemiSimpleAlgebra</scope><name>getIndex</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a5c9236993d9c52d7d8814401436d9d02" prot="public" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>getOrderL</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a08445d84837a3ee0818e999a8e3afa84" prot="public" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>getQuadraticCasimir</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1ac08b41d39e4deb84c1e252e7d95710b1" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>getRootChain</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1aa57469135b5120e58f9f3f48c6fbbf6c" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>getRootChainExperimental</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a8e55621f6710d8810ccee0e7c3bf3a4b" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>getSingleChain</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a7b49a2e9bec9181e5a88634740f24a8b" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>getSingleChainExperimental</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a49fd976502d861fc07ea61739c154e99" prot="public" virt="virtual"><scope>mty::SemiSimpleAlgebra</scope><name>getTrivialRep</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a576f5c44114980964d3688ec710e54f1" prot="public" virt="pure-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>getType</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a88a9a01df2e34c751d96a8d7ed448606" prot="public" virt="virtual"><scope>mty::SemiSimpleAlgebra</scope><name>highestWeightRep</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1ae2c838647f859770f69d7a1ebc3f4b25" prot="public" virt="virtual"><scope>mty::SemiSimpleAlgebra</scope><name>highestWeightRep</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a67899733c277cad4a381f9e77a64cf05" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>indices</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a6ca6c984a49944b59b0b949ca245551c" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>init</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1af98c68e1832512d74e3f67c5199c6312" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>inverseCartan</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1ad13d03bd035103b4dbe3bb067399502f" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>invertCartanMatrix</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a49c92eb6d42fdfd7fb14a202aa9d50e1" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>irreps</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a9b9baf0bf3d8b79436ccd56b1b7d2676" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>isOnWall</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1aae4d1dfd5a4b28cbc9cadb14038ce4b5" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>isPositiveRoot</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a102b64632d6e55ca7e384e72520687fd" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>isPositiveWeight</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a05112dc753491ad590f22e6aec5a1612" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>l</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a3dabc2ca62085ee19c9a75797bccd250" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>multiplicities</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1afbf8098ab9b569a40e2740cbcd25ebc0" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a9ca8e06e270dbb72139e494cde8a5dbe" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>positiveRoots</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a8f7ba151cd190383663b1ab77b2d445b" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>rho</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a41f221731862eaae617f45cb219c8530" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>rootMetric</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a08429df3b2869d35ef2f5399a679c520" prot="public" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>SemiSimpleAlgebra</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a5ca87a7cb7f2dc2b7d534cad69d42774" prot="protected" virt="pure-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>setCartanMatrix</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a1e65a608faddab538f9ec73a69692cfc" prot="protected" virt="pure-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>setSquaredNorm</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a4f57c0b5a49af2a8474fdef58da9538c" prot="public" virt="virtual"><scope>mty::SemiSimpleAlgebra</scope><name>sortRep</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a4fd98963d6d3c5a536267529a4a2c60c" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>squaredNorm</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a3fb05c4a72c9d16ed16994057e7b7983" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>symbolicCartan</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1ac165b358e852e5adfacba2be3b7d468d" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>symbolicMetric</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a3cf01c47b378082944e6d98b166d870c" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>symbolicRho</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a57b9e8d3082b2ea00601ae26c59e4d4b" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>symbolicRoots</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a47413b0fc354145adf28b42753899a08" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>symbolicSquaredNorms</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a6b115c5f8711fd19ec740f3b72cc2535" prot="public" virt="virtual"><scope>mty::SemiSimpleAlgebra</scope><name>tensorProduct</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1ac020594ec47ad8ec26a4ab7d639f1202" prot="public" virt="virtual"><scope>mty::SemiSimpleAlgebra</scope><name>tensorProduct</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a41b26f9216bb204ba7858546e049ea88" prot="public" virt="virtual"><scope>mty::SemiSimpleAlgebra</scope><name>tensorProduct</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a6fbd8240dfad0eb04aff4cc288db2dc1" prot="public" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>tensorProduct</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a8bb228e4a5fdd3b08e23b8c81dc98742" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>toDominantWeylChamber</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1afdcd304629a2f6445da72ca29cc3219d" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>weylReflection</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1ac5b50c98c6d5651542a867169644ea48" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>weylReflection</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1af86ace73b55c129b67b5a0227aff3f6b" prot="private" virt="non-virtual"><scope>mty::SemiSimpleAlgebra</scope><name>weylReflection</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a528476431b2a6c2db45667be258d4de4" prot="public" virt="virtual"><scope>mty::SemiSimpleAlgebra</scope><name>~SemiSimpleAlgebra</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

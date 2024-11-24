@@ -1,0 +1,1923 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcsl_1_1AbstractVectorial" kind="class" language="C++" prot="public">
+    <compoundname>csl::AbstractVectorial</compoundname>
+    <basecompoundref refid="classcsl_1_1Abstract" prot="public" virt="non-virtual">csl::Abstract</basecompoundref>
+    <derivedcompoundref refid="classcsl_1_1HighDTensor" prot="public" virt="non-virtual">csl::HighDTensor</derivedcompoundref>
+    <derivedcompoundref refid="classcsl_1_1Matrix" prot="public" virt="non-virtual">csl::Matrix</derivedcompoundref>
+    <derivedcompoundref refid="classcsl_1_1Vector" prot="public" virt="non-virtual">csl::Vector</derivedcompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classcsl_1_1AbstractVectorial_1af91837bcfe852d7e8baa5d9efdcc1609" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int csl::AbstractVectorial::dim</definition>
+        <argsstring></argsstring>
+        <name>dim</name>
+        <qualifiedname>csl::AbstractVectorial::dim</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="34" column="9" bodyfile="src/csl/vector.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1AbstractVectorial_1aec986a5a2e05c6ee2b65600e543bf8bb" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int csl::AbstractVectorial::nArgs</definition>
+        <argsstring></argsstring>
+        <name>nArgs</name>
+        <qualifiedname>csl::AbstractVectorial::nArgs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="36" column="9" bodyfile="src/csl/vector.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1AbstractVectorial_1ae951a1c6c575665a57ee6cf5549bf0c6" prot="protected" static="no" mutable="no">
+        <type>csl::vector_expr</type>
+        <definition>csl::vector_expr csl::AbstractVectorial::argument</definition>
+        <argsstring></argsstring>
+        <name>argument</name>
+        <qualifiedname>csl::AbstractVectorial::argument</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="38" column="22" bodyfile="src/csl/vector.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1AbstractVectorial_1a522c084004a0cda5d1e49b050d4ff36c" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; csl::AbstractVectorial::shape</definition>
+        <argsstring></argsstring>
+        <name>shape</name>
+        <qualifiedname>csl::AbstractVectorial::shape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="40" column="17" bodyfile="src/csl/vector.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a580c5ef55bc98e097a82910bc993be8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::AbstractVectorial::AbstractVectorial</definition>
+        <argsstring>()</argsstring>
+        <name>AbstractVectorial</name>
+        <qualifiedname>csl::AbstractVectorial::AbstractVectorial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="44" column="5" bodyfile="src/csl/vector.cpp" bodystart="36" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1aa2142a09824aac38b268ccccb274c6dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>csl::AbstractVectorial::~AbstractVectorial</definition>
+        <argsstring>()</argsstring>
+        <name>~AbstractVectorial</name>
+        <qualifiedname>csl::AbstractVectorial::~AbstractVectorial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="46" column="5" bodyfile="src/csl/vector.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1aae5db88feee1be51e3ad429c6c10df58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string const &amp;</type>
+        <definition>std::string const  &amp; csl::AbstractVectorial::getName</definition>
+        <argsstring>() const override</argsstring>
+        <name>getName</name>
+        <qualifiedname>csl::AbstractVectorial::getName</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1af7f5e7466e754984a2c4394a112464f7">getName</reimplements>
+        <briefdescription>
+<para>Returns the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>&apos;s name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><emphasis>name</emphasis> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="48" column="23" bodyfile="src/csl/vector.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1afeaa37536bfa9de67a736d2884578514" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::AbstractVectorial::print</definition>
+        <argsstring>(int mode=0, std::ostream &amp;out=std::cout, LibraryMode libMode=LibraryMode::NoLib) const override</argsstring>
+        <name>print</name>
+        <qualifiedname>csl::AbstractVectorial::print</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aed56cb85894209a9bbc9b8bdada5e6ab">print</reimplements>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <param>
+          <type>LibraryMode</type>
+          <declname>libMode</declname>
+          <defval>LibraryMode::NoLib</defval>
+        </param>
+        <briefdescription>
+<para>Displays the abstract in standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tells if the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> is printed alone (default) or in another expr. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="50" column="10" bodyfile="src/csl/vector.cpp" bodystart="49" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1ad12d45f7d849c24d2518395f6798652d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::AbstractVectorial::printCode</definition>
+        <argsstring>(int mode=0, std::ostream &amp;out=std::cout) const override</argsstring>
+        <name>printCode</name>
+        <qualifiedname>csl::AbstractVectorial::printCode</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a2910dd30d90915c11d48c01cab618dda">printCode</reimplements>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="54" column="10" bodyfile="src/csl/vector.cpp" bodystart="105" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a8a568746d53548b8621fda445258e830" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>string csl::AbstractVectorial::printLaTeX</definition>
+        <argsstring>(int mode=0) const override</argsstring>
+        <name>printLaTeX</name>
+        <qualifiedname>csl::AbstractVectorial::printLaTeX</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aa067d4a97135bfe2052a7e21c28f75be">printLaTeX</reimplements>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Creates a LaTeX output for the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tells if the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> is printed alone (default) or in another expr. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The string corresponding to the LaTeX output. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="59" column="17" bodyfile="src/csl/vector.cpp" bodystart="81" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1aa95d66839c20fc1b9cf8bd658b3237bb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Parent" kindref="compound">Parent</ref> &gt;</type>
+        <definition>std::vector&lt; Parent &gt; csl::AbstractVectorial::getSubSymbols</definition>
+        <argsstring>() const override</argsstring>
+        <name>getSubSymbols</name>
+        <qualifiedname>csl::AbstractVectorial::getSubSymbols</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a4e69280b624b0e0c932f1cfa7417b55f">getSubSymbols</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="61" column="17" bodyfile="src/csl/vector.cpp" bodystart="138" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1afaf73d258e30ae78513cfaa4d7c65d59" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>optional&lt; Expr &gt; csl::AbstractVectorial::evaluate</definition>
+        <argsstring>(csl::eval::mode user_mode=csl::eval::base) const override</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>csl::AbstractVectorial::evaluate</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aa3a4cb7f30e2a422fe27a513e03d6600">evaluate</reimplements>
+        <param>
+          <type>csl::eval::mode</type>
+          <declname>user_mode</declname>
+          <defval>csl::eval::base</defval>
+        </param>
+        <briefdescription>
+<para><bold>Evaluates</bold> the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Replaces all variables by their value and evaluating. This function must be used instead of <ref refid="classcsl_1_1Abstract_1a543d5a4f0432e166b492ad28a860a65f" kindref="member">evaluateScalar()</ref> when treating not only real scalars.* In particular (x=2, y=3) x+iy evaluates to 3+ 3i whereas <ref refid="classcsl_1_1Abstract_1a543d5a4f0432e166b492ad28a860a65f" kindref="member">evaluateScalar()</ref> would return 3. <simplesect kind="return"><para>The abstract result of the evaluation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="63" column="19" bodyfile="src/csl/vector.cpp" bodystart="150" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1ae3c098ec3de74dad72d9db7d47136a95" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>unique_Expr</type>
+        <definition>unique_Expr csl::AbstractVectorial::copy_unique</definition>
+        <argsstring>() const override</argsstring>
+        <name>copy_unique</name>
+        <qualifiedname>csl::AbstractVectorial::copy_unique</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aaa996819710adc3b7529c74a628be623">copy_unique</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="67" column="17" bodyfile="src/csl/vector.cpp" bodystart="164" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a68121249b62f27fee6927b20e667d4b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::AbstractVectorial::deepCopy</definition>
+        <argsstring>() const override</argsstring>
+        <name>deepCopy</name>
+        <qualifiedname>csl::AbstractVectorial::deepCopy</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a09648782dcf2e81abb5b864f476cc410">deepCopy</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="69" column="10" bodyfile="src/csl/vector.cpp" bodystart="183" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a4164e7fdb8f91e942bc8be981c321e39" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::AbstractVectorial::refresh</definition>
+        <argsstring>() const override</argsstring>
+        <name>refresh</name>
+        <qualifiedname>csl::AbstractVectorial::refresh</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aaeab3809e91989adbdf29c3f56d905b6">refresh</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="71" column="10" bodyfile="src/csl/vector.cpp" bodystart="206" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a0b8721d9b3e21d66177396f4986daaf5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::AbstractVectorial::deepRefresh</definition>
+        <argsstring>() const override</argsstring>
+        <name>deepRefresh</name>
+        <qualifiedname>csl::AbstractVectorial::deepRefresh</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a10358c33402ed520dc5888b25bb26af3">deepRefresh</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="73" column="10" bodyfile="src/csl/vector.cpp" bodystart="225" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1afda6fa063a671a3a0feee716621c19c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int csl::AbstractVectorial::getDim</definition>
+        <argsstring>() const override</argsstring>
+        <name>getDim</name>
+        <qualifiedname>csl::AbstractVectorial::getDim</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a5856c3d55a6d1406970f3656e61efe8e">getDim</reimplements>
+        <briefdescription>
+<para>Gives the <bold>dimension</bold> of the object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Allows to know if we are manipulating a pure scalar (i.e. that can have a real value) or something else. There is the particular case of the <ref refid="classcsl_1_1Imaginary" kindref="compound">Imaginary</ref> <bold>i</bold> that is considered as a scalar for simplicity but in reality cannot be evaluated with a real. Example: 1 + <bold>i</bold> cannot be reduced. <simplesect kind="return"><para>dim (a non memorized integer corresponding to the dimension of the abstract) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="75" column="9" bodyfile="src/csl/vector.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1afb6d645d2f0673a500eaf294ff822269" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespacecsl_1a70046459ec0082db8cb97005c13c9a54" kindref="member">csl::PrimaryType</ref></type>
+        <definition>csl::PrimaryType csl::AbstractVectorial::getPrimaryType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getPrimaryType</name>
+        <qualifiedname>csl::AbstractVectorial::getPrimaryType</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a8ab79682cdff4c7d7b52c2e70ac23d85">getPrimaryType</reimplements>
+        <briefdescription>
+<para>Gives the <bold>primary</bold> <bold>type</bold> of <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In the program this function is very often called. It allows different functions to know what type of expr they are manipulating (single number, scalar function with one argument, with multiple argumments, a <ref refid="classcsl_1_1Vector" kindref="compound">Vector</ref>, etc) in order to do special treatments or simplifications. <simplesect kind="return"><para>type (a non memorized integer corresponding to the type of abstract) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="77" column="22" bodyfile="src/csl/vector.h" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a2689157ec6445f198e36dadb4d9aef78" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int csl::AbstractVectorial::getNArgs</definition>
+        <argsstring>(int axis=0) const override</argsstring>
+        <name>getNArgs</name>
+        <qualifiedname>csl::AbstractVectorial::getNArgs</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aa034448201c9e7998bbbb5e409636b30">getNArgs</reimplements>
+        <param>
+          <type>int</type>
+          <declname>axis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Returns the number of arguments of the expression. If the expression is a building block (<ref refid="classcsl_1_1AbstractBuildingBlock" kindref="compound">AbstractBuildingBlock</ref>), this function returns 0. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of arguments of the expression. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="81" column="9" bodyfile="src/csl/vector.cpp" bodystart="248" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1ad9eb779b7f16721eb18b6a47037db518" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t csl::AbstractVectorial::size</definition>
+        <argsstring>() const override</argsstring>
+        <name>size</name>
+        <qualifiedname>csl::AbstractVectorial::size</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a3794843945b8a39e2c1be073c9bacdf5">size</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="83" column="12" bodyfile="src/csl/vector.cpp" bodystart="263" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1aa8225d3dd07be192735c766e8d267774" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>csl::vector_expr::iterator</type>
+        <definition>csl::vector_expr::iterator csl::AbstractVectorial::begin</definition>
+        <argsstring>() override</argsstring>
+        <name>begin</name>
+        <qualifiedname>csl::AbstractVectorial::begin</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aad54ed41b2ce9bad3364fe30ad1a0d71">begin</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A csl::vector_expr::iterator at the beginning of argument for multi-argument expressions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="85" column="32" bodyfile="src/csl/vector.cpp" bodystart="268" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a135f3df162ac8e7128a3e666e26cb81b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>csl::vector_expr::const_iterator</type>
+        <definition>csl::vector_expr::const_iterator csl::AbstractVectorial::begin</definition>
+        <argsstring>() const override</argsstring>
+        <name>begin</name>
+        <qualifiedname>csl::AbstractVectorial::begin</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1adff373df9477d4e38581d09cc6d2fee4">begin</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A csl::vector_expr::iterator at the beginning of argument for multi-argument expressions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="86" column="38" bodyfile="src/csl/vector.h" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a06f69d432a047d7b48757d8362de68d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>csl::vector_expr::iterator</type>
+        <definition>csl::vector_expr::iterator csl::AbstractVectorial::end</definition>
+        <argsstring>() override</argsstring>
+        <name>end</name>
+        <qualifiedname>csl::AbstractVectorial::end</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a61e4e80d998a888a1a74d9ea3e10c0f1">end</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A csl::vector_expr::iterator at the end of argument for multi-argument expressions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="91" column="32" bodyfile="src/csl/vector.cpp" bodystart="273" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1ada11a590d79c87baf92a98888ee32c44" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>csl::vector_expr::const_iterator</type>
+        <definition>csl::vector_expr::const_iterator csl::AbstractVectorial::end</definition>
+        <argsstring>() const override</argsstring>
+        <name>end</name>
+        <qualifiedname>csl::AbstractVectorial::end</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1ae2761d54f13310e13f5076d565edd7ef">end</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A csl::vector_expr::iterator at the end of argument for multi-argument expressions. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="92" column="38" bodyfile="src/csl/vector.h" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a2160f94ea8c3453104f4f38cdf87dc12" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractVectorial::isReal</definition>
+        <argsstring>() const override</argsstring>
+        <name>isReal</name>
+        <qualifiedname>csl::AbstractVectorial::isReal</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1ac73aba0c48a4b5740f7bfa09e438ca99">isReal</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="97" column="10" bodyfile="src/csl/vector.cpp" bodystart="278" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a43c9ebd8953d2f51b7bc7a8b7e97ccd3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractVectorial::isPurelyImaginary</definition>
+        <argsstring>() const override</argsstring>
+        <name>isPurelyImaginary</name>
+        <qualifiedname>csl::AbstractVectorial::isPurelyImaginary</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1acb67e8e96735b8f116d0e7ab33d7be77">isPurelyImaginary</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="99" column="10" bodyfile="src/csl/vector.cpp" bodystart="286" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a2a2c1314e65baf839542e6fb7845ad44" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>optional&lt; Expr &gt; csl::AbstractVectorial::getComplexConjugate</definition>
+        <argsstring>() const override</argsstring>
+        <name>getComplexConjugate</name>
+        <qualifiedname>csl::AbstractVectorial::getComplexConjugate</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a03e8bdba20c6192a948892f212f09dbe">getComplexConjugate</reimplements>
+        <briefdescription>
+<para>Calculates and returns the complex conjugate of the expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>\bar{*this}. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="101" column="19" bodyfile="src/csl/vector.cpp" bodystart="294" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1ab99d86f5bed81171962f0cf99415bfba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>std::optional&lt; Expr &gt; csl::AbstractVectorial::getRealPart</definition>
+        <argsstring>() const override</argsstring>
+        <name>getRealPart</name>
+        <qualifiedname>csl::AbstractVectorial::getRealPart</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a415f64fdddaae445014d5e052956f889">getRealPart</reimplements>
+        <briefdescription>
+<para><bold>Evaluates</bold> the <bold>real part</bold> of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> and returns it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The real part of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="103" column="19" bodyfile="src/csl/vector.cpp" bodystart="302" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a4d3d4dbce8837fc40b19131a019044a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::AbstractVectorial::getImaginaryPart</definition>
+        <argsstring>() const override</argsstring>
+        <name>getImaginaryPart</name>
+        <qualifiedname>csl::AbstractVectorial::getImaginaryPart</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a43f44bbb3685fc9f4a0402223b2e1004">getImaginaryPart</reimplements>
+        <briefdescription>
+<para><bold>Evaluates</bold> the <bold>imaginary part</bold> of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> and returns it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The imaginary part of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="105" column="10" bodyfile="src/csl/vector.cpp" bodystart="310" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a1c8b58da63fe78c40174e6f2f582cbf3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>std::optional&lt; Expr &gt; csl::AbstractVectorial::getComplexModulus</definition>
+        <argsstring>() const override</argsstring>
+        <name>getComplexModulus</name>
+        <qualifiedname>csl::AbstractVectorial::getComplexModulus</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a859f792aec52ba1fe1181f81d1cc3451">getComplexModulus</reimplements>
+        <briefdescription>
+<para><bold>Evaluates</bold> the <bold>modulus in the complex plane</bold> of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> and returns it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The modulus part of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="107" column="19" bodyfile="src/csl/vector.cpp" bodystart="318" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a2320c9f9c71eb81a2348175dd14404a9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> const &amp;</type>
+        <definition>Expr const  &amp; csl::AbstractVectorial::getArgument</definition>
+        <argsstring>(int iArg=0) const override</argsstring>
+        <name>getArgument</name>
+        <qualifiedname>csl::AbstractVectorial::getArgument</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1ac33a42309d629d47bfdbede4e152414e">getArgument</reimplements>
+        <param>
+          <type>int</type>
+          <declname>iArg</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This function must not be called for building blocks, one must check first that the expression has arguments. </para>
+</simplesect>
+<simplesect kind="return"><para>The i^{th} argument of the expression. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="109" column="16" bodyfile="src/csl/vector.cpp" bodystart="327" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a0fbb75333c68d6c9a2d2e277d34bca3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+        <definition>Expr &amp; csl::AbstractVectorial::getArgument</definition>
+        <argsstring>(int iArg=0) override</argsstring>
+        <name>getArgument</name>
+        <qualifiedname>csl::AbstractVectorial::getArgument</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a06f542034e95744148f4fce5a4893e63">getArgument</reimplements>
+        <param>
+          <type>int</type>
+          <declname>iArg</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="111" column="10" bodyfile="src/csl/vector.cpp" bodystart="339" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a2da0f7388c5c61c4a18c5e5dba6fdd69" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+        <definition>Expr &amp; csl::AbstractVectorial::getArgument</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;indices) override</argsstring>
+        <name>getArgument</name>
+        <qualifiedname>csl::AbstractVectorial::getArgument</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aa689fb64eecb86edbde6c745d1ce756b">getArgument</reimplements>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="113" column="10" bodyfile="src/csl/vector.cpp" bodystart="361" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a7a03ddf294e576016a8114f46eb900f9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> const &amp;</type>
+        <definition>Expr const  &amp; csl::AbstractVectorial::getArgument</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;indices) const override</argsstring>
+        <name>getArgument</name>
+        <qualifiedname>csl::AbstractVectorial::getArgument</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a898d6cf2a7f348feacab189447bee1eb">getArgument</reimplements>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+<para>Allows to get specific arguments of expressions in multiple dimensions, by giving the indices in each dimension. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This function must not be called for building blocks, one must check first that the expression has arguments. </para>
+</simplesect>
+<simplesect kind="return"><para>The argument {i,j,...} of the expression. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="115" column="16" bodyfile="src/csl/vector.cpp" bodystart="344" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1acca79f2a53255ee6b10d51efc658cb19" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractVectorial::dependsOn</definition>
+        <argsstring>(Expr_info expr) const override</argsstring>
+        <name>dependsOn</name>
+        <qualifiedname>csl::AbstractVectorial::dependsOn</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a40fe2ccf376dadd21b2d7a0f134d86c6">dependsOn</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Check recursively if the expression depends on <bold>expr</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression to search. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if a dependency in <bold>expr</bold> is found. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="117" column="10" bodyfile="src/csl/vector.cpp" bodystart="374" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a5dfd1e8233507457f725e10e2624ec0f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractVectorial::dependsExplicitlyOn</definition>
+        <argsstring>(Expr_info expr) const override</argsstring>
+        <name>dependsExplicitlyOn</name>
+        <qualifiedname>csl::AbstractVectorial::dependsExplicitlyOn</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1ac3c9887977249e4d71ea36c6377b3581">dependsExplicitlyOn</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Check recursively if <bold>expr</bold> is present in the expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression to search. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if <bold>expr</bold> is found. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="119" column="10" bodyfile="src/csl/vector.cpp" bodystart="386" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a87b6428015d2a220210ad0d10f2333a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractVectorial::dependsOn</definition>
+        <argsstring>(Parent_info expr) const override</argsstring>
+        <name>dependsOn</name>
+        <qualifiedname>csl::AbstractVectorial::dependsOn</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a9d7d8586a0df66ba8da33528d6400e66">dependsOn</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1AbstractParent" kindref="compound">Parent_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="121" column="10" bodyfile="src/csl/vector.cpp" bodystart="398" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a774421b7d986b3e88533c4e20c206c12" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractVectorial::dependsExplicitlyOn</definition>
+        <argsstring>(Parent_info expr) const override</argsstring>
+        <name>dependsExplicitlyOn</name>
+        <qualifiedname>csl::AbstractVectorial::dependsExplicitlyOn</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a0b26ad7a44e497af296318287bac539a">dependsExplicitlyOn</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1AbstractParent" kindref="compound">Parent_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="123" column="10" bodyfile="src/csl/vector.cpp" bodystart="405" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a7a90b9f26666f4aff635bfbf7cd865b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractVectorial::commutesWith</definition>
+        <argsstring>(Expr_info expr, int sign=-1) const override</argsstring>
+        <name>commutesWith</name>
+        <qualifiedname>csl::AbstractVectorial::commutesWith</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a3f68d0cd93dfe2ac02d6d4afc80fb41a">commutesWith</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sign</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Tells if the object commutes with expr. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if <bold>*this</bold> commutes with <bold>expr</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="125" column="10" bodyfile="src/csl/vector.cpp" bodystart="412" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1ad91b47a309a8fc9c5ed9e4b827d84155" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const csl::vector_expr &amp;</type>
+        <definition>const csl::vector_expr &amp; csl::AbstractVectorial::getVectorArgument</definition>
+        <argsstring>() const override</argsstring>
+        <name>getVectorArgument</name>
+        <qualifiedname>csl::AbstractVectorial::getVectorArgument</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1ac83c44ae1e5315a38083bdb7acd8f3fa">getVectorArgument</reimplements>
+        <briefdescription>
+<para>Allows to get the entire std::vector of arguments of the expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>This function must not be called for building blocks, one must check first that the expression has arguments. </para>
+</simplesect>
+<simplesect kind="return"><para>The std::vector of argument. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="127" column="28" bodyfile="src/csl/vector.cpp" bodystart="420" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a8cee385d5b699162c8a400e4b44ed7d7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>vector&lt; int &gt; csl::AbstractVectorial::getShape</definition>
+        <argsstring>() const override</argsstring>
+        <name>getShape</name>
+        <qualifiedname>csl::AbstractVectorial::getShape</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a625efe55a17b97a1c0f085bdbf3a962a">getShape</reimplements>
+        <briefdescription>
+<para>Accessor to the shape of the tensor in the form of a std::vector of integers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>shape</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="129" column="17" bodyfile="src/csl/vector.cpp" bodystart="425" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a135c8f0acf06bfc038a459a3283e309b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::AbstractVectorial::setComplexProperty</definition>
+        <argsstring>(csl::ComplexProperty t_prop) override</argsstring>
+        <name>setComplexProperty</name>
+        <qualifiedname>csl::AbstractVectorial::setComplexProperty</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1ae35385480a1be08f5e7433535b58ac0b">setComplexProperty</reimplements>
+        <param>
+          <type><ref refid="namespacecsl_1ac54d9e79dc6697a8eacc07c754b11c0e" kindref="member">csl::ComplexProperty</ref></type>
+          <declname>t_prop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="131" column="10" bodyfile="src/csl/vector.cpp" bodystart="430" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1ae67f1daf87e45e15b82dd2827f6ba55f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::AbstractVectorial::setArgument</definition>
+        <argsstring>(const Expr &amp;expr, int iArg=0) override</argsstring>
+        <name>setArgument</name>
+        <qualifiedname>csl::AbstractVectorial::setArgument</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aab2d2ac186b56d17d2cc0a105e145b11">setArgument</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iArg</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Sets the argument at position <bold>iArg</bold> (default=0). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression that replaces the argument. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iArg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the position of the argument to change. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="133" column="10" bodyfile="src/csl/vector.cpp" bodystart="436" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a47a8b2fbd9233c706cb5fcf05f96bc7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::AbstractVectorial::setArgument</definition>
+        <argsstring>(const Expr &amp;expr, const std::vector&lt; int &gt; &amp;indices) override</argsstring>
+        <name>setArgument</name>
+        <qualifiedname>csl::AbstractVectorial::setArgument</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a45c3adb7ba4e2b8442247246a3792b44">setArgument</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+<para>Sets the argument at position <bold>{i</bold>,j,...} for multi-dimensions expressions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression that replaces the argument. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An std::vector containing the series of indices corresponding to the argument to replace. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="135" column="10" bodyfile="src/csl/vector.cpp" bodystart="462" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a2d072812c1918ec0097729d353003198" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::AbstractVectorial::setVectorArgument</definition>
+        <argsstring>(const csl::vector_expr &amp;t_argument) override</argsstring>
+        <name>setVectorArgument</name>
+        <qualifiedname>csl::AbstractVectorial::setVectorArgument</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a83fee8ed28079bcac107455d58be9d5d">setVectorArgument</reimplements>
+        <param>
+          <type>const csl::vector_expr &amp;</type>
+          <declname>t_argument</declname>
+        </param>
+        <briefdescription>
+<para>Replaced the entire std::vector of argument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::vector of expressions to copy. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="138" column="10" bodyfile="src/csl/vector.cpp" bodystart="445" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1ab24d4b6eae7dbe9783aabf2bfcb7a224" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractVectorial::matchShape</definition>
+        <argsstring>(Expr_info expr, bool exact=false) const override</argsstring>
+        <name>matchShape</name>
+        <qualifiedname>csl::AbstractVectorial::matchShape</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1ab79c1d8df9e6b1a3eca66958f7dc489d">matchShape</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>exact</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>In the case of a vectorial-type expression, this function checks if the shape of expr matches itself. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <bold>exact</bold> is true, the function search an exact match i.e. either the two shapes are exactly equal or one of the two objects is a scalar. If <bold>exact</bold> is false, this function only search for a possible dot product between the two expressions, and see if the last axis of <bold>*this</bold> matches the first of <bold>expr</bold> (or if one of the two objects is scalar also). Then, a product \sum _k (*this)[i,j,...,k]*expr[k,l,m,...] is possible.<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression of which we compare the shape. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exact</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean than specifies if we need an exact match or not. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the two shapes correspond. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="140" column="10" bodyfile="src/csl/vector.cpp" bodystart="476" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1afd27e37bd7e9862252467bf574a37e6b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractVectorial::exactMatchShape</definition>
+        <argsstring>(Expr_info expr) const</argsstring>
+        <name>exactMatchShape</name>
+        <qualifiedname>csl::AbstractVectorial::exactMatchShape</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="142" column="10" bodyfile="src/csl/vector.cpp" bodystart="488" bodyend="503"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1aa9d43ea7296950633aa2ac848173cb51" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::AbstractVectorial::getSum</definition>
+        <argsstring>() const override</argsstring>
+        <name>getSum</name>
+        <qualifiedname>csl::AbstractVectorial::getSum</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aeaf8154e39ff211b12e6382e675ccaad">getSum</reimplements>
+        <briefdescription>
+<para>Calculates and returns the sum of all elements in the <bold>Vectorial</bold> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The sum of all elements. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="144" column="10" bodyfile="src/csl/vector.cpp" bodystart="505" bodyend="516"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a6f4f1f7c516ee3daceaf5044a40c04d1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::AbstractVectorial::getProduct</definition>
+        <argsstring>() const override</argsstring>
+        <name>getProduct</name>
+        <qualifiedname>csl::AbstractVectorial::getProduct</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a07489d0569bc983718796d21c73f34b3">getProduct</reimplements>
+        <briefdescription>
+<para>Calculates and returns the product of all elements in the <bold>Vectorial</bold> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The product of all elements. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="146" column="10" bodyfile="src/csl/vector.cpp" bodystart="518" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a002b8834bc010144ab0666c6697a5d7b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::AbstractVectorial::getSubVectorial</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;exceptions) const override</argsstring>
+        <name>getSubVectorial</name>
+        <qualifiedname>csl::AbstractVectorial::getSubVectorial</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a26a0854bca4c47e84a1da36a3de8c49f">getSubVectorial</reimplements>
+        <reimplementedby refid="classcsl_1_1Matrix_1a002b8834bc010144ab0666c6697a5d7b">getSubVectorial</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Vector_1a002b8834bc010144ab0666c6697a5d7b">getSubVectorial</reimplementedby>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>exceptions</declname>
+        </param>
+        <briefdescription>
+<para>Allows to pick a part of a Vectorial expression, excluding the iExcept^{th} element. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iExcept</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Element to ignore. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The part of *this excluding iExcept. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="148" column="10" bodyfile="src/csl/vector.cpp" bodystart="531" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a9a15f8a9b14ee52361a104d2206c8bef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::AbstractVectorial::getSubVectorial</definition>
+        <argsstring>(const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;keepIndices) const override</argsstring>
+        <name>getSubVectorial</name>
+        <qualifiedname>csl::AbstractVectorial::getSubVectorial</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a29261a946b3398b6129237620754a8b9">getSubVectorial</reimplements>
+        <reimplementedby refid="classcsl_1_1Matrix_1a9a15f8a9b14ee52361a104d2206c8bef">getSubVectorial</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Vector_1a9a15f8a9b14ee52361a104d2206c8bef">getSubVectorial</reimplementedby>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;</type>
+          <declname>keepIndices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="150" column="10" bodyfile="src/csl/vector.cpp" bodystart="564" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a8770e53fba4f253c41b7fa8015f62833" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::AbstractVectorial::getSubVectorial</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; int &gt; &gt;::const_iterator begin, std::vector&lt; std::vector&lt; int &gt; &gt;::const_iterator end) const override</argsstring>
+        <name>getSubVectorial</name>
+        <qualifiedname>csl::AbstractVectorial::getSubVectorial</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a8a067b70756c4eef758aa88076a95162">getSubVectorial</reimplements>
+        <reimplementedby refid="classcsl_1_1Matrix_1a8770e53fba4f253c41b7fa8015f62833">getSubVectorial</reimplementedby>
+        <reimplementedby refid="classcsl_1_1Vector_1a8770e53fba4f253c41b7fa8015f62833">getSubVectorial</reimplementedby>
+        <param>
+          <type>std::vector&lt; std::vector&lt; int &gt; &gt;::const_iterator</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; int &gt; &gt;::const_iterator</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="153" column="10" bodyfile="src/csl/vector.cpp" bodystart="570" bodyend="595"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a8f4326ec0f618785cf0e9d84b448cdd6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::AbstractVectorial::getVectorialModulus</definition>
+        <argsstring>() const override</argsstring>
+        <name>getVectorialModulus</name>
+        <qualifiedname>csl::AbstractVectorial::getVectorialModulus</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a0188b049736016c970a2513ed9f6931f">getVectorialModulus</reimplements>
+        <briefdescription>
+<para>Returns the Vectorial modulus of the <bold>Vectorial</bold> object, that is defined here as the squared root of the sum of element squared. Example: \sqrt{A_{11}^2+A_{12}^2+\ldot}. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The vectorial modulus of the expression. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="157" column="10" bodyfile="src/csl/vector.cpp" bodystart="597" bodyend="612"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a0ed41f66d207d34ebafc90bc473109ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::AbstractVectorial::dot</definition>
+        <argsstring>(const Expr &amp;expr) const override</argsstring>
+        <name>dot</name>
+        <qualifiedname>csl::AbstractVectorial::dot</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a4cc7a46deaa3eaa7593909d74e76d4af">dot</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Returns the dot product of two <bold>Vectorial</bold> expressions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right operand of the dot product. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sum _k (*this)[i,j,...,k]*expr[k,l,m,...]. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="159" column="10" bodyfile="src/csl/vector.cpp" bodystart="614" bodyend="657"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a91561bc3d02d055e86b7f3e35a76e25c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::AbstractVectorial::addition_own</definition>
+        <argsstring>(const Expr &amp;expr) const override</argsstring>
+        <name>addition_own</name>
+        <qualifiedname>csl::AbstractVectorial::addition_own</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a101219973341a39cf15f07e5e1aa388f">addition_own</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Contains implementation of special addition for Numerical- and Vectorial-types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right operrand of the addition. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The sum of the two operands. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="161" column="10" bodyfile="src/csl/vector.cpp" bodystart="659" bodyend="693"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a81eebf482c8b342b75aaec063533790c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::AbstractVectorial::multiplication_own</definition>
+        <argsstring>(const Expr &amp;expr, bool side=1) const override</argsstring>
+        <name>multiplication_own</name>
+        <qualifiedname>csl::AbstractVectorial::multiplication_own</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a4f5ed458ba62f5b4cf61a9e1f8568af1">multiplication_own</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>side</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Contains implementation of special multiplication for Numerical- and Vectorial-types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right operrand of the product. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The product of the two operands. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="163" column="10" bodyfile="src/csl/vector.cpp" bodystart="695" bodyend="765"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a0e4336f06daf87990d127a4b755c121c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::AbstractVectorial::tensordot</definition>
+        <argsstring>(const Expr &amp;expr) const override</argsstring>
+        <name>tensordot</name>
+        <qualifiedname>csl::AbstractVectorial::tensordot</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a7b83c6a13716688f45b02e6291d39aba">tensordot</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Returns the tensordot of two <bold>Vectorial</bold> expressions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right operand of the tensordot </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The tensor dot of <bold>*this</bold> and <bold>expr</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="165" column="10" bodyfile="src/csl/vector.cpp" bodystart="767" bodyend="787"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a9a79c1dcc4d4ee22c8662ffcc11e5378" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::AbstractVectorial::trace</definition>
+        <argsstring>(int axis1, int axis2) const override</argsstring>
+        <name>trace</name>
+        <qualifiedname>csl::AbstractVectorial::trace</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aacab43e551e9259a39a79378373ce49c">trace</reimplements>
+        <reimplementedby refid="classcsl_1_1Matrix_1a9a79c1dcc4d4ee22c8662ffcc11e5378">trace</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>axis1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>axis2</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the trace over the axis <bold>axis1</bold> and <bold>axis2</bold> of a tensor. <bold>axis1</bold> and <bold>axis2</bold> can be the same, in which case the trace just corresponds to the sum over this particular axis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>axis1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First axis to contract. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>axis2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second axis to contract. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the trace over axis <bold>axis1</bold> and <bold>axis2</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="167" column="10" bodyfile="src/csl/vector.cpp" bodystart="789" bodyend="834"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a690f2f1b0748bbd81213335c47535113" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::AbstractVectorial::symmetrise</definition>
+        <argsstring>() const override</argsstring>
+        <name>symmetrise</name>
+        <qualifiedname>csl::AbstractVectorial::symmetrise</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a4faf1ffd8cb3b6c721e128980c0303d8">symmetrise</reimplements>
+        <reimplementedby refid="classcsl_1_1Matrix_1ac6c4ce8256eff3054bba06339ddc8525">symmetrise</reimplementedby>
+        <briefdescription>
+<para>Calculates and returns the symmetrization of a 2D matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>1/2*(A + A^T) for a matrix (2D) A. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="169" column="10" bodyfile="src/csl/vector.cpp" bodystart="871" bodyend="889"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a71a8d453b3d5c57f2d09b17e99302ef8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::AbstractVectorial::antisymmetrise</definition>
+        <argsstring>() const override</argsstring>
+        <name>antisymmetrise</name>
+        <qualifiedname>csl::AbstractVectorial::antisymmetrise</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1acd972aed8326d4c13534594e061ee6da">antisymmetrise</reimplements>
+        <reimplementedby refid="classcsl_1_1Matrix_1a95c95848700fecd5d7041f5c28877946">antisymmetrise</reimplementedby>
+        <briefdescription>
+<para>Calculates and returns the anti-symmetrization of a 2D matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>1/2*(A - A^T) for a matrix (2D) A. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="171" column="10" bodyfile="src/csl/vector.cpp" bodystart="913" bodyend="938"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a09396a6b80940ac8c99604e9b845c815" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>optional&lt; Expr &gt; csl::AbstractVectorial::expand</definition>
+        <argsstring>(bool full=false, bool inplace=false) const override</argsstring>
+        <name>expand</name>
+        <qualifiedname>csl::AbstractVectorial::expand</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a3a87ab082152fea4fc2444659028b840">expand</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>full</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inPlace</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para><bold>Develops</bold> the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function concerns only products (and exponents) that will be flatten to give at the end a sum of independant terms.<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>full</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true the expandment is <bold>recursive</bold> through all the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The expand <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="173" column="19" bodyfile="src/csl/vector.cpp" bodystart="940" bodyend="948"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a8907475ad6468725bafe0c81dfbeb688" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>optional&lt; Expr &gt; csl::AbstractVectorial::expand_if</definition>
+        <argsstring>(std::function&lt; bool(Expr const &amp;)&gt; const &amp;f, bool full=false, bool inplace=false) const override</argsstring>
+        <name>expand_if</name>
+        <qualifiedname>csl::AbstractVectorial::expand_if</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aeb48aaaa856582b6359037fe94d2419b">expand_if</reimplements>
+        <param>
+          <type>std::function&lt; bool(<ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> const &amp;)&gt; const &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>full</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inPlace</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para><bold>Develops</bold> the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function concerns only products (and exponents) that will be flatten to give at the end a sum of independant terms.<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Functions that returns a boolean that determines which arguments must be expanded in products.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>full</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true the expandment is <bold>recursive</bold> through all the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The expand <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="176" column="19" bodyfile="src/csl/vector.cpp" bodystart="950" bodyend="959"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a9b1f0b9354e966da0d740965ec068ccd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>optional&lt; Expr &gt; csl::AbstractVectorial::factor</definition>
+        <argsstring>(bool full=false) const override</argsstring>
+        <name>factor</name>
+        <qualifiedname>csl::AbstractVectorial::factor</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a0bc0de9c4ce5f77fc716af0f502d13d3">factor</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>full</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para><bold>Factors</bold> the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function tries to factor the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> wrt any <bold>factor</bold>. This will be more involved in calculation than the other factorizing function that takes the factor as a parameter. So this function <bold>must be used only</bold> if we don&apos;t know the factors we want at the end. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>full</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true the factorization is <bold>recursive</bold> through all the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="181" column="19" bodyfile="src/csl/vector.cpp" bodystart="961" bodyend="969"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a368c2a6b5fb359cc8f6f209ec548f0ad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>optional&lt; Expr &gt; csl::AbstractVectorial::factor</definition>
+        <argsstring>(Expr_info expr, bool full=false) const override</argsstring>
+        <name>factor</name>
+        <qualifiedname>csl::AbstractVectorial::factor</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a8fb3d657c65606d520688db6401fe650">factor</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>factor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>full</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para><bold>Factors</bold> the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> wrt a <bold>particular</bold> <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> wrt which we try to factor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>full</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true the factorization is <bold>recursive</bold> through all the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="183" column="19" bodyfile="src/csl/vector.cpp" bodystart="971" bodyend="979"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a45bc5fb9f24b918a685eef9742a4c046" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::AbstractVectorial::operator==</definition>
+        <argsstring>(Expr_info expr) const override</argsstring>
+        <name>operator==</name>
+        <qualifiedname>csl::AbstractVectorial::operator==</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a3775f3088e784cc924cb7d26e118660e">operator==</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para><bold>Compares</bold> the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> with another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Here if two Abstracts have the same name, the function will return <bold>true</bold> even if they are <bold>not</bold> <bold>mathematically</bold> <bold>equal</bold>. So beware not to name different things the same way. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> to compare. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the two Abstracts are the same (or have the same name). </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="186" column="10" bodyfile="src/csl/vector.cpp" bodystart="981" bodyend="993"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1afd91a1187f15759c61d5a9460f88d3dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+        <definition>Expr &amp; csl::AbstractVectorial::operator[]</definition>
+        <argsstring>(int iArg) override</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>csl::AbstractVectorial::operator[]</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a560aa9993d506551c54a8c02d1445814">operator[]</reimplements>
+        <param>
+          <type>int</type>
+          <declname>iArg</declname>
+        </param>
+        <briefdescription>
+<para>Access operator for multi-argument expressions, returns a reference so this function is not const. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iArg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Index" kindref="compound">Index</ref> of the argument to get. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to <bold>argument</bold>[iArg]. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="188" column="10" bodyfile="src/csl/vector.cpp" bodystart="1004" bodyend="1011"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1AbstractVectorial_1a303d252e82b4e28ec9df8a5a971acf52" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> const &amp;</type>
+        <definition>Expr const  &amp; csl::AbstractVectorial::operator[]</definition>
+        <argsstring>(int iArg) const override</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>csl::AbstractVectorial::operator[]</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aa8331053065d1be2da89e70c45d24863">operator[]</reimplements>
+        <param>
+          <type>int</type>
+          <declname>iArg</declname>
+        </param>
+        <briefdescription>
+<para>Access operator for multi-argument expressions, equivalent to the function <ref refid="classcsl_1_1AbstractVectorial_1a2320c9f9c71eb81a2348175dd14404a9" kindref="member">getArgument()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iArg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Index" kindref="compound">Index</ref> of the argument to get. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>argument</bold>[iArg]. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="190" column="16" bodyfile="src/csl/vector.cpp" bodystart="995" bodyend="1002"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>csl::Abstract</label>
+        <link refid="classcsl_1_1Abstract"/>
+      </node>
+      <node id="1">
+        <label>csl::AbstractVectorial</label>
+        <link refid="classcsl_1_1AbstractVectorial"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>csl::HighDTensor</label>
+        <link refid="classcsl_1_1HighDTensor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>csl::Matrix</label>
+        <link refid="classcsl_1_1Matrix"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>csl::Vector</label>
+        <link refid="classcsl_1_1Vector"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>csl::Abstract</label>
+        <link refid="classcsl_1_1Abstract"/>
+      </node>
+      <node id="1">
+        <label>csl::AbstractVectorial</label>
+        <link refid="classcsl_1_1AbstractVectorial"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/csl/vector.h" line="30" column="1" bodyfile="src/csl/vector.h" bodystart="30" bodyend="191"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1Abstract_1ad5fee68c1f3dcbda0e936926fed17616" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>Abstract</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a580c5ef55bc98e097a82910bc993be8f" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>AbstractVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a5549ac0c186b3c6febf332245a25a82c" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>addAntiSymmetry</name></member>
+      <member refid="classcsl_1_1Abstract_1abbab11282e5c6ac46b018642ff129f47" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>addDependency</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a91561bc3d02d055e86b7f3e35a76e25c" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>addition_own</name></member>
+      <member refid="classcsl_1_1Abstract_1ad431770faa4291116a50175193a11a88" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>addSymmetry</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a71a8d453b3d5c57f2d09b17e99302ef8" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>antisymmetrise</name></member>
+      <member refid="classcsl_1_1Abstract_1a61d3ab932182226f4670a62bbb22af4e" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>applyDiracDelta</name></member>
+      <member refid="classcsl_1_1Abstract_1a316956fea77627a716500a2bbfc1f3b7" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>applyOperator</name></member>
+      <member refid="classcsl_1_1Abstract_1a6305ce90c795bfb416d8e958c62f905c" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>applySelfStructureOn</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1ae951a1c6c575665a57ee6cf5549bf0c6" prot="protected" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>argument</name></member>
+      <member refid="classcsl_1_1Abstract_1a27ad666bf7d533607da9675b0c645ee9" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>askTerm</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1aa8225d3dd07be192735c766e8d267774" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>begin</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a135f3df162ac8e7128a3e666e26cb81b" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>begin</name></member>
+      <member refid="classcsl_1_1Abstract_1aa4cba37520821432f37e212fefbc2534" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>breakSpace</name></member>
+      <member refid="classcsl_1_1Abstract_1af0f40b77914e45f56bf87839d00211d7" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>breakSpace</name></member>
+      <member refid="classcsl_1_1Abstract_1afd9d0336808e8adf4ccdccb51587ed8c" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>checkIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a1ebd84082bb93418408cc0babe2dffe2" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>checkIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1ab3746f1d3667846824ea51b8a2e00d31" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>collect</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a7a90b9f26666f4aff635bfbf7cd865b6" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>commutesWith</name></member>
+      <member refid="classcsl_1_1Abstract_1a7caee12abb451168149779a668dfc59e" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>compareWithDummy</name></member>
+      <member refid="classcsl_1_1Abstract_1a0f16fda9fe72a89c61ece36101a11d95" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>compareWithDummy</name></member>
+      <member refid="classcsl_1_1Abstract_1aed79d20a0821205e6430c80a474117d3" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>contractIndex</name></member>
+      <member refid="classcsl_1_1Abstract_1ad874fc858295a737e6ce884530f1109b" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1Abstract_1abd35096982e92b669ea55d960c5f44be" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1Abstract_1af29c2898c5d3ba96de8018a0838c402c" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>copy</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1ae3c098ec3de74dad72d9db7d47136a95" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>copy_unique</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a68121249b62f27fee6927b20e667d4b6" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>deepCopy</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a0b8721d9b3e21d66177396f4986daaf5" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>deepRefresh</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a5dfd1e8233507457f725e10e2624ec0f" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>dependsExplicitlyOn</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a774421b7d986b3e88533c4e20c206c12" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>dependsExplicitlyOn</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1acca79f2a53255ee6b10d51efc658cb19" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>dependsOn</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a87b6428015d2a220210ad0d10f2333a8" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>dependsOn</name></member>
+      <member refid="classcsl_1_1Abstract_1aecab8c872023a2d0771e7e4f83bb05f8" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>derive</name></member>
+      <member refid="classcsl_1_1Abstract_1aeb08811cf370616477a92075e4a218ee" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>determinant</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1af91837bcfe852d7e8baa5d9efdcc1609" prot="protected" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>dim</name></member>
+      <member refid="classcsl_1_1Abstract_1a1578c74aee1050b806a67e7a81a67f5c" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>division_own</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a0ed41f66d207d34ebafc90bc473109ca" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>dot</name></member>
+      <member refid="classcsl_1_1Abstract_1a0c3c3fe5010f24e8a8765ea06415c003" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>empty</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a06f69d432a047d7b48757d8362de68d4" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>end</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1ada11a590d79c87baf92a98888ee32c44" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>end</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1afaf73d258e30ae78513cfaa4d7c65d59" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>evaluate</name></member>
+      <member refid="classcsl_1_1Abstract_1a543d5a4f0432e166b492ad28a860a65f" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>evaluateScalar</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1afd27e37bd7e9862252467bf574a37e6b" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>exactMatchShape</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a09396a6b80940ac8c99604e9b845c815" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>expand</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a8907475ad6468725bafe0c81dfbeb688" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>expand_if</name></member>
+      <member refid="classcsl_1_1Abstract_1aa2696a0feb43766ef54e1e3dd3d6d134" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>exponentiation_own</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a9b1f0b9354e966da0d740965ec068ccd" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>factor</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a368c2a6b5fb359cc8f6f209ec548f0ad" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>factor</name></member>
+      <member refid="classcsl_1_1Abstract_1a299b1fd6c2b9d80ad90a08c7acef28d2" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>findSubExpression</name></member>
+      <member refid="classcsl_1_1Abstract_1a021946e84d8c1a019908cac578b16fe8" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getAllDependencies</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a2320c9f9c71eb81a2348175dd14404a9" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a0fbb75333c68d6c9a2d2e277d34bca3f" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a2da0f7388c5c61c4a18c5e5dba6fdd69" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a7a03ddf294e576016a8114f46eb900f9" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1afeb26e1382411448ce3c65d50fefd8bb" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getCanonicalPermutation</name></member>
+      <member refid="classcsl_1_1Abstract_1a2263731ca94825f35281e69fb258cf87" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getCommutable</name></member>
+      <member refid="classcsl_1_1Abstract_1a9cc64c66894acafc1f069dc40072084b" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getComplexArgument</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a2a2c1314e65baf839542e6fb7845ad44" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getComplexConjugate</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a1c8b58da63fe78c40174e6f2f582cbf3" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getComplexModulus</name></member>
+      <member refid="classcsl_1_1Abstract_1a470d9f1267fba4a82e13af4a39470f81" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getComplexProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1af04c0e4426f0bf9df365afe0148d59df" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getContractedPair</name></member>
+      <member refid="classcsl_1_1Abstract_1aec707d949f0f98e08ab4642c93dd9eb5" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getContractionProperties</name></member>
+      <member refid="classcsl_1_1Abstract_1aa22f0e4c9c91f43b5cd61cbb873869eb" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getDeltaMinus</name></member>
+      <member refid="classcsl_1_1Abstract_1a69a657baf1c35ed581e9db2c47a71c99" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getDeltaPlus</name></member>
+      <member refid="classcsl_1_1Abstract_1a9531d78d67c82e288c0130da5b1ba80b" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getDenom</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1afda6fa063a671a3a0feee716621c19c3" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getDim</name></member>
+      <member refid="classcsl_1_1Abstract_1a77e067fc57c0c2e70d141079455fdbd7" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getElementary</name></member>
+      <member refid="classcsl_1_1Abstract_1ac513c930caa9939c2b9557f36a34ee69" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getExponents</name></member>
+      <member refid="classcsl_1_1Abstract_1ac34c9c6f05e692faeed2f030514787ad" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getFactors</name></member>
+      <member refid="classcsl_1_1Abstract_1aa4136dc23f1fba4bf897b54c8592ccfc" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getFreeIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1aa5b707a5efdaef7c7945cbd921c3f526" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getHermitianConjugate</name></member>
+      <member refid="classcsl_1_1Abstract_1aff5cca2b2c8190e59f6e34cb1e383d36" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getHermitianConjugate</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a4d3d4dbce8837fc40b19131a019044a3" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getImaginaryPart</name></member>
+      <member refid="classcsl_1_1Abstract_1a3234ce243f6a2e11950be42f10100943" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getIndex</name></member>
+      <member refid="classcsl_1_1Abstract_1ae125a32b6f3d0368b6055d4e58c1ff3f" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1ae6a9a9ef3efd6bb83b62c0a353742d25" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>getIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1addb848bf4cdea207484a71e9b1006ead" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getIndexStructureView</name></member>
+      <member refid="classcsl_1_1Abstract_1a632e28530a68539fadacd7ab7ffc8be1" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getIndexStructureView</name></member>
+      <member refid="classcsl_1_1Abstract_1a3d6b1e294cf24dea17c3c4361226138b" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getInfBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1a9c4a302d1a3cbf4dd9394f5e5880d343" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getLatexName</name></member>
+      <member refid="classcsl_1_1Abstract_1a652101e34b2efa43114150e9af3c79d5" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getLibDependency</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1aae5db88feee1be51e3ad429c6c10df58" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getName</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a2689157ec6445f198e36dadb4d9aef78" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getNArgs</name></member>
+      <member refid="classcsl_1_1Abstract_1a42125e9765a771c47819548d342b0b28" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getNContractedPairs</name></member>
+      <member refid="classcsl_1_1Abstract_1a204dbd37b63432cb08932b995f49d3f4" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getNFactor</name></member>
+      <member refid="classcsl_1_1Abstract_1add364193f7a78ac28f7001c7f4036453" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getNIndices</name></member>
+      <member refid="classcsl_1_1Abstract_1a6aa6bcc7cb8ee1574f29dc6ab6c6f0ed" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getNum</name></member>
+      <member refid="classcsl_1_1Abstract_1aad25c117c8dfc4d9718ba41e8d3f33a6" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getNumericalFactor</name></member>
+      <member refid="classcsl_1_1Abstract_1a9c3ec3dfe1fbd8ead5c8d9aca421a863" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getOperand</name></member>
+      <member refid="classcsl_1_1Abstract_1a9500a21d75d03c695ec0c76493600b38" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getOrder</name></member>
+      <member refid="classcsl_1_1Abstract_1ae89eb7b1a9e0259a60154563f3315907" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getOrderOf</name></member>
+      <member refid="classcsl_1_1Abstract_1ab150130c9f67daaf6aba52b9f6b90941" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getParent</name></member>
+      <member refid="classcsl_1_1Abstract_1a15f775b5add9af8727ead2cfaab78ba2" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getParent_info</name></member>
+      <member refid="classcsl_1_1Abstract_1aea8459b3206eb3a2297eeea7688e9520" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getParity</name></member>
+      <member refid="classcsl_1_1Abstract_1a946d175d946da102c5f4cc91840703cb" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getPermutations</name></member>
+      <member refid="classcsl_1_1Abstract_1a06b32036fea6a2583f506a6ef9508d74" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getPoint</name></member>
+      <member refid="classcsl_1_1Abstract_1ade540a127da7304f2b7282f4dcaffc7f" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getPolynomialTerm</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1afb6d645d2f0673a500eaf294ff822269" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getPrimaryType</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a6f4f1f7c516ee3daceaf5044a40c04d1" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getProduct</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1ab99d86f5bed81171962f0cf99415bfba" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getRealPart</name></member>
+      <member refid="classcsl_1_1Abstract_1a5b77f008f4b95030641224877004f06c" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getRegularExpression</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a8cee385d5b699162c8a400e4b44ed7d7" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getShape</name></member>
+      <member refid="classcsl_1_1Abstract_1aa83df1d9dc202457113e5b38bd694fae" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getSign</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1aa95d66839c20fc1b9cf8bd658b3237bb" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getSubSymbols</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a002b8834bc010144ab0666c6697a5d7b" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a9a15f8a9b14ee52361a104d2206c8bef" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a8770e53fba4f253c41b7fa8015f62833" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a7dcdc11b64c8c515933882168d0792ef" prot="public" virt="virtual" ambiguityscope="csl::Abstract::"><scope>csl::AbstractVectorial</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a413c50b2663f57d38c1d3ec3cfeaa3ce" prot="public" virt="virtual" ambiguityscope="csl::Abstract::"><scope>csl::AbstractVectorial</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1aa9d43ea7296950633aa2ac848173cb51" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getSum</name></member>
+      <member refid="classcsl_1_1Abstract_1a2fcc223dbf5d880e923c07df142df5c8" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getSupBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1a1d36e7a5acc50766d5cd3f6d59df978d" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getTerm</name></member>
+      <member refid="classcsl_1_1Abstract_1a404c5e89a3aad8a8dabcb56d4120c0fe" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getTransposed</name></member>
+      <member refid="classcsl_1_1Abstract_1aca3debb143668fd3ab75a27a47dd0c13" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getTransposed</name></member>
+      <member refid="classcsl_1_1Abstract_1aa781456c3f801b37ce169c83514c51c1" prot="public" virt="pure-virtual"><scope>csl::AbstractVectorial</scope><name>getType</name></member>
+      <member refid="classcsl_1_1Abstract_1a78f98ba06476e464e3fd2fce0d1f8243" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getValue</name></member>
+      <member refid="classcsl_1_1Abstract_1a628563238145f3a9acc331f1a89ce32f" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getValued</name></member>
+      <member refid="classcsl_1_1Abstract_1ae85f810bbadbc792210c958e8f1b2ffb" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getVariable</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1ad91b47a309a8fc9c5ed9e4b827d84155" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getVectorArgument</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a8f4326ec0f618785cf0e9d84b448cdd6" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>getVectorialModulus</name></member>
+      <member refid="classcsl_1_1Abstract_1a94bf1455397fdd2df8dbbc3b41c2f3f4" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>hasChainContractionProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1aa31e08c251d96b8ea8ec8d385895c1ff" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>hasContractionProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1a8c42723e8bc6334c99f00898cc1d59d7" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>hermitian</name></member>
+      <member refid="classcsl_1_1Abstract_1a5437e7f685edf8549e6d3b34572343f8" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>insert</name></member>
+      <member refid="classcsl_1_1Abstract_1a1b68943aa7ecf60a63af0f2f368eef8f" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>inverseMatrix</name></member>
+      <member refid="classcsl_1_1Abstract_1a9347e75b0cd0b75e0f0a38db93b29d83" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>isAnOperator</name></member>
+      <member refid="classcsl_1_1Abstract_1ac09992d147b39388c8936b3bff648930" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>isArbitrary</name></member>
+      <member refid="classcsl_1_1Abstract_1ad74c068f1da78856321932b6b6ae17dc" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>isBuildingBlock</name></member>
+      <member refid="classcsl_1_1Abstract_1a22a594845a29429c9b4f19c92bd18cad" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>isComplexConjugate</name></member>
+      <member refid="classcsl_1_1Abstract_1a464f4f0613db9b4b0a4efe26a3a03d60" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>isEmpty</name></member>
+      <member refid="classcsl_1_1Abstract_1af2ce38838e35c5785f92373a1d830668" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>isHermitianConjugate</name></member>
+      <member refid="classcsl_1_1Abstract_1a216b7bd3930fbf047e5bf8f69e9b964c" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>isIndexed</name></member>
+      <member refid="classcsl_1_1Abstract_1a9a014bfd266b5f8471f23580e271979b" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>isInteger</name></member>
+      <member refid="classcsl_1_1Abstract_1acae10d5685ccec295fbd9be7996073cb" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>isPolynomial</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a43c9ebd8953d2f51b7bc7a8b7e97ccd3" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>isPurelyImaginary</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a2160f94ea8c3453104f4f38cdf87dc12" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>isReal</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1ab24d4b6eae7dbe9783aabf2bfcb7a224" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>matchShape</name></member>
+      <member refid="classcsl_1_1Abstract_1ac3978c71035bf1cda50f5b9031d631af" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>memoryOverhead</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a81eebf482c8b342b75aaec063533790c" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>multiplication_own</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1aec986a5a2e05c6ee2b65600e543bf8bb" prot="protected" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>nArgs</name></member>
+      <member refid="classcsl_1_1Abstract_1af5b62a6308638064c42da80e9cc2cb7e" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1af4fd1b57df371dac7ccfd5a909620e49" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a96de5935a58a96d4c5b1e47966488923" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1ac99a619abde7e4c58f39e14d4d20fcf5" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a45206de7c7773b3cb150451ee3eb379e" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a0d3495220202bd417c1b58249c923f39" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a5c1ba8dce7fbc19eb98807bd15a279c9" prot="public" virt="pure-virtual"><scope>csl::AbstractVectorial</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a6e19587260a07dba65cf2a985e05516b" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a2a1660498f2638f5e490d6e512eb32f4" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>operator&lt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1afbcac6df2fd7ac11f336189cf215124b" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>operator&lt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1a59ff2950fc8ca319f87a730450f14545" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>operator=</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a45bc5fb9f24b918a685eef9742a4c046" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a8334e14cd5789168b037d3888ed60edd" prot="public" virt="virtual" ambiguityscope="csl::Abstract::"><scope>csl::AbstractVectorial</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a12d929e34039e817e464abc560bd4a9d" prot="public" virt="virtual" ambiguityscope="csl::Abstract::"><scope>csl::AbstractVectorial</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a1f78f0cce24c93def3050743bc5f2845" prot="public" virt="non-virtual" ambiguityscope="csl::Abstract::"><scope>csl::AbstractVectorial</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1aed43debcac4a19e0da44986774c522bc" prot="public" virt="non-virtual" ambiguityscope="csl::Abstract::"><scope>csl::AbstractVectorial</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a2376f08c0aa5ffe783090381d102d3ae" prot="public" virt="non-virtual" ambiguityscope="csl::Abstract::"><scope>csl::AbstractVectorial</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a485c6f3e10db539a70416cd0766b117d" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>operator&gt;</name></member>
+      <member refid="classcsl_1_1Abstract_1ab305bdf49212f03781e7f98024faeb66" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>operator&gt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a4c8883df19d7538b68fa96aadac9dfa9" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>operator&gt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1a6b931f7b159d57bad26ca9c9ea729aa1" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>operator&gt;=</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1afd91a1187f15759c61d5a9460f88d3dc" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>operator[]</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a303d252e82b4e28ec9df8a5a971acf52" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>operator[]</name></member>
+      <member refid="classcsl_1_1Abstract_1a75d9abfa88d9d09a89d3a4becd9e6429" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>operatorAppliesOn</name></member>
+      <member refid="classcsl_1_1Abstract_1abe9aceabbc0a99642e84c9025dbdc767" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>permut</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1afeaa37536bfa9de67a736d2884578514" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>print</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1ad12d45f7d849c24d2518395f6798652d" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>printCode</name></member>
+      <member refid="classcsl_1_1Abstract_1a89e45ffc7b65f92e77e592f76f70934c" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>printExplicit</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a8a568746d53548b8621fda445258e830" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>printLaTeX</name></member>
+      <member refid="classcsl_1_1Abstract_1a0645745feacf93470963b55f93cae1c0" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>printProp</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a4164e7fdb8f91e942bc8be981c321e39" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>refresh</name></member>
+      <member refid="classcsl_1_1Abstract_1a8aab87c41acafaf1b1837b922495560d" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>regularLiteral</name></member>
+      <member refid="classcsl_1_1Abstract_1a2fe749450d2e610199801b189dc3d0f8" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>regularLiteral</name></member>
+      <member refid="classcsl_1_1Abstract_1aba5ef083016b2f3d9e6271f864b9b063" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>regularName</name></member>
+      <member refid="classcsl_1_1Abstract_1a1a8421d402d5ba82257188b545e8d668" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>regularName</name></member>
+      <member refid="classcsl_1_1Abstract_1a0e778c682b6cb02642b90e8ec8765441" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>removeDependency</name></member>
+      <member refid="classcsl_1_1Abstract_1acc0eb077e25c9a67d15269cf8d5f0511" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>replaceIndex</name></member>
+      <member refid="classcsl_1_1Abstract_1a9372ddd521fa661c5d3371e0d8d4dfc3" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>replaceIndexInPlace</name></member>
+      <member refid="classcsl_1_1Abstract_1ac9e54a236015d14af42b0bcde41953f3" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>replaceIndices</name></member>
+      <member refid="classcsl_1_1Abstract_1af0d95f3edc0562b1d75d60b670119842" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>resetIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a5c796713828ebfb74a7d8787d7802a76" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>self</name></member>
+      <member refid="classcsl_1_1Abstract_1aa6a40ceb6eb1aa79711ca126d5bdda02" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setAllDependencies</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1ae67f1daf87e45e15b82dd2827f6ba55f" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setArgument</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a47a8b2fbd9233c706cb5fcf05f96bc7f" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a7bb29d316b8f64652cef472a6c23f001" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setCommutable</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a135c8f0acf06bfc038a459a3283e309b" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setComplexProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1a37ebc247831d6629d44117a490fca120" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setConjugated</name></member>
+      <member refid="classcsl_1_1Abstract_1aa6a04bb56578e7da143b3cd8d8fb7b26" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setElementary</name></member>
+      <member refid="classcsl_1_1Abstract_1afa50c743b8e7e76e637e98f165ad4e5d" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setEmpty</name></member>
+      <member refid="classcsl_1_1Abstract_1ac318016372d14b795893fe7e59199084" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setFullyAntiSymmetric</name></member>
+      <member refid="classcsl_1_1Abstract_1a4f90ebb7cf7c26782bd36bc2a67fc5d4" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setFullySymmetric</name></member>
+      <member refid="classcsl_1_1Abstract_1a70f946f9c59df045ef7416320ade89c7" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a5ecdb6ce7a2d9643da2f6161a06dfbbf" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setInfBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1a867135c96776248add60018f4aa7a578" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setName</name></member>
+      <member refid="classcsl_1_1Abstract_1a70df7be4486affa8dc891e3f25bf499f" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setOperand</name></member>
+      <member refid="classcsl_1_1Abstract_1ae7b8a14fc746ed72e4d5abd63373c5ba" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setOperandPrivate</name></member>
+      <member refid="classcsl_1_1Abstract_1a3003698af4978e774eeb2e62038f7432" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setParent</name></member>
+      <member refid="classcsl_1_1Abstract_1a3c175411df619e7504feb6d888fc82f1" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setPoint</name></member>
+      <member refid="classcsl_1_1Abstract_1aad7104a5b8855272a92a47c58f29e958" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setSupBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1aaf7f0692cb84ca861a5b3b641bea518b" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setValue</name></member>
+      <member refid="classcsl_1_1Abstract_1aa49c51bd285830e724f103e9fb61c464" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setValue</name></member>
+      <member refid="classcsl_1_1Abstract_1aa47ddab3aa047e86be34c70358d53548" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setVariable</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a2d072812c1918ec0097729d353003198" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>setVectorArgument</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a522c084004a0cda5d1e49b050d4ff36c" prot="protected" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>shape</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1ad9eb779b7f16721eb18b6a47037db518" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>size</name></member>
+      <member refid="classcsl_1_1Abstract_1a4eeedaeaa39e75facf1060dce7c57a8f" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>suppressExponent</name></member>
+      <member refid="classcsl_1_1Abstract_1a43520e1d6d5fdad9b50f77c6e027f928" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>suppressTerm</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a690f2f1b0748bbd81213335c47535113" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>symmetrise</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a0e4336f06daf87990d127a4b755c121c" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>tensordot</name></member>
+      <member refid="classcsl_1_1Abstract_1aee4fa41a5e014f067395467542ee8831" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>testDummy</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a9a79c1dcc4d4ee22c8662ffcc11e5378" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>trace</name></member>
+      <member refid="classcsl_1_1Abstract_1a9a86d21f5c5f65eb7e524a8f8002c0e7" prot="public" virt="virtual" ambiguityscope="csl::Abstract::"><scope>csl::AbstractVectorial</scope><name>trace</name></member>
+      <member refid="classcsl_1_1Abstract_1a1e97712696e5c40b28bc1e35987fea94" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>transpose</name></member>
+      <member refid="classcsl_1_1Abstract_1a40bdc4c76fdbbf3cbac3af4dce8286ed" prot="public" virt="virtual"><scope>csl::AbstractVectorial</scope><name>~Abstract</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1aa2142a09824aac38b268ccccb274c6dc" prot="public" virt="non-virtual"><scope>csl::AbstractVectorial</scope><name>~AbstractVectorial</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,649 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="looptools__patch_8h" kind="file" language="C++">
+    <compoundname>looptools_patch.h</compoundname>
+    <includes local="yes">clooptools.h</includes>
+    <includes local="no">complex.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includedby refid="looptools__interface_8h" local="yes">src/marty/core/looptools_interface.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/marty/core/looptools_patch.h</label>
+        <link refid="looptools__patch_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>clooptools.h</label>
+      </node>
+      <node id="3">
+        <label>complex.h</label>
+      </node>
+      <node id="5">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/marty/core/looptools_interface.h</label>
+        <link refid="looptools__interface_8h_source"/>
+      </node>
+      <node id="1">
+        <label>src/marty/core/looptools_patch.h</label>
+        <link refid="looptools__patch_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structIntegrationParams" prot="public">IntegrationParams</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="looptools__patch_8h_1a34840d55a13aafa2fd8008abaf7db4f0" prot="public" static="no">
+        <name>_MTY_INLINE</name>
+        <initializer>static inline</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/looptools_patch.h" line="15" column="10" bodyfile="src/marty/core/looptools_patch.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="looptools__patch_8h_1a71e03ca6b094a542659d533190c5b1bc" prot="public" static="no">
+        <type>double</type>
+        <definition>typedef double lti_real_t</definition>
+        <argsstring></argsstring>
+        <name>lti_real_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/looptools_patch.h" line="46" column="20" bodyfile="src/marty/core/looptools_patch.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="looptools__patch_8h_1a6fbb75abb11053bc9732ebcce859071a" prot="public" static="no">
+        <type>double complex</type>
+        <definition>typedef double complex lti_complex_t</definition>
+        <argsstring></argsstring>
+        <name>lti_complex_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/looptools_patch.h" line="47" column="28" bodyfile="src/marty/core/looptools_patch.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="looptools__patch_8h_1aaebbed92c399dd56c9505426303dca35" prot="public" static="no">
+        <type>struct <ref refid="structIntegrationParams" kindref="compound">IntegrationParams</ref></type>
+        <definition>typedef struct IntegrationParams integration_params_t</definition>
+        <argsstring></argsstring>
+        <name>integration_params_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/looptools_patch.h" line="69" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="looptools__patch_8h_1aeb26cb0f83801679556aca437317884e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>_MTY_INLINE lti_real_t</type>
+        <definition>_MTY_INLINE lti_real_t lt_real</definition>
+        <argsstring>(lti_complex_t z)</argsstring>
+        <name>lt_real</name>
+        <param>
+          <type>lti_complex_t</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/looptools_patch.h" line="48" column="28" bodyfile="src/marty/core/looptools_patch.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="looptools__patch_8h_1a0bd44e1731ecc3285112b75425bb763f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>_MTY_INLINE lti_real_t</type>
+        <definition>_MTY_INLINE lti_real_t lt_imag</definition>
+        <argsstring>(lti_complex_t z)</argsstring>
+        <name>lt_imag</name>
+        <param>
+          <type>lti_complex_t</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/looptools_patch.h" line="49" column="28" bodyfile="src/marty/core/looptools_patch.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="looptools__patch_8h_1a2fd3ec4dce27548e02eec4910a0b9515" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>_MTY_INLINE lti_real_t</type>
+        <definition>_MTY_INLINE lti_real_t lt_pow</definition>
+        <argsstring>(lti_real_t x, int n)</argsstring>
+        <name>lt_pow</name>
+        <param>
+          <type>lti_real_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/looptools_patch.h" line="50" column="28" bodyfile="src/marty/core/looptools_patch.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="looptools__patch_8h_1af27f8eb0a319761633f626358a40bc58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>_MTY_INLINE ComplexType</type>
+        <definition>_MTY_INLINE ComplexType ensure_std_complex</definition>
+        <argsstring>(lti_complex_t z)</argsstring>
+        <name>ensure_std_complex</name>
+        <param>
+          <type>lti_complex_t</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/looptools_patch.h" line="51" column="29" bodyfile="src/marty/core/looptools_patch.h" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="looptools__patch_8h_1af0b23f6151de740528383f3e03cecce4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>_MTY_INLINE <ref refid="structIntegrationParams" kindref="compound">integration_params_t</ref> *</type>
+        <definition>_MTY_INLINE integration_params_t * getIntegrationParameters</definition>
+        <argsstring>()</argsstring>
+        <name>getIntegrationParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/looptools_patch.h" line="72" column="34" bodyfile="src/marty/core/looptools_patch.h" bodystart="72" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="looptools__patch_8h_1a0698e54ba9b272c7565764ee29ccb0d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>_MTY_INLINE lti_real_t</type>
+        <definition>_MTY_INLINE lti_real_t abs_re</definition>
+        <argsstring>(lti_complex_t value)</argsstring>
+        <name>abs_re</name>
+        <param>
+          <type>lti_complex_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/looptools_patch.h" line="88" column="24" bodyfile="src/marty/core/looptools_patch.h" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="looptools__patch_8h_1a907df55f98496593d28b1c2481e8418f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>_MTY_INLINE void</type>
+        <definition>_MTY_INLINE void regulateC</definition>
+        <argsstring>(lti_complex_t *p1_2, lti_complex_t *p2_2, lti_complex_t *p3_2, lti_complex_t m1_2, lti_complex_t m2_2, lti_complex_t m3_2, lti_real_t eps)</argsstring>
+        <name>regulateC</name>
+        <param>
+          <type>lti_complex_t *</type>
+          <declname>p1_2</declname>
+        </param>
+        <param>
+          <type>lti_complex_t *</type>
+          <declname>p2_2</declname>
+        </param>
+        <param>
+          <type>lti_complex_t *</type>
+          <declname>p3_2</declname>
+        </param>
+        <param>
+          <type>lti_complex_t</type>
+          <declname>m1_2</declname>
+        </param>
+        <param>
+          <type>lti_complex_t</type>
+          <declname>m2_2</declname>
+        </param>
+        <param>
+          <type>lti_complex_t</type>
+          <declname>m3_2</declname>
+        </param>
+        <param>
+          <type>lti_real_t</type>
+          <declname>eps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/looptools_patch.h" line="93" column="18" bodyfile="src/marty/core/looptools_patch.h" bodystart="93" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="looptools__patch_8h_1aaa8737d981f86b7bd97e6469445f23ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>_MTY_INLINE lti_real_t</type>
+        <definition>_MTY_INLINE lti_real_t scaleFactorA</definition>
+        <argsstring>(int id, lti_real_t scale)</argsstring>
+        <name>scaleFactorA</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>lti_real_t</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/looptools_patch.h" line="126" column="24" bodyfile="src/marty/core/looptools_patch.h" bodystart="126" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="looptools__patch_8h_1a2b8168d5e051ced34300245b35f7ea63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>_MTY_INLINE lti_real_t</type>
+        <definition>_MTY_INLINE lti_real_t scaleFactorB</definition>
+        <argsstring>(int id, lti_real_t scale)</argsstring>
+        <name>scaleFactorB</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>lti_real_t</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/looptools_patch.h" line="138" column="24" bodyfile="src/marty/core/looptools_patch.h" bodystart="138" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="looptools__patch_8h_1ae8583329420a88ac2a7063da46cc5fca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>_MTY_INLINE lti_real_t</type>
+        <definition>_MTY_INLINE lti_real_t scaleFactorC</definition>
+        <argsstring>(int id, lti_real_t scale)</argsstring>
+        <name>scaleFactorC</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>lti_real_t</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/looptools_patch.h" line="151" column="24" bodyfile="src/marty/core/looptools_patch.h" bodystart="151" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="looptools__patch_8h_1ae46b151b30cab4ca3796cf968e97268c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>_MTY_INLINE lti_real_t</type>
+        <definition>_MTY_INLINE lti_real_t scaleFactorD</definition>
+        <argsstring>(int id, lti_real_t scale)</argsstring>
+        <name>scaleFactorD</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>lti_real_t</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/looptools_patch.h" line="170" column="24" bodyfile="src/marty/core/looptools_patch.h" bodystart="170" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="looptools__patch_8h_1a08bc1f4115886ce0930ee36e2beda469" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>_MTY_INLINE lti_real_t</type>
+        <definition>_MTY_INLINE lti_real_t scaleFactorE</definition>
+        <argsstring>(int id, lti_real_t scale)</argsstring>
+        <name>scaleFactorE</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>lti_real_t</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/looptools_patch.h" line="182" column="24" bodyfile="src/marty/core/looptools_patch.h" bodystart="182" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="looptools__patch_8h_1ab1427811cf395b2792761c76e5edb4c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>_MTY_INLINE lti_complex_t</type>
+        <definition>_MTY_INLINE lti_complex_t rescaledC</definition>
+        <argsstring>(lti_real_t scale, lti_real_t preFactor, lti_complex_t(*lt_func)(int, lti_complex_t, lti_complex_t, lti_complex_t, lti_complex_t, lti_complex_t, lti_complex_t, lti_real_t), int id, lti_real_t eps, lti_complex_t p1, lti_complex_t p2, lti_complex_t p3, lti_complex_t m1, lti_complex_t m2, lti_complex_t m3)</argsstring>
+        <name>rescaledC</name>
+        <param>
+          <type>lti_real_t</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>lti_real_t</type>
+          <declname>preFactor</declname>
+        </param>
+        <param>
+          <type>lti_complex_t(*)(int, lti_complex_t, lti_complex_t, lti_complex_t, lti_complex_t, lti_complex_t, lti_complex_t, lti_real_t)</type>
+          <declname>lt_func</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>lti_real_t</type>
+          <declname>eps</declname>
+        </param>
+        <param>
+          <type>lti_complex_t</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>lti_complex_t</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>lti_complex_t</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>lti_complex_t</type>
+          <declname>m1</declname>
+        </param>
+        <param>
+          <type>lti_complex_t</type>
+          <declname>m2</declname>
+        </param>
+        <param>
+          <type>lti_complex_t</type>
+          <declname>m3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/looptools_patch.h" line="193" column="27" bodyfile="src/marty/core/looptools_patch.h" bodystart="193" bodyend="229"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MTY_LOOPTOOLS_PATCH_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MTY_LOOPTOOLS_PATCH_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;clooptools.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;complex.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_MTY_INLINE<sp/>inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_MTY_INLINE<sp/>static<sp/>inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>__cplusplus<sp/>&amp;&amp;<sp/>defined<sp/>QUAD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">lti_real_t<sp/><sp/><sp/><sp/>=<sp/>__float128;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">lti_complex_t<sp/>=<sp/>__complex128;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>_MTY_INLINE<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>lt_real(lti_complex_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;z)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>crealq(z);<sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>_MTY_INLINE<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>lt_imag(lti_complex_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;z)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cimagq(z);<sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>_MTY_INLINE<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>lt_pow(lti_real_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>powq(x,<sp/>n);<sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>_MTY_INLINE<sp/>ComplexType<sp/>ensure_std_complex(lti_complex_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;z)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ToComplex2(crealq(z),<sp/>cimagq(z));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">lti_real_t<sp/><sp/><sp/><sp/>=<sp/>double;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">lti_complex_t<sp/>=<sp/>std::complex&lt;double&gt;;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>_MTY_INLINE<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>lt_real(lti_complex_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;z)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(z).real();<sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>_MTY_INLINE<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>lt_imag(lti_complex_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;z)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(z).imag();<sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>_MTY_INLINE<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>lt_pow(lti_real_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::pow(x,<sp/>n);<sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>_MTY_INLINE<sp/>ComplexType<sp/>ensure_std_complex(lti_complex_t<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;z)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ToComplex2(z.real(),<sp/>z.imag());</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined<sp/>QUAD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>__float128<sp/>lti_real_t;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>__complex128<sp/>lti_complex_t;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>_MTY_INLINE<sp/>lti_real_t<sp/>lt_real(lti_complex_t<sp/>z)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>crealq(z);<sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>_MTY_INLINE<sp/>lti_real_t<sp/>lt_imag(lti_complex_t<sp/>z)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cimagq(z);<sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>_MTY_INLINE<sp/>lti_real_t<sp/>lt_pow(lti_real_t<sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>powq(x,<sp/>n);<sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>_MTY_INLINE<sp/>ComplexType<sp/>ensure_std_complex(lti_complex_t<sp/>z)<sp/>{<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ToComplex2(crealq(z),<sp/>cimagq(z));<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lti_real_t;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>complex<sp/>lti_complex_t;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>_MTY_INLINE<sp/>lti_real_t<sp/>lt_real(lti_complex_t<sp/>z)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>creal(z);<sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>_MTY_INLINE<sp/>lti_real_t<sp/>lt_imag(lti_complex_t<sp/>z)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cimag(z);<sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>_MTY_INLINE<sp/>lti_real_t<sp/>lt_pow(lti_real_t<sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pow(x,<sp/>n);<sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>_MTY_INLINE<sp/>ComplexType<sp/>ensure_std_complex(lti_complex_t<sp/>z)<sp/>{<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ToComplex2(creal(z),<sp/>cimag(z));<sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structIntegrationParams" kindref="compound">integration_params_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>lti_real_t<sp/>reg_int;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>rescaleIntegral;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>lti_real_t<sp/>minScale;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>lti_real_t<sp/>regScale;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="structIntegrationParams" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structIntegrationParams" kindref="compound">IntegrationParams</ref><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>lti_real_t<sp/>reg_int;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>rescaleIntegral;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>lti_real_t<sp/>minScale;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>lti_real_t<sp/>regScale;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}<sp/><ref refid="structIntegrationParams" kindref="compound">integration_params_t</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">_MTY_INLINE<sp/><ref refid="structIntegrationParams" kindref="compound">integration_params_t</ref>*<sp/>getIntegrationParameters()</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>init<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structIntegrationParams" kindref="compound">integration_params_t</ref><sp/>params;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!init)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>params.reg_int<sp/>=<sp/>1e-8;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>params.rescaleIntegral<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>params.minScale<sp/>=<sp/>1e-3;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>params.regScale<sp/>=<sp/>1e0;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;params;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">_MTY_INLINE<sp/>lti_real_t<sp/>abs_re(lti_complex_t<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lti_real_t<sp/>re<sp/>=<sp/>lt_real(value);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(re<sp/>&lt;<sp/>0)<sp/>?<sp/>-re<sp/>:<sp/>re;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">_MTY_INLINE<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>regulateC(</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t<sp/>*p1_2,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t<sp/>*p2_2,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t<sp/>*p3_2,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t<sp/>m1_2,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t<sp/>m2_2,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t<sp/>m3_2,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_real_t<sp/><sp/><sp/><sp/>eps</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p1Zero<sp/>=<sp/>(*p1_2<sp/>==<sp/>0.);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p3Zero<sp/>=<sp/>(*p3_2<sp/>==<sp/>0.);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p1Zero<sp/>&amp;&amp;<sp/>p3Zero<sp/>&amp;&amp;<sp/>*p2_2<sp/>==<sp/>0.)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*p1_2<sp/>=<sp/>1e-5;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*p1_2<sp/>==<sp/>*p2_2<sp/>&amp;&amp;<sp/>!p1Zero)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*p2_2<sp/>=<sp/>(1<sp/>+<sp/>eps)<sp/>*<sp/>*p1_2;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(abs_re(m1_2/(*p1_2))<sp/>&gt;<sp/>1e5<sp/>||<sp/>abs_re(m2_2/(*p1_2))<sp/>&gt;<sp/>1e5<sp/>||<sp/>abs_re(m3_2/(*p1_2))<sp/>&gt;<sp/>1e5)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*p1_2<sp/>*=<sp/>-1;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*p1_2<sp/>==<sp/>*p3_2<sp/>&amp;&amp;<sp/>!p1Zero)<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*p3_2<sp/>=<sp/>(1<sp/>+<sp/>eps)<sp/>*<sp/>*p1_2;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(abs_re(m1_2/(*p2_2))<sp/>&gt;<sp/>1e5<sp/>||<sp/>abs_re(m2_2/(*p2_2))<sp/>&gt;<sp/>1e5<sp/>||<sp/>abs_re(m3_2/(*p2_2))<sp/>&gt;<sp/>1e5)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*p2_2<sp/>*=<sp/>-1;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*p3_2<sp/>==<sp/>*p2_2<sp/>&amp;&amp;<sp/>!p3Zero)<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*p3_2<sp/>=<sp/>(1<sp/>+<sp/>eps)<sp/>*<sp/>*p2_2;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(abs_re(m1_2/(*p3_2))<sp/>&gt;<sp/>1e5<sp/>||<sp/>abs_re(m2_2/(*p3_2))<sp/>&gt;<sp/>1e5<sp/>||<sp/>abs_re(m3_2/(*p3_2))<sp/>&gt;<sp/>1e5)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*p3_2<sp/>*=<sp/>-1;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">_MTY_INLINE<sp/>lti_real_t<sp/>scaleFactorA(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>lti_real_t<sp/>scale)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>aa0:</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1/scale;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>aa00:</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1/(scale<sp/>*<sp/>scale);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">_MTY_INLINE<sp/>lti_real_t<sp/>scaleFactorB(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>lti_real_t<sp/>scale)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>bb00:</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>bb001:</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>dbb00:</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>dbb001:</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1/scale;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal">_MTY_INLINE<sp/>lti_real_t<sp/>scaleFactorC(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>lti_real_t<sp/>scale)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>cc00:</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>cc001:</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>cc002:</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>cc0011:</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>cc0012:</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>cc0022:</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>cc0000:</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1./scale;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>scale;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal">_MTY_INLINE<sp/>lti_real_t<sp/>scaleFactorD(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>lti_real_t<sp/>scale)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/><sp/>==<sp/>dd0000<sp/>||<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&gt;=<sp/>dd00001<sp/>&amp;&amp;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;=<sp/>dd00003))</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>==<sp/>dd00</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&gt;=<sp/>dd001<sp/>&amp;&amp;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;=<sp/>dd003)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&gt;=<sp/>dd0011<sp/>&amp;&amp;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;=<sp/>dd0033)<sp/></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&gt;=<sp/>dd00111<sp/>&amp;&amp;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;=<sp/>dd00333))</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>scale;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>scale*scale;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal">_MTY_INLINE<sp/>lti_real_t<sp/>scaleFactorE(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>lti_real_t<sp/>scale)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/><sp/>==<sp/>ee0000)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>scale;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>==<sp/>ee00</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&gt;=<sp/>ee001<sp/>&amp;&amp;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;=<sp/>ee004)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&gt;=<sp/>ee0011<sp/>&amp;&amp;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;=<sp/>ee0044))</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>scale*scale;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>scale*scale*scale;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal">_MTY_INLINE<sp/>lti_complex_t<sp/>rescaledC(</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_real_t<sp/>scale,</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_real_t<sp/>preFactor,</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t<sp/>(*lt_func)(</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t,</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t,</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t,</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t,</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t,</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t,</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_real_t</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>),</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_real_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/>eps,</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t<sp/>p1,</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t<sp/>p2,</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t<sp/>p3,</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t<sp/>m1,</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t<sp/>m2,</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lti_complex_t<sp/>m3</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>lti_real_t<sp/><ref refid="namespacemty_1_1mssm__input_1afe322514383dc8825d2e8fda25d3cda8" kindref="member">mu</ref><sp/>=<sp/>getmudim();</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>setmudim(mu<sp/>*<sp/>scale);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>lti_complex_t<sp/>res<sp/>=<sp/>preFactor*lt_func(</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p1<sp/>*<sp/>scale,</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p2<sp/>*<sp/>scale,<sp/></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p3<sp/>*<sp/>scale,</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m1<sp/>*<sp/>scale,</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m2<sp/>*<sp/>scale,</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m3<sp/>*<sp/>scale,</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eps);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>setmudim(mu);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/marty/core/looptools_patch.h"/>
+  </compounddef>
+</doxygen>

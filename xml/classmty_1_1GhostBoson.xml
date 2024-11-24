@@ -1,0 +1,776 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1GhostBoson" kind="class" language="C++" prot="public">
+    <compoundname>mty::GhostBoson</compoundname>
+    <basecompoundref refid="classmty_1_1ScalarBoson" prot="public" virt="non-virtual">mty::ScalarBoson</basecompoundref>
+    <includes refid="ghostField_8h" local="no">ghostField.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1GhostBoson_1aa31e568539a71a94cc6bc9bd470384d2" prot="private" static="no" mutable="no">
+        <type>std::weak_ptr&lt; <ref refid="classmty_1_1VectorBoson" kindref="compound">VectorBoson</ref> &gt;</type>
+        <definition>std::weak_ptr&lt;VectorBoson&gt; mty::GhostBoson::vectorBoson</definition>
+        <argsstring></argsstring>
+        <name>vectorBoson</name>
+        <qualifiedname>mty::GhostBoson::vectorBoson</qualifiedname>
+        <briefdescription>
+<para>Weak pointer to the associated vector boson. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/ghostField.h" line="128" column="19" bodyfile="src/marty/core/ghostField.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1GhostBoson_1a2f556c848135acf7310b7ae6ecba4827" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::GhostBoson::GhostBoson</definition>
+        <argsstring>(std::shared_ptr&lt; VectorBoson &gt; const &amp;t_vectorBoson)</argsstring>
+        <name>GhostBoson</name>
+        <qualifiedname>mty::GhostBoson::GhostBoson</qualifiedname>
+        <param>
+          <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1VectorBoson" kindref="compound">VectorBoson</ref> &gt; const &amp;</type>
+          <declname>t_vectorBoson</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with one parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default, the name of the Ghost boson is defined as &quot;c_&lt;vector-name&gt;&quot;.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_vectorBoson</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Associated vector boson. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/ghostField.h" line="52" column="5" bodyfile="src/marty/core/ghostField.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GhostBoson_1a8487982728d4d556c3013902cb93c50b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::GhostBoson::GhostBoson</definition>
+        <argsstring>(std::string const &amp;t_name, std::shared_ptr&lt; VectorBoson &gt; const &amp;t_vectorBoson)</argsstring>
+        <name>GhostBoson</name>
+        <qualifiedname>mty::GhostBoson::GhostBoson</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <param>
+          <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1VectorBoson" kindref="compound">VectorBoson</ref> &gt; const &amp;</type>
+          <declname>t_vectorBoson</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with two parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the Ghost boson. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_vectorBoson</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Associated vector boson. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/ghostField.h" line="60" column="5" bodyfile="src/marty/core/ghostField.cpp" bodystart="27" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GhostBoson_1ae6c5fa3a069ca30f82a55a9d363fe1a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::GhostBoson::GhostBoson</definition>
+        <argsstring>(std::string const &amp;t_name, mty::GaugeIrrep const &amp;rep)</argsstring>
+        <name>GhostBoson</name>
+        <qualifiedname>mty::GhostBoson::GhostBoson</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <param>
+          <type><ref refid="classmty_1_1GaugeIrrep" kindref="compound">mty::GaugeIrrep</ref> const &amp;</type>
+          <declname>rep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/ghostField.h" line="63" column="5" bodyfile="src/marty/core/ghostField.cpp" bodystart="37" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GhostBoson_1a6f5fc87b2faa28396cc8aee64db5ba99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mty::GhostBoson::printDefinition</definition>
+        <argsstring>(std::ostream &amp;out=std::cout, int indentSize=4, bool header=false) const override</argsstring>
+        <name>printDefinition</name>
+        <qualifiedname>mty::GhostBoson::printDefinition</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractParent_1a6c633dfff2c6a58ffbf2dae9ca9e07ae">printDefinition</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>indentSize</declname>
+          <defval>4</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>header</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Prints the MARTY (C++) code defining the Ghost boson. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function assumes that the vector boson has already been defined.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output stream </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indentSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indent to use when printing instructions </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/ghostField.h" line="74" column="10" bodyfile="src/marty/core/ghostField.cpp" bodystart="43" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GhostBoson_1a8537b99d5e889a92d247ec2da94ad79a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>ParticleType</type>
+        <definition>ParticleType mty::GhostBoson::getParticleType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getParticleType</name>
+        <qualifiedname>mty::GhostBoson::getParticleType</qualifiedname>
+        <reimplements refid="classmty_1_1QuantumFieldParent_1a15a0a38b6509011352b73d41b51b1ee1">getParticleType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ParticleType::GhostBoson </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/ghostField.h" line="81" column="18" bodyfile="src/marty/core/ghostField.h" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GhostBoson_1a81ec7867a17917cfe962330a7ca7bdce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref></type>
+        <definition>Particle mty::GhostBoson::getVectorBoson</definition>
+        <argsstring>() const override</argsstring>
+        <name>getVectorBoson</name>
+        <qualifiedname>mty::GhostBoson::getVectorBoson</qualifiedname>
+        <reimplements refid="classmty_1_1QuantumFieldParent_1a06cd6521c79956221d5c0e22bbcec025">getVectorBoson</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns the vector boson associated with the Goldstone. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/ghostField.h" line="89" column="14" bodyfile="src/marty/core/ghostField.cpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GhostBoson_1ac2f0112db1725ed7aff8dc635a5838b1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mty::GhostBoson::isAntiCommuting</definition>
+        <argsstring>() const override</argsstring>
+        <name>isAntiCommuting</name>
+        <qualifiedname>mty::GhostBoson::isAntiCommuting</qualifiedname>
+        <reimplements refid="classmty_1_1QuantumFieldParent_1ad2fd32f767cedfc9fa9184012b223c86">isAntiCommuting</reimplements>
+        <briefdescription>
+<para>Returns true as a Ghost anti-commutes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><bold>True</bold> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/ghostField.h" line="96" column="10" bodyfile="src/marty/core/ghostField.cpp" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GhostBoson_1ade7a38292b9b98f36694e3c841b568b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref></type>
+        <definition>Particle mty::GhostBoson::generateSimilar</definition>
+        <argsstring>(std::string const &amp;t_name) const override</argsstring>
+        <name>generateSimilar</name>
+        <qualifiedname>mty::GhostBoson::generateSimilar</qualifiedname>
+        <reimplements refid="classmty_1_1QuantumFieldParent_1a0fbb3e2d84d668387165227c2820d470">generateSimilar</reimplements>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <briefdescription>
+<para>Generates a similar Ghost boson, with the same associated vector boson. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the new ghost boson.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The newly created Ghost boson. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/ghostField.h" line="106" column="14" bodyfile="src/marty/core/ghostField.cpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GhostBoson_1af76876cc9a4009c9039c5a87e4d5168a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::GhostBoson::getKineticTerm</definition>
+        <argsstring>(csl::Tensor &amp;X) override</argsstring>
+        <name>getKineticTerm</name>
+        <qualifiedname>mty::GhostBoson::getKineticTerm</qualifiedname>
+        <reimplements refid="classmty_1_1QuantumFieldParent_1ad6fb45a0c9780f8e5f6df19bfec1c2cd">getKineticTerm</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &amp;</type>
+          <declname>X</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the kinetic term of the Ghost. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The Ghost kinetic term is not the same as a standard scalar boson and must be given explicitly by this class.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>X</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Space-time point for the <ref refid="classmty_1_1Lagrangian" kindref="compound">Lagrangian</ref> term.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The symbolic expression of the Ghost kinetic term.</para>
+</simplesect>
+<simplesect kind="see"><para>mty::GhostKineticTerm() that contains the implementation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/ghostField.h" line="120" column="15" bodyfile="src/marty/core/ghostField.cpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1GhostBoson_1a207ab8c7338a1301a1bab8bf6c820ed2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int mty::GhostBoson::getNDegreesOfFreedom</definition>
+        <argsstring>() const override</argsstring>
+        <name>getNDegreesOfFreedom</name>
+        <qualifiedname>mty::GhostBoson::getNDegreesOfFreedom</qualifiedname>
+        <reimplements refid="classmty_1_1QuantumFieldParent_1a36569c719b6b843a8b23fdcddd8b6e65">getNDegreesOfFreedom</reimplements>
+        <briefdescription>
+<para>Pure virtual function. Returns the number of degrees of freedom in the particle. It does not count gauge and flavor multiplicity. The result depends on the type of the particle and if it is complex. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An integer, number of degrees of freedom of the particle. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/ghostField.h" line="122" column="9" bodyfile="src/marty/core/ghostField.cpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Ghost boson, created with the vector bosons in non abelian gauge groups. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>These particles are anti-commuting scalar bosons with the same <ref refid="classmty_1_1Gauge" kindref="compound">Gauge</ref> representation as the associated vector boson. The anti-commuting property is very important calculations as it determines the sign of diagrams in which ghosts arise. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>csl::AbstractParent</label>
+        <link refid="classcsl_1_1AbstractParent"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>csl::TensorFieldParent</label>
+        <link refid="classcsl_1_1TensorFieldParent"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>csl::TensorParent</label>
+        <link refid="classcsl_1_1TensorParent"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::GhostBoson</label>
+        <link refid="classmty_1_1GhostBoson"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mty::QuantumFieldParent</label>
+        <link refid="classmty_1_1QuantumFieldParent"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mty::ScalarBoson</label>
+        <link refid="classmty_1_1ScalarBoson"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>std::enable_shared_from_this&lt; AbstractParent &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>csl::AbstractParent</label>
+        <link refid="classcsl_1_1AbstractParent"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>csl::Space</label>
+        <link refid="classcsl_1_1Space"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>symbolicDim</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>delta</edgelabel>
+          <edgelabel>epsilon</edgelabel>
+          <edgelabel>inverseMetric</edgelabel>
+          <edgelabel>metric</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>csl::Symmetry</label>
+        <link refid="classcsl_1_1Symmetry"/>
+      </node>
+      <node id="12">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>csl::TensorFieldParent</label>
+        <link refid="classcsl_1_1TensorFieldParent"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>spaceField</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>csl::TensorParent</label>
+        <link refid="classcsl_1_1TensorParent"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>symmetry</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>tensor</edgelabel>
+          <edgelabel>trace</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>mty::AlgebraState</label>
+        <link refid="classmty_1_1AlgebraState"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>mty::Flavor</label>
+        <link refid="classmty_1_1Flavor"/>
+      </node>
+      <node id="21">
+        <label>mty::FlavorIrrep</label>
+        <link refid="classmty_1_1FlavorIrrep"/>
+      </node>
+      <node id="18">
+        <label>mty::Gauge</label>
+        <link refid="classmty_1_1Gauge"/>
+      </node>
+      <node id="19">
+        <label>mty::GaugeIrrep</label>
+        <link refid="classmty_1_1GaugeIrrep"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>gauge</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::GhostBoson</label>
+        <link refid="classmty_1_1GhostBoson"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>mty::Irrep</label>
+        <link refid="classmty_1_1Irrep"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>algebra</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>highestWeight</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mty::QuantumFieldParent</label>
+        <link refid="classmty_1_1QuantumFieldParent"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mass</edgelabel>
+          <edgelabel>width</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>spin</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>gauge</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>irrep</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>flavor</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>flavorRep</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mty::ScalarBoson</label>
+        <link refid="classmty_1_1ScalarBoson"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>mty::SemiSimpleAlgebra</label>
+        <link refid="classmty_1_1SemiSimpleAlgebra"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>inverseCartan</edgelabel>
+          <edgelabel>symbolicCartan</edgelabel>
+          <edgelabel>symbolicMetric</edgelabel>
+          <edgelabel>symbolicRho</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>std::enable_shared_from_this&lt; AbstractParent &gt;</label>
+      </node>
+      <node id="13">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="10">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="17">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/ghostField.h" line="41" column="1" bodyfile="src/marty/core/ghostField.h" bodystart="41" bodyend="129"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1AbstractParent_1a3a8495f4cc8281410f8aa512c64116cb" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>AbstractParent</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a961d277c9a277163931cb5b45906c83f" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>AbstractParent</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ad88d1dd79f22b67744640124252dc093" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>AbstractParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1abdfaf46f9699cea8ac9cea9b7dcec388" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>addAntiSymmetry</name></member>
+      <member refid="classcsl_1_1TensorParent_1a4e64e8c6d44452b8457401570e8fdee1" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>addComplexProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1aae4c207cf3365ebf833975cb4b4e92f8" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>addContractionProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1a464d54dcfae18bb913b4bf6a6629adab" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>addHermitianProperty</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1af971c4e93db65d7dbf36773a73c0cd3a" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>addRelative</name></member>
+      <member refid="classcsl_1_1TensorParent_1a81eabaf09cb9fe1855a35a91faf3b132" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>addSelfContraction</name></member>
+      <member refid="classcsl_1_1TensorParent_1a17fb05141415ac442cb8f5b6e88bc329" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>addSpace</name></member>
+      <member refid="classcsl_1_1TensorParent_1ac9a495db8af3074a6c329d84a1b7cb91" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>addSymmetry</name></member>
+      <member refid="classcsl_1_1TensorParent_1a47f7c70202336b11674b15a6895b16ed" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>addTraceLessNess</name></member>
+      <member refid="classcsl_1_1TensorParent_1af3fc929cce72fcf95aad56ebe51c8881" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>addTransposedProperty</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a13c6a7faa33b3c94f52e87d0924de85f" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>adjustFlavorRep</name></member>
+      <member refid="classcsl_1_1TensorParent_1aef208f53719c900f1b0a4b6f57fb9f48" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>applyProperty</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a9a9b2742680ba38fe222518c63065cbc" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>applyToRelatives</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a1f7b26c566813542665ba35ca37cc233" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>bosonic</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a58bc9f34729bf55dfe667e3549289def" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>breakParticle</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a98a7dda6e47e5fca59d1bafa298abd77" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>breakParticle</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1aec07ce340587116774df43d16418327f" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>breakSpace</name></member>
+      <member refid="classcsl_1_1TensorParent_1ac562be01bc8c902fdd85072f07714b7f" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>brokenParts</name></member>
+      <member refid="classcsl_1_1TensorParent_1a7a4851df688d387978d14564ae898b2c" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>chainContraction</name></member>
+      <member refid="classcsl_1_1TensorFieldParent_1a46e82d473a8988d57b68a5d7de9089ab" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>checkFieldRequest</name></member>
+      <member refid="classcsl_1_1TensorParent_1a1785b59dcf8041a7e097b9c4034d666a" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>checkIndexRequest</name></member>
+      <member refid="classcsl_1_1TensorParent_1a56c5366a63a06eec34bae9b9cd2fbeaf" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>checkIndexRequest</name></member>
+      <member refid="classcsl_1_1TensorFieldParent_1a808df30026e554f59f70b0a9b2a3eec7" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>checkIndicialAndFieldRequest</name></member>
+      <member refid="classcsl_1_1TensorFieldParent_1a8178af277a26bd7d86a6afbf030cb86c" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>checkIndicialAndFieldRequest</name></member>
+      <member refid="classcsl_1_1TensorFieldParent_1a88b5b7e8e33d62e325d4a0066bc27686" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>checkIndicialAndFieldRequest</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a2e55627be19c358eea102a6c6e012aba" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>checkRelatives</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a177e5244cc4d4b6c1e0600a4f77b523f" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>commutable</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ab058ceee466fd0997c060e83fc0a4e96" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>complexProp</name></member>
+      <member refid="classcsl_1_1TensorParent_1a0bee5fadcbac24cc611318499a6b9243" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>conjugateProperty</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1aa5f4e3e9b9a82fff9b8d95f62ecfcf1d" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>contains</name></member>
+      <member refid="classcsl_1_1TensorParent_1afdb6b8332cd4a18e3835099e0fab9f32" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1TensorParent_1a3657ec01e4768d2f5daf416b83126cc1" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>covariant</name></member>
+      <member refid="classcsl_1_1TensorParent_1a86bbf18d3861f4e97c186206f4d43ccb" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>createFixedIndices</name></member>
+      <member refid="classcsl_1_1TensorParent_1aaf00e073ad5c8badf90869efcb327239" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>createFixedIndices</name></member>
+      <member refid="classcsl_1_1TensorParent_1a14f4bcb3c19fb4e8cb8ccf3a61719f27" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>dependsExplicitlyOn</name></member>
+      <member refid="classcsl_1_1TensorParent_1a7a0dbe923e3491cc35fa48c175baee43" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>dependsOn</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ad34cb190892a7b0d29cecf844d836e10" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>disableEvaluation</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a0d3c8f3219c53a09c3efd03073753c81" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>drawType</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a691ece6fc798a1594dd83be483733dd3" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>enabledInDiagrams</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a0cbecc9ebf1ba07087c4e275cf81a767" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>enableEvaluation</name></member>
+      <member refid="classcsl_1_1TensorParent_1adddc8255d23e5816e9cda53f5e8a034e" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>evaluate</name></member>
+      <member refid="classcsl_1_1TensorParent_1aa7e656c4430ca22d4ba01c02e21f500e" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>extContraction</name></member>
+      <member refid="classcsl_1_1TensorParent_1ab2a7b1370956a56cf793b88beb6ce5f3" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>externalTensors</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ad463db6be7ba2c207b42e0bf3bff87b1" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>firstGaugeIndex</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1aef7c609ffce6b9668164c47b0eda79b8" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>firstSpaceIndex</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a4f5d94d560f6f7a4c69437cad05a2b09" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>flavor</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a184d9c95b4867b270c5414a6da7be7e9" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>flavorRep</name></member>
+      <member refid="classcsl_1_1TensorParent_1aa0dae8fe45934513b287849169dbba93" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>fullyAntiSymmetric</name></member>
+      <member refid="classcsl_1_1TensorParent_1a59e24724c7c0c2ee05617769c78c454e" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>fullySymmetric</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1abec1bed01588f7c87567b6e498976cc2" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>gauge</name></member>
+      <member refid="classmty_1_1GhostBoson_1ade7a38292b9b98f36694e3c841b568b2" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>generateSimilar</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a9d9f642ad348b33efb70b9f4cf839c1b" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getBaseName</name></member>
+      <member refid="classcsl_1_1TensorParent_1acdb63d093ac13e3ec7f4bde54ca86738" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getBrokenParts</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a397f9c7ea63814716d521be8786f1e57" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getChirality</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a31b0551bf9e7385e3d6c7a7e552a84cd" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getChiralityCounterPart</name></member>
+      <member refid="classcsl_1_1AbstractParent_1af8ae5696856c551204addb95271333bf" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getCommutable</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ad0029cab35d92a9542c5fb21b6672212" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getComplexProp</name></member>
+      <member refid="classcsl_1_1TensorParent_1a67f7479000987afe784cf41d139a97a6" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getComplexProperty</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1aef1f73b8595fa36f65d94d1a6faa8ab9" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getConjugatedGhostBoson</name></member>
+      <member refid="classcsl_1_1TensorParent_1a84c9f98e1531b573a63e67c667f7cba6" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getContractionProperties</name></member>
+      <member refid="classcsl_1_1TensorParent_1a5bff2bf79a3985d9020bee392f440990" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getDim</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ac45297ef35dab1807a158056ec8dfac3" prot="public" virt="virtual" ambiguityscope="csl::AbstractParent::"><scope>mty::GhostBoson</scope><name>getDim</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1aac4107a07bbd8e8ac4e41043f1307a74" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getDiracParent</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1aa8c35778e995351f6e1d8b12e9246890" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getDrawType</name></member>
+      <member refid="classcsl_1_1AbstractParent_1af7cf14c2576a5b337f2e75059a5e002c" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getEncapsulated</name></member>
+      <member refid="classmty_1_1ScalarBoson_1ae61bd2f3f0b6bedd30e8c86f923a132c" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getEnergyDimension</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a38fb1b0329110a3caed8e68397c08c51" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getExactEncapsulated</name></member>
+      <member refid="classcsl_1_1TensorFieldParent_1a3d8ff09def749260d82187ce11f675b0" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getFieldSpace</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a7c2d29867698a6f59a4a69a403657d77" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getFieldStrength</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ac2a50c1d85bf7e2ac7cd64b999ef86d2" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getFlavor</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a73c0d0af5c2881739b4c6cbfec58a788" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getFlavorIndex</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a418513195e15c40050248b6c039d310f" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getFlavorIrrep</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a2ac9be1c0b08c8d227fb33b8db63a36c" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getFlavorIrrep</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a13c637a21b843737df51de092d088f77" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getFullSetOfIndices</name></member>
+      <member refid="classcsl_1_1TensorParent_1a4b974963fac5f42fe6f3ea5ca7ed93b6" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getFullyAntiSymmetric</name></member>
+      <member refid="classcsl_1_1TensorParent_1aa4af33bfd789ef86dd5775b7a4558a01" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getFullySymmetric</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ae608d0fca0b93d332a5433dfaa33a66e" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getGauge</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1af68918da9f3d1c849a5ef1b05b5344c6" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getGaugeChoice</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1adaa7bae27e3f19e3f3acc2068bb6ef12" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getGaugedGroup</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ac2304e39b32321654ed3bca3b205faee" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getGaugedGroup</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ad0013a777c51fe3bef0e76f984baac46" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getGaugeIndex</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a88d00277d9aad2b2d275286a312e9af2" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getGaugeIrrep</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a88c735215fc23805b642be5b8e01ecb0" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getGhostBoson</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a502ac6364e531a40def6953c6a5e2f09" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getGoldstone</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a74cc2c52165bcd6def544311c3905b4a" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getGoldstoneBoson</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a04fbcf1358eee388cdbf8f07e685a43f" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getGroupIrrep</name></member>
+      <member refid="classcsl_1_1TensorParent_1a36af50ffc43694e38539c9a0f282653b" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getHermitianProperty</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a8bbc1d467ba11fb7b002b78ba31d3887" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getInstance</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a71641abf3402e8b15ca420ee8c00c66e" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getInvPropagator</name></member>
+      <member refid="classmty_1_1GhostBoson_1af76876cc9a4009c9039c5a87e4d5168a" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getKineticTerm</name></member>
+      <member refid="classcsl_1_1AbstractParent_1acacd759bca7fa6e750080a68ea970caa" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getLatexName</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1adb76ad8317af57b10845ba08c8bb6323" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getLorentzRep</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a0cb6c12ea299cd5411c5b5dd7bcdebb3" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getMass</name></member>
+      <member refid="classcsl_1_1AbstractParent_1ab22f321502a8aa481865be3e58bb241d" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getName</name></member>
+      <member refid="classmty_1_1GhostBoson_1a207ab8c7338a1301a1bab8bf6c820ed2" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getNDegreesOfFreedom</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ac21a21dbb67350a1d016905e65368b2d" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getNGaugeDegreesOfFreedom</name></member>
+      <member refid="classmty_1_1GhostBoson_1a8537b99d5e889a92d247ec2da94ad79a" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getParticleType</name></member>
+      <member refid="classcsl_1_1TensorParent_1a57d5160b0d1a94e376bbbec3d5ab5735" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getPermutation</name></member>
+      <member refid="classcsl_1_1TensorFieldParent_1adf100615e12fa1f81d826f0f810e776b" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getPrimaryType</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a3ddaf2c0d83917607b5cc3e774f3bec7" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getPropagator</name></member>
+      <member refid="classcsl_1_1TensorParent_1ae501e7e880e885ddcd65d946d69ef53c" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getSpace</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a8c90d230a443d29b60c873467365d232" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getSpaceIndex</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ab381755980173b5e294972ecb80d210d" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getSpinDimension</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a5878b682d634b7c7746ffcacf6acc01f" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getSquaredMass</name></member>
+      <member refid="classcsl_1_1TensorParent_1a09a777f09a8e69e177beef0055f0062a" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getSymmetry</name></member>
+      <member refid="classcsl_1_1TensorParent_1a889012a413646fa644b39c24366673f1" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getTensor</name></member>
+      <member refid="classcsl_1_1TensorParent_1aef2a4af73762e024d8bd5f0fa0e6d359" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getTensor</name></member>
+      <member refid="classcsl_1_1TensorParent_1a13f343f42228eecf7986e8a361091627" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getTrace</name></member>
+      <member refid="classcsl_1_1TensorParent_1aad0b86fccab27dcef313d5be70edc806" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getTransposedProperty</name></member>
+      <member refid="classcsl_1_1TensorFieldParent_1aa21a699e14c7790719ad4ef846f3f584" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getType</name></member>
+      <member refid="classmty_1_1GhostBoson_1a81ec7867a17917cfe962330a7ca7bdce" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getVectorBoson</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a62ddd65ed57c10250cee9705d9009101" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getWeylFermion</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ad65026224bc3b7b92ce6ab3cbfea5b4e" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>getWidth</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a65d784173a4e77ec4311c7537ae927f6" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>getXiGauge</name></member>
+      <member refid="classmty_1_1GhostBoson_1a2f556c848135acf7310b7ae6ecba4827" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>GhostBoson</name></member>
+      <member refid="classmty_1_1GhostBoson_1a8487982728d4d556c3013902cb93c50b" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>GhostBoson</name></member>
+      <member refid="classmty_1_1GhostBoson_1ae6c5fa3a069ca30f82a55a9d363fe1a4" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>GhostBoson</name></member>
+      <member refid="classcsl_1_1TensorParent_1a29c887ab51d1dfa876f869fbba3c8479" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>hasChainContractionProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1aee4452e0bd10be255d394ed3463780a3" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>hasContractionProperty</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ae00d0e2e78ea51a1f5728c15c6e9edf3" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>hasFieldStrength</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a3e2e33fc0f66f9bbbdac5e739fd02c0d" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>hasSpecialContractionWith</name></member>
+      <member refid="classcsl_1_1TensorParent_1a4bb5b8f6ae27e07622ab74ffdd461486" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>hermitianProperty</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a5e3dc7874472b3408c910d8e0c267368" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>initIndexSpaces</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ae1fd7bab8e6d36cf8f413c5e7e8ed3f4" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>initPolarizationSum</name></member>
+      <member refid="classmty_1_1ScalarBoson_1a8796952f241261a8c8774985d3faa9b6" prot="protected" virt="virtual"><scope>mty::GhostBoson</scope><name>initPropagator</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a785193ff5385fcf276bf45dc21021e29" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>integratedOut</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a2aae55c74208ec14f43f96db0cf31132" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>integrateOut</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a9fef6afaf0e2d81d25aa51d21e192f74" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>irrep</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a4e78f62f3624e0e6070f1da4ddd32943" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>isAnAbbreviation</name></member>
+      <member refid="classmty_1_1GhostBoson_1ac2f0112db1725ed7aff8dc635a5838b1" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>isAntiCommuting</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1af13d71075337a3f77b6d156c5c09463d" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>isBosonic</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a1807a29c886971807e2d4653eb633c00" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>isChiral</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a60555bdb05193f4b1467c45ea137fdca" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>isContractibleWith</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ae937a135c74fb3621758f93088f65331" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>isEnabledInDiagrams</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ad631001ecde4625d89797f67076b8b4b" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>isFermionic</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ae64f76a58e690f825e88bddae58a8c46" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>isGaugeBoson</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a14f7a210019b8229f8511549e89ad8c6" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>isIntegratedOut</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ad5d2515bd566b8aff18ea30d3353b13a" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>isPhysical</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a50563a7b7b889385fe82b8385859a1e4" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>isReal</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a210b8b5a0209f736180cdf932639e6f6" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>isSameSpecies</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ae6dc406d641ac0bdb37ac0312062ec67" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>isSelfConjugate</name></member>
+      <member refid="classcsl_1_1TensorParent_1a592a243554b0bdeb58c34efe4eedaeee" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>isTraceLessIn</name></member>
+      <member refid="classcsl_1_1TensorParent_1a892cd4e2f9ca94f6e9aee17f779b6090" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>isValued</name></member>
+      <member refid="classcsl_1_1TensorParent_1ae7ec718cfaa3c9598463723a36f74f17" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>keepBestPermutation</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a98c857ebf734c15e7afd0d8a13988ac9" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>latexName</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a3ef078e01886b54dee846048b0f70cb3" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>mass</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a2ad6b4cd58d9b051a4d62f343bf48c2e" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>name</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a594410f380cd8bc2038af02dce06ba81" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>operator csl::Expr</name></member>
+      <member refid="classcsl_1_1TensorParent_1acb363ae0d9495875816d243352735ccf" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>operator!=</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a19555df10c3d557726778389d62ae69f" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>operator()</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a8c43948220614b832ce07bd2d65df7f2" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>operator()</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a70d76ae9e1f6583ecc1f1102d68aa585" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>operator()</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1aa36e3e3d247a9948d4de692a00d38403" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>operator()</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a0d3c1c5fa50f35e662b72cf12d923336" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>operator()</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a362970c0424049bcec378c8d1d229273" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>operator()</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a64f7543217b809e39a686180b2e67754" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>operator()</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a6d5cf783b576fc3bac49987c41fa6590" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>operator()</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ae3e8544f0753ea8db3f73716f654507e" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>operator()</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1aaf15b2476632091300ed81bfed9af23e" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>operator()</name></member>
+      <member refid="classcsl_1_1TensorParent_1a76840bf24d5392c521467ecb662cc15e" prot="public" virt="virtual" ambiguityscope="csl::TensorParent::"><scope>mty::GhostBoson</scope><name>operator()</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a5a5bcfd2ae5557067eae74640a50249d" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>operator=</name></member>
+      <member refid="classcsl_1_1TensorParent_1a18f7711d34c8bcdb3e034b7b82b76e09" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>operator==</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a6abc017a0c4778fc0e299f4c4e1dc435" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>physical</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a18d08c09430c070b1f37c470e5054db0" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>polarizationSumInitialized</name></member>
+      <member refid="classmty_1_1GhostBoson_1a6f5fc87b2faa28396cc8aee64db5ba99" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>printDefinition</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a789915324d1e21a6be70bbd495ada1cc" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>printPropDefinition</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a970498bd0ff878820f3859f83d38fccf" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>printQuantumDefinition</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1aba9df2478df3b7be3621fa5f55c1fe8c" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>propagator</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a76460805efae9a013fff076955bc408a" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>Propagator_func</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a45dc24afa21d103855c55d8cba010d64" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>QuantumFieldParent</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1af139e37bbc3a5893d48a60c67c9f29b4" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>QuantumFieldParent</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a2aea7d244a9484d9779f17fff039ee20" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>QuantumFieldParent</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a29d5f92ff773ec8137b60495a9116a45" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>QuantumFieldParent</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a9699cab9f1b4b11e92631da3f544228a" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>QuantumFieldParent</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ab5fd0b478a5cb4f5750f1da00d2ef549" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>QuantumFieldParent</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a1ae7141073d947ad4bfd23e6076023ac" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>QuantumFieldParent</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ac80743c85ab76199b6e600bfdf766b22" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>QuantumFieldParent</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a73f01a145d01bb96e01bcf66b192ea99" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>relatives</name></member>
+      <member refid="classcsl_1_1TensorParent_1a44c54413e4600c7d5589879671f8d474" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>removeContractionProperty</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a79481e93600ad51835ab978099f81a04" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>removeRelative</name></member>
+      <member refid="classcsl_1_1TensorParent_1a8753c5b10ccca6f049cbd5e852fbb21b" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>removeSelfContraction</name></member>
+      <member refid="classcsl_1_1TensorParent_1a05b90066cf74b7fc304a474df4e64a05" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>removeTraceLessNess</name></member>
+      <member refid="classmty_1_1ScalarBoson_1a35fed1b12101a69c792865c0b598655b" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>ScalarBoson</name></member>
+      <member refid="classmty_1_1ScalarBoson_1a57f8609d0de199f040fd905c87c7877d" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>ScalarBoson</name></member>
+      <member refid="classmty_1_1ScalarBoson_1a4620a67c0a646f80d5c4e4cd661cc2dc" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>ScalarBoson</name></member>
+      <member refid="classmty_1_1ScalarBoson_1a6f3ebce524fbe5ca5a0334aa9ffad5d1" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>ScalarBoson</name></member>
+      <member refid="classmty_1_1ScalarBoson_1a288881ac4c367ce10eb504b0fa707977" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>ScalarBoson</name></member>
+      <member refid="classmty_1_1ScalarBoson_1a78b6f72ecb44c64036c470becb77e90f" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>ScalarBoson</name></member>
+      <member refid="classmty_1_1ScalarBoson_1aff6771414d417cb3d83ee6292da33e3b" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>ScalarBoson</name></member>
+      <member refid="classmty_1_1ScalarBoson_1aee53aa9c7aa4c89a770cb4d8d0ad0132" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>ScalarBoson</name></member>
+      <member refid="classmty_1_1ScalarBoson_1ae890073f02a92bbf36ed108f6c1307e1" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>ScalarBoson</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a831ac782bdbba8d40838c6aeffaa53f6" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>self</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a8fe31c20d7f8c2820c799a15dc47eba0" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>selfConjugate</name></member>
+      <member refid="classcsl_1_1TensorParent_1a10cab17d2ba7b927d3b30278201ea9dc" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>selfContraction</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1abc3a4d46579a2a60cf841e9591e855eb" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>setBrokenParts</name></member>
+      <member refid="classcsl_1_1AbstractParent_1aae1bc83d1df8237e6bf50b6b8f732716" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setCommutable</name></member>
+      <member refid="classcsl_1_1TensorParent_1ae441946c9f40502d9330aab7be1c9790" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>setComplexProperty</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a206750ecad1dcde26f986dedea01bd14" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>setConjugatedGhostBoson</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1af8ff33f78172117b12565f89966dc49e" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>setDiracParent</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ab1dbb6dc83784bb2ba2e9b47ede98523" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setDrawType</name></member>
+      <member refid="classcsl_1_1TensorParent_1a19c75060fbf2040abeb2ca7c61069aec" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setElementary</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a2cf640364de48c0962402140abd6535c" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setEnabledInDiagrams</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a3085594e68b3845f352898e79237ba24" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>setEncapsulated</name></member>
+      <member refid="classcsl_1_1TensorFieldParent_1a447d1ca599ae604ef52dc4ae61988e34" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>setFieldSpace</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a05f7b3cce6c5b522e30a225651d4e82f" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>setFieldStrength</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1aa946ad5758cf8b1ec214bd1b4e3bcc2e" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setFlavor</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a58a48774508d383ebffce688b58508b9" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setFlavorRep</name></member>
+      <member refid="classcsl_1_1TensorParent_1ae0d6d12f0cd4efe83154cbf79978d088" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>setFullyAntiSymmetric</name></member>
+      <member refid="classcsl_1_1TensorParent_1ac99c17db4d68be67761930e0289ee5e0" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>setFullySymmetric</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a8838fb09d4edf8a085603f7f92a9079a" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setFundamentalFlavorRep</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a5fb9032a21b76dd8f9ec5d1a1b30cb59" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>setGaugeChoice</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1adf0276529e84e396f8638d1fd6434c08" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setGaugeIrrep</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1affebad844493a96607e82edd427d4e9b" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>setGhostBoson</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a3f2a9746cc5bf74261e44cf31a26cc08" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>setGoldstoneBoson</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a8f6979a78474e18437ce68fa605f7b3e" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setGroupRep</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1affdd88617bcd4975497549e7dd00646f" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setGroupRep</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a407e6cf9dceeeed1850d0687fe25f5db" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setGroupRep</name></member>
+      <member refid="classcsl_1_1TensorParent_1a25ee0fbfeb78f1044dd56691b40c10ca" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setKeepBestPermutation</name></member>
+      <member refid="classcsl_1_1AbstractParent_1af9a8cfc57a0bdf8178489c198755565b" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>setLatexName</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a678d073b9a4c404f40fa3a813624fc32" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setMass</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ada8e0cae45e02ac8a733533c1183f3f4" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setMass</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1ad16ca28b841a9df27429979c91b69b93" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setMass</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a13e6f74e590cbf05dcafb4d9c3df8b9c" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>setName</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a48db32ebcc3ecbec4c090fa3f03a524c" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setPhysical</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1af9680402c392d248b91d5c097aa92267" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setPropagator</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a4b93f59ab13b908df2957bec72833601" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setSelfConjugate</name></member>
+      <member refid="classcsl_1_1TensorParent_1aa61f52e3ea9ae4beb190442ac0e7aacc" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>setSymmetry</name></member>
+      <member refid="classcsl_1_1TensorParent_1a4eacd947decb14e003f81a8053d94e11" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>setTensor</name></member>
+      <member refid="classcsl_1_1TensorParent_1aa5bd4990cfc0d955edf1614a42d0d011" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>setTrace</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a803d73584c1eb98be0331c8bc8e73df5" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>setWidth</name></member>
+      <member refid="classcsl_1_1TensorParent_1ae740d077dfcc386a407ca33d3619a5a9" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>space</name></member>
+      <member refid="classcsl_1_1TensorFieldParent_1ac2ec87f5b3023c49f39a09944bda4456" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>spaceField</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a8c2a10dc3e14dfd9aba91a1d62402ac1" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>spin</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a8c5722ecb7b175f3f3a4872d970ea249" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>stGroup</name></member>
+      <member refid="classcsl_1_1TensorParent_1adc7dcdd4a866af29f99edc06924c2617" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>symmetry</name></member>
+      <member refid="classcsl_1_1TensorParent_1a61267f78d93f470771cf63f174322e01" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>tensor</name></member>
+      <member refid="classcsl_1_1TensorFieldParent_1a79977aa34f121a5a2c68d908561f4753" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>TensorFieldParent</name></member>
+      <member refid="classcsl_1_1TensorFieldParent_1ad8311e274003e66b123e7328918c2616" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>TensorFieldParent</name></member>
+      <member refid="classcsl_1_1TensorFieldParent_1a9910044d9322136c6a150c8cb7696384" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>TensorFieldParent</name></member>
+      <member refid="classcsl_1_1TensorFieldParent_1a84065683e1e7d62bcaf2c80e8b93a955" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>TensorFieldParent</name></member>
+      <member refid="classcsl_1_1TensorFieldParent_1adc3215e1ed8925e628afd038483800bf" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>TensorFieldParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1ab4af4e561398f75e81b0ca44c2200d8d" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1a04f4e5b6b75716a794e2c275530ae011" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1a34fe9aa77d890d2f797890d044d23727" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1a3381ecd1d560c4a80b2bf4804ef45b93" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1a1dea1d8fe995338d286bf35b48396b7b" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1a72bf7b821897d7b35f6ede9448c60e43" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1TensorParent_1ada2f60750c2e2d3f7fa573d8de73d313" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>TensorParent</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a74bbbbc2b43939c166feb7d8e7cc8537" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>toggleEvaluation</name></member>
+      <member refid="classcsl_1_1TensorParent_1a5db8129d9af05c907e28f046471650e1" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>trace</name></member>
+      <member refid="classcsl_1_1TensorParent_1ab6f004f8a41fff3afb5d62cac078d450" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>traceLessNess</name></member>
+      <member refid="classcsl_1_1TensorParent_1a81701d7f66909acf26cbe0f4d257ffdc" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>transposedProperty</name></member>
+      <member refid="classcsl_1_1TensorParent_1ac374a59f2a77225b51fd4f01f727f73b" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>valued</name></member>
+      <member refid="classmty_1_1GhostBoson_1aa31e568539a71a94cc6bc9bd470384d2" prot="private" virt="non-virtual"><scope>mty::GhostBoson</scope><name>vectorBoson</name></member>
+      <member refid="classmty_1_1QuantumFieldParent_1a9d48ab6fa31c0d612155b36b109cc64f" prot="protected" virt="non-virtual"><scope>mty::GhostBoson</scope><name>width</name></member>
+      <member refid="classcsl_1_1AbstractParent_1a6d13d559a8d68562b5827073b31b3c1a" prot="public" virt="virtual"><scope>mty::GhostBoson</scope><name>~AbstractParent</name></member>
+      <member refid="classcsl_1_1TensorFieldParent_1a2f65c66345fd60743ba16ce9568f9e24" prot="public" virt="non-virtual"><scope>mty::GhostBoson</scope><name>~TensorFieldParent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

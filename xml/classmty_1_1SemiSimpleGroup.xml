@@ -1,0 +1,715 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1SemiSimpleGroup" kind="class" language="C++" prot="public">
+    <compoundname>mty::SemiSimpleGroup</compoundname>
+    <basecompoundref refid="classmty_1_1AbstractGroup" prot="public" virt="non-virtual">mty::AbstractGroup</basecompoundref>
+    <derivedcompoundref refid="classmty_1_1group_1_1E6" prot="public" virt="non-virtual">mty::group::E6</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1group_1_1E7" prot="public" virt="non-virtual">mty::group::E7</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1group_1_1E8" prot="public" virt="non-virtual">mty::group::E8</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1group_1_1F4" prot="public" virt="non-virtual">mty::group::F4</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1group_1_1G2" prot="public" virt="non-virtual">mty::group::G2</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1group_1_1Lorentz" prot="public" virt="non-virtual">mty::group::Lorentz</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1group_1_1SO" prot="public" virt="non-virtual">mty::group::SO</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1group_1_1SU" prot="public" virt="non-virtual">mty::group::SU</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1group_1_1Sp" prot="public" virt="non-virtual">mty::group::Sp</derivedcompoundref>
+    <derivedcompoundref refid="classmty_1_1group_1_1U1" prot="public" virt="non-virtual">mty::group::U1</derivedcompoundref>
+    <includes refid="group_8h" local="no">group.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmty_1_1SemiSimpleGroup_1a3f1605da17191cd78631157d0b0df29d" prot="protected" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classmty_1_1SemiSimpleAlgebra" kindref="compound">SemiSimpleAlgebra</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;SemiSimpleAlgebra&gt; mty::SemiSimpleGroup::algebra</definition>
+        <argsstring></argsstring>
+        <name>algebra</name>
+        <qualifiedname>mty::SemiSimpleGroup::algebra</qualifiedname>
+        <briefdescription>
+<para><bold>Owner</bold> std::unique_ptr to the <ref refid="classmty_1_1SemiSimpleAlgebra" kindref="compound">SemiSimpleAlgebra</ref> associated with the group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="370" column="21" bodyfile="src/marty/core/group.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1SemiSimpleGroup_1a3c706805c999baa5d4b1caed344d005f" prot="protected" static="no" mutable="yes">
+        <type>std::vector&lt; std::pair&lt; <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref>, const <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> * &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;AlgebraState, const csl::Space *&gt; &gt; mty::SemiSimpleGroup::vectorSpaces</definition>
+        <argsstring></argsstring>
+        <name>vectorSpaces</name>
+        <qualifiedname>mty::SemiSimpleGroup::vectorSpaces</qualifiedname>
+        <briefdescription>
+<para>Association of <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> (highest weights of irreps) and vector spaces. To each irrep (i.e. each highest weight) is associated a different and unique vector space (<ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref>). See <ref refid="classmty_1_1SemiSimpleGroup_1af549263e0d55350d636fa82edd9acec5" kindref="member">getVectorSpace()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="378" column="9" bodyfile="src/marty/core/group.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1SemiSimpleGroup_1aa7de545c51c494c8f80eba695c269569" prot="protected" static="no" mutable="yes">
+        <type>std::map&lt; <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref>, <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>std::map&lt;AlgebraState, csl::Expr&gt; mty::SemiSimpleGroup::quadraticCasimir</definition>
+        <argsstring></argsstring>
+        <name>quadraticCasimir</name>
+        <qualifiedname>mty::SemiSimpleGroup::quadraticCasimir</qualifiedname>
+        <briefdescription>
+<para>Association of <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> (highest weights of irreps) and quadratic Casimirs. To each irrep (i.e. each highest weight) is associated a quadratic casimir operator. It is computed the first time asked, and stored. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="386" column="22" bodyfile="src/marty/core/group.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1SemiSimpleGroup_1a6b4b186b68f71a5e6940c616f7c20f58" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::SemiSimpleGroup::SemiSimpleGroup</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>SemiSimpleGroup</name>
+        <qualifiedname>mty::SemiSimpleGroup::SemiSimpleGroup</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with one parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the group. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="217" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleGroup_1aab95fc4e4ebb7276086217daba5b6873" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::SemiSimpleGroup::SemiSimpleGroup</definition>
+        <argsstring>(const SemiSimpleAlgebra &amp;t_algebra, const std::string &amp;t_name)</argsstring>
+        <name>SemiSimpleGroup</name>
+        <qualifiedname>mty::SemiSimpleGroup::SemiSimpleGroup</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1SemiSimpleAlgebra" kindref="compound">SemiSimpleAlgebra</ref> &amp;</type>
+          <declname>t_algebra</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>t_name</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with two parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_algebra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>algebra corresponding to the group. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the group. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="224" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleGroup_1ae4d983be8e2f9760255a9ae7534fed8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::SemiSimpleGroup::~SemiSimpleGroup</definition>
+        <argsstring>() override</argsstring>
+        <name>~SemiSimpleGroup</name>
+        <qualifiedname>mty::SemiSimpleGroup::~SemiSimpleGroup</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="230" column="5" bodyfile="src/marty/core/group.cpp" bodystart="143" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleGroup_1a1af257679905aedc7feed434f5a1ace1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1SemiSimpleAlgebra" kindref="compound">SemiSimpleAlgebra</ref> *</type>
+        <definition>SemiSimpleAlgebra * mty::SemiSimpleGroup::getAlgebra</definition>
+        <argsstring>() const override</argsstring>
+        <name>getAlgebra</name>
+        <qualifiedname>mty::SemiSimpleGroup::getAlgebra</qualifiedname>
+        <reimplements refid="classmty_1_1AbstractGroup_1ab06a0ac167dca306911171f79d846b3a">getAlgebra</reimplements>
+        <briefdescription>
+<para>Returns a pointer to the algebra of the group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A raw pointer to the algebra of the group. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="236" column="23" bodyfile="src/marty/core/group.cpp" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleGroup_1a051277e572c8b6c06152e20cc7e52108" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::SemiSimpleGroup::setAlgebra</definition>
+        <argsstring>(const SemiSimpleAlgebra &amp;t_algebra)</argsstring>
+        <name>setAlgebra</name>
+        <qualifiedname>mty::SemiSimpleGroup::setAlgebra</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1SemiSimpleAlgebra" kindref="compound">SemiSimpleAlgebra</ref> &amp;</type>
+          <declname>t_algebra</declname>
+        </param>
+        <briefdescription>
+<para>Replaces the algebra owned by the group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>t_algebra</bold> may be an r-value. This function simply creates (allocated memory with a unique_ptr) a new algebra identical to <bold>t_algebra</bold>. <simplesect kind="note"><para>This function does not verify that the algebra corresponds indeed to the group. This function should not be called by the user as once a group has been created, in particular if representations have been defined, there is no reason for the algebra to change. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_algebra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New algebra of the group. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="249" column="10" bodyfile="src/marty/core/group.cpp" bodystart="159" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleGroup_1a23925dcfec01c5bf963ccf504829415d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref></type>
+        <definition>mty::Irrep mty::SemiSimpleGroup::highestWeightRep</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;highestWeight) const override</argsstring>
+        <name>highestWeightRep</name>
+        <qualifiedname>mty::SemiSimpleGroup::highestWeightRep</qualifiedname>
+        <reimplements refid="classmty_1_1AbstractGroup_1a2cd9a30fe943b42d8435f7b5592959e9">highestWeightRep</reimplements>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>highestWeight</declname>
+        </param>
+        <briefdescription>
+<para>Returns an <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> of highest weight <bold>highestWeight</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The group uses the function <ref refid="classmty_1_1SemiSimpleAlgebra_1a88a9a01df2e34c751d96a8d7ed448606" kindref="member">SemiSimpleAlgebra::highestWeightRep()</ref> of its algebra to create the representation and returns it. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>highestWeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Highest weight state of the representation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> of highest weight <bold>highestWeight</bold> (see <ref refid="classmty_1_1SemiSimpleAlgebra_1a88a9a01df2e34c751d96a8d7ed448606" kindref="member">SemiSimpleAlgebra::highestWeightRep()</ref>). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="261" column="5" bodyfile="src/marty/core/group.cpp" bodystart="202" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleGroup_1a9242e469fb0e3d3c86f7897ba03adcb7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::SemiSimpleGroup::getQuadraticCasimir</definition>
+        <argsstring>(const AlgebraState &amp;highest) const</argsstring>
+        <name>getQuadraticCasimir</name>
+        <qualifiedname>mty::SemiSimpleGroup::getQuadraticCasimir</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref> &amp;</type>
+          <declname>highest</declname>
+        </param>
+        <briefdescription>
+<para>Returns the expression (symbolic, rational number) of the quadratic Casimir operator for a representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="classmty_1_1SemiSimpleAlgebra_1a08445d84837a3ee0818e999a8e3afa84" kindref="member">SemiSimpleAlgebra::getQuadraticCasimir()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>irrep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Highest weight state of the representation from which we want the Casimir. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The symbolic expression of the Casimir, a rational number. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="272" column="15" bodyfile="src/marty/core/group.cpp" bodystart="244" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleGroup_1ae1e98e95d351ed86c20df592bddf2c24" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref></type>
+        <definition>mty::Irrep mty::SemiSimpleGroup::getTrivialRep</definition>
+        <argsstring>() const override</argsstring>
+        <name>getTrivialRep</name>
+        <qualifiedname>mty::SemiSimpleGroup::getTrivialRep</qualifiedname>
+        <reimplements refid="classmty_1_1AbstractGroup_1af766bd588555cdb1c9d1539a60ffef77">getTrivialRep</reimplements>
+        <briefdescription>
+<para>Returns the trivial (dimension 1) representation of the group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The trivial <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> of the group (see <ref refid="classmty_1_1SemiSimpleAlgebra_1a49fd976502d861fc07ea61739c154e99" kindref="member">SemiSimpleAlgebra::getTrivialRep()</ref>). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="279" column="11" bodyfile="src/marty/core/group.cpp" bodystart="149" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleGroup_1a44f258072322ed3c76d2ad5740effb2a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref></type>
+        <definition>SumIrrep mty::SemiSimpleGroup::tensorProduct</definition>
+        <argsstring>(const Irrep &amp;rep1, const Irrep &amp;rep2) const</argsstring>
+        <name>tensorProduct</name>
+        <qualifiedname>mty::SemiSimpleGroup::tensorProduct</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &amp;</type>
+          <declname>rep1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &amp;</type>
+          <declname>rep2</declname>
+        </param>
+        <briefdescription>
+<para>Computes the product of two representations and returns its decomposition in a sum of irreducible representations (<ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref>). See <ref refid="classmty_1_1SemiSimpleAlgebra_1a6b115c5f8711fd19ec740f3b72cc2535" kindref="member">SemiSimpleAlgebra::tensorProduct()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rep1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First representation in the product. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rep2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second representation in the product. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> containing decomposition of the product in a direct sum of irreducible representations. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="290" column="14" bodyfile="src/marty/core/group.cpp" bodystart="207" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleGroup_1ac4656a1e2ecd13fc2bcf4a8b14e8db96" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref></type>
+        <definition>SumIrrep mty::SemiSimpleGroup::tensorProduct</definition>
+        <argsstring>(const std::initializer_list&lt; int &gt; &amp;rep1, const std::initializer_list&lt; int &gt; &amp;rep2) const</argsstring>
+        <name>tensorProduct</name>
+        <qualifiedname>mty::SemiSimpleGroup::tensorProduct</qualifiedname>
+        <param>
+          <type>const std::initializer_list&lt; int &gt; &amp;</type>
+          <declname>rep1</declname>
+        </param>
+        <param>
+          <type>const std::initializer_list&lt; int &gt; &amp;</type>
+          <declname>rep2</declname>
+        </param>
+        <briefdescription>
+<para>Computes and the product of two representations and returns its decomposition in a sum of irreducible representations. See <ref refid="classmty_1_1SemiSimpleAlgebra_1a6b115c5f8711fd19ec740f3b72cc2535" kindref="member">SemiSimpleAlgebra::tensorProduct()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Instead of taking representations, this function takes directly the dynkin labels of their highest weight state. It first call <ref refid="classmty_1_1SemiSimpleAlgebra_1a88a9a01df2e34c751d96a8d7ed448606" kindref="member">SemiSimpleAlgebra::highestWeightRep()</ref> to instantiate representations from their highest weight, and then computes the tensor product.<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rep1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First representation in the product, caracterized by its dinkin labels in a std::vector of integers.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rep2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second representation in the product, caracterized by its dinkin labels in a std::vector of integers. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classmty_1_1SumIrrep" kindref="compound">SumIrrep</ref> containing decomposition of the product in a direct sum of irreducible representations. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="306" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleGroup_1af549263e0d55350d636fa82edd9acec5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> *</type>
+        <definition>const Space * mty::SemiSimpleGroup::getVectorSpace</definition>
+        <argsstring>(const Irrep &amp;irrep) const override</argsstring>
+        <name>getVectorSpace</name>
+        <qualifiedname>mty::SemiSimpleGroup::getVectorSpace</qualifiedname>
+        <reimplements refid="classmty_1_1AbstractGroup_1a6adca4959ceed967beb3e1af42bed3ec">getVectorSpace</reimplements>
+        <param>
+          <type>const <ref refid="classmty_1_1Irrep" kindref="compound">Irrep</ref> &amp;</type>
+          <declname>irrep</declname>
+        </param>
+        <briefdescription>
+<para>Returns the vector space (<ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref>) associated with a certain irreducible representation of the group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the vector space of a representation identical to <bold>irrep</bold> (same highest weight) is found, it is returned. Else, a new vector space is created (<ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref>) and returned. The spaces created in this function are specialized in <ref refid="classcolor_1_1ColorSpace" kindref="compound">color::ColorSpace</ref> in order to implement trace properties in simplifications. See documentation of <ref refid="classcolor_1_1ColorSpace" kindref="compound">color::ColorSpace</ref>. <simplesect kind="note"><para> In this function only the highest weights of the irreps are compared. This means that a representation of <formula id="112">$ F_4 $</formula> may be successfully compared to a representation of <formula id="113">$A_4$</formula> because they have the same number of labels.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>irrep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Representation from which we want the vector space. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the <ref refid="classcolor_1_1ColorSpace" kindref="compound">color::ColorSpace</ref> of the representation (creates the space if it had not already been created). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="325" column="22" bodyfile="src/marty/core/group.cpp" bodystart="221" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleGroup_1a95a05472197b6785212540fda811c98d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1AlgebraState" kindref="compound">AlgebraState</ref></type>
+        <definition>AlgebraState mty::SemiSimpleGroup::getHighestWeight</definition>
+        <argsstring>(const csl::Space *t_space) const override</argsstring>
+        <name>getHighestWeight</name>
+        <qualifiedname>mty::SemiSimpleGroup::getHighestWeight</qualifiedname>
+        <reimplements refid="classmty_1_1AbstractGroup_1abbb754aa6fe3cebe7047fa0ce6913783">getHighestWeight</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> *</type>
+          <declname>t_space</declname>
+        </param>
+        <briefdescription>
+<para>Searches and returns the highest weight of the representation living in <bold>t_space</bold> (<ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref>). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If a representation living in <bold>t_space</bold> is found, its highest weight is returned. Else an error is raised. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_space</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector space in which the representation lives. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The highest weight of the representation if found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="335" column="18" bodyfile="src/marty/core/group.cpp" bodystart="254" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleGroup_1a0a07acf25f62aea2cd8ba477fe978b0a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; const <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> * &gt;</type>
+        <definition>vector&lt; const Space * &gt; mty::SemiSimpleGroup::getAllVectorSpace</definition>
+        <argsstring>() const override</argsstring>
+        <name>getAllVectorSpace</name>
+        <qualifiedname>mty::SemiSimpleGroup::getAllVectorSpace</qualifiedname>
+        <reimplements refid="classmty_1_1AbstractGroup_1a01cc0707069c3d55cd4f21dcf3845452">getAllVectorSpace</reimplements>
+        <briefdescription>
+<para>Returns all vector spaces (<ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref>) created by the group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>All vector spaces are put in a std::vector that is returned. <simplesect kind="return"><para>All vector spaces (const) created since the creation of the <ref refid="classmty_1_1SemiSimpleGroup" kindref="compound">SemiSimpleGroup</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="343" column="17" bodyfile="src/marty/core/group.cpp" bodystart="264" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1SemiSimpleGroup_1a39acccde07239d0b2ab74116f0b1c6a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref></type>
+        <definition>Index mty::SemiSimpleGroup::getCorrespondingIndex</definition>
+        <argsstring>(const std::string &amp;index_name, const QuantumFieldParent &amp;parent) override</argsstring>
+        <name>getCorrespondingIndex</name>
+        <qualifiedname>mty::SemiSimpleGroup::getCorrespondingIndex</qualifiedname>
+        <reimplements refid="classmty_1_1AbstractGroup_1a76d12a97064c7ebb4c31d9c09429ad51">getCorrespondingIndex</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>index_name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref> &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+<para>Returns a <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref> of the vector space corresponding to a given <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">mty::QuantumFieldParent</ref>&apos;s representation of the group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref> is important to know which representation is wanted. For example in QCD, if &apos;g&apos; is the gluon and &apos;q&apos; a quark that are respectively in octet and triplet representations of a <ref refid="classmty_1_1SemiSimpleGroup" kindref="compound">SemiSimpleGroup</ref> &apos;SU3_c&apos;, <programlisting><codeline><highlight class="normal">SU3_c.getCorrespondingIndex(</highlight><highlight class="stringliteral">&quot;A&quot;</highlight><highlight class="normal">,<sp/>g);</highlight></codeline>
+</programlisting> will return an index in the adjoint representation (dimension 8), whereas <programlisting><codeline><highlight class="normal">SU3_c.getCorrespondingIndex(</highlight><highlight class="stringliteral">&quot;a&quot;</highlight><highlight class="normal">,<sp/>q);<sp/></highlight></codeline>
+</programlisting> will return an index in the fundamental representation (dimension 3).<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the <ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref>.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1QuantumFieldParent" kindref="compound">QuantumFieldParent</ref> in which we search a representation of the group. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An index of name <bold>index_name</bold> living in the space of <bold>parent&apos;s</bold> representation of the group. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/group.h" line="362" column="5" bodyfile="src/marty/core/group.cpp" bodystart="274" bodyend="278"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Base class for all Semi simple groups, i.e. groups that has a <ref refid="classmty_1_1SemiSimpleAlgebra" kindref="compound">SemiSimpleAlgebra</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class handles the different vector spaces for different representations. Each time a new representation is asked, a <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> is created. Then, a same representation in the same group will live in the same <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref>. All computations of representations and products use the features of <ref refid="classmty_1_1SemiSimpleAlgebra" kindref="compound">SemiSimpleAlgebra</ref>. <simplesect kind="note"><para>Two identical representations of two instances of <ref refid="classmty_1_1SemiSimpleGroup" kindref="compound">SemiSimpleGroup</ref> (with the same algebra) will live in different vector spaces. For example, spin and weak-isospin will not mix, the two <ref refid="classcsl_1_1Space" kindref="compound">csl::Space</ref> will be totally independant. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>mty::AbstractGroup</label>
+        <link refid="classmty_1_1AbstractGroup"/>
+      </node>
+      <node id="1">
+        <label>mty::SemiSimpleGroup</label>
+        <link refid="classmty_1_1SemiSimpleGroup"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mty::group::E6</label>
+        <link refid="classmty_1_1group_1_1E6"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mty::group::E7</label>
+        <link refid="classmty_1_1group_1_1E7"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mty::group::E8</label>
+        <link refid="classmty_1_1group_1_1E8"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mty::group::F4</label>
+        <link refid="classmty_1_1group_1_1F4"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mty::group::G2</label>
+        <link refid="classmty_1_1group_1_1G2"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mty::group::Lorentz</label>
+        <link refid="classmty_1_1group_1_1Lorentz"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mty::group::SO</label>
+        <link refid="classmty_1_1group_1_1SO"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mty::group::SU</label>
+        <link refid="classmty_1_1group_1_1SU"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mty::group::Sp</label>
+        <link refid="classmty_1_1group_1_1Sp"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mty::group::U1</label>
+        <link refid="classmty_1_1group_1_1U1"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>csl::Space</label>
+        <link refid="classcsl_1_1Space"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>symbolicDim</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>delta</edgelabel>
+          <edgelabel>epsilon</edgelabel>
+          <edgelabel>inverseMetric</edgelabel>
+          <edgelabel>metric</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mty::AbstractGroup</label>
+        <link refid="classmty_1_1AbstractGroup"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>gauged</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mty::Gauge</label>
+        <link refid="classmty_1_1Gauge"/>
+      </node>
+      <node id="3">
+        <label>mty::GaugedGroup</label>
+        <link refid="classmty_1_1GaugedGroup"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>gauge</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>group</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>coupling</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>adjointSpace</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>f</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>generator</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>boson</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>ghost</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mty::Generator</label>
+        <link refid="classmty_1_1Generator"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mty::IrrepMap&lt; mty::Generator &gt;</label>
+        <link refid="classmty_1_1IrrepMap"/>
+      </node>
+      <node id="1">
+        <label>mty::SemiSimpleGroup</label>
+        <link refid="classmty_1_1SemiSimpleGroup"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>std::shared_ptr&lt; GeneratorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="9">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="6">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="13">
+        <label>std::shared_ptr&lt; mty::GaugeBoson &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="14">
+        <label>std::shared_ptr&lt; mty::GhostBoson &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/group.h" line="210" column="1" bodyfile="src/marty/core/group.h" bodystart="210" bodyend="387"/>
+    <listofallmembers>
+      <member refid="classmty_1_1AbstractGroup_1adcfa90e344e550ef4eb31bef2b9cf0a5" prot="public" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>AbstractGroup</name></member>
+      <member refid="classmty_1_1AbstractGroup_1afbb9c29efba97aacd880bd6389d66012" prot="public" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>AbstractGroup</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a3f1605da17191cd78631157d0b0df29d" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>algebra</name></member>
+      <member refid="classmty_1_1AbstractGroup_1aefbcfa83804f7acbd0b3b93694dcabba" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>dim</name></member>
+      <member refid="classmty_1_1AbstractGroup_1ad67e79474a67e9434a87ba91ef4d86d3" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>gauged</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a592bd77bd23ccbfc4dfe15ad299cc4f3" prot="public" virt="virtual"><scope>mty::SemiSimpleGroup</scope><name>getAdjointRep</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a1af257679905aedc7feed434f5a1ace1" prot="public" virt="virtual"><scope>mty::SemiSimpleGroup</scope><name>getAlgebra</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a0a07acf25f62aea2cd8ba477fe978b0a" prot="public" virt="virtual"><scope>mty::SemiSimpleGroup</scope><name>getAllVectorSpace</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a39acccde07239d0b2ab74116f0b1c6a2" prot="public" virt="virtual"><scope>mty::SemiSimpleGroup</scope><name>getCorrespondingIndex</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a206ee8aff297cfb526fb99553cf28ea2" prot="public" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>getDim</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a622e80d80a7339161515ca1f0c2357a5" prot="public" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>getGaugedGroup</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a95a05472197b6785212540fda811c98d" prot="public" virt="virtual"><scope>mty::SemiSimpleGroup</scope><name>getHighestWeight</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a8cd596873edd138759f02d10d5fa4577" prot="public" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>getName</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a9242e469fb0e3d3c86f7897ba03adcb7" prot="public" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>getQuadraticCasimir</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1ae1e98e95d351ed86c20df592bddf2c24" prot="public" virt="virtual"><scope>mty::SemiSimpleGroup</scope><name>getTrivialRep</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a3bd2daf2393fab718e2cea21392ed52b" prot="public" virt="pure-virtual"><scope>mty::SemiSimpleGroup</scope><name>getType</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1af549263e0d55350d636fa82edd9acec5" prot="public" virt="virtual"><scope>mty::SemiSimpleGroup</scope><name>getVectorSpace</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a23925dcfec01c5bf963ccf504829415d" prot="public" virt="virtual"><scope>mty::SemiSimpleGroup</scope><name>highestWeightRep</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a859fa1942e9564d1d6f023de9c251a09" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>name</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1aa7de545c51c494c8f80eba695c269569" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>quadraticCasimir</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a6b4b186b68f71a5e6940c616f7c20f58" prot="public" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>SemiSimpleGroup</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1aab95fc4e4ebb7276086217daba5b6873" prot="public" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>SemiSimpleGroup</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a051277e572c8b6c06152e20cc7e52108" prot="public" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>setAlgebra</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a2ddd145c12dec58837f59112eb7272d5" prot="public" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>setGaugedGroup</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a44f258072322ed3c76d2ad5740effb2a" prot="public" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>tensorProduct</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1ac4656a1e2ecd13fc2bcf4a8b14e8db96" prot="public" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>tensorProduct</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1a3c706805c999baa5d4b1caed344d005f" prot="protected" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>vectorSpaces</name></member>
+      <member refid="classmty_1_1AbstractGroup_1a606b55ecff6e3a9be9e8090ff87fb7cd" prot="public" virt="virtual"><scope>mty::SemiSimpleGroup</scope><name>~AbstractGroup</name></member>
+      <member refid="classmty_1_1SemiSimpleGroup_1ae4d983be8e2f9760255a9ae7534fed8b" prot="public" virt="non-virtual"><scope>mty::SemiSimpleGroup</scope><name>~SemiSimpleGroup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

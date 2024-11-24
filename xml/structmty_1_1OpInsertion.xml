@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structmty_1_1OpInsertion" kind="struct" language="C++" prot="public">
+    <compoundname>mty::OpInsertion</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmty_1_1OpInsertion_1a0d293605dd542e078a6665fd9f02e3f0" prot="public" static="no" mutable="no">
+        <type><ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref></type>
+        <definition>mty::QuantumField mty::OpInsertion::field</definition>
+        <argsstring></argsstring>
+        <name>field</name>
+        <qualifiedname>mty::OpInsertion::field</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/builtinOperators.cpp" line="13" column="23" bodyfile="src/marty/core/builtinOperators.cpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmty_1_1OpInsertion_1af747f4a52b71b97b87705e4055add9e0" prot="public" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref></type>
+        <definition>csl::Tensor mty::OpInsertion::momentum</definition>
+        <argsstring></argsstring>
+        <name>momentum</name>
+        <qualifiedname>mty::OpInsertion::momentum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/builtinOperators.cpp" line="14" column="23" bodyfile="src/marty/core/builtinOperators.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>csl::Abstract</label>
+        <link refid="classcsl_1_1Abstract"/>
+      </node>
+      <node id="7">
+        <label>csl::AbstractBuildingBlock</label>
+        <link refid="classcsl_1_1AbstractBuildingBlock"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>csl::AbstractElement</label>
+        <link refid="classcsl_1_1AbstractElement"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>csl::Complexified</label>
+        <link refid="classcsl_1_1Complexified"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>csl::IndexStructure</label>
+        <link refid="classcsl_1_1IndexStructure"/>
+      </node>
+      <node id="11">
+        <label>csl::Tensor</label>
+        <link refid="classcsl_1_1Tensor"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>csl::TensorElement</label>
+        <link refid="classcsl_1_1TensorElement"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>index</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>csl::TensorFieldElement</label>
+        <link refid="classcsl_1_1TensorFieldElement"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>point</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::OpInsertion</label>
+        <link refid="structmty_1_1OpInsertion"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>field</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>momentum</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>mty::PartnerShip</label>
+        <link refid="structmty_1_1PartnerShip"/>
+      </node>
+      <node id="2">
+        <label>mty::QuantumField</label>
+        <link refid="classmty_1_1QuantumField"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>derivativeIndices</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>partnerShip</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>std::shared_ptr&lt; TensorParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+      <node id="9">
+        <label>std::shared_ptr&lt; csl::AbstractParent &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/builtinOperators.cpp" line="12" column="1" bodyfile="src/marty/core/builtinOperators.cpp" bodystart="12" bodyend="15"/>
+    <listofallmembers>
+      <member refid="structmty_1_1OpInsertion_1a0d293605dd542e078a6665fd9f02e3f0" prot="public" virt="non-virtual"><scope>mty::OpInsertion</scope><name>field</name></member>
+      <member refid="structmty_1_1OpInsertion_1af747f4a52b71b97b87705e4055add9e0" prot="public" virt="non-virtual"><scope>mty::OpInsertion</scope><name>momentum</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,965 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcsl_1_1Complex" kind="class" language="C++" prot="public">
+    <compoundname>csl::Complex</compoundname>
+    <basecompoundref refid="classcsl_1_1AbstractNumerical" prot="public" virt="non-virtual">csl::AbstractNumerical</basecompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classcsl_1_1Complex_1a2954f81f2288e793b7ae9e33e31d9892" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::Complex::real</definition>
+        <argsstring></argsstring>
+        <name>real</name>
+        <qualifiedname>csl::Complex::real</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Numerator. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="386" column="10" bodyfile="src/csl/numerical.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcsl_1_1Complex_1a1e8118d164e468662c5b2230f24e0f18" prot="protected" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::Complex::imag</definition>
+        <argsstring></argsstring>
+        <name>imag</name>
+        <qualifiedname>csl::Complex::imag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Denominator. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="388" column="10" bodyfile="src/csl/numerical.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcsl_1_1Complex_1a383d6b164ce284ae9af78cf4f9e4d876" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::Complex::Complex</definition>
+        <argsstring>()</argsstring>
+        <name>Complex</name>
+        <qualifiedname>csl::Complex::Complex</qualifiedname>
+        <briefdescription>
+<para>Default Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes <bold>num</bold> = 0 and <bold>denom</bold> = 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="394" column="5" bodyfile="src/csl/numerical.cpp" bodystart="722" bodyend="724"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1a9605e33addd9cbf8959de4ee2e4d4d3a" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::Complex::Complex</definition>
+        <argsstring>(Expr t_real)</argsstring>
+        <name>Complex</name>
+        <qualifiedname>csl::Complex::Complex</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+          <declname>t_real</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes <bold>num</bold> = <emphasis>t_num</emphasis> and <bold>denom</bold> = 1. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numerator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="399" column="14" bodyfile="src/csl/numerical.cpp" bodystart="726" bodyend="731"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1a0eb102abdbd9fd4d3293884c76e68e0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::Complex::Complex</definition>
+        <argsstring>(Expr t_real, Expr t_imag)</argsstring>
+        <name>Complex</name>
+        <qualifiedname>csl::Complex::Complex</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+          <declname>t_real</declname>
+        </param>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+          <declname>t_imag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes both the <bold>numerator</bold> and the <bold>denominator</bold>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numerator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t_denom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Denominator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="405" column="5" bodyfile="src/csl/numerical.cpp" bodystart="733" bodyend="744"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1ab203dc18378296c2b7d484773bec8746" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacecsl_1ace591865c69b6315c533a1a325777312" kindref="member">csl::Type</ref></type>
+        <definition>csl::Type csl::Complex::getType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getType</name>
+        <qualifiedname>csl::Complex::getType</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aa781456c3f801b37ce169c83514c51c1">getType</reimplements>
+        <briefdescription>
+<para>Gives the <bold>type</bold> of a <ref refid="classcsl_1_1Complex" kindref="compound">Complex</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>2 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="417" column="15" bodyfile="src/csl/numerical.cpp" bodystart="754" bodyend="757"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1a840991e02d47506b35ee49b16d8dd8b0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::Complex::print</definition>
+        <argsstring>(int mode=0, std::ostream &amp;out=std::cout, LibraryMode libMode=LibraryMode::NoLib) const override</argsstring>
+        <name>print</name>
+        <qualifiedname>csl::Complex::print</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aed56cb85894209a9bbc9b8bdada5e6ab">print</reimplements>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <param>
+          <type>LibraryMode</type>
+          <declname>libMode</declname>
+          <defval>LibraryMode::NoLib</defval>
+        </param>
+        <briefdescription>
+<para>Displays the abstract in standard output. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tells if the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> is printed alone (default) or in another expr. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="419" column="10" bodyfile="src/csl/numerical.cpp" bodystart="759" bodyend="784"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1a42441dddb02718d2a4fae5140ccf8b69" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void csl::Complex::printCode</definition>
+        <argsstring>(int mode=0, std::ostream &amp;out=std::cout) const override</argsstring>
+        <name>printCode</name>
+        <qualifiedname>csl::Complex::printCode</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractNumerical_1a740642e1d76ca38507b0033a3460e330">printCode</reimplements>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+          <defval>std::cout</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="423" column="10" bodyfile="src/csl/numerical.cpp" bodystart="786" bodyend="789"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1a8405fa57577ecae2935fa40b703db69b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string csl::Complex::printLaTeX</definition>
+        <argsstring>(int mode=0) const override</argsstring>
+        <name>printLaTeX</name>
+        <qualifiedname>csl::Complex::printLaTeX</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aa067d4a97135bfe2052a7e21c28f75be">printLaTeX</reimplements>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Creates a LaTeX output for the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tells if the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> is printed alone (default) or in another expr. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The string corresponding to the LaTeX output. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="425" column="17" bodyfile="src/csl/numerical.cpp" bodystart="791" bodyend="806"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1a4a5a2813d3cba5cc8c761959f3dd17fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>long double</type>
+        <definition>long double csl::Complex::evaluateScalar</definition>
+        <argsstring>() const override</argsstring>
+        <name>evaluateScalar</name>
+        <qualifiedname>csl::Complex::evaluateScalar</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a543d5a4f0432e166b492ad28a860a65f">evaluateScalar</reimplements>
+        <briefdescription>
+<para><bold>Evaluates</bold> the value of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Tries to replace all variables by a real value. If it is not possible (for example treating a <ref refid="classcsl_1_1Vector" kindref="compound">Vector</ref> or an <ref refid="classcsl_1_1Imaginary" kindref="compound">Imaginary</ref>) the considered object is replaced by 0. A warning message is displayed in the case of i. <simplesect kind="return"><para>The value of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> (double). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="427" column="17" bodyfile="src/csl/numerical.cpp" bodystart="808" bodyend="815"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1a0651cc75f7010f12fdd80cd0d458b568" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>std::optional&lt; Expr &gt; csl::Complex::evaluate</definition>
+        <argsstring>(csl::eval::mode user_mode=csl::eval::base) const override</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>csl::Complex::evaluate</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aa3a4cb7f30e2a422fe27a513e03d6600">evaluate</reimplements>
+        <param>
+          <type>csl::eval::mode</type>
+          <declname>user_mode</declname>
+          <defval>csl::eval::base</defval>
+        </param>
+        <briefdescription>
+<para><bold>Evaluates</bold> the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Replaces all variables by their value and evaluating. This function must be used instead of <ref refid="classcsl_1_1Complex_1a4a5a2813d3cba5cc8c761959f3dd17fb" kindref="member">evaluateScalar()</ref> when treating not only real scalars.* In particular (x=2, y=3) x+iy evaluates to 3+ 3i whereas <ref refid="classcsl_1_1Complex_1a4a5a2813d3cba5cc8c761959f3dd17fb" kindref="member">evaluateScalar()</ref> would return 3. <simplesect kind="return"><para>The abstract result of the evaluation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="429" column="19" bodyfile="src/csl/numerical.cpp" bodystart="817" bodyend="820"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1ad11186b2c93f279247bf3a1ec7ec439d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::Complex::isReal</definition>
+        <argsstring>() const override</argsstring>
+        <name>isReal</name>
+        <qualifiedname>csl::Complex::isReal</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1ac73aba0c48a4b5740f7bfa09e438ca99">isReal</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="432" column="10" bodyfile="src/csl/numerical.cpp" bodystart="822" bodyend="825"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1af7a51edded0bfb795da8c3d3521b2d75" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::Complex::isPurelyImaginary</definition>
+        <argsstring>() const override</argsstring>
+        <name>isPurelyImaginary</name>
+        <qualifiedname>csl::Complex::isPurelyImaginary</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1acb67e8e96735b8f116d0e7ab33d7be77">isPurelyImaginary</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="434" column="10" bodyfile="src/csl/numerical.cpp" bodystart="827" bodyend="830"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1a0a71859b7fdc28a6cd36290823282746" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>std::optional&lt; Expr &gt; csl::Complex::getRealPart</definition>
+        <argsstring>() const override</argsstring>
+        <name>getRealPart</name>
+        <qualifiedname>csl::Complex::getRealPart</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractBuildingBlock_1acd32aa346383a68ef69a48b56669deff">getRealPart</reimplements>
+        <briefdescription>
+<para><bold>Evaluates</bold> the <bold>real part</bold> of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> and returns it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The real part of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="436" column="19" bodyfile="src/csl/numerical.cpp" bodystart="832" bodyend="835"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1a38b17d76b63dc1afdb59c4405b1aff6d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::Complex::getImaginaryPart</definition>
+        <argsstring>() const override</argsstring>
+        <name>getImaginaryPart</name>
+        <qualifiedname>csl::Complex::getImaginaryPart</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a43f44bbb3685fc9f4a0402223b2e1004">getImaginaryPart</reimplements>
+        <briefdescription>
+<para><bold>Evaluates</bold> the <bold>imaginary part</bold> of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> and returns it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The imaginary part of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="438" column="10" bodyfile="src/csl/numerical.cpp" bodystart="837" bodyend="840"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1a3cbe87d94da0eeca27369afc69f2fa4d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>std::optional&lt; Expr &gt; csl::Complex::getComplexArgument</definition>
+        <argsstring>() const override</argsstring>
+        <name>getComplexArgument</name>
+        <qualifiedname>csl::Complex::getComplexArgument</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractNumerical_1af911961cd47a4cec8c31cb9fafaf74d6">getComplexArgument</reimplements>
+        <briefdescription>
+<para><bold>Evaluates</bold> the <bold>argument in the complex plane</bold> of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> and returns it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The argument part of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="440" column="19" bodyfile="src/csl/numerical.cpp" bodystart="842" bodyend="849"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1afc7177213e2612bddfe1e299847a0386" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>std::optional&lt; Expr &gt; csl::Complex::getComplexModulus</definition>
+        <argsstring>() const override</argsstring>
+        <name>getComplexModulus</name>
+        <qualifiedname>csl::Complex::getComplexModulus</qualifiedname>
+        <reimplements refid="classcsl_1_1AbstractBuildingBlock_1a09e06ecdb4eb9c6f8434c19ede046fa1">getComplexModulus</reimplements>
+        <briefdescription>
+<para><bold>Evaluates</bold> the <bold>modulus in the complex plane</bold> of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> and returns it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The modulus part of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="442" column="19" bodyfile="src/csl/numerical.cpp" bodystart="851" bodyend="854"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1ae87c5c2100541896a3b474d5908a6e3d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>std::optional&lt; Expr &gt; csl::Complex::getComplexConjugate</definition>
+        <argsstring>() const override</argsstring>
+        <name>getComplexConjugate</name>
+        <qualifiedname>csl::Complex::getComplexConjugate</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a03e8bdba20c6192a948892f212f09dbe">getComplexConjugate</reimplements>
+        <briefdescription>
+<para>Calculates and returns the complex conjugate of the expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>\bar{*this}. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="444" column="19" bodyfile="src/csl/numerical.cpp" bodystart="856" bodyend="861"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1a3759099b246aa5b877989c77c14f58c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>unique_Expr</type>
+        <definition>unique_Expr csl::Complex::copy_unique</definition>
+        <argsstring>() const override</argsstring>
+        <name>copy_unique</name>
+        <qualifiedname>csl::Complex::copy_unique</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aaa996819710adc3b7529c74a628be623">copy_unique</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="446" column="17" bodyfile="src/csl/numerical.cpp" bodystart="863" bodyend="866"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1aa4b9a83722d6088da865e5c3ff74f0ab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::Complex::refresh</definition>
+        <argsstring>() const override</argsstring>
+        <name>refresh</name>
+        <qualifiedname>csl::Complex::refresh</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aaeab3809e91989adbdf29c3f56d905b6">refresh</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="448" column="10" bodyfile="src/csl/numerical.cpp" bodystart="868" bodyend="871"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1a79889fc60628f60564ed7a60b1fad1a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::Complex::multiplication_own</definition>
+        <argsstring>(const Expr &amp;expr, bool side=1) const override</argsstring>
+        <name>multiplication_own</name>
+        <qualifiedname>csl::Complex::multiplication_own</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a4f5ed458ba62f5b4cf61a9e1f8568af1">multiplication_own</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>side</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Contains implementation of special multiplication for Numerical- and Vectorial-types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right operrand of the product. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The product of the two operands. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="450" column="10" bodyfile="src/csl/numerical.cpp" bodystart="873" bodyend="883"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1a69a2af4ec8f4f12a56cc1fc41223bc78" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::Complex::addition_own</definition>
+        <argsstring>(const Expr &amp;expr) const override</argsstring>
+        <name>addition_own</name>
+        <qualifiedname>csl::Complex::addition_own</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a101219973341a39cf15f07e5e1aa388f">addition_own</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Contains implementation of special addition for Numerical- and Vectorial-types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right operrand of the addition. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The sum of the two operands. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="452" column="10" bodyfile="src/csl/numerical.cpp" bodystart="885" bodyend="893"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1a63e2aab7c637beb7fa67ccbc9b8b8c12" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::Complex::division_own</definition>
+        <argsstring>(const Expr &amp;expr) const override</argsstring>
+        <name>division_own</name>
+        <qualifiedname>csl::Complex::division_own</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a1578c74aee1050b806a67e7a81a67f5c">division_own</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Contains implementation of special division for Numerical- and Polynomial-types. For polynomial, the euclidean division of two polynomials is implemented. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Right operrand of the division. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The division of the two operands. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="454" column="10" bodyfile="src/csl/numerical.cpp" bodystart="895" bodyend="903"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1a46dbf92ea6c22239857b6e41eb01b297" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref></type>
+        <definition>Expr csl::Complex::exponentiation_own</definition>
+        <argsstring>(const Expr &amp;expr) const override</argsstring>
+        <name>exponentiation_own</name>
+        <qualifiedname>csl::Complex::exponentiation_own</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aa2696a0feb43766ef54e1e3dd3d6d134">exponentiation_own</reimplements>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Contains implementation of special exponentiation for Numerical- and Vectorial-types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>exponent. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The exponentiation of the two operands. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="456" column="10" bodyfile="src/csl/numerical.cpp" bodystart="905" bodyend="931"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1acb2b53b0866d8fb7fb6a3911285944aa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &gt;</type>
+        <definition>std::optional&lt; Expr &gt; csl::Complex::derive</definition>
+        <argsstring>(Expr_info expr) const override</argsstring>
+        <name>derive</name>
+        <qualifiedname>csl::Complex::derive</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aecab8c872023a2d0771e7e4f83bb05f8">derive</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the derivative of the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> wrt another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is possible to derive wrt any complicated expr. In this case however, the calculation is <bold>not</bold> <bold>always</bold> <bold>mathematically</bold> <bold>correct</bold>. The program just searches for equal <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> or <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> with the same name. In particular dx/d(exp(x))=0. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression wrt which we derive. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The derivative. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="458" column="19" bodyfile="src/csl/numerical.cpp" bodystart="933" bodyend="936"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1aa13ebbff936c3fac16bdf2fc9eea1547" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool csl::Complex::operator==</definition>
+        <argsstring>(Expr_info expr) const override</argsstring>
+        <name>operator==</name>
+        <qualifiedname>csl::Complex::operator==</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1a3775f3088e784cc924cb7d26e118660e">operator==</reimplements>
+        <param>
+          <type><ref refid="classcsl_1_1Abstract" kindref="compound">Expr_info</ref></type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para><bold>Compares</bold> the <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> with another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Here if two Abstracts have the same name, the function will return <bold>true</bold> even if they are <bold>not</bold> <bold>mathematically</bold> <bold>equal</bold>. So beware not to name different things the same way. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> to compare. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if the two Abstracts are the same (or have the same name). </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="460" column="10" bodyfile="src/csl/numerical.cpp" bodystart="938" bodyend="943"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1Complex_1a1ae58dbeff771e3e071a3e60f5fc0dde" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::Complex::operator&lt;</definition>
+        <argsstring>(const Abstract *expr) const override</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>csl::Complex::operator&lt;</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> *</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="462" column="5" bodyfile="src/csl/simplification.cpp" bodystart="369" bodyend="385"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcsl_1_1Complex_1a58bf832e1c8568e681aa5979bd048663" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void csl::Complex::checkNumerical</definition>
+        <argsstring>(Expr const &amp;expr) const</argsstring>
+        <name>checkNumerical</name>
+        <qualifiedname>csl::Complex::checkNumerical</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/numerical.h" line="465" column="10" bodyfile="src/csl/numerical.cpp" bodystart="746" bodyend="752"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>csl::Abstract</label>
+        <link refid="classcsl_1_1Abstract"/>
+      </node>
+      <node id="3">
+        <label>csl::AbstractBuildingBlock</label>
+        <link refid="classcsl_1_1AbstractBuildingBlock"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>csl::AbstractNumerical</label>
+        <link refid="classcsl_1_1AbstractNumerical"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>csl::Complex</label>
+        <link refid="classcsl_1_1Complex"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>csl::Abstract</label>
+        <link refid="classcsl_1_1Abstract"/>
+      </node>
+      <node id="3">
+        <label>csl::AbstractBuildingBlock</label>
+        <link refid="classcsl_1_1AbstractBuildingBlock"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>csl::AbstractNumerical</label>
+        <link refid="classcsl_1_1AbstractNumerical"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>csl::Complex</label>
+        <link refid="classcsl_1_1Complex"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>imag</edgelabel>
+          <edgelabel>real</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/csl/numerical.h" line="383" column="1" bodyfile="src/csl/numerical.h" bodystart="383" bodyend="466"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1Abstract_1ad5fee68c1f3dcbda0e936926fed17616" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>Abstract</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1a64aaa989689a7e8c262e6d9fceaff10f" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>AbstractBuildingBlock</name></member>
+      <member refid="classcsl_1_1AbstractNumerical_1a3d3312099fc9e0a022bdf8894c9b7b38" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>AbstractNumerical</name></member>
+      <member refid="classcsl_1_1Abstract_1a5549ac0c186b3c6febf332245a25a82c" prot="public" virt="virtual"><scope>csl::Complex</scope><name>addAntiSymmetry</name></member>
+      <member refid="classcsl_1_1Abstract_1abbab11282e5c6ac46b018642ff129f47" prot="public" virt="virtual"><scope>csl::Complex</scope><name>addDependency</name></member>
+      <member refid="classcsl_1_1Complex_1a69a2af4ec8f4f12a56cc1fc41223bc78" prot="public" virt="virtual"><scope>csl::Complex</scope><name>addition_own</name></member>
+      <member refid="classcsl_1_1Abstract_1ad431770faa4291116a50175193a11a88" prot="public" virt="virtual"><scope>csl::Complex</scope><name>addSymmetry</name></member>
+      <member refid="classcsl_1_1Abstract_1acd972aed8326d4c13534594e061ee6da" prot="public" virt="virtual"><scope>csl::Complex</scope><name>antisymmetrise</name></member>
+      <member refid="classcsl_1_1Abstract_1a61d3ab932182226f4670a62bbb22af4e" prot="public" virt="virtual"><scope>csl::Complex</scope><name>applyDiracDelta</name></member>
+      <member refid="classcsl_1_1Abstract_1a316956fea77627a716500a2bbfc1f3b7" prot="public" virt="virtual"><scope>csl::Complex</scope><name>applyOperator</name></member>
+      <member refid="classcsl_1_1Abstract_1a6305ce90c795bfb416d8e958c62f905c" prot="public" virt="virtual"><scope>csl::Complex</scope><name>applySelfStructureOn</name></member>
+      <member refid="classcsl_1_1Abstract_1a27ad666bf7d533607da9675b0c645ee9" prot="public" virt="virtual"><scope>csl::Complex</scope><name>askTerm</name></member>
+      <member refid="classcsl_1_1Abstract_1aad54ed41b2ce9bad3364fe30ad1a0d71" prot="public" virt="virtual"><scope>csl::Complex</scope><name>begin</name></member>
+      <member refid="classcsl_1_1Abstract_1adff373df9477d4e38581d09cc6d2fee4" prot="public" virt="virtual"><scope>csl::Complex</scope><name>begin</name></member>
+      <member refid="classcsl_1_1Abstract_1aa4cba37520821432f37e212fefbc2534" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>breakSpace</name></member>
+      <member refid="classcsl_1_1Abstract_1af0f40b77914e45f56bf87839d00211d7" prot="public" virt="virtual"><scope>csl::Complex</scope><name>breakSpace</name></member>
+      <member refid="classcsl_1_1Abstract_1afd9d0336808e8adf4ccdccb51587ed8c" prot="public" virt="virtual"><scope>csl::Complex</scope><name>checkIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a1ebd84082bb93418408cc0babe2dffe2" prot="public" virt="virtual"><scope>csl::Complex</scope><name>checkIndexStructure</name></member>
+      <member refid="classcsl_1_1Complex_1a58bf832e1c8568e681aa5979bd048663" prot="private" virt="non-virtual"><scope>csl::Complex</scope><name>checkNumerical</name></member>
+      <member refid="classcsl_1_1Abstract_1ab3746f1d3667846824ea51b8a2e00d31" prot="public" virt="virtual"><scope>csl::Complex</scope><name>collect</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1add4dd8d4ed4ea0d8817fdd79abd744cc" prot="public" virt="virtual"><scope>csl::Complex</scope><name>commutesWith</name></member>
+      <member refid="classcsl_1_1Abstract_1a7caee12abb451168149779a668dfc59e" prot="public" virt="virtual"><scope>csl::Complex</scope><name>compareWithDummy</name></member>
+      <member refid="classcsl_1_1Abstract_1a0f16fda9fe72a89c61ece36101a11d95" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>compareWithDummy</name></member>
+      <member refid="classcsl_1_1Complex_1a383d6b164ce284ae9af78cf4f9e4d876" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>Complex</name></member>
+      <member refid="classcsl_1_1Complex_1a9605e33addd9cbf8959de4ee2e4d4d3a" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>Complex</name></member>
+      <member refid="classcsl_1_1Complex_1a0eb102abdbd9fd4d3293884c76e68e0e" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>Complex</name></member>
+      <member refid="classcsl_1_1Abstract_1aed79d20a0821205e6430c80a474117d3" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>contractIndex</name></member>
+      <member refid="classcsl_1_1Abstract_1ad874fc858295a737e6ce884530f1109b" prot="public" virt="virtual"><scope>csl::Complex</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1Abstract_1abd35096982e92b669ea55d960c5f44be" prot="public" virt="virtual"><scope>csl::Complex</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1Abstract_1af29c2898c5d3ba96de8018a0838c402c" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>copy</name></member>
+      <member refid="classcsl_1_1Complex_1a3759099b246aa5b877989c77c14f58c2" prot="public" virt="virtual"><scope>csl::Complex</scope><name>copy_unique</name></member>
+      <member refid="classcsl_1_1Abstract_1a09648782dcf2e81abb5b864f476cc410" prot="public" virt="virtual"><scope>csl::Complex</scope><name>deepCopy</name></member>
+      <member refid="classcsl_1_1Abstract_1a10358c33402ed520dc5888b25bb26af3" prot="public" virt="virtual"><scope>csl::Complex</scope><name>deepRefresh</name></member>
+      <member refid="classcsl_1_1AbstractNumerical_1a1cc3b916f6ff6b0b63c17095c1375adc" prot="public" virt="virtual"><scope>csl::Complex</scope><name>dependsExplicitlyOn</name></member>
+      <member refid="classcsl_1_1AbstractNumerical_1a8880d9ad418a9556b559fbdab2bb746b" prot="public" virt="virtual"><scope>csl::Complex</scope><name>dependsExplicitlyOn</name></member>
+      <member refid="classcsl_1_1AbstractNumerical_1afe459bd13460da89d77acb73d19baa59" prot="public" virt="virtual"><scope>csl::Complex</scope><name>dependsOn</name></member>
+      <member refid="classcsl_1_1AbstractNumerical_1aaf4b8f1aac21827fd06f743f711933a1" prot="public" virt="virtual"><scope>csl::Complex</scope><name>dependsOn</name></member>
+      <member refid="classcsl_1_1Complex_1acb2b53b0866d8fb7fb6a3911285944aa" prot="public" virt="virtual"><scope>csl::Complex</scope><name>derive</name></member>
+      <member refid="classcsl_1_1Abstract_1aeb08811cf370616477a92075e4a218ee" prot="public" virt="virtual"><scope>csl::Complex</scope><name>determinant</name></member>
+      <member refid="classcsl_1_1Complex_1a63e2aab7c637beb7fa67ccbc9b8b8c12" prot="public" virt="virtual"><scope>csl::Complex</scope><name>division_own</name></member>
+      <member refid="classcsl_1_1Abstract_1a4cc7a46deaa3eaa7593909d74e76d4af" prot="public" virt="virtual"><scope>csl::Complex</scope><name>dot</name></member>
+      <member refid="classcsl_1_1Abstract_1a0c3c3fe5010f24e8a8765ea06415c003" prot="public" virt="virtual"><scope>csl::Complex</scope><name>empty</name></member>
+      <member refid="classcsl_1_1Abstract_1a61e4e80d998a888a1a74d9ea3e10c0f1" prot="public" virt="virtual"><scope>csl::Complex</scope><name>end</name></member>
+      <member refid="classcsl_1_1Abstract_1ae2761d54f13310e13f5076d565edd7ef" prot="public" virt="virtual"><scope>csl::Complex</scope><name>end</name></member>
+      <member refid="classcsl_1_1Complex_1a0651cc75f7010f12fdd80cd0d458b568" prot="public" virt="virtual"><scope>csl::Complex</scope><name>evaluate</name></member>
+      <member refid="classcsl_1_1Complex_1a4a5a2813d3cba5cc8c761959f3dd17fb" prot="public" virt="virtual"><scope>csl::Complex</scope><name>evaluateScalar</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1a7cbbd2edd75a84057f1622826c1efd3a" prot="public" virt="virtual"><scope>csl::Complex</scope><name>expand</name></member>
+      <member refid="classcsl_1_1Abstract_1aeb48aaaa856582b6359037fe94d2419b" prot="public" virt="virtual"><scope>csl::Complex</scope><name>expand_if</name></member>
+      <member refid="classcsl_1_1Complex_1a46dbf92ea6c22239857b6e41eb01b297" prot="public" virt="virtual"><scope>csl::Complex</scope><name>exponentiation_own</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1a2f12cede626ece5382c9869d32c32146" prot="public" virt="virtual"><scope>csl::Complex</scope><name>factor</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1a447f940bf0a08d13297fde0b50b4cb84" prot="public" virt="virtual"><scope>csl::Complex</scope><name>factor</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1a4000d3f204c1957f5cffc0677dd754c0" prot="public" virt="virtual"><scope>csl::Complex</scope><name>findSubExpression</name></member>
+      <member refid="classcsl_1_1Abstract_1a021946e84d8c1a019908cac578b16fe8" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getAllDependencies</name></member>
+      <member refid="classcsl_1_1Abstract_1ac33a42309d629d47bfdbede4e152414e" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a06f542034e95744148f4fce5a4893e63" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a898d6cf2a7f348feacab189447bee1eb" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1aa689fb64eecb86edbde6c745d1ce756b" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1afeb26e1382411448ce3c65d50fefd8bb" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getCanonicalPermutation</name></member>
+      <member refid="classcsl_1_1Abstract_1a2263731ca94825f35281e69fb258cf87" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getCommutable</name></member>
+      <member refid="classcsl_1_1Complex_1a3cbe87d94da0eeca27369afc69f2fa4d" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getComplexArgument</name></member>
+      <member refid="classcsl_1_1Complex_1ae87c5c2100541896a3b474d5908a6e3d" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getComplexConjugate</name></member>
+      <member refid="classcsl_1_1Complex_1afc7177213e2612bddfe1e299847a0386" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getComplexModulus</name></member>
+      <member refid="classcsl_1_1Abstract_1a470d9f1267fba4a82e13af4a39470f81" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getComplexProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1af04c0e4426f0bf9df365afe0148d59df" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getContractedPair</name></member>
+      <member refid="classcsl_1_1Abstract_1aec707d949f0f98e08ab4642c93dd9eb5" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getContractionProperties</name></member>
+      <member refid="classcsl_1_1Abstract_1aa22f0e4c9c91f43b5cd61cbb873869eb" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getDeltaMinus</name></member>
+      <member refid="classcsl_1_1Abstract_1a69a657baf1c35ed581e9db2c47a71c99" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getDeltaPlus</name></member>
+      <member refid="classcsl_1_1Abstract_1a9531d78d67c82e288c0130da5b1ba80b" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getDenom</name></member>
+      <member refid="classcsl_1_1Abstract_1a5856c3d55a6d1406970f3656e61efe8e" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getDim</name></member>
+      <member refid="classcsl_1_1Abstract_1a77e067fc57c0c2e70d141079455fdbd7" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getElementary</name></member>
+      <member refid="classcsl_1_1Abstract_1ac513c930caa9939c2b9557f36a34ee69" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getExponents</name></member>
+      <member refid="classcsl_1_1Abstract_1ac34c9c6f05e692faeed2f030514787ad" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getFactors</name></member>
+      <member refid="classcsl_1_1Abstract_1aa4136dc23f1fba4bf897b54c8592ccfc" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getFreeIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1aa5b707a5efdaef7c7945cbd921c3f526" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getHermitianConjugate</name></member>
+      <member refid="classcsl_1_1Abstract_1aff5cca2b2c8190e59f6e34cb1e383d36" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getHermitianConjugate</name></member>
+      <member refid="classcsl_1_1Complex_1a38b17d76b63dc1afdb59c4405b1aff6d" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getImaginaryPart</name></member>
+      <member refid="classcsl_1_1Abstract_1a3234ce243f6a2e11950be42f10100943" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getIndex</name></member>
+      <member refid="classcsl_1_1Abstract_1ae125a32b6f3d0368b6055d4e58c1ff3f" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1ae6a9a9ef3efd6bb83b62c0a353742d25" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>getIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1addb848bf4cdea207484a71e9b1006ead" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getIndexStructureView</name></member>
+      <member refid="classcsl_1_1Abstract_1a632e28530a68539fadacd7ab7ffc8be1" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getIndexStructureView</name></member>
+      <member refid="classcsl_1_1Abstract_1a3d6b1e294cf24dea17c3c4361226138b" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getInfBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1a9c4a302d1a3cbf4dd9394f5e5880d343" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getLatexName</name></member>
+      <member refid="classcsl_1_1Abstract_1a652101e34b2efa43114150e9af3c79d5" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getLibDependency</name></member>
+      <member refid="classcsl_1_1Abstract_1af7f5e7466e754984a2c4394a112464f7" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getName</name></member>
+      <member refid="classcsl_1_1Abstract_1aa034448201c9e7998bbbb5e409636b30" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getNArgs</name></member>
+      <member refid="classcsl_1_1Abstract_1a42125e9765a771c47819548d342b0b28" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getNContractedPairs</name></member>
+      <member refid="classcsl_1_1Abstract_1a204dbd37b63432cb08932b995f49d3f4" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getNFactor</name></member>
+      <member refid="classcsl_1_1Abstract_1add364193f7a78ac28f7001c7f4036453" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getNIndices</name></member>
+      <member refid="classcsl_1_1Abstract_1a6aa6bcc7cb8ee1574f29dc6ab6c6f0ed" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getNum</name></member>
+      <member refid="classcsl_1_1AbstractNumerical_1ac3c2bbe76a12e7e7d08009b82e1fb7c1" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getNumericalFactor</name></member>
+      <member refid="classcsl_1_1Abstract_1a9c3ec3dfe1fbd8ead5c8d9aca421a863" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getOperand</name></member>
+      <member refid="classcsl_1_1Abstract_1a9500a21d75d03c695ec0c76493600b38" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getOrder</name></member>
+      <member refid="classcsl_1_1Abstract_1ae89eb7b1a9e0259a60154563f3315907" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getOrderOf</name></member>
+      <member refid="classcsl_1_1Abstract_1ab150130c9f67daaf6aba52b9f6b90941" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getParent</name></member>
+      <member refid="classcsl_1_1Abstract_1a15f775b5add9af8727ead2cfaab78ba2" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getParent_info</name></member>
+      <member refid="classcsl_1_1Abstract_1aea8459b3206eb3a2297eeea7688e9520" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getParity</name></member>
+      <member refid="classcsl_1_1Abstract_1a946d175d946da102c5f4cc91840703cb" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getPermutations</name></member>
+      <member refid="classcsl_1_1Abstract_1a06b32036fea6a2583f506a6ef9508d74" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getPoint</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1a05d8a8cf5ba9ae9563c09b65bac10c2f" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getPolynomialTerm</name></member>
+      <member refid="classcsl_1_1AbstractNumerical_1ab546a5a971f3547b7bbf2940465d70e9" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getPrimaryType</name></member>
+      <member refid="classcsl_1_1Abstract_1a07489d0569bc983718796d21c73f34b3" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getProduct</name></member>
+      <member refid="classcsl_1_1Complex_1a0a71859b7fdc28a6cd36290823282746" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getRealPart</name></member>
+      <member refid="classcsl_1_1Abstract_1a5b77f008f4b95030641224877004f06c" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getRegularExpression</name></member>
+      <member refid="classcsl_1_1Abstract_1a625efe55a17b97a1c0f085bdbf3a962a" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getShape</name></member>
+      <member refid="classcsl_1_1Abstract_1aa83df1d9dc202457113e5b38bd694fae" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getSign</name></member>
+      <member refid="classcsl_1_1AbstractNumerical_1a88d337861838fb27a99439beaa423677" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getSubSymbols</name></member>
+      <member refid="classcsl_1_1Abstract_1a7dcdc11b64c8c515933882168d0792ef" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a413c50b2663f57d38c1d3ec3cfeaa3ce" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a26a0854bca4c47e84a1da36a3de8c49f" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a29261a946b3398b6129237620754a8b9" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a8a067b70756c4eef758aa88076a95162" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1aeaf8154e39ff211b12e6382e675ccaad" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getSum</name></member>
+      <member refid="classcsl_1_1Abstract_1a2fcc223dbf5d880e923c07df142df5c8" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getSupBoundary</name></member>
+      <member refid="classcsl_1_1AbstractNumerical_1a092aae72532fd13bcc79392bd18ebfad" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getTerm</name></member>
+      <member refid="classcsl_1_1Abstract_1a404c5e89a3aad8a8dabcb56d4120c0fe" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getTransposed</name></member>
+      <member refid="classcsl_1_1Abstract_1aca3debb143668fd3ab75a27a47dd0c13" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getTransposed</name></member>
+      <member refid="classcsl_1_1Complex_1ab203dc18378296c2b7d484773bec8746" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getType</name></member>
+      <member refid="classcsl_1_1Abstract_1a78f98ba06476e464e3fd2fce0d1f8243" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getValue</name></member>
+      <member refid="classcsl_1_1Abstract_1a628563238145f3a9acc331f1a89ce32f" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getValued</name></member>
+      <member refid="classcsl_1_1Abstract_1ae85f810bbadbc792210c958e8f1b2ffb" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getVariable</name></member>
+      <member refid="classcsl_1_1Abstract_1ac83c44ae1e5315a38083bdb7acd8f3fa" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getVectorArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a0188b049736016c970a2513ed9f6931f" prot="public" virt="virtual"><scope>csl::Complex</scope><name>getVectorialModulus</name></member>
+      <member refid="classcsl_1_1Abstract_1a94bf1455397fdd2df8dbbc3b41c2f3f4" prot="public" virt="virtual"><scope>csl::Complex</scope><name>hasChainContractionProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1aa31e08c251d96b8ea8ec8d385895c1ff" prot="public" virt="virtual"><scope>csl::Complex</scope><name>hasContractionProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1a8c42723e8bc6334c99f00898cc1d59d7" prot="public" virt="virtual"><scope>csl::Complex</scope><name>hermitian</name></member>
+      <member refid="classcsl_1_1Complex_1a1e8118d164e468662c5b2230f24e0f18" prot="protected" virt="non-virtual"><scope>csl::Complex</scope><name>imag</name></member>
+      <member refid="classcsl_1_1Abstract_1a5437e7f685edf8549e6d3b34572343f8" prot="public" virt="virtual"><scope>csl::Complex</scope><name>insert</name></member>
+      <member refid="classcsl_1_1Abstract_1a1b68943aa7ecf60a63af0f2f368eef8f" prot="public" virt="virtual"><scope>csl::Complex</scope><name>inverseMatrix</name></member>
+      <member refid="classcsl_1_1Abstract_1a9347e75b0cd0b75e0f0a38db93b29d83" prot="public" virt="virtual"><scope>csl::Complex</scope><name>isAnOperator</name></member>
+      <member refid="classcsl_1_1Abstract_1ac09992d147b39388c8936b3bff648930" prot="public" virt="virtual"><scope>csl::Complex</scope><name>isArbitrary</name></member>
+      <member refid="classcsl_1_1AbstractBuildingBlock_1aee083330a4490359012cf0e656758a44" prot="public" virt="virtual"><scope>csl::Complex</scope><name>isBuildingBlock</name></member>
+      <member refid="classcsl_1_1Abstract_1a22a594845a29429c9b4f19c92bd18cad" prot="public" virt="virtual"><scope>csl::Complex</scope><name>isComplexConjugate</name></member>
+      <member refid="classcsl_1_1Abstract_1a464f4f0613db9b4b0a4efe26a3a03d60" prot="public" virt="virtual"><scope>csl::Complex</scope><name>isEmpty</name></member>
+      <member refid="classcsl_1_1Abstract_1af2ce38838e35c5785f92373a1d830668" prot="public" virt="virtual"><scope>csl::Complex</scope><name>isHermitianConjugate</name></member>
+      <member refid="classcsl_1_1Abstract_1a216b7bd3930fbf047e5bf8f69e9b964c" prot="public" virt="virtual"><scope>csl::Complex</scope><name>isIndexed</name></member>
+      <member refid="classcsl_1_1Abstract_1a9a014bfd266b5f8471f23580e271979b" prot="public" virt="virtual"><scope>csl::Complex</scope><name>isInteger</name></member>
+      <member refid="classcsl_1_1Abstract_1acae10d5685ccec295fbd9be7996073cb" prot="public" virt="virtual"><scope>csl::Complex</scope><name>isPolynomial</name></member>
+      <member refid="classcsl_1_1Complex_1af7a51edded0bfb795da8c3d3521b2d75" prot="public" virt="virtual"><scope>csl::Complex</scope><name>isPurelyImaginary</name></member>
+      <member refid="classcsl_1_1Complex_1ad11186b2c93f279247bf3a1ec7ec439d" prot="public" virt="virtual"><scope>csl::Complex</scope><name>isReal</name></member>
+      <member refid="classcsl_1_1Abstract_1ab79c1d8df9e6b1a3eca66958f7dc489d" prot="public" virt="virtual"><scope>csl::Complex</scope><name>matchShape</name></member>
+      <member refid="classcsl_1_1Abstract_1ac3978c71035bf1cda50f5b9031d631af" prot="public" virt="virtual"><scope>csl::Complex</scope><name>memoryOverhead</name></member>
+      <member refid="classcsl_1_1Complex_1a79889fc60628f60564ed7a60b1fad1a3" prot="public" virt="virtual"><scope>csl::Complex</scope><name>multiplication_own</name></member>
+      <member refid="classcsl_1_1Abstract_1af5b62a6308638064c42da80e9cc2cb7e" prot="public" virt="virtual"><scope>csl::Complex</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1af4fd1b57df371dac7ccfd5a909620e49" prot="public" virt="virtual"><scope>csl::Complex</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a96de5935a58a96d4c5b1e47966488923" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1ac99a619abde7e4c58f39e14d4d20fcf5" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a45206de7c7773b3cb150451ee3eb379e" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a0d3495220202bd417c1b58249c923f39" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Complex_1a1ae58dbeff771e3e071a3e60f5fc0dde" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a5c1ba8dce7fbc19eb98807bd15a279c9" prot="public" virt="pure-virtual" ambiguityscope="csl::AbstractNumerical::"><scope>csl::Complex</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a6e19587260a07dba65cf2a985e05516b" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractNumerical::"><scope>csl::Complex</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a2a1660498f2638f5e490d6e512eb32f4" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>operator&lt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1afbcac6df2fd7ac11f336189cf215124b" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>operator&lt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1a59ff2950fc8ca319f87a730450f14545" prot="public" virt="virtual"><scope>csl::Complex</scope><name>operator=</name></member>
+      <member refid="classcsl_1_1Complex_1aa13ebbff936c3fac16bdf2fc9eea1547" prot="public" virt="virtual"><scope>csl::Complex</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a8334e14cd5789168b037d3888ed60edd" prot="public" virt="virtual" ambiguityscope="csl::AbstractNumerical::"><scope>csl::Complex</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a12d929e34039e817e464abc560bd4a9d" prot="public" virt="virtual" ambiguityscope="csl::AbstractNumerical::"><scope>csl::Complex</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a1f78f0cce24c93def3050743bc5f2845" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractNumerical::"><scope>csl::Complex</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1aed43debcac4a19e0da44986774c522bc" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractNumerical::"><scope>csl::Complex</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a2376f08c0aa5ffe783090381d102d3ae" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractNumerical::"><scope>csl::Complex</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a485c6f3e10db539a70416cd0766b117d" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>operator&gt;</name></member>
+      <member refid="classcsl_1_1Abstract_1ab305bdf49212f03781e7f98024faeb66" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>operator&gt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a4c8883df19d7538b68fa96aadac9dfa9" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>operator&gt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1a6b931f7b159d57bad26ca9c9ea729aa1" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>operator&gt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1aa8331053065d1be2da89e70c45d24863" prot="public" virt="virtual"><scope>csl::Complex</scope><name>operator[]</name></member>
+      <member refid="classcsl_1_1Abstract_1a560aa9993d506551c54a8c02d1445814" prot="public" virt="virtual"><scope>csl::Complex</scope><name>operator[]</name></member>
+      <member refid="classcsl_1_1Abstract_1a75d9abfa88d9d09a89d3a4becd9e6429" prot="public" virt="virtual"><scope>csl::Complex</scope><name>operatorAppliesOn</name></member>
+      <member refid="classcsl_1_1Abstract_1abe9aceabbc0a99642e84c9025dbdc767" prot="public" virt="virtual"><scope>csl::Complex</scope><name>permut</name></member>
+      <member refid="classcsl_1_1Complex_1a840991e02d47506b35ee49b16d8dd8b0" prot="public" virt="virtual"><scope>csl::Complex</scope><name>print</name></member>
+      <member refid="classcsl_1_1Complex_1a42441dddb02718d2a4fae5140ccf8b69" prot="public" virt="virtual"><scope>csl::Complex</scope><name>printCode</name></member>
+      <member refid="classcsl_1_1Abstract_1a89e45ffc7b65f92e77e592f76f70934c" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>printExplicit</name></member>
+      <member refid="classcsl_1_1Complex_1a8405fa57577ecae2935fa40b703db69b" prot="public" virt="virtual"><scope>csl::Complex</scope><name>printLaTeX</name></member>
+      <member refid="classcsl_1_1Abstract_1a0645745feacf93470963b55f93cae1c0" prot="public" virt="virtual"><scope>csl::Complex</scope><name>printProp</name></member>
+      <member refid="classcsl_1_1Complex_1a2954f81f2288e793b7ae9e33e31d9892" prot="protected" virt="non-virtual"><scope>csl::Complex</scope><name>real</name></member>
+      <member refid="classcsl_1_1Complex_1aa4b9a83722d6088da865e5c3ff74f0ab" prot="public" virt="virtual"><scope>csl::Complex</scope><name>refresh</name></member>
+      <member refid="classcsl_1_1Abstract_1a8aab87c41acafaf1b1837b922495560d" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>regularLiteral</name></member>
+      <member refid="classcsl_1_1Abstract_1a2fe749450d2e610199801b189dc3d0f8" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>regularLiteral</name></member>
+      <member refid="classcsl_1_1Abstract_1aba5ef083016b2f3d9e6271f864b9b063" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>regularName</name></member>
+      <member refid="classcsl_1_1Abstract_1a1a8421d402d5ba82257188b545e8d668" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>regularName</name></member>
+      <member refid="classcsl_1_1Abstract_1a0e778c682b6cb02642b90e8ec8765441" prot="public" virt="virtual"><scope>csl::Complex</scope><name>removeDependency</name></member>
+      <member refid="classcsl_1_1Abstract_1acc0eb077e25c9a67d15269cf8d5f0511" prot="public" virt="virtual"><scope>csl::Complex</scope><name>replaceIndex</name></member>
+      <member refid="classcsl_1_1Abstract_1a9372ddd521fa661c5d3371e0d8d4dfc3" prot="public" virt="virtual"><scope>csl::Complex</scope><name>replaceIndexInPlace</name></member>
+      <member refid="classcsl_1_1Abstract_1ac9e54a236015d14af42b0bcde41953f3" prot="public" virt="virtual"><scope>csl::Complex</scope><name>replaceIndices</name></member>
+      <member refid="classcsl_1_1Abstract_1af0d95f3edc0562b1d75d60b670119842" prot="public" virt="virtual"><scope>csl::Complex</scope><name>resetIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a5c796713828ebfb74a7d8787d7802a76" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>self</name></member>
+      <member refid="classcsl_1_1Abstract_1aa6a40ceb6eb1aa79711ca126d5bdda02" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setAllDependencies</name></member>
+      <member refid="classcsl_1_1Abstract_1aab2d2ac186b56d17d2cc0a105e145b11" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a45c3adb7ba4e2b8442247246a3792b44" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a7bb29d316b8f64652cef472a6c23f001" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setCommutable</name></member>
+      <member refid="classcsl_1_1Abstract_1ae35385480a1be08f5e7433535b58ac0b" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setComplexProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1a37ebc247831d6629d44117a490fca120" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setConjugated</name></member>
+      <member refid="classcsl_1_1Abstract_1aa6a04bb56578e7da143b3cd8d8fb7b26" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setElementary</name></member>
+      <member refid="classcsl_1_1Abstract_1afa50c743b8e7e76e637e98f165ad4e5d" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setEmpty</name></member>
+      <member refid="classcsl_1_1Abstract_1ac318016372d14b795893fe7e59199084" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setFullyAntiSymmetric</name></member>
+      <member refid="classcsl_1_1Abstract_1a4f90ebb7cf7c26782bd36bc2a67fc5d4" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setFullySymmetric</name></member>
+      <member refid="classcsl_1_1Abstract_1a70f946f9c59df045ef7416320ade89c7" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a5ecdb6ce7a2d9643da2f6161a06dfbbf" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setInfBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1a867135c96776248add60018f4aa7a578" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setName</name></member>
+      <member refid="classcsl_1_1Abstract_1a70df7be4486affa8dc891e3f25bf499f" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setOperand</name></member>
+      <member refid="classcsl_1_1Abstract_1ae7b8a14fc746ed72e4d5abd63373c5ba" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setOperandPrivate</name></member>
+      <member refid="classcsl_1_1Abstract_1a3003698af4978e774eeb2e62038f7432" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setParent</name></member>
+      <member refid="classcsl_1_1Abstract_1a3c175411df619e7504feb6d888fc82f1" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setPoint</name></member>
+      <member refid="classcsl_1_1Abstract_1aad7104a5b8855272a92a47c58f29e958" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setSupBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1aaf7f0692cb84ca861a5b3b641bea518b" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setValue</name></member>
+      <member refid="classcsl_1_1Abstract_1aa49c51bd285830e724f103e9fb61c464" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setValue</name></member>
+      <member refid="classcsl_1_1Abstract_1aa47ddab3aa047e86be34c70358d53548" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setVariable</name></member>
+      <member refid="classcsl_1_1Abstract_1a83fee8ed28079bcac107455d58be9d5d" prot="public" virt="virtual"><scope>csl::Complex</scope><name>setVectorArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a3794843945b8a39e2c1be073c9bacdf5" prot="public" virt="virtual"><scope>csl::Complex</scope><name>size</name></member>
+      <member refid="classcsl_1_1Abstract_1a4eeedaeaa39e75facf1060dce7c57a8f" prot="public" virt="virtual"><scope>csl::Complex</scope><name>suppressExponent</name></member>
+      <member refid="classcsl_1_1Abstract_1a43520e1d6d5fdad9b50f77c6e027f928" prot="public" virt="virtual"><scope>csl::Complex</scope><name>suppressTerm</name></member>
+      <member refid="classcsl_1_1Abstract_1a4faf1ffd8cb3b6c721e128980c0303d8" prot="public" virt="virtual"><scope>csl::Complex</scope><name>symmetrise</name></member>
+      <member refid="classcsl_1_1Abstract_1a7b83c6a13716688f45b02e6291d39aba" prot="public" virt="virtual"><scope>csl::Complex</scope><name>tensordot</name></member>
+      <member refid="classcsl_1_1Abstract_1aee4fa41a5e014f067395467542ee8831" prot="public" virt="non-virtual"><scope>csl::Complex</scope><name>testDummy</name></member>
+      <member refid="classcsl_1_1Abstract_1a9a86d21f5c5f65eb7e524a8f8002c0e7" prot="public" virt="virtual"><scope>csl::Complex</scope><name>trace</name></member>
+      <member refid="classcsl_1_1Abstract_1aacab43e551e9259a39a79378373ce49c" prot="public" virt="virtual"><scope>csl::Complex</scope><name>trace</name></member>
+      <member refid="classcsl_1_1Abstract_1a1e97712696e5c40b28bc1e35987fea94" prot="public" virt="virtual"><scope>csl::Complex</scope><name>transpose</name></member>
+      <member refid="classcsl_1_1Abstract_1a40bdc4c76fdbbf3cbac3af4dce8286ed" prot="public" virt="virtual"><scope>csl::Complex</scope><name>~Abstract</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

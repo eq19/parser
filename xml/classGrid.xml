@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classGrid" kind="class" language="C++" prot="public">
+    <compoundname>Grid</compoundname>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classGrid_1a4abc7efdf241be8aeb130ae079203197" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>qint32</type>
+        <definition>qint32 Grid::defaultGridSize</definition>
+        <argsstring></argsstring>
+        <name>defaultGridSize</name>
+        <qualifiedname>Grid::defaultGridSize</qualifiedname>
+        <initializer>= 25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/grid.h" line="32" column="36" bodyfile="src/grafed/gui/grid.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGrid_1a4cd227f20cf60ef75e00af7f8f6dd903" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Grid::isShown</definition>
+        <argsstring></argsstring>
+        <name>isShown</name>
+        <qualifiedname>Grid::isShown</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/grid.h" line="57" column="32" bodyfile="src/grafed/gui/grid.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGrid_1a7fae80897a49b15c6b708015f9b8e367" prot="private" static="no" mutable="no">
+        <type>QGraphicsScene *</type>
+        <definition>QGraphicsScene* Grid::scene</definition>
+        <argsstring></argsstring>
+        <name>scene</name>
+        <qualifiedname>Grid::scene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/grid.h" line="58" column="31" bodyfile="src/grafed/gui/grid.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGrid_1ae34cb7915645acff5b8a62dff6194683" prot="private" static="no" mutable="no">
+        <type>QList&lt; QGraphicsLineItem * &gt;</type>
+        <definition>QList&lt;QGraphicsLineItem *&gt; Grid::lines</definition>
+        <argsstring></argsstring>
+        <name>lines</name>
+        <qualifiedname>Grid::lines</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/grid.h" line="59" column="11" bodyfile="src/grafed/gui/grid.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classGrid_1a0769881c259646fd9d8539a9444f7967" prot="public" static="no" mutable="no">
+        <type>qint32</type>
+        <definition>qint32 Grid::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>Grid::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/grid.h" line="62" column="12" bodyfile="src/grafed/gui/grid.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGrid_1a2ea2d749a81a7665df0ebbb6e15f9ff0" prot="public" static="no" mutable="no">
+        <type>qint32</type>
+        <definition>qint32 Grid::dl0</definition>
+        <argsstring></argsstring>
+        <name>dl0</name>
+        <qualifiedname>Grid::dl0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/grid.h" line="63" column="12" bodyfile="src/grafed/gui/grid.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGrid_1ab20201021d3b7e0eebf4588e3c193ff4" prot="public" static="no" mutable="no">
+        <type>QColor</type>
+        <definition>QColor Grid::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>Grid::color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/grid.h" line="64" column="12" bodyfile="src/grafed/gui/grid.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGrid_1aed7a85afeb2404e93cf6eb2c2085b0fe" prot="public" static="no" mutable="no">
+        <type>qint32</type>
+        <definition>qint32 Grid::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>Grid::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/grid.h" line="65" column="12" bodyfile="src/grafed/gui/grid.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGrid_1a5954a6e6684591e1f539d72d2867244c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Grid::Grid</definition>
+        <argsstring>(QGraphicsScene *t_scene=nullptr)</argsstring>
+        <name>Grid</name>
+        <qualifiedname>Grid::Grid</qualifiedname>
+        <param>
+          <type>QGraphicsScene *</type>
+          <declname>t_scene</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/grid.h" line="34" column="5" bodyfile="src/grafed/gui/grid.cpp" bodystart="19" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrid_1a3661d0a7f998caaaf8627d7a67072116" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Grid::~Grid</definition>
+        <argsstring>()</argsstring>
+        <name>~Grid</name>
+        <qualifiedname>Grid::~Grid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/grid.h" line="36" column="5" bodyfile="src/grafed/gui/grid.h" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrid_1a819c4f04ff2b6d6dc2d0893d634543d9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>qint32</type>
+        <definition>qint32 Grid::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <qualifiedname>Grid::getSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/grid.h" line="41" column="12" bodyfile="src/grafed/gui/grid.h" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrid_1a0881a609c42d438693b2ebe9531306ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grid::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>Grid::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/grid.h" line="46" column="10" bodyfile="src/grafed/gui/grid.cpp" bodystart="27" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrid_1a1f5ef041c1e00e3547605466a60f95d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grid::draw</definition>
+        <argsstring>(qint32 xmin, qint32 ymin, qint32 xmax, qint32 ymax, qint32 factor=0)</argsstring>
+        <name>draw</name>
+        <qualifiedname>Grid::draw</qualifiedname>
+        <param>
+          <type>qint32</type>
+          <declname>xmin</declname>
+        </param>
+        <param>
+          <type>qint32</type>
+          <declname>ymin</declname>
+        </param>
+        <param>
+          <type>qint32</type>
+          <declname>xmax</declname>
+        </param>
+        <param>
+          <type>qint32</type>
+          <declname>ymax</declname>
+        </param>
+        <param>
+          <type>qint32</type>
+          <declname>factor</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>factor == 0 means no factor factor = +n means grid-spacing multiplied by (n + 1) factor = -n means grid-spacing divided by (n + 1) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/grid.h" line="48" column="10" bodyfile="src/grafed/gui/grid.cpp" bodystart="41" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrid_1a64d5996bf995d56cb6023b8fac4eec92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grid::show</definition>
+        <argsstring>()</argsstring>
+        <name>show</name>
+        <qualifiedname>Grid::show</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/grid.h" line="51" column="10" bodyfile="src/grafed/gui/grid.cpp" bodystart="94" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrid_1a1d7c5e21541036429c12317a73b0afaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grid::hide</definition>
+        <argsstring>()</argsstring>
+        <name>hide</name>
+        <qualifiedname>Grid::hide</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/grid.h" line="52" column="10" bodyfile="src/grafed/gui/grid.cpp" bodystart="100" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrid_1af0fa342fa25f1ee1e35f4265fc635340" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grid::setScene</definition>
+        <argsstring>(QGraphicsScene *t_scene)</argsstring>
+        <name>setScene</name>
+        <qualifiedname>Grid::setScene</qualifiedname>
+        <param>
+          <type>QGraphicsScene *</type>
+          <declname>t_scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/grid.h" line="54" column="10" bodyfile="src/grafed/gui/grid.cpp" bodystart="107" bodyend="110"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/grafed/gui/grid.h" line="30" column="1" bodyfile="src/grafed/gui/grid.h" bodystart="30" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classGrid_1a0881a609c42d438693b2ebe9531306ba" prot="public" virt="non-virtual"><scope>Grid</scope><name>clear</name></member>
+      <member refid="classGrid_1ab20201021d3b7e0eebf4588e3c193ff4" prot="public" virt="non-virtual"><scope>Grid</scope><name>color</name></member>
+      <member refid="classGrid_1a4abc7efdf241be8aeb130ae079203197" prot="public" virt="non-virtual"><scope>Grid</scope><name>defaultGridSize</name></member>
+      <member refid="classGrid_1a2ea2d749a81a7665df0ebbb6e15f9ff0" prot="public" virt="non-virtual"><scope>Grid</scope><name>dl0</name></member>
+      <member refid="classGrid_1a1f5ef041c1e00e3547605466a60f95d9" prot="public" virt="non-virtual"><scope>Grid</scope><name>draw</name></member>
+      <member refid="classGrid_1a819c4f04ff2b6d6dc2d0893d634543d9" prot="public" virt="non-virtual"><scope>Grid</scope><name>getSize</name></member>
+      <member refid="classGrid_1a5954a6e6684591e1f539d72d2867244c" prot="public" virt="non-virtual"><scope>Grid</scope><name>Grid</name></member>
+      <member refid="classGrid_1a1d7c5e21541036429c12317a73b0afaa" prot="public" virt="non-virtual"><scope>Grid</scope><name>hide</name></member>
+      <member refid="classGrid_1a4cd227f20cf60ef75e00af7f8f6dd903" prot="private" virt="non-virtual"><scope>Grid</scope><name>isShown</name></member>
+      <member refid="classGrid_1ae34cb7915645acff5b8a62dff6194683" prot="private" virt="non-virtual"><scope>Grid</scope><name>lines</name></member>
+      <member refid="classGrid_1a7fae80897a49b15c6b708015f9b8e367" prot="private" virt="non-virtual"><scope>Grid</scope><name>scene</name></member>
+      <member refid="classGrid_1af0fa342fa25f1ee1e35f4265fc635340" prot="public" virt="non-virtual"><scope>Grid</scope><name>setScene</name></member>
+      <member refid="classGrid_1a64d5996bf995d56cb6023b8fac4eec92" prot="public" virt="non-virtual"><scope>Grid</scope><name>show</name></member>
+      <member refid="classGrid_1a0769881c259646fd9d8539a9444f7967" prot="public" virt="non-virtual"><scope>Grid</scope><name>size</name></member>
+      <member refid="classGrid_1aed7a85afeb2404e93cf6eb2c2085b0fe" prot="public" virt="non-virtual"><scope>Grid</scope><name>width</name></member>
+      <member refid="classGrid_1a3661d0a7f998caaaf8627d7a67072116" prot="public" virt="non-virtual"><scope>Grid</scope><name>~Grid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

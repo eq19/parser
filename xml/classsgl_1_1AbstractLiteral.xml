@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classsgl_1_1AbstractLiteral" kind="class" language="C++" prot="public">
+    <compoundname>sgl::AbstractLiteral</compoundname>
+    <basecompoundref refid="classsgl_1_1AbstractGammaSym" prot="public" virt="non-virtual">sgl::AbstractGammaSym</basecompoundref>
+    <derivedcompoundref refid="classsgl_1_1AbstractGeneralizedIndex" prot="public" virt="non-virtual">sgl::AbstractGeneralizedIndex</derivedcompoundref>
+    <derivedcompoundref refid="classsgl_1_1CSLExpr" prot="public" virt="non-virtual">sgl::CSLExpr</derivedcompoundref>
+    <derivedcompoundref refid="classsgl_1_1Field" prot="public" virt="non-virtual">sgl::Field</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsgl_1_1AbstractLiteral_1a138e83d163d9978b52241cc4e3e30ceb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t sgl::AbstractLiteral::size</definition>
+        <argsstring>() const override</argsstring>
+        <name>size</name>
+        <qualifiedname>sgl::AbstractLiteral::size</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1af03e2d4e5e4d5903de8b4b9a354fe637">size</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/multifunction.h" line="55" column="20" bodyfile="src/marty/sgl/multifunction.cpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1AbstractLiteral_1a1c8f91c428236fd112084566ff9f798d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref> const &amp;</type>
+        <definition>GExpr const  &amp; sgl::AbstractLiteral::argument</definition>
+        <argsstring>(size_t i) const override</argsstring>
+        <name>argument</name>
+        <qualifiedname>sgl::AbstractLiteral::argument</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1a8701e8b38ffbcb4aa1047c5b64db8559">argument</reimplements>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/multifunction.h" line="56" column="19" bodyfile="src/marty/sgl/multifunction.cpp" bodystart="79" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1AbstractLiteral_1a6de99d632158d0544e7536f141ab4d25" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref> &amp;</type>
+        <definition>GExpr &amp; sgl::AbstractLiteral::argument</definition>
+        <argsstring>(size_t i) override</argsstring>
+        <name>argument</name>
+        <qualifiedname>sgl::AbstractLiteral::argument</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1a3a693f5932728e3ec60fbe9608d78e42">argument</reimplements>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/multifunction.h" line="57" column="19" bodyfile="src/marty/sgl/multifunction.cpp" bodystart="84" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1AbstractLiteral_1a3bb5fe1156b3e85bc02536077626e95e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>iterator</type>
+        <definition>AbstractGammaSym::iterator sgl::AbstractLiteral::begin</definition>
+        <argsstring>() override</argsstring>
+        <name>begin</name>
+        <qualifiedname>sgl::AbstractLiteral::begin</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1ac5aed1e81016a47792a9119cd5305e86">begin</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/multifunction.h" line="58" column="20" bodyfile="src/marty/sgl/multifunction.cpp" bodystart="89" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1AbstractLiteral_1ad9662a88c502549ea76e5cfc9fa76a0c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const_iterator</type>
+        <definition>AbstractGammaSym::const_iterator sgl::AbstractLiteral::begin</definition>
+        <argsstring>() const override</argsstring>
+        <name>begin</name>
+        <qualifiedname>sgl::AbstractLiteral::begin</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1a52bcf6218d458d807beb4487a78db146">begin</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/multifunction.h" line="59" column="20" bodyfile="src/marty/sgl/multifunction.cpp" bodystart="94" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1AbstractLiteral_1ad063835e8cc5fe232c4f858fb100fbf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>iterator</type>
+        <definition>AbstractGammaSym::iterator sgl::AbstractLiteral::end</definition>
+        <argsstring>() override</argsstring>
+        <name>end</name>
+        <qualifiedname>sgl::AbstractLiteral::end</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1ab11d90398b4288cb038db49ecffb3a7b">end</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/multifunction.h" line="60" column="20" bodyfile="src/marty/sgl/multifunction.cpp" bodystart="99" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1AbstractLiteral_1a93c2311786e32222681acf8f5ba7a5b8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const_iterator</type>
+        <definition>AbstractGammaSym::const_iterator sgl::AbstractLiteral::end</definition>
+        <argsstring>() const override</argsstring>
+        <name>end</name>
+        <qualifiedname>sgl::AbstractLiteral::end</qualifiedname>
+        <reimplements refid="classsgl_1_1AbstractGammaSym_1ad69d610c1c7e8b715c30c74bc9d05077">end</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/multifunction.h" line="61" column="20" bodyfile="src/marty/sgl/multifunction.cpp" bodystart="104" bodyend="108"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>sgl::AbstractGammaSym</label>
+        <link refid="classsgl_1_1AbstractGammaSym"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sgl::AbstractGeneralizedIndex</label>
+        <link refid="classsgl_1_1AbstractGeneralizedIndex"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sgl::AbstractLiteral</label>
+        <link refid="classsgl_1_1AbstractLiteral"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>sgl::CSLExpr</label>
+        <link refid="classsgl_1_1CSLExpr"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sgl::EpsilonIndex</label>
+        <link refid="classsgl_1_1EpsilonIndex"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>sgl::Field</label>
+        <link refid="classsgl_1_1Field"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>sgl::GammaIndex</label>
+        <link refid="classsgl_1_1GammaIndex"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>sgl::MetricIndex</label>
+        <link refid="classsgl_1_1MetricIndex"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>sgl::MomentumIndex</label>
+        <link refid="classsgl_1_1MomentumIndex"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::enable_shared_from_this&lt; AbstractGammaSym &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>sgl::AbstractGammaSym</label>
+        <link refid="classsgl_1_1AbstractGammaSym"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sgl::AbstractLiteral</label>
+        <link refid="classsgl_1_1AbstractLiteral"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::enable_shared_from_this&lt; AbstractGammaSym &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/sgl/multifunction.h" line="52" column="1" bodyfile="src/marty/sgl/multifunction.h" bodystart="52" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classsgl_1_1AbstractLiteral_1a1c8f91c428236fd112084566ff9f798d" prot="public" virt="virtual"><scope>sgl::AbstractLiteral</scope><name>argument</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1a6de99d632158d0544e7536f141ab4d25" prot="public" virt="virtual"><scope>sgl::AbstractLiteral</scope><name>argument</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1a3bb5fe1156b3e85bc02536077626e95e" prot="public" virt="virtual"><scope>sgl::AbstractLiteral</scope><name>begin</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1ad9662a88c502549ea76e5cfc9fa76a0c" prot="public" virt="virtual"><scope>sgl::AbstractLiteral</scope><name>begin</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a84a8f29afaabbe187d15d13a9fac4059" prot="public" virt="non-virtual"><scope>sgl::AbstractLiteral</scope><name>const_iterator</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a6918d61d7d9639a578fed132b0eba9f0" prot="public" virt="pure-virtual"><scope>sgl::AbstractLiteral</scope><name>contains</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1af757efe5cd359a3d83f1ef642c4fec8b" prot="public" virt="pure-virtual"><scope>sgl::AbstractLiteral</scope><name>copy</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1ad063835e8cc5fe232c4f858fb100fbf3" prot="public" virt="virtual"><scope>sgl::AbstractLiteral</scope><name>end</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1a93c2311786e32222681acf8f5ba7a5b8" prot="public" virt="virtual"><scope>sgl::AbstractLiteral</scope><name>end</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1ac033f1bea41f9a1001abba5b9305ce3e" prot="public" virt="non-virtual"><scope>sgl::AbstractLiteral</scope><name>errorPrint</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a62ed9a539963b9146ac05c0efafffd47" prot="public" virt="virtual"><scope>sgl::AbstractLiteral</scope><name>expr</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1acefd4f5cee624ddff586cb005ed2510a" prot="public" virt="virtual"><scope>sgl::AbstractLiteral</scope><name>expr</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a5e749ec71535aae944635a29bdb7eeba" prot="public" virt="virtual"><scope>sgl::AbstractLiteral</scope><name>getFactor</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a75034a33b0e554585206b38961960113" prot="public" virt="virtual"><scope>sgl::AbstractLiteral</scope><name>getTerm</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1ade647a5eec39ac5e5e6de2d612b8cdd3" prot="public" virt="virtual"><scope>sgl::AbstractLiteral</scope><name>hasPropertyWith</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a984f2acddc646a42a7ace28ffe96f1d3" prot="public" virt="virtual"><scope>sgl::AbstractLiteral</scope><name>indices</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a3e2d18fdc22a8012e1179e132c5cdaf3" prot="public" virt="virtual"><scope>sgl::AbstractLiteral</scope><name>indices</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1adfe9ff61706305c5c0eb268dd2653d0d" prot="public" virt="pure-virtual"><scope>sgl::AbstractLiteral</scope><name>isZero</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a7ecc40fa38a2c881f0e1b2af81e699f4" prot="public" virt="non-virtual"><scope>sgl::AbstractLiteral</scope><name>iterator</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a167b1ff6b236463f5c2cb2cff18b7109" prot="public" virt="pure-virtual"><scope>sgl::AbstractLiteral</scope><name>print</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1abdacec8b02e4d1b58b9b938ae9be8e98" prot="public" virt="virtual"><scope>sgl::AbstractLiteral</scope><name>propertyWith</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a13cc14a47f1ddf8fb51b0861e93c1d00" prot="public" virt="pure-virtual"><scope>sgl::AbstractLiteral</scope><name>refresh</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a7e40a14116fc813571670c09065016d9" prot="public" virt="pure-virtual"><scope>sgl::AbstractLiteral</scope><name>replace</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a37c54670ee0262b62a55279b23e7ce12" prot="public" virt="non-virtual"><scope>sgl::AbstractLiteral</scope><name>self</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a2c8730e190c88413a50d6f7b6864a97b" prot="public" virt="virtual"><scope>sgl::AbstractLiteral</scope><name>simplify</name></member>
+      <member refid="classsgl_1_1AbstractLiteral_1a138e83d163d9978b52241cc4e3e30ceb" prot="public" virt="virtual"><scope>sgl::AbstractLiteral</scope><name>size</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a2c88557366387dab3a16a1e71aa192a6" prot="public" virt="pure-virtual"><scope>sgl::AbstractLiteral</scope><name>toCSL</name></member>
+      <member refid="classsgl_1_1AbstractGammaSym_1a2be842099a79d1c07130664367ed9d91" prot="public" virt="virtual"><scope>sgl::AbstractLiteral</scope><name>~AbstractGammaSym</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

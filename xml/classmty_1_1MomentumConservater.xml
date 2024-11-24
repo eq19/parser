@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1MomentumConservater" kind="class" language="C++" prot="public">
+    <compoundname>mty::MomentumConservater</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1MomentumConservater_1a026cee37533a8a2ae7ca07cd9cc89a80" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; bool &gt;</type>
+        <definition>std::vector&lt;bool&gt; mty::MomentumConservater::signs</definition>
+        <argsstring></argsstring>
+        <name>signs</name>
+        <qualifiedname>mty::MomentumConservater::signs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/momentumConservation.h" line="49" column="24" bodyfile="src/marty/core/momentumConservation.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1MomentumConservater_1af5a0a15d17fc193c58a3e6ded87cbfbb" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &gt;</type>
+        <definition>std::vector&lt;csl::Tensor&gt; mty::MomentumConservater::momenta</definition>
+        <argsstring></argsstring>
+        <name>momenta</name>
+        <qualifiedname>mty::MomentumConservater::momenta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/momentumConservation.h" line="50" column="17" bodyfile="src/marty/core/momentumConservation.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1MomentumConservater_1ace9bb90fe8af73dfac9137aa4108414b" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t mty::MomentumConservater::posSimplestMomenta</definition>
+        <argsstring></argsstring>
+        <name>posSimplestMomenta</name>
+        <qualifiedname>mty::MomentumConservater::posSimplestMomenta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/momentumConservation.h" line="51" column="30" bodyfile="src/marty/core/momentumConservation.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1MomentumConservater_1a1a4b2295da5c4342786f84bd17fa1e69" prot="private" static="no" mutable="no">
+        <type><ref refid="classcsl_1_1Index" kindref="compound">csl::Index</ref></type>
+        <definition>csl::Index mty::MomentumConservater::mu</definition>
+        <argsstring></argsstring>
+        <name>mu</name>
+        <qualifiedname>mty::MomentumConservater::mu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/momentumConservation.h" line="52" column="30" bodyfile="src/marty/core/momentumConservation.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1MomentumConservater_1a972555f8658e8a99d52d86680043ab4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::MomentumConservater::MomentumConservater</definition>
+        <argsstring>(std::vector&lt; mty::QuantumField &gt; const &amp;insertions, std::vector&lt; csl::Tensor &gt; const &amp;t_momenta)</argsstring>
+        <name>MomentumConservater</name>
+        <qualifiedname>mty::MomentumConservater::MomentumConservater</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> &gt; const &amp;</type>
+          <declname>insertions</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref> &gt; const &amp;</type>
+          <declname>t_momenta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/momentumConservation.h" line="34" column="5" bodyfile="src/marty/core/momentumConservation.cpp" bodystart="20" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1MomentumConservater_1add5843a768636957092e5d687f43fa43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::MomentumConservater::apply</definition>
+        <argsstring>(csl::Expr &amp;expr)</argsstring>
+        <name>apply</name>
+        <qualifiedname>mty::MomentumConservater::apply</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/momentumConservation.h" line="36" column="10" bodyfile="src/marty/core/momentumConservation.cpp" bodystart="39" bodyend="58"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmty_1_1MomentumConservater_1af2d0a460f420e80c1ddfe8c892b4f494" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::MomentumConservater::findMomentum</definition>
+        <argsstring>(csl::Expr const &amp;sub)</argsstring>
+        <name>findMomentum</name>
+        <qualifiedname>mty::MomentumConservater::findMomentum</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>sub</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/momentumConservation.h" line="39" column="28" bodyfile="src/marty/core/momentumConservation.cpp" bodystart="60" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1MomentumConservater_1aaa9bd3a13d07d1299c1db323f116bee6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>std::vector&lt; csl::Expr &gt; mty::MomentumConservater::isMomentumSum</definition>
+        <argsstring>(csl::Expr const &amp;sub)</argsstring>
+        <name>isMomentumSum</name>
+        <qualifiedname>mty::MomentumConservater::isMomentumSum</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>sub</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/momentumConservation.h" line="40" column="17" bodyfile="src/marty/core/momentumConservation.cpp" bodystart="71" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1MomentumConservater_1a2e0a33d3eade71178d98946f3f922f59" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>std::optional&lt; csl::Expr &gt; mty::MomentumConservater::applyOnMomentumSum</definition>
+        <argsstring>(std::vector&lt; csl::Expr &gt; &amp;factors)</argsstring>
+        <name>applyOnMomentumSum</name>
+        <qualifiedname>mty::MomentumConservater::applyOnMomentumSum</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &amp;</type>
+          <declname>factors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/momentumConservation.h" line="42" column="5" bodyfile="src/marty/core/momentumConservation.cpp" bodystart="91" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1MomentumConservater_1a536074f5e7f05deceaa3a552670deb7a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; int, <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt;</type>
+        <definition>std::pair&lt; int, csl::Expr &gt; mty::MomentumConservater::getMomentumStructure</definition>
+        <argsstring>(csl::Expr const &amp;term)</argsstring>
+        <name>getMomentumStructure</name>
+        <qualifiedname>mty::MomentumConservater::getMomentumStructure</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/momentumConservation.h" line="44" column="15" bodyfile="src/marty/core/momentumConservation.cpp" bodystart="100" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1MomentumConservater_1a21b1f32062407ca8f6b0f031b1e3ca6d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::MomentumConservater::simplify</definition>
+        <argsstring>(std::vector&lt; csl::Expr &gt; &amp;factors)</argsstring>
+        <name>simplify</name>
+        <qualifiedname>mty::MomentumConservater::simplify</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; &amp;</type>
+          <declname>factors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/momentumConservation.h" line="45" column="31" bodyfile="src/marty/core/momentumConservation.cpp" bodystart="133" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1MomentumConservater_1a329eb70611690cce6a07ef235738f259" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::MomentumConservater::recoverExpr</definition>
+        <argsstring>(std::vector&lt; csl::Expr &gt; const &amp;factors)</argsstring>
+        <name>recoverExpr</name>
+        <qualifiedname>mty::MomentumConservater::recoverExpr</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &gt; const &amp;</type>
+          <declname>factors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/momentumConservation.h" line="46" column="15" bodyfile="src/marty/core/momentumConservation.cpp" bodystart="164" bodyend="175"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/core/momentumConservation.h" line="31" column="1" bodyfile="src/marty/core/momentumConservation.h" bodystart="31" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classmty_1_1MomentumConservater_1add5843a768636957092e5d687f43fa43" prot="public" virt="non-virtual"><scope>mty::MomentumConservater</scope><name>apply</name></member>
+      <member refid="classmty_1_1MomentumConservater_1a2e0a33d3eade71178d98946f3f922f59" prot="private" virt="non-virtual"><scope>mty::MomentumConservater</scope><name>applyOnMomentumSum</name></member>
+      <member refid="classmty_1_1MomentumConservater_1af2d0a460f420e80c1ddfe8c892b4f494" prot="private" virt="non-virtual"><scope>mty::MomentumConservater</scope><name>findMomentum</name></member>
+      <member refid="classmty_1_1MomentumConservater_1a536074f5e7f05deceaa3a552670deb7a" prot="private" virt="non-virtual"><scope>mty::MomentumConservater</scope><name>getMomentumStructure</name></member>
+      <member refid="classmty_1_1MomentumConservater_1aaa9bd3a13d07d1299c1db323f116bee6" prot="private" virt="non-virtual"><scope>mty::MomentumConservater</scope><name>isMomentumSum</name></member>
+      <member refid="classmty_1_1MomentumConservater_1af5a0a15d17fc193c58a3e6ded87cbfbb" prot="private" virt="non-virtual"><scope>mty::MomentumConservater</scope><name>momenta</name></member>
+      <member refid="classmty_1_1MomentumConservater_1a972555f8658e8a99d52d86680043ab4d" prot="public" virt="non-virtual"><scope>mty::MomentumConservater</scope><name>MomentumConservater</name></member>
+      <member refid="classmty_1_1MomentumConservater_1a1a4b2295da5c4342786f84bd17fa1e69" prot="private" virt="non-virtual"><scope>mty::MomentumConservater</scope><name>mu</name></member>
+      <member refid="classmty_1_1MomentumConservater_1ace9bb90fe8af73dfac9137aa4108414b" prot="private" virt="non-virtual"><scope>mty::MomentumConservater</scope><name>posSimplestMomenta</name></member>
+      <member refid="classmty_1_1MomentumConservater_1a329eb70611690cce6a07ef235738f259" prot="private" virt="non-virtual"><scope>mty::MomentumConservater</scope><name>recoverExpr</name></member>
+      <member refid="classmty_1_1MomentumConservater_1a026cee37533a8a2ae7ca07cd9cc89a80" prot="private" virt="non-virtual"><scope>mty::MomentumConservater</scope><name>signs</name></member>
+      <member refid="classmty_1_1MomentumConservater_1a21b1f32062407ca8f6b0f031b1e3ca6d" prot="private" virt="non-virtual"><scope>mty::MomentumConservater</scope><name>simplify</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

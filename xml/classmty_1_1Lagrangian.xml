@@ -1,0 +1,604 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1Lagrangian" kind="class" language="C++" prot="public">
+    <compoundname>mty::Lagrangian</compoundname>
+    <includes refid="lagrangian_8h" local="no">lagrangian.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classmty_1_1Lagrangian_1aa878bc59da65fb2f3024df5fc1cf0133" prot="public" static="no">
+        <type><ref refid="classstd_1_1shared__ptr" kindref="compound">InteractionTerm::TermType</ref></type>
+        <definition>using mty::Lagrangian::TermType =  InteractionTerm::TermType</definition>
+        <argsstring></argsstring>
+        <name>TermType</name>
+        <qualifiedname>mty::Lagrangian::TermType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="53" column="5" bodyfile="src/marty/core/lagrangian.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmty_1_1Lagrangian_1aa8f4c0ec289ce4e55678252c06e65889" prot="protected" static="no" mutable="yes">
+        <type>bool</type>
+        <definition>bool mty::Lagrangian::expressionComputed</definition>
+        <argsstring></argsstring>
+        <name>expressionComputed</name>
+        <qualifiedname>mty::Lagrangian::expressionComputed</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="56" column="18" bodyfile="src/marty/core/lagrangian.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Lagrangian_1a825f3dbff0df5225b16d7e69e96e7315" prot="protected" static="no" mutable="yes">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Lagrangian::expression</definition>
+        <argsstring></argsstring>
+        <name>expression</name>
+        <qualifiedname>mty::Lagrangian::expression</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="58" column="23" bodyfile="src/marty/core/lagrangian.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmty_1_1Lagrangian_1adb1f6f53dd8ebc2c583d593947107686" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">TermType</ref> &gt;</type>
+        <definition>std::vector&lt;TermType&gt; mty::Lagrangian::kinetic</definition>
+        <argsstring></argsstring>
+        <name>kinetic</name>
+        <qualifiedname>mty::Lagrangian::kinetic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="61" column="17" bodyfile="src/marty/core/lagrangian.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Lagrangian_1a13beb9f2f0ccc98100780033c13cc81a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">TermType</ref> &gt;</type>
+        <definition>std::vector&lt;TermType&gt; mty::Lagrangian::mass</definition>
+        <argsstring></argsstring>
+        <name>mass</name>
+        <qualifiedname>mty::Lagrangian::mass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="63" column="17" bodyfile="src/marty/core/lagrangian.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmty_1_1Lagrangian_1abb0bc487a8df5e312d265b57d594507d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">TermType</ref> &gt;</type>
+        <definition>std::vector&lt;TermType&gt; mty::Lagrangian::interaction</definition>
+        <argsstring></argsstring>
+        <name>interaction</name>
+        <qualifiedname>mty::Lagrangian::interaction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="65" column="17" bodyfile="src/marty/core/lagrangian.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1acbac3c30be7ababca31f3f87cbbb372f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Lagrangian::Lagrangian</definition>
+        <argsstring>()</argsstring>
+        <name>Lagrangian</name>
+        <qualifiedname>mty::Lagrangian::Lagrangian</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="68" column="5" bodyfile="src/marty/core/lagrangian.cpp" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1a4257a6867048cb0a25bafa13a66aa630" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::Lagrangian::Lagrangian</definition>
+        <argsstring>(const Lagrangian &amp;other)=default</argsstring>
+        <name>Lagrangian</name>
+        <qualifiedname>mty::Lagrangian::Lagrangian</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1Lagrangian" kindref="compound">Lagrangian</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="70" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1ac145cd66f818da1c40b8b939edb0c89f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mty::Lagrangian::~Lagrangian</definition>
+        <argsstring>()</argsstring>
+        <name>~Lagrangian</name>
+        <qualifiedname>mty::Lagrangian::~Lagrangian</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="72" column="5" bodyfile="src/marty/core/lagrangian.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1a090f1135ce346e6f2a90bd76d5ee4b69" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::Lagrangian::contains</definition>
+        <argsstring>(const TermType &amp;searchTerm) const</argsstring>
+        <name>contains</name>
+        <qualifiedname>mty::Lagrangian::contains</qualifiedname>
+        <param>
+          <type>const <ref refid="classstd_1_1shared__ptr" kindref="compound">TermType</ref> &amp;</type>
+          <declname>searchTerm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="74" column="10" bodyfile="src/marty/core/lagrangian.cpp" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1a805d943deaa0524052f5c2778c05232b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::Lagrangian::contains</definition>
+        <argsstring>(const InteractionTerm &amp;searchTerm) const</argsstring>
+        <name>contains</name>
+        <qualifiedname>mty::Lagrangian::contains</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1InteractionTerm" kindref="compound">InteractionTerm</ref> &amp;</type>
+          <declname>searchTerm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="75" column="10" bodyfile="src/marty/core/lagrangian.cpp" bodystart="56" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1a79f70f11bc277f215154034976628849" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Lagrangian::getExpression</definition>
+        <argsstring>() const</argsstring>
+        <name>getExpression</name>
+        <qualifiedname>mty::Lagrangian::getExpression</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="77" column="15" bodyfile="src/marty/core/lagrangian.cpp" bodystart="70" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1acb4d71a5a4fade650ee0e3c9a25c05ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Tensor" kindref="compound">csl::Tensor</ref></type>
+        <definition>csl::Tensor mty::Lagrangian::getPoint</definition>
+        <argsstring>() const</argsstring>
+        <name>getPoint</name>
+        <qualifiedname>mty::Lagrangian::getPoint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="79" column="17" bodyfile="src/marty/core/lagrangian.cpp" bodystart="87" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1a8df140cd6be76984e45df35c203b0fb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Lagrangian::mergeTerms</definition>
+        <argsstring>()</argsstring>
+        <name>mergeTerms</name>
+        <qualifiedname>mty::Lagrangian::mergeTerms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="81" column="10" bodyfile="src/marty/core/lagrangian.cpp" bodystart="99" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1aee237f46fe53eb996b8ac2deb8d9daf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Lagrangian::removeParticle</definition>
+        <argsstring>(Particle const &amp;particle)</argsstring>
+        <name>removeParticle</name>
+        <qualifiedname>mty::Lagrangian::removeParticle</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1Particle" kindref="compound">Particle</ref> const &amp;</type>
+          <declname>particle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="83" column="10" bodyfile="src/marty/core/lagrangian.cpp" bodystart="106" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1a530ea3daff59230cc89400e07f3fa27b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref></type>
+        <definition>csl::Expr mty::Lagrangian::operator()</definition>
+        <argsstring>(const csl::Expr &amp;point)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>mty::Lagrangian::operator()</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="85" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1a06738e075c66d7c2a2e4fd43df94f4ac" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t mty::Lagrangian::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>mty::Lagrangian::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="87" column="12" bodyfile="src/marty/core/lagrangian.h" bodystart="123" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1a1f8d7556fe279c5797de6c835986660a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t mty::Lagrangian::fullSize</definition>
+        <argsstring>() const</argsstring>
+        <name>fullSize</name>
+        <qualifiedname>mty::Lagrangian::fullSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="89" column="12" bodyfile="src/marty/core/lagrangian.h" bodystart="128" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1a39fab36dd5c24537e6c921329549455d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::Lagrangian::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>mty::Lagrangian::empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="91" column="10" bodyfile="src/marty/core/lagrangian.h" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1a96309323b32b23fe856926fd61af1925" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::Lagrangian::totalEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>totalEmpty</name>
+        <qualifiedname>mty::Lagrangian::totalEmpty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="93" column="10" bodyfile="src/marty/core/lagrangian.h" bodystart="138" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1a293ee27528c112aca0f3ff5ad683bddc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classstd_1_1shared__ptr" kindref="compound">TermType</ref></type>
+        <definition>Lagrangian::TermType mty::Lagrangian::operator[]</definition>
+        <argsstring>(size_t pos) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>mty::Lagrangian::operator[]</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="95" column="14" bodyfile="src/marty/core/lagrangian.h" bodystart="143" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1a5ef2ddfc17ebca6b10debc98373c7af7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classstd_1_1shared__ptr" kindref="compound">TermType</ref> &amp;</type>
+        <definition>Lagrangian::TermType &amp; mty::Lagrangian::operator[]</definition>
+        <argsstring>(size_t pos)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>mty::Lagrangian::operator[]</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="97" column="14" bodyfile="src/marty/core/lagrangian.h" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1a24752cc584f3361de52890a4f481c9a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">TermType</ref> &gt;::iterator</type>
+        <definition>std::vector&lt; Lagrangian::TermType &gt;::iterator mty::Lagrangian::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>mty::Lagrangian::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="99" column="28" bodyfile="src/marty/core/lagrangian.h" bodystart="153" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1adeae46752d37fc6afe1be240efae77be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">TermType</ref> &gt;::iterator</type>
+        <definition>std::vector&lt; Lagrangian::TermType &gt;::iterator mty::Lagrangian::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>mty::Lagrangian::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="101" column="28" bodyfile="src/marty/core/lagrangian.h" bodystart="158" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1a993e85915ca1978c0a22f59d3a6ea64a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">TermType</ref> &gt;::const_iterator</type>
+        <definition>std::vector&lt; Lagrangian::TermType &gt;::const_iterator mty::Lagrangian::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>mty::Lagrangian::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="103" column="34" bodyfile="src/marty/core/lagrangian.h" bodystart="164" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1a9740e8af0ea68c6d929001e4f31577b6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">TermType</ref> &gt;::const_iterator</type>
+        <definition>std::vector&lt; Lagrangian::TermType &gt;::const_iterator mty::Lagrangian::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>mty::Lagrangian::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="105" column="34" bodyfile="src/marty/core/lagrangian.h" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1afec35fc7dbc96e9c437ae008933e3399" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Lagrangian::push_back</definition>
+        <argsstring>(const csl::Expr &amp;newTerm)</argsstring>
+        <name>push_back</name>
+        <qualifiedname>mty::Lagrangian::push_back</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>newTerm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="107" column="10" bodyfile="src/marty/core/lagrangian.cpp" bodystart="192" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1a8f53a5385110f7eb12f8ac1a45498ffd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Lagrangian::push_back</definition>
+        <argsstring>(InteractionTerm const &amp;newTerm)</argsstring>
+        <name>push_back</name>
+        <qualifiedname>mty::Lagrangian::push_back</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1InteractionTerm" kindref="compound">InteractionTerm</ref> const &amp;</type>
+          <declname>newTerm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="109" column="10" bodyfile="src/marty/core/lagrangian.cpp" bodystart="201" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1aeb59215adf8efa6219ab3d90f68df144" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Lagrangian::push_back</definition>
+        <argsstring>(TermType const &amp;newTerm)</argsstring>
+        <name>push_back</name>
+        <qualifiedname>mty::Lagrangian::push_back</qualifiedname>
+        <param>
+          <type><ref refid="classstd_1_1shared__ptr" kindref="compound">TermType</ref> const &amp;</type>
+          <declname>newTerm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="111" column="10" bodyfile="src/marty/core/lagrangian.cpp" bodystart="207" bodyend="223"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmty_1_1Lagrangian_1ad3daabdff61a7eb6321ca02cad6c2850" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;fout, const Lagrangian &amp;L)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::Lagrangian::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1Lagrangian" kindref="compound">Lagrangian</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="113" column="12" bodyfile="src/marty/core/lagrangian.cpp" bodystart="239" bodyend="258"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1a16c227c7627fe2411b9adfcbf88b11b6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Lagrangian::mergeTerms</definition>
+        <argsstring>(std::vector&lt; TermType &gt; &amp;terms)</argsstring>
+        <name>mergeTerms</name>
+        <qualifiedname>mty::Lagrangian::mergeTerms</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">TermType</ref> &gt; &amp;</type>
+          <declname>terms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="115" column="17" bodyfile="src/marty/core/lagrangian.cpp" bodystart="125" bodyend="190"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1ad93b4b3a9c10d1d381f17c5357b6aa62" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Lagrangian::ensurePoint</definition>
+        <argsstring>(csl::Expr &amp;expr)</argsstring>
+        <name>ensurePoint</name>
+        <qualifiedname>mty::Lagrangian::ensurePoint</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="118" column="10" bodyfile="src/marty/core/lagrangian.cpp" bodystart="225" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1Lagrangian_1ae8be9256f905c1907d3240cf2bc6dbf2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::Lagrangian::ensurePoint</definition>
+        <argsstring>(InteractionTerm &amp;term)</argsstring>
+        <name>ensurePoint</name>
+        <qualifiedname>mty::Lagrangian::ensurePoint</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1InteractionTerm" kindref="compound">InteractionTerm</ref> &amp;</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/lagrangian.h" line="120" column="10" bodyfile="src/marty/core/lagrangian.cpp" bodystart="234" bodyend="237"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Interaction lagrangian of a model, allows to get all diagrams for a particular process by expanding it the exponential way. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::Lagrangian</label>
+        <link refid="classmty_1_1Lagrangian"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>expression</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/lagrangian.h" line="50" column="1" bodyfile="src/marty/core/lagrangian.h" bodystart="50" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classmty_1_1Lagrangian_1a24752cc584f3361de52890a4f481c9a5" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>begin</name></member>
+      <member refid="classmty_1_1Lagrangian_1a993e85915ca1978c0a22f59d3a6ea64a" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>begin</name></member>
+      <member refid="classmty_1_1Lagrangian_1a090f1135ce346e6f2a90bd76d5ee4b69" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>contains</name></member>
+      <member refid="classmty_1_1Lagrangian_1a805d943deaa0524052f5c2778c05232b" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>contains</name></member>
+      <member refid="classmty_1_1Lagrangian_1a39fab36dd5c24537e6c921329549455d" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>empty</name></member>
+      <member refid="classmty_1_1Lagrangian_1adeae46752d37fc6afe1be240efae77be" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>end</name></member>
+      <member refid="classmty_1_1Lagrangian_1a9740e8af0ea68c6d929001e4f31577b6" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>end</name></member>
+      <member refid="classmty_1_1Lagrangian_1ad93b4b3a9c10d1d381f17c5357b6aa62" prot="protected" virt="non-virtual"><scope>mty::Lagrangian</scope><name>ensurePoint</name></member>
+      <member refid="classmty_1_1Lagrangian_1ae8be9256f905c1907d3240cf2bc6dbf2" prot="protected" virt="non-virtual"><scope>mty::Lagrangian</scope><name>ensurePoint</name></member>
+      <member refid="classmty_1_1Lagrangian_1a825f3dbff0df5225b16d7e69e96e7315" prot="protected" virt="non-virtual"><scope>mty::Lagrangian</scope><name>expression</name></member>
+      <member refid="classmty_1_1Lagrangian_1aa8f4c0ec289ce4e55678252c06e65889" prot="protected" virt="non-virtual"><scope>mty::Lagrangian</scope><name>expressionComputed</name></member>
+      <member refid="classmty_1_1Lagrangian_1a1f8d7556fe279c5797de6c835986660a" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>fullSize</name></member>
+      <member refid="classmty_1_1Lagrangian_1a79f70f11bc277f215154034976628849" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>getExpression</name></member>
+      <member refid="classmty_1_1Lagrangian_1acb4d71a5a4fade650ee0e3c9a25c05ef" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>getPoint</name></member>
+      <member refid="classmty_1_1Lagrangian_1abb0bc487a8df5e312d265b57d594507d" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>interaction</name></member>
+      <member refid="classmty_1_1Lagrangian_1adb1f6f53dd8ebc2c583d593947107686" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>kinetic</name></member>
+      <member refid="classmty_1_1Lagrangian_1acbac3c30be7ababca31f3f87cbbb372f" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>Lagrangian</name></member>
+      <member refid="classmty_1_1Lagrangian_1a4257a6867048cb0a25bafa13a66aa630" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>Lagrangian</name></member>
+      <member refid="classmty_1_1Lagrangian_1a13beb9f2f0ccc98100780033c13cc81a" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>mass</name></member>
+      <member refid="classmty_1_1Lagrangian_1a8df140cd6be76984e45df35c203b0fb3" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>mergeTerms</name></member>
+      <member refid="classmty_1_1Lagrangian_1a16c227c7627fe2411b9adfcbf88b11b6" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>mergeTerms</name></member>
+      <member refid="classmty_1_1Lagrangian_1a530ea3daff59230cc89400e07f3fa27b" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>operator()</name></member>
+      <member refid="classmty_1_1Lagrangian_1ad3daabdff61a7eb6321ca02cad6c2850" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classmty_1_1Lagrangian_1a293ee27528c112aca0f3ff5ad683bddc" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>operator[]</name></member>
+      <member refid="classmty_1_1Lagrangian_1a5ef2ddfc17ebca6b10debc98373c7af7" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>operator[]</name></member>
+      <member refid="classmty_1_1Lagrangian_1afec35fc7dbc96e9c437ae008933e3399" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>push_back</name></member>
+      <member refid="classmty_1_1Lagrangian_1a8f53a5385110f7eb12f8ac1a45498ffd" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>push_back</name></member>
+      <member refid="classmty_1_1Lagrangian_1aeb59215adf8efa6219ab3d90f68df144" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>push_back</name></member>
+      <member refid="classmty_1_1Lagrangian_1aee237f46fe53eb996b8ac2deb8d9daf3" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>removeParticle</name></member>
+      <member refid="classmty_1_1Lagrangian_1a06738e075c66d7c2a2e4fd43df94f4ac" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>size</name></member>
+      <member refid="classmty_1_1Lagrangian_1aa878bc59da65fb2f3024df5fc1cf0133" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>TermType</name></member>
+      <member refid="classmty_1_1Lagrangian_1a96309323b32b23fe856926fd61af1925" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>totalEmpty</name></member>
+      <member refid="classmty_1_1Lagrangian_1ac145cd66f818da1c40b8b939edb0c89f" prot="public" virt="non-virtual"><scope>mty::Lagrangian</scope><name>~Lagrangian</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

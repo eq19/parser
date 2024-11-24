@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classHTMLConverter" kind="class" language="C++" prot="public">
+    <compoundname>HTMLConverter</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classHTMLConverter_1a2138e657eea396c5a6eb194f20b01b98" prot="private" static="yes" mutable="no">
+        <type>std::vector&lt; QChar &gt;</type>
+        <definition>std::vector&lt;QChar&gt; HTMLConverter::separators</definition>
+        <argsstring></argsstring>
+        <name>separators</name>
+        <qualifiedname>HTMLConverter::separators</qualifiedname>
+        <initializer>= {&apos;\\&apos;, &apos;(&apos;, &apos;)&apos;, &apos;_&apos;, &apos;^&apos;, &apos;{&apos;, &apos;}&apos;, &apos; &apos;, &apos;&lt;&apos;, &apos;&gt;&apos;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/htmlconverter.h" line="48" column="31" bodyfile="src/grafed/gui/htmlconverter.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classHTMLConverter_1a813f2f7c585cb4d9d034a752cd02953c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HTMLConverter::HTMLConverter</definition>
+        <argsstring>()=delete</argsstring>
+        <name>HTMLConverter</name>
+        <qualifiedname>HTMLConverter::HTMLConverter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/htmlconverter.h" line="33" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classHTMLConverter_1aa6e4040dcb051ac10b0c8c385c951bb9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString HTMLConverter::fromLatex</definition>
+        <argsstring>(QString const &amp;init)</argsstring>
+        <name>fromLatex</name>
+        <qualifiedname>HTMLConverter::fromLatex</qualifiedname>
+        <param>
+          <type>QString const &amp;</type>
+          <declname>init</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/htmlconverter.h" line="35" column="20" bodyfile="src/grafed/gui/htmlconverter.cpp" bodystart="20" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classHTMLConverter_1a57cf5d815a8aa2d7844b15ffd89f4449" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HTMLConverter::isSeparator</definition>
+        <argsstring>(QChar c)</argsstring>
+        <name>isSeparator</name>
+        <qualifiedname>HTMLConverter::isSeparator</qualifiedname>
+        <param>
+          <type>QChar</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/htmlconverter.h" line="38" column="20" bodyfile="src/grafed/gui/htmlconverter.cpp" bodystart="76" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classHTMLConverter_1a9daa1a1d18e796e0ea96a4afcf1f07fe" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString HTMLConverter::readToSeparator</definition>
+        <argsstring>(QString::const_iterator &amp;iter, QString::const_iterator end)</argsstring>
+        <name>readToSeparator</name>
+        <qualifiedname>HTMLConverter::readToSeparator</qualifiedname>
+        <param>
+          <type>QString::const_iterator &amp;</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>QString::const_iterator</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/htmlconverter.h" line="39" column="20" bodyfile="src/grafed/gui/htmlconverter.cpp" bodystart="94" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classHTMLConverter_1a62e48405a296f1d6edb3895cc93acef1" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString HTMLConverter::readTo</definition>
+        <argsstring>(QChar c, QString::const_iterator &amp;iter, QString::const_iterator end)</argsstring>
+        <name>readTo</name>
+        <qualifiedname>HTMLConverter::readTo</qualifiedname>
+        <param>
+          <type>QChar</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>QString::const_iterator &amp;</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>QString::const_iterator</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/htmlconverter.h" line="41" column="20" bodyfile="src/grafed/gui/htmlconverter.cpp" bodystart="107" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classHTMLConverter_1a1b763a973735247b127faeea662f0697" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString HTMLConverter::readSingle</definition>
+        <argsstring>(QString::const_iterator &amp;iter, QString::const_iterator end)</argsstring>
+        <name>readSingle</name>
+        <qualifiedname>HTMLConverter::readSingle</qualifiedname>
+        <param>
+          <type>QString::const_iterator &amp;</type>
+          <declname>iter</declname>
+        </param>
+        <param>
+          <type>QString::const_iterator</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/htmlconverter.h" line="44" column="20" bodyfile="src/grafed/gui/htmlconverter.cpp" bodystart="82" bodyend="92"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/grafed/gui/htmlconverter.h" line="30" column="1" bodyfile="src/grafed/gui/htmlconverter.h" bodystart="30" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classHTMLConverter_1aa6e4040dcb051ac10b0c8c385c951bb9" prot="public" virt="non-virtual"><scope>HTMLConverter</scope><name>fromLatex</name></member>
+      <member refid="classHTMLConverter_1a813f2f7c585cb4d9d034a752cd02953c" prot="public" virt="non-virtual"><scope>HTMLConverter</scope><name>HTMLConverter</name></member>
+      <member refid="classHTMLConverter_1a57cf5d815a8aa2d7844b15ffd89f4449" prot="private" virt="non-virtual"><scope>HTMLConverter</scope><name>isSeparator</name></member>
+      <member refid="classHTMLConverter_1a1b763a973735247b127faeea662f0697" prot="private" virt="non-virtual"><scope>HTMLConverter</scope><name>readSingle</name></member>
+      <member refid="classHTMLConverter_1a62e48405a296f1d6edb3895cc93acef1" prot="private" virt="non-virtual"><scope>HTMLConverter</scope><name>readTo</name></member>
+      <member refid="classHTMLConverter_1a9daa1a1d18e796e0ea96a4afcf1f07fe" prot="private" virt="non-virtual"><scope>HTMLConverter</scope><name>readToSeparator</name></member>
+      <member refid="classHTMLConverter_1a2138e657eea396c5a6eb194f20b01b98" prot="private" virt="non-virtual"><scope>HTMLConverter</scope><name>separators</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classsgl_1_1GExpr" kind="class" language="C++" prot="public">
+    <compoundname>sgl::GExpr</compoundname>
+    <basecompoundref refid="classstd_1_1shared__ptr" prot="public" virt="non-virtual">std::shared_ptr&lt; AbstractGammaSym &gt;</basecompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classsgl_1_1GExpr_1a0334c1c5053b55d91a603f283225905f" prot="public" static="no">
+        <type>AbstractGammaSym::iterator</type>
+        <definition>using sgl::GExpr::iterator =  AbstractGammaSym::iterator</definition>
+        <argsstring></argsstring>
+        <name>iterator</name>
+        <qualifiedname>sgl::GExpr::iterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/abstractgammasym.h" line="89" column="5" bodyfile="src/marty/sgl/abstractgammasym.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsgl_1_1GExpr_1af57629abc61461365a49b5d414de1498" prot="public" static="no">
+        <type>AbstractGammaSym::const_iterator</type>
+        <definition>using sgl::GExpr::const_iterator =  AbstractGammaSym::const_iterator</definition>
+        <argsstring></argsstring>
+        <name>const_iterator</name>
+        <qualifiedname>sgl::GExpr::const_iterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/abstractgammasym.h" line="90" column="5" bodyfile="src/marty/sgl/abstractgammasym.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsgl_1_1GExpr_1ad352efda2e0b3f7047fc4e9601387db0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sgl::GExpr::GExpr</definition>
+        <argsstring>(csl::Expr const &amp;expr)</argsstring>
+        <name>GExpr</name>
+        <qualifiedname>sgl::GExpr::GExpr</qualifiedname>
+        <param>
+          <type><ref refid="classcsl_1_1Expr" kindref="compound">csl::Expr</ref> const &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/abstractgammasym.h" line="94" column="5" bodyfile="src/marty/sgl/abstractgammasym.cpp" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1GExpr_1ac75dbba948b4271bcc52a8c82bf5b250" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sgl::GExpr::GExpr</definition>
+        <argsstring>(std::shared_ptr&lt; AbstractGammaSym &gt; const &amp;other)</argsstring>
+        <name>GExpr</name>
+        <qualifiedname>sgl::GExpr::GExpr</qualifiedname>
+        <param>
+          <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classsgl_1_1AbstractGammaSym" kindref="compound">AbstractGammaSym</ref> &gt; const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/abstractgammasym.h" line="95" column="5" bodyfile="src/marty/sgl/abstractgammasym.h" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1GExpr_1ae178ade56a158cd5ef6fe3b0fff3b603" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t sgl::GExpr::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>sgl::GExpr::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/abstractgammasym.h" line="100" column="12" bodyfile="src/marty/sgl/abstractgammasym.h" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1GExpr_1ac7d9ef8d44143f6ab84babf6dd340a5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref> &amp;</type>
+        <definition>GExpr &amp; sgl::GExpr::operator[]</definition>
+        <argsstring>(size_t i)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>sgl::GExpr::operator[]</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/abstractgammasym.h" line="104" column="11" bodyfile="src/marty/sgl/abstractgammasym.h" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1GExpr_1adce8f1e636c2b16be8967ad18e9521fa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsgl_1_1GExpr" kindref="compound">GExpr</ref> const &amp;</type>
+        <definition>GExpr const  &amp; sgl::GExpr::operator[]</definition>
+        <argsstring>(size_t i) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>sgl::GExpr::operator[]</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/abstractgammasym.h" line="108" column="17" bodyfile="src/marty/sgl/abstractgammasym.h" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1GExpr_1a13713d28bfdd0b07f1cdbf42f5638bca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>iterator</type>
+        <definition>iterator sgl::GExpr::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>sgl::GExpr::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/abstractgammasym.h" line="112" column="14" bodyfile="src/marty/sgl/abstractgammasym.h" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1GExpr_1afd7476145aa38d330d783beec3428276" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const_iterator</type>
+        <definition>const_iterator sgl::GExpr::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>sgl::GExpr::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/abstractgammasym.h" line="116" column="20" bodyfile="src/marty/sgl/abstractgammasym.h" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1GExpr_1a43133421250e31a94bd4c2f31ccf2f16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>iterator</type>
+        <definition>iterator sgl::GExpr::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>sgl::GExpr::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/abstractgammasym.h" line="120" column="14" bodyfile="src/marty/sgl/abstractgammasym.h" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classsgl_1_1GExpr_1ab7026c62d1a52997e6e122404f2d6e58" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const_iterator</type>
+        <definition>const_iterator sgl::GExpr::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>sgl::GExpr::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/sgl/abstractgammasym.h" line="124" column="20" bodyfile="src/marty/sgl/abstractgammasym.h" bodystart="124" bodyend="127"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>sgl::GExpr</label>
+        <link refid="classsgl_1_1GExpr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::shared_ptr&lt; AbstractGammaSym &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>sgl::GExpr</label>
+        <link refid="classsgl_1_1GExpr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::shared_ptr&lt; AbstractGammaSym &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/sgl/abstractgammasym.h" line="86" column="1" bodyfile="src/marty/sgl/abstractgammasym.h" bodystart="86" bodyend="128"/>
+    <listofallmembers>
+      <member refid="classsgl_1_1GExpr_1a13713d28bfdd0b07f1cdbf42f5638bca" prot="public" virt="non-virtual"><scope>sgl::GExpr</scope><name>begin</name></member>
+      <member refid="classsgl_1_1GExpr_1afd7476145aa38d330d783beec3428276" prot="public" virt="non-virtual"><scope>sgl::GExpr</scope><name>begin</name></member>
+      <member refid="classsgl_1_1GExpr_1af57629abc61461365a49b5d414de1498" prot="public" virt="non-virtual"><scope>sgl::GExpr</scope><name>const_iterator</name></member>
+      <member refid="classsgl_1_1GExpr_1a43133421250e31a94bd4c2f31ccf2f16" prot="public" virt="non-virtual"><scope>sgl::GExpr</scope><name>end</name></member>
+      <member refid="classsgl_1_1GExpr_1ab7026c62d1a52997e6e122404f2d6e58" prot="public" virt="non-virtual"><scope>sgl::GExpr</scope><name>end</name></member>
+      <member refid="classsgl_1_1GExpr_1ad352efda2e0b3f7047fc4e9601387db0" prot="public" virt="non-virtual"><scope>sgl::GExpr</scope><name>GExpr</name></member>
+      <member refid="classsgl_1_1GExpr_1ac75dbba948b4271bcc52a8c82bf5b250" prot="public" virt="non-virtual"><scope>sgl::GExpr</scope><name>GExpr</name></member>
+      <member refid="classsgl_1_1GExpr_1a0334c1c5053b55d91a603f283225905f" prot="public" virt="non-virtual"><scope>sgl::GExpr</scope><name>iterator</name></member>
+      <member refid="classsgl_1_1GExpr_1ac7d9ef8d44143f6ab84babf6dd340a5f" prot="public" virt="non-virtual"><scope>sgl::GExpr</scope><name>operator[]</name></member>
+      <member refid="classsgl_1_1GExpr_1adce8f1e636c2b16be8967ad18e9521fa" prot="public" virt="non-virtual"><scope>sgl::GExpr</scope><name>operator[]</name></member>
+      <member refid="classsgl_1_1GExpr_1ae178ade56a158cd5ef6fe3b0fff3b603" prot="public" virt="non-virtual"><scope>sgl::GExpr</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

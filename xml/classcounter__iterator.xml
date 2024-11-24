@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcounter__iterator" kind="class" language="C++" prot="public">
+    <compoundname>counter_iterator</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcounter__iterator_1ac8ce5667f9916846f9395b923a6b1cd0" prot="private" static="no" mutable="no">
+        <type><ref refid="classcounter" kindref="compound">counter</ref>&lt; T &gt; *</type>
+        <definition>counter&lt;T&gt;* counter_iterator&lt; T &gt;::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <qualifiedname>counter_iterator::ptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/counter.h" line="38" column="13" bodyfile="src/csl/counter.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcounter__iterator_1af2b73a9a8df81a62151bffd637c8ef3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>counter_iterator&lt; T &gt;::counter_iterator</definition>
+        <argsstring>(counter&lt; T &gt; *t_ptr)</argsstring>
+        <name>counter_iterator</name>
+        <qualifiedname>counter_iterator::counter_iterator</qualifiedname>
+        <param>
+          <type><ref refid="classcounter" kindref="compound">counter</ref>&lt; T &gt; *</type>
+          <declname>t_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/counter.h" line="41" column="5" bodyfile="src/csl/counter.h" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classcounter__iterator_1a26f503b6fcd0b4976bdf19e3534f47b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>counter_iterator&lt; T &gt;::counter_iterator</definition>
+        <argsstring>(counter_iterator&lt; U &gt; const &amp;other)</argsstring>
+        <name>counter_iterator</name>
+        <qualifiedname>counter_iterator::counter_iterator</qualifiedname>
+        <param>
+          <type><ref refid="classcounter__iterator" kindref="compound">counter_iterator</ref>&lt; U &gt; const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/counter.h" line="46" column="5" bodyfile="src/csl/counter.h" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classcounter__iterator_1aaa0686defb4b2640ce96c036daead684" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>counter_iterator&lt; T &gt;::counter_iterator</definition>
+        <argsstring>(counter_iterator&lt; T &gt; const &amp;other)=default</argsstring>
+        <name>counter_iterator</name>
+        <qualifiedname>counter_iterator::counter_iterator</qualifiedname>
+        <param>
+          <type><ref refid="classcounter__iterator" kindref="compound">counter_iterator</ref>&lt; T &gt; const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/counter.h" line="50" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcounter__iterator_1a3d2a3219f1b7e2bcec9b015e74cb303f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcounter__iterator" kindref="compound">counter_iterator</ref> &amp;</type>
+        <definition>counter_iterator &amp; counter_iterator&lt; T &gt;::operator=</definition>
+        <argsstring>(counter_iterator&lt; T &gt; const &amp;other)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>counter_iterator::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classcounter__iterator" kindref="compound">counter_iterator</ref>&lt; T &gt; const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/counter.h" line="51" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcounter__iterator_1a24a57f1c005630f4031bb3ec28eefdaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>counter_iterator&lt; T &gt;::counter_iterator</definition>
+        <argsstring>(counter_iterator&lt; T &gt; &amp;&amp;other)=default</argsstring>
+        <name>counter_iterator</name>
+        <qualifiedname>counter_iterator::counter_iterator</qualifiedname>
+        <param>
+          <type><ref refid="classcounter__iterator" kindref="compound">counter_iterator</ref>&lt; T &gt; &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/counter.h" line="52" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcounter__iterator_1a731f1280368cd67605999dbae81d3a80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcounter__iterator" kindref="compound">counter_iterator</ref> &amp;</type>
+        <definition>counter_iterator &amp; counter_iterator&lt; T &gt;::operator=</definition>
+        <argsstring>(counter_iterator&lt; T &gt; &amp;&amp;other)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>counter_iterator::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classcounter__iterator" kindref="compound">counter_iterator</ref>&lt; T &gt; &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/counter.h" line="53" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcounter__iterator_1a613d699014aaef9fcfc5a6eedab35a0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>counter_iterator&lt; T &gt;::~counter_iterator</definition>
+        <argsstring>()=default</argsstring>
+        <name>~counter_iterator</name>
+        <qualifiedname>counter_iterator::~counter_iterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/counter.h" line="54" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcounter__iterator_1afb0e36cf83555ff923697aa05cd7fdc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcounter__iterator" kindref="compound">counter_iterator</ref> &amp;</type>
+        <definition>counter_iterator &amp; counter_iterator&lt; T &gt;::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <qualifiedname>counter_iterator::operator++</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/counter.h" line="56" column="22" bodyfile="src/csl/counter.h" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classcounter__iterator_1a908a787ebf030849951a74de0eba27e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcounter__iterator" kindref="compound">counter_iterator</ref></type>
+        <definition>counter_iterator counter_iterator&lt; T &gt;::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <qualifiedname>counter_iterator::operator++</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/counter.h" line="62" column="22" bodyfile="src/csl/counter.h" bodystart="62" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classcounter__iterator_1a321011ad6913eb09d5e6573df67806fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; counter_iterator&lt; T &gt;::operator*</definition>
+        <argsstring>()</argsstring>
+        <name>operator*</name>
+        <qualifiedname>counter_iterator::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/counter.h" line="69" column="7" bodyfile="src/csl/counter.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classcounter__iterator_1a2073785e24706d0725165e8cb6c7ef19" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T counter_iterator&lt; T &gt;::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>counter_iterator::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/counter.h" line="74" column="7" bodyfile="src/csl/counter.h" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classcounter__iterator_1a4cf0154e8eec258706dd8c4f09e3a2a1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool counter_iterator&lt; T &gt;::operator==</definition>
+        <argsstring>(counter_iterator&lt; T &gt; const &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>counter_iterator::operator==</qualifiedname>
+        <param>
+          <type><ref refid="classcounter__iterator" kindref="compound">counter_iterator</ref>&lt; T &gt; const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/counter.h" line="79" column="10" bodyfile="src/csl/counter.h" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classcounter__iterator_1a7031fbd1b678846b032ecf3d533fed8b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool counter_iterator&lt; T &gt;::operator!=</definition>
+        <argsstring>(counter_iterator&lt; T &gt; const &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>counter_iterator::operator!=</qualifiedname>
+        <param>
+          <type><ref refid="classcounter__iterator" kindref="compound">counter_iterator</ref>&lt; T &gt; const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/counter.h" line="84" column="10" bodyfile="src/csl/counter.h" bodystart="84" bodyend="87"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/csl/counter.h" line="35" column="1" bodyfile="src/csl/counter.h" bodystart="35" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classcounter__iterator_1af2b73a9a8df81a62151bffd637c8ef3a" prot="public" virt="non-virtual"><scope>counter_iterator</scope><name>counter_iterator</name></member>
+      <member refid="classcounter__iterator_1a26f503b6fcd0b4976bdf19e3534f47b3" prot="public" virt="non-virtual"><scope>counter_iterator</scope><name>counter_iterator</name></member>
+      <member refid="classcounter__iterator_1aaa0686defb4b2640ce96c036daead684" prot="public" virt="non-virtual"><scope>counter_iterator</scope><name>counter_iterator</name></member>
+      <member refid="classcounter__iterator_1a24a57f1c005630f4031bb3ec28eefdaf" prot="public" virt="non-virtual"><scope>counter_iterator</scope><name>counter_iterator</name></member>
+      <member refid="classcounter__iterator_1a7031fbd1b678846b032ecf3d533fed8b" prot="public" virt="non-virtual"><scope>counter_iterator</scope><name>operator!=</name></member>
+      <member refid="classcounter__iterator_1a321011ad6913eb09d5e6573df67806fc" prot="public" virt="non-virtual"><scope>counter_iterator</scope><name>operator*</name></member>
+      <member refid="classcounter__iterator_1a2073785e24706d0725165e8cb6c7ef19" prot="public" virt="non-virtual"><scope>counter_iterator</scope><name>operator*</name></member>
+      <member refid="classcounter__iterator_1afb0e36cf83555ff923697aa05cd7fdc5" prot="public" virt="non-virtual"><scope>counter_iterator</scope><name>operator++</name></member>
+      <member refid="classcounter__iterator_1a908a787ebf030849951a74de0eba27e5" prot="public" virt="non-virtual"><scope>counter_iterator</scope><name>operator++</name></member>
+      <member refid="classcounter__iterator_1a3d2a3219f1b7e2bcec9b015e74cb303f" prot="public" virt="non-virtual"><scope>counter_iterator</scope><name>operator=</name></member>
+      <member refid="classcounter__iterator_1a731f1280368cd67605999dbae81d3a80" prot="public" virt="non-virtual"><scope>counter_iterator</scope><name>operator=</name></member>
+      <member refid="classcounter__iterator_1a4cf0154e8eec258706dd8c4f09e3a2a1" prot="public" virt="non-virtual"><scope>counter_iterator</scope><name>operator==</name></member>
+      <member refid="classcounter__iterator_1ac8ce5667f9916846f9395b923a6b1cd0" prot="private" virt="non-virtual"><scope>counter_iterator</scope><name>ptr</name></member>
+      <member refid="classcounter__iterator_1a613d699014aaef9fcfc5a6eedab35a0d" prot="public" virt="non-virtual"><scope>counter_iterator</scope><name>~counter_iterator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

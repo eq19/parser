@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classlatexcompiler" kind="class" language="C++" prot="public">
+    <compoundname>latexcompiler</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlatexcompiler_1a6d0bb9d1017853df0bb30fbc7deb9c44" prot="private" static="no" mutable="no">
+        <type><ref refid="classResourceHandler" kindref="compound">ResourceHandler</ref> *</type>
+        <definition>ResourceHandler* latexcompiler::pixmaps</definition>
+        <argsstring></argsstring>
+        <name>pixmaps</name>
+        <qualifiedname>latexcompiler::pixmaps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexcompiler.h" line="56" column="21" bodyfile="src/grafed/gui/latexcompiler.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlatexcompiler_1a21f2fb7bd5369734d680b3d804461012" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>latexcompiler::latexcompiler</definition>
+        <argsstring>(QObject *_parent)</argsstring>
+        <name>latexcompiler</name>
+        <qualifiedname>latexcompiler::latexcompiler</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>_parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexcompiler.h" line="30" column="5" bodyfile="src/grafed/gui/latexcompiler.cpp" bodystart="81" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classlatexcompiler_1a83c1e7ef87bc8ff67eb8deb252dafab7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>latexcompiler::~latexcompiler</definition>
+        <argsstring>() override</argsstring>
+        <name>~latexcompiler</name>
+        <qualifiedname>latexcompiler::~latexcompiler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexcompiler.h" line="31" column="5" bodyfile="src/grafed/gui/latexcompiler.h" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classlatexcompiler_1a92092123e94a36657eb707c503d932c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QPixmap</type>
+        <definition>QPixmap latexcompiler::getLabel</definition>
+        <argsstring>(QString const &amp;texCode)</argsstring>
+        <name>getLabel</name>
+        <qualifiedname>latexcompiler::getLabel</qualifiedname>
+        <param>
+          <type>QString const &amp;</type>
+          <declname>texCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexcompiler.h" line="34" column="28" bodyfile="src/grafed/gui/latexcompiler.cpp" bodystart="106" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classlatexcompiler_1a6a97eda6074a7cfdfd5f0d4d2579d0f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::optional&lt; QPixmap &gt;</type>
+        <definition>std::optional&lt; QPixmap &gt; latexcompiler::getLabel</definition>
+        <argsstring>(std::string const &amp;texCode)</argsstring>
+        <name>getLabel</name>
+        <qualifiedname>latexcompiler::getLabel</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>texCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexcompiler.h" line="35" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classlatexcompiler_1a5a2aadd6a38c4494805c16b105cee341" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void latexcompiler::sendLabel</definition>
+        <argsstring>(QString const &amp;texCode)</argsstring>
+        <name>sendLabel</name>
+        <qualifiedname>latexcompiler::sendLabel</qualifiedname>
+        <param>
+          <type>QString const &amp;</type>
+          <declname>texCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexcompiler.h" line="37" column="10" bodyfile="src/grafed/gui/latexcompiler.cpp" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classlatexcompiler_1a9bc2048c885aba0f2a1fd77755ec881d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void latexcompiler::sendLabel</definition>
+        <argsstring>(std::string const &amp;texCode)</argsstring>
+        <name>sendLabel</name>
+        <qualifiedname>latexcompiler::sendLabel</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>texCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexcompiler.h" line="38" column="10" bodyfile="src/grafed/gui/latexcompiler.cpp" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classlatexcompiler_1a09febfa17c99bd661da44d67e2c48bf3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool latexcompiler::isReady</definition>
+        <argsstring>() const</argsstring>
+        <name>isReady</name>
+        <qualifiedname>latexcompiler::isReady</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexcompiler.h" line="39" column="10" bodyfile="src/grafed/gui/latexcompiler.h" bodystart="39" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classlatexcompiler_1a3d42be70f7fa3dd2f245a14a7c8d5205" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void latexcompiler::labelReady_slot</definition>
+        <argsstring>(std::string const &amp;)</argsstring>
+        <name>labelReady_slot</name>
+        <qualifiedname>latexcompiler::labelReady_slot</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <defname>label</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexcompiler.h" line="46" column="10" bodyfile="src/grafed/gui/latexcompiler.cpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="signal">
+      <memberdef kind="signal" id="classlatexcompiler_1a72ce56bc741ca336b335cdbf00daf8a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void latexcompiler::labelReady</definition>
+        <argsstring>(std::string const &amp;)</argsstring>
+        <name>labelReady</name>
+        <qualifiedname>latexcompiler::labelReady</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexcompiler.h" line="49" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classlatexcompiler_1a9098ffae91a06049c123a066b22c8e9a" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string latexcompiler::getGrafedDir</definition>
+        <argsstring>()</argsstring>
+        <name>getGrafedDir</name>
+        <qualifiedname>latexcompiler::getGrafedDir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexcompiler.h" line="52" column="24" bodyfile="src/grafed/gui/latexcompiler.cpp" bodystart="33" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classlatexcompiler_1a29ce33f48330eb82fa03855d0c18414f" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QPixmap</type>
+        <definition>QPixmap latexcompiler::generateLabel</definition>
+        <argsstring>(std::string const &amp;equation)</argsstring>
+        <name>generateLabel</name>
+        <qualifiedname>latexcompiler::generateLabel</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>equation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/grafed/gui/latexcompiler.h" line="53" column="24" bodyfile="src/grafed/gui/latexcompiler.cpp" bodystart="50" bodyend="77"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>latexcompiler</label>
+        <link refid="classlatexcompiler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>latexcompiler</label>
+        <link refid="classlatexcompiler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/grafed/gui/latexcompiler.h" line="25" column="1" bodyfile="src/grafed/gui/latexcompiler.h" bodystart="25" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classlatexcompiler_1a29ce33f48330eb82fa03855d0c18414f" prot="private" virt="non-virtual"><scope>latexcompiler</scope><name>generateLabel</name></member>
+      <member refid="classlatexcompiler_1a9098ffae91a06049c123a066b22c8e9a" prot="private" virt="non-virtual"><scope>latexcompiler</scope><name>getGrafedDir</name></member>
+      <member refid="classlatexcompiler_1a92092123e94a36657eb707c503d932c8" prot="public" virt="non-virtual"><scope>latexcompiler</scope><name>getLabel</name></member>
+      <member refid="classlatexcompiler_1a6a97eda6074a7cfdfd5f0d4d2579d0f2" prot="public" virt="non-virtual"><scope>latexcompiler</scope><name>getLabel</name></member>
+      <member refid="classlatexcompiler_1a09febfa17c99bd661da44d67e2c48bf3" prot="public" virt="non-virtual"><scope>latexcompiler</scope><name>isReady</name></member>
+      <member refid="classlatexcompiler_1a72ce56bc741ca336b335cdbf00daf8a0" prot="public" virt="non-virtual"><scope>latexcompiler</scope><name>labelReady</name></member>
+      <member refid="classlatexcompiler_1a3d42be70f7fa3dd2f245a14a7c8d5205" prot="public" virt="non-virtual"><scope>latexcompiler</scope><name>labelReady_slot</name></member>
+      <member refid="classlatexcompiler_1a21f2fb7bd5369734d680b3d804461012" prot="public" virt="non-virtual"><scope>latexcompiler</scope><name>latexcompiler</name></member>
+      <member refid="classlatexcompiler_1a6d0bb9d1017853df0bb30fbc7deb9c44" prot="private" virt="non-virtual"><scope>latexcompiler</scope><name>pixmaps</name></member>
+      <member refid="classlatexcompiler_1a5a2aadd6a38c4494805c16b105cee341" prot="public" virt="non-virtual"><scope>latexcompiler</scope><name>sendLabel</name></member>
+      <member refid="classlatexcompiler_1a9bc2048c885aba0f2a1fd77755ec881d" prot="public" virt="non-virtual"><scope>latexcompiler</scope><name>sendLabel</name></member>
+      <member refid="classlatexcompiler_1a83c1e7ef87bc8ff67eb8deb252dafab7" prot="public" virt="non-virtual"><scope>latexcompiler</scope><name>~latexcompiler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

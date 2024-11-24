@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1algebra_1_1B" kind="class" language="C++" prot="public">
+    <compoundname>mty::algebra::B</compoundname>
+    <basecompoundref refid="classmty_1_1SemiSimpleAlgebra" prot="public" virt="non-virtual">mty::SemiSimpleAlgebra</basecompoundref>
+    <includes refid="semiSimpleAlgebra_8h" local="no">semiSimpleAlgebra.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1algebra_1_1B_1a73bae913c58d28f0dbbea8190e79240a" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>B::B</definition>
+        <argsstring>(int t_l)</argsstring>
+        <name>B</name>
+        <qualifiedname>mty::algebra::B::B</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>t_l</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with one parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t_l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initializes the order <bold>l</bold> of the algebra. Generates so(2l+1). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="720" column="14" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="969" bodyend="975"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1algebra_1_1B_1a72ccf6a40855d7f728ed3a318191a41c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mty::algebra::B::~B</definition>
+        <argsstring>()</argsstring>
+        <name>~B</name>
+        <qualifiedname>mty::algebra::B::~B</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="725" column="5" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="725" bodyend="725"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1algebra_1_1B_1ad8f1a12874ff5bcab60e57076686e993" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacemty_1_1algebra_1a6a408a40adf4bdcbb2de53ae0917062a" kindref="member">algebra::Type</ref></type>
+        <definition>mty::algebra::Type B::getType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getType</name>
+        <qualifiedname>mty::algebra::B::getType</qualifiedname>
+        <reimplements refid="classmty_1_1SemiSimpleAlgebra_1a576f5c44114980964d3688ec710e54f1">getType</reimplements>
+        <briefdescription>
+<para>Pure virtual function overriden in derived classes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The type of the algebra, see the enum <ref refid="namespacemty_1_1algebra_1a6a408a40adf4bdcbb2de53ae0917062a" kindref="member">algebra::Type</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="727" column="19" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="977" bodyend="980"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1algebra_1_1B_1afd2e38f7fe39d71b9ff033488e0c4b31" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void B::setCartanMatrix</definition>
+        <argsstring>() override</argsstring>
+        <name>setCartanMatrix</name>
+        <qualifiedname>mty::algebra::B::setCartanMatrix</qualifiedname>
+        <reimplements refid="classmty_1_1SemiSimpleAlgebra_1a5ca87a7cb7f2dc2b7d534cad69d42774">setCartanMatrix</reimplements>
+        <briefdescription>
+<para>Pure virtual function overriden in derived classes. Initializes the Cartan matrix specifically to the given semi-simple Lie algebra. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="729" column="10" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="982" bodyend="992"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1algebra_1_1B_1aac9c16f18819f7cede06941cfbd38e37" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void B::setSquaredNorm</definition>
+        <argsstring>() override</argsstring>
+        <name>setSquaredNorm</name>
+        <qualifiedname>mty::algebra::B::setSquaredNorm</qualifiedname>
+        <reimplements refid="classmty_1_1SemiSimpleAlgebra_1a1e65a608faddab538f9ec73a69692cfc">setSquaredNorm</reimplements>
+        <briefdescription>
+<para>Pure virtual function overriden in derived classes. Initializes norms of simple roots specifically to the given semi-simple Lie algebra. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="731" column="10" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="994" bodyend="999"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1algebra_1_1B_1a47a7acecfc32135c2c1293b655c7ab42" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classmty_1_1Irrep" kindref="compound">mty::Irrep</ref></type>
+        <definition>mty::Irrep B::getDefiningRep</definition>
+        <argsstring>() const override</argsstring>
+        <name>getDefiningRep</name>
+        <qualifiedname>mty::algebra::B::getDefiningRep</qualifiedname>
+        <reimplements refid="classmty_1_1SemiSimpleAlgebra_1a24200a3ce37c7de85685afe1d8f43f6a">getDefiningRep</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/semiSimpleAlgebra.h" line="733" column="16" bodyfile="src/marty/core/semiSimpleAlgebra.cpp" bodystart="1001" bodyend="1008"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Semi-simple Lie algebra <ref refid="namespacemty_1_1algebra_1a6a408a40adf4bdcbb2de53ae0917062aa9d5ed678fe57bcca610140957afab571" kindref="member">B(l)</ref> == so(2l+1). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>mty::SemiSimpleAlgebra</label>
+        <link refid="classmty_1_1SemiSimpleAlgebra"/>
+      </node>
+      <node id="1">
+        <label>mty::algebra::B</label>
+        <link refid="classmty_1_1algebra_1_1B"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>csl::Expr</label>
+        <link refid="classcsl_1_1Expr"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mty::SemiSimpleAlgebra</label>
+        <link refid="classmty_1_1SemiSimpleAlgebra"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>inverseCartan</edgelabel>
+          <edgelabel>symbolicCartan</edgelabel>
+          <edgelabel>symbolicMetric</edgelabel>
+          <edgelabel>symbolicRho</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mty::algebra::B</label>
+        <link refid="classmty_1_1algebra_1_1B"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::shared_ptr&lt; csl::Abstract &gt;</label>
+        <link refid="classstd_1_1shared__ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/marty/core/semiSimpleAlgebra.h" line="712" column="1" bodyfile="src/marty/core/semiSimpleAlgebra.h" bodystart="712" bodyend="734"/>
+    <listofallmembers>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a1613618ad6be9ea31643922f1cedff6c" prot="protected" virt="non-virtual"><scope>mty::algebra::B</scope><name>absoluteNorms</name></member>
+      <member refid="classmty_1_1algebra_1_1B_1a73bae913c58d28f0dbbea8190e79240a" prot="public" virt="non-virtual"><scope>mty::algebra::B</scope><name>B</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1aacb7df0522ee6aea21d3e540d25e457a" prot="protected" virt="non-virtual"><scope>mty::algebra::B</scope><name>cartanMatrix</name></member>
+      <member refid="classmty_1_1algebra_1_1B_1a47a7acecfc32135c2c1293b655c7ab42" prot="public" virt="virtual"><scope>mty::algebra::B</scope><name>getDefiningRep</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a0ed5474daa7b7292c97499a2a276b0dc" prot="protected" virt="virtual"><scope>mty::algebra::B</scope><name>getEta</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a6e39ef348b8e127f4021efb0c9ab1fd5" prot="public" virt="virtual"><scope>mty::algebra::B</scope><name>getIndex</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a5c9236993d9c52d7d8814401436d9d02" prot="public" virt="non-virtual"><scope>mty::algebra::B</scope><name>getOrderL</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a08445d84837a3ee0818e999a8e3afa84" prot="public" virt="non-virtual"><scope>mty::algebra::B</scope><name>getQuadraticCasimir</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a49fd976502d861fc07ea61739c154e99" prot="public" virt="virtual"><scope>mty::algebra::B</scope><name>getTrivialRep</name></member>
+      <member refid="classmty_1_1algebra_1_1B_1ad8f1a12874ff5bcab60e57076686e993" prot="public" virt="virtual"><scope>mty::algebra::B</scope><name>getType</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a88a9a01df2e34c751d96a8d7ed448606" prot="public" virt="virtual"><scope>mty::algebra::B</scope><name>highestWeightRep</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1ae2c838647f859770f69d7a1ebc3f4b25" prot="public" virt="virtual"><scope>mty::algebra::B</scope><name>highestWeightRep</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a67899733c277cad4a381f9e77a64cf05" prot="protected" virt="non-virtual"><scope>mty::algebra::B</scope><name>indices</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a6ca6c984a49944b59b0b949ca245551c" prot="protected" virt="non-virtual"><scope>mty::algebra::B</scope><name>init</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1af98c68e1832512d74e3f67c5199c6312" prot="protected" virt="non-virtual"><scope>mty::algebra::B</scope><name>inverseCartan</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a49c92eb6d42fdfd7fb14a202aa9d50e1" prot="protected" virt="non-virtual"><scope>mty::algebra::B</scope><name>irreps</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a05112dc753491ad590f22e6aec5a1612" prot="protected" virt="non-virtual"><scope>mty::algebra::B</scope><name>l</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a9ca8e06e270dbb72139e494cde8a5dbe" prot="protected" virt="non-virtual"><scope>mty::algebra::B</scope><name>positiveRoots</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a8f7ba151cd190383663b1ab77b2d445b" prot="protected" virt="non-virtual"><scope>mty::algebra::B</scope><name>rho</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a41f221731862eaae617f45cb219c8530" prot="protected" virt="non-virtual"><scope>mty::algebra::B</scope><name>rootMetric</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a08429df3b2869d35ef2f5399a679c520" prot="public" virt="non-virtual"><scope>mty::algebra::B</scope><name>SemiSimpleAlgebra</name></member>
+      <member refid="classmty_1_1algebra_1_1B_1afd2e38f7fe39d71b9ff033488e0c4b31" prot="public" virt="virtual"><scope>mty::algebra::B</scope><name>setCartanMatrix</name></member>
+      <member refid="classmty_1_1algebra_1_1B_1aac9c16f18819f7cede06941cfbd38e37" prot="public" virt="virtual"><scope>mty::algebra::B</scope><name>setSquaredNorm</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a4f57c0b5a49af2a8474fdef58da9538c" prot="public" virt="virtual"><scope>mty::algebra::B</scope><name>sortRep</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a4fd98963d6d3c5a536267529a4a2c60c" prot="protected" virt="non-virtual"><scope>mty::algebra::B</scope><name>squaredNorm</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a3fb05c4a72c9d16ed16994057e7b7983" prot="protected" virt="non-virtual"><scope>mty::algebra::B</scope><name>symbolicCartan</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1ac165b358e852e5adfacba2be3b7d468d" prot="protected" virt="non-virtual"><scope>mty::algebra::B</scope><name>symbolicMetric</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a3cf01c47b378082944e6d98b166d870c" prot="protected" virt="non-virtual"><scope>mty::algebra::B</scope><name>symbolicRho</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a57b9e8d3082b2ea00601ae26c59e4d4b" prot="protected" virt="non-virtual"><scope>mty::algebra::B</scope><name>symbolicRoots</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a47413b0fc354145adf28b42753899a08" prot="protected" virt="non-virtual"><scope>mty::algebra::B</scope><name>symbolicSquaredNorms</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a6b115c5f8711fd19ec740f3b72cc2535" prot="public" virt="virtual"><scope>mty::algebra::B</scope><name>tensorProduct</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1ac020594ec47ad8ec26a4ab7d639f1202" prot="public" virt="virtual"><scope>mty::algebra::B</scope><name>tensorProduct</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a41b26f9216bb204ba7858546e049ea88" prot="public" virt="virtual"><scope>mty::algebra::B</scope><name>tensorProduct</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a6fbd8240dfad0eb04aff4cc288db2dc1" prot="public" virt="non-virtual"><scope>mty::algebra::B</scope><name>tensorProduct</name></member>
+      <member refid="classmty_1_1algebra_1_1B_1a72ccf6a40855d7f728ed3a318191a41c" prot="public" virt="non-virtual"><scope>mty::algebra::B</scope><name>~B</name></member>
+      <member refid="classmty_1_1SemiSimpleAlgebra_1a528476431b2a6c2db45667be258d4de4" prot="public" virt="virtual"><scope>mty::algebra::B</scope><name>~SemiSimpleAlgebra</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

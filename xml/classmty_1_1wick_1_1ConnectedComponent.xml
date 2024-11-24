@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classmty_1_1wick_1_1ConnectedComponent" kind="class" language="C++" prot="public">
+    <compoundname>mty::wick::ConnectedComponent</compoundname>
+    <includes refid="graph_8h" local="no">graph.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmty_1_1wick_1_1ConnectedComponent_1abda640be132b1130f949feda23acb4a6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> &gt;</type>
+        <definition>std::vector&lt;Vertex&gt; mty::wick::ConnectedComponent::vertices</definition>
+        <argsstring></argsstring>
+        <name>vertices</name>
+        <qualifiedname>mty::wick::ConnectedComponent::vertices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="373" column="17" bodyfile="src/marty/core/graph.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmty_1_1wick_1_1ConnectedComponent_1a2ebd564de68a3ce829de248771b71ec5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::wick::ConnectedComponent::ConnectedComponent</definition>
+        <argsstring>()</argsstring>
+        <name>ConnectedComponent</name>
+        <qualifiedname>mty::wick::ConnectedComponent::ConnectedComponent</qualifiedname>
+        <briefdescription>
+<para>Default constructor. Empty <ref refid="classmty_1_1wick_1_1ConnectedComponent" kindref="compound">ConnectedComponent</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="275" column="5" bodyfile="src/marty/core/graph.cpp" bodystart="302" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1ConnectedComponent_1a9a0bf0ca382a49e0c3f687bc43d9c0d8" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mty::wick::ConnectedComponent::ConnectedComponent</definition>
+        <argsstring>(const Vertex &amp;firstVertex)</argsstring>
+        <name>ConnectedComponent</name>
+        <qualifiedname>mty::wick::ConnectedComponent::ConnectedComponent</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>firstVertex</declname>
+        </param>
+        <briefdescription>
+<para>Constructor with one parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>firstVertex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First (and unique for now) <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> in the component. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="281" column="14" bodyfile="src/marty/core/graph.cpp" bodystart="306" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1ConnectedComponent_1abb5a0bdd982cef90a4245ce19ec9f73d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> &gt; const &amp;</type>
+        <definition>vector&lt; Vertex &gt; const  &amp; mty::wick::ConnectedComponent::getVertices</definition>
+        <argsstring>() const</argsstring>
+        <name>getVertices</name>
+        <qualifiedname>mty::wick::ConnectedComponent::getVertices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="283" column="23" bodyfile="src/marty/core/graph.cpp" bodystart="311" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1ConnectedComponent_1a95c4829c5c55f99d6fee3b0958c73f5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mty::wick::ConnectedComponent::addVertex</definition>
+        <argsstring>(const Vertex &amp;newVertex)</argsstring>
+        <name>addVertex</name>
+        <qualifiedname>mty::wick::ConnectedComponent::addVertex</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>newVertex</declname>
+        </param>
+        <briefdescription>
+<para>Adds a <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> in the connected component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="288" column="10" bodyfile="src/marty/core/graph.cpp" bodystart="316" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1ConnectedComponent_1ae8914bef028918ab77eec4fbc155a522" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::wick::ConnectedComponent::hasValenceLeft</definition>
+        <argsstring>() const</argsstring>
+        <name>hasValenceLeft</name>
+        <qualifiedname>mty::wick::ConnectedComponent::hasValenceLeft</qualifiedname>
+        <briefdescription>
+<para>Tells if the <ref refid="classmty_1_1wick_1_1ConnectedComponent" kindref="compound">ConnectedComponent</ref> has contractible <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> left. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If no, it means that the component can no longer be contracted. And if there if free <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> left in the <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">Graph</ref>, the contraction gives 0 in the calculation: only connected <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">Graph</ref> are considered in <ref refid="classmty_1_1Wick" kindref="compound">Wick</ref> contraction. <simplesect kind="return"><para><bold>True</bold> if the component has free <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> left. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="298" column="10" bodyfile="src/marty/core/graph.cpp" bodystart="321" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1ConnectedComponent_1ab0cf40bf0c3f36acb4f6cbe48ef2d5f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> *</type>
+        <definition>const QuantumField * mty::wick::ConnectedComponent::getFirstContractibleField</definition>
+        <argsstring>() const</argsstring>
+        <name>getFirstContractibleField</name>
+        <qualifiedname>mty::wick::ConnectedComponent::getFirstContractibleField</qualifiedname>
+        <briefdescription>
+<para>This function returns the <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> of the first contractible <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> if there is one. If no, this function calls an error. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> of the first contractible <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> in the component. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="306" column="29" bodyfile="src/marty/core/graph.cpp" bodystart="329" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1ConnectedComponent_1a323f4964a5f9bd0a5c1909ab18d36280" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::wick::ConnectedComponent::getFirstContractibleVertex</definition>
+        <argsstring>() const</argsstring>
+        <name>getFirstContractibleVertex</name>
+        <qualifiedname>mty::wick::ConnectedComponent::getFirstContractibleVertex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The position of the first contractible <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> if there is one. </para>
+</simplesect>
+<simplesect kind="return"><para>-1 else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="312" column="9" bodyfile="src/marty/core/graph.cpp" bodystart="335" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1ConnectedComponent_1a8a24a928ac29a06fc27714a326464c4f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>vector&lt; int &gt; mty::wick::ConnectedComponent::getContractibleVertices</definition>
+        <argsstring>(const mty::QuantumField *field) const</argsstring>
+        <name>getContractibleVertices</name>
+        <qualifiedname>mty::wick::ConnectedComponent::getContractibleVertices</qualifiedname>
+        <param>
+          <type>const <ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> *</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+<para>Returns the list (in a std::vector) of the Vertices in the <ref refid="classmty_1_1wick_1_1ConnectedComponent" kindref="compound">ConnectedComponent</ref> contractible with <bold>field</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The first constractible vertex is not put in the returned vector except is its degeneracy (see <ref refid="classmty_1_1wick_1_1Vertex_1af62d68cf719f90d6592e5131ba37d638" kindref="member">Vertex::getDegeneracy()</ref>) is bigger than one, i.e. has more than one <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> contractible with <bold>field</bold>. This is because at each contraction step we contract the first <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> of the <ref refid="classmty_1_1wick_1_1ConnectedComponent" kindref="compound">ConnectedComponent</ref> of the <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">Graph</ref> with possible other Nodes. The first contractible <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> of the <ref refid="classmty_1_1wick_1_1ConnectedComponent" kindref="compound">ConnectedComponent</ref> is then not included in the &quot;other Nodes&quot;. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>field</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1QuantumField" kindref="compound">mty::QuantumField</ref> we want to contract. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A std::vector filled with Vertices of the <ref refid="classmty_1_1wick_1_1ConnectedComponent" kindref="compound">ConnectedComponent</ref> contractible with <bold>field</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="329" column="5" bodyfile="src/marty/core/graph.cpp" bodystart="344" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1ConnectedComponent_1a22fab00a6cba9329cf8deddd8a46986e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt;</type>
+        <definition>shared_ptr&lt; Node &gt; mty::wick::ConnectedComponent::getFirstContractibleNode</definition>
+        <argsstring>() const</argsstring>
+        <name>getFirstContractibleNode</name>
+        <qualifiedname>mty::wick::ConnectedComponent::getFirstContractibleNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The first contractible <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> of the <ref refid="classmty_1_1wick_1_1ConnectedComponent" kindref="compound">ConnectedComponent</ref> if there is one. </para>
+</simplesect>
+<simplesect kind="return"><para>nullptr else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="336" column="21" bodyfile="src/marty/core/graph.cpp" bodystart="371" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1ConnectedComponent_1adc320bde43ca29867b124ece823d4f8c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref>&lt; <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> &gt; &gt;</type>
+        <definition>vector&lt; shared_ptr&lt; Node &gt; &gt; mty::wick::ConnectedComponent::getNodes</definition>
+        <argsstring>() const</argsstring>
+        <name>getNodes</name>
+        <qualifiedname>mty::wick::ConnectedComponent::getNodes</qualifiedname>
+        <briefdescription>
+<para>Allows to get all nodes of the <ref refid="classmty_1_1wick_1_1ConnectedComponent" kindref="compound">ConnectedComponent</ref> independently of their contractions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A std::vector of <ref refid="classstd_1_1shared__ptr" kindref="compound">std::shared_ptr</ref> to the Nodes of the component. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="343" column="17" bodyfile="src/marty/core/graph.cpp" bodystart="380" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1ConnectedComponent_1a5c7b28ecd3a38ec15a20a6053609164e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mty::wick::ConnectedComponent::connect</definition>
+        <argsstring>(int indexVertex)</argsstring>
+        <name>connect</name>
+        <qualifiedname>mty::wick::ConnectedComponent::connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>indexVertex</declname>
+        </param>
+        <briefdescription>
+<para>Connects the first contractible <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> of the <ref refid="classmty_1_1wick_1_1ConnectedComponent" kindref="compound">ConnectedComponent</ref> with the first <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> (contractible with the previous one) of the <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> in position <bold>indexVertex</bold> of the component. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indexVertex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> to contract. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The degeneracy encountered in the contraction. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="352" column="9" bodyfile="src/marty/core/graph.cpp" bodystart="390" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="classmty_1_1wick_1_1ConnectedComponent_1a5b84cc97588b0aa1844a186255710e0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mty::wick::ConnectedComponent::connect</definition>
+        <argsstring>(Vertex &amp;other)</argsstring>
+        <name>connect</name>
+        <qualifiedname>mty::wick::ConnectedComponent::connect</qualifiedname>
+        <param>
+          <type><ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Tries to connect the first contractible <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref> of the <ref refid="classmty_1_1wick_1_1ConnectedComponent" kindref="compound">ConnectedComponent</ref> with the <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> <bold>other</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> to contract with the first contractible <ref refid="classmty_1_1wick_1_1Node" kindref="compound">Node</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold>True</bold> if there is a contraction. </para>
+</simplesect>
+<simplesect kind="return"><para><bold>False</bold> else. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="361" column="10" bodyfile="src/marty/core/graph.cpp" bodystart="421" bodyend="431"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classmty_1_1wick_1_1ConnectedComponent_1aaf861158dc94f9584bbaf339bc06f606" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;fout, const ConnectedComponent &amp;c)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>mty::wick::ConnectedComponent::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>fout</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classmty_1_1wick_1_1ConnectedComponent" kindref="compound">ConnectedComponent</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Overload of operator&lt;&lt; for <ref refid="classmty_1_1wick_1_1ConnectedComponent" kindref="compound">ConnectedComponent</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output stream. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classmty_1_1wick_1_1ConnectedComponent" kindref="compound">ConnectedComponent</ref> to display. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The modified stream. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/marty/core/graph.h" line="369" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>std::vector of <ref refid="classmty_1_1wick_1_1Vertex" kindref="compound">Vertex</ref> that represents the connected component of a <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">Graph</ref>. A <ref refid="classmty_1_1wick_1_1Graph" kindref="compound">Graph</ref> has typically one <ref refid="classmty_1_1wick_1_1ConnectedComponent" kindref="compound">ConnectedComponent</ref> and free Vertices. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/marty/core/graph.h" line="267" column="1" bodyfile="src/marty/core/graph.h" bodystart="267" bodyend="374"/>
+    <listofallmembers>
+      <member refid="classmty_1_1wick_1_1ConnectedComponent_1a95c4829c5c55f99d6fee3b0958c73f5c" prot="public" virt="non-virtual"><scope>mty::wick::ConnectedComponent</scope><name>addVertex</name></member>
+      <member refid="classmty_1_1wick_1_1ConnectedComponent_1a5c7b28ecd3a38ec15a20a6053609164e" prot="public" virt="non-virtual"><scope>mty::wick::ConnectedComponent</scope><name>connect</name></member>
+      <member refid="classmty_1_1wick_1_1ConnectedComponent_1a5b84cc97588b0aa1844a186255710e0e" prot="public" virt="non-virtual"><scope>mty::wick::ConnectedComponent</scope><name>connect</name></member>
+      <member refid="classmty_1_1wick_1_1ConnectedComponent_1a2ebd564de68a3ce829de248771b71ec5" prot="public" virt="non-virtual"><scope>mty::wick::ConnectedComponent</scope><name>ConnectedComponent</name></member>
+      <member refid="classmty_1_1wick_1_1ConnectedComponent_1a9a0bf0ca382a49e0c3f687bc43d9c0d8" prot="public" virt="non-virtual"><scope>mty::wick::ConnectedComponent</scope><name>ConnectedComponent</name></member>
+      <member refid="classmty_1_1wick_1_1ConnectedComponent_1a8a24a928ac29a06fc27714a326464c4f" prot="public" virt="non-virtual"><scope>mty::wick::ConnectedComponent</scope><name>getContractibleVertices</name></member>
+      <member refid="classmty_1_1wick_1_1ConnectedComponent_1ab0cf40bf0c3f36acb4f6cbe48ef2d5f7" prot="public" virt="non-virtual"><scope>mty::wick::ConnectedComponent</scope><name>getFirstContractibleField</name></member>
+      <member refid="classmty_1_1wick_1_1ConnectedComponent_1a22fab00a6cba9329cf8deddd8a46986e" prot="public" virt="non-virtual"><scope>mty::wick::ConnectedComponent</scope><name>getFirstContractibleNode</name></member>
+      <member refid="classmty_1_1wick_1_1ConnectedComponent_1a323f4964a5f9bd0a5c1909ab18d36280" prot="public" virt="non-virtual"><scope>mty::wick::ConnectedComponent</scope><name>getFirstContractibleVertex</name></member>
+      <member refid="classmty_1_1wick_1_1ConnectedComponent_1adc320bde43ca29867b124ece823d4f8c" prot="public" virt="non-virtual"><scope>mty::wick::ConnectedComponent</scope><name>getNodes</name></member>
+      <member refid="classmty_1_1wick_1_1ConnectedComponent_1abb5a0bdd982cef90a4245ce19ec9f73d" prot="public" virt="non-virtual"><scope>mty::wick::ConnectedComponent</scope><name>getVertices</name></member>
+      <member refid="classmty_1_1wick_1_1ConnectedComponent_1ae8914bef028918ab77eec4fbc155a522" prot="public" virt="non-virtual"><scope>mty::wick::ConnectedComponent</scope><name>hasValenceLeft</name></member>
+      <member refid="classmty_1_1wick_1_1ConnectedComponent_1aaf861158dc94f9584bbaf339bc06f606" prot="public" virt="non-virtual"><scope>mty::wick::ConnectedComponent</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classmty_1_1wick_1_1ConnectedComponent_1abda640be132b1130f949feda23acb4a6" prot="private" virt="non-virtual"><scope>mty::wick::ConnectedComponent</scope><name>vertices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

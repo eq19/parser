@@ -1,0 +1,397 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classcsl_1_1HighDTensor" kind="class" language="C++" prot="public">
+    <compoundname>csl::HighDTensor</compoundname>
+    <basecompoundref refid="classcsl_1_1AbstractVectorial" prot="public" virt="non-virtual">csl::AbstractVectorial</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcsl_1_1HighDTensor_1a1ed2bec6d7b95038cfc99a0d735dac4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::HighDTensor::HighDTensor</definition>
+        <argsstring>()</argsstring>
+        <name>HighDTensor</name>
+        <qualifiedname>csl::HighDTensor::HighDTensor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="298" column="5" bodyfile="src/csl/vector.cpp" bodystart="1478" bodyend="1481"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1HighDTensor_1ab5c779722fde492e9aaae116778b40a1" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::HighDTensor::HighDTensor</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;shape)</argsstring>
+        <name>HighDTensor</name>
+        <qualifiedname>csl::HighDTensor::HighDTensor</qualifiedname>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>shape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="300" column="14" bodyfile="src/csl/vector.cpp" bodystart="1483" bodyend="1503"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1HighDTensor_1a7ad55658c794aa86dd778bcce553bbba" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::HighDTensor::HighDTensor</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;shape, const Expr &amp;filler)</argsstring>
+        <name>HighDTensor</name>
+        <qualifiedname>csl::HighDTensor::HighDTensor</qualifiedname>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>shape</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classcsl_1_1Expr" kindref="compound">Expr</ref> &amp;</type>
+          <declname>filler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="302" column="14" bodyfile="src/csl/vector.cpp" bodystart="1505" bodyend="1526"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1HighDTensor_1a7a1c4619216bcf089b222e36b3a8787b" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>csl::HighDTensor::HighDTensor</definition>
+        <argsstring>(const csl::vector_expr &amp;t_argument)</argsstring>
+        <name>HighDTensor</name>
+        <qualifiedname>csl::HighDTensor::HighDTensor</qualifiedname>
+        <param>
+          <type>const csl::vector_expr &amp;</type>
+          <declname>t_argument</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="305" column="14" bodyfile="src/csl/vector.cpp" bodystart="1528" bodyend="1546"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1HighDTensor_1a227d26f9583334293805de72b3af4a4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>csl::HighDTensor::~HighDTensor</definition>
+        <argsstring>()</argsstring>
+        <name>~HighDTensor</name>
+        <qualifiedname>csl::HighDTensor::~HighDTensor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="307" column="5" bodyfile="src/csl/vector.h" bodystart="307" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1HighDTensor_1a0434d931a5d7533c32b7b4dc359c24e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespacecsl_1ace591865c69b6315c533a1a325777312" kindref="member">csl::Type</ref></type>
+        <definition>csl::Type csl::HighDTensor::getType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getType</name>
+        <qualifiedname>csl::HighDTensor::getType</qualifiedname>
+        <reimplements refid="classcsl_1_1Abstract_1aa781456c3f801b37ce169c83514c51c1">getType</reimplements>
+        <briefdescription>
+<para>Gives the <bold>type</bold> of <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In the program this function is very often called. It allows different functions to know what type of expr they are manipulating (cos, product, number, etc) in order to do special treatments or simplifications. <simplesect kind="return"><para>type (a non memorized integer corresponding to the type of abstract) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="309" column="15" bodyfile="src/csl/vector.h" bodystart="309" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classcsl_1_1HighDTensor_1aef7b3891d625b7ac460e5ca1b7258695" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool csl::HighDTensor::operator&lt;</definition>
+        <argsstring>(const Abstract *expr) const override</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>csl::HighDTensor::operator&lt;</qualifiedname>
+        <param>
+          <type>const <ref refid="classcsl_1_1Abstract" kindref="compound">Abstract</ref> *</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/csl/vector.h" line="311" column="5" bodyfile="src/csl/simplification.cpp" bodystart="1031" bodyend="1055"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>csl::Abstract</label>
+        <link refid="classcsl_1_1Abstract"/>
+      </node>
+      <node id="2">
+        <label>csl::AbstractVectorial</label>
+        <link refid="classcsl_1_1AbstractVectorial"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>csl::HighDTensor</label>
+        <link refid="classcsl_1_1HighDTensor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>csl::Abstract</label>
+        <link refid="classcsl_1_1Abstract"/>
+      </node>
+      <node id="2">
+        <label>csl::AbstractVectorial</label>
+        <link refid="classcsl_1_1AbstractVectorial"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>csl::HighDTensor</label>
+        <link refid="classcsl_1_1HighDTensor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/csl/vector.h" line="294" column="1" bodyfile="src/csl/vector.h" bodystart="294" bodyend="312"/>
+    <listofallmembers>
+      <member refid="classcsl_1_1Abstract_1ad5fee68c1f3dcbda0e936926fed17616" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>Abstract</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a580c5ef55bc98e097a82910bc993be8f" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>AbstractVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a5549ac0c186b3c6febf332245a25a82c" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>addAntiSymmetry</name></member>
+      <member refid="classcsl_1_1Abstract_1abbab11282e5c6ac46b018642ff129f47" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>addDependency</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a91561bc3d02d055e86b7f3e35a76e25c" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>addition_own</name></member>
+      <member refid="classcsl_1_1Abstract_1ad431770faa4291116a50175193a11a88" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>addSymmetry</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a71a8d453b3d5c57f2d09b17e99302ef8" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>antisymmetrise</name></member>
+      <member refid="classcsl_1_1Abstract_1a61d3ab932182226f4670a62bbb22af4e" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>applyDiracDelta</name></member>
+      <member refid="classcsl_1_1Abstract_1a316956fea77627a716500a2bbfc1f3b7" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>applyOperator</name></member>
+      <member refid="classcsl_1_1Abstract_1a6305ce90c795bfb416d8e958c62f905c" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>applySelfStructureOn</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1ae951a1c6c575665a57ee6cf5549bf0c6" prot="protected" virt="non-virtual"><scope>csl::HighDTensor</scope><name>argument</name></member>
+      <member refid="classcsl_1_1Abstract_1a27ad666bf7d533607da9675b0c645ee9" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>askTerm</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1aa8225d3dd07be192735c766e8d267774" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>begin</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a135f3df162ac8e7128a3e666e26cb81b" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>begin</name></member>
+      <member refid="classcsl_1_1Abstract_1aa4cba37520821432f37e212fefbc2534" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>breakSpace</name></member>
+      <member refid="classcsl_1_1Abstract_1af0f40b77914e45f56bf87839d00211d7" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>breakSpace</name></member>
+      <member refid="classcsl_1_1Abstract_1afd9d0336808e8adf4ccdccb51587ed8c" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>checkIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a1ebd84082bb93418408cc0babe2dffe2" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>checkIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1ab3746f1d3667846824ea51b8a2e00d31" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>collect</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a7a90b9f26666f4aff635bfbf7cd865b6" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>commutesWith</name></member>
+      <member refid="classcsl_1_1Abstract_1a7caee12abb451168149779a668dfc59e" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>compareWithDummy</name></member>
+      <member refid="classcsl_1_1Abstract_1a0f16fda9fe72a89c61ece36101a11d95" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>compareWithDummy</name></member>
+      <member refid="classcsl_1_1Abstract_1aed79d20a0821205e6430c80a474117d3" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>contractIndex</name></member>
+      <member refid="classcsl_1_1Abstract_1ad874fc858295a737e6ce884530f1109b" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1Abstract_1abd35096982e92b669ea55d960c5f44be" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>contraction</name></member>
+      <member refid="classcsl_1_1Abstract_1af29c2898c5d3ba96de8018a0838c402c" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>copy</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1ae3c098ec3de74dad72d9db7d47136a95" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>copy_unique</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a68121249b62f27fee6927b20e667d4b6" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>deepCopy</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a0b8721d9b3e21d66177396f4986daaf5" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>deepRefresh</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a5dfd1e8233507457f725e10e2624ec0f" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>dependsExplicitlyOn</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a774421b7d986b3e88533c4e20c206c12" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>dependsExplicitlyOn</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1acca79f2a53255ee6b10d51efc658cb19" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>dependsOn</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a87b6428015d2a220210ad0d10f2333a8" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>dependsOn</name></member>
+      <member refid="classcsl_1_1Abstract_1aecab8c872023a2d0771e7e4f83bb05f8" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>derive</name></member>
+      <member refid="classcsl_1_1Abstract_1aeb08811cf370616477a92075e4a218ee" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>determinant</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1af91837bcfe852d7e8baa5d9efdcc1609" prot="protected" virt="non-virtual"><scope>csl::HighDTensor</scope><name>dim</name></member>
+      <member refid="classcsl_1_1Abstract_1a1578c74aee1050b806a67e7a81a67f5c" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>division_own</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a0ed41f66d207d34ebafc90bc473109ca" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>dot</name></member>
+      <member refid="classcsl_1_1Abstract_1a0c3c3fe5010f24e8a8765ea06415c003" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>empty</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a06f69d432a047d7b48757d8362de68d4" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>end</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1ada11a590d79c87baf92a98888ee32c44" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>end</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1afaf73d258e30ae78513cfaa4d7c65d59" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>evaluate</name></member>
+      <member refid="classcsl_1_1Abstract_1a543d5a4f0432e166b492ad28a860a65f" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>evaluateScalar</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1afd27e37bd7e9862252467bf574a37e6b" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>exactMatchShape</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a09396a6b80940ac8c99604e9b845c815" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>expand</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a8907475ad6468725bafe0c81dfbeb688" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>expand_if</name></member>
+      <member refid="classcsl_1_1Abstract_1aa2696a0feb43766ef54e1e3dd3d6d134" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>exponentiation_own</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a9b1f0b9354e966da0d740965ec068ccd" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>factor</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a368c2a6b5fb359cc8f6f209ec548f0ad" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>factor</name></member>
+      <member refid="classcsl_1_1Abstract_1a299b1fd6c2b9d80ad90a08c7acef28d2" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>findSubExpression</name></member>
+      <member refid="classcsl_1_1Abstract_1a021946e84d8c1a019908cac578b16fe8" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getAllDependencies</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a2320c9f9c71eb81a2348175dd14404a9" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a0fbb75333c68d6c9a2d2e277d34bca3f" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a2da0f7388c5c61c4a18c5e5dba6fdd69" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a7a03ddf294e576016a8114f46eb900f9" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1afeb26e1382411448ce3c65d50fefd8bb" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getCanonicalPermutation</name></member>
+      <member refid="classcsl_1_1Abstract_1a2263731ca94825f35281e69fb258cf87" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getCommutable</name></member>
+      <member refid="classcsl_1_1Abstract_1a9cc64c66894acafc1f069dc40072084b" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getComplexArgument</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a2a2c1314e65baf839542e6fb7845ad44" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getComplexConjugate</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a1c8b58da63fe78c40174e6f2f582cbf3" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getComplexModulus</name></member>
+      <member refid="classcsl_1_1Abstract_1a470d9f1267fba4a82e13af4a39470f81" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getComplexProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1af04c0e4426f0bf9df365afe0148d59df" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getContractedPair</name></member>
+      <member refid="classcsl_1_1Abstract_1aec707d949f0f98e08ab4642c93dd9eb5" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getContractionProperties</name></member>
+      <member refid="classcsl_1_1Abstract_1aa22f0e4c9c91f43b5cd61cbb873869eb" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getDeltaMinus</name></member>
+      <member refid="classcsl_1_1Abstract_1a69a657baf1c35ed581e9db2c47a71c99" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getDeltaPlus</name></member>
+      <member refid="classcsl_1_1Abstract_1a9531d78d67c82e288c0130da5b1ba80b" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getDenom</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1afda6fa063a671a3a0feee716621c19c3" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getDim</name></member>
+      <member refid="classcsl_1_1Abstract_1a77e067fc57c0c2e70d141079455fdbd7" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getElementary</name></member>
+      <member refid="classcsl_1_1Abstract_1ac513c930caa9939c2b9557f36a34ee69" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getExponents</name></member>
+      <member refid="classcsl_1_1Abstract_1ac34c9c6f05e692faeed2f030514787ad" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getFactors</name></member>
+      <member refid="classcsl_1_1Abstract_1aa4136dc23f1fba4bf897b54c8592ccfc" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getFreeIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1aa5b707a5efdaef7c7945cbd921c3f526" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getHermitianConjugate</name></member>
+      <member refid="classcsl_1_1Abstract_1aff5cca2b2c8190e59f6e34cb1e383d36" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getHermitianConjugate</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a4d3d4dbce8837fc40b19131a019044a3" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getImaginaryPart</name></member>
+      <member refid="classcsl_1_1Abstract_1a3234ce243f6a2e11950be42f10100943" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getIndex</name></member>
+      <member refid="classcsl_1_1Abstract_1ae125a32b6f3d0368b6055d4e58c1ff3f" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1ae6a9a9ef3efd6bb83b62c0a353742d25" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>getIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1addb848bf4cdea207484a71e9b1006ead" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getIndexStructureView</name></member>
+      <member refid="classcsl_1_1Abstract_1a632e28530a68539fadacd7ab7ffc8be1" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getIndexStructureView</name></member>
+      <member refid="classcsl_1_1Abstract_1a3d6b1e294cf24dea17c3c4361226138b" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getInfBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1a9c4a302d1a3cbf4dd9394f5e5880d343" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getLatexName</name></member>
+      <member refid="classcsl_1_1Abstract_1a652101e34b2efa43114150e9af3c79d5" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getLibDependency</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1aae5db88feee1be51e3ad429c6c10df58" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getName</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a2689157ec6445f198e36dadb4d9aef78" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getNArgs</name></member>
+      <member refid="classcsl_1_1Abstract_1a42125e9765a771c47819548d342b0b28" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getNContractedPairs</name></member>
+      <member refid="classcsl_1_1Abstract_1a204dbd37b63432cb08932b995f49d3f4" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getNFactor</name></member>
+      <member refid="classcsl_1_1Abstract_1add364193f7a78ac28f7001c7f4036453" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getNIndices</name></member>
+      <member refid="classcsl_1_1Abstract_1a6aa6bcc7cb8ee1574f29dc6ab6c6f0ed" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getNum</name></member>
+      <member refid="classcsl_1_1Abstract_1aad25c117c8dfc4d9718ba41e8d3f33a6" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getNumericalFactor</name></member>
+      <member refid="classcsl_1_1Abstract_1a9c3ec3dfe1fbd8ead5c8d9aca421a863" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getOperand</name></member>
+      <member refid="classcsl_1_1Abstract_1a9500a21d75d03c695ec0c76493600b38" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getOrder</name></member>
+      <member refid="classcsl_1_1Abstract_1ae89eb7b1a9e0259a60154563f3315907" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getOrderOf</name></member>
+      <member refid="classcsl_1_1Abstract_1ab150130c9f67daaf6aba52b9f6b90941" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getParent</name></member>
+      <member refid="classcsl_1_1Abstract_1a15f775b5add9af8727ead2cfaab78ba2" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getParent_info</name></member>
+      <member refid="classcsl_1_1Abstract_1aea8459b3206eb3a2297eeea7688e9520" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getParity</name></member>
+      <member refid="classcsl_1_1Abstract_1a946d175d946da102c5f4cc91840703cb" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getPermutations</name></member>
+      <member refid="classcsl_1_1Abstract_1a06b32036fea6a2583f506a6ef9508d74" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getPoint</name></member>
+      <member refid="classcsl_1_1Abstract_1ade540a127da7304f2b7282f4dcaffc7f" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getPolynomialTerm</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1afb6d645d2f0673a500eaf294ff822269" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getPrimaryType</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a6f4f1f7c516ee3daceaf5044a40c04d1" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getProduct</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1ab99d86f5bed81171962f0cf99415bfba" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getRealPart</name></member>
+      <member refid="classcsl_1_1Abstract_1a5b77f008f4b95030641224877004f06c" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getRegularExpression</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a8cee385d5b699162c8a400e4b44ed7d7" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getShape</name></member>
+      <member refid="classcsl_1_1Abstract_1aa83df1d9dc202457113e5b38bd694fae" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getSign</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1aa95d66839c20fc1b9cf8bd658b3237bb" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getSubSymbols</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a002b8834bc010144ab0666c6697a5d7b" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a9a15f8a9b14ee52361a104d2206c8bef" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a8770e53fba4f253c41b7fa8015f62833" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a7dcdc11b64c8c515933882168d0792ef" prot="public" virt="virtual" ambiguityscope="csl::Abstract::"><scope>csl::HighDTensor</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1Abstract_1a413c50b2663f57d38c1d3ec3cfeaa3ce" prot="public" virt="virtual" ambiguityscope="csl::Abstract::"><scope>csl::HighDTensor</scope><name>getSubVectorial</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1aa9d43ea7296950633aa2ac848173cb51" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getSum</name></member>
+      <member refid="classcsl_1_1Abstract_1a2fcc223dbf5d880e923c07df142df5c8" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getSupBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1a1d36e7a5acc50766d5cd3f6d59df978d" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getTerm</name></member>
+      <member refid="classcsl_1_1Abstract_1a404c5e89a3aad8a8dabcb56d4120c0fe" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getTransposed</name></member>
+      <member refid="classcsl_1_1Abstract_1aca3debb143668fd3ab75a27a47dd0c13" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getTransposed</name></member>
+      <member refid="classcsl_1_1HighDTensor_1a0434d931a5d7533c32b7b4dc359c24e1" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getType</name></member>
+      <member refid="classcsl_1_1Abstract_1a78f98ba06476e464e3fd2fce0d1f8243" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getValue</name></member>
+      <member refid="classcsl_1_1Abstract_1a628563238145f3a9acc331f1a89ce32f" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getValued</name></member>
+      <member refid="classcsl_1_1Abstract_1ae85f810bbadbc792210c958e8f1b2ffb" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getVariable</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1ad91b47a309a8fc9c5ed9e4b827d84155" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getVectorArgument</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a8f4326ec0f618785cf0e9d84b448cdd6" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>getVectorialModulus</name></member>
+      <member refid="classcsl_1_1Abstract_1a94bf1455397fdd2df8dbbc3b41c2f3f4" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>hasChainContractionProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1aa31e08c251d96b8ea8ec8d385895c1ff" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>hasContractionProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1a8c42723e8bc6334c99f00898cc1d59d7" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>hermitian</name></member>
+      <member refid="classcsl_1_1HighDTensor_1a1ed2bec6d7b95038cfc99a0d735dac4d" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>HighDTensor</name></member>
+      <member refid="classcsl_1_1HighDTensor_1ab5c779722fde492e9aaae116778b40a1" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>HighDTensor</name></member>
+      <member refid="classcsl_1_1HighDTensor_1a7ad55658c794aa86dd778bcce553bbba" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>HighDTensor</name></member>
+      <member refid="classcsl_1_1HighDTensor_1a7a1c4619216bcf089b222e36b3a8787b" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>HighDTensor</name></member>
+      <member refid="classcsl_1_1Abstract_1a5437e7f685edf8549e6d3b34572343f8" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>insert</name></member>
+      <member refid="classcsl_1_1Abstract_1a1b68943aa7ecf60a63af0f2f368eef8f" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>inverseMatrix</name></member>
+      <member refid="classcsl_1_1Abstract_1a9347e75b0cd0b75e0f0a38db93b29d83" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>isAnOperator</name></member>
+      <member refid="classcsl_1_1Abstract_1ac09992d147b39388c8936b3bff648930" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>isArbitrary</name></member>
+      <member refid="classcsl_1_1Abstract_1ad74c068f1da78856321932b6b6ae17dc" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>isBuildingBlock</name></member>
+      <member refid="classcsl_1_1Abstract_1a22a594845a29429c9b4f19c92bd18cad" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>isComplexConjugate</name></member>
+      <member refid="classcsl_1_1Abstract_1a464f4f0613db9b4b0a4efe26a3a03d60" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>isEmpty</name></member>
+      <member refid="classcsl_1_1Abstract_1af2ce38838e35c5785f92373a1d830668" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>isHermitianConjugate</name></member>
+      <member refid="classcsl_1_1Abstract_1a216b7bd3930fbf047e5bf8f69e9b964c" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>isIndexed</name></member>
+      <member refid="classcsl_1_1Abstract_1a9a014bfd266b5f8471f23580e271979b" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>isInteger</name></member>
+      <member refid="classcsl_1_1Abstract_1acae10d5685ccec295fbd9be7996073cb" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>isPolynomial</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a43c9ebd8953d2f51b7bc7a8b7e97ccd3" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>isPurelyImaginary</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a2160f94ea8c3453104f4f38cdf87dc12" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>isReal</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1ab24d4b6eae7dbe9783aabf2bfcb7a224" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>matchShape</name></member>
+      <member refid="classcsl_1_1Abstract_1ac3978c71035bf1cda50f5b9031d631af" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>memoryOverhead</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a81eebf482c8b342b75aaec063533790c" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>multiplication_own</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1aec986a5a2e05c6ee2b65600e543bf8bb" prot="protected" virt="non-virtual"><scope>csl::HighDTensor</scope><name>nArgs</name></member>
+      <member refid="classcsl_1_1Abstract_1af5b62a6308638064c42da80e9cc2cb7e" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1af4fd1b57df371dac7ccfd5a909620e49" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a96de5935a58a96d4c5b1e47966488923" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1ac99a619abde7e4c58f39e14d4d20fcf5" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a45206de7c7773b3cb150451ee3eb379e" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1Abstract_1a0d3495220202bd417c1b58249c923f39" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>operator!=</name></member>
+      <member refid="classcsl_1_1HighDTensor_1aef7b3891d625b7ac460e5ca1b7258695" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a5c1ba8dce7fbc19eb98807bd15a279c9" prot="public" virt="pure-virtual" ambiguityscope="csl::AbstractVectorial::"><scope>csl::HighDTensor</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a6e19587260a07dba65cf2a985e05516b" prot="public" virt="non-virtual" ambiguityscope="csl::AbstractVectorial::"><scope>csl::HighDTensor</scope><name>operator&lt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a2a1660498f2638f5e490d6e512eb32f4" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>operator&lt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1afbcac6df2fd7ac11f336189cf215124b" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>operator&lt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1a59ff2950fc8ca319f87a730450f14545" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>operator=</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a45bc5fb9f24b918a685eef9742a4c046" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a8334e14cd5789168b037d3888ed60edd" prot="public" virt="virtual" ambiguityscope="csl::Abstract::"><scope>csl::HighDTensor</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a12d929e34039e817e464abc560bd4a9d" prot="public" virt="virtual" ambiguityscope="csl::Abstract::"><scope>csl::HighDTensor</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a1f78f0cce24c93def3050743bc5f2845" prot="public" virt="non-virtual" ambiguityscope="csl::Abstract::"><scope>csl::HighDTensor</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1aed43debcac4a19e0da44986774c522bc" prot="public" virt="non-virtual" ambiguityscope="csl::Abstract::"><scope>csl::HighDTensor</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a2376f08c0aa5ffe783090381d102d3ae" prot="public" virt="non-virtual" ambiguityscope="csl::Abstract::"><scope>csl::HighDTensor</scope><name>operator==</name></member>
+      <member refid="classcsl_1_1Abstract_1a485c6f3e10db539a70416cd0766b117d" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>operator&gt;</name></member>
+      <member refid="classcsl_1_1Abstract_1ab305bdf49212f03781e7f98024faeb66" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>operator&gt;</name></member>
+      <member refid="classcsl_1_1Abstract_1a4c8883df19d7538b68fa96aadac9dfa9" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>operator&gt;=</name></member>
+      <member refid="classcsl_1_1Abstract_1a6b931f7b159d57bad26ca9c9ea729aa1" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>operator&gt;=</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1afd91a1187f15759c61d5a9460f88d3dc" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>operator[]</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a303d252e82b4e28ec9df8a5a971acf52" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>operator[]</name></member>
+      <member refid="classcsl_1_1Abstract_1a75d9abfa88d9d09a89d3a4becd9e6429" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>operatorAppliesOn</name></member>
+      <member refid="classcsl_1_1Abstract_1abe9aceabbc0a99642e84c9025dbdc767" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>permut</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1afeaa37536bfa9de67a736d2884578514" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>print</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1ad12d45f7d849c24d2518395f6798652d" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>printCode</name></member>
+      <member refid="classcsl_1_1Abstract_1a89e45ffc7b65f92e77e592f76f70934c" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>printExplicit</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a8a568746d53548b8621fda445258e830" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>printLaTeX</name></member>
+      <member refid="classcsl_1_1Abstract_1a0645745feacf93470963b55f93cae1c0" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>printProp</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a4164e7fdb8f91e942bc8be981c321e39" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>refresh</name></member>
+      <member refid="classcsl_1_1Abstract_1a8aab87c41acafaf1b1837b922495560d" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>regularLiteral</name></member>
+      <member refid="classcsl_1_1Abstract_1a2fe749450d2e610199801b189dc3d0f8" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>regularLiteral</name></member>
+      <member refid="classcsl_1_1Abstract_1aba5ef083016b2f3d9e6271f864b9b063" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>regularName</name></member>
+      <member refid="classcsl_1_1Abstract_1a1a8421d402d5ba82257188b545e8d668" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>regularName</name></member>
+      <member refid="classcsl_1_1Abstract_1a0e778c682b6cb02642b90e8ec8765441" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>removeDependency</name></member>
+      <member refid="classcsl_1_1Abstract_1acc0eb077e25c9a67d15269cf8d5f0511" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>replaceIndex</name></member>
+      <member refid="classcsl_1_1Abstract_1a9372ddd521fa661c5d3371e0d8d4dfc3" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>replaceIndexInPlace</name></member>
+      <member refid="classcsl_1_1Abstract_1ac9e54a236015d14af42b0bcde41953f3" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>replaceIndices</name></member>
+      <member refid="classcsl_1_1Abstract_1af0d95f3edc0562b1d75d60b670119842" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>resetIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a5c796713828ebfb74a7d8787d7802a76" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>self</name></member>
+      <member refid="classcsl_1_1Abstract_1aa6a40ceb6eb1aa79711ca126d5bdda02" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setAllDependencies</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1ae67f1daf87e45e15b82dd2827f6ba55f" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setArgument</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a47a8b2fbd9233c706cb5fcf05f96bc7f" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setArgument</name></member>
+      <member refid="classcsl_1_1Abstract_1a7bb29d316b8f64652cef472a6c23f001" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setCommutable</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a135c8f0acf06bfc038a459a3283e309b" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setComplexProperty</name></member>
+      <member refid="classcsl_1_1Abstract_1a37ebc247831d6629d44117a490fca120" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setConjugated</name></member>
+      <member refid="classcsl_1_1Abstract_1aa6a04bb56578e7da143b3cd8d8fb7b26" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setElementary</name></member>
+      <member refid="classcsl_1_1Abstract_1afa50c743b8e7e76e637e98f165ad4e5d" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setEmpty</name></member>
+      <member refid="classcsl_1_1Abstract_1ac318016372d14b795893fe7e59199084" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setFullyAntiSymmetric</name></member>
+      <member refid="classcsl_1_1Abstract_1a4f90ebb7cf7c26782bd36bc2a67fc5d4" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setFullySymmetric</name></member>
+      <member refid="classcsl_1_1Abstract_1a70f946f9c59df045ef7416320ade89c7" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setIndexStructure</name></member>
+      <member refid="classcsl_1_1Abstract_1a5ecdb6ce7a2d9643da2f6161a06dfbbf" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setInfBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1a867135c96776248add60018f4aa7a578" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setName</name></member>
+      <member refid="classcsl_1_1Abstract_1a70df7be4486affa8dc891e3f25bf499f" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setOperand</name></member>
+      <member refid="classcsl_1_1Abstract_1ae7b8a14fc746ed72e4d5abd63373c5ba" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setOperandPrivate</name></member>
+      <member refid="classcsl_1_1Abstract_1a3003698af4978e774eeb2e62038f7432" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setParent</name></member>
+      <member refid="classcsl_1_1Abstract_1a3c175411df619e7504feb6d888fc82f1" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setPoint</name></member>
+      <member refid="classcsl_1_1Abstract_1aad7104a5b8855272a92a47c58f29e958" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setSupBoundary</name></member>
+      <member refid="classcsl_1_1Abstract_1aaf7f0692cb84ca861a5b3b641bea518b" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setValue</name></member>
+      <member refid="classcsl_1_1Abstract_1aa49c51bd285830e724f103e9fb61c464" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setValue</name></member>
+      <member refid="classcsl_1_1Abstract_1aa47ddab3aa047e86be34c70358d53548" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setVariable</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a2d072812c1918ec0097729d353003198" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>setVectorArgument</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a522c084004a0cda5d1e49b050d4ff36c" prot="protected" virt="non-virtual"><scope>csl::HighDTensor</scope><name>shape</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1ad9eb779b7f16721eb18b6a47037db518" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>size</name></member>
+      <member refid="classcsl_1_1Abstract_1a4eeedaeaa39e75facf1060dce7c57a8f" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>suppressExponent</name></member>
+      <member refid="classcsl_1_1Abstract_1a43520e1d6d5fdad9b50f77c6e027f928" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>suppressTerm</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a690f2f1b0748bbd81213335c47535113" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>symmetrise</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a0e4336f06daf87990d127a4b755c121c" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>tensordot</name></member>
+      <member refid="classcsl_1_1Abstract_1aee4fa41a5e014f067395467542ee8831" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>testDummy</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1a9a79c1dcc4d4ee22c8662ffcc11e5378" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>trace</name></member>
+      <member refid="classcsl_1_1Abstract_1a9a86d21f5c5f65eb7e524a8f8002c0e7" prot="public" virt="virtual" ambiguityscope="csl::Abstract::"><scope>csl::HighDTensor</scope><name>trace</name></member>
+      <member refid="classcsl_1_1Abstract_1a1e97712696e5c40b28bc1e35987fea94" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>transpose</name></member>
+      <member refid="classcsl_1_1Abstract_1a40bdc4c76fdbbf3cbac3af4dce8286ed" prot="public" virt="virtual"><scope>csl::HighDTensor</scope><name>~Abstract</name></member>
+      <member refid="classcsl_1_1AbstractVectorial_1aa2142a09824aac38b268ccccb274c6dc" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>~AbstractVectorial</name></member>
+      <member refid="classcsl_1_1HighDTensor_1a227d26f9583334293805de72b3af4a4d" prot="public" virt="non-virtual"><scope>csl::HighDTensor</scope><name>~HighDTensor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
