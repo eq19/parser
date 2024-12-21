@@ -80,7 +80,7 @@ runs:
         JOB_ID: ${{ inputs.id }}
         GH_TOKEN: ${{ inputs.token }}
       run: |
-        if [ -d /mnt/disks/platform/usr/local/sbin ]; then
+        if [ -d /mnt/disks/deeplearning/usr/local/sbin ]; then
           export PAULI_SUM=$(echo -n "${{ inputs.pauli_sum }}" | base64 --decode);
           export PATH=/home/runner/_work/_actions/eq19/eq19/v1/.github/entrypoint:$PATH && init.sh
         else
