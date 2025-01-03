@@ -50,7 +50,7 @@ runs:
   
   steps:
     - name: Target Configuration
-      uses: eq19/eq19/.github/actions/3-exponentiation/4-parser@v1
+      uses: eq19/eq19/.github/actions/3-exponentiation/4-parser@v2
       if: inputs.id == 3
       id: exponentiation
       with:
@@ -66,7 +66,7 @@ runs:
         id: ${{ inputs.id }}
 
     - name: Profiling Feedback
-      uses: eq19/eq19/.github/actions/4-identition/4-parser@v1
+      uses: eq19/eq19/.github/actions/4-identition/4-parser@v2
       if: inputs.id == 4
       id: identition
       with:
