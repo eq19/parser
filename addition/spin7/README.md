@@ -13,7 +13,6 @@ By this chapter we are going to learn whether the spin discussed in prime hexago
 
 Spin is an [intrinsic](https://en.wikipedia.org/wiki/Intrinsic_and_extrinsic_properties) form of [angular momentum](https://en.wikipedia.org/wiki/Angular_momentum) carried by [elementary particles](https://en.wikipedia.org/wiki/Elementary_particle), and thus by [composite particles](https://en.wikipedia.org/wiki/List_of_particles#Composite_particles) such as [hadrons](https://en.wikipedia.org/wiki/Hadron), [atomic nuclei](https://en.wikipedia.org/wiki/Atomic_nucleus), and atoms.
 
-
 ## Basic Concept
 
 There are ***two (2) types force carriers*** and ***three (3) type of generations***. The origin of multiple generations of the particular count of 3, is an [unsolved problem of physics](https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics).
@@ -155,6 +154,20 @@ The fourth fundamental force is gravity, which is not adequately explained by th
 
 [![Particle Physics](https://github.com/eq19/maps/assets/8466209/916fbfbc-d514-4eb8-be7b-b67a5640d426)](https://github.com/eq19/maps/assets/8466209/2f1fa3f5-722a-4b38-bc81-04a6b5fb78a8)
 
+Here is the visualization of the qutrit Bloch space, highlighting the quantum states using the Generalized Gell-Mann matrices.
+
+![file-EmCubS8Eyn7uXWvGyarNhj](https://github.com/user-attachments/assets/f12b9976-ce8c-40b7-8c68-a8b582b9918c)
+
+Here is the visualization incorporating qutrit states, gluons, and fermions in a unified quantum framework.
+
+![file-NFKonFXEnaJcMebaZLGpXZ](https://github.com/user-attachments/assets/3e645a8b-c4eb-4c12-845c-223f2651a968)
+
+Here is the visualization representing 12 quarks and 8 gluons, illustrating their interaction within the framework of quantum chromodynamics.
+
+![file-CU3id3CGtadqR3a1gJtpur](https://github.com/user-attachments/assets/e234ffe8-4ed0-4431-98df-946e6095be89)
+
+Let's be advised that further adjustments are needed.
+
 ## Symmetrical State
 
 ```tip
@@ -225,7 +238,6 @@ Theories that lie beyond the Standard Model include various extensions of the st
 
 [![](https://user-images.githubusercontent.com/8466209/222023510-e57f97a6-5026-4027-b105-25a4290ed2de.png)](https://en.wikipedia.org/wiki/Mathematical_formulation_of_the_Standard_Model)
 
-
 This book has emerged out of the introductory lectures we gave in the graduate course or series of lectures given in various places over several years. 
 
 ```note
@@ -235,6 +247,5 @@ After these chapters, we will come to the description of physics beyond the stan
 ```
 
 [![the-physics-of-the-standard-model-and-beyond](https://github.com/user-attachments/assets/6d27e427-48b4-44e7-a887-4db2e37b6704)](https://github.com/user-attachments/files/17866411/the-physics-of-the-standard-model-and-beyond.pdf)
-
 
 By next chapter we will discuss the mechanism of _[symmetry breaking](https://www.eq19.com/multiplication/10.html#symmetry-breaking)_ where the neutral Higgs field interacts with other particles to give them mass.
