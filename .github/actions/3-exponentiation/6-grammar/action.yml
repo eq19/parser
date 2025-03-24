@@ -123,13 +123,13 @@ runs:
           shopt -s dotglob && mv -f /home/runner/_site/* .
 
           # Assign the environment variable correctly
-          COMMIT="${{ env.LATEST_COMMIT }}"
+          #COMMIT="${{ env.LATEST_COMMIT }}"
 
           # Remove double quotes
-          MESSAGE=$(echo "$COMMIT" | tr -d '"')
+          MESSAGE=$(echo "$LATEST_COMMIT" | tr -d '"')
 
           # Debug output to verify
-          echo "Original: $COMMIT"
+          echo "Original: $LATEST_COMMIT"
           echo "Processed: $MESSAGE"
 
           # Commit and push changes
