@@ -8,9 +8,6 @@ branding:
   color: 'red'
 
 inputs:
-  id:
-    description: The id according to os
-    required: true
   owner:
     description: 'The deploy owner'
     required: false
@@ -51,7 +48,7 @@ runs:
   steps:
     - name: Target Configuration
       uses: eq19/eq19/.github/actions/3-exponentiation/4-parser@v2
-      if: inputs.id == 3
+      if: ${{ env.JOBS_ID == 3 }}
       id: exponentiation
       with:
         hub_username: ${{ inputs.docker_hub_username }}
@@ -63,14 +60,12 @@ runs:
         image_name: ${{ inputs.image_name }}
         pauli_sum: ${{ inputs.pauli_sum }}
         token: ${{ inputs.token }}
-        id: ${{ inputs.id }}
 
     - name: Profiling Feedback
       uses: eq19/eq19/.github/actions/4-identition/4-parser@v2
-      if: inputs.id == 4
+      if: ${{ env.JOBS_ID == 4 }}
       id: identition
       with:
-        id: ${{ inputs.id }}
         token: ${{ inputs.token }}
         pauli_sum: ${{ inputs.pauli_sum }}
         image_name: ${{ inputs.image_name }}
