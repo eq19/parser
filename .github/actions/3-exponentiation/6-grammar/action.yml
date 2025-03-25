@@ -8,9 +8,6 @@ branding:
   color: 'red'
 
 inputs:
-  id:
-    description: The deploy id
-    required: false
   hub_username:
     description: Username for Docker Hub
     default: ${{ github.actor }}       
@@ -100,8 +97,6 @@ runs:
 
     - name: ⏪ Rewind all jobs on failure
       shell: bash
-      env:
-        GH_TOKEN: ${{ inputs.token }}
       run: |
         if [[ '${{ inputs.failure_status }}' == 'true' ]]; then
       
