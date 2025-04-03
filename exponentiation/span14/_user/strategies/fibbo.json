@@ -7,11 +7,8 @@
       "11": 0.006,
       "19": 0
     },
-    "trailing": {
-      "trailing_stop": true,
-      "trailing_stop_positive": 0.099,
-      "trailing_stop_positive_offset": 0.178,
-      "trailing_only_offset_is_reached": false
+    "stoploss": {
+      "stoploss": -0.137
     },
     "max_open_trades": {
       "max_open_trades": Infinity
@@ -36,19 +33,22 @@
       "sell_stoch_osc": 85
     },
     "protection": {
-      "cooldown_lookback": 4,
-      "low_profit_trade_limit": 7,
-      "max_drawdown_trade_limit": 6,
-      "stop_duration": 36,
-      "trade_limit": 3,
+      "cooldown_lookback": 7,
+      "low_profit_trade_limit": 6,
+      "max_drawdown_trade_limit": 4,
+      "stop_duration": 156,
+      "trade_limit": 9,
       "use_low_profit": true,
       "use_max_drawdown_protection": false,
-      "use_stop_protection": false
+      "use_stop_protection": true
     },
-    "stoploss": {
-      "stoploss": -0.104
+    "trailing": {
+      "trailing_stop": true,
+      "trailing_stop_positive": 0.3,
+      "trailing_stop_positive_offset": 0.323,
+      "trailing_only_offset_is_reached": true
     }
   },
   "ft_stratparam_v": 1,
-  "export_time": "2025-03-31 00:50:32.760677+00:00"
+  "export_time": "2025-04-03 16:22:06.671398+00:00"
 }
