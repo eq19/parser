@@ -164,11 +164,10 @@ W.D. Gann: “Stocks make important changes in trend every ***30, 60, 120, 150, 
 
 ## The Interchange Layers
 
-```tip
-Title: Unifying Trading Strategy Optimization with the Framework of Fundamental Physics
+By metaphorically linking trading components to physical forces, we propose a model that inspires a more unified approach to systematic development.
 
-Abstract: This paper presents a novel conceptual framework aligning the stages of trading strategy hyperoptimization with the hierarchy of fundamental forces in physics. By metaphorically linking trading components to physical forces, we propose a model that both structures and inspires a more unified approach to systematic trading development.
-
+```note
+This paper presents a novel conceptual framework aligning the stages of trading strategy hyperoptimization with the hierarchy of fundamental forces in physics. 
 
 ---
 
@@ -228,26 +227,7 @@ Each stage builds upon the stability of the one before, echoing how forces in ph
 Conceptually elegant and practically functional, this model also offers pedagogical value for team communication and strategy design.
 
 
-
----
-
-4. Conclusion
-
 Mapping hyperopt stages to physics not only helps structure development but also provides a narrative lens through which one can explore strategy as an evolving system. This perspective may inspire further research in theory-driven financial modeling.
-
-
----
-
-Appendix:
-
-Diagram: "Theory of Strategy Evolution"
-
-Source components: Freqtrade strategy blocks and hyperopt space definitions
-
-Optimization platform: Python, Freqtrade, JSON-based parameter trees
-
-
-
 ```
 
 [![The Four Fundamental Forces](https://github.com/user-attachments/assets/731865b0-7033-4e1b-a587-0c75c0dcae36)](https://www.eq19.com/#prime-unit-identity)
