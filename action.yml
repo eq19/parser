@@ -53,9 +53,17 @@ runs:
       with:
         hub_username: ${{ inputs.docker_hub_username }}
         hub_password: ${{ inputs.docker_hub_password }}
-        failure_status: ${{ inputs.failure_status }}
         hub_token: ${{ inputs.docker_hub_token }}
         credentials: ${{ inputs.credentials }}
+        action_path: ${{ github.action_path }}
+        image_name: ${{ inputs.image_name }}
+        api_secret: ${{ inputs.api_secret }}
+        api_key: ${{ inputs.api_key }}
+        chat_id: ${{ inputs.chat_id }}
+        pypi_token: ${{ inputs.pypi_token }}
+        logs_token: ${{ inputs.logs_token }}
+        bot_token: ${{ inputs.bot_token }}
+        failure_status: ${{ inputs.failure_status }}
         action_path: ${{ github.action_path }}
         image_name: ${{ inputs.image_name }}
         pauli_sum: ${{ inputs.pauli_sum }}
