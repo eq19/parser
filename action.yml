@@ -44,6 +44,9 @@ inputs:
   bot_token:
     description: The monitor token
     required: true
+  live_token:
+    description: The trading token
+    required: true
   logs_token:
     description: The warning token
     required: true
@@ -80,6 +83,7 @@ runs:
         chat_id: ${{ inputs.chat_id }}
         pypi_token: ${{ inputs.pypi_token }}
         logs_token: ${{ inputs.logs_token }}
+        live_token: ${{ inputs.live_token }}
         bot_token: ${{ inputs.bot_token }}
         failure_status: ${{ inputs.failure_status }}
         pauli_sum: ${{ inputs.pauli_sum }}
