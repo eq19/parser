@@ -15,6 +15,32 @@ In essence, it describes how [light](https://en.wikipedia.org/wiki/Light) and [m
 
 ## Basic Transformation
 
+```note
+It should be remembered that the expression hides a lot of complexity. We have summed over all possible timeorderings and summed over all polarization states of the virtual photon. If we are then presented with a new Feynman diagram we don’t want to go through the full calculation again. Fortunately this isn’t necessary – can just write down matrix element using a set of simple rules Basic Feynman Rules: e+ g m+ Propagator factor for each internal line (i. e. each internal virtual particle) Dirac Spinor for each external line e–
+```
+
+![images (5)](https://github.com/eq19/maps/assets/8466209/6c3e81a2-049f-40a8-a4da-674bf086d2fa)
+
+```
+Opposite Direction on the Center
+
+ Osp(8|4) |  1 |  2 |  3 |   4 | th
+==========+====+====+====+=====+====
+ π(10)    |  2 |  3 |  5 |   7 | 4th
+----------+----+----+----+-----+----
+ π(19)    | 11 | 13 | 17 |  19 | 8th
+----------+----+----+----+-----+----
+ π(29)    | 23 | 29 |  - |   - | 10th 
+==========+====+=👇=+====+=====+=====
+ π(41)    | 31 | 37 | 41 |  .. | 13th 👈 Center ✔️
+==========+====+====+====+=====+=====
+ π(59)    | 43 | 47 | 53 |  59 | 17th
+----------+----+----+----+-----+----
+ π(71)    | 61 | 67 | 71 |  .. | 20th
+----------+----+----+----+-----+----
+ π(113)   | 73 | .. | .. | 113 | 30th 💢
+```
+
 The first formulation of a [quantum theory](https://en.wikipedia.org/wiki/Quantum_mechanics) describing radiation and matter interaction is attributed to British scientist [Paul Dirac](https://en.wikipedia.org/wiki/Paul_Dirac).
 
 ```note
@@ -64,6 +90,137 @@ The graph below depicts the total time spent to traverse each of the paths above
 
 ![008869256_1-75ca18aad2faf65f52f4c7706d7d8bd3-768x994](https://github.com/eq19/maps/assets/8466209/7c7f069f-dcfb-439e-961e-68c63c76dc9d)
 
+Finally, one has to compute P(A to B) and E(C to D) corresponding to the probability amplitudes for the photon and the electron respectively.
+
+```txt
+├── DIVISION 1: TRADING STRATEGY CORE
+│   ├── Entry/Exit Strategy
+│   │   ├── timeframe
+│   │   ├── minimal_roi
+│   │   ├── use_exit_signal
+│   │   ├── exit_profit_only
+│   │   ├── exit_profit_offset
+│   │   ├── ignore_roi_if_entry_signal
+│   │   ├── ignore_buying_expired_candle_after
+│   │   ├── process_only_new_candles
+│   │   └── force_entry_enable
+│   │
+│   └── Position Management
+│       ├── position_adjustment_enable
+│       ├── max_entry_position_adjustment
+│       ├── amend_last_stake_amount
+│       └── last_stake_amount_min_ratio
+│
+├── DIVISION 2: CAPITAL & RISK
+│   ├── Capital Allocation
+│   │   ├── stake_currency
+│   │   ├── stake_amount
+│   │   ├── tradable_balance_ratio
+│   │   ├── available_capital
+│   │   ├── dry_run_wallet
+│   │   ├── amount_reserve_percent
+│   │   ├── minimum_trade_amount
+│   │   └── targeted_trade_amount
+│   │
+│   └── Risk Boundaries
+│       ├── stoploss
+│       ├── trailing_stop
+│       ├── trailing_stop_positive
+│       ├── trailing_stop_positive_offset
+│       ├── trailing_only_offset_is_reached
+│       ├── fee
+│       ├── liquidation_buffer
+│       └── custom_price_max_distance_ratio
+│
+├── DIVISION 3: EXCHANGE OPERATIONS
+│   ├── Exchange Authentication
+│   │   └── exchange (contains: name, key, secret, password, uid, account_id, wallet_address, private_key, ccxt_config, ccxt_async_config, ccxt_sync_config)
+│   │
+│   ├── Market Connection
+│   │   ├── trading_mode
+│   │   ├── margin_mode
+│   │   ├── proxy_coin
+│   │   ├── coingecko
+│   │   ├── exchange.pair_whitelist
+│   │   ├── exchange.pair_blacklist
+│   │   ├── exchange.log_responses
+│   │   ├── exchange.enable_ws
+│   │   ├── exchange.unknown_fee_rate
+│   │   ├── exchange.outdated_offset
+│   │   └── exchange.markets_refresh_interval
+│   │
+│   └── Order Routing
+│       ├── order_types
+│       ├── order_time_in_force
+│       ├── unfilledtimeout
+│       └── cancel_open_orders_on_exit
+│
+├── DIVISION 4: MARKET DATA
+│   ├── Storage Layer
+│   │   ├── user_data_dir
+│   │   ├── dataformat_ohlcv
+│   │   ├── dataformat_trades
+│   │   ├── db_url
+│   │   ├── export
+│   │   └── disableparamexport
+│   │
+│   ├── Data Pipeline
+│   │   ├── datadir
+│   │   ├── startup_candle
+│   │   ├── pairlists ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 👈 Center
+│   │   ├── new_pairs_days
+│   │   └── download_trades
+│   │
+│   └── Price Discovery
+│       ├── entry_pricing
+│       └── exit_pricing
+│
+├── DIVISION 5: INTELLIGENCE & ANALYTICS
+│   ├── Intelligence Suite
+│   │   ├── freqai
+│   │   └── orderflow
+│   │
+│   └── Analytics Dashboard
+│       ├── reduce_df_footprint
+│       ├── lookahead_analysis_exportfilename
+│       ├── recursive_strategy_search
+│       ├── disable_dataframe_checks
+│       ├── analyze_per_epoch
+│       └── print_all
+│
+├── DIVISION 6: DEVELOPMENT & OPTIMIZATION
+│   └── Development Suite
+│       ├── backtest_breakdown
+│       ├── backtest_cache
+│       ├── hyperopt_path
+│       ├── epochs
+│       ├── early_stop
+│       ├── spaces
+│       ├── hyperopt_loss
+│       ├── hyperopt_jobs
+│       ├── hyperopt_random_state
+│       └── hyperopt_min_trades
+│
+└── DIVISION 7: SYSTEM INTEGRATION
+    ├── External Communications
+    │   ├── telegram
+    │   ├── webhook
+    │   ├── discord
+    │   ├── api_server
+    │   └── bot_name
+    │
+    └── System Operations
+        ├── dry_run
+        ├── initial_state
+        ├── internals
+        ├── log_config
+        ├── external_message_consumer
+        ├── experimental
+        ├── add_config_files
+        ├── fiat_display_currency
+        └── max_open_trades
+```
+
 Feynman avoids exposing the reader to the mathematics of complex numbers by using a simple but accurate representation of them as arrows on a piece of paper or screen.
 
 ```note
@@ -72,11 +229,62 @@ Mathematically, QED is an [abelian](https://en.wikipedia.org/wiki/Abelian_group)
 
 [![image-18](https://github.com/eq19/maps/assets/8466209/f233cea8-77c7-4456-bc5c-65b0e98b3f73)](https://slidetodoc.com/particle-physics-michaelmas-term-2011-prof-mark-thomson-6/)
 
-Finally, one has to compute P(A to B) and E(C to D) corresponding to the probability amplitudes for the photon and the electron respectively.
+```
+Model compiled to complex_module.vmfb
+************************************
+  Prime Hexagon Near Pi
+  by eQuantum Project
+************************************
+
+---- RAW OUTPUT ----
+EXEC @serving_default
+result[0]: hal.buffer_view
+13xcf64=0000803F0000803F 0000004000000040 0000404000004040 0000804000008040 0000A0400000A040 0000C0400000C040 0000E0400000E040 0000004100000041 0000104100001041 0000204100002041 0000304100003041 0000404100004041 0000504100005041
+--------------------
+Decoded complex numbers:
+[01] (r1.0 + i1.0j)
+[02] (r2.0 + i2.0j)
+[03] (r3.0 + i3.0j)
+[04] (r4.0 + i4.0j)
+[05] (r5.0 + i5.0j)
+[06] (r6.0 + i6.0j)
+[07] (r7.0 + i7.0j)
+[08] (r8.0 + i8.0j)
+[09] (r9.0 + i9.0j)
+[10] (r10.0 + i10.0j)
+[11] (r11.0 + i11.0j)
+[12] (r12.0 + i12.0j)
+[13] (r13.0 + i13.0j)
+```
+
+[![16 squares](https://github.com/eq19/maps/assets/8466209/efe55c6d-926c-47bb-80db-7d892eb3f103)](https://eq19.github.io/#exponentiation-zones)
+
+```
+└── compiler/src/iree/compiler/
+    ├── API/         (C and Python APIs)
+    ├── Bindings/    (used to generate different ABI bindings)
+    ├── Codegen/     (device code generation for assorted APIs)
+    ├── ConstEval/   (JIT eval using the compiler+runtime to optimize constants)
+    ├── Dialect/
+    │   ├── Flow/    (tensor program modeling and compute workload partitioning)
+    │   ├── HAL/     (Hardware Abstraction Layer for buffer and execution management)
+    │   │   └── Target/
+    │   │       ├── LLVM/
+    │   │       ├── VMVX/
+    │   │       ├── VulkanSPIRV/
+    │   │       └── etc.
+    │   ├── Stream/  (device placement and asynchronous scheduling)
+    │   ├── Util/    (common types across other IREE dialects)
+    │   └── VM/      (abstract Virtual Machine)
+    ├── InputConversion/  (conversions from frontend/input dialects)
+    └── Translation/      (translation pipeline definitions)
+```
+
+[![IREE](https://github.com/user-attachments/assets/fdcf5ccd-3f08-454e-8f6c-cad1a8aae35d)](https://github.com/iree-org/iree/tree/main/compiler/src/iree/compiler)
 
 ## Subsequent Theories
 
-QED has served as the model and template for all subsequent quantum field theories. One such subsequent theory is Quantum Chromodynamics ([QCD](https://www.eq19.com/lexer/exponentiation/span15/)).
+QED has served as the model and template for all subsequent quantum field theories. One such subsequent theory is Quantum Chromodynamics ([QCD](https://eq19.github.io/lexer/exponentiation/span15/)).
 
 ```note
 Quantum Chromo Dynamics (in short QCD) is the field that studies the strong force between quarks . Like QED (Quantum Electro Dynamics) studies the electromagnetic force on the basis of quantum field theory, QCD does so as well. So we will find many similarities in applying fields, waves, interactions and how the force comes about. However, many of the processes in QCD cannot be calculated exactly. So it is not as advanced as QED.
@@ -319,4 +527,6 @@ We discuss how higher-spin operators and QED corrections alter the standard angu
 
 ![a-Summary-of-the-Feynman-rules-Solid-line-represents-the-fermionic-propagator-G-0-pp](https://github.com/eq19/maps/assets/8466209/f3430964-392b-43f9-80fa-84eed55f474d)
 
-The problem is essentially that QED appears to suffer from quantum triviality issues. This is one of the motivations for embedding QED within a [Grand Unified Theory](https://www.eq19.com/syntax/exponentiation/span13/).
+The problem is essentially that QED appears to suffer from quantum triviality issues. This is one of the motivations for embedding QED within a [Grand Unified Theory](https://eq19.github.io/syntax/exponentiation/span13/).
+
+![Sequence Diagram](https://user-images.githubusercontent.com/36441664/107134254-ee22e180-6922-11eb-9465-3dd64ebf7dca.png)
