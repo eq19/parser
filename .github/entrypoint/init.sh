@@ -27,6 +27,8 @@ set_config() {
     gh variable set PARAMS_LIVE --repo ${TARGET_REPOSITORY} --body "${PARAMS_LIVE}"
     gh variable set PARAMS_JSON --repo ${TARGET_REPOSITORY} --body "${PARAMS_JSON}"
     gh variable set REMOVE_REPOSITORY --repo ${TARGET_REPOSITORY} --body "${GITHUB_REPOSITORY}"
+    gh variable set HYPEROPT --repo ${TARGET_REPOSITORY} --body "$(gh variable get HYPEROPT)"
+    gh variable set FREQAIMODEL --repo ${TARGET_REPOSITORY} --body "$(gh variable get FREQAIMODEL)"
   else
     echo "Invalid JSON"
   fi
