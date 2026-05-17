@@ -88,14 +88,14 @@ if [[ "${JOBS_ID}" == "1" ]]; then
 
     #git clone --single-branch --branch gh-pages $REMOTE_REPO gh-pages && cd gh-pages
     #git add . && git commit --allow-empty -m "rerun due to job update" && git push
-    gh workflow run "main.yml" --raw-field "FREQAI_MODEL=$FREQAI_MODEL" --raw-field "REDUCE_EPOCH=$REDUCE_EPOCH"
+    gh workflow run "main.yml" --raw-field "RUN_MODE=$RUN_MODE"
 
   else
 
     if [[ ! -f $RUNNER_TEMP/_config.yml ]]; then set_config $1; fi
     if [[ "$(yq '.repository' $RUNNER_TEMP/_config.yml)" != "$TARGET_REPOSITORY" ]]; then
       echo "$(yq '.repository' $RUNNER_TEMP/_config.yml) != $TARGET_REPOSITORY"
-      gh workflow run "main.yml" --raw-field "FREQAI_MODEL=$FREQAI_MODEL" --raw-field "REDUCE_EPOCH=$REDUCE_EPOCH"
+      gh workflow run "main.yml" --raw-field "RUN_MODE=$RUN_MODE"
     else
       HEADER="Accept: application/vnd.github+json"
       RESPONSE=$(gh api -H "${HEADER}" repos/$TARGET_REPOSITORY/actions/runners)
@@ -177,7 +177,11 @@ elif [[ "${JOBS_ID}" == "3" ]]; then
     "strategies/fibbo.py"
     "strategies/__init__.py"
     "strategies/utils/__init__.py"
+    "strategies/utils/ccxt_patch.py"
     "strategies/utils/indodax_patch.py"
+    "freqaimodels/custom_models.py"
+    "freqaimodels/traditional_models.py"
+    "ft_client/test_client/supervisor.sh"
     "ft_client/test_client/results/results.txt"
     "config_examples/config_freqai.example.json"
     "config_examples/config_pairlist.example.json"
@@ -192,6 +196,7 @@ elif [[ "${JOBS_ID}" == "3" ]]; then
   GCLOUD="/mnt/disks/deeplearning/usr/bin/gcloud"  
   STATUS=$($DOCKER exec mydb supervisorctl status freqtrade_live)
   BASE_URL="https://raw.githubusercontent.com/eq19/maps/$MAP_BRANCH/user_data"
+  PARAMS_URL="https://raw.githubusercontent.com/eq19/maps/$MAP_BRANCH/pythonCode/params.py"
 
   # Get the config value and save to file.json
   curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" \
@@ -210,24 +215,29 @@ elif [[ "${JOBS_ID}" == "3" ]]; then
   CONFIG="/home/runner/user_data/config.json"
   CONFIG_DRY="/home/runner/data_dry/config.json"
   CONFIG_LIVE="/home/runner/data_live/config.json"
+  LIVE_LOG="/home/runner/data_live/logs/freqtrade.log"
   SUPERVISORD_CONF="$BASE_URL/ft_client/supervisord.conf"
   CONFIG_BASIC="$BASE_URL/config_examples/config_basic.example.json"
   CONFIG_PAIRLIST="$BASE_URL/config_examples/config_pairlist.example.json"
   CONFIG_EXCHANGE="$BASE_URL/config_examples/config_exchange.example.json"
+  BASE_PARAMS="/home/runner/user_data/ft_client/test_client/pythonCode/params.py"
   EXCHANGE_DRY="/home/runner/data_dry/config_examples/config_exchange.example.json"
   EXCHANGE_LIVE="/home/runner/data_live/config_examples/config_exchange.example.json"
   SIGNATURE=$(echo -n "$METHODS" | openssl sha512 -hmac "$API_SECRET" | cut -d' ' -f2)
   BEARER=$($GCLOUD auth print-identity-token --audiences=https://us-central1-marketleader.cloudfunctions.net/function)
   BALANCE=$(curl -s -X POST -H "Key: $API_KEY" -H "Sign: $SIGNATURE" -d "method=$METHOD" -d "nonce=$NONCE" "https://indodax.com/tapi/")
   ASSET_COUNT=$(echo "$BALANCE" | jq -r '.return.balance | to_entries | map(select(.value != 0 and .value != "0")) | length')
+  PAIRS=$(curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/variables/PAIRS" | jq -r '.value')
 
   # Strict handling
   set -euo pipefail
   $DOCKER exec mydb rm -rf "$CONFIG"
   $DOCKER exec mydb curl -sf -o "$CONFIG" "$CONFIG_BASIC"
+  $DOCKER exec mydb curl -sf -o "$BASE_PARAMS" "$PARAMS_URL"  
   $DOCKER exec mydb sed -i "s|your_telegram_chat_id|$TELEGRAM_CHAT_ID|g" $CONFIG
 
-  if [[ "$RERUN_RUNNER" == "true" ]]; then
+  if ! $DOCKER exec mydb ls "$LIVE_LOG" &>/dev/null; then
+
     DIRS=(
       "data_dry"
       "data_live"
@@ -243,8 +253,7 @@ elif [[ "${JOBS_ID}" == "3" ]]; then
     if [[ "${ASSET_COUNT}" == "1" ]]; then echo $WALLET; fi
 
     $DOCKER exec mydb bash -c "jq '.telegram.enabled = true | .api_server.listen_port = 8081' $CONFIG > $CONFIG_DRY"
-    $DOCKER exec mydb bash -c "jq '.telegram.enabled = true | .api_server.listen_port = 8082' $CONFIG > $CONFIG_LIVE"
-    #$DOCKER exec mydb bash -c "jq '.telegram.enabled = true | .api_server.listen_port = 8082 | .dry_run = false' $CONFIG > $CONFIG_LIVE"
+    $DOCKER exec mydb bash -c "jq '.telegram.enabled = true | .api_server.listen_port = 8082 | .dry_run = false' $CONFIG > $CONFIG_LIVE"
 
     $DOCKER exec mydb sed -i "s|tradesv3|tradesv3_dry|g" $CONFIG_DRY
     $DOCKER exec mydb sed -i "s|tradesv3|tradesv3_live|g" $CONFIG_LIVE
@@ -264,6 +273,9 @@ elif [[ "${JOBS_ID}" == "3" ]]; then
 
     $DOCKER exec mydb sed -i "s|TELEGRAM_CHAT_ID|$TELEGRAM_CHAT_ID|g" /freqtrade.sh
     $DOCKER exec mydb sed -i "s|WARNING_BOT_TOKEN|$WARNING_BOT_TOKEN|g" /freqtrade.sh
+
+    $DOCKER exec mydb bash -c "jq --argjson pairs '$PAIRS' '.exchange.pair_whitelist = \$pairs' '$EXCHANGE_DRY' > config.tmp && mv config.tmp '$EXCHANGE_DRY'"
+    $DOCKER exec mydb bash -c "jq --argjson pairs '$PAIRS' '.exchange.pair_whitelist = \$pairs' '$EXCHANGE_LIVE' > config.tmp && mv config.tmp '$EXCHANGE_LIVE'"
 
   else
   
@@ -290,8 +302,8 @@ elif [[ "${JOBS_ID}" == "3" ]]; then
       $DOCKER exec mydb sed -i "s|your_exchange_key|$API_KEY|g" $EXCHANGE_LIVE
       $DOCKER exec mydb sed -i "s|your_exchange_secret|$API_SECRET|g" $EXCHANGE_LIVE
 
-      $DOCKER exec mydb sed -i 's|"dry_run" = false|"dry_run" = true|g' $CONFIG_DRY
-      #$DOCKER exec mydb sed -i 's|"dry_run" = true|"dry_run" = false|g' $CONFIG_LIVE
+      $DOCKER exec mydb sed -i 's|"dry_run": false|"dry_run": true|g' $CONFIG_DRY
+      $DOCKER exec mydb sed -i 's|"dry_run": true|"dry_run": false|g' $CONFIG_LIVE
       $DOCKER exec mydb sed -i "s|$TRADING_BOT_TOKEN|$MONITOR_BOT_TOKEN|g" $CONFIG_DRY
       $DOCKER exec mydb sed -i "s|$MONITOR_BOT_TOKEN|$TRADING_BOT_TOKEN|g" $CONFIG_LIVE
 
@@ -326,11 +338,10 @@ elif [[ "${JOBS_ID}" == "3" ]]; then
       $DOCKER exec mydb bash -c "jq '.telegram.enabled = true | .api_server.listen_port = 8081' $CONFIG > $CONFIG_DRY"
       $DOCKER exec mydb sed -i "s|your_telegram_token|$MONITOR_BOT_TOKEN|g" $CONFIG_DRY
       $DOCKER exec mydb sed -i "s|tradesv3|tradesv3_dry|g" $CONFIG_DRY
+      $DOCKER exec mydb sed -i "s|RUN_MODE=\"dry\",FREQAI_MODEL=\"[^\"]*\"|RUN_MODE=\"dry\",FREQAI_MODEL=\"$FREQAIMODEL_DRY\"|g" $CONF
       $DOCKER exec mydb mkdir -p "$(dirname "$EXCHANGE_DRY")"
       $DOCKER exec mydb curl -sf -o "$EXCHANGE_DRY" "$CONFIG_EXCHANGE"
-      $DOCKER exec mydb sed -i "s/^environment=RUN_MODE=\"dry\".*/environment=RUN_MODE=\"dry\",FREQAI_MODEL=\"${FREQAIMODEL_DRY}\"/" $CONF
-      $DOCKER exec mydb sed -i "/^\[program:freqtrade_dry\]/,/^\[program:/ s/--freqaimodel[[:space:]]\+[^[:space:]]\+/--freqaimodel ${FREQAIMODEL_DRY}/" $CONF
-      #$DOCKER exec mydb sed -i "/^\[program:freqtrade_dry\]/,/^\[program:/ s/^environment=.*/environment=RUN_MODE=\"dry\",FREQAI_MODEL=\"${FREQAIMODEL_DRY}\"/" $CONF
+      $DOCKER exec mydb bash -c "jq --argjson pairs '$PAIRS' '.exchange.pair_whitelist = \$pairs' '$EXCHANGE_DRY' > config.tmp && mv config.tmp '$EXCHANGE_DRY'"
    fi 
 fi
 
@@ -369,6 +380,7 @@ fi
     
         if $DOCKER exec mydb curl -sf -o "$DEST_PATH" "$DOWNLOAD_URL"; then
           if $DOCKER exec mydb test -s "$DEST_PATH"; then
+            [[ "$DEST_PATH" == *.sh ]] && $DOCKER exec mydb chmod +x "$DEST_PATH"
             echo "✅ [SUCCESS] Downloaded: $DEST_PATH"
             break
           else
