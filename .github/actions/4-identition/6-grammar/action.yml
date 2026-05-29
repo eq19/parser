@@ -172,9 +172,6 @@ runs:
             echo "Created v0 branch and set it as default"
           fi
 
-          # Commit and push changes
-          git add . && git commit --allow-empty -m "$MESSAGE" && git push
-
           if [[ "$TARGET_REPOSITORY" != *"eq19/"* ]]; then
             # Unpublish existing GitHub Pages
             curl -s -X DELETE \
@@ -196,11 +193,17 @@ runs:
               "https://api.github.com/repos/$TARGET_REPOSITORY/dispatches" \
               -d '{"event_type": "trigger_action", "client_payload": {"env": "prod", "version": "1.0"}}'
           fi  
+ 
+          # Commit and push changes
+          git add . && git commit --allow-empty -m "$MESSAGE" && git push
           echo -e "\nDispatched to https://github.com/${{ env.TARGET_REPOSITORY }}/actions"
+
         fi
 
     - name: ⚧️ Rerun workflow if failed
       if: ${{ failure() }}
       shell: bash
       run: |
-        [[ "$GITHUB_JOB" == "parsering" ]] && gh workflow run "main.yml" --repo "$REPO_NAME" --raw-field "RUN_MODE=$RUN_MODE" --raw-field "REMOVE_RUNNER=$RERUN_RUNNER" --raw-field "REDUCE_EPOCH=$REDUCE_EPOCH"
+        [[ "$GITHUB_JOB" == "parsering" ]] && gh workflow run "main.yml" --repo "$REPO_NAME" \
+          --raw-field "RUN_MODE=$RUN_MODE" --raw-field "REMOVE_RUNNER=$RERUN_RUNNER" \
+          --raw-field "REDUCE_EPOCH=$REDUCE_EPOCH" --raw-field "BYPASS_LEXERING=$BYPASS_LEXERING"
