@@ -35,6 +35,14 @@ The fact that this parameter is so small is the so-called strong CP problem.
 
 ![quark-quark_scattering](https://github.com/eq19/maps/assets/8466209/06a2f256-191f-438b-aa24-0c8d75bb254e)
 
+This exponentiation takes important roles since by the _[multiplication zones](https://eq19.github.io/multiplication/#parsering-structure)_ the MEC30 forms a matrix of  `8 x 8 = 64 = 8²` where the power of 2 stands as exponent
+
+```note
+During the last few years of the 12th century, ***Fibonacci*** undertook a series of travels around the Mediterranean. At this time, the world’s most prominent mathematicians were Arabs, and he spent much time studying with them. His work, whose title translates as the Book of Calculation, was extremely influential in that ***it popularized the use of the Arabic numerals in Europe***, thereby revolutionizing arithmetic and allowing scientific experiment and discovery to progress more quickly. _([Famous Mathematicians](https://famous-mathematicians.org/leonardo-pisano-bigollo/))_
+```
+
+[![MEC30 Square](https://user-images.githubusercontent.com/36441664/262213707-63aa0a64-cf7d-4fb7-9f1a-f3d1ba805643.png)](https://eq19.github.io/multiplication/#parsering-structure)
+
 The gauge symmetry of QCD is based on the special unitary group, SU(3), and the associated charge is called color. Quarks carry three basic charges or colors: red, blue and green.
 
 ```note
@@ -46,6 +54,14 @@ The neutral composites that we observe in nature are the hadrons: mesons compose
 ```
 
 ![SmallBookPile](https://github.com/eq19/maps/assets/8466209/0971f647-c8f7-4fc7-8ec6-0a11e1767773)
+
+Since the first member is 30 then the form is initiated by a matrix of `5 x 6 = 30` which has to be transformed first to `6 x 6 = 36 = 6²` prior to the above MEC30's square. 
+
+```note
+A square system of coupled nonlinear equations can be solved iteratively by Newton's method. This method uses the Jacobian matrix of the system of equations. _([Wikipedia](https://en.wikipedia.org/Jacobian_matrix_and_determinant))_
+```
+
+[![gradien](https://user-images.githubusercontent.com/36441664/128025898-187ba576-795f-4578-af71-ff02a8b682b1.png)](https://eq19.github.io/multiplication/#transformation-to-exponentiation)
 
 A gauge colour rotation is _[a spacetime-dependent SU(3)](https://en.m.wikipedia.org/wiki/Special_unitary_group#The_group_SU(3))_ group element. They span the [Lie algebra](https://github.com/lkpetrich/Semisimple-Lie-Algebras) of the SU(3) group in the defining representation.
 
@@ -63,6 +79,20 @@ The lattice is also the method to study QCD in extreme conditions (high temperat
 
 ![images6-ezgif com-resize](https://github.com/eq19/maps/assets/8466209/9831d77d-9c18-4691-b0be-5bb244509368)
 
+Both 1/89 and 1/109 have the Fibonacci sequence _[encoded in their decimal expansions](https://eq19.github.io/addition/#minor-hexagons)_ illustrates a period-24 palindromic that bring ***[the powers of pi](https://eq19.github.io/multiplication/#lineage-retracement)***. 
+
+```note
+When the digital root of perfect squares is sequenced within a ***modulo 30 x 3 = modulo 90 horizon***, beautiful symmetries in the form of period-24 palindromes are revealed, which the author has documented on the On-Line Encyclopedia of Integer Sequences as [Digital root of squares of numbers not divisible by 2, 3 or 5 (A24092)](https://oeis.org/A240924):
+
+1, 4, 4, 7, 1, 1, 7, 4, 7, 1, 7, 4, 4, 7, 1, 7, 4, 7, 1, 1, 7, 4, 4, 1
+
+In the matrix pictured below, we list ***the first 24 elements*** of our domain, take their squares, calculate the modulo 90 congruence and digital roots of each square, and display the digital root factorization dyad for each square (and map their collective bilateral 9 sum symmetry).  _([PrimesDemystified](https://primesdemystified.com/#Distribution_of_Perfect_Squares))_
+```
+
+[![root profiles](https://user-images.githubusercontent.com/36441664/277179073-e0411710-779e-4cea-8a37-ff7c635f46f7.png)](https://eq19.github.io/exponentiation/folder14/#root-profiles)
+
+Geometrically, a transformation matrix rotates, stretches, or shears the vectors it acts upon. The corresponding [eigenvalue](https://www.lancaster.ac.uk/staff/schomeru/lecturenotes/Quantum%20Mechanics/S15.html#E266) is often represented as the ***multiplying factor***.
+
 ## Matrix Scheme
 
 Quarks have three colors. Color is to the strong interaction as electric charge is to the electromagnetic interaction.
@@ -74,22 +104,6 @@ red   anti-red,   red   anti-blue,   red   anti-green,
 blue  anti-red,   blue  anti-blue,   blue  anti-green,
 green anti-red,   green anti-blue,   green anti-green.
 ```
-
-This exponentiation takes important roles since by the _[multiplication zones](https://eq19.github.io/multiplication/#parsering-structure)_ the MEC30 forms a matrix of  `8 x 8 = 64 = 8²` where the power of 2 stands as exponent
-
-```note
-During the last few years of the 12th century, ***Fibonacci*** undertook a series of travels around the Mediterranean. At this time, the world’s most prominent mathematicians were Arabs, and he spent much time studying with them. His work, whose title translates as the Book of Calculation, was extremely influential in that ***it popularized the use of the Arabic numerals in Europe***, thereby revolutionizing arithmetic and allowing scientific experiment and discovery to progress more quickly. _([Famous Mathematicians](https://famous-mathematicians.org/leonardo-pisano-bigollo/))_
-```
-
-[![MEC30 Square](https://user-images.githubusercontent.com/36441664/262213707-63aa0a64-cf7d-4fb7-9f1a-f3d1ba805643.png)](https://eq19.github.io/multiplication/#parsering-structure)
-
-Since the first member is 30 then the form is initiated by a matrix of `5 x 6 = 30` which has to be transformed first to `6 x 6 = 36 = 6²` prior to the above MEC30's square. 
-
-```note
-A square system of coupled nonlinear equations can be solved iteratively by Newton's method. This method uses the Jacobian matrix of the system of equations. _([Wikipedia](https://en.wikipedia.org/Jacobian_matrix_and_determinant))_
-```
-
-[![gradien](https://user-images.githubusercontent.com/36441664/128025898-187ba576-795f-4578-af71-ff02a8b682b1.png)](https://eq19.github.io/multiplication/#transformation-to-exponentiation)
 
 ```note
 Fermions and bosons—fermions have quantum spin = 1/2.
@@ -130,6 +144,65 @@ bispinor-4 |    2    |    3    |     3     |    18     |     24     |   19+i5
 ```
 
 ## Interactions
+
+```
+#!/usr/bin/env python
+
+import numpy as np
+from scipy import linalg
+
+class SU3(np.matrix):
+	GELLMANN_MATRICES = np.array([
+		np.matrix([ #lambda_1
+			[0, 1, 0],
+			[1, 0, 0],
+			[0, 0, 0],
+		], dtype=np.complex),
+		np.matrix([ #lambda_2
+			[0,-1j,0],
+			[1j,0, 0],
+			[0, 0, 0],
+		], dtype=np.complex),
+		np.matrix([ #lambda_3
+			[1, 0, 0],
+			[0,-1, 0],
+			[0, 0, 0],
+		], dtype=np.complex),
+		np.matrix([ #lambda_4
+			[0, 0, 1],
+			[0, 0, 0],
+			[1, 0, 0],
+		], dtype=np.complex),
+		np.matrix([ #lambda_5
+			[0, 0,-1j],
+			[0, 0, 0 ],
+			[1j,0, 0 ],
+		], dtype=np.complex),
+		np.matrix([ #lambda_6
+			[0, 0, 0],
+			[0, 0, 1],
+			[0, 1, 0],
+		], dtype=np.complex),
+		np.matrix([ #lambda_7
+			[0, 0,  0 ],
+			[0, 0, -1j],
+			[0, 1j, 0 ],
+		], dtype=np.complex),
+		np.matrix([ #lambda_8
+			[1, 0, 0],
+			[0, 1, 0],
+			[0, 0,-2],
+		], dtype=np.complex) / np.sqrt(3),
+	])
+
+
+	def computeLocalAction(self):
+		pass
+
+	@classmethod
+	def getMeasure(self):
+		pass
+```
 
 The subclasses of partitions systemically develops characters similar to the distribution of prime numbers. 
 

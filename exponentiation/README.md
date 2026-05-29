@@ -759,6 +759,7 @@ Being a high level of non-patterned noise in the form of outlier data points, th
 
 ```txt
  Osp(1) |  1 |  2 |  3 |  4 
+
 --------+----+----+----+----
  π(10)  |  2 |  3 |  5 |  7 
  
@@ -1928,6 +1929,32 @@ Here our focus is on the ***five (5) parameters*** of strong and weak CP violati
 
 [![CKM vs PMNS](https://github.com/eq19/maps/assets/8466209/44758746-c069-4fb6-a2e9-8574d2d63b29)](https://www.semanticscholar.org/paper/Quark-Mass-Hierarchy-and-Flavor-Mixing-Puzzles-Xing/3719fec87f5e50c70eada23057b4b48fb5de4f18)
 
+There are more than one version of Standard Model (SM) being developed. Here we are referring to the _[19 Free Parameters](https://eq19.github.io/exponentiation/#free-parameters)_ that is match to the behaviour of MEC30.
+
+```note
+The SM was basically developed in 1970-s. It describes the electromagnetic, weak and strong fundamental interactions.
+- At ordinary energies (a few eV or less), the forces differ greatly. However, at energies available in accelerators, the weak nuclear and electromagnetic (EM) forces become unified. Unfortunately, the energies at which the strong nuclear and electroweak forces become the same are unreachable.[![The Four Fundamental Forces](https://github.com/user-attachments/assets/731865b0-7033-4e1b-a587-0c75c0dcae36)](https://eq19.github.io/#prime-unit-identity)
+- The relative strengths of the four basic forces vary with distance, and, hence, energy is needed to probe small distances.[![T. Morii, C.S. Lim, and S.N. Mukherjee. The Physics of the Standard Model and
+Beyond. World Scientific, 2004](https://user-images.githubusercontent.com/36441664/89119081-a172cf80-d4d5-11ea-9bd2-35e95f419f30.jpg)](https://github.com/eq19/maps/files/13793234/the-physics-of-the-standard-model-and-beyond.pdf)
+- [The (3) layers](https://github.com/eq19/eq19/blob/v1/.github/entrypoint/artifact/python/manual_v2.ipynb) represents generation in the _[particle objects](https://github.com/eq19/eq19/blob/v1/.github/entrypoint/artifact/python/manual_v2.ipynb)_ of flavor that counts ***six (6) flavours of [quarks](https://en.wikipedia.org/wiki/Quark)*** and ***six (6) flavours of [leptons](https://en.wikipedia.org/wiki/Lepton)***.[![Testing Explanations of Short Baseline Neutrino Anomalies](https://github.com/eq19/maps/assets/8466209/9ebbb332-7818-496f-a50e-7beb707fc644)](https://github.com/eq19/maps/files/13777171/Testing_Explanations_of_Short_Baseline_Neutrino_An_compressed.1.pdf)
+- The newly discovered Higgs Boson interacts with all the Quarks and the first group of Leptons (electron, muon and tau) providing them with their mass. The neutrinos which are the other Leptons originally were thought to have zero mass, but recent discoveries argue that this is not the case.[![fundamental interaction in nature](https://user-images.githubusercontent.com/8466209/284403402-a0ba27e5-1964-46c2-b7d8-72758eb0944d.png)](https://en.wikipedia.org/wiki/Talk:Standard_Model/Archive_2#Error_in_diagram,_proposed_replacement)
+
+The Weak bosons interact with both Leptons and Quarks, these are responsible for the Weak nuclear forces. The exchange of photon is responsible for the Electromagnetic Force.
+```
+
+_Rearrangement of [StandardModel](https://github.com/bin-wu-phys/StandardModel/blob/master/python/manual_v2.ipynb) originally developed by [Bin Wu](https://github.com/bin-wu-phys) from [CERN](https://theory.cern/roster/wu-bin)_
+
+|6 QUARKS|no|6 LEPTONS|no|7 BOSONS (GAUGE AND HIGGS)|no|
+|------|---|------|----|--|--|
+|d: Down|19|$$e^-$$: electron|13|$$γ$$: photon|7|
+|u: Up|18|$$ν_e$$: $$e$$ neutrino|12|$$g$$: gluons|5(6)|
+|s: Strange|17|$$μ^-$$: muon|11|$$H^0$$: Higgs boson|4|
+|c: Charm|16|$$ν_μ$$: $$μ$$ neutrino|10|$$W^+$$: positively charged weak boson|3|
+|b: Bottom|15|$$τ^-$$: tau|9|$$W^-$$: negatively charged weak boson|2|
+|t: Top|14|$$ν_τ$$: $$τ$$ neutrino|8|$$Z^0$$: neutral weak boson|1|
+
+This results in a fundamental causal relation to the primes, systemically the products are entered into the position system.
+
 ## Grand Unification
 
 It is hypothesized that gravitational interactions are mediated by an as yet undiscovered elementary particle, dubbed the graviton.
@@ -1940,6 +1967,7 @@ It is hypothesized that gravitational interactions are mediated by an as yet und
     ***
       "pos": "1;1;1;1"
     ***,
+                       ✓1
     ***
       "pos": "1;1;1;2"
     ***,
@@ -1948,25 +1976,29 @@ It is hypothesized that gravitational interactions are mediated by an as yet und
     ***,
     ***
       "pos": "1;1;3;1"
-    ***,
+    ***
+                       ✓2
     ***
       "pos": "1;1;3;2"
     ***,
     ***
       "pos": "1;1;4;1"
     ***,
+                       ✓3
     ***
       "pos": "1;1;4;2"
     ***,
     ***
       "pos": "1;2;1;1"
     ***,
+                       ✓4
     ***
       "pos": "1;2;1;2"
     ***,
     ***
       "pos": "1;2;2;1"
     ***,
+                       ✓5
     ***
       "pos": "1;2;2;2"
     ***,
@@ -1976,18 +2008,21 @@ It is hypothesized that gravitational interactions are mediated by an as yet und
     ***
       "pos": "1;2;4;1"
     ***,
+                       ✓6
     ***
       "pos": "1;2;4;2"
     ***,
     ***
       "pos": "1;3;1;1"
     ***,
+                       ✓7
     ***
       "pos": "1;3;1;2"
     ***,
     ***
       "pos": "1;3;2;1"
     ***,
+                       ✓8
     ***
       "pos": "1;3;2;2"
     ***,
@@ -2000,6 +2035,7 @@ It is hypothesized that gravitational interactions are mediated by an as yet und
     ***
       "pos": "1;4;3;1"
     ***,
+                       ✓9
     ***
       "pos": "1;4;3;2"
     ***,
@@ -2012,6 +2048,7 @@ It is hypothesized that gravitational interactions are mediated by an as yet und
     ***
       "pos": "1;5;3;1"
     ***,
+                       ✓10
     ***
       "pos": "1;5;3;2"
     ***,
@@ -2021,18 +2058,21 @@ It is hypothesized that gravitational interactions are mediated by an as yet und
     ***
       "pos": "1;6;1;1"
     ***,
+                       ✓11
     ***
       "pos": "1;6;1;2"
     ***,
     ***
       "pos": "1;6;2;1"
     ***,
+                       ✓12
     ***
       "pos": "1;6;2;2"
     ***,
     ***
       "pos": "1;6;3;1"
     ***,
+                       ✓13
     ***
       "pos": "1;6;3;2"
     ***,
@@ -2045,12 +2085,14 @@ It is hypothesized that gravitational interactions are mediated by an as yet und
     ***
       "pos": "1;7;3;1"
     ***,
+                       ✓14
     ***
       "pos": "1;7;3;2"
     ***,
     ***
       "pos": "1;7;4;1"
     ***,
+                       ✓15
     ***
       "pos": "1;7;4;2"
     ***,
@@ -2060,25 +2102,29 @@ It is hypothesized that gravitational interactions are mediated by an as yet und
     ***
       "pos": "1;7;6;1"
     ***,
+                       ✓16
     ***
       "pos": "1;7;6;2"
     ***,
     ***
       "pos": "1;7;7;1"
     ***,
+                       ✓17
     ***
       "pos": "1;7;7;2"
     ***,
     ***
       "pos": "1;7;8;1"
     ***,
-    ***
+                       ✓18
+   ***
       "pos": "1;7;8;2"
     ***,
     ***
       "pos": "1;7;9;1"
     ***,
-    ***
+                       ✓19
+   ***
       "pos": "1;7;9;2"
     ***
   ]
@@ -2337,6 +2383,10 @@ Mapping the quantum way within a huge of primes objects (5 to 19) by lexering (1
 ```
 
 [![default](https://github.com/user-attachments/assets/fdcf5ccd-3f08-454e-8f6c-cad1a8aae35d)](https://github.com/iree-org/iree?tab=readme-ov-file)
+
+This scheme goes to the unification of 11s with 7s to 18s meanwhile the 11th it self behave as residual by the 5th minor hexagon between the [30 to 36' cells](https://eq19.github.io/#exponentiation-zones).
+
+[![30 to 36' cells](https://user-images.githubusercontent.com/8466209/200475393-f3e42f0b-d291-4f17-93c4-9bec6e6943de.png)](https://eq19.github.io/#exponentiation-zones)
 
 This also introduces a _[lower bound](https://www.primesdemystified.com/Factorization.html)_ of Mod 90 originated from the 4th coupling of MEC30 which is holded by ***five (5) cells between 13 and 17***.
 
