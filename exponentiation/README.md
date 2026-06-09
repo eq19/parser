@@ -588,9 +588,11 @@ By mapping the **13 available optimization spaces** to this seven-layered struct
     └── System Operations
 ```
 
-The second model is useful because it lets us generate naturally all 168 symmetries of the Fano plane by splitting a cube into a set of four parallel 1x1x2 slices in the three ways possible, then arbitrarily permuting the slices in each of the three sets of four. 
+Regarded as acting on the set of eight individual subcubes of each cube in the diagram, actually generates a group of 168*8 = 1,344 permutations. 
 
 [![Fano plane](https://github.com/user-attachments/assets/1dd886da-df4c-452f-b4aa-fdd5860d5447)](https://m759.net/wordpress/?p=1793)
+
+If we implemented with _[trading schema](https://schema.freqtrade.io/schema.json)_, the group's action on the diagram's ***seven partitions of the subcubes yields only 168 distinct results***.
 
 ```
 ├── DIVISION 1: TRADING STRATEGY CORE
@@ -721,9 +723,12 @@ The second model is useful because it lets us generate naturally all 168 symmetr
         └── max_open_trades
 ```
 
-This image illustrates key concepts in technical analysis used to predict price movements in financial markets.
+Many trading platforms​ enable traders to plot Fibonacci lines. In an upward trend, you can select the low price and drag the cursor up to the high price.
 
 ![](https://github.com/user-attachments/assets/fba6a1e1-a932-4379-bad6-173f968f5fa4)
+
+The second model is useful because it lets us generate naturally all 168 symmetries of the Fano plane by splitting a cube into a set of four parallel 1x1x2 slices in the three ways possible, then arbitrarily permuting the slices in each of the three sets of four. 
+
 
 ```bash
 jekyll_build() {
@@ -747,9 +752,9 @@ jekyll_build() {
   fi
 ```
 
-Many trading platforms​ enable traders to plot Fibonacci lines. In an upward trend, you can select the Fibonacci line tool, select the low price and drag the cursor up to the high price.
+This image illustrates key concepts of the value of 168 we have discussed in technical analysis used to predict price movements in financial markets.
 
-***0.786 = √0.618 👉 786 - 618 = 168***
+***0.786 = √0.618 👉 786 - 618 = 168 = 13² - 1***
 
 ![Fibonacci Retracement](https://github.com/user-attachments/assets/02a8c6a4-31a6-4d5c-8f79-be92079e588f)
 
@@ -2313,6 +2318,10 @@ In this example, the content from a Markdown document `document.md` that specifi
 ```
 
 [![Parsering](https://github-production-user-asset-6210df.s3.amazonaws.com/8466209/260864973-50fbc0a0-7441-4800-97aa-265b0dfd2ac2.png)](https://hub.docker.com/layers/jekyll/jekyll/latest/images/sha256-400b8d1569f118bca8a3a09a25f32803b00a55d1ea241feaf5f904d66ca9c625)
+
+The runner is the application that runs a job from a GitHub Actions workflow. It is used by GitHub Actions in the [hosted virtual environments](https://github.com/actions/virtual-environments), or you can [self-host the runner](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-self-hosted-runners) in your own environment. We use both of them to create [group as a four-vector](https://gist.github.com/eq19/e9832026b5b78f694e4ad22c3eb6c3ef#lexer-vs-parser).
+
+[![choosing-the-runner](https://user-images.githubusercontent.com/8466209/227559588-88480a1b-b339-46e8-9516-572f90f788f7.png)](https://docs.github.com/en/actions/using-jobs/choosing-the-runner-for-a-job#choosing-runners-in-a-group)
 
 Such of method is used to generate a _[basic grammar](https://github.com/chetabahana)_ which algorithm is adaptable for any kind of implementations or applications.
 
