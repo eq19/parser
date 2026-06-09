@@ -126,11 +126,19 @@ if [ -d /mnt/disks/deeplearning/usr/local/sbin ]; then
 
   # Path to docker binary
   DOCKER="/mnt/disks/deeplearning/usr/bin/docker"
+  RERUN_RUNNER=$(curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" \
+    "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/variables/RERUN_RUNNER" | jq -r '.value')
 
   for ((i=1; i<=max_retries; i++)); do
     echo "Check $i of $max_retries..."
 
     if $DOCKER ps --format '{{.Names}}' | grep -wq "^mydb$"; then
+      if [[ "$RERUN_RUNNER" == "true" ]]; then
+        $DOCKER stop mydb
+        echo "Waiting container stabilization..."
+        sleep 20
+        $DOCKER start mydb
+      fi
       echo -e "\nCondition fulfilled ✅"
 
       echo -e "\n$hr\nDeepLearning Final Cloud\n$hr" && /mnt/disks/deeplearning/usr/bin/gcloud info
@@ -142,9 +150,9 @@ if [ -d /mnt/disks/deeplearning/usr/local/sbin ]; then
       # Setup freqtrade userdir for dry mode
       if ! $DOCKER exec mydb test -d "/home/runner/data_dry"; then
         $DOCKER exec mydb bash -c 'freqtrade create-userdir --userdir /home/runner/data_dry'
-        $DOCKER exec mydb bash -c 'rm -rf /home/runner/data_dry/freqaimodels'
+        $DOCKER exec mydb bash -c 'rm -rf /home/runner/data_dry/freqaimodels /home/runner/data_dry/ft_client'
         $DOCKER exec mydb bash -c 'cp -a /home/runner/user_data/freqaimodels /home/runner/data_dry/'
-        #$DOCKER exec mydb bash -c 'ln -s /home/runner/user_data/freqaimodels /home/runner/data_dry/freqaimodels'
+        $DOCKER exec mydb bash -c 'cp -a /home/runner/user_data/ft_client /home/runner/data_dry/'
       elif $DOCKER exec mydb supervisorctl status freqtrade_dry | grep -q "RUNNING"; then
         echo -e "\n$hr\nTotal Profit Dry-run vs Live Mode\n$hr"
         freqtrade_total_profit 8081 Dry
@@ -154,9 +162,9 @@ if [ -d /mnt/disks/deeplearning/usr/local/sbin ]; then
       # Setup freqtrade userdir for live mode
       if ! $DOCKER exec mydb test -d "/home/runner/data_live"; then
         $DOCKER exec mydb bash -c 'freqtrade create-userdir --userdir /home/runner/data_live'
-        $DOCKER exec mydb bash -c 'rm -rf /home/runner/data_live/freqaimodels'
+        $DOCKER exec mydb bash -c 'rm -rf /home/runner/data_live/freqaimodels /home/runner/data_live/ft_client'
         $DOCKER exec mydb bash -c 'cp -a /home/runner/user_data/freqaimodels /home/runner/data_live/'
-        #$DOCKER exec mydb bash -c 'ln -s /home/runner/user_data/freqaimodels /home/runner/data_live/freqaimodels'
+        $DOCKER exec mydb bash -c 'cp -a /home/runner/user_data/ft_client /home/runner/data_live/'
       elif $DOCKER exec mydb supervisorctl status freqtrade_live | grep -q "RUNNING"; then
         echo -e "\n$hr\n"
         freqtrade_total_profit 8082 Live
@@ -178,13 +186,13 @@ if [ -d /mnt/disks/deeplearning/usr/local/sbin ]; then
           $DOCKER exec mydb bash -c 'for folder in /home/runner/tradesv3_dry_.*; do mv "$folder" "${folder/tradesv3_dry_/tradesv3_live}"; done'
           $DOCKER exec mydb bash -c 'for folder in /home/runner/tradesv3_live_.*; do mv "$folder" "${folder/tradesv3_live_/tradesv3_dry}"; done'
         else
-          echo "Live mode is better than dry-run"
+          echo "Dry-run is not better than Live mode"
           $DOCKER exec mydb supervisorctl stop freqtrade_dry || true
           $DOCKER exec mydb bash -c 'rm -rf /home/runner/data_dry /home/runner/tradesv3_dry.*'
           $DOCKER exec mydb bash -c 'freqtrade create-userdir --userdir /home/runner/data_dry'
-          $DOCKER exec mydb bash -c 'rm -rf /home/runner/data_dry/freqaimodels'
+          $DOCKER exec mydb bash -c 'rm -rf /home/runner/data_dry/freqaimodels /home/runner/data_dry/ft_client'
           $DOCKER exec mydb bash -c 'cp -a /home/runner/user_data/freqaimodels /home/runner/data_dry/'
-          #$DOCKER exec mydb bash -c 'ln -s /home/runner/user_data/freqaimodels /home/runner/data_dry/freqaimodels'
+          $DOCKER exec mydb bash -c 'cp -a /home/runner/user_data/ft_client /home/runner/data_dry/'
         fi
 
       fi
