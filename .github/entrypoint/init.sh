@@ -2,7 +2,7 @@
 # Structure: Cell Types – Modulo 6
 # https://www.hexspin.com/proof-of-confinement/
 
-hr='----------------------------------------------------------------------------------'
+hr='------------------------------------------------------------------------------'
 
 set_config() {
   echo -e "\n$hr\nCONFIG\n$hr"
