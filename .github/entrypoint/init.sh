@@ -360,14 +360,14 @@ elif [[ "${JOBS_ID}" == "3" ]]; then
       # Update the current file SHA of default branch
       CONTENT=$($DOCKER exec -i mydb sh -lc 'cat /home/runner/data_live/strategies/fibbo.json' | $BASE64 -w 0)
       FILE_PATH="user_data/strategies/tested/fibbo.json"
-      SHA=$(curl -fsSL \
+      SHA=$(curl -fsSLsS \
         -H "Accept: application/vnd.github+json" \
         -H "Authorization: Bearer $GH_TOKEN" \
         -H "X-GitHub-Api-Version: 2022-11-28" \
         "https://api.github.com/repos/eq19/maps/contents/$FILE_PATH?ref=$MAP_BRANCH" \
         | jq -er '.sha')
 
-      curl -fsSL -X PUT \
+      curl -fsSLsS -X PUT \
         -H "Accept: application/vnd.github+json" \
         -H "Authorization: Bearer $GH_TOKEN" \
         -H "X-GitHub-Api-Version: 2022-11-28" \
