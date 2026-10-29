@@ -35,6 +35,10 @@ Thus, if the temperature is high enough – approximately 10¹⁵ K – then the
 
 ![TjQdBoIUDG](https://github.com/eq19/maps/assets/8466209/f99e8694-1f3d-4b9e-a224-01888fb406bb)
 
+After electroweak mixing, they would combine to form the photon and the Z boson while the gluons remain separate and continue to mediate color-changing interactions among quarks.
+
+![1591890434759 (1)](https://github.com/eq19/maps/assets/8466209/bf65715f-bace-4037-ab1d-6f46a29c7689)
+
 This section depicts Right-handed fermions, a classification of particles in the Standard Model that do not participate in the weak interaction.
 
 <img width="1024" height="1024" alt="17808752779779199908608727981542" src="https://github.com/user-attachments/assets/92be8e46-e110-4310-94fc-74ecba310839" />
@@ -374,7 +378,9 @@ So, in the end, you do need. But the path can get similar when you move off arbi
 |-- 38 ---|              |-- 33 ---|                        |-- {27}--|
 ```
 
-![1591890434759 (1)](https://github.com/eq19/maps/assets/8466209/bf65715f-bace-4037-ab1d-6f46a29c7689)
+The lack of detection of _[proton decay](https://en.wikipedia.org/wiki/Proton_decay)_ (in any form) brings into question the veracity of SU(5) GUTs of all types; however, while the models are highly constrained by this result, they are not in general ruled out.
+
+[<img width="960" height="641" alt="17810483904164676175737635305855" src="https://github.com/user-attachments/assets/96c4b712-12f0-46f8-9655-4a4b6b1ae23e" />](https://en.wikipedia.org/wiki/Proton_decay)
 
 ```txt
 $True Prime Pairs:

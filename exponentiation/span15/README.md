@@ -103,18 +103,6 @@ The lattice is also the method to study QCD in extreme conditions (high temperat
 
 ![images6-ezgif com-resize](https://github.com/eq19/maps/assets/8466209/9831d77d-9c18-4691-b0be-5bb244509368)
 
-A number of other GUT models are based upon subgroups of SO(10). ***They are the minimal [left-right model](https://eq19.github.io/identition/span12/#the-quantum-gravity), [SU(5)](https://en.wikipedia.org/wiki/SU(5)), [flipped SU(5)](https://en.wikipedia.org/wiki/Flipped_SU(5)) and the Pati–Salam model***.
-
-```note
-SU(5) fermions of standard model in 5+10 representations. The sterile neutrino singlet's 1 representation is omitted. Neutral bosons are omitted, but would occupy diagonal entries in complex superpositions. X and Y bosons as shown are the opposite of the conventional definition
-```
-
-[![SO(10)](https://github.com/eq19/maps/assets/8466209/b1d3bccd-a423-4ebb-a397-e973b2cc8e6e)
-](https://en.wikipedia.org/wiki/Grand_Unified_Theory)
-
-[![SU(5)_representation_of_fermions](https://github.com/eq19/maps/assets/8466209/2b1aa8f5-0028-4549-a091-eee291ed4890)
-](https://en.wikipedia.org/wiki/Grand_Unified_Theory)
-
 The simplest theory describing the above is the SU(3) one with the gluons as the basis states of the Lie algebra. That is, gluons transform in the adjoint representation of SU(3), which is 8-dimensional.
 
 ## Matrix Scheme
