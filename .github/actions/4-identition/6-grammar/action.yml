@@ -146,6 +146,10 @@ runs:
 
             DEFAULT_BRANCH=$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')
 
+            # Clean up any uncommitted changes before switching branches
+            git reset --hard
+            git clean -fd
+  
             git checkout $DEFAULT_BRANCH
             git pull origin $DEFAULT_BRANCH
 
@@ -205,5 +209,5 @@ runs:
       shell: bash
       run: |
         [[ "$GITHUB_JOB" == "parsering" ]] && gh workflow run "main.yml" --repo "$REPO_NAME" \
-          --raw-field "RUN_MODE=$RUN_MODE" --raw-field "REMOVE_RUNNER=$RERUN_RUNNER" \
+          --raw-field "RUN_MODE=$RUN_MODE" --raw-field "REMOVE_RUNNER=$REMOVE_RUNNER" \
           --raw-field "REDUCE_EPOCH=$REDUCE_EPOCH" --raw-field "BYPASS_LEXERING=$BYPASS_LEXERING"

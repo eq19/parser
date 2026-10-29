@@ -49,14 +49,22 @@ export MAP_BRANCH=$(curl -s -H "Authorization: token $GH_TOKEN" \
   https://api.github.com/repos/eq19/maps | jq -r .default_branch)
 export DEFAULT_BRANCH=$(curl -s -H "Authorization: token $GH_TOKEN" \
   https://api.github.com/repos/$GITHUB_REPOSITORY | jq -r .default_branch)
-export FREQAIMODEL_DRY=$(curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" \
-  "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/variables/FREQAIMODEL" | jq -r '.value')
-export FREQAIMODEL_LIVE=$(curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" \
-  "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/variables/FREQAIMODEL" | jq -r '.value')
 export RERUN_RUNNER=$(curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" \
   "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/variables/RERUN_RUNNER" | jq -r '.value')
+export SOURCE_REPOSITORY=$(curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" \
+  "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/variables/SOURCE_REPOSITORY" | jq -r '.value')
 export TARGET_REPOSITORY=$(curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" \
   "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/variables/TARGET_REPOSITORY" | jq -r '.value')
+
+if [[ "${BYPASS_LEXERING}" == "false" ]]; then
+  export FREQAIMODEL_DRY=""
+  export FREQAIMODEL_LIVE=""
+else
+  export FREQAIMODEL_DRY=$(curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" \
+    "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/variables/FREQAIMODEL" | jq -r '.value')
+  export FREQAIMODEL_LIVE=$(curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" \
+    "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/variables/FREQAIMODEL" | jq -r '.value')
+fi
 
 echo 'RERUN_RUNNER='${RERUN_RUNNER} >> ${GITHUB_ENV}
 echo 'DEFAULT_BRANCH='${DEFAULT_BRANCH} >> ${GITHUB_ENV}
@@ -90,14 +98,15 @@ if [[ "${JOBS_ID}" == "1" ]]; then
 
     #git clone --single-branch --branch gh-pages $REMOTE_REPO gh-pages && cd gh-pages
     #git add . && git commit --allow-empty -m "rerun due to job update" && git push
-    gh workflow run "main.yml" --raw-field "REDUCE_EPOCH=$REDUCE_EPOCH" --raw-field "REMOVE_RUNNER=$REMOVE_RUNNER"
-
+    gh workflow run "main.yml" --raw-field "RUN_MODE=$RUN_MODE" --raw-field "REMOVE_RUNNER=$REMOVE_RUNNER" \
+      --raw-field "REDUCE_EPOCH=$REDUCE_EPOCH" --raw-field "BYPASS_LEXERING=$BYPASS_LEXERING"
   else
 
     if [[ ! -f $RUNNER_TEMP/_config.yml ]]; then set_config $1; fi
     if [[ "$(yq '.repository' $RUNNER_TEMP/_config.yml)" != "$TARGET_REPOSITORY" ]]; then
       echo "$(yq '.repository' $RUNNER_TEMP/_config.yml) != $TARGET_REPOSITORY"
-      gh workflow run "main.yml" --raw-field "REDUCE_EPOCH=$REDUCE_EPOCH" --raw-field "REMOVE_RUNNER=$REMOVE_RUNNER"
+      gh workflow run "main.yml" --raw-field "RUN_MODE=$RUN_MODE" --raw-field "REMOVE_RUNNER=$REMOVE_RUNNER" \
+        --raw-field "REDUCE_EPOCH=$REDUCE_EPOCH" --raw-field "BYPASS_LEXERING=$BYPASS_LEXERING"
     else
       HEADER="Accept: application/vnd.github+json"
       RESPONSE=$(gh api -H "${HEADER}" repos/$TARGET_REPOSITORY/actions/runners)
@@ -197,8 +206,9 @@ elif [[ "${JOBS_ID}" == "3" ]]; then
   METHOD="getInfo"
   NONCE=$(date +%s)
   METHODS="method=${METHOD}&nonce=${NONCE}"
-  DOCKER="/mnt/disks/deeplearning/usr/bin/docker"
-  GCLOUD="/mnt/disks/deeplearning/usr/bin/gcloud"  
+  DOCKER=/mnt/disks/deeplearning/usr/bin/docker
+  GCLOUD=/mnt/disks/deeplearning/usr/bin/gcloud
+  BASE64=/mnt/disks/deeplearning/usr/bin/base64
   STATUS=$($DOCKER exec mydb supervisorctl status freqtrade_live)
   BASE_URL="https://raw.githubusercontent.com/eq19/maps/$MAP_BRANCH/user_data"
   PARAMS_URL="https://raw.githubusercontent.com/eq19/maps/$MAP_BRANCH/pythonCode/params.py"
@@ -220,6 +230,7 @@ elif [[ "${JOBS_ID}" == "3" ]]; then
   CONFIG="/home/runner/user_data/config.json"
   CONFIG_DRY="/home/runner/data_dry/config.json"
   CONFIG_LIVE="/home/runner/data_live/config.json"
+  DRY_LOG="/home/runner/data_dry/logs/freqtrade.log"
   LIVE_LOG="/home/runner/data_live/logs/freqtrade.log"
   SUPERVISORD_CONF="$BASE_URL/ft_client/supervisord.conf"
   CONFIG_BASIC="$BASE_URL/config_examples/config_basic.example.json"
@@ -258,7 +269,7 @@ elif [[ "${JOBS_ID}" == "3" ]]; then
     if [[ "${ASSET_COUNT}" == "1" ]]; then echo $WALLET; fi
 
     $DOCKER exec mydb bash -c "jq '.telegram.enabled = true | .api_server.listen_port = 8081' $CONFIG > $CONFIG_DRY"
-    $DOCKER exec mydb bash -c "jq '.telegram.enabled = true | .api_server.listen_port = 8082 | .dry_run = false' $CONFIG > $CONFIG_LIVE"
+    $DOCKER exec mydb bash -c "jq '.telegram.enabled = true | .api_server.listen_port = 8082 | .dry_run = true' $CONFIG > $CONFIG_LIVE"
 
     $DOCKER exec mydb sed -i "s|tradesv3|tradesv3_dry|g" $CONFIG_DRY
     $DOCKER exec mydb sed -i "s|tradesv3|tradesv3_live|g" $CONFIG_LIVE
@@ -284,7 +295,7 @@ elif [[ "${JOBS_ID}" == "3" ]]; then
 
   else
   
-    if echo "$STATUS" | grep -q "STOPPED"; then
+    if $DOCKER exec mydb ls "$DRY_LOG" &>/dev/null; then
       echo -e "$hr\nLive mode is worse than dry-run.\nLet dry-run to take over the live mode."
             
       DIRS=(
@@ -308,9 +319,11 @@ elif [[ "${JOBS_ID}" == "3" ]]; then
       $DOCKER exec mydb sed -i "s|your_exchange_secret|$API_SECRET|g" $EXCHANGE_LIVE
 
       $DOCKER exec mydb sed -i 's|"dry_run": false|"dry_run": true|g' $CONFIG_DRY
-      $DOCKER exec mydb sed -i 's|"dry_run": true|"dry_run": false|g' $CONFIG_LIVE
+      $DOCKER exec mydb sed -i 's|"dry_run": true|"dry_run": true|g' $CONFIG_LIVE
       $DOCKER exec mydb sed -i "s|$TRADING_BOT_TOKEN|$MONITOR_BOT_TOKEN|g" $CONFIG_DRY
       $DOCKER exec mydb sed -i "s|$MONITOR_BOT_TOKEN|$TRADING_BOT_TOKEN|g" $CONFIG_LIVE
+      $DOCKER exec mydb bash -c "jq '.telegram.enabled = true' '$CONFIG_DRY' > /tmp/c && mv /tmp/c '$CONFIG_DRY'"
+      $DOCKER exec mydb bash -c "jq '.telegram.enabled = true' '$CONFIG_LIVE' > /tmp/c && mv /tmp/c '$CONFIG_LIVE'"
 
       curl -L -s -X PATCH \
         -H "Accept: application/vnd.github+json" \
@@ -328,7 +341,45 @@ elif [[ "${JOBS_ID}" == "3" ]]; then
         --arg value "$($DOCKER exec mydb cat /home/runner/data_live/strategies/fibbo.json)")" \
         https://api.github.com/repos/$GITHUB_REPOSITORY/actions/variables/PARAMS_LIVE
 
-    elif echo "$STATUS" | grep -q "RUNNING"; then
+      curl -L -s -X PATCH \
+        -H "Accept: application/vnd.github+json" \
+        -H "Authorization: Bearer $GH_TOKEN" \
+        -H "X-GitHub-Api-Version: 2022-11-28" \
+        -d "$(jq -n '{name:"PARAMS_DRY", value:$value}' \
+        --arg value "$($DOCKER exec mydb cat /home/runner/data_dry/strategies/fibbo.json)")" \
+        https://api.github.com/repos/$SOURCE_REPOSITORY/actions/variables/PARAMS_DRY
+
+      curl -L -s -X PATCH \
+        -H "Accept: application/vnd.github+json" \
+        -H "Authorization: Bearer $GH_TOKEN" \
+        -H "X-GitHub-Api-Version: 2022-11-28" \
+        -d "$(jq -n '{name:"PARAMS_LIVE", value:$value}' \
+        --arg value "$($DOCKER exec mydb cat /home/runner/data_live/strategies/fibbo.json)")" \
+        https://api.github.com/repos/$SOURCE_REPOSITORY/actions/variables/PARAMS_LIVE
+
+      # Update the current file SHA of default branch
+      CONTENT=$($DOCKER exec -i mydb sh -lc 'cat /home/runner/data_live/strategies/fibbo.json' | $BASE64 -w 0)
+      FILE_PATH="user_data/strategies/tested/fibbo.json"
+      SHA=$(curl -fsSL \
+        -H "Accept: application/vnd.github+json" \
+        -H "Authorization: Bearer $GH_TOKEN" \
+        -H "X-GitHub-Api-Version: 2022-11-28" \
+        "https://api.github.com/repos/eq19/maps/contents/$FILE_PATH?ref=$MAP_BRANCH" \
+        | jq -er '.sha')
+
+      curl -fsSL -X PUT \
+        -H "Accept: application/vnd.github+json" \
+        -H "Authorization: Bearer $GH_TOKEN" \
+        -H "X-GitHub-Api-Version: 2022-11-28" \
+        "https://api.github.com/repos/eq19/maps/contents/$FILE_PATH" \
+        -d "{
+          \"message\": \"Update fibbo.json strategy config\",
+          \"branch\": \"$MAP_BRANCH\",
+          \"content\": \"$CONTENT\",
+          \"sha\": \"$SHA\"
+        }"
+
+    else
       echo -e "$hr\nDry-run is not better than Live mode.\nLet dry-run to challenge a new config."
 
       DIRS=(
@@ -340,6 +391,7 @@ elif [[ "${JOBS_ID}" == "3" ]]; then
         "PARAMS_JSON"
       )
 
+      $DOCKER exec mydb bash -c "jq '.telegram.enabled = true' '$CONFIG_LIVE' > /tmp/c && mv /tmp/c '$CONFIG_LIVE'"
       $DOCKER exec mydb bash -c "jq '.telegram.enabled = true | .api_server.listen_port = 8081' $CONFIG > $CONFIG_DRY"
       $DOCKER exec mydb sed -i "s|your_telegram_token|$MONITOR_BOT_TOKEN|g" $CONFIG_DRY
       $DOCKER exec mydb sed -i "s|tradesv3|tradesv3_dry|g" $CONFIG_DRY
@@ -347,8 +399,8 @@ elif [[ "${JOBS_ID}" == "3" ]]; then
       $DOCKER exec mydb mkdir -p "$(dirname "$EXCHANGE_DRY")"
       $DOCKER exec mydb curl -sf -o "$EXCHANGE_DRY" "$CONFIG_EXCHANGE"
       $DOCKER exec mydb bash -c "jq --argjson pairs '$PAIRS' '.exchange.pair_whitelist = \$pairs' '$EXCHANGE_DRY' > config.tmp && mv config.tmp '$EXCHANGE_DRY'"
-   fi 
-fi
+    fi 
+  fi
 
   for idx in "${!DIRS[@]}"; do
     PARAM_NAME="${PARAMS[$idx]}"
@@ -357,10 +409,14 @@ fi
     SCRIPT_PATH="${DIR_PATH}/ft_client/test_client/maps.sh"
     HYPEROPT_PARAM="${DIR_PATH}/strategies/hyperopt_params.json"
     ARTIFACT="${DIR_PATH}/ft_client/test_client/results/orgs.json"
+    INIT_FILE="${DIR_PATH}/ft_client/test_client/pythonCode/__init__.py"
+    COMPILE_FILE="${DIR_PATH}/ft_client/test_client/pythonCode/compile.py"
 
     $DOCKER exec mydb mkdir -p "$(dirname "$ARTIFACT")"
-    echo -e "$hr\nFolder: ${DIR_PATH} → Params: ${PARAM_NAME}"
+    $DOCKER exec mydb sed -i 's/^\(\s*\)#"compile",/\1"compile",/' $INIT_FILE
+    [[ "${BYPASS_LEXERING}" == "false" ]] && $DOCKER exec mydb sed -i 's/^\(\s*\)"compile",/\1#"compile",/' $INIT_FILE
 
+    echo -e "$hr\nFolder: ${DIR_PATH} → Params: ${PARAM_NAME}"
     for REL_PATH in "${FILES[@]}"; do
       DOWNLOAD_URL="${BASE_URL}/${REL_PATH}"
       DEST_PATH="${DIR_PATH}/${REL_PATH}"
@@ -377,7 +433,7 @@ fi
         if $DOCKER exec mydb curl -sf -o "$DEST_PATH" "$DOWNLOAD_URL"; then
           if $DOCKER exec mydb test -s "$DEST_PATH"; then
             [[ "$DEST_PATH" == *.sh ]] && $DOCKER exec mydb chmod +x "$DEST_PATH"
-            [[ "$DEST_PATH" == *config_pairlist* ]] && "$DOCKER" exec mydb bash -c "jq '.pairlists = [{\"method\": \"StaticPairList\"}]' \"$DEST_PATH\" > tmp.json && mv tmp.json \"$DEST_PATH\""
+            [[ "$DEST_PATH" == *config_pairlist* && "$BYPASS_LEXERING" != "false" ]] && "$DOCKER" exec mydb bash -c "jq '.pairlists = [{\"method\": \"StaticPairList\"}]' \"$DEST_PATH\" > tmp.json && mv tmp.json \"$DEST_PATH\""
             echo "✅ [SUCCESS] Downloaded: $DEST_PATH"
             break
           else
@@ -404,8 +460,12 @@ fi
       "curl -s -H 'Authorization: token $GH_TOKEN' -H 'Accept: application/vnd.github.v3+json' \
       https://api.github.com/repos/$GITHUB_REPOSITORY/actions/variables/${PARAM_NAME} \
       | jq -r '.value' > ${DIR_PATH}/strategies/fibbo.json"
+    $DOCKER exec -e DIR_PATH="$DIR_PATH" mydb bash -c '
+      jq --slurpfile fibbo "$DIR_PATH/strategies/fibbo.json" ".stoploss = \$fibbo[0].params.stoploss.stoploss" \
+      "$DIR_PATH/config.json" > /tmp/c && mv /tmp/c "$DIR_PATH/config.json"
+    '
     $DOCKER exec -e BEARER="$BEARER" mydb bash -c \
-      "bash ${SCRIPT_PATH} ${ID:-30} $JOBS_ID $APP_PATH $DIR_PATH $PARAM_NAME $ARTIFACT $HYPEROPT_PARAM"
+      "bash ${SCRIPT_PATH} ${ID:-30} $JOBS_ID $APP_PATH $DIR_PATH $PARAM_NAME $ARTIFACT $HYPEROPT_PARAM $COMPILE_FILE $BYPASS_LEXERING"
 
   done
 
