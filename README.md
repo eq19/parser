@@ -353,6 +353,8 @@ So the most important thing that need to be investigated is ***why the prime spi
 Similarly, I have a six colored dice in the form of the hexagon.  If I take a known, logical sequence of numbers, say 10, 100, 1000, 10000, and look at their spins in the hexagon, the resulting colors associated with each number should appear random – ***unless the sequence I’m investigating is linked to the nature of the prime numbers***.
 ```
 
+***7 + 7th prime = 7 + 17 = 24***
+
 ![](https://user-images.githubusercontent.com/36441664/74550123-6dd1d680-4f83-11ea-8810-3b8f4f50a9c0.png)
 
 So there would be the empty spaces for `18 - 7 = 11` numbers. By our project these spaces will be _[unified](https://eq19.github.io/exponentiation/#god-particle)_ by all of the eleven (11) members of ***[identition zones](https://eq19.github.io/identition/)***.
@@ -492,16 +494,7 @@ Beyond. World Scientific, 2004](https://user-images.githubusercontent.com/364416
 The Weak bosons interact with both Leptons and Quarks, these are responsible for the Weak nuclear forces. The exchange of photon is responsible for the Electromagnetic Force.
 ```
 
-_Rearrangement of [StandardModel](https://github.com/bin-wu-phys/StandardModel/blob/master/python/manual_v2.ipynb) originally developed by [Bin Wu](https://github.com/bin-wu-phys) from [CERN](https://theory.cern/roster/wu-bin)_
-
-|6 QUARKS|no|6 LEPTONS|no|7 BOSONS (GAUGE AND HIGGS)|no|
-|------|---|------|----|--|--|
-|d: Down|19|$$e^-$$: electron|13|$$γ$$: photon|7|
-|u: Up|18|$$ν_e$$: $$e$$ neutrino|12|$$g$$: gluons|5(6)|
-|s: Strange|17|$$μ^-$$: muon|11|$$H^0$$: Higgs boson|4|
-|c: Charm|16|$$ν_μ$$: $$μ$$ neutrino|10|$$W^+$$: positively charged weak boson|3|
-|b: Bottom|15|$$τ^-$$: tau|9|$$W^-$$: negatively charged weak boson|2|
-|t: Top|14|$$ν_τ$$: $$τ$$ neutrino|8|$$Z^0$$: neutral weak boson|1|
+[![physics-standard-model](https://github.com/user-attachments/assets/87edec22-c33b-4dbb-9cdf-6ce85e909ada)](https://home.cern/science/physics/standard-model)
 
 This results in a fundamental causal relation to the primes, systemically the products are entered into the position system.
 
