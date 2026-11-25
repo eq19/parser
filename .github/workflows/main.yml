@@ -80,7 +80,7 @@ jobs:
       BYPASS_LEXERING: ${{ github.event.inputs.BYPASS_LEXERING || 'false' }}
     runs-on: ${{ matrix.config.os }}
     continue-on-error: ${{ matrix.config.jobs_id != 1 }}
-    if: ${{ !(inputs.RUN_MODE == 'MEC30' && inputs.BYPASS_LEXERING == 'true') }}
+    #if: ${{ !(inputs.RUN_MODE == 'MEC30' && inputs.BYPASS_LEXERING == 'true') }}
 
     steps:
       - name: 📥 Checkout
