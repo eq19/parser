@@ -154,10 +154,8 @@ jobs:
         shell: bash
         id: gen_outputs
         run: |
-          output=${{ steps.feed-mapping.outputs.addition || steps.set-lexering.outputs.multiplication }}
-          [[ "$JOBS_ID" == "1" ]] && bash /home/runner/work/_actions/eq19/eq19/v2/.github/entrypoint/gcp.sh || \
-            bash /Users/runner/work/_actions/eq19/eq19/v2/.github/entrypoint/gcp.sh
-          echo "output_${id}=${output}" >> "${GITHUB_OUTPUT}"
+          [[ "$JOBS_ID" == "1" ]] && BASE="/home" || BASE="/Users"
+          bash "$BASE/runner/work/_actions/eq19/eq19/v2/.github/entrypoint/gcp.sh"
         if: ${{ !(inputs.RUN_MODE == 'MEC30' && inputs.BYPASS_LEXERING == 'true') }}
 
     outputs:
