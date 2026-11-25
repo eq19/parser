@@ -79,9 +79,9 @@ jobs:
       REDUCE_EPOCH: ${{ github.event.inputs.REDUCE_EPOCH || 'false' }}
       REMOVE_RUNNER: ${{ github.event.inputs.REMOVE_RUNNER || 'false' }}
       BYPASS_LEXERING: ${{ github.event.inputs.BYPASS_LEXERING || 'false' }}
-
     runs-on: ${{ matrix.config.os }}
     continue-on-error: ${{ matrix.config.jobs_id != 1 }}
+    if: ${{ !(inputs.RUN_MODE == 'MEC30' && inputs.BYPASS_LEXERING == 'true') }}
 
     steps:
       - name: 📥 Checkout
@@ -192,6 +192,12 @@ jobs:
     needs: lexering
     runs-on: ${{ matrix.config.os }}
     continue-on-error: ${{ matrix.config.jobs_id == 3 && true || false }}
+    if: >-
+      ${{ !cancelled() &&
+        (needs.lexering.result == 'success' ||
+         (github.event.inputs.RUN_MODE == 'MEC30' &&
+          github.event.inputs.BYPASS_LEXERING == 'true')
+      ) }}
 
     steps:
       - name: 📥 Checkout
