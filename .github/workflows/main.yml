@@ -74,7 +74,6 @@ jobs:
           - { os: macos-latest, jobs_id: 2 }
     env:
       JOBS_ID: ${{ matrix.config.jobs_id }}
-      WIKI: '${{ vars.TARGET_REPOSITORY }}.wiki'
       REDUCE_EPOCH: ${{ github.event.inputs.REDUCE_EPOCH || 'false' }}
       REMOVE_RUNNER: ${{ github.event.inputs.REMOVE_RUNNER || 'false' }}
       BYPASS_LEXERING: ${{ github.event.inputs.BYPASS_LEXERING || 'false' }}
@@ -86,8 +85,9 @@ jobs:
         uses: actions/checkout@v6
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
-          repository: ${{ env.JOBS_ID != 1 && env.WIKI || '' }}
+          ref: ${{ env.JOBS_ID == 2 && 'gh-source' || '' }}
           submodules: ${{ env.JOBS_ID != 1 && 'recursive' || false }}
+          repository: ${{ env.JOBS_ID == 2 && env.TARGET_REPOSITORY || '' }}
         if: ${{ !(env.JOBS_ID == 1 && env.RUN_MODE == 'MEC30' && env.REMOVE_RUNNER == 'false') }}
           
       - name: ⚙️ Build Maps
@@ -179,6 +179,7 @@ jobs:
 
     env:
       JOBS_ID: ${{ matrix.config.jobs_id }}
+      WIKI: '${{ vars.TARGET_REPOSITORY }}.wiki'
       IP_ADDRESS: '${{ needs.lexering.outputs.address }}'
       REDUCE_EPOCH: ${{ github.event.inputs.REDUCE_EPOCH }}
       REMOVE_RUNNER: ${{ github.event.inputs.REMOVE_RUNNER }}
@@ -203,8 +204,8 @@ jobs:
         with:
           submodules: recursive
           token: ${{ secrets.ACCESS_TOKEN }}
-          repository: ${{ env.TARGET_REPOSITORY }}
-          ref: ${{ env.JOBS_ID == 3 && 'gh-source' || 'gh-pages' }}                  
+          ref: ${{ env.JOBS_ID != 3 && 'gh-pages' || '' }}
+          repository: ${{ env.JOBS_ID == 4 && env.TARGET_REPOSITORY || env.WIKI }}
 
       - name: 🚀 Setup Parser
         #if: ${{ env.PASS == 'true' }}
