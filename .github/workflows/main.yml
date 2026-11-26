@@ -72,13 +72,15 @@ jobs:
         config:
           - { os: ubuntu-latest, jobs_id: 1 }
           - { os: macos-latest, jobs_id: 2 }
+
+    runs-on: ${{ matrix.config.os }}
+    continue-on-error: ${{ matrix.config.jobs_id != 1 }}
+
     env:
       JOBS_ID: ${{ matrix.config.jobs_id }}
       REDUCE_EPOCH: ${{ github.event.inputs.REDUCE_EPOCH || 'false' }}
       REMOVE_RUNNER: ${{ github.event.inputs.REMOVE_RUNNER || 'false' }}
       BYPASS_LEXERING: ${{ github.event.inputs.BYPASS_LEXERING || 'false' }}
-    runs-on: ${{ matrix.config.os }}
-    continue-on-error: ${{ matrix.config.jobs_id != 1 }}
 
     steps:
       - name: 📥 Checkout
@@ -166,16 +168,28 @@ jobs:
 
   parsering:
     strategy:
+      max-parallel: 1
+      fail-fast: false
       matrix:
         config: >-
           ${{ fromJSON(
             (github.event.inputs.RUN_MODE == 'MEC30' &&
              github.event.inputs.BYPASS_LEXERING == 'true') &&
-            '[{"os":"windows-latest","jobs_id":4}]' ||
-            '[{"os":"self-hosted","jobs_id":3},{"os":"windows-latest","jobs_id":4}]'
+            '[{"os":"windows-latest","jobs_id":4,"display_id":3}]' ||
+            '[{"os":"self-hosted","jobs_id":3,"display_id":3},{"os":"windows-latest","jobs_id":4,"display_id":4}]'
           ) }}
-      max-parallel: 1
-      fail-fast: false
+
+    ## ✔️ Completeness status
+    needs: lexering
+    runs-on: ${{ matrix.config.os }}
+    if: >-
+      ${{ !cancelled() &&
+        (needs.lexering.result == 'success' ||
+         (github.event.inputs.RUN_MODE == 'MEC30' &&
+          github.event.inputs.BYPASS_LEXERING == 'true')
+      ) }}
+    continue-on-error: ${{ matrix.config.jobs_id == 3 && true || false }}
+    name: "parsering (${{ matrix.config.os }}, ${{ matrix.config.display_id }})"
 
     env:
       JOBS_ID: ${{ matrix.config.jobs_id }}
@@ -185,17 +199,6 @@ jobs:
       REMOVE_RUNNER: ${{ github.event.inputs.REMOVE_RUNNER }}
       PASS: ${{ contains(needs.lexering.result, 'success') }}
       BYPASS_LEXERING: ${{ github.event.inputs.BYPASS_LEXERING }}
-
-    ## ✔️ Completeness status
-    needs: lexering
-    runs-on: ${{ matrix.config.os }}
-    continue-on-error: ${{ matrix.config.jobs_id == 3 && true || false }}
-    if: >-
-      ${{ !cancelled() &&
-        (needs.lexering.result == 'success' ||
-         (github.event.inputs.RUN_MODE == 'MEC30' &&
-          github.event.inputs.BYPASS_LEXERING == 'true')
-      ) }}
 
     steps:
       - name: 📥 Checkout
